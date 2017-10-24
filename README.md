@@ -1,2 +1,6 @@
-# Xamarin.Forms-api-docs
-Xamarin.Forms API documentation in ECMA XML format
+Xamarin.Forms API docs
+======================
+
+This repository contains the source of the Xamarin.Forms API documentation to be edited.
+
+
