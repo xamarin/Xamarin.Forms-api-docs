@@ -4,15 +4,11 @@
     <remarks>
       <para>Xamarin.Forms is a cross-platform, natively-backed UI toolkit abstraction that allows developers to create user interfaces that can be shared across Android, iOS, and Windows Phone. Because the user interfaces use the native controls of the target platforms, they have the appearance and, importantly, the responsiveness of natively built apps.</para>
         <format type="text/html">
-        <h2>Hello, Xamarin.Forms!</h2>
+        <h2>Xamarin.Forms Solution Architecture</h2>
+        <h3>Cross-Platform Project</h3>
       </format>
       <para>The user-experience of a Xamarin.Forms application is usually defined in a cross-platform shared project (either a Portable Class Library or a Shared Project) and combined with platform-specific projects that, at the least, initialize the native platform rendering (note the call to <c>Forms.Init()</c> in the platform code samples below) and, more generally, extend the user-experience and user-interface in platform-specific manners (for instance, by accessing platform-specific sensors or capabilities).</para>
-           <para>The dependencies are one-way: the platforms depend on the shared project, but not vice-versa:</para>
-           <para><img href="XamarinForms-ns.SharedProject.png"/></para>
-           <para>    
-        The Solution Explorer for a cross-platform "Hello, World!" app might look like this:</para>
-      <para><img href="XamarinForms-ns.SolutionPad.png"/></para>
-      <para>The shared portion of the Xamarin.Forms code might look like this:</para>
+      <para>For example, the developer can create a cross-platform Xamarin.Forms <see cref="T:Xamarin.Forms.Label" /> and display it with the following code in the shared project:</para>
       <example>
         <code lang="C#"><![CDATA[
 public class App : Xamarin.Forms.Application
@@ -23,7 +19,7 @@ public class App : Xamarin.Forms.Application
         {
             Content = new Label
                 {
-                    Text = "Hello, Forms !",
+                    Text = "Welcome to Xamarin Forms!",
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     HorizontalOptions = LayoutOptions.CenterAndExpand,
                 },
@@ -32,60 +28,55 @@ public class App : Xamarin.Forms.Application
 }
           ]]></code>
       </example>
-      <para>The iOS platform code would look like this:</para>
+      <para>This code results in a centered label on the target platforms:</para>
+      <para><img href="XamarinForms-ns.TripleScreenShot.png"/></para>
+      <para>While more complicated layouts with more useful user interfaces are more typical, this example is useful for clearly illustrating the shared and platform-specific code that Xamarin.Forms uses to create and display the code on the target platforms. The code in the following discussion is created by Visual Studio in the target platform projects when the developer creates a new Xamarin.Forms project. In each case, a platform-specific <c>Forms.Init()</c> method is called to intitialize forms before any other method that depends on Xamarin.Forms is called. </para>
+      <format type="text/html" ><h3>iOS Platform Code</h3></format>
+      <para>On the iOS platform, Visual Studio registers a <see cref="T:Xamarin.Forms.Platform.iOS.FormsApplicationDelegate" /> as the entry point of the application, and immediately makes a call to <see cref="M:Xamarin.Forms.Forms.Init" />.</para>
             <example>
         <code lang="C#"><![CDATA[
 [Register("AppDelegate")]
-public class AppDelegate : FormsApplicationDelegate
+public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
 {
-    UIWindow window;
-
     public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     {
-        Forms.Init();
+        global::Xamarin.Forms.Forms.Init();
+        LoadApplication(new App());
 
-        LoadApplication (new App ());
-
-        return base.FinishedLaunching (app, options);
+        return base.FinishedLaunching(app, options);
     }
 }
           ]]></code>
       </example>
-      <para>The Android platform code would look like this:</para>
+      
+      <format type="text/html" ><h3>Android Platform Code</h3></format>
+      <para>The entry point on Android is a <see cref="T:Xamarin.Forms.Platform.Android.FormsAppCompatActivity" />, and its <c>OnCreate</c> method must configure the tab bar and toolbars and call its <c>base</c> method before calling <c>Forms.Init</c>.</para>
             <example>
         <code lang="C#"><![CDATA[
-[Activity(Label = "HelloXamarinFormsWorld", MainLauncher = true)]
-public class MainActivity : FormsApplicationActivity
-{
-    protected override void OnCreate(Bundle bundle)
-    {
-        base.OnCreate(bundle);
+            [Activity(Label = "HelloXamarinFormsWorld.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+            public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+            {
+                protected override void OnCreate(Bundle bundle)
+                {
+                    TabLayoutResource = Resource.Layout.Tabbar;
+                    ToolbarResource = Resource.Layout.Toolbar;
 
-        Forms.Init(this, bundle);
+                    base.OnCreate(bundle);
 
-        LoadApplication (new App ());
-    }
-}
+                    global::Xamarin.Forms.Forms.Init(this, bundle);
+
+                    LoadApplication(new App());
+                }
+
+                protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+                {
+                    base.OnActivityResult(requestCode, resultCode, data);
+                }
+            }
           ]]></code>
       </example>
-      <para>And the Windows Phone code would look like this:</para>
-            <example>
-        <code lang="C#"><![CDATA[
-public partial class MainPage 
-{
-    public MainPage()
-    {
-        InitializeComponent();
-
-        Forms.Init();
-
-        LoadApplication (new HelloXamarinFormsWorld.App ());
-    }
-}
-          ]]></code>
-      </example>
-      <para>The resulting app looks like this on the various devices:</para>
-      <para><img href="XamarinForms-ns.TripleScreenShot.png"/></para>
+      <format type="text/html" ><h3>UWP Code</h3></format>
+      <para>The entry point for a Xamarin.Forms app on UWP is just the constructor for a <see cref="T:Windows.UI.Xaml.Application" /> in <c>App.xaml.cs</c> in the UWP platform project. However, the application lifecycle on UWP is such that the call to <c>Forms.Init</c> must take place inside the <c>OnLaunched</c> method, and is guarded against being run more than once. The necessary code is beyond the scope of this documentation, but the curious developer is encouraged to create a test Xamarin.Forms solution and study the code in the <c>App.xaml.cs</c> file for more details</para>
            <format type="text/html">
         <h2>Elements in Xamarin.Forms</h2>
       </format>
