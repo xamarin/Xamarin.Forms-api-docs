@@ -267,7 +267,7 @@ namespace FormsGallery
         <summary>Provides the interface for the bound property that gets or sets the ordered collection of <see cref="T:Xamarin.Forms.ColumnDefinition" /> objects that control the layout of columns in the <see cref="T:Xamarin.Forms.Grid" />.</summary>
         <value>A ColumnDefinitionCollection for the Grid instance.</value>
         <remarks>
-          <para>ColumnDefinitions is an ordered set of ColumnDefinition objects that determine the width of each column. Each successive ColumnDefintion controls the width of each successive column. If ColumnDefinitions is empty, or if there are more columns than definitions, then columns for which there is no definition are rendered as if they were controlled by a ColumnDefinition object that has its <see cref="P:Xamarin.Forms.ColumnDefinition.Width" /> property set to <see cref="P:Xamarin.Forms.GridLength.Auto" />.</para>
+          <para>ColumnDefinitions is an ordered set of ColumnDefinition objects that determine the width of each column. Each successive ColumnDefintion controls the width of each successive column. If ColumnDefinitions is empty, or if there are more columns than definitions, then columns for which there is no definition are rendered as if they were controlled by a ColumnDefinition object that has its <see cref="P:Xamarin.Forms.ColumnDefinition.Width" /> property set to <see cref="P:Xamarin.Forms.GridLength.Star" />.</para>
           <para>The <see cref="P:Xamarin.Forms.Grid.ColumnDefinitions" /> property has XAML syntax support. The syntax for this operation is shown below.</para>
         </remarks>
       </Docs>
@@ -775,7 +775,7 @@ namespace FormsGallery
         <summary>Provides the interface for the bound property that gets or sets the collection of RowDefinition objects that control the heights of each row.</summary>
         <value>A RowDefinitionCollection for the Grid instance.</value>
         <remarks>
-          <para>RowDefinitions is an ordered set of <see cref="T:Xamarin.Forms.RowDefinition" /> objects that determine the height of each column. Each successive RowDefintion controls the width of each successive column. If RowDefinitions is empty, or if there are more rows than definitions, then rows for which there is no definition are rendered as if they were controlled by a RowDefinition object that has its <see cref="P:Xamarin.Forms.RowDefinition.Height" /> property set to <see cref="P:Xamarin.Forms.GridLength.Auto" />.</para>
+          <para>RowDefinitions is an ordered set of <see cref="T:Xamarin.Forms.RowDefinition" /> objects that determine the height of each row. Each successive RowDefintion controls the width of each successive row. If RowDefinitions is empty, or if there are more rows than definitions, then rows for which there is no definition are rendered as if they were controlled by a RowDefinition object that has its <see cref="P:Xamarin.Forms.RowDefinition.Height" /> property set to <see cref="P:Xamarin.Forms.GridLength.Star" />.</para>
         </remarks>
       </Docs>
     </Member>

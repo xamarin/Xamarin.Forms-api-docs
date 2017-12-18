@@ -257,7 +257,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
       <Docs>
         <param name="page">The <see cref="T:Xamarin.Forms.Page" /> to be pushed on top of the navigation stack.</param>
         <summary>Asynchronously adds a <see cref="T:Xamarin.Forms.Page" /> to the top of the navigation stack.</summary>
-        <returns>A task representing the asynchronous dismiss operation.</returns>
+        <returns>A task that represents the asynchronous push operation.</returns>
         <remarks>
           <para>
 						The following example shows <see cref="M:Xamarin.Forms.INavigation.Push" /> and <see cref="M:Xamarin.Forms.INavigation.Pop" /> usage:

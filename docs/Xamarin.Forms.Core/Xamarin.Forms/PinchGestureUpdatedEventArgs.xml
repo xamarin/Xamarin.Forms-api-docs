@@ -67,8 +67,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The relative size of the user's pinch gesture.</summary>
-        <value>The distance between the user's digits, divided by the initial distance between the user's digits in the pinch gesture.</value>
+        <summary>The relative size of the user's pinch gesture since the last update was received.</summary>
+        <value>The distance between the user's digits, divided by the last reported distance between the user's digits in the pinch gesture.</value>
         <remarks>
           <para>The initial value of the <see cref="P:Xamarin.Forms.PinchGestureUpdatedEventArgs.Scale" /> property for each new pinch gesture is <c>1.0</c>.</para>
         </remarks>

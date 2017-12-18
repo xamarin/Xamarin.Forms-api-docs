@@ -556,8 +556,8 @@
       <Docs>
         <summary>Gets or sets a value indicating whether this element should be involved in the user interaction cycle. This is a bindable property.</summary>
         <value>
-          <see langword="false" /> if the element should receive input; <see langword="true" /> if element should not receive input and should, instead, pass inputs to the element below. Default is <see langword="false" />.</value>
-        <remarks>Setting InputTransparent is not the same as setting IsEnabled to false. Setting InputTransparent only disables inputs and instead causes them to be passed to the VisualElement below the element. Usually this is the parent of the element.</remarks>
+          <see langword="false" /> if the element and its children should receive input; <see langword="true" /> if neither the element nor its children should receive input and should, instead, pass inputs to the elements that are visually behind the current visual element. Default is <see langword="false" />.</value>
+        <remarks>Setting InputTransparent is not the same as setting IsEnabled to false. Setting InputTransparent only disables inputs and instead causes them to be passed to the <see cref="T:Xamarin.Forms.VisualElement" /> that is visually behind the element. Usually, this is the parent of the element. The value of the <see cref="P:Xamarin.Forms.VisualElement.InputTransparent" /> property is inherited by a visual element's child elements.</remarks>
         <altmember cref="P:Xamarin.Forms.VisualElement.IsEnabled" />
       </Docs>
     </Member>
