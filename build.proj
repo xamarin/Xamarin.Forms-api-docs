@@ -1,0 +1,8 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Assemble">
+    <Target Name="Assemble">
+        <Exec Command="mdoc assemble docs/Xamarin.Forms.Core --out=Xamarin.Forms.Core" />
+        <Exec Command="mdoc assemble docs/Xamarin.Forms.Maps --out=Xamarin.Forms.Maps" />
+        <Exec Command="mdoc assemble docs/Xamarin.Forms.Pages --out=Xamarin.Forms.Pages" />
+        <Exec Command="mdoc assemble docs/Xamarin.Forms.Xaml --out=Xamarin.Forms.Xaml" />
+    </Target>
+</Project>
