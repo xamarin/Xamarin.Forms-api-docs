@@ -88,9 +88,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element whose large title preference to get.</param>
+        <summary>Returns the large title preference of <paramref name="element" />.</summary>
+        <returns>The large title preference of <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,9 +183,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.NavigationPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The element whose large title preference to get.</param>
+        <summary>Returns a value that indicates the element's preference for large titles.</summary>
+        <returns>A value that indicates the element's preference for large titles.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +200,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls the navigation page's preference for large titles.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,9 +262,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element whose preference to set.</param>
+        <param name="value">The new large title preference behavior.</param>
+        <summary>Sets the large title preference behavior of <paramref name="element" /> to <paramref name="value" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,9 +283,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="config">The element whose preference to set.</param>
+        <param name="value">The new large title preference behavior.</param>
+        <summary>Sets the large title preference behavior of <paramref name="config" /> to <paramref name="value" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

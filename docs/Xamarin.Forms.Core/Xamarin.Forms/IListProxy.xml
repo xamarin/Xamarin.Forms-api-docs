@@ -61,10 +61,10 @@
         <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The identifier of the object to be retrieved.</param>
+        <param name="value">An <see langword="out" /> reference to the object being retrieved, or it's default value.</param>
+        <summary>Retrieves the object specified by <paramref name="index" /> or, if not present, the default value of <see langword="null" />.</summary>
+        <returns>The object specified by <paramref name="index" /> or, if not present, the default value of <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
