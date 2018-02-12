@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Platform-specific properties for list view controls on UWP.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element whose selection mode to get.</param>
+        <summary>Returns the selection mode for the element.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -48,8 +48,8 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.ListView&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="config">The element whose selection mode to get.</param>
+        <summary>Returns the selection mode for the element.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -65,7 +65,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the selection mode attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +84,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.ListViewSelectionMode" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element whose selectio mode to set.</param>
+        <param name="value">The new selection mode value.</param>
+        <summary>Sets the selection mode for the element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,9 +105,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.ListViewSelectionMode" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="config">The element whose selectio mode to set.</param>
+        <param name="value">The new selection mode value.</param>
+        <summary>Sets the selection mode for the element.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

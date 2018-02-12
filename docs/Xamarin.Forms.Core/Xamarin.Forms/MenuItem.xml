@@ -86,7 +86,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the accelerator attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +217,8 @@
         <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindable">The bindable object for which to retrieve the accelerator keys.</param>
+        <summary>Gets the accelerator for the specified bindable object.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -393,9 +393,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.Accelerator" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindable">The bindable object for which to set the accelerator keys.</param>
+        <param name="value">The new accelerator for the object.</param>
+        <summary>Sets the accelerator for the specified bindable object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

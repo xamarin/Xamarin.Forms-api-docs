@@ -28,9 +28,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element whose large title display preferences to get.</param>
+        <summary>Returns the large title display preferences for <paramref name="element" />.</summary>
+        <returns>The large title display preferences for <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +88,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element whose safe area insets to get.</param>
+        <summary>Returns the safe area insets for <paramref name="element" />.</summary>
+        <returns>The safe area insets for <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,8 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element whose safe area behavior to get.</param>
+        <summary>Gets a Boolean value that tells whether padding values are overridden with values that conform to the safe area on the device.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,9 +128,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The element whose large title preferences to return.</param>
+        <summary>Returns a value that describes the large title behavior preference of <paramref name="config" />.</summary>
+        <returns>A value that describes the large title behavior preference of <paramref name="config" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +145,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that defines the large title preferences of the page.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,9 +233,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The element whose safe area insets to return.</param>
+        <summary>Returns a <see cref="T:Xamarin.Forms.Thickness" /> object that represents the safe area insets.</summary>
+        <returns>A <see cref="T:Xamarin.Forms.Thickness" /> object that represents the safe area insets.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,7 +250,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that represents the safe area insets.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,9 +269,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.LargeTitleDisplayMode" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element whose large title display preference to set.</param>
+        <param name="value">The new large title display preferences.</param>
+        <summary>Sets the large title display preferences of <paramref name="element" /> to <paramref name="value" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,10 +290,10 @@
         <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.LargeTitleDisplayMode" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The element whose large title display preference to set.</param>
+        <param name="value">The new large title display preferences.</param>
+        <summary>Sets the large title display preferences of <paramref name="config" /> to <paramref name="value" />.</summary>
+        <returns>The updated configuration object on which developers can make successive method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,10 +403,10 @@
         <Parameter Name="value" Type="Xamarin.Forms.Thickness" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The element whose safe area insets to set.</param>
+        <param name="value">The new safe area insets.</param>
+        <summary>Sets the safe area insets of <paramref name="config" /> to <paramref name="value" /></summary>
+        <returns>The updated configuration object on which developers can make successive method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -425,9 +425,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element whose safe area use behavior to set.</param>
+        <param name="value">The new safe area inset behavior.</param>
+        <summary>Sets a value that controls whether padding values are overriden with the safe area insets.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,10 +446,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The element whose safe area use behavior to set.</param>
+        <param name="value">The new safe area inset behavior.</param>
+        <summary>Sets a value that controls whether padding values are overriden with the safe area insets.</summary>
+        <returns>The updated configuration object on which developers can make successive method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,7 +464,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls whether the padding is overridden with the safe area.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,9 +482,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The element whose safe area behavior to get.</param>
+        <summary>Returns a Boolean value that tells whether the padding is overridden with the safe area.</summary>
+        <returns>A Boolean value that tells whether the padding is overridden with the safe area.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

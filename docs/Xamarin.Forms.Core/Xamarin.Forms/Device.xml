@@ -87,8 +87,8 @@ Device.BeginInvokeOnMainThread (() => {
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of custom flags that were set on the device before Forms was initialized.</summary>
+        <value>The list of custom flags that were set on the device before Forms was initialized.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,9 +508,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
         <Parameter Name="flags" Type="System.Collections.Generic.IReadOnlyList&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="flags">The list of custom flag values.</param>
+        <summary>Sets a list of custom flags on the device.</summary>
+        <remarks><para>Developers should only call this method before Forms is initialized..</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetIdiom">
