@@ -55,7 +55,8 @@
       <Docs>
         <param name="bindable">The <see cref="T:Xamarin.Forms.BindableObject" /> whose status to check.</param>
         <summary>Gets a Boolean value that tells whether layout compression is enabled for <paramref name="bindable" />.</summary>
-        <returns><see langword="true" /> if layout compression is enabled for <paramref name="bindable" />. Otherwise, returns <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if layout compression is enabled for <paramref name="bindable" />. Otherwise, returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +113,9 @@
         <param name="bindable">The <see cref="T:Xamarin.Forms.BindableObject" /> on which to enable or disable layout compression</param>
         <param name="value">The new layout compression value. <see langword="true" /> to enable layout compression</param>
         <summary>Turns layout compression on or off for <see langword="bindable" />.</summary>
-        <remarks><para>It is an invalid operation to change this value after the view is rendered on the platform.</para></remarks>
+        <remarks>
+          <para>It is an invalid operation to change this value after the view is rendered on the platform.</para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

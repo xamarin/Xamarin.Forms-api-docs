@@ -63,7 +63,8 @@
       <Docs>
         <param name="bindable">The bindable object whose status to check.</param>
         <summary>Gets a nullable Boolean value that tells whether the bindable object is available to the accessibility system.</summary>
-        <returns><see langword="true" /> if <paramref name="bindable" /> is available to the accessibility system. <see langword="false" /> or <see langword="null" /> if it is not.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="bindable" /> is available to the accessibility system. <see langword="false" /> or <see langword="null" /> if it is not.</returns>
         <remarks>Developers use <see cref="M:Xamarin.Forms.AutomationProperties.SetIsInAccessibilityTree" /> to set this attached property to <see langword="true" /> in order to make the bindable object available to the accessibility system.</remarks>
       </Docs>
     </Member>
@@ -204,7 +205,8 @@
       </Parameters>
       <Docs>
         <param name="bindable">The object ot add or remove from the accessibility system.</param>
-        <param name="value"><see langword="true" /> to make <paramref name="bindable" /> visible to the accessibility system. <see langword="false" /> to remove it from the system.</param>
+        <param name="value">
+          <see langword="true" /> to make <paramref name="bindable" /> visible to the accessibility system. <see langword="false" /> to remove it from the system.</param>
         <summary>Sets a Boolean value that tells whether the bindable object is available to the accessibility system.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,7 +227,7 @@
       </Parameters>
       <Docs>
         <param name="bindable">The object whose label to set.</param>
-        <param name="value">The visual element that will name <paramref name="bindable" />, or <see langword="null" /> to make <paramref name="bindable" /> it's own label.</param>
+        <param name="value">The visual element that will name <paramref name="bindable" />, or <see langword="null" /> to make <paramref name="bindable" /> its own label.</param>
         <summary>Sets another element, such as a <see cref="T:Xamarin.Forms.Label" /> as the label for <paramref name="bindable" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>

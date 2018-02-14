@@ -44,7 +44,10 @@
         <param name="value">To be added.</param>
         <summary>Converts <paramref name="value" /> into a <see cref="T:Xamarin.Forms.Accelerator" />.</summary>
         <returns>A new <see cref="T:Xamarin.Forms.Accelerator" /> initialized from <paramref name="value" />.</returns>
-        <remarks><para><paramref name="value" /> may contain a combination of "CTRL", "CMD", "ALT", "SHIFT", "FN", or "WIN", in any combination of upper or lower case letters, as well as any available keys on the platform. The returned <see cref="T:Xamarin.Forms.Accelerator" /> has its <see cref="P:Xamarin.Forms.Accelerator.Modifiers" /> array filled with the specifed modifiers, and its <see cref="P:Xamarin.Forms.Accelerator.Keys" /> array filled with the remaining keys.</para></remarks>
+        <remarks>
+          <para>
+            <paramref name="value" /> may contain a combination of "CTRL", "CMD", "ALT", "SHIFT", "FN", or "WIN", in any combination of upper or lower case letters, as well as any available keys on the platform. The returned <see cref="T:Xamarin.Forms.Accelerator" /> has its <see cref="P:Xamarin.Forms.Accelerator.Modifiers" /> array filled with the specifed modifiers, and its <see cref="P:Xamarin.Forms.Accelerator.Keys" /> array filled with the remaining keys.</para>
+        </remarks>
       </Docs>
     </Member>
   </Members>
