@@ -22,7 +22,7 @@
   </Interfaces>
   <Docs>
     <summary>Class that represents a cross-platform mobile application.</summary>
-    <remarks>To be added.</remarks>
+    <remarks><para>The <see cref="T:Xamarin.Forms.Application" /> class is the core of a Xamarin.Forms application. It sets the root page of the application, persists primitive type data across invocations of the application in the <see cref="P:Xamarin.Forms.Application.Properties" /> dictionary, and provides events to respond to pushing and popping of modal views. Visual studio creates this class for the developer in the appropriate project in a new Xamarin.Forms solution.</para></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -140,8 +140,8 @@
         <ReturnType>Xamarin.Forms.Page</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the main page of the application.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the root page of the application.</summary>
+        <value>The root page of the application.</value>
         <remarks>This property throws an exception if the application developer attempts to set it to <see langword="null" />.</remarks>
       </Docs>
     </Member>
@@ -257,7 +257,7 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="T">The platform configuration for which to retrieve the application instance.</typeparam>
         <summary>Returns the platform-specific instance of this <see cref="T:Xamarin.Forms.Application" />, on which a platform-specific method may be called.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -399,9 +399,10 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dictionary of properties for this <see cref="T:Xamarin.Forms.Application" /> object.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a dictionary of persistent properties for this <see cref="T:Xamarin.Forms.Application" /> object.</summary>
+        <value>A dictionary of persistent properties for the application.</value>
+        <remarks><para>Developers can use this property to store persistent application state across all application code. This values in the dictionary are preserved on the device when the application is paused or shut down.</para>
+        <block type="note"><para>Values saved in the properties dictionary must be primitive types, such as integers or strings. Attempting to save reference types, or collections in particular, can fail silently.</para></block></remarks>
       </Docs>
     </Member>
     <Member MemberName="Quit">
@@ -464,8 +465,8 @@
       <Parameters />
       <Docs>
         <summary>Asynchronously persists the <see cref="P:Xamarin.Forms.Application.Properties" /> dictionary for the application object.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <returns>A task that represents the asynchronous save operation.</returns>
+        <remarks><para>Developers use this method to perist the application state that is currently stored in <see cref="P:Xamarin.Forms.Application.Properties" /> immediately, rather than waiting for a life cycle event to trigger the data to be saved to the device's permanent storage.</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SendOnAppLinkRequestReceived">
