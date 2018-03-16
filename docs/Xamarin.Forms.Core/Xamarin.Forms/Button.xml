@@ -33,74 +33,74 @@
   <Docs>
     <summary>A button <see cref="T:Xamarin.Forms.View" /> that reacts to touch events.</summary>
     <remarks>
+      <format type="text/html"><h1>Button Appearance</h1></format>
+      <para>In addition to the appearance properties common to all <see cref="T:Xamarin.Forms.View" /> objects, the Button class provides the <see cref="P:Xamarin.Forms.Button.BorderColor" />, <see cref="P:Xamarin.Forms.Button.BorderWidth" />, <see cref="P:Xamarin.Forms.Button.BorderRadius" />, <see cref="P:Xamarin.Forms.Button.BackgroundColor" />, and <see cref="P:Xamarin.Forms.Button.Image" /> properties.</para>
       <example>
-        <para>The following example shows a basic use:</para>
-        <code lang="C#"><![CDATA[
-using System;
-using Xamarin.Forms;
-
-namespace FormsGallery
+        <para>The XAML code snippet below demonstrates how to use these properties to create a basic button with the text "Press me!" The image that the button displays appears on the start side of the layout, which is the left side for left-to-right languages.</para>
+        <code lang="XAML">
+<![CDATA[
+<Button Text="Press me!"
+        Image="icon.png"
+        BackgroundColor="White"
+        BorderRadius="10"
+        BorderWidth="2"
+        BorderColor="Black"
+        HorizontalOptions="Center"/>
+]]>
+        </code>
+<block type="note">To display the <c>icon.png</c> image with the above XAML, the developer must place it in the appropriate location, with the appropriate build action, specific to each platform project. The <format type="text/html"><a href="https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/">Images</a></format> topic explains this and other important details about working with images in Xamarin.Forms.</block>
+</example>
+      <format type="text/html"><h1>Button Events</h1></format>
+      <para>Buttons notify the developer of press, release, and click events with the <see cref="E:Xamarin.Forms.Button.Pressed" />, <see cref="E:Xamarin.Forms.Button.Released" />, and <see cref="E:Xamarin.Forms.Button.Clicked" /> events, respectively.</para>
+      <example>
+        <para>The following XAML assigns handlers to two of these button events:</para>
+        <code lang="XAML"><![CDATA[
+<Button x:Name="PressMeButton"
+        Text="Press Me!"
+        Pressed="PressMeButton_Pressed"
+        Clicked="PressMeButton_Clicked"/>
+]]>
+        </code>
+        <para>With the XAML above, the following event handlers in the code-behind file change the button's text when these events are raised:</para>
+        <code lang="C#"><![CDATA[private void PressMeButton_Pressed(object sender, EventArgs e)
 {
-    class ButtonDemoPage : ContentPage
-    {
-        Label label;
-        int clickTotal = 0;
+   (sender as Button).Text = "You pressed me!";
+}
 
-        public ButtonDemoPage()
-        {
-            Label header = new Label
-            {
-                Text = "Button",
-                Font = Font.BoldSystemFontOfSize(50),
-                HorizontalOptions = LayoutOptions.Center
-            };
-
-            Button button = new Button
-            {
-                Text = "Click Me!",
-                Font = Font.SystemFontOfSize(NamedSize.Large),
-                BorderWidth = 1,
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.CenterAndExpand
-            };
-            button.Clicked += OnButtonClicked;
-
-            label = new Label
-            {
-                Text = "0 button clicks",
-                Font = Font.SystemFontOfSize(NamedSize.Large),
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.CenterAndExpand
-            };
-
-            // Accomodate iPhone status bar.
-            this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
-
-            // Build the page.
-            this.Content = new StackLayout
-            {
-                Children = 
-                {
-                    header,
-                    button,
-                    label
-                }
-            };
-        }
-
-        void OnButtonClicked(object sender, EventArgs e)
-        {
-            clickTotal += 1;
-            label.Text = String.Format("{0} button click{1}",
-                                       clickTotal, clickTotal == 1 ? "" : "s");
-        }
-    }
+private void PressMeButton_Clicked(object sender, EventArgs e)
+{
+   (sender as Button).Text = "I was just clicked!";
 }
 ]]></code>
       </example>
-      <para>
-        <img href="Button.TripleScreenShot.png" />
-      </para>
+      <format type="text/html"><h1>Commands</h1></format>
+      <para>The commanding API for buttons allows the developer to run a command in response to what would otherwise be the Clicked event.</para>
+      <example>
+        <para>The following XAML specifes a command to run when the button is clicked. The command updates a view model property called <c>modelUpdateCount</c>, which the button then uses to update its text. (The text binding is shown for completeness. Only the commanding code is relevant.):</para>
+        <code lang="XAML"><![CDATA[
+<Button Text="{Binding modelUpdateCount, StringFormat='Number of updates to the model: {0:D}'}"
+        Command="{Binding IncrementLabelCommand}" />
+]]></code>
+        <para>With the XAML above, the developer first defines the <c>IncrementLabelCommand</c> property on the view model and implements a method with which to later instantiate the command:</para>
+<code lang="C#"><![CDATA[public ICommand IncrementLabelCommand { get; private set; }
+
+void IncrementLabel()
+{
+   modelUpdateCount++;
+}]]></code>
+        <para>Second, the developer initializes the command with the method (or action):</para>
+<code lang="C#"><![CDATA[public ViewModelDemo()
+{
+   IncrementLabelCommand = new Command(IncrementLabel);
+}]]></code>
+        <para>Finally, the developer must sets the binding context in the constructor for the main page to that of the view model where the property is implemented:</para>
+<code lang="C#"><![CDATA[public MainPage()
+{
+    InitializeComponent();
+    BindingContext = new ViewModelDemo();
+}
+]]></code>
+      </example>
     </remarks>
   </Docs>
   <Members>
