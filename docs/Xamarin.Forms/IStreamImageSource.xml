@@ -1,0 +1,40 @@
+<Type Name="IStreamImageSource" FullName="Xamarin.Forms.IStreamImageSource">
+  <TypeSignature Language="C#" Value="public interface IStreamImageSource" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStreamImageSource" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IStreamImageSource" />
+  <TypeSignature Language="F#" Value="type IStreamImageSource = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>This interface is for internal use by platform renderers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetStreamAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetStreamAsync (System.Threading.CancellationToken userToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetStreamAsync(valuetype System.Threading.CancellationToken userToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IStreamImageSource.GetStreamAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="iStreamImageSource.GetStreamAsync userToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userToken">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

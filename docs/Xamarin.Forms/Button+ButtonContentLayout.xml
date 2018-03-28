@@ -1,0 +1,107 @@
+<Type Name="Button+ButtonContentLayout" FullName="Xamarin.Forms.Button+ButtonContentLayout">
+  <TypeSignature Language="C#" Value="public sealed class Button.ButtonContentLayout" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit Button/ButtonContentLayout extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Button.ButtonContentLayout" />
+  <TypeSignature Language="F#" Value="type Button.ButtonContentLayout = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Image Position = {Position}, Spacing = {Spacing}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.Button/ButtonContentTypeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Controls the relative positioning of, and spacing between, text and an image on a <see cref="T:Xamarin.Forms.Button" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ButtonContentLayout (Xamarin.Forms.Button.ButtonContentLayout.ImagePosition position, double spacing);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.Button/ButtonContentLayout/ImagePosition position, float64 spacing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.ButtonContentLayout.#ctor(Xamarin.Forms.Button.ButtonContentLayout.ImagePosition,System.Double)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Button.ButtonContentLayout : Xamarin.Forms.Button.ButtonContentLayout.ImagePosition * double -&gt; Xamarin.Forms.Button.ButtonContentLayout" Usage="new Xamarin.Forms.Button.ButtonContentLayout (position, spacing)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="position" Type="Xamarin.Forms.Button+ButtonContentLayout+ImagePosition" />
+        <Parameter Name="spacing" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="position">An enumeration value that controls where the image is displayed in the button.</param>
+        <param name="spacing">The spacing to use between the image and text.</param>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.Button+ButtonContentLayout" /> with the specified <paramref name="position" /> and <paramref name="spacing" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Button.ButtonContentLayout.ImagePosition Position { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Button/ButtonContentLayout/ImagePosition Position" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.ButtonContentLayout.Position" />
+      <MemberSignature Language="F#" Value="member this.Position : Xamarin.Forms.Button.ButtonContentLayout.ImagePosition" Usage="Xamarin.Forms.Button.ButtonContentLayout.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Button+ButtonContentLayout+ImagePosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an enumeration value that tells where the image is displayed in the button.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Spacing">
+      <MemberSignature Language="C#" Value="public double Spacing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Spacing" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.ButtonContentLayout.Spacing" />
+      <MemberSignature Language="F#" Value="member this.Spacing : double" Usage="Xamarin.Forms.Button.ButtonContentLayout.Spacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the spacing to use between the image and text.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.ButtonContentLayout.ToString" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="buttonContentLayout.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string represention of this <see cref="T:Xamarin.Forms.Button+ButtonContentLayout" /> object.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

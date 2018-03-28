@@ -1,0 +1,109 @@
+<Type Name="SimpleValueTargetProvider" FullName="Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider">
+  <TypeSignature Language="C#" Value="public class SimpleValueTargetProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimpleValueTargetProvider extends System.Object implements class Xamarin.Forms.Xaml.IProvideValueTarget" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider" />
+  <TypeSignature Language="F#" Value="type SimpleValueTargetProvider = class&#xA;    interface IProvideParentValues&#xA;    interface IProvideValueTarget" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SimpleValueTargetProvider (object[] objectAndParents);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object[] objectAndParents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.#ctor(System.Object[])" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider : obj[] -&gt; Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider" Usage="new Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider objectAndParents" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("SimpleValueTargetProvider(object[] objectAndParents) is obsolete as of version 2.3.4. Please use SimpleValueTargetProvider(object[] objectAndParents, object targetProperty) instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="objectAndParents" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="objectAndParents">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SimpleValueTargetProvider (object[] objectAndParents, object targetProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object[] objectAndParents, object targetProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.#ctor(System.Object[],System.Object)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider : obj[] * obj -&gt; Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider" Usage="new Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider (objectAndParents, targetProperty)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="objectAndParents" Type="System.Object[]" />
+        <Parameter Name="targetProperty" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="objectAndParents">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject">
+      <MemberSignature Language="C#" Value="object Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin#Forms#Xaml#IProvideValueTarget#TargetObject" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty">
+      <MemberSignature Language="C#" Value="object Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin#Forms#Xaml#IProvideValueTarget#TargetProperty" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,186 @@
+<Type Name="Ticker" FullName="Xamarin.Forms.Internals.Ticker">
+  <TypeSignature Language="C#" Value="public abstract class Ticker" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Ticker extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.Ticker" />
+  <TypeSignature Language="F#" Value="type Ticker = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>For internal use by platform renderers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Ticker ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Internals.Ticker Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.Internals.Ticker Default" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.Ticker.Default" />
+      <MemberSignature Language="F#" Value="member this.Default : Xamarin.Forms.Internals.Ticker" Usage="Xamarin.Forms.Internals.Ticker.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Internals.Ticker</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableTimer">
+      <MemberSignature Language="C#" Value="protected abstract void DisableTimer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DisableTimer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.DisableTimer" />
+      <MemberSignature Language="F#" Value="abstract member DisableTimer : unit -&gt; unit" Usage="ticker.DisableTimer " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableTimer">
+      <MemberSignature Language="C#" Value="protected abstract void EnableTimer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EnableTimer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.EnableTimer" />
+      <MemberSignature Language="F#" Value="abstract member EnableTimer : unit -&gt; unit" Usage="ticker.EnableTimer " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public virtual int Insert (Func&lt;long,bool&gt; timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Insert(class System.Func`2&lt;int64, bool&gt; timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.Insert(System.Func{System.Int64,System.Boolean})" />
+      <MemberSignature Language="F#" Value="abstract member Insert : Func&lt;int64, bool&gt; -&gt; int&#xA;override this.Insert : Func&lt;int64, bool&gt; -&gt; int" Usage="ticker.Insert timeout" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.Func&lt;System.Int64,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public virtual void Remove (int handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(int32 handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.Remove(System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member Remove : int -&gt; unit&#xA;override this.Remove : int -&gt; unit" Usage="ticker.Remove handle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="handle">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendSignals">
+      <MemberSignature Language="C#" Value="protected void SendSignals (int timestep = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SendSignals(int32 timestep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.SendSignals(System.Int32)" />
+      <MemberSignature Language="F#" Value="member this.SendSignals : int -&gt; unit" Usage="ticker.SendSignals timestep" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timestep" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="timestep">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefault">
+      <MemberSignature Language="C#" Value="public static void SetDefault (Xamarin.Forms.Internals.Ticker ticker);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDefault(class Xamarin.Forms.Internals.Ticker ticker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.SetDefault(Xamarin.Forms.Internals.Ticker)" />
+      <MemberSignature Language="F#" Value="static member SetDefault : Xamarin.Forms.Internals.Ticker -&gt; unit" Usage="Xamarin.Forms.Internals.Ticker.SetDefault ticker" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ticker" Type="Xamarin.Forms.Internals.Ticker" />
+      </Parameters>
+      <Docs>
+        <param name="ticker">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

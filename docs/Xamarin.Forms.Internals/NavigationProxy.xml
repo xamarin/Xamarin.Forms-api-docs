@@ -1,0 +1,619 @@
+<Type Name="NavigationProxy" FullName="Xamarin.Forms.Internals.NavigationProxy">
+  <TypeSignature Language="C#" Value="public class NavigationProxy : Xamarin.Forms.INavigation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NavigationProxy extends System.Object implements class Xamarin.Forms.INavigation" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.NavigationProxy" />
+  <TypeSignature Language="F#" Value="type NavigationProxy = class&#xA;    interface INavigation" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.INavigation</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>For internal use by the Xamarin.Forms platform.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NavigationProxy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModalStack">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt; GetModalStack ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;class Xamarin.Forms.Page&gt; GetModalStack() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.GetModalStack" />
+      <MemberSignature Language="F#" Value="abstract member GetModalStack : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;&#xA;override this.GetModalStack : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;" Usage="navigationProxy.GetModalStack " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNavigationStack">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt; GetNavigationStack ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;class Xamarin.Forms.Page&gt; GetNavigationStack() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.GetNavigationStack" />
+      <MemberSignature Language="F#" Value="abstract member GetNavigationStack : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;&#xA;override this.GetNavigationStack : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;" Usage="navigationProxy.GetNavigationStack " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inner">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.INavigation Inner { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.INavigation Inner" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.NavigationProxy.Inner" />
+      <MemberSignature Language="F#" Value="member this.Inner : Xamarin.Forms.INavigation with get, set" Usage="Xamarin.Forms.Internals.NavigationProxy.Inner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.INavigation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertPageBefore">
+      <MemberSignature Language="C#" Value="public void InsertPageBefore (Xamarin.Forms.Page page, Xamarin.Forms.Page before);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertPageBefore(class Xamarin.Forms.Page page, class Xamarin.Forms.Page before) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.InsertPageBefore(Xamarin.Forms.Page,Xamarin.Forms.Page)" />
+      <MemberSignature Language="F#" Value="abstract member InsertPageBefore : Xamarin.Forms.Page * Xamarin.Forms.Page -&gt; unit&#xA;override this.InsertPageBefore : Xamarin.Forms.Page * Xamarin.Forms.Page -&gt; unit" Usage="navigationProxy.InsertPageBefore (page, before)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.InsertPageBefore(Xamarin.Forms.Page,Xamarin.Forms.Page)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Xamarin.Forms.Page" />
+        <Parameter Name="before" Type="Xamarin.Forms.Page" />
+      </Parameters>
+      <Docs>
+        <param name="page">For internal use by the Xamarin.Forms platform.</param>
+        <param name="before">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModalStack">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt; ModalStack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Xamarin.Forms.Page&gt; ModalStack" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.NavigationProxy.ModalStack" />
+      <MemberSignature Language="F#" Value="member this.ModalStack : System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;" Usage="Xamarin.Forms.Internals.NavigationProxy.ModalStack" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.INavigation.ModalStack</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigationStack">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt; NavigationStack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Xamarin.Forms.Page&gt; NavigationStack" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.NavigationProxy.NavigationStack" />
+      <MemberSignature Language="F#" Value="member this.NavigationStack : System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;" Usage="Xamarin.Forms.Internals.NavigationProxy.NavigationStack" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.INavigation.NavigationStack</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInsertPageBefore">
+      <MemberSignature Language="C#" Value="protected virtual void OnInsertPageBefore (Xamarin.Forms.Page page, Xamarin.Forms.Page before);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnInsertPageBefore(class Xamarin.Forms.Page page, class Xamarin.Forms.Page before) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.OnInsertPageBefore(Xamarin.Forms.Page,Xamarin.Forms.Page)" />
+      <MemberSignature Language="F#" Value="abstract member OnInsertPageBefore : Xamarin.Forms.Page * Xamarin.Forms.Page -&gt; unit&#xA;override this.OnInsertPageBefore : Xamarin.Forms.Page * Xamarin.Forms.Page -&gt; unit" Usage="navigationProxy.OnInsertPageBefore (page, before)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Xamarin.Forms.Page" />
+        <Parameter Name="before" Type="Xamarin.Forms.Page" />
+      </Parameters>
+      <Docs>
+        <param name="page">For internal use by the Xamarin.Forms platform.</param>
+        <param name="before">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPopAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt; OnPopAsync (bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Xamarin.Forms.Page&gt; OnPopAsync(bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.OnPopAsync(System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member OnPopAsync : bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;&#xA;override this.OnPopAsync : bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="navigationProxy.OnPopAsync animated" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPopModal">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt; OnPopModal (bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Xamarin.Forms.Page&gt; OnPopModal(bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.OnPopModal(System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member OnPopModal : bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;&#xA;override this.OnPopModal : bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="navigationProxy.OnPopModal animated" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPopToRootAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnPopToRootAsync (bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnPopToRootAsync(bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.OnPopToRootAsync(System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member OnPopToRootAsync : bool -&gt; System.Threading.Tasks.Task&#xA;override this.OnPopToRootAsync : bool -&gt; System.Threading.Tasks.Task" Usage="navigationProxy.OnPopToRootAsync animated" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPushAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnPushAsync (Xamarin.Forms.Page page, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnPushAsync(class Xamarin.Forms.Page page, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.OnPushAsync(Xamarin.Forms.Page,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member OnPushAsync : Xamarin.Forms.Page * bool -&gt; System.Threading.Tasks.Task&#xA;override this.OnPushAsync : Xamarin.Forms.Page * bool -&gt; System.Threading.Tasks.Task" Usage="navigationProxy.OnPushAsync (page, animated)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Xamarin.Forms.Page" />
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="page">For internal use by the Xamarin.Forms platform.</param>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPushModal">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnPushModal (Xamarin.Forms.Page modal, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnPushModal(class Xamarin.Forms.Page modal, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.OnPushModal(Xamarin.Forms.Page,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member OnPushModal : Xamarin.Forms.Page * bool -&gt; System.Threading.Tasks.Task&#xA;override this.OnPushModal : Xamarin.Forms.Page * bool -&gt; System.Threading.Tasks.Task" Usage="navigationProxy.OnPushModal (modal, animated)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modal" Type="Xamarin.Forms.Page" />
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="modal">For internal use by the Xamarin.Forms platform.</param>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemovePage">
+      <MemberSignature Language="C#" Value="protected virtual void OnRemovePage (Xamarin.Forms.Page page);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRemovePage(class Xamarin.Forms.Page page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.OnRemovePage(Xamarin.Forms.Page)" />
+      <MemberSignature Language="F#" Value="abstract member OnRemovePage : Xamarin.Forms.Page -&gt; unit&#xA;override this.OnRemovePage : Xamarin.Forms.Page -&gt; unit" Usage="navigationProxy.OnRemovePage page" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Xamarin.Forms.Page" />
+      </Parameters>
+      <Docs>
+        <param name="page">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt; PopAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Xamarin.Forms.Page&gt; PopAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.PopAsync" />
+      <MemberSignature Language="F#" Value="abstract member PopAsync : unit -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;&#xA;override this.PopAsync : unit -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="navigationProxy.PopAsync " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.PopAsync</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt; PopAsync (bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Xamarin.Forms.Page&gt; PopAsync(bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.PopAsync(System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member PopAsync : bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;&#xA;override this.PopAsync : bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="navigationProxy.PopAsync animated" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.PopAsync(System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopModalAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt; PopModalAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Xamarin.Forms.Page&gt; PopModalAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.PopModalAsync" />
+      <MemberSignature Language="F#" Value="abstract member PopModalAsync : unit -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;&#xA;override this.PopModalAsync : unit -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="navigationProxy.PopModalAsync " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.PopModalAsync</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopModalAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt; PopModalAsync (bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Xamarin.Forms.Page&gt; PopModalAsync(bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.PopModalAsync(System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member PopModalAsync : bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;&#xA;override this.PopModalAsync : bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="navigationProxy.PopModalAsync animated" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.PopModalAsync(System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopToRootAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PopToRootAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PopToRootAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.PopToRootAsync" />
+      <MemberSignature Language="F#" Value="abstract member PopToRootAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.PopToRootAsync : unit -&gt; System.Threading.Tasks.Task" Usage="navigationProxy.PopToRootAsync " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.PopToRootAsync</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopToRootAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PopToRootAsync (bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PopToRootAsync(bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.PopToRootAsync(System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member PopToRootAsync : bool -&gt; System.Threading.Tasks.Task&#xA;override this.PopToRootAsync : bool -&gt; System.Threading.Tasks.Task" Usage="navigationProxy.PopToRootAsync animated" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.PopToRootAsync(System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PushAsync (Xamarin.Forms.Page root);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PushAsync(class Xamarin.Forms.Page root) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.PushAsync(Xamarin.Forms.Page)" />
+      <MemberSignature Language="F#" Value="abstract member PushAsync : Xamarin.Forms.Page -&gt; System.Threading.Tasks.Task&#xA;override this.PushAsync : Xamarin.Forms.Page -&gt; System.Threading.Tasks.Task" Usage="navigationProxy.PushAsync root" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.PushAsync(Xamarin.Forms.Page)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="root" Type="Xamarin.Forms.Page" />
+      </Parameters>
+      <Docs>
+        <param name="root">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PushAsync (Xamarin.Forms.Page root, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PushAsync(class Xamarin.Forms.Page root, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.PushAsync(Xamarin.Forms.Page,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member PushAsync : Xamarin.Forms.Page * bool -&gt; System.Threading.Tasks.Task&#xA;override this.PushAsync : Xamarin.Forms.Page * bool -&gt; System.Threading.Tasks.Task" Usage="navigationProxy.PushAsync (root, animated)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.PushAsync(Xamarin.Forms.Page,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="root" Type="Xamarin.Forms.Page" />
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="root">For internal use by the Xamarin.Forms platform.</param>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushModalAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PushModalAsync (Xamarin.Forms.Page modal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PushModalAsync(class Xamarin.Forms.Page modal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.PushModalAsync(Xamarin.Forms.Page)" />
+      <MemberSignature Language="F#" Value="abstract member PushModalAsync : Xamarin.Forms.Page -&gt; System.Threading.Tasks.Task&#xA;override this.PushModalAsync : Xamarin.Forms.Page -&gt; System.Threading.Tasks.Task" Usage="navigationProxy.PushModalAsync modal" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.PushModalAsync(Xamarin.Forms.Page)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modal" Type="Xamarin.Forms.Page" />
+      </Parameters>
+      <Docs>
+        <param name="modal">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushModalAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PushModalAsync (Xamarin.Forms.Page modal, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PushModalAsync(class Xamarin.Forms.Page modal, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.PushModalAsync(Xamarin.Forms.Page,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member PushModalAsync : Xamarin.Forms.Page * bool -&gt; System.Threading.Tasks.Task&#xA;override this.PushModalAsync : Xamarin.Forms.Page * bool -&gt; System.Threading.Tasks.Task" Usage="navigationProxy.PushModalAsync (modal, animated)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.PushModalAsync(Xamarin.Forms.Page,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modal" Type="Xamarin.Forms.Page" />
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="modal">For internal use by the Xamarin.Forms platform.</param>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePage">
+      <MemberSignature Language="C#" Value="public void RemovePage (Xamarin.Forms.Page page);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemovePage(class Xamarin.Forms.Page page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NavigationProxy.RemovePage(Xamarin.Forms.Page)" />
+      <MemberSignature Language="F#" Value="abstract member RemovePage : Xamarin.Forms.Page -&gt; unit&#xA;override this.RemovePage : Xamarin.Forms.Page -&gt; unit" Usage="navigationProxy.RemovePage page" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigation.RemovePage(Xamarin.Forms.Page)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Xamarin.Forms.Page" />
+      </Parameters>
+      <Docs>
+        <param name="page">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

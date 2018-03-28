@@ -1,0 +1,193 @@
+<Type Name="INavigationPageController" FullName="Xamarin.Forms.INavigationPageController">
+  <TypeSignature Language="C#" Value="public interface INavigationPageController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INavigationPageController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.INavigationPageController" />
+  <TypeSignature Language="F#" Value="type INavigationPageController = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>For internal use by platform renderers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InsertPageBeforeRequested">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; InsertPageBeforeRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; InsertPageBeforeRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.INavigationPageController.InsertPageBeforeRequested" />
+      <MemberSignature Language="F#" Value="member this.InsertPageBeforeRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.InsertPageBeforeRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pages">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.Page&gt; Pages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Xamarin.Forms.Page&gt; Pages" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.INavigationPageController.Pages" />
+      <MemberSignature Language="F#" Value="member this.Pages : seq&lt;Xamarin.Forms.Page&gt;" Usage="Xamarin.Forms.INavigationPageController.Pages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Peek">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Page Peek (int depth = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.Page Peek(int32 depth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.INavigationPageController.Peek(System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member Peek : int -&gt; Xamarin.Forms.Page" Usage="iNavigationPageController.Peek depth" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Page</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="depth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="depth">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopAsyncInner">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt; PopAsyncInner (bool animated, bool fast = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Xamarin.Forms.Page&gt; PopAsyncInner(bool animated, bool fast) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.INavigationPageController.PopAsyncInner(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member PopAsyncInner : bool * bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="iNavigationPageController.PopAsyncInner (animated, fast)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="animated" Type="System.Boolean" />
+        <Parameter Name="fast" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="animated">For internal use by the Xamarin.Forms platform.</param>
+        <param name="fast">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopRequested">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; PopRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; PopRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.INavigationPageController.PopRequested" />
+      <MemberSignature Language="F#" Value="member this.PopRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.PopRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopToRootRequested">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; PopToRootRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; PopToRootRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.INavigationPageController.PopToRootRequested" />
+      <MemberSignature Language="F#" Value="member this.PopToRootRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.PopToRootRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushRequested">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; PushRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; PushRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.INavigationPageController.PushRequested" />
+      <MemberSignature Language="F#" Value="member this.PushRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.PushRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePageRequested">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; RemovePageRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; RemovePageRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.INavigationPageController.RemovePageRequested" />
+      <MemberSignature Language="F#" Value="member this.RemovePageRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.RemovePageRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StackDepth">
+      <MemberSignature Language="C#" Value="public int StackDepth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StackDepth" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.INavigationPageController.StackDepth" />
+      <MemberSignature Language="F#" Value="member this.StackDepth : int" Usage="Xamarin.Forms.INavigationPageController.StackDepth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

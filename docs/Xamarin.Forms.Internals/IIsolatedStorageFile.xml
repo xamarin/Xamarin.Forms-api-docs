@@ -1,0 +1,170 @@
+<Type Name="IIsolatedStorageFile" FullName="Xamarin.Forms.Internals.IIsolatedStorageFile">
+  <TypeSignature Language="C#" Value="public interface IIsolatedStorageFile" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IIsolatedStorageFile" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.IIsolatedStorageFile" />
+  <TypeSignature Language="F#" Value="type IIsolatedStorageFile = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>For internal use by the Xamarin.Forms platform.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateDirectoryAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CreateDirectoryAsync (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CreateDirectoryAsync(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IIsolatedStorageFile.CreateDirectoryAsync(System.String)" />
+      <MemberSignature Language="F#" Value="abstract member CreateDirectoryAsync : string -&gt; System.Threading.Tasks.Task" Usage="iIsolatedStorageFile.CreateDirectoryAsync path" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectoryExistsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; GetDirectoryExistsAsync (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; GetDirectoryExistsAsync(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IIsolatedStorageFile.GetDirectoryExistsAsync(System.String)" />
+      <MemberSignature Language="F#" Value="abstract member GetDirectoryExistsAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iIsolatedStorageFile.GetDirectoryExistsAsync path" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileExistsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; GetFileExistsAsync (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; GetFileExistsAsync(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IIsolatedStorageFile.GetFileExistsAsync(System.String)" />
+      <MemberSignature Language="F#" Value="abstract member GetFileExistsAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iIsolatedStorageFile.GetFileExistsAsync path" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLastWriteTimeAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;DateTimeOffset&gt; GetLastWriteTimeAsync (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype System.DateTimeOffset&gt; GetLastWriteTimeAsync(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IIsolatedStorageFile.GetLastWriteTimeAsync(System.String)" />
+      <MemberSignature Language="F#" Value="abstract member GetLastWriteTimeAsync : string -&gt; System.Threading.Tasks.Task&lt;DateTimeOffset&gt;" Usage="iIsolatedStorageFile.GetLastWriteTimeAsync path" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenFileAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; OpenFileAsync (string path, Xamarin.Forms.Internals.FileMode mode, Xamarin.Forms.Internals.FileAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; OpenFileAsync(string path, valuetype Xamarin.Forms.Internals.FileMode mode, valuetype Xamarin.Forms.Internals.FileAccess access) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IIsolatedStorageFile.OpenFileAsync(System.String,Xamarin.Forms.Internals.FileMode,Xamarin.Forms.Internals.FileAccess)" />
+      <MemberSignature Language="F#" Value="abstract member OpenFileAsync : string * Xamarin.Forms.Internals.FileMode * Xamarin.Forms.Internals.FileAccess -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="iIsolatedStorageFile.OpenFileAsync (path, mode, access)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="Xamarin.Forms.Internals.FileMode" />
+        <Parameter Name="access" Type="Xamarin.Forms.Internals.FileAccess" />
+      </Parameters>
+      <Docs>
+        <param name="path">For internal use by the Xamarin.Forms platform.</param>
+        <param name="mode">For internal use by the Xamarin.Forms platform.</param>
+        <param name="access">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenFileAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; OpenFileAsync (string path, Xamarin.Forms.Internals.FileMode mode, Xamarin.Forms.Internals.FileAccess access, Xamarin.Forms.Internals.FileShare share);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; OpenFileAsync(string path, valuetype Xamarin.Forms.Internals.FileMode mode, valuetype Xamarin.Forms.Internals.FileAccess access, valuetype Xamarin.Forms.Internals.FileShare share) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IIsolatedStorageFile.OpenFileAsync(System.String,Xamarin.Forms.Internals.FileMode,Xamarin.Forms.Internals.FileAccess,Xamarin.Forms.Internals.FileShare)" />
+      <MemberSignature Language="F#" Value="abstract member OpenFileAsync : string * Xamarin.Forms.Internals.FileMode * Xamarin.Forms.Internals.FileAccess * Xamarin.Forms.Internals.FileShare -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="iIsolatedStorageFile.OpenFileAsync (path, mode, access, share)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="Xamarin.Forms.Internals.FileMode" />
+        <Parameter Name="access" Type="Xamarin.Forms.Internals.FileAccess" />
+        <Parameter Name="share" Type="Xamarin.Forms.Internals.FileShare" />
+      </Parameters>
+      <Docs>
+        <param name="path">For internal use by the Xamarin.Forms platform.</param>
+        <param name="mode">For internal use by the Xamarin.Forms platform.</param>
+        <param name="access">For internal use by the Xamarin.Forms platform.</param>
+        <param name="share">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

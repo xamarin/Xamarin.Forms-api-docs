@@ -1,0 +1,85 @@
+<Type Name="ITemplatedItemsView&lt;TItem&gt;" FullName="Xamarin.Forms.ITemplatedItemsView&lt;TItem&gt;">
+  <TypeSignature Language="C#" Value="public interface ITemplatedItemsView&lt;TItem&gt; : Xamarin.Forms.IItemsView&lt;TItem&gt; where TItem : BindableObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITemplatedItemsView`1&lt;(class Xamarin.Forms.BindableObject) TItem&gt; implements class Xamarin.Forms.IItemsView`1&lt;!TItem&gt;" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ITemplatedItemsView`1" />
+  <TypeSignature Language="F#" Value="type ITemplatedItemsView&lt;'Item (requires 'Item :&gt; BindableObject)&gt; = interface&#xA;    interface IItemsView&lt;'Item (requires 'Item :&gt; BindableObject)&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TItem">
+      <Constraints>
+        <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IItemsView&lt;TItem&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TItem">To be added.</typeparam>
+    <summary>This interface is for internal use by platform renderers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ListProxy">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.IListProxy ListProxy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IListProxy ListProxy" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ITemplatedItemsView`1.ListProxy" />
+      <MemberSignature Language="F#" Value="member this.ListProxy : Xamarin.Forms.IListProxy" Usage="Xamarin.Forms.ITemplatedItemsView&lt;'Item (requires 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.ListProxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IListProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ITemplatedItemsView`1.PropertyChanged" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplatedItems">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt; TemplatedItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ITemplatedItemsList`1&lt;!TItem&gt; TemplatedItems" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ITemplatedItemsView`1.TemplatedItems" />
+      <MemberSignature Language="F#" Value="member this.TemplatedItems : Xamarin.Forms.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="Xamarin.Forms.ITemplatedItemsView&lt;'Item (requires 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.TemplatedItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,130 @@
+<Type Name="IPinchGestureController" FullName="Xamarin.Forms.IPinchGestureController">
+  <TypeSignature Language="C#" Value="public interface IPinchGestureController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPinchGestureController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IPinchGestureController" />
+  <TypeSignature Language="F#" Value="type IPinchGestureController = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>For internal use by platform renderers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsPinching">
+      <MemberSignature Language="C#" Value="public bool IsPinching { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPinching" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IPinchGestureController.IsPinching" />
+      <MemberSignature Language="F#" Value="member this.IsPinching : bool with get, set" Usage="Xamarin.Forms.IPinchGestureController.IsPinching" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by platform renderers.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPinch">
+      <MemberSignature Language="C#" Value="public void SendPinch (Xamarin.Forms.Element sender, double scale, Xamarin.Forms.Point currentScalePoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPinch(class Xamarin.Forms.Element sender, float64 scale, valuetype Xamarin.Forms.Point currentScalePoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IPinchGestureController.SendPinch(Xamarin.Forms.Element,System.Double,Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="abstract member SendPinch : Xamarin.Forms.Element * double * Xamarin.Forms.Point -&gt; unit" Usage="iPinchGestureController.SendPinch (sender, scale, currentScalePoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.Element" />
+        <Parameter Name="scale" Type="System.Double" />
+        <Parameter Name="currentScalePoint" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="sender">For internal use by the Xamarin.Forms platform.</param>
+        <param name="scale">For internal use by the Xamarin.Forms platform.</param>
+        <param name="currentScalePoint">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPinchCanceled">
+      <MemberSignature Language="C#" Value="public void SendPinchCanceled (Xamarin.Forms.Element sender);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPinchCanceled(class Xamarin.Forms.Element sender) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IPinchGestureController.SendPinchCanceled(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="abstract member SendPinchCanceled : Xamarin.Forms.Element -&gt; unit" Usage="iPinchGestureController.SendPinchCanceled sender" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="sender">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPinchEnded">
+      <MemberSignature Language="C#" Value="public void SendPinchEnded (Xamarin.Forms.Element sender);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPinchEnded(class Xamarin.Forms.Element sender) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IPinchGestureController.SendPinchEnded(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="abstract member SendPinchEnded : Xamarin.Forms.Element -&gt; unit" Usage="iPinchGestureController.SendPinchEnded sender" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="sender">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPinchStarted">
+      <MemberSignature Language="C#" Value="public void SendPinchStarted (Xamarin.Forms.Element sender, Xamarin.Forms.Point intialScalePoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPinchStarted(class Xamarin.Forms.Element sender, valuetype Xamarin.Forms.Point intialScalePoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IPinchGestureController.SendPinchStarted(Xamarin.Forms.Element,Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="abstract member SendPinchStarted : Xamarin.Forms.Element * Xamarin.Forms.Point -&gt; unit" Usage="iPinchGestureController.SendPinchStarted (sender, intialScalePoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.Element" />
+        <Parameter Name="intialScalePoint" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="sender">For internal use by the Xamarin.Forms platform.</param>
+        <param name="intialScalePoint">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

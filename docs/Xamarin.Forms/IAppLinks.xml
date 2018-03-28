@@ -1,0 +1,87 @@
+<Type Name="IAppLinks" FullName="Xamarin.Forms.IAppLinks">
+  <TypeSignature Language="C#" Value="public interface IAppLinks" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAppLinks" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IAppLinks" />
+  <TypeSignature Language="F#" Value="type IAppLinks = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Interface that defines the methods that are required for registering and deregistering links to content in apps.</summary>
+    <remarks>Developers should note that extra steps are required to enable deep linking on the Android platform. See the related article that is linked below.</remarks>
+    <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
+  </Docs>
+  <Members>
+    <Member MemberName="DeregisterLink">
+      <MemberSignature Language="C#" Value="public void DeregisterLink (Uri appLinkUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeregisterLink(class System.Uri appLinkUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IAppLinks.DeregisterLink(System.Uri)" />
+      <MemberSignature Language="F#" Value="abstract member DeregisterLink : Uri -&gt; unit" Usage="iAppLinks.DeregisterLink appLinkUri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appLinkUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="appLinkUri">The <see cref="T:System.Uri" /> that represents the link to remove from the app index.</param>
+        <summary>Removes the provided application link from the application index.</summary>
+        <remarks>This method has no effect on the Android platform.</remarks>
+        <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
+      </Docs>
+    </Member>
+    <Member MemberName="DeregisterLink">
+      <MemberSignature Language="C#" Value="public void DeregisterLink (Xamarin.Forms.IAppLinkEntry appLink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeregisterLink(class Xamarin.Forms.IAppLinkEntry appLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IAppLinks.DeregisterLink(Xamarin.Forms.IAppLinkEntry)" />
+      <MemberSignature Language="F#" Value="abstract member DeregisterLink : Xamarin.Forms.IAppLinkEntry -&gt; unit" Usage="iAppLinks.DeregisterLink appLink" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appLink" Type="Xamarin.Forms.IAppLinkEntry" />
+      </Parameters>
+      <Docs>
+        <param name="appLink">The <see cref="T:Xamarin.Forms.IAppLinkEntry" /> to remove from the app index.</param>
+        <summary>Removes the provided application link from the application index.</summary>
+        <remarks>This method has no effect on the Android platform.</remarks>
+        <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterLink">
+      <MemberSignature Language="C#" Value="public void RegisterLink (Xamarin.Forms.IAppLinkEntry appLink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterLink(class Xamarin.Forms.IAppLinkEntry appLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IAppLinks.RegisterLink(Xamarin.Forms.IAppLinkEntry)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterLink : Xamarin.Forms.IAppLinkEntry -&gt; unit" Usage="iAppLinks.RegisterLink appLink" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appLink" Type="Xamarin.Forms.IAppLinkEntry" />
+      </Parameters>
+      <Docs>
+        <param name="appLink">The <see cref="T:Xamarin.Forms.IAppLinkEntry" /> to add to the app index.</param>
+        <summary>Adds the provided application link to the application index.</summary>
+        <remarks>To be added.</remarks>
+        <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

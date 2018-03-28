@@ -1,0 +1,54 @@
+<Type Name="IMarkupExtension&lt;T&gt;" FullName="Xamarin.Forms.Xaml.IMarkupExtension&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IMarkupExtension&lt;out T&gt; : Xamarin.Forms.Xaml.IMarkupExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMarkupExtension`1&lt;+ T&gt; implements class Xamarin.Forms.Xaml.IMarkupExtension" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Xaml.IMarkupExtension`1" />
+  <TypeSignature Language="F#" Value="type IMarkupExtension&lt;'T&gt; = interface&#xA;    interface IMarkupExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.Xaml.IMarkupExtension</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>Provides a base class for XAML markup extension implementations</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ProvideValue">
+      <MemberSignature Language="C#" Value="public T ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.IMarkupExtension`1.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="F#" Value="abstract member ProvideValue : IServiceProvider -&gt; 'T" Usage="iMarkupExtension.ProvideValue serviceProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">The service that provides the value.</param>
+        <summary>When implemented in a derived class, returns an object that is provided as the value of the target property for this markup extension.</summary>
+        <returns>The object that is provided as the value of the target property for this markup extension.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

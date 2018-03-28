@@ -1,0 +1,297 @@
+<Type Name="AutomationProperties" FullName="Xamarin.Forms.AutomationProperties">
+  <TypeSignature Language="C#" Value="public class AutomationProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutomationProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.AutomationProperties" />
+  <TypeSignature Language="F#" Value="type AutomationProperties = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains both abbreviated and detailed UI information that is supplied to accessibility services.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AutomationProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AutomationProperties.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.AutomationProperties" /> object with default values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHelpText">
+      <MemberSignature Language="C#" Value="public static string GetHelpText (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetHelpText(class Xamarin.Forms.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AutomationProperties.GetHelpText(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetHelpText : Xamarin.Forms.BindableObject -&gt; string" Usage="Xamarin.Forms.AutomationProperties.GetHelpText bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The bindable object whose help text to get.</param>
+        <summary>Returns the help text, if any, for the bindable object.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsInAccessibleTree">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;bool&gt; GetIsInAccessibleTree (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;bool&gt; GetIsInAccessibleTree(class Xamarin.Forms.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AutomationProperties.GetIsInAccessibleTree(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetIsInAccessibleTree : Xamarin.Forms.BindableObject -&gt; Nullable&lt;bool&gt;" Usage="Xamarin.Forms.AutomationProperties.GetIsInAccessibleTree bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The bindable object whose status to check.</param>
+        <summary>Gets a nullable Boolean value that tells whether the bindable object is available to the accessibility system.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="bindable" /> is available to the accessibility system. <see langword="false" /> or <see langword="null" /> if it is not.</returns>
+        <remarks>Developers use <see cref="M:Xamarin.Forms.AutomationProperties.SetIsInAccessibilityTree" /> to set this attached property to <see langword="true" /> in order to make the bindable object available to the accessibility system.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLabeledBy">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.VisualElement GetLabeledBy (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.VisualElement GetLabeledBy(class Xamarin.Forms.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AutomationProperties.GetLabeledBy(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetLabeledBy : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.VisualElement" Usage="Xamarin.Forms.AutomationProperties.GetLabeledBy bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.VisualElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The object whose label to find.</param>
+        <summary>Returns the element that labels <paramref name="bindable" />, if <paramref name="bindable" /> does not label itself and if another element describes it in the UI.</summary>
+        <returns>The element that labels <paramref name="bindable" />, if present.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public static string GetName (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetName(class Xamarin.Forms.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AutomationProperties.GetName(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetName : Xamarin.Forms.BindableObject -&gt; string" Usage="Xamarin.Forms.AutomationProperties.GetName bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The object whose name to get.</param>
+        <summary>Returns the short, developer-specified, introductory name of the element, such as "Progress Indicator" or "Button".</summary>
+        <returns>The short, introdctory name of the element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty HelpTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty HelpTextProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AutomationProperties.HelpTextProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable HelpTextProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.AutomationProperties.HelpTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the attached property that contains the detailed description of the UI element and its behavior.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInAccessibleTreeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsInAccessibleTreeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsInAccessibleTreeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AutomationProperties.IsInAccessibleTreeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInAccessibleTreeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.AutomationProperties.IsInAccessibleTreeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the attached property that contains a Boolean value that tells whether the element is available to the accessible app.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabeledByProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty LabeledByProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty LabeledByProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AutomationProperties.LabeledByProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable LabeledByProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.AutomationProperties.LabeledByProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the attached property that holds a reference to the element that labels the element that is being made accessible.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty NameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty NameProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AutomationProperties.NameProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable NameProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.AutomationProperties.NameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the attached property that contains the brief description of the UI element</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHelpText">
+      <MemberSignature Language="C#" Value="public static void SetHelpText (Xamarin.Forms.BindableObject bindable, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetHelpText(class Xamarin.Forms.BindableObject bindable, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AutomationProperties.SetHelpText(Xamarin.Forms.BindableObject,System.String)" />
+      <MemberSignature Language="F#" Value="static member SetHelpText : Xamarin.Forms.BindableObject * string -&gt; unit" Usage="Xamarin.Forms.AutomationProperties.SetHelpText (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The object whose help text to set.</param>
+        <param name="value">The new help text value.</param>
+        <summary>Sets the help text for <paramref name="bindable" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsInAccessibleTree">
+      <MemberSignature Language="C#" Value="public static void SetIsInAccessibleTree (Xamarin.Forms.BindableObject bindable, Nullable&lt;bool&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsInAccessibleTree(class Xamarin.Forms.BindableObject bindable, valuetype System.Nullable`1&lt;bool&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AutomationProperties.SetIsInAccessibleTree(Xamarin.Forms.BindableObject,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="F#" Value="static member SetIsInAccessibleTree : Xamarin.Forms.BindableObject * Nullable&lt;bool&gt; -&gt; unit" Usage="Xamarin.Forms.AutomationProperties.SetIsInAccessibleTree (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The object ot add or remove from the accessibility system.</param>
+        <param name="value">
+          <see langword="true" /> to make <paramref name="bindable" /> visible to the accessibility system. <see langword="false" /> to remove it from the system.</param>
+        <summary>Sets a Boolean value that tells whether the bindable object is available to the accessibility system.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLabeledBy">
+      <MemberSignature Language="C#" Value="public static void SetLabeledBy (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.VisualElement value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLabeledBy(class Xamarin.Forms.BindableObject bindable, class Xamarin.Forms.VisualElement value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AutomationProperties.SetLabeledBy(Xamarin.Forms.BindableObject,Xamarin.Forms.VisualElement)" />
+      <MemberSignature Language="F#" Value="static member SetLabeledBy : Xamarin.Forms.BindableObject * Xamarin.Forms.VisualElement -&gt; unit" Usage="Xamarin.Forms.AutomationProperties.SetLabeledBy (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.VisualElement" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The object whose label to set.</param>
+        <param name="value">The visual element that will name <paramref name="bindable" />, or <see langword="null" /> to make <paramref name="bindable" /> its own label.</param>
+        <summary>Sets another element, such as a <see cref="T:Xamarin.Forms.Label" /> as the label for <paramref name="bindable" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetName">
+      <MemberSignature Language="C#" Value="public static void SetName (Xamarin.Forms.BindableObject bindable, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetName(class Xamarin.Forms.BindableObject bindable, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AutomationProperties.SetName(Xamarin.Forms.BindableObject,System.String)" />
+      <MemberSignature Language="F#" Value="static member SetName : Xamarin.Forms.BindableObject * string -&gt; unit" Usage="Xamarin.Forms.AutomationProperties.SetName (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The object whose name to set.</param>
+        <param name="value">The new name.</param>
+        <summary>Sets the short, developer-specified, introductory name of the element, such as "Progress Indicator" or "Button"..</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

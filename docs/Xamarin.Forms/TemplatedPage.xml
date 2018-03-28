@@ -1,0 +1,75 @@
+<Type Name="TemplatedPage" FullName="Xamarin.Forms.TemplatedPage">
+  <TypeSignature Language="C#" Value="public class TemplatedPage : Xamarin.Forms.Page" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplatedPage extends Xamarin.Forms.Page" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.TemplatedPage" />
+  <TypeSignature Language="F#" Value="type TemplatedPage = class&#xA;    inherit Page&#xA;    interface IControlTemplated" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.Page</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A page that displays full-screen content with a control template, and the base class for <see cref="T:Xamarin.Forms.ContentPage" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplatedPage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TemplatedPage.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new empty templated page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlTemplate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ControlTemplate ControlTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ControlTemplate ControlTemplate" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TemplatedPage.ControlTemplate" />
+      <MemberSignature Language="F#" Value="member this.ControlTemplate : Xamarin.Forms.ControlTemplate with get, set" Usage="Xamarin.Forms.TemplatedPage.ControlTemplate" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IControlTemplated.ControlTemplate</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ControlTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control template that is used to display content.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ControlTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ControlTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.TemplatedPage.ControlTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.TemplatedPage.ControlTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="T:Xamarin.Forms.TemplatedPage.ControlTemplate" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

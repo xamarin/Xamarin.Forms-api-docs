@@ -1,0 +1,201 @@
+<Type Name="DataView" FullName="Xamarin.Forms.Pages.DataView">
+  <TypeSignature Language="C#" Value="public class DataView : Xamarin.Forms.ContentView, Xamarin.Forms.Pages.IDataSourceProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataView extends Xamarin.Forms.ContentView implements class Xamarin.Forms.Pages.IDataSourceProvider" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Pages.DataView" />
+  <TypeSignature Language="F#" Value="type DataView = class&#xA;    inherit ContentView&#xA;    interface IDataSourceProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.ContentView</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.Pages.IDataSourceProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Pages.DataView.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.Pages.IDataItem&gt; Data { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Xamarin.Forms.Pages.IDataItem&gt; Data" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Pages.DataView.Data" />
+      <MemberSignature Language="F#" Value="member this.Data : seq&lt;Xamarin.Forms.Pages.IDataItem&gt; with get, set" Usage="Xamarin.Forms.Pages.DataView.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.Pages.IDataItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DataProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DataProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Pages.DataView.DataProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DataProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Pages.DataView.DataProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSource">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Pages.IDataSource DataSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Pages.IDataSource DataSource" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Pages.DataView.DataSource" />
+      <MemberSignature Language="F#" Value="member this.DataSource : Xamarin.Forms.Pages.IDataSource with get, set" Usage="Xamarin.Forms.Pages.DataView.DataSource" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Pages.IDataSourceProvider.DataSource</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Pages.IDataSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DataSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DataSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Pages.DataView.DataSourceProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DataSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Pages.DataView.DataSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultItemTemplate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate DefaultItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate DefaultItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Pages.DataView.DefaultItemTemplate" />
+      <MemberSignature Language="F#" Value="member this.DefaultItemTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.Pages.DataView.DefaultItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DefaultItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DefaultItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Pages.DataView.DefaultItemTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultItemTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Pages.DataView.DefaultItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.Pages.IDataSourceProvider.MaskKey">
+      <MemberSignature Language="C#" Value="void IDataSourceProvider.MaskKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Pages.IDataSourceProvider.MaskKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Pages.DataView.Xamarin#Forms#Pages#IDataSourceProvider#MaskKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Pages.IDataSourceProvider.MaskKey(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.Pages.IDataSourceProvider.UnmaskKey">
+      <MemberSignature Language="C#" Value="void IDataSourceProvider.UnmaskKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Pages.IDataSourceProvider.UnmaskKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Pages.DataView.Xamarin#Forms#Pages#IDataSourceProvider#UnmaskKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Pages.IDataSourceProvider.UnmaskKey(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
