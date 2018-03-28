@@ -38,12 +38,8 @@
       <para>
         <see cref="T:Xamarin.Forms.Layout`1" />s contain <see cref="P:Xamarin.Forms.Layout`1.Children" /> that are of the type <c>T</c> with which the <see cref="T:Xamarin.Forms.Layout`1" /> was specified. This <c>T</c> must be of type <see cref="T:Xamarin.Forms.View" />. Since <see cref="T:Xamarin.Forms.Layout" />s are subclasses of <see cref="T:Xamarin.Forms.View" />, this means that layouts may be nested, contain scrolling regions, etc.  
       </para>
-      <para>The following image shows the relationship between <see cref="T:Xamarin.Forms.View" />, <see cref="T:Xamarin.Forms.Layout" />, <see cref="T:Xamarin.Forms.Layout`1" />, and important subtypes.</para>
       <para>
-        <img href="Element.Hierarchy.png" />
-      </para>
-      <para>
-          The following example shows adding and removing elements from a layout.
+          The following example shows one way to add elements to a layout.
           </para>
       <example>
         <code lang="C#"><![CDATA[

@@ -32,31 +32,7 @@
     </summary>
     <remarks>
       <para>Subtypes of <see cref="T:Xamarin.Forms.Layout" /> include <see cref="T:Xamarin.Forms.ContentView" />, <see cref="T:Xamarin.Forms.ScrollView" />, and <see cref="T:Xamarin.Forms.Layout`1" />, as shown in the following diagram.</para>
-      <para>The <see cref="P:Xamarin.Forms.Layout`1.Children" /> property of <see cref="T:Xamarin.Forms.Layout`1" /> contains a list of children of the parameterized type <c>T</c>, which must be a type of <see cref="T:Xamarin.Forms.View" />. Since <see cref="T:Xamarin.Forms.Layout" /> is itself a subclass of <see cref="T:Xamarin.Forms.View" />, this allows <see cref="T:Xamarin.Forms.Layout" />s to hold sub-layouts, scrolling regions, etc.</para>
-      <!-- Until and unless we get a tool to do these graphics properl. Will need intro text for this, too.
-      <para>
-        <img href="Element.Hierarchy.png" />
-      </para>-->
-      <para>XAML for Xamarin.Forms supports the following properties for the <see cref="T:Xamarin.Forms.Layout" /> class:</para>
-      <list type="table">
-        <listheader>
-          <term>Property</term>
-          <description>Value</description>
-        </listheader>
-        <item>
-          <term>IsClippedToBounds</term>
-          <description>
-            <para>
-              <c>true</c> or <c>false</c>, to indicate whether the layout is clipped to its bounding rectangle.</para>
-          </description>
-        </item>
-        <item>
-          <term>Padding</term>
-          <description>
-            <para>A comma-separated list of 4 integers that represent a <see cref="T:Xamarin.Forms.Thickness" /> structure.</para>
-          </description>
-        </item>
-      </list>
+      <para>The <see cref="P:Xamarin.Forms.Layout`1.Children" /> property of <see cref="T:Xamarin.Forms.Layout`1" /> contains a list of children of the parameterized type <c>T</c>, which must be a type of <see cref="T:Xamarin.Forms.View" />. Since <see cref="T:Xamarin.Forms.Layout" /> is itself a subclass of <see cref="T:Xamarin.Forms.View" />, this allows <see cref="T:Xamarin.Forms.Layout" />s to hold sub-layouts, scrolling regions, &amp; etc.</para>
     </remarks>
     <altmember cref="T:Xamarin.Forms.ContentView" />
     <altmember cref="T:Xamarin.Forms.Layout`1" />
