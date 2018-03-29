@@ -98,8 +98,8 @@ Device.BeginInvokeOnMainThread (() => {
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of custom flags that were set on the device before Forms was initialized.</summary>
-        <value>The list of custom flags that were set on the device before Forms was initialized.</value>
+        <summary>Gets a list of custom flags that were set on the device before Xamarin.Forms was initialized.</summary>
+        <value>The list of custom flags that were set on the device before Xamarin.Forms was initialized.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,7 +573,7 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
         <param name="flags">The list of custom flag values.</param>
         <summary>Sets a list of custom flags on the device.</summary>
         <remarks>
-          <para>Developers should only call this method before Forms is initialized..</para>
+          <para>Developers should only call this method before Xamarin.Forms is initialized..</para>
         </remarks>
       </Docs>
     </Member>
