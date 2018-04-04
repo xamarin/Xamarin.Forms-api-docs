@@ -1,0 +1,282 @@
+<Type Name="IPlatformServices" FullName="Xamarin.Forms.Internals.IPlatformServices">
+  <TypeSignature Language="C#" Value="public interface IPlatformServices" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPlatformServices" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.IPlatformServices" />
+  <TypeSignature Language="F#" Value="type IPlatformServices = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>For internal use by the Xamarin.Forms platform.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginInvokeOnMainThread">
+      <MemberSignature Language="C#" Value="public void BeginInvokeOnMainThread (Action action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInvokeOnMainThread(class System.Action action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.BeginInvokeOnMainThread(System.Action)" />
+      <MemberSignature Language="F#" Value="abstract member BeginInvokeOnMainThread : Action -&gt; unit" Usage="iPlatformServices.BeginInvokeOnMainThread action" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.Action" />
+      </Parameters>
+      <Docs>
+        <param name="action">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTicker">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Internals.Ticker CreateTicker ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.Internals.Ticker CreateTicker() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.CreateTicker" />
+      <MemberSignature Language="F#" Value="abstract member CreateTicker : unit -&gt; Xamarin.Forms.Internals.Ticker" Usage="iPlatformServices.CreateTicker " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Internals.Ticker</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAssemblies">
+      <MemberSignature Language="C#" Value="public System.Reflection.Assembly[] GetAssemblies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly[] GetAssemblies() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.GetAssemblies" />
+      <MemberSignature Language="F#" Value="abstract member GetAssemblies : unit -&gt; System.Reflection.Assembly[]" Usage="iPlatformServices.GetAssemblies " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMD5Hash">
+      <MemberSignature Language="C#" Value="public string GetMD5Hash (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetMD5Hash(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.GetMD5Hash(System.String)" />
+      <MemberSignature Language="F#" Value="abstract member GetMD5Hash : string -&gt; string" Usage="iPlatformServices.GetMD5Hash input" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamedSize">
+      <MemberSignature Language="C#" Value="public double GetNamedSize (Xamarin.Forms.NamedSize size, Type targetElementType, bool useOldSizes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 GetNamedSize(valuetype Xamarin.Forms.NamedSize size, class System.Type targetElementType, bool useOldSizes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.GetNamedSize(Xamarin.Forms.NamedSize,System.Type,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member GetNamedSize : Xamarin.Forms.NamedSize * Type * bool -&gt; double" Usage="iPlatformServices.GetNamedSize (size, targetElementType, useOldSizes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="Xamarin.Forms.NamedSize" />
+        <Parameter Name="targetElementType" Type="System.Type" />
+        <Parameter Name="useOldSizes" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="size">For internal use by the Xamarin.Forms platform.</param>
+        <param name="targetElementType">For internal use by the Xamarin.Forms platform.</param>
+        <param name="useOldSizes">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStreamAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetStreamAsync (Uri uri, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetStreamAsync(class System.Uri uri, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.GetStreamAsync(System.Uri,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamAsync : Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="iPlatformServices.GetStreamAsync (uri, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="uri">For internal use by the Xamarin.Forms platform.</param>
+        <param name="cancellationToken">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserStoreForApplication">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Internals.IIsolatedStorageFile GetUserStoreForApplication ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.Internals.IIsolatedStorageFile GetUserStoreForApplication() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.GetUserStoreForApplication" />
+      <MemberSignature Language="F#" Value="abstract member GetUserStoreForApplication : unit -&gt; Xamarin.Forms.Internals.IIsolatedStorageFile" Usage="iPlatformServices.GetUserStoreForApplication " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Internals.IIsolatedStorageFile</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInvokeRequired">
+      <MemberSignature Language="C#" Value="public bool IsInvokeRequired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInvokeRequired" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.IPlatformServices.IsInvokeRequired" />
+      <MemberSignature Language="F#" Value="member this.IsInvokeRequired : bool" Usage="Xamarin.Forms.Internals.IPlatformServices.IsInvokeRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenUriAction">
+      <MemberSignature Language="C#" Value="public void OpenUriAction (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OpenUriAction(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.OpenUriAction(System.Uri)" />
+      <MemberSignature Language="F#" Value="abstract member OpenUriAction : Uri -&gt; unit" Usage="iPlatformServices.OpenUriAction uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuitApplication">
+      <MemberSignature Language="C#" Value="public void QuitApplication ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void QuitApplication() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.QuitApplication" />
+      <MemberSignature Language="F#" Value="abstract member QuitApplication : unit -&gt; unit" Usage="iPlatformServices.QuitApplication " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuntimePlatform">
+      <MemberSignature Language="C#" Value="public string RuntimePlatform { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RuntimePlatform" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.IPlatformServices.RuntimePlatform" />
+      <MemberSignature Language="F#" Value="member this.RuntimePlatform : string" Usage="Xamarin.Forms.Internals.IPlatformServices.RuntimePlatform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTimer">
+      <MemberSignature Language="C#" Value="public void StartTimer (TimeSpan interval, Func&lt;bool&gt; callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartTimer(valuetype System.TimeSpan interval, class System.Func`1&lt;bool&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.StartTimer(System.TimeSpan,System.Func{System.Boolean})" />
+      <MemberSignature Language="F#" Value="abstract member StartTimer : TimeSpan * Func&lt;bool&gt; -&gt; unit" Usage="iPlatformServices.StartTimer (interval, callback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.Func&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="interval">For internal use by the Xamarin.Forms platform.</param>
+        <param name="callback">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,77 @@
+<Type Name="RoutingEffect" FullName="Xamarin.Forms.RoutingEffect">
+  <TypeSignature Language="C#" Value="public class RoutingEffect : Xamarin.Forms.Effect" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoutingEffect extends Xamarin.Forms.Effect" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.RoutingEffect" />
+  <TypeSignature Language="F#" Value="type RoutingEffect = class&#xA;    inherit Effect" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.Effect</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Platform-independent effect that wraps an inner effect, which is usually platform-specific.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RoutingEffect (string effectId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string effectId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.RoutingEffect.#ctor(System.String)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.RoutingEffect : string -&gt; Xamarin.Forms.RoutingEffect" Usage="new Xamarin.Forms.RoutingEffect effectId" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="effectId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="effectId">The ID for the effect.</param>
+        <summary>Creates a new routing effect with the specified <paramref name="effectId" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAttached">
+      <MemberSignature Language="C#" Value="protected override void OnAttached ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAttached() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.RoutingEffect.OnAttached" />
+      <MemberSignature Language="F#" Value="override this.OnAttached : unit -&gt; unit" Usage="routingEffect.OnAttached " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Method that is called after the effect is attached and made valid.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDetached">
+      <MemberSignature Language="C#" Value="protected override void OnDetached ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDetached() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.RoutingEffect.OnDetached" />
+      <MemberSignature Language="F#" Value="override this.OnDetached : unit -&gt; unit" Usage="routingEffect.OnDetached " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Method that is called after the effect is detached and invalidated.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,2015 @@
+<Type Name="ListView" FullName="Xamarin.Forms.ListView">
+  <TypeSignature Language="C#" Value="public class ListView : Xamarin.Forms.ItemsView&lt;Xamarin.Forms.Cell&gt;, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.ListView&gt;, Xamarin.Forms.IListViewController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListView extends Xamarin.Forms.ItemsView`1&lt;class Xamarin.Forms.Cell&gt; implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.ListView&gt;, class Xamarin.Forms.IElementController, class Xamarin.Forms.IListViewController, class Xamarin.Forms.IViewController, class Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ListView" />
+  <TypeSignature Language="F#" Value="type ListView = class&#xA;    inherit ItemsView&lt;Cell&gt;&#xA;    interface IListViewController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;ListView&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.5.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.ItemsView&lt;Xamarin.Forms.Cell&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TVisual">Xamarin.Forms.Cell</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.ListView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IListViewController</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.RenderWith(typeof(Xamarin.Forms.Platform._ListViewRenderer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An <see cref="T:Xamarin.Forms.ItemsView{TVisual}" /> that displays a collection of data as a vertical list.</summary>
+    <remarks>
+      <para>
+        <img href="ListView.TripleScreenShot.png" />
+      </para>
+      <para>The following example shows a basic use:</para>
+      <example>
+        <code lang="C#"><![CDATA[
+using System;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace FormsGallery
+{
+class ListViewDemoPage : ContentPage
+    {
+        class Person
+        {
+            public Person(string name, DateTime birthday, Color favoriteColor)
+            {
+                this.Name = name;
+                this.Birthday = birthday;
+                this.FavoriteColor = favoriteColor;
+            }
+
+            public string Name { private set; get; }
+
+            public DateTime Birthday { private set; get; }
+
+            public Color FavoriteColor { private set; get; }
+        };
+
+        public ListViewDemoPage()
+        {
+            Label header = new Label
+            {
+                Text = "ListView",
+                FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center
+            };
+
+            // Define some data.
+            List<Person> people = new List<Person>
+            {
+                new Person("Abigail", new DateTime(1975, 1, 15), Color.Aqua),
+                new Person("Bob", new DateTime(1976, 2, 20), Color.Black),
+                // ...etc.,...
+                new Person("Yvonne", new DateTime(1987, 1, 10), Color.Purple),
+                new Person("Zachary", new DateTime(1988, 2, 5), Color.Red)
+            };
+
+            // Create the ListView.
+            ListView listView = new ListView
+            {
+                // Source of data items.
+                ItemsSource = people,
+
+                // Define template for displaying each item.
+                // (Argument of DataTemplate constructor is called for 
+                //      each item; it must return a Cell derivative.)
+                ItemTemplate = new DataTemplate(() =>
+                    {
+                        // Create views with bindings for displaying each property.
+                        Label nameLabel = new Label();
+                        nameLabel.SetBinding(Label.TextProperty, "Name");
+
+                        Label birthdayLabel = new Label();
+                        birthdayLabel.SetBinding(Label.TextProperty,
+                            new Binding("Birthday", BindingMode.OneWay, 
+                                null, null, "Born {0:d}"));
+
+                        BoxView boxView = new BoxView();
+                        boxView.SetBinding(BoxView.ColorProperty, "FavoriteColor");
+
+                        // Return an assembled ViewCell.
+                        return new ViewCell
+                        {
+                            View = new StackLayout
+                            {
+                                Padding = new Thickness(0, 5),
+                                Orientation = StackOrientation.Horizontal,
+                                Children = 
+                                {
+                                    boxView,
+                                    new StackLayout
+                                    {
+                                        VerticalOptions = LayoutOptions.Center,
+                                        Spacing = 0,
+                                        Children = 
+                                        {
+                                            nameLabel,
+                                            birthdayLabel
+                                        }
+                                        }
+                                }
+                                }
+                        };
+                    })
+            };
+
+            // Accomodate iPhone status bar.
+            this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
+
+            // Build the page.
+            this.Content = new StackLayout
+            {
+                Children = 
+                {
+                    header,
+                    listView
+                }
+                };
+        }
+    }
+}
+
+]]></code>
+      </example>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates and initializes a new instance of the <see cref="T:Xamarin.Forms.ListView" /> class.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListView (Xamarin.Forms.ListViewCachingStrategy cachingStrategy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.ListViewCachingStrategy cachingStrategy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.#ctor(Xamarin.Forms.ListViewCachingStrategy)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.ListView : Xamarin.Forms.ListViewCachingStrategy -&gt; Xamarin.Forms.ListView" Usage="new Xamarin.Forms.ListView cachingStrategy" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cachingStrategy" Type="Xamarin.Forms.ListViewCachingStrategy" />
+      </Parameters>
+      <Docs>
+        <param name="cachingStrategy">A value that indicates how the List View should manage memory when displaying data items using a data template.</param>
+        <summary>Creates and initializes a new instance of the <see cref="T:Xamarin.Forms.ListView" /> class, with the specified caching strategy.</summary>
+        <remarks>
+          <para>For memory and performance reasons, application developers should strongly prefer <see cref="F:Xamarin.Forms.ListViewCachingStrategy.RecycleElement" />, when possible. See <see cref="T:Xamarin.Forms.ListViewCachingStrategy" /> for more details.</para>
+          <para>
+            <block type="note">When developers specify <see cref="F:Xamarin.Forms.ListViewCachingStrategy.RecycleElement" />, <c>OnElementChanged</c> events are not raised when cells are recycled. Instead,  the cell is retained and its property values change when the binding context is updated to that of an available cell, <c>OnElementPropertyChanged</c> events are raised. Application developers should remember to listen for the correct events, and should note that their renderers will need to be updated if the default behavior changes to <see cref="F:Xamarin.Forms.ListViewCachingStrategy.RecycleElement" /> in a future release. </block>
+          </para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRefresh">
+      <MemberSignature Language="C#" Value="public void BeginRefresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginRefresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.BeginRefresh" />
+      <MemberSignature Language="F#" Value="member this.BeginRefresh : unit -&gt; unit" Usage="listView.BeginRefresh " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enters the refreshing state by setting the <see cref="P:Xamarin.Forms.ListView.IsRefreshing" /> property to <see langword="true" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CachingStrategy">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ListViewCachingStrategy CachingStrategy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ListViewCachingStrategy CachingStrategy" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.CachingStrategy" />
+      <MemberSignature Language="F#" Value="member this.CachingStrategy : Xamarin.Forms.ListViewCachingStrategy" Usage="Xamarin.Forms.ListView.CachingStrategy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ListViewCachingStrategy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDefault">
+      <MemberSignature Language="C#" Value="protected override Xamarin.Forms.Cell CreateDefault (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Xamarin.Forms.Cell CreateDefault(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.CreateDefault(System.Object)" />
+      <MemberSignature Language="F#" Value="override this.CreateDefault : obj -&gt; Xamarin.Forms.Cell" Usage="listView.CreateDefault item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Cell</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to create a default visual for.</param>
+        <summary>Creates an instance of the default visual representation of an item.</summary>
+        <returns>
+          A <see cref="T:Xamarin.Forms.TextCell" /> instance with its text set to the string representation of the object (<see cref="M:System.Object.ToString" />).
+        </returns>
+        <remarks>
+          <para>
+            This method is called by the templating system when <see cref="P:Xamarin.Forms.ListView.ItemTemplate" /> is <see langword="null" />.
+          </para>
+          <para>
+            The <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> of the returned object will automatically be set to <paramref name="item" />, there is no
+            need to set it yourself. If you do, it will be overridden.
+          </para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDefaultCell">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Cell CreateDefaultCell (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.Cell CreateDefaultCell(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.CreateDefaultCell(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member CreateDefaultCell : obj -&gt; Xamarin.Forms.Cell&#xA;override this.CreateDefaultCell : obj -&gt; Xamarin.Forms.Cell" Usage="listView.CreateDefaultCell item" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.CreateDefaultCell(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Cell</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">For internal use by the Xamarin.Forms platform..</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndRefresh">
+      <MemberSignature Language="C#" Value="public void EndRefresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndRefresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.EndRefresh" />
+      <MemberSignature Language="F#" Value="member this.EndRefresh : unit -&gt; unit" Usage="listView.EndRefresh " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Exits the refreshing state by setting the <see cref="P:Xamarin.Forms.ListView.IsRefreshing" /> property to <see langword="false" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Footer">
+      <MemberSignature Language="C#" Value="public object Footer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Footer" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.Footer" />
+      <MemberSignature Language="F#" Value="member this.Footer : obj with get, set" Usage="Xamarin.Forms.ListView.Footer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string, binding, or view that will be displayed at the bottom of the list view.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FooterElement">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Element FooterElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Element FooterElement" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.FooterElement" />
+      <MemberSignature Language="F#" Value="member this.FooterElement : Xamarin.Forms.Element" Usage="Xamarin.Forms.ListView.FooterElement" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IListViewController.FooterElement</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Element</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FooterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FooterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FooterProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.FooterProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FooterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.FooterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.ListView.Footer" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FooterTemplate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate FooterTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate FooterTemplate" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.FooterTemplate" />
+      <MemberSignature Language="F#" Value="member this.FooterTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.ListView.FooterTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a data template to use to format a data object for display at the bottom of the list view.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FooterTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FooterTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FooterTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.FooterTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FooterTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.FooterTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.ListView.FooterTemplate" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisplayTextFromGroup">
+      <MemberSignature Language="C#" Value="public string GetDisplayTextFromGroup (object cell);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDisplayTextFromGroup(object cell) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.GetDisplayTextFromGroup(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member GetDisplayTextFromGroup : obj -&gt; string&#xA;override this.GetDisplayTextFromGroup : obj -&gt; string" Usage="listView.GetDisplayTextFromGroup cell" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.GetDisplayTextFromGroup(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="cell">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupDisplayBinding">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.BindingBase GroupDisplayBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.BindingBase GroupDisplayBinding" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.GroupDisplayBinding" />
+      <MemberSignature Language="F#" Value="member this.GroupDisplayBinding : Xamarin.Forms.BindingBase with get, set" Usage="Xamarin.Forms.ListView.GroupDisplayBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindingBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the binding to use for display the group header.</summary>
+        <value>The <see cref="T:Xamarin.Forms.BindingBase" /> instance to apply to grouped lists, or <see cref="null" />.</value>
+        <remarks>
+          <para>
+                        This binding can be used to simply set a the text of the group headers without defining a full template and uses the default visuals
+                        of the platform to display it. The binding is applied to the <see cref="T:System.Collections.IEnumerable" /> of the group.
+                    </para>
+          <para>
+                        This property is mutually exclusive with <see cref="P:Xamarin.Forms.ListView.GroupHeaderTemplate" /> property. Setting it will set
+                        <see cref="P:Xamarin.Forms.ListView.GroupHeaderTemplate" /> to <see langword="null" />.
+                    </para>
+        </remarks>
+        <example>
+          <para>This example shows an alphabetized list of people, grouped by first initial with the display binding set.</para>
+          <code lang="C#"><![CDATA[
+    class Person
+    {
+        public string FullName
+        {
+            get;
+            set;
+        }
+
+        public string Address
+        {
+            get;
+            set;
+        }
+    }
+                        ]]></code>
+          <code lang="C#"><![CDATA[
+    class Group : ObservableCollection<Person>
+    {
+        public Group (string firstInitial)
+        {
+            FirstInitial = firstInitial;
+        }
+
+        public string FirstInitial
+        {
+            get;
+            private set;
+        }
+    }
+                        ]]></code>
+          <code lang="C#"><![CDATA[
+    ListView CreateListView()
+    {
+        var listView = new ListView {
+            IsGroupingEnabled = true,
+            GroupDisplayBinding = new Binding ("FirstInitial"),
+            GroupShortNameBinding = new Binding ("FirstInitial")
+        };
+
+        var template = new DataTemplate (typeof (TextCell));
+        template.SetBinding (TextCell.TextProperty, "FullName");
+        template.SetBinding (TextCell.DetailProperty, "Address");
+
+        itemsView.ItemTemplate = template;
+        itemsView.ItemsSource = new[] {
+            new Group ("C") {
+                new Person { FullName = "Caprice Nave" }
+            },
+
+            new Group ("J") {
+                new Person { FullName = "James Smith", Address = "404 Nowhere Street" },
+                new Person { FullName = "John Doe", Address = "404 Nowhere Ave" }
+            }
+        };
+    }
+                        ]]></code>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupDisplayBindingProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty GroupDisplayBindingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty GroupDisplayBindingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.GroupDisplayBinding" /> property.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupHeaderTemplate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate GroupHeaderTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate GroupHeaderTemplate" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.GroupHeaderTemplate" />
+      <MemberSignature Language="F#" Value="member this.GroupHeaderTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.ListView.GroupHeaderTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:Xamarin.Forms.DataTemplate" /> for group headers.</summary>
+        <value>The <see cref="T:Xamarin.Forms.DataTemplate" /> for group headers, or <see langword="null" />.</value>
+        <remarks>
+          <para>
+            Use this property to define a template for a <see cref="T:Xamarin.Forms.Cell" /> that will be used as the header for groups in this
+            <see cref="T:Xamarin.Forms.ListView" />. The <see cref="P:Xamarin.BindableObject.BindingContext" /> will be the <see cref="T:System.Collections.IEnumerable" />
+            for each group.
+          </para>
+          <para>
+            GroupHeaderTemplate is mutually exclusive with <see cref="P:Xamarin.Forms.ListView.GroupDisplayBinding" />. Setting this property
+            will set <see cref="P:Xamarin.Forms.ListView.GroupDisplayBinding" /> to <see langword="null" />.
+          </para>
+          <para>Empty groups will still display a group header.</para>
+        </remarks>
+        <altmember cref="P:Xamarin.Forms.ListView.ItemsSource" />
+        <altmember cref="P:Xamarin.Forms.ListView.GroupDisplayBinding" />
+        <altmember cref="P:Xamarin.Forms.ListView.IsGroupingEnabled" />
+      </Docs>
+    </Member>
+    <Member MemberName="GroupHeaderTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty GroupHeaderTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty GroupHeaderTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.GroupHeaderTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable GroupHeaderTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.GroupHeaderTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.GroupHeaderTemplate" /> property.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupShortNameBinding">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.BindingBase GroupShortNameBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.BindingBase GroupShortNameBinding" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.GroupShortNameBinding" />
+      <MemberSignature Language="F#" Value="member this.GroupShortNameBinding : Xamarin.Forms.BindingBase with get, set" Usage="Xamarin.Forms.ListView.GroupShortNameBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindingBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a binding for the name to display in grouped jump lists.</summary>
+        <value>The <see cref="T:Xamarin.Forms.BindingBase" /> instance to apply to grouped lists, or <see langword="null" />.</value>
+        <remarks>
+          <para>
+            When grouping items in a <see cref="T:Xamarin.Forms.ListView" />, it is often useful to have jump lists to jump to specific
+            sections in the list. For example, in an alphabetically grouped lists, the jump list would be the the letter of each group.
+            This binding is applied against the <see cref="T:System.Collections.IEnumerable" /> of each group to select the short name to display
+            in the jump list.
+          </para>
+          <para>
+            Note: On Android, there is no displayed jump list.
+          </para>
+        </remarks>
+        <example>
+          <para>This example shows an alphabetized list of people, grouped by first initial with the short name binding set.</para>
+          <code lang="C#"><![CDATA[
+class Person
+{
+  public string FullName
+  {
+    get;
+    set;
+  }
+
+  public string Address
+  {
+    get;
+    set;
+  }
+}
+          ]]></code>
+          <code lang="C#"><![CDATA[
+class Group : ObservableCollection<Person>
+{
+  public Group (string firstInitial)
+  {
+    FirstInitial = firstInitial;
+  }
+
+  public string FirstInitial
+  {
+    get;
+    private set;
+  }
+}
+          ]]></code>
+          <code lang="C#"><![CDATA[
+ListView CreateListView()
+{
+  var listView = new ListView {
+    IsGroupingEnabled = true,
+    GroupDisplayBinding = new Binding ("FirstInitial"),
+    GroupShortNameBinding = new Binding ("FirstInitial")
+  };
+
+  var template = new DataTemplate (typeof (TextCell));
+  template.SetBinding (TextCell.TextProperty, "FullName");
+  template.SetBinding (TextCell.DetailProperty, "Address");
+
+  itemsView.ItemTemplate = template;
+  itemsView.ItemsSource = new[] {
+        new Group ("C") {
+            new Person { FullName = "Caprice Nave" }
+        },
+
+    new Group ("J") {
+            new Person { FullName = "James Smith", Address = "404 Nowhere Street" },
+            new Person { FullName = "John Doe", Address = "404 Nowhere Ave" }
+        }
+  };
+}
+          ]]></code>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupShortNameBindingProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty GroupShortNameBindingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty GroupShortNameBindingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.GroupShortNameBinding" /> property.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasUnevenRows">
+      <MemberSignature Language="C#" Value="public bool HasUnevenRows { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasUnevenRows" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.HasUnevenRows" />
+      <MemberSignature Language="F#" Value="member this.HasUnevenRows : bool with get, set" Usage="Xamarin.Forms.ListView.HasUnevenRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that indicates whether this <see cref="T:Xamarin.Forms.ListView" /> element has uneven rows.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:Xamarin.Forms.ListView" /> control has uneven rows. Otherwise, <see langword="false" /></value>
+        <remarks>
+          <para>To automatically size row height to fit content, the developer first sets the <see cref="P:Xamarin.Forms.ListView.HasUnevenRows" /> property to <see langword="true" />; and, second, either leaves <see cref="P:Xamarin.Forms.ListView.RowHeight" /> at its default value of -1, or sets it to -1 if it has been changed.</para>
+          <para>Alternatively, to ensure a constant size for all rows, the developer first sets <see cref="P:Xamarin.Forms.ListView.HasUnevenRows" /> to <see langword="false" />, and then either: leaves <see cref="P:Xamarin.Forms.ListView.RowHeight" /> at its default value of -1 (or sets it back to that value if it has been changed) in order to get the default height for the system; or sets the <see cref="P:Xamarin.Forms.ListView.RowHeight" /> property to the desired uniform row height.</para>
+          <para>A more detailed discussion follows, below.</para>
+          <para>When the app developer sets the <see cref="P:Xamarin.Forms.ListView.HasUnevenRows" /> property to <see langword="false" />, the behavior of the list view depends on the <see cref="P:Xamarin.Forms.ListView.RowHeight" /> property. First, if the developer sets the <see cref="P:Xamarin.Forms.ListView.RowHeight" /> property to a positive value, then all rows in the <see cref="T:Xamarin.Forms.ListView" />, irrespective of the height of their content, will be as tall as the specified <see cref="P:Xamarin.Forms.ListView.RowHeight" /> property value. Second, if the develper instead does not set the <see cref="P:Xamarin.Forms.ListView.RowHeight" /> property, or sets it to a nonpositive value, then all rows in the <see cref="T:Xamarin.Forms.ListView" />, irrespective of the height of their content, will have the default row height for the system.</para>
+          <para>When the app developer sets the <see cref="P:Xamarin.Forms.ListView.HasUnevenRows" /> property to <see langword="true" />, the behavior of the list view still depends on the <see cref="P:Xamarin.Forms.ListView.RowHeight" /> property. First, if the developer either does not set the <see cref="P:Xamarin.Forms.ListView.RowHeight" /> property or sets it to -1, list view items are autosized to fit their contents. This is the desired behavior and the intended use case for a <see cref="P:Xamarin.Forms.ListView.HasUnevenRows" /> value of <see langword="true" />, as noted above. Second, if the developer sets the <see cref="P:Xamarin.Forms.ListView.RowHeight" /> property to 0 or to a negative value other than -1, then all rows in the <see cref="T:Xamarin.Forms.ListView" /> will, irrespective of the height of their content, have the default height for the system. Third, and finally, if the developer sets <see cref="P:Xamarin.Forms.ListView.RowHeight" /> to a positive value, then all rows in the <see cref="T:Xamarin.Forms.ListView" /> will, irrespective of the height of their content, be as tall as <see cref="P:Xamarin.Forms.ListView.RowHeight" />, as if <see cref="P:Xamarin.Forms.ListView.HasUnevenRows" /> had been set to <see langword="false" />.
+      </para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasUnevenRowsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty HasUnevenRowsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty HasUnevenRowsProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.HasUnevenRowsProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable HasUnevenRowsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.HasUnevenRowsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.HasUnevenRowsProperty" /> property.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="public object Header { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Header" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.Header" />
+      <MemberSignature Language="F#" Value="member this.Header : obj with get, set" Usage="Xamarin.Forms.ListView.Header" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string, binding, or view that will be displayed at the top of the list view.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderElement">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Element HeaderElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Element HeaderElement" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.HeaderElement" />
+      <MemberSignature Language="F#" Value="member this.HeaderElement : Xamarin.Forms.Element" Usage="Xamarin.Forms.ListView.HeaderElement" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IListViewController.HeaderElement</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Element</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty HeaderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty HeaderProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.HeaderProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.HeaderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.ListView.Header" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate HeaderTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate HeaderTemplate" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.HeaderTemplate" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.ListView.HeaderTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a data template to use to format a data object for display at the top of the list view.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty HeaderTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty HeaderTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.HeaderTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.HeaderTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.ListView.HeaderTemplate" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGroupingEnabled">
+      <MemberSignature Language="C#" Value="public bool IsGroupingEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsGroupingEnabled" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.IsGroupingEnabled" />
+      <MemberSignature Language="F#" Value="member this.IsGroupingEnabled : bool with get, set" Usage="Xamarin.Forms.ListView.IsGroupingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether or not grouping is enabled for <see cref="T:Xamarin.Forms.ListView" />.</summary>
+        <value>
+          <see langword="true" /> if grouping is enabled, <see langword="false" /> otherwise and by default.
+        </value>
+        <remarks>
+        </remarks>
+        <altmember cref="P:Xamarin.Forms.ListView.GroupDisplayBinding" />
+        <altmember cref="P:Xamarin.Forms.ListView.GroupHeaderTemplate" />
+      </Docs>
+    </Member>
+    <Member MemberName="IsGroupingEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsGroupingEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsGroupingEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.IsGroupingEnabledProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsGroupingEnabledProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.IsGroupingEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.IsGroupingEnabledProperty" /> property.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPullToRefreshEnabled">
+      <MemberSignature Language="C#" Value="public bool IsPullToRefreshEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPullToRefreshEnabled" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.IsPullToRefreshEnabled" />
+      <MemberSignature Language="F#" Value="member this.IsPullToRefreshEnabled : bool with get, set" Usage="Xamarin.Forms.ListView.IsPullToRefreshEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that tells whether the user can swipe down to cause the application to refresh.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPullToRefreshEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsPullToRefreshEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsPullToRefreshEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.IsPullToRefreshEnabledProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsPullToRefreshEnabledProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.IsPullToRefreshEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.ListView.IsPullToRefreshEnabled" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRefreshing">
+      <MemberSignature Language="C#" Value="public bool IsRefreshing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRefreshing" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.IsRefreshing" />
+      <MemberSignature Language="F#" Value="member this.IsRefreshing : bool with get, set" Usage="Xamarin.Forms.ListView.IsRefreshing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that tells whether the list view is currently refreshing.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRefreshingProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsRefreshingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsRefreshingProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.IsRefreshingProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsRefreshingProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.IsRefreshingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.ListView.IsRefreshing" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemAppearing">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.ItemVisibilityEventArgs&gt; ItemAppearing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.ItemVisibilityEventArgs&gt; ItemAppearing" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ListView.ItemAppearing" />
+      <MemberSignature Language="F#" Value="member this.ItemAppearing : EventHandler&lt;Xamarin.Forms.ItemVisibilityEventArgs&gt; " Usage="member this.ItemAppearing : System.EventHandler&lt;Xamarin.Forms.ItemVisibilityEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.ItemVisibilityEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the visual representation of an item is being added to the visual layout.</summary>
+        <remarks>This method is guaranteed to fire at some point before the element is on screen.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemDisappearing">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.ItemVisibilityEventArgs&gt; ItemDisappearing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.ItemVisibilityEventArgs&gt; ItemDisappearing" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ListView.ItemDisappearing" />
+      <MemberSignature Language="F#" Value="member this.ItemDisappearing : EventHandler&lt;Xamarin.Forms.ItemVisibilityEventArgs&gt; " Usage="member this.ItemDisappearing : System.EventHandler&lt;Xamarin.Forms.ItemVisibilityEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.ItemVisibilityEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the visual representation of an item is being removed from the visual layout.</summary>
+        <remarks>This method is for virtualization usage only. It is not guaranteed to fire for all visible items when the List is removed from the screen. Additionally it fires during virtualization, which may not correspond directly with removal from the screen depending on the platform virtualization technique used.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemSelected">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.SelectedItemChangedEventArgs&gt; ItemSelected;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.SelectedItemChangedEventArgs&gt; ItemSelected" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ListView.ItemSelected" />
+      <MemberSignature Language="F#" Value="member this.ItemSelected : EventHandler&lt;Xamarin.Forms.SelectedItemChangedEventArgs&gt; " Usage="member this.ItemSelected : System.EventHandler&lt;Xamarin.Forms.SelectedItemChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.SelectedItemChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Event that is raised when a new item is selected.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTapped">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.ItemTappedEventArgs&gt; ItemTapped;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.ItemTappedEventArgs&gt; ItemTapped" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ListView.ItemTapped" />
+      <MemberSignature Language="F#" Value="member this.ItemTapped : EventHandler&lt;Xamarin.Forms.ItemTappedEventArgs&gt; " Usage="member this.ItemTapped : System.EventHandler&lt;Xamarin.Forms.ItemTappedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.ItemTappedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Event that is raised when an item is tapped.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyRowTapped">
+      <MemberSignature Language="C#" Value="public void NotifyRowTapped (int index, Xamarin.Forms.Cell cell = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyRowTapped(int32 index, class Xamarin.Forms.Cell cell) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell)" />
+      <MemberSignature Language="F#" Value="abstract member NotifyRowTapped : int * Xamarin.Forms.Cell -&gt; unit&#xA;override this.NotifyRowTapped : int * Xamarin.Forms.Cell -&gt; unit" Usage="listView.NotifyRowTapped (index, cell)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="cell" Type="Xamarin.Forms.Cell" />
+      </Parameters>
+      <Docs>
+        <param name="index">For internal use by the Xamarin.Forms platform..</param>
+        <param name="cell">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyRowTapped">
+      <MemberSignature Language="C#" Value="public void NotifyRowTapped (int groupIndex, int inGroupIndex, Xamarin.Forms.Cell cell = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyRowTapped(int32 groupIndex, int32 inGroupIndex, class Xamarin.Forms.Cell cell) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell)" />
+      <MemberSignature Language="F#" Value="abstract member NotifyRowTapped : int * int * Xamarin.Forms.Cell -&gt; unit&#xA;override this.NotifyRowTapped : int * int * Xamarin.Forms.Cell -&gt; unit" Usage="listView.NotifyRowTapped (groupIndex, inGroupIndex, cell)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupIndex" Type="System.Int32" />
+        <Parameter Name="inGroupIndex" Type="System.Int32" />
+        <Parameter Name="cell" Type="Xamarin.Forms.Cell" />
+      </Parameters>
+      <Docs>
+        <param name="groupIndex">For internal use by the Xamarin.Forms platform.</param>
+        <param name="inGroupIndex">For internal use by the Xamarin.Forms platform.</param>
+        <param name="cell">To be added.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.ListView&gt; On&lt;T&gt; () where T : Xamarin.Forms.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.IPlatformElementConfiguration`2&lt;!!T, class Xamarin.Forms.ListView&gt; On&lt;(class Xamarin.Forms.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.On``1" />
+      <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.ListView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.ListView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="listView.On " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.ListView&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Xamarin.Forms.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>Returns the platform-specific instance of this <see cref="T:Xamarin.Forms.ListView" />, on which a platform-specific method may be called.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingContextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingContextChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.OnBindingContextChanged" />
+      <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="listView.OnBindingContextChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Method that is called when the binding context changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSizeRequest">
+      <MemberSignature Language="C#" Value="protected override Xamarin.Forms.SizeRequest OnSizeRequest (double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Xamarin.Forms.SizeRequest OnSizeRequest(float64 widthConstraint, float64 heightConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.OnSizeRequest(System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="override this.OnSizeRequest : double * double -&gt; Xamarin.Forms.SizeRequest" Usage="listView.OnSizeRequest (widthConstraint, heightConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.SizeRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widthConstraint" Type="System.Double" />
+        <Parameter Name="heightConstraint" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="widthConstraint">The width constraint.</param>
+        <param name="heightConstraint">The height constraint.</param>
+        <summary>Method that is called when a size request is made..</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshAllowed">
+      <MemberSignature Language="C#" Value="public bool RefreshAllowed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RefreshAllowed" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.RefreshAllowed" />
+      <MemberSignature Language="F#" Value="member this.RefreshAllowed : bool with get, set" Usage="Xamarin.Forms.ListView.RefreshAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshCommand">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand RefreshCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand RefreshCommand" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.RefreshCommand" />
+      <MemberSignature Language="F#" Value="member this.RefreshCommand : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.ListView.RefreshCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the command that is run when the list view enters the refreshing state.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshCommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty RefreshCommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty RefreshCommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.RefreshCommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable RefreshCommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.RefreshCommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.ListView.RefreshCommand" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refreshing">
+      <MemberSignature Language="C#" Value="public event EventHandler Refreshing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Refreshing" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ListView.Refreshing" />
+      <MemberSignature Language="F#" Value="member this.Refreshing : EventHandler " Usage="member this.Refreshing : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Event that is raised when the list view refreshes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowHeight">
+      <MemberSignature Language="C#" Value="public int RowHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowHeight" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.RowHeight" />
+      <MemberSignature Language="F#" Value="member this.RowHeight : int with get, set" Usage="Xamarin.Forms.ListView.RowHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that represents the height of a row.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty RowHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty RowHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.RowHeightProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable RowHeightProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.RowHeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.ListView.RowHeightProperty" /> property.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollTo">
+      <MemberSignature Language="C#" Value="public void ScrollTo (object item, Xamarin.Forms.ScrollToPosition position, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollTo(object item, valuetype Xamarin.Forms.ScrollToPosition position, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.ScrollTo(System.Object,Xamarin.Forms.ScrollToPosition,System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ScrollTo : obj * Xamarin.Forms.ScrollToPosition * bool -&gt; unit" Usage="listView.ScrollTo (item, position, animated)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="position" Type="Xamarin.Forms.ScrollToPosition" />
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item from your <see cref="P:Xamarin.Forms.ListView.ItemsSource" /> to scroll to.</param>
+        <param name="position">How the item should be positioned on screen.</param>
+        <param name="animated">Whether or not the scroll should be animated.</param>
+        <summary>Scrolls the ListView to the <paramref name="item" />.</summary>
+        <remarks>
+          <para>A linear search is done for the item, so if the same reference appears multiple times in the list, the first item will be scrolled to. This includes if grouping is enabled.</para>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="position" /> contains an invalid value for <see cref="T:Xamarin.Forms.ScrollToPosition" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollTo">
+      <MemberSignature Language="C#" Value="public void ScrollTo (object item, object group, Xamarin.Forms.ScrollToPosition position, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollTo(object item, object group, valuetype Xamarin.Forms.ScrollToPosition position, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.ScrollTo(System.Object,System.Object,Xamarin.Forms.ScrollToPosition,System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ScrollTo : obj * obj * Xamarin.Forms.ScrollToPosition * bool -&gt; unit" Usage="listView.ScrollTo (item, group, position, animated)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="group" Type="System.Object" />
+        <Parameter Name="position" Type="Xamarin.Forms.ScrollToPosition" />
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item from your <see cref="P:Xamarin.Forms.ListView.ItemsSource" /> to scroll to.</param>
+        <param name="group">The group from your <see cref="P:Xamarin.Forms.ListView.ItemsSource" /> to scroll to.</param>
+        <param name="position">How the item should be positioned on screen.</param>
+        <param name="animated">Whether or not the scroll should be animated.</param>
+        <summary>Scrolls the ListView to the <paramref name="item" /> in the <paramref name="group" /></summary>
+        <remarks>
+          <para>A linear search is done for the item, so if the same reference appears multiple times in the <paramref name="group" />, the first item will be scrolled to. The same item in a different group will be ignored.</para>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="position" /> contains an invalid value for <see cref="T:Xamarin.Forms.ScrollToPosition" />.
+                </exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:Xamarin.Forms.ListView.IsGroupingEnabled" /> is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollToRequested">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.ScrollToRequestedEventArgs&gt; ScrollToRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.ScrollToRequestedEventArgs&gt; ScrollToRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ListView.ScrollToRequested" />
+      <MemberSignature Language="F#" Value="member this.ScrollToRequested : EventHandler&lt;Xamarin.Forms.ScrollToRequestedEventArgs&gt; " Usage="member this.ScrollToRequested : System.EventHandler&lt;Xamarin.Forms.ScrollToRequestedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IListViewController.ScrollToRequested</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.ScrollToRequestedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItem">
+      <MemberSignature Language="C#" Value="public object SelectedItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SelectedItem" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.SelectedItem" />
+      <MemberSignature Language="F#" Value="member this.SelectedItem : obj with get, set" Usage="Xamarin.Forms.ListView.SelectedItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the currently selected item from the <see cref="P:Xamarin.Forms.ListView.ItemsSource" />.</summary>
+        <value>The selected item or <see langword="null" /> if no item is selected.</value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItemProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SelectedItemProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SelectedItemProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.SelectedItemProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedItemProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.SelectedItemProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.SelectedItemProperty" /> property.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendCellAppearing">
+      <MemberSignature Language="C#" Value="public void SendCellAppearing (Xamarin.Forms.Cell cell);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendCellAppearing(class Xamarin.Forms.Cell cell) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.SendCellAppearing(Xamarin.Forms.Cell)" />
+      <MemberSignature Language="F#" Value="abstract member SendCellAppearing : Xamarin.Forms.Cell -&gt; unit&#xA;override this.SendCellAppearing : Xamarin.Forms.Cell -&gt; unit" Usage="listView.SendCellAppearing cell" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.SendCellAppearing(Xamarin.Forms.Cell)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="Xamarin.Forms.Cell" />
+      </Parameters>
+      <Docs>
+        <param name="cell">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendCellDisappearing">
+      <MemberSignature Language="C#" Value="public void SendCellDisappearing (Xamarin.Forms.Cell cell);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendCellDisappearing(class Xamarin.Forms.Cell cell) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.SendCellDisappearing(Xamarin.Forms.Cell)" />
+      <MemberSignature Language="F#" Value="abstract member SendCellDisappearing : Xamarin.Forms.Cell -&gt; unit&#xA;override this.SendCellDisappearing : Xamarin.Forms.Cell -&gt; unit" Usage="listView.SendCellDisappearing cell" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.SendCellDisappearing(Xamarin.Forms.Cell)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="Xamarin.Forms.Cell" />
+      </Parameters>
+      <Docs>
+        <param name="cell">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendRefreshing">
+      <MemberSignature Language="C#" Value="public void SendRefreshing ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendRefreshing() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.SendRefreshing" />
+      <MemberSignature Language="F#" Value="abstract member SendRefreshing : unit -&gt; unit&#xA;override this.SendRefreshing : unit -&gt; unit" Usage="listView.SendRefreshing " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.SendRefreshing</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparatorColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color SeparatorColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color SeparatorColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.SeparatorColor" />
+      <MemberSignature Language="F#" Value="member this.SeparatorColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.ListView.SeparatorColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the bar that separates list items.</summary>
+        <value>To be added.</value>
+        <remarks>The default value is <c>Color.Default</c>. This property has no effect if <see cref="P:Xamarin.Forms.ListView.SeparatorVisibility" /> is <see langword="false" />.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparatorColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SeparatorColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SeparatorColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.SeparatorColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SeparatorColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.SeparatorColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.ListView.SeparatorColor" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparatorVisibility">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.SeparatorVisibility SeparatorVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.SeparatorVisibility SeparatorVisibility" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.SeparatorVisibility" />
+      <MemberSignature Language="F#" Value="member this.SeparatorVisibility : Xamarin.Forms.SeparatorVisibility with get, set" Usage="Xamarin.Forms.ListView.SeparatorVisibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.SeparatorVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that tells whether separators are visible between items.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparatorVisibilityProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SeparatorVisibilityProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SeparatorVisibilityProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ListView.SeparatorVisibilityProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SeparatorVisibilityProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ListView.SeparatorVisibilityProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.ListView.SeparatorVisibility" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupContent">
+      <MemberSignature Language="C#" Value="protected override void SetupContent (Xamarin.Forms.Cell content, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetupContent(class Xamarin.Forms.Cell content, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.SetupContent(Xamarin.Forms.Cell,System.Int32)" />
+      <MemberSignature Language="F#" Value="override this.SetupContent : Xamarin.Forms.Cell * int -&gt; unit" Usage="listView.SetupContent (content, index)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="Xamarin.Forms.Cell" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="content">The cell to set up.</param>
+        <param name="index">The index of the cell in the list of items.</param>
+        <summary>Application developers override this method to register event handlers for list view items.</summary>
+        <remarks>
+          <para>Application developers must call <see cref="M:Xamarin.Forms.ListView.SetupContent(Xamarin.Forms.Cell, int)" /> before performing any other action when overriding this method.</para>
+          <block type="note">Application developers who override this method to allocate resources must override <see cref="M:Xamarin.Forms.ListView.UnhookContent(Xamarin.Forms.Cell)" /> in order to deallocate them.</block>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnhookContent">
+      <MemberSignature Language="C#" Value="protected override void UnhookContent (Xamarin.Forms.Cell content);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UnhookContent(class Xamarin.Forms.Cell content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.UnhookContent(Xamarin.Forms.Cell)" />
+      <MemberSignature Language="F#" Value="override this.UnhookContent : Xamarin.Forms.Cell -&gt; unit" Usage="listView.UnhookContent content" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="Xamarin.Forms.Cell" />
+      </Parameters>
+      <Docs>
+        <param name="content">The cell to unhook.</param>
+        <summary>Application developers override this method to unregister event handlers for list view items that they registered in <see cref="M:Xamarin.Forms.ListView.SetupContent(Xamarin.Forms.Cell, int)" />.</summary>
+        <remarks>
+          <para>Application developers must call <see cref="M:Xamarin.Forms.ListView.UnhookContent(Xamarin.Forms.Cell, int)" /> before performing any other action when overriding this method.</para>
+          <block type="note">Application developers who override <see cref="M:Xamarin.Forms.ListView.SetupContent(Xamarin.Forms.Cell, int)" /> to allocate resources must override this method in order to deallocate them.</block>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ICellVisibilityProxy.SendCellAppearing">
+      <MemberSignature Language="C#" Value="void ICellVisibilityProxy.SendCellAppearing (Xamarin.Forms.Cell cell);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ICellVisibilityProxy.SendCellAppearing(class Xamarin.Forms.Cell cell) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="Xamarin.Forms.Cell" />
+      </Parameters>
+      <Docs>
+        <param name="cell">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ICellVisibilityProxy.SendCellDisappearing">
+      <MemberSignature Language="C#" Value="void ICellVisibilityProxy.SendCellDisappearing (Xamarin.Forms.Cell cell);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ICellVisibilityProxy.SendCellDisappearing(class Xamarin.Forms.Cell cell) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="Xamarin.Forms.Cell" />
+      </Parameters>
+      <Docs>
+        <param name="cell">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IListOrCarouselViewController.SendCellAppearing">
+      <MemberSignature Language="C#" Value="void IListOrCarouselViewController.SendCellAppearing (Xamarin.Forms.Cell cell);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IListOrCarouselViewController.SendCellAppearing(class Xamarin.Forms.Cell cell) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="Xamarin.Forms.Cell" />
+      </Parameters>
+      <Docs>
+        <param name="cell">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IListOrCarouselViewController.SendCellDisappearing">
+      <MemberSignature Language="C#" Value="void IListOrCarouselViewController.SendCellDisappearing (Xamarin.Forms.Cell cell);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IListOrCarouselViewController.SendCellDisappearing(class Xamarin.Forms.Cell cell) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="Xamarin.Forms.Cell" />
+      </Parameters>
+      <Docs>
+        <param name="cell">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IListViewController.FooterElement">
+      <MemberSignature Language="C#" Value="Xamarin.Forms.Element Xamarin.Forms.IListViewController.FooterElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Element Xamarin.Forms.IListViewController.FooterElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Element</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IListViewController.HeaderElement">
+      <MemberSignature Language="C#" Value="Xamarin.Forms.Element Xamarin.Forms.IListViewController.HeaderElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Element Xamarin.Forms.IListViewController.HeaderElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Element</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IListViewController.SendRefreshing">
+      <MemberSignature Language="C#" Value="void IListViewController.SendRefreshing ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IListViewController.SendRefreshing() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.5.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

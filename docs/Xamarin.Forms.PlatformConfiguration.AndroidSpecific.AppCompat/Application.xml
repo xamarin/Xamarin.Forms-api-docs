@@ -1,0 +1,359 @@
+<Type Name="Application" FullName="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application">
+  <TypeSignature Language="C#" Value="public static class Application" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Application extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application" />
+  <TypeSignature Language="F#" Value="type Application = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>AppCompat application instance on Android.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSendAppearingEventOnResume">
+      <MemberSignature Language="C#" Value="public static bool GetSendAppearingEventOnResume (Xamarin.Forms.BindableObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetSendAppearingEventOnResume(class Xamarin.Forms.BindableObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetSendAppearingEventOnResume(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetSendAppearingEventOnResume : Xamarin.Forms.BindableObject -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetSendAppearingEventOnResume element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether the appearing event is sent when the application resumes.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSendAppearingEventOnResume">
+      <MemberSignature Language="C#" Value="public static bool GetSendAppearingEventOnResume (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt; config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetSendAppearingEventOnResume(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.Application&gt; config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetSendAppearingEventOnResume(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application})" />
+      <MemberSignature Language="F#" Value="static member GetSendAppearingEventOnResume : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.Application&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetSendAppearingEventOnResume config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether the appearing event is sent when the application resumes.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSendDisappearingEventOnPause">
+      <MemberSignature Language="C#" Value="public static bool GetSendDisappearingEventOnPause (Xamarin.Forms.BindableObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetSendDisappearingEventOnPause(class Xamarin.Forms.BindableObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetSendDisappearingEventOnPause(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetSendDisappearingEventOnPause : Xamarin.Forms.BindableObject -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetSendDisappearingEventOnPause element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether the disappearing event is sent when the application is paused.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSendDisappearingEventOnPause">
+      <MemberSignature Language="C#" Value="public static bool GetSendDisappearingEventOnPause (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt; config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetSendDisappearingEventOnPause(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.Application&gt; config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetSendDisappearingEventOnPause(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application})" />
+      <MemberSignature Language="F#" Value="static member GetSendDisappearingEventOnPause : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.Application&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetSendDisappearingEventOnPause config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether the disappearing event is sent when the application is paused.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetShouldPreserveKeyboardOnResume">
+      <MemberSignature Language="C#" Value="public static bool GetShouldPreserveKeyboardOnResume (Xamarin.Forms.BindableObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetShouldPreserveKeyboardOnResume(class Xamarin.Forms.BindableObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetShouldPreserveKeyboardOnResume(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetShouldPreserveKeyboardOnResume : Xamarin.Forms.BindableObject -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetShouldPreserveKeyboardOnResume element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether the keyboard state should be preserved when the application resumes.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetShouldPreserveKeyboardOnResume">
+      <MemberSignature Language="C#" Value="public static bool GetShouldPreserveKeyboardOnResume (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt; config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetShouldPreserveKeyboardOnResume(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.Application&gt; config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetShouldPreserveKeyboardOnResume(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application})" />
+      <MemberSignature Language="F#" Value="static member GetShouldPreserveKeyboardOnResume : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.Application&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.GetShouldPreserveKeyboardOnResume config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether the keyboard state should be preserved when the application resumes.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAppearingEventOnResume">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt; SendAppearingEventOnResume (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt; config, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.Application&gt; SendAppearingEventOnResume(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.Application&gt; config, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SendAppearingEventOnResume(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application},System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SendAppearingEventOnResume : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.Application&gt; * bool -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.Application&gt;" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SendAppearingEventOnResume (config, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <param name="value">The new property value to assign.</param>
+        <summary>Sets a value that controls whether the appearing event is sent when the application resumes.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAppearingEventOnResumeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SendAppearingEventOnResumeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SendAppearingEventOnResumeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SendAppearingEventOnResumeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SendAppearingEventOnResumeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SendAppearingEventOnResumeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the attached property that controls whether the appearing event is sent when the application resumes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendDisappearingEventOnPause">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt; SendDisappearingEventOnPause (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt; config, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.Application&gt; SendDisappearingEventOnPause(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.Application&gt; config, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SendDisappearingEventOnPause(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application},System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SendDisappearingEventOnPause : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.Application&gt; * bool -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.Application&gt;" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SendDisappearingEventOnPause (config, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <param name="value">The new property value to assign.</param>
+        <summary>Sets a Boolean value that controls whether the disappearing event is sent when the application is paused.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendDisappearingEventOnPauseProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SendDisappearingEventOnPauseProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SendDisappearingEventOnPauseProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SendDisappearingEventOnPauseProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SendDisappearingEventOnPauseProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SendDisappearingEventOnPauseProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the attached property that controls whether the disappearing event is sent when the application is paused.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSendAppearingEventOnResume">
+      <MemberSignature Language="C#" Value="public static void SetSendAppearingEventOnResume (Xamarin.Forms.BindableObject element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSendAppearingEventOnResume(class Xamarin.Forms.BindableObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SetSendAppearingEventOnResume(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetSendAppearingEventOnResume : Xamarin.Forms.BindableObject * bool -&gt; unit" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SetSendAppearingEventOnResume (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <param name="value">The new property value to assign.</param>
+        <summary>Sets a Boolean value that controls whether the appearing event is sent when the application resumes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSendDisappearingEventOnPause">
+      <MemberSignature Language="C#" Value="public static void SetSendDisappearingEventOnPause (Xamarin.Forms.BindableObject element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSendDisappearingEventOnPause(class Xamarin.Forms.BindableObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SetSendDisappearingEventOnPause(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetSendDisappearingEventOnPause : Xamarin.Forms.BindableObject * bool -&gt; unit" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SetSendDisappearingEventOnPause (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <param name="value">The new property value to assign.</param>
+        <summary>Sets a Boolean value that controls whether the disappearing event is sent when the application is paused.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetShouldPreserveKeyboardOnResume">
+      <MemberSignature Language="C#" Value="public static void SetShouldPreserveKeyboardOnResume (Xamarin.Forms.BindableObject element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShouldPreserveKeyboardOnResume(class Xamarin.Forms.BindableObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SetShouldPreserveKeyboardOnResume(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetShouldPreserveKeyboardOnResume : Xamarin.Forms.BindableObject * bool -&gt; unit" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.SetShouldPreserveKeyboardOnResume (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <param name="value">The new property value to assign.</param>
+        <summary>Sets a Boolean value that controls whether the keyboard state should be preserved when the application resumes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldPreserveKeyboardOnResume">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt; ShouldPreserveKeyboardOnResume (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt; config, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.Application&gt; ShouldPreserveKeyboardOnResume(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.Application&gt; config, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.ShouldPreserveKeyboardOnResume(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application},System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member ShouldPreserveKeyboardOnResume : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.Application&gt; * bool -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.Application&gt;" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.ShouldPreserveKeyboardOnResume (config, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <param name="value">The new property value to assign.</param>
+        <summary>Sets a Boolean value that controls whether the keyboard state should be preserved when the application resumes.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldPreserveKeyboardOnResumeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShouldPreserveKeyboardOnResumeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShouldPreserveKeyboardOnResumeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.ShouldPreserveKeyboardOnResumeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShouldPreserveKeyboardOnResumeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.Application.ShouldPreserveKeyboardOnResumeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the property that controls whether the keyboard state should be preserved when the application resumes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

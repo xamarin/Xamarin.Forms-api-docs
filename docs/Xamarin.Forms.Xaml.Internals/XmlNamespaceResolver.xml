@@ -1,0 +1,141 @@
+<Type Name="XmlNamespaceResolver" FullName="Xamarin.Forms.Xaml.Internals.XmlNamespaceResolver">
+  <TypeSignature Language="C#" Value="public class XmlNamespaceResolver : System.Xml.IXmlNamespaceResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlNamespaceResolver extends System.Object implements class System.Xml.IXmlNamespaceResolver" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Xaml.Internals.XmlNamespaceResolver" />
+  <TypeSignature Language="F#" Value="type XmlNamespaceResolver = class&#xA;    interface IXmlNamespaceResolver" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Xml.IXmlNamespaceResolver</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlNamespaceResolver ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.XmlNamespaceResolver.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string prefix, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string prefix, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.XmlNamespaceResolver.Add(System.String,System.String)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; unit" Usage="xmlNamespaceResolver.Add (prefix, ns)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">To be added.</param>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamespacesInScope">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; GetNamespacesInScope (System.Xml.XmlNamespaceScope scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; GetNamespacesInScope(valuetype System.Xml.XmlNamespaceScope scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.XmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespacesInScope : System.Xml.XmlNamespaceScope -&gt; System.Collections.Generic.IDictionary&lt;string, string&gt;&#xA;override this.GetNamespacesInScope : System.Xml.XmlNamespaceScope -&gt; System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="xmlNamespaceResolver.GetNamespacesInScope scope" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Xml.XmlNamespaceScope" />
+      </Parameters>
+      <Docs>
+        <param name="scope">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupNamespace">
+      <MemberSignature Language="C#" Value="public string LookupNamespace (string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string LookupNamespace(string prefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.XmlNamespaceResolver.LookupNamespace(System.String)" />
+      <MemberSignature Language="F#" Value="abstract member LookupNamespace : string -&gt; string&#xA;override this.LookupNamespace : string -&gt; string" Usage="xmlNamespaceResolver.LookupNamespace prefix" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupPrefix">
+      <MemberSignature Language="C#" Value="public string LookupPrefix (string namespaceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string LookupPrefix(string namespaceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.XmlNamespaceResolver.LookupPrefix(System.String)" />
+      <MemberSignature Language="F#" Value="abstract member LookupPrefix : string -&gt; string&#xA;override this.LookupPrefix : string -&gt; string" Usage="xmlNamespaceResolver.LookupPrefix namespaceName" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="namespaceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

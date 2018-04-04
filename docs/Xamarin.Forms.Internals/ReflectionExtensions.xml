@@ -1,0 +1,196 @@
+<Type Name="ReflectionExtensions" FullName="Xamarin.Forms.Internals.ReflectionExtensions">
+  <TypeSignature Language="C#" Value="public static class ReflectionExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ReflectionExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.ReflectionExtensions" />
+  <TypeSignature Language="F#" Value="type ReflectionExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>For internal use by the Xamarin.Forms platform.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetField">
+      <MemberSignature Language="C#" Value="public static System.Reflection.FieldInfo GetField (this Type type, Func&lt;System.Reflection.FieldInfo,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.FieldInfo GetField(class System.Type type, class System.Func`2&lt;class System.Reflection.FieldInfo, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.ReflectionExtensions.GetField(System.Type,System.Func{System.Reflection.FieldInfo,System.Boolean})" />
+      <MemberSignature Language="F#" Value="static member GetField : Type * Func&lt;System.Reflection.FieldInfo, bool&gt; -&gt; System.Reflection.FieldInfo" Usage="Xamarin.Forms.Internals.ReflectionExtensions.GetField (type, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.FieldInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;System.Reflection.FieldInfo,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type">For internal use by the Xamarin.Forms platform.</param>
+        <param name="predicate">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetField">
+      <MemberSignature Language="C#" Value="public static System.Reflection.FieldInfo GetField (this Type type, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.FieldInfo GetField(class System.Type type, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.ReflectionExtensions.GetField(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetField : Type * string -&gt; System.Reflection.FieldInfo" Usage="Xamarin.Forms.Internals.ReflectionExtensions.GetField (type, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.FieldInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">For internal use by the Xamarin.Forms platform.</param>
+        <param name="name">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFields">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.FieldInfo&gt; GetFields (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.FieldInfo&gt; GetFields(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.ReflectionExtensions.GetFields(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetFields : Type -&gt; seq&lt;System.Reflection.FieldInfo&gt;" Usage="Xamarin.Forms.Internals.ReflectionExtensions.GetFields type" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.FieldInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.PropertyInfo&gt; GetProperties (this Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.PropertyInfo&gt; GetProperties(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.ReflectionExtensions.GetProperties(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetProperties : Type -&gt; seq&lt;System.Reflection.PropertyInfo&gt;" Usage="Xamarin.Forms.Internals.ReflectionExtensions.GetProperties type" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.PropertyInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="type">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo GetProperty (this Type type, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PropertyInfo GetProperty(class System.Type type, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.ReflectionExtensions.GetProperty(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetProperty : Type * string -&gt; System.Reflection.PropertyInfo" Usage="Xamarin.Forms.Internals.ReflectionExtensions.GetProperty (type, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">For internal use by the Xamarin.Forms platform.</param>
+        <param name="name">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAssignableFrom">
+      <MemberSignature Language="C#" Value="public static bool IsAssignableFrom (this Type self, Type c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAssignableFrom(class System.Type self, class System.Type c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.ReflectionExtensions.IsAssignableFrom(System.Type,System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsAssignableFrom : Type * Type -&gt; bool" Usage="Xamarin.Forms.Internals.ReflectionExtensions.IsAssignableFrom (self, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="self" Type="System.Type" RefType="this" />
+        <Parameter Name="c" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="self">For internal use by the Xamarin.Forms platform.</param>
+        <param name="c">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInstanceOfType">
+      <MemberSignature Language="C#" Value="public static bool IsInstanceOfType (this Type self, object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsInstanceOfType(class System.Type self, object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.ReflectionExtensions.IsInstanceOfType(System.Type,System.Object)" />
+      <MemberSignature Language="F#" Value="static member IsInstanceOfType : Type * obj -&gt; bool" Usage="Xamarin.Forms.Internals.ReflectionExtensions.IsInstanceOfType (self, o)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="self" Type="System.Type" RefType="this" />
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="self">For internal use by the Xamarin.Forms platform.</param>
+        <param name="o">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,231 @@
+<Type Name="PanGestureRecognizer" FullName="Xamarin.Forms.PanGestureRecognizer">
+  <TypeSignature Language="C#" Value="public class PanGestureRecognizer : Xamarin.Forms.GestureRecognizer, Xamarin.Forms.IPanGestureController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PanGestureRecognizer extends Xamarin.Forms.GestureRecognizer implements class Xamarin.Forms.IPanGestureController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.PanGestureRecognizer" />
+  <TypeSignature Language="F#" Value="type PanGestureRecognizer = class&#xA;    inherit GestureRecognizer&#xA;    interface IPanGestureController" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.GestureRecognizer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IPanGestureController</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A gesture recognizer for panning content that is larger than its parent view.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PanGestureRecognizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PanGestureRecognizer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.PanGestureRecognizer" /> with default values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanUpdated">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.PanUpdatedEventArgs&gt; PanUpdated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.PanUpdatedEventArgs&gt; PanUpdated" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.PanGestureRecognizer.PanUpdated" />
+      <MemberSignature Language="F#" Value="member this.PanUpdated : EventHandler&lt;Xamarin.Forms.PanUpdatedEventArgs&gt; " Usage="member this.PanUpdated : System.EventHandler&lt;Xamarin.Forms.PanUpdatedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.PanUpdatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Event that is raised when the pan gesture changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPan">
+      <MemberSignature Language="C#" Value="public void SendPan (Xamarin.Forms.Element sender, double totalX, double totalY, int gestureId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPan(class Xamarin.Forms.Element sender, float64 totalX, float64 totalY, int32 gestureId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PanGestureRecognizer.SendPan(Xamarin.Forms.Element,System.Double,System.Double,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member SendPan : Xamarin.Forms.Element * double * double * int -&gt; unit&#xA;override this.SendPan : Xamarin.Forms.Element * double * double * int -&gt; unit" Usage="panGestureRecognizer.SendPan (sender, totalX, totalY, gestureId)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPan(Xamarin.Forms.Element,System.Double,System.Double,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.Element" />
+        <Parameter Name="totalX" Type="System.Double" />
+        <Parameter Name="totalY" Type="System.Double" />
+        <Parameter Name="gestureId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">For internal use by the Xamarin.Forms platform.</param>
+        <param name="totalX">For internal use by the Xamarin.Forms platform.</param>
+        <param name="totalY">For internal use by the Xamarin.Forms platform.</param>
+        <param name="gestureId">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPanCanceled">
+      <MemberSignature Language="C#" Value="public void SendPanCanceled (Xamarin.Forms.Element sender, int gestureId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPanCanceled(class Xamarin.Forms.Element sender, int32 gestureId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PanGestureRecognizer.SendPanCanceled(Xamarin.Forms.Element,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member SendPanCanceled : Xamarin.Forms.Element * int -&gt; unit&#xA;override this.SendPanCanceled : Xamarin.Forms.Element * int -&gt; unit" Usage="panGestureRecognizer.SendPanCanceled (sender, gestureId)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPanCanceled(Xamarin.Forms.Element,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.Element" />
+        <Parameter Name="gestureId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">For internal use by the Xamarin.Forms platform..</param>
+        <param name="gestureId">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPanCompleted">
+      <MemberSignature Language="C#" Value="public void SendPanCompleted (Xamarin.Forms.Element sender, int gestureId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPanCompleted(class Xamarin.Forms.Element sender, int32 gestureId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PanGestureRecognizer.SendPanCompleted(Xamarin.Forms.Element,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member SendPanCompleted : Xamarin.Forms.Element * int -&gt; unit&#xA;override this.SendPanCompleted : Xamarin.Forms.Element * int -&gt; unit" Usage="panGestureRecognizer.SendPanCompleted (sender, gestureId)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPanCompleted(Xamarin.Forms.Element,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.Element" />
+        <Parameter Name="gestureId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">For internal use by the Xamarin.Forms platform.</param>
+        <param name="gestureId">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPanStarted">
+      <MemberSignature Language="C#" Value="public void SendPanStarted (Xamarin.Forms.Element sender, int gestureId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPanStarted(class Xamarin.Forms.Element sender, int32 gestureId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PanGestureRecognizer.SendPanStarted(Xamarin.Forms.Element,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member SendPanStarted : Xamarin.Forms.Element * int -&gt; unit&#xA;override this.SendPanStarted : Xamarin.Forms.Element * int -&gt; unit" Usage="panGestureRecognizer.SendPanStarted (sender, gestureId)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPanStarted(Xamarin.Forms.Element,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.Element" />
+        <Parameter Name="gestureId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">For internal use by the Xamarin.Forms platform.</param>
+        <param name="gestureId">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TouchPoints">
+      <MemberSignature Language="C#" Value="public int TouchPoints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TouchPoints" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.PanGestureRecognizer.TouchPoints" />
+      <MemberSignature Language="F#" Value="member this.TouchPoints : int with get, set" Usage="Xamarin.Forms.PanGestureRecognizer.TouchPoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of touch points in the gesture.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TouchPointsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TouchPointsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TouchPointsProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PanGestureRecognizer.TouchPointsProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TouchPointsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.PanGestureRecognizer.TouchPointsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.PanGestureRecognizer.TouchPoints" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

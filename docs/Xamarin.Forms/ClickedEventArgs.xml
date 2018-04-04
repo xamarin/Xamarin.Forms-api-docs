@@ -1,0 +1,79 @@
+<Type Name="ClickedEventArgs" FullName="Xamarin.Forms.ClickedEventArgs">
+  <TypeSignature Language="C#" Value="public class ClickedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClickedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ClickedEventArgs" />
+  <TypeSignature Language="F#" Value="type ClickedEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Event arguments for a click event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClickedEventArgs (Xamarin.Forms.ButtonsMask buttons, object commandParameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.ButtonsMask buttons, object commandParameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ClickedEventArgs.#ctor(Xamarin.Forms.ButtonsMask,System.Object)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.ClickedEventArgs : Xamarin.Forms.ButtonsMask * obj -&gt; Xamarin.Forms.ClickedEventArgs" Usage="new Xamarin.Forms.ClickedEventArgs (buttons, commandParameter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="buttons" Type="Xamarin.Forms.ButtonsMask" />
+        <Parameter Name="commandParameter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="buttons">The button or buttons that were pressed.</param>
+        <param name="commandParameter">The command parameter.</param>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.ClickedEventArgs" /> with the specified values..</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buttons">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ButtonsMask Buttons { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ButtonsMask Buttons" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ClickedEventArgs.Buttons" />
+      <MemberSignature Language="F#" Value="member this.Buttons : Xamarin.Forms.ButtonsMask" Usage="Xamarin.Forms.ClickedEventArgs.Buttons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ButtonsMask</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the button or buttons that were pressed.</summary>
+        <value>The button or buttons that were pressed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameter">
+      <MemberSignature Language="C#" Value="public object Parameter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parameter" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ClickedEventArgs.Parameter" />
+      <MemberSignature Language="F#" Value="member this.Parameter : obj" Usage="Xamarin.Forms.ClickedEventArgs.Parameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command parameter.</summary>
+        <value>The command parameter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
