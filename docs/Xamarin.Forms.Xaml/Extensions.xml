@@ -17,6 +17,35 @@
   </Docs>
   <Members>
     <Member MemberName="LoadFromXaml&lt;TXaml&gt;">
+      <MemberSignature Language="C#" Value="public static TXaml LoadFromXaml&lt;TXaml&gt; (this TXaml view, string xaml);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TXaml LoadFromXaml&lt;TXaml&gt;(!!TXaml view, string xaml) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Extensions.LoadFromXaml``1(``0,System.String)" />
+      <MemberSignature Language="F#" Value="static member LoadFromXaml : 'Xaml * string -&gt; 'Xaml" Usage="Xamarin.Forms.Xaml.Extensions.LoadFromXaml (view, xaml)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TXaml</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TXaml" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TXaml" RefType="this" />
+        <Parameter Name="xaml" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TXaml">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="xaml">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXaml&lt;TXaml&gt;">
       <MemberSignature Language="C#" Value="public static TXaml LoadFromXaml&lt;TXaml&gt; (this TXaml view, Type callingType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TXaml LoadFromXaml&lt;TXaml&gt;(!!TXaml view, class System.Type callingType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Extensions.LoadFromXaml``1(``0,System.Type)" />

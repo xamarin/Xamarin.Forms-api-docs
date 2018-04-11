@@ -2,7 +2,7 @@
   <TypeSignature Language="C#" Value="public class Frame : Xamarin.Forms.ContentView, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Frame&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Frame extends Xamarin.Forms.ContentView implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Frame&gt;" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Frame" />
-  <TypeSignature Language="F#" Value="type Frame = class&#xA;    inherit ContentView&#xA;    interface IElementConfiguration&lt;Frame&gt;" />
+  <TypeSignature Language="F#" Value="type Frame = class&#xA;    inherit ContentView&#xA;    interface IElementConfiguration&lt;Frame&gt;&#xA;    interface IPaddingElement&#xA;    interface IBorderElement" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -93,6 +93,43 @@ MainPage = new ContentPage () {
       <Docs>
         <summary>Initializes a new instance of the Frame class.</summary>
         <remarks>A Frame has a default <see cref="P:Xamarin.Forms.Layout.Padding" /> of 20.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color BorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color BorderColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Frame.BorderColor" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Frame.BorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty BorderColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty BorderColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Frame.BorderColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable BorderColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Frame.BorderColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CornerRadius">
@@ -230,6 +267,11 @@ MainPage = new ContentPage () {
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("OutlineColor is obsolete as of version 3.0.0. Please use BorderColor instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.Color</ReturnType>
       </ReturnValue>
@@ -256,6 +298,11 @@ MainPage = new ContentPage () {
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("OutlineColorProperty is obsolete as of version 3.0.0. Please use BorderColorProperty instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>

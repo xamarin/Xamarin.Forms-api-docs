@@ -2,7 +2,7 @@
   <TypeSignature Language="C#" Value="public class Label : Xamarin.Forms.View, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Label&gt;, Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Label extends Xamarin.Forms.View implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Label&gt;, class Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Label" />
-  <TypeSignature Language="F#" Value="type Label = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface IElementConfiguration&lt;Label&gt;" />
+  <TypeSignature Language="F#" Value="type Label = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface ITextAlignmentElement&#xA;    interface IElementConfiguration&lt;Label&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -437,6 +437,25 @@ public class App : Application
         <typeparam name="T">To be added.</typeparam>
         <summary>Returns the platform-specific instance of this <see cref="T:Xamarin.Forms.Label" />, on which a platform-specific method may be called.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingContextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingContextChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Label.OnBindingContextChanged" />
+      <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="label.OnBindingContextChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

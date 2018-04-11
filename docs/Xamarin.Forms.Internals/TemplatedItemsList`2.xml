@@ -1,8 +1,8 @@
 <Type Name="TemplatedItemsList&lt;TView,TItem&gt;" FullName="Xamarin.Forms.Internals.TemplatedItemsList&lt;TView,TItem&gt;">
-  <TypeSignature Language="C#" Value="public sealed class TemplatedItemsList&lt;TView,TItem&gt; : Xamarin.Forms.BindableObject, IDisposable, System.Collections.Generic.IEnumerable&lt;TItem&gt;, System.Collections.Generic.IReadOnlyCollection&lt;TItem&gt;, System.Collections.Generic.IReadOnlyList&lt;TItem&gt;, System.Collections.IList, System.Collections.Specialized.INotifyCollectionChanged, Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt; where TView : BindableObject, IItemsView&lt;TItem&gt; where TItem : BindableObject" />
+  <TypeSignature Language="C#" Value="public sealed class TemplatedItemsList&lt;TView,TItem&gt; : Xamarin.Forms.BindableObject, IDisposable, System.Collections.Generic.IEnumerable&lt;TItem&gt;, System.Collections.Generic.IReadOnlyCollection&lt;TItem&gt;, System.Collections.Generic.IReadOnlyList&lt;TItem&gt;, System.Collections.IList, Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt; where TView : BindableObject, IItemsView&lt;TItem&gt; where TItem : BindableObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TemplatedItemsList`2&lt;(class Xamarin.Forms.BindableObject, class Xamarin.Forms.IItemsView`1&lt;!TItem&gt;) TView, (class Xamarin.Forms.BindableObject) TItem&gt; extends Xamarin.Forms.BindableObject implements class System.Collections.Generic.IEnumerable`1&lt;!TItem&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!TItem&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!TItem&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Collections.Specialized.INotifyCollectionChanged, class System.IDisposable, class Xamarin.Forms.ITemplatedItemsList`1&lt;!TItem&gt;" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.TemplatedItemsList`2" />
-  <TypeSignature Language="F#" Value="type TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; BindableObject and 'View :&gt; IItemsView&lt;'Item&gt; and 'Item :&gt; BindableObject)&gt; = class&#xA;    inherit BindableObject&#xA;    interface ITemplatedItemsList&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IReadOnlyList&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IReadOnlyCollection&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface seq&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IEnumerable&#xA;    interface INotifyCollectionChanged&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IDisposable" />
+  <TypeSignature Language="F#" Value="type TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; BindableObject and 'View :&gt; IItemsView&lt;'Item&gt; and 'Item :&gt; BindableObject)&gt; = class&#xA;    inherit BindableObject&#xA;    interface ITemplatedItemsList&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IReadOnlyList&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface seq&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyCollection&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface INotifyCollectionChanged&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -35,9 +35,6 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.IList</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.Collections.Specialized.INotifyCollectionChanged</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.IDisposable</InterfaceName>
@@ -92,9 +89,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.TemplatedItemsList`2.CollectionChanged" />
       <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
