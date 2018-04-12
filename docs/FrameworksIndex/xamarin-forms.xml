@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="xamarin-forms">
   <Namespace Name="Xamarin.Forms">
     <Type Name="Xamarin.Forms.AbsoluteLayout" Id="T:Xamarin.Forms.AbsoluteLayout">
@@ -149,6 +149,8 @@
     <Type Name="Xamarin.Forms.Behavior" Id="T:Xamarin.Forms.Behavior">
       <Member Id="M:Xamarin.Forms.Behavior.OnAttachedTo(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.Behavior.OnDetachingFrom(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.Behavior.Xamarin#Forms#IAttachedObject#AttachTo(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.Behavior.Xamarin#Forms#IAttachedObject#DetachFrom(Xamarin.Forms.BindableObject)" />
       <Member Id="P:Xamarin.Forms.Behavior.AssociatedType" />
     </Type>
     <Type Name="Xamarin.Forms.Behavior`1" Id="T:Xamarin.Forms.Behavior`1">
@@ -170,6 +172,7 @@
       <Member Id="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" />
       <Member Id="M:Xamarin.Forms.BindableObject.GetValues(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindableProperty)" />
       <Member Id="M:Xamarin.Forms.BindableObject.GetValues(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindableProperty,Xamarin.Forms.BindableProperty)" />
+      <Member Id="M:Xamarin.Forms.BindableObject.IsSet(Xamarin.Forms.BindableProperty)" />
       <Member Id="M:Xamarin.Forms.BindableObject.OnBindingContextChanged" />
       <Member Id="M:Xamarin.Forms.BindableObject.OnPropertyChanged(System.String)" />
       <Member Id="M:Xamarin.Forms.BindableObject.OnPropertyChanging(System.String)" />
@@ -279,6 +282,7 @@
       <Member Id="F:Xamarin.Forms.Button.CommandParameterProperty" />
       <Member Id="F:Xamarin.Forms.Button.CommandProperty" />
       <Member Id="F:Xamarin.Forms.Button.ContentLayoutProperty" />
+      <Member Id="F:Xamarin.Forms.Button.CornerRadiusProperty" />
       <Member Id="F:Xamarin.Forms.Button.FontAttributesProperty" />
       <Member Id="F:Xamarin.Forms.Button.FontFamilyProperty" />
       <Member Id="F:Xamarin.Forms.Button.FontProperty" />
@@ -304,6 +308,7 @@
       <Member Id="P:Xamarin.Forms.Button.Command" />
       <Member Id="P:Xamarin.Forms.Button.CommandParameter" />
       <Member Id="P:Xamarin.Forms.Button.ContentLayout" />
+      <Member Id="P:Xamarin.Forms.Button.CornerRadius" />
       <Member Id="P:Xamarin.Forms.Button.Font" />
       <Member Id="P:Xamarin.Forms.Button.FontAttributes" />
       <Member Id="P:Xamarin.Forms.Button.FontFamily" />
@@ -1171,6 +1176,7 @@
     </Type>
     <Type Name="Xamarin.Forms.IListProxy" Id="T:Xamarin.Forms.IListProxy">
       <Member Id="E:Xamarin.Forms.IListProxy.CollectionChanged" />
+      <Member Id="M:Xamarin.Forms.IListProxy.TryGetValue(System.Int32,System.Object@)" />
       <Member Id="P:Xamarin.Forms.IListProxy.ProxiedEnumerable" />
     </Type>
     <Type Name="Xamarin.Forms.IListViewController" Id="T:Xamarin.Forms.IListViewController">
@@ -1281,6 +1287,7 @@
       <Member Id="E:Xamarin.Forms.INavigationPageController.RemovePageRequested" />
       <Member Id="M:Xamarin.Forms.INavigationPageController.Peek(System.Int32)" />
       <Member Id="M:Xamarin.Forms.INavigationPageController.PopAsyncInner(System.Boolean,System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.INavigationPageController.RemoveAsyncInner(Xamarin.Forms.Page,System.Boolean,System.Boolean)" />
       <Member Id="P:Xamarin.Forms.INavigationPageController.Pages" />
       <Member Id="P:Xamarin.Forms.INavigationPageController.StackDepth" />
     </Type>
@@ -1810,6 +1817,7 @@
       <Member Id="M:Xamarin.Forms.NavigationPage.SetHasBackButton(Xamarin.Forms.Page,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.NavigationPage.SetHasNavigationBar(Xamarin.Forms.BindableObject,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.NavigationPage.SetTitleIcon(Xamarin.Forms.BindableObject,Xamarin.Forms.FileImageSource)" />
+      <Member Id="M:Xamarin.Forms.NavigationPage.Xamarin#Forms#INavigationPageController#RemoveAsyncInner(Xamarin.Forms.Page,System.Boolean,System.Boolean)" />
       <Member Id="P:Xamarin.Forms.NavigationPage.BarBackgroundColor" />
       <Member Id="P:Xamarin.Forms.NavigationPage.BarTextColor" />
       <Member Id="P:Xamarin.Forms.NavigationPage.CurrentPage" />
@@ -2551,6 +2559,8 @@
       <Member Id="M:Xamarin.Forms.TriggerAction`1.Invoke(System.Object)" />
     </Type>
     <Type Name="Xamarin.Forms.TriggerBase" Id="T:Xamarin.Forms.TriggerBase">
+      <Member Id="M:Xamarin.Forms.TriggerBase.Xamarin#Forms#IAttachedObject#AttachTo(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.TriggerBase.Xamarin#Forms#IAttachedObject#DetachFrom(Xamarin.Forms.BindableObject)" />
       <Member Id="P:Xamarin.Forms.TriggerBase.EnterActions" />
       <Member Id="P:Xamarin.Forms.TriggerBase.ExitActions" />
       <Member Id="P:Xamarin.Forms.TriggerBase.IsSealed" />
@@ -3147,6 +3157,7 @@
       <Member Id="M:Xamarin.Forms.Internals.Registrar`1.GetHandler``1(System.Type)" />
       <Member Id="M:Xamarin.Forms.Internals.Registrar`1.GetHandler``1(System.Type,System.Object[])" />
       <Member Id="M:Xamarin.Forms.Internals.Registrar`1.GetHandlerForObject``1(System.Object)" />
+      <Member Id="M:Xamarin.Forms.Internals.Registrar`1.GetHandlerForObject``1(System.Object,System.Object[])" />
       <Member Id="M:Xamarin.Forms.Internals.Registrar`1.GetHandlerType(System.Type)" />
       <Member Id="M:Xamarin.Forms.Internals.Registrar`1.GetHandlerTypeForObject(System.Object)" />
       <Member Id="M:Xamarin.Forms.Internals.Registrar`1.Register(System.Type,System.Type)" />
@@ -3612,6 +3623,18 @@
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Application.SetWindowSoftInputModeAdjust(Xamarin.Forms.BindableObject,Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WindowSoftInputModeAdjust)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Application.UseWindowSoftInputModeAdjust(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Application},Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WindowSoftInputModeAdjust)" />
     </Type>
+    <Type Name="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button" Id="T:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button">
+      <Member Id="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultPaddingProperty" />
+      <Member Id="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultShadowProperty" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.GetUseDefaultPadding(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.GetUseDefaultShadow(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.SetUseDefaultPadding(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.SetUseDefaultPadding(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button},System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.SetUseDefaultShadow(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.SetUseDefaultShadow(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button},System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultPadding(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button})" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultShadow(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button})" />
+    </Type>
     <Type Name="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Elevation" Id="T:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Elevation">
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Elevation.ElevationProperty" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Elevation.GetElevation(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.VisualElement})" />
@@ -3865,6 +3888,7 @@
       <Member Id="P:Xamarin.Forms.Xaml.DynamicResourceExtension.Key" />
     </Type>
     <Type Name="Xamarin.Forms.Xaml.Extensions" Id="T:Xamarin.Forms.Xaml.Extensions">
+      <Member Id="M:Xamarin.Forms.Xaml.Extensions.LoadFromXaml``1(``0,System.String)" />
       <Member Id="M:Xamarin.Forms.Xaml.Extensions.LoadFromXaml``1(``0,System.Type)" />
     </Type>
     <Type Name="Xamarin.Forms.Xaml.IMarkupExtension" Id="T:Xamarin.Forms.Xaml.IMarkupExtension">
