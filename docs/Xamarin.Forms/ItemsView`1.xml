@@ -322,6 +322,29 @@ void SetupView()
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="ValidateItemTemplate">
+      <MemberSignature Language="C#" Value="protected virtual bool ValidateItemTemplate (Xamarin.Forms.DataTemplate template);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ValidateItemTemplate(class Xamarin.Forms.DataTemplate template) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView`1.ValidateItemTemplate(Xamarin.Forms.DataTemplate)" />
+      <MemberSignature Language="F#" Value="abstract member ValidateItemTemplate : Xamarin.Forms.DataTemplate -&gt; bool&#xA;override this.ValidateItemTemplate : Xamarin.Forms.DataTemplate -&gt; bool" Usage="itemsView.ValidateItemTemplate template" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="template" Type="Xamarin.Forms.DataTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="template">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Xamarin.Forms.IItemsView&lt;TVisual&gt;.CreateDefault">
       <MemberSignature Language="C#" Value="TVisual IItemsView&lt;TVisual&gt;.CreateDefault (object item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !TVisual Xamarin.Forms.IItemsView&lt;TVisual&gt;.CreateDefault(object item) cil managed" />

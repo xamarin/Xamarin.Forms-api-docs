@@ -2,7 +2,7 @@
   <TypeSignature Language="C#" Value="public abstract class Cell : Xamarin.Forms.Element, Xamarin.Forms.ICellController" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Cell extends Xamarin.Forms.Element implements class Xamarin.Forms.ICellController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Cell" />
-  <TypeSignature Language="F#" Value="type Cell = class&#xA;    inherit Element&#xA;    interface ICellController" />
+  <TypeSignature Language="F#" Value="type Cell = class&#xA;    inherit Element&#xA;    interface ICellController&#xA;    interface IFlowDirectionController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -463,25 +463,6 @@ Content = new TableView
       <Parameters />
       <Docs>
         <summary>Invoked whenever an <see cref="E:Xamarin.Forms.Cell.Disappearing" /> event occurs. Implement this method to add class handling for this event.</summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnLongPressed">
-      <MemberSignature Language="C#" Value="protected virtual void OnLongPressed ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnLongPressed() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Invoked whenever a long press is applied to the Cell.</summary>
         <remarks>
         </remarks>
       </Docs>

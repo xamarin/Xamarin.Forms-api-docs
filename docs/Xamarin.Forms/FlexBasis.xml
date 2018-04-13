@@ -1,0 +1,106 @@
+<Type Name="FlexBasis" FullName="Xamarin.Forms.FlexBasis">
+  <TypeSignature Language="C#" Value="public struct FlexBasis" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FlexBasis extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.FlexBasis" />
+  <TypeSignature Language="F#" Value="type FlexBasis = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.FlexBasis/FlexBasisTypeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlexBasis (float length, bool isRelative = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 length, bool isRelative) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlexBasis.#ctor(System.Single,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.FlexBasis : single * bool -&gt; Xamarin.Forms.FlexBasis" Usage="new Xamarin.Forms.FlexBasis (length, isRelative)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="length" Type="System.Single" />
+        <Parameter Name="isRelative" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
+        <param name="isRelative">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.FlexBasis Auto;" />
+      <MemberSignature Language="ILAsm" Value=".field public static valuetype Xamarin.Forms.FlexBasis Auto" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.FlexBasis.Auto" />
+      <MemberSignature Language="F#" Value=" staticval mutable Auto : Xamarin.Forms.FlexBasis" Usage="Xamarin.Forms.FlexBasis.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.FlexBasis</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public float Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Length" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.FlexBasis.Length" />
+      <MemberSignature Language="F#" Value="member this.Length : single" Usage="Xamarin.Forms.FlexBasis.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.FlexBasis (float length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.FlexBasis op_Implicit(float32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlexBasis.op_Implicit(System.Single)~Xamarin.Forms.FlexBasis" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : single -&gt; Xamarin.Forms.FlexBasis" Usage="Xamarin.Forms.FlexBasis.op_Implicit length" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.FlexBasis</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="length" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -103,6 +103,25 @@ Device.BeginInvokeOnMainThread (() => {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FlowDirection">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.FlowDirection FlowDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Xamarin.Forms.FlowDirection FlowDirection" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Device.FlowDirection" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : Xamarin.Forms.FlowDirection" Usage="Xamarin.Forms.Device.FlowDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.FlowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetAssemblies">
       <MemberSignature Language="C#" Value="public static System.Reflection.Assembly[] GetAssemblies ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly[] GetAssemblies() cil managed" />
@@ -213,6 +232,24 @@ Device.BeginInvokeOnMainThread (() => {
         <param name="useOldSizes">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GTK">
+      <MemberSignature Language="C#" Value="public const string GTK;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GTK" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Device.GTK" />
+      <MemberSignature Language="F#" Value="val mutable GTK : string" Usage="Xamarin.Forms.Device.GTK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -577,6 +614,33 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetFlowDirection">
+      <MemberSignature Language="C#" Value="public static void SetFlowDirection (Xamarin.Forms.FlowDirection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFlowDirection(valuetype Xamarin.Forms.FlowDirection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Device.SetFlowDirection(Xamarin.Forms.FlowDirection)" />
+      <MemberSignature Language="F#" Value="static member SetFlowDirection : Xamarin.Forms.FlowDirection -&gt; unit" Usage="Xamarin.Forms.Device.SetFlowDirection value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Xamarin.Forms.FlowDirection" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetIdiom">
       <MemberSignature Language="C#" Value="public static void SetIdiom (Xamarin.Forms.TargetIdiom value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIdiom(valuetype Xamarin.Forms.TargetIdiom value) cil managed" />
@@ -661,6 +725,24 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
         <remarks>While the callback returns <see langword="true" />, the timer will keep recurring.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Tizen">
+      <MemberSignature Language="C#" Value="public const string Tizen;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Tizen" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Device.Tizen" />
+      <MemberSignature Language="F#" Value="val mutable Tizen : string" Usage="Xamarin.Forms.Device.Tizen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="UWP">
       <MemberSignature Language="C#" Value="public const string UWP;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string UWP" />
@@ -679,39 +761,21 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="WinPhone">
-      <MemberSignature Language="C#" Value="public const string WinPhone;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string WinPhone" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Device.WinPhone" />
-      <MemberSignature Language="F#" Value="val mutable WinPhone : string" Usage="Xamarin.Forms.Device.WinPhone" />
+    <Member MemberName="WPF">
+      <MemberSignature Language="C#" Value="public const string WPF;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WPF" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Device.WPF" />
+      <MemberSignature Language="F#" Value="val mutable WPF : string" Usage="Xamarin.Forms.Device.WPF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The string "WinPhone", representing the Windows Mobile operating system.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="WinRT">
-      <MemberSignature Language="C#" Value="public const string WinRT;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string WinRT" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Device.WinRT" />
-      <MemberSignature Language="F#" Value="val mutable WinRT : string" Usage="Xamarin.Forms.Device.WinRT" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The string "WinRT", representing the Windows Runtime platform.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
