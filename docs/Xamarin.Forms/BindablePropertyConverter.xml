@@ -37,48 +37,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CanConvertFrom">
-      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (Type sourceType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.Type sourceType) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="sourceType" Type="System.Type" />
-      </Parameters>
-      <Docs>
-        <param name="sourceType">The type to check.</param>
-        <summary>Returns <see langword="true" /> if the source type can be converted with this type converter.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ConvertFrom">
-      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.Globalization.CultureInfo culture, object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.Globalization.CultureInfo culture, object value) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
-        <Parameter Name="value" Type="System.Object" />
-      </Parameters>
-      <Docs>
-        <param name="culture">The culture information to use when performing the conversion.</param>
-        <param name="value">The value to convert.</param>
-        <summary>Converts <paramref name="value" /> with the specified <paramref name="culture" />.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ConvertFromInvariantString">
       <MemberSignature Language="C#" Value="public override object ConvertFromInvariantString (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFromInvariantString(string value) cil managed" />

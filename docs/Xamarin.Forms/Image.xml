@@ -300,48 +300,6 @@ indicator.BindingContext = image;]]></code>
         <remarks>Overriden for Image.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnPropertyChanged">
-      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(string propertyName) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="propertyName">The name of the property.</param>
-        <summary>Invoked when a property has changed.</summary>
-        <remarks>Overriden for Image.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnPropertyChanging">
-      <MemberSignature Language="C#" Value="protected override void OnPropertyChanging (string propertyName);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanging(string propertyName) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="propertyName">The name of the property.</param>
-        <summary>Invoked when a property will change.</summary>
-        <remarks>Overriden for Image.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="OnSizeRequest">
       <MemberSignature Language="C#" Value="protected override Xamarin.Forms.SizeRequest OnSizeRequest (double widthConstraint, double heightConstraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Xamarin.Forms.SizeRequest OnSizeRequest(float64 widthConstraint, float64 heightConstraint) cil managed" />

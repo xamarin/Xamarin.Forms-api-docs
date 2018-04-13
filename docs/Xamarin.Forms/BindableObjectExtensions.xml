@@ -24,40 +24,6 @@
   </Docs>
   <Members>
     <Member MemberName="SetBinding">
-      <MemberSignature Language="C#" Value="public static void SetBinding (this Xamarin.Forms.BindableObject self, Xamarin.Forms.BindableProperty targetProperty, string path);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBinding(class Xamarin.Forms.BindableObject self, class Xamarin.Forms.BindableProperty targetProperty, string path) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="self" Type="Xamarin.Forms.BindableObject" RefType="this" />
-        <Parameter Name="targetProperty" Type="Xamarin.Forms.BindableProperty" />
-        <Parameter Name="path" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="self">The <see cref="T:Xamarin.Forms.BindableObject" />.</param>
-        <param name="targetProperty">The BindableProperty on which to set a binding.</param>
-        <param name="path">A <see cref="T:System.String" /> indicating the property path to bind to.</param>
-        <summary>Creates and applies a binding to a property.</summary>
-        <remarks>
-          <para>The following example shows how to use the extension method to set a binding.</para>
-          <example>
-            <code lang="C#"><![CDATA[
-var label = new Label ();
-label.SetBinding (Label.TextProperty, "Name");
-label.BindingContext = new {Name = "John Doe", Company = "Xamarin"};
-Debug.WriteLine (label.Text); //prints "John Doe"
-        ]]></code>
-          </example>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetBinding">
       <MemberSignature Language="C#" Value="public static void SetBinding (this Xamarin.Forms.BindableObject self, Xamarin.Forms.BindableProperty targetProperty, string path, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = null, string stringFormat = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBinding(class Xamarin.Forms.BindableObject self, class Xamarin.Forms.BindableProperty targetProperty, string path, valuetype Xamarin.Forms.BindingMode mode, class Xamarin.Forms.IValueConverter converter, string stringFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObjectExtensions.SetBinding(Xamarin.Forms.BindableObject,Xamarin.Forms.BindableProperty,System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.String)" />
