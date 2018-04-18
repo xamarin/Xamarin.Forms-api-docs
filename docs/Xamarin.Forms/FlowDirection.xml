@@ -16,8 +16,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enumerates values that control the layout direction for views.</summary>
+    <remarks>
+      <para>The following contains a few important points from <format type="text/html"><a href="https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/localization/rtl">Right-to-Left Localization</a></format>. Developers should consult that document for more information about limitations of right-to-left support, and for requirements to implement right-to-left support on various target platforms.</para>
+      <para>The default value of <see cref="P:Xamarin.Forms.FlowDirection" /> for a visual element that has no parent is <see cref="F:Xamarin.Forms.FlowDirection.LeftToRight" />, even on platforms where <see cref="P:Xamarin.Forms.Device.FlowDirection" /> is <see cref="F:Xamarin.Forms.FlowDirection.RightToLeft" />. Therefore, developers must deliberately opt in to right-to-left layout. Developers can choose right-to-left layout by setting the <see cref="P:Xamarin.Forms.VisualElement.FlowDirection " /> property of the root element to <see cref="F:Xamarin.Forms.FlowDirection.RightToLeft" /> to chosse right-to-left layout, or to <see cref="F:Xamarin.Forms.FlowDirection.MatchParent" /> to match the device layout.</para>
+  <para>All <see cref="T:Xamarin.Forms.VisualElement" />s that have a parent default to <see cref="F:Xamarin.Forms.FlowDirection.MatchParent" />.</para></remarks>
   </Docs>
   <Members>
     <Member MemberName="LeftToRight">
@@ -35,7 +38,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that view will be laid out left to right. This is the default when the view has no parent.</summary>
       </Docs>
     </Member>
     <Member MemberName="MatchParent">
@@ -53,7 +56,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the view's layout direction will match the parent view's layout direction.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -71,7 +74,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that view will be laid out right to left.</summary>
       </Docs>
     </Member>
   </Members>

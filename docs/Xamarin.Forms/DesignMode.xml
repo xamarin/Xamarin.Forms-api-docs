@@ -12,8 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Static class that developers can use to determine if the application is running in a previewer.</summary>
+    <remarks>This class is managed by the Xamarin.Forms platform to inform the developer when the application is being run in a previewer.</remarks>
   </Docs>
   <Members>
     <Member MemberName="IsDesignModeEnabled">
@@ -30,8 +30,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the application is being run in either a designer or previewer.</summary>
+        <value><see langword="true" /> if the application is being run in a previewer. <see langword="false" /> if the application is being run on a device or emulator.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
