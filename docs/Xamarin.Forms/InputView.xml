@@ -36,8 +36,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that controls whether spellcheckin is enabled.</summary>
+        <value><see langword="true" /> if spellchecking is enabled. Otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +55,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.InputView.IsSpellCheckEnabled" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +124,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum allowed length of input.</summary>
+        <value>An integer in the interval [0,<c>int.MaxValue</c>]. A value of zero indicates that there is no limit on the number of characters that may be entered.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +143,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.InputView.MaxLength" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

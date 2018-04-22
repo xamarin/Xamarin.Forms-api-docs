@@ -339,9 +339,9 @@ void SetupView()
         <Parameter Name="template" Type="Xamarin.Forms.DataTemplate" />
       </Parameters>
       <Docs>
-        <param name="template">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="template">The template to validate.</param>
+        <summary>May be overridden by the application developer to validate data templates.</summary>
+        <returns>The default implementation returns <see langword="true" />. Otherwise, the developer may override this method to return <see langword="false" /> if <paramref name="template" /> is not valid.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
