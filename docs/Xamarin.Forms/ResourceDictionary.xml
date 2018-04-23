@@ -73,8 +73,8 @@
         <Parameter Name="mergedResourceDictionary" Type="Xamarin.Forms.ResourceDictionary" />
       </Parameters>
       <Docs>
-        <param name="mergedResourceDictionary">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mergedResourceDictionary">The resource dictionary to add.</param>
+        <summary>Add <paramref name="mergedResourceDictionary" /> to the merged dictionaries in <see langword="this" /> resource dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,12 +99,11 @@
       </Parameters>
       <Docs>
         <param name="style">The implicit style to add.</param>
-        <summary>
-          <para>Add an implicit Style to the ResourceDictionary. Implicit Styles are applied to all VisualElements matching TargetType in the descendants of this ResourceDictionary owner, unless a Style is explicitely applied to the Element.</para>
-          <para />
+        <summary>Adds an implicit Style to the ResourceDictionary.</summary>
+        <remarks>
+          <para>Implicit Styles are applied to all VisualElements matching TargetType in the descendants of this ResourceDictionary owner, unless a Style is explicitely applied to the Element.</para>
           <para>Implicit Styles are added to a ResourceDictionary in XAML by not specifying an x:Key for the Element.</para>
-        </summary>
-        <remarks>To be added.</remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -124,8 +123,8 @@
         <Parameter Name="styleSheet" Type="Xamarin.Forms.StyleSheets.StyleSheet" />
       </Parameters>
       <Docs>
-        <param name="styleSheet">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="styleSheet">The style sheet to add</param>
+        <summary>Adds <paramref name="styleSheet" /> tho <see langword="this" /> resource dictionary's list of style sheets.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -447,7 +446,7 @@
         <param name="resourcePath">To be added.</param>
         <param name="assembly">To be added.</param>
         <param name="lineInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,8 +469,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the URI of the merged resource dictionary.</summary>
+        <value>The URI of the merged resource dictionary.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -730,7 +729,7 @@
         <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.ResourcesChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
