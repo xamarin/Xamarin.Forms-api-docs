@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Controls input method editor (IME) options for entry fields on the Android platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The Android entry for which to get the input method editor options.</param>
+        <summary>Returns flags that specify input method editor options, such as the kind of action that is sent by the editor.</summary>
+        <returns>The flags that specify input method editor options, such as the kind of action that is sent by the editor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +56,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Entry&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the Android entry for which to get the input method editor options.</param>
+        <summary>Returns flags that specify input method editor options, such as the kind of action that is sent by the editor.</summary>
+        <returns>The flags that specify input method editor options, such as the kind of action that is sent by the editor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +76,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that specifies input method editor options.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +98,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The Android entry for which to set the input method editor options.</param>
+        <param name="value">The new options to set.</param>
+        <summary>Sets the attached property that specifies input method editor options</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +122,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the Android entry for which to set the input method editor options.</param>
+        <param name="value">The new options to set.</param>
+        <summary>Sets the attached property that specifies input method editor options</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
