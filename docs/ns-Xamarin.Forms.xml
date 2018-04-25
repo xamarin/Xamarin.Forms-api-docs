@@ -29,7 +29,7 @@ public class App : Xamarin.Forms.Application
           ]]></code>
       </example>
       <para>This code results in a centered label on the target platforms:</para>
-      <para><img href="XamarinForms-ns.TripleScreenShot.png"/></para>
+      <para><img href="xamarin-media/Xamarin.Forms/_images/XamarinForms-ns.TripleScreenShot.png"/></para>
       <para>While more complicated layouts with more useful user interfaces are more typical, this example is useful for clearly illustrating the shared and platform-specific code that Xamarin.Forms uses to create and display the code on the target platforms. The code in the following discussion is created by Visual Studio in the target platform projects when the developer creates a new Xamarin.Forms project. In each case, a platform-specific <c>Forms.Init()</c> method is called to intitialize forms before any other method that depends on Xamarin.Forms is called. </para>
       <format type="text/html" ><h3>iOS Platform Code</h3></format>
       <para>On the iOS platform, Visual Studio registers a <see cref="T:Xamarin.Forms.Platform.iOS.FormsApplicationDelegate" /> as the entry point of the application, and immediately makes a call to <see cref="M:Xamarin.Forms.Forms.Init" />.</para>
