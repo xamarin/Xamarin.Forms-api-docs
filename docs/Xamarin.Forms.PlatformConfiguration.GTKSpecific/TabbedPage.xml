@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Controls the tab position on tabbed pages on the GTK platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The tabbed page on the GTK platform whose tab position to get.</param>
+        <summary>Gets the tab position.</summary>
+        <returns>The tab position.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +56,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.GTK,Xamarin.Forms.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the tabbed page on the GTK platform whose tab position to get.</param>
+        <summary>Gets the tab position.</summary>
+       <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +80,9 @@
         <Parameter Name="tabPosition" Type="Xamarin.Forms.PlatformConfiguration.GTKSpecific.TabPosition" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="tabPosition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The tabbed page on the GTK platform whose tab position to set.</param>
+        <param name="tabPosition">The new tab position.</param>
+        <summary>Sets the tab position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,10 +104,10 @@
         <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.GTKSpecific.TabPosition" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the tabbed page on the GTK platform whose tab position to set.</param>
+        <param name="value">The new tab position.</param>
+        <summary>Sets the tab position.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,7 +125,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls the tab position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
