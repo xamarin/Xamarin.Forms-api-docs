@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Controls the legacy color mode and elevation for visual elements on the Android platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the elevation property for visual elements on the Android platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the visual element on the Android platform whose elevation to get.</param>
+        <summary>Gets the elevation for the element.</summary>
+        <returns>The elevation for the element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +74,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.VisualElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The visual element on the Android platform whose elevation to get.</param>
+        <summary>Gets the elevation for the element.</summary>
+        <returns>The elevation for the element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +97,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The visual element on the Android platform whose legacy color mode status to get.</param>
+        <summary>Gets a Boolean value that tells whether the legacy color mode is enabled.</summary>
+        <returns>A Boolean value that tells whether the legacy color mode is enabled.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +120,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the visual element on the Android platform whose legacy color mode status to get.</param>
+        <summary>Gets a Boolean value that tells whether the legacy color mode is enabled.</summary>
+        <returns>A Boolean value that tells whether the legacy color mode is enabled.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +140,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls whether the legacy color mode is enabled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,10 +162,10 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the visual element on the Android platform whose legacy color mode status to set.</param>
+        <param name="value"><see langword="true" /> to enable legacy color mode. Otherwise, <see langword="false" />.</param>
+        <summary>Sets a Boolean value that controls whether the legacy color mode is enabled.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,9 +187,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The visual element on the Android platform whose elevation to set.</param>
+        <param name="value">The new elevation value.</param>
+        <summary>Sets the elevation for the visual element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,9 +211,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The visual element on the Android platform whose elevation to set.</param>
+        <param name="value">The new elevation value.</param>
+        <summary>Sets the elevation for the visual element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,10 +235,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the visual element on the Android platform whose elevation to set.</param>
+        <param name="value">The new elevation value.</param>
+        <summary>Sets the elevation for the visual element.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

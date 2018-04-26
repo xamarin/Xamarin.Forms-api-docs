@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Controls the mixed content mode on web views on the Android platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The Android web view for which to get the loading behavior for content that is a mix of secure and insecure content.</param>
+        <summary>Returns the mixed content mode for the web view.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -56,8 +56,7 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="config">The platform configuration for the Android web view for which to get the loading behavior for content that is a mix of secure and insecure content.</param>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +75,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls the loading behavior for content that is a mix of secure and insecure content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +97,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The Android web view for which to set the loading behavior for content that is a mix of secure and insecure content.</param>
+        <param name="value">The new mixed content mode.</param>
+        <summary>Sets the mixed content mode for the web view.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +121,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="config">The platform configuration for the Android web view for which to set the loading behavior for content that is a mix of secure and insecure content.</param>
+        <param name="value">The new mixed content mode.</param>
+        <summary>Sets the mixed content mode for the web view.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
