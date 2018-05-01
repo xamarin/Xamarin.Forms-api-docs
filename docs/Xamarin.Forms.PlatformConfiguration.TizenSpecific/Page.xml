@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to the bread crumb bar for pages on the Tizen platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that represents bread crumb bar value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
         <Parameter Name="page" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="page">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="page">The page whose bread crumb representation to get.</param>
+        <summary>Returns the breadcrumb representation for a page.</summary>
+        <returns>The breadcrumb representation for the page.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +74,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Page&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the page whose bread crumb representation to get.</param>
+        <summary>Returns the breadcrumb representation for a page.</summary>
+        <returns>The breadcrumb representation for the page.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +98,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="page">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="page">The page whose bread crumb value to set.</param>
+        <param name="value">The new bread crumb value.</param>
+        <summary>Sets the bread crumb value for the page.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +122,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The paltform configuration for the page whose bread crumb value to set.</param>
+        <param name="value">The new bread crumb value.</param>
+        <summary>Sets the bread crumb value for the page.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
