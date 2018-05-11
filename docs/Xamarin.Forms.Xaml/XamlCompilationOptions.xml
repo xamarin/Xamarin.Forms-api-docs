@@ -16,8 +16,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enumerates values that control when XAML is compiled into IL.</summary>
+    <remarks>
+      <para>Enabling build-time compilation by specifying the <c>Compile</c> option checks the XAML at build time, reduces loading time, and produces a smaller assembly or application.</para>
+      <para>By default, XAML compilation at build time is turned off.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Compile">
@@ -35,7 +38,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Compile the XAML for the class or project when the application is built.</summary>
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -53,7 +56,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Compile the XAML for the class or project when the application is run on the device.</summary>
       </Docs>
     </Member>
   </Members>

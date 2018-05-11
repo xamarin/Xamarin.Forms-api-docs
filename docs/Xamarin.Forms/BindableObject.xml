@@ -458,9 +458,10 @@ class MyBindable : BindableObject
         <Parameter Name="targetProperty" Type="Xamarin.Forms.BindableProperty" />
       </Parameters>
       <Docs>
-        <param name="targetProperty">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="targetProperty">The property to check.</param>
+        <summary>Returns <see langword="true" /> if the target property exists and has been set.</summary>
+        <returns>
+          <see langword="true" /> if the target property exists and has been set. If the property has not been set, returns <see langword="false" />. If the <paramref name="targetProperty" /> is null, an <c>ArgumentNullException</c> is thrown.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

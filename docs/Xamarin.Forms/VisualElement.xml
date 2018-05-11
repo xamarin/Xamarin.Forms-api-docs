@@ -362,6 +362,25 @@
         <altmember cref="P:Xamarin.Forms.VisualElement.HeightRequest" />
       </Docs>
     </Member>
+    <Member MemberName="ChangeVisualState">
+      <MemberSignature Language="C#" Value="protected internal virtual void ChangeVisualState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void ChangeVisualState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.ChangeVisualState" />
+      <MemberSignature Language="F#" Value="abstract member ChangeVisualState : unit -&gt; unit&#xA;override this.ChangeVisualState : unit -&gt; unit" Usage="visualElement.ChangeVisualState " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ChildrenReordered">
       <MemberSignature Language="C#" Value="public event EventHandler ChildrenReordered;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ChildrenReordered" />
@@ -406,8 +425,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the style class of the visual element.</summary>
+        <value>The style class of the visual element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,8 +471,8 @@
         <ReturnType>Xamarin.Forms.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the layout flow direction.</summary>
+        <value>The layout flow direction.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -471,7 +490,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.VisualElement.FlowDirection" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1989,6 +2008,80 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="ScaleX">
+      <MemberSignature Language="C#" Value="public double ScaleX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ScaleX" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.ScaleX" />
+      <MemberSignature Language="F#" Value="member this.ScaleX : double with get, set" Usage="Xamarin.Forms.VisualElement.ScaleX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleXProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ScaleXProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ScaleXProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.ScaleXProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScaleXProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.ScaleXProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleY">
+      <MemberSignature Language="C#" Value="public double ScaleY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ScaleY" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.ScaleY" />
+      <MemberSignature Language="F#" Value="member this.ScaleY : double with get, set" Usage="Xamarin.Forms.VisualElement.ScaleY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleYProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ScaleYProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ScaleYProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.ScaleYProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScaleYProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.ScaleYProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SizeAllocated">
       <MemberSignature Language="C#" Value="protected void SizeAllocated (double width, double height);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SizeAllocated(float64 width, float64 height) cil managed" />
@@ -2435,8 +2528,8 @@
         <ReturnType>Xamarin.Forms.EffectiveFlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the effective visual flow direction for the element on the platform, taking into account the locale and logical flow settings.</summary>
+        <value>The effective flow direction for the visual element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

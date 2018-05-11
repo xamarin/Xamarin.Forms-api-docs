@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to the bread crumb bar for navigation pages on the Tizen platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,10 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The navigation page on the Tizen platform whose font weight icon to get.</param>
+        <summary>Returns a Boolean value that tells whether the navigation page has a bread crumb bar.</summary>
+        <returns>
+          <see langword="true" /> if the navigation page has a bread crumb bar. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +57,10 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.NavigationPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the navigation page on the Tizen platform whose font weight icon to get.</param>
+        <summary>Returns a Boolean value that tells whether the navigation page has a bread crumb bar.</summary>
+        <returns>
+          <see langword="true" /> if the navigation page has a bread crumb bar. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +78,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that represents whether the navigation page has a bread crumb bar.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +100,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
+        <param name="element">The navigation page on the Tizen platform whose font weight icon to set.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets a Boolean value that tells whether the navigation page has a bread crumb bar.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +124,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
+        <param name="config">The platform configuration for the navigation page on the Tizen platform whose font weight icon to set.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets a Boolean value that tells whether the navigation page has a bread crumb bar.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

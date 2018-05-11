@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Controls padding and shadows for buttons on the Android platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The Android button for which to get the padding behavior.</param>
+        <summary>Returns a Boolean value that tells whether the default padding will be used.</summary>
+        <returns>A Boolean value that tells whether the default padding will be used.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +56,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The Android button for which to get the shadow behavior.</param>
+        <summary>Returns a Boolean value that tells whether the default shadow will be used.</summary>
+        <returns>A Boolean value that tells whether the default shadow will be used.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +80,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
+        <param name="element">The Android button whose padding behavior to set.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets a Boolean value that controls whether the button will use the default padding.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,10 +104,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
+        <param name="config">The configuration for the Android button whose padding behavior to set.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets a Boolean value that controls whether the button will use the default padding.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +129,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
+        <param name="element">The Android button whose shadow behavior to set.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets a Boolean value that controls whether the button will use the default shadow.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,10 +153,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
+        <param name="config">The configuration for the Android button whose shadow behavior to set.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets a Boolean value that controls whether the button will use the default shadow.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,9 +177,10 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The configuration for the Android button whose padding behavior to check.</param>
+        <summary>Returns <see langword="true" /> if the button will use the default padding. Otherwise, returns <see langword="false" />.</summary>
+        <returns>
+          <see langword="true" /> if the button will use the default padding. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +198,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls whether the button will use the default padding.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,9 +219,10 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The configuration for the Android button whose shadow behavior to check.</param>
+        <summary>Returns <see langword="true" /> if the button will use the default shadow. Otherwise, returns <see langword="false" />.</summary>
+        <returns>
+          <see langword="true" /> if the button will use the default shadow. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,7 +240,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls whether the button will use the default shadow.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

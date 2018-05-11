@@ -2,7 +2,7 @@
   <TypeSignature Language="C#" Value="public class Label : Xamarin.Forms.View, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Label&gt;, Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Label extends Xamarin.Forms.View implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Label&gt;, class Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Label" />
-  <TypeSignature Language="F#" Value="type Label = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface ITextAlignmentElement&#xA;    interface IElementConfiguration&lt;Label&gt;" />
+  <TypeSignature Language="F#" Value="type Label = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface ITextAlignmentElement&#xA;    interface ILineHeightElement&#xA;    interface IElementConfiguration&lt;Label&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -37,7 +37,7 @@
     <remarks>
       <para>A Label is used to display single-line text elements as well as multi-line blocks of text.</para>
       <para>
-        <img href="Label.TripleScreenShot.png" />
+        <img href="xamarin-media/Xamarin.Forms/_images/Label.TripleScreenShot.png" />
       </para>
       <para>The following example, adapted from the default Xamarin.Forms solution, shows a basic use:</para>
       <example>
@@ -319,6 +319,29 @@ public class App : Application
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetChildElements">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt; GetChildElements (Xamarin.Forms.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.GestureElement&gt; GetChildElements(valuetype Xamarin.Forms.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Label.GetChildElements(Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="override this.GetChildElements : Xamarin.Forms.Point -&gt; System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;" Usage="label.GetChildElements point" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HorizontalTextAlignment">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.TextAlignment HorizontalTextAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.TextAlignment HorizontalTextAlignment" />
@@ -407,6 +430,43 @@ public class App : Application
         <summary>Backing store for the LineBreakMode bindable property.</summary>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeight">
+      <MemberSignature Language="C#" Value="public double LineHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LineHeight" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Label.LineHeight" />
+      <MemberSignature Language="F#" Value="member this.LineHeight : double with get, set" Usage="Xamarin.Forms.Label.LineHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty LineHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty LineHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Label.LineHeightProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable LineHeightProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.LineHeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="On&lt;T&gt;">

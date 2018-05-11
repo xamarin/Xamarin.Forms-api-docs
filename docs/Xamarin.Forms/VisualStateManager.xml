@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Manages visual state groups and transitions controls between states.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="visualElement" Type="Xamarin.Forms.VisualElement" />
       </Parameters>
       <Docs>
-        <param name="visualElement">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="visualElement">The visual element whose visual state groups to get.</param>
+        <summary>Returns the visual state groups that can be applied to the specified visual element.</summary>
+        <returns>The visual state groups that can be applied to the specified visual element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +59,9 @@
       <Docs>
         <param name="visualElement">To be added.</param>
         <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Transitions the specified <paramref name="visualElement" /> to the state with the specified <paramref name="name" />.</summary>
+        <returns>
+          <see langword="true" /> if the transition was successful. Otherwise, <see langword="false" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +82,10 @@
         <Parameter Name="element" Type="Xamarin.Forms.VisualElement" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element to check.</param>
+        <summary>Returns <see langword="true" /> if <paramref name="element" /> has one or more visual state groups associated with it. Otherwise, returns <see langword="false" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="element" /> has one or more visual state groups associated with it. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +108,8 @@
       </Parameters>
       <Docs>
         <param name="visualElement">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The list of visual state groups to associate with <paramref name="visualElement" />.</param>
+        <summary>Associates a list of visual state groups with a visual element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,7 +127,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that contains the visual state groups in the manager.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

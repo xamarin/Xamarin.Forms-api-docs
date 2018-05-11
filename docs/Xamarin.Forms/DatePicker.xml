@@ -34,7 +34,7 @@
     <remarks>
       <para>The visual representation of a DatePicker is very similar to the one of <see cref="T:Xamarin.Forms.Entry" />, except that a special control for picking a date appears in place of a keyboard.</para>
       <para>
-        <img href="DatePicker.TripleScreenShot.png" />
+        <img href="xamarin-media/Xamarin.Forms/_images/DatePicker.TripleScreenShot.png" />
       </para>
       <para>The following example shows a basic use:</para>
       <example>
@@ -171,7 +171,7 @@ DatePicker datePicker = new DatePicker
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Date bindable property.</summary>
+        <summary>Backing store for the Date bindable property.</summary>
         <remarks>
         </remarks>
       </Docs>
@@ -215,7 +215,7 @@ DatePicker datePicker = new DatePicker
         <ReturnType>Xamarin.Forms.FontAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value that indicates whether the font for the searchbar text is bold, italic, or neither.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,7 +234,7 @@ DatePicker datePicker = new DatePicker
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.DatePicker.FontAttributes" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,7 +252,7 @@ DatePicker datePicker = new DatePicker
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the font family for the picker text.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,7 +271,7 @@ DatePicker datePicker = new DatePicker
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.DatePicker.FontFamily" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,8 +294,8 @@ DatePicker datePicker = new DatePicker
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the size of the font for the text in the picker.</summary>
+        <value>A <see langword="double" /> that indicates the size of the font.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,7 +313,7 @@ DatePicker datePicker = new DatePicker
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.DatePicker.FontSize" /> property..</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,7 +362,7 @@ DatePicker datePicker = new DatePicker
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Format dependency property.</summary>
+        <summary>Backing store for the Format dependency property.</summary>
         <remarks>
         </remarks>
       </Docs>
@@ -413,7 +413,7 @@ DatePicker datePicker = new DatePicker
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the MaximumDate bindable property.</summary>
+        <summary>Backing store for the MaximumDate bindable property.</summary>
         <remarks>
         </remarks>
       </Docs>
@@ -464,7 +464,7 @@ DatePicker datePicker = new DatePicker
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the MinimumDate bindable property.</summary>
+        <summary>Backing store for the MinimumDate bindable property.</summary>
         <remarks>
         </remarks>
       </Docs>
@@ -554,7 +554,7 @@ DatePicker datePicker = new DatePicker
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -579,9 +579,9 @@ DatePicker datePicker = new DatePicker
         <Parameter Name="newValue" Type="Xamarin.Forms.FontAttributes" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
+        <param name="oldValue">For internal use by the Xamarin.Forms platform.</param>
         <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,9 +605,9 @@ DatePicker datePicker = new DatePicker
         <Parameter Name="newValue" Type="Xamarin.Forms.Font" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
+        <param name="oldValue">For internal use by the Xamarin.Forms platform.</param>
         <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,9 +631,9 @@ DatePicker datePicker = new DatePicker
         <Parameter Name="newValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
+        <param name="oldValue">For internal use by the Xamarin.Forms platform.</param>
         <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -657,9 +657,9 @@ DatePicker datePicker = new DatePicker
         <Parameter Name="newValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
+        <param name="oldValue">For internal use by the Xamarin.Forms platform.</param>
         <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

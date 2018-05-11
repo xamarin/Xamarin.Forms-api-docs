@@ -3,7 +3,7 @@
     <Assembly Name="Xamarin.Forms.Core" Version="2.0.0.0">
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.Default | System.Diagnostics.DebuggableAttribute+DebuggingModes.DisableOptimizations | System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints | System.Diagnostics.DebuggableAttribute+DebuggingModes.EnableEditAndContinue)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("Xamarin Inc.")</AttributeName>
@@ -300,6 +300,7 @@
       <Type Name="AbsoluteLayoutFlags" Kind="Enumeration" />
       <Type Name="Accelerator" Kind="Class" />
       <Type Name="AcceleratorTypeConverter" Kind="Class" />
+      <Type Name="AccessKeyPlacement" Kind="Enumeration" />
       <Type Name="ActivityIndicator" Kind="Class" />
       <Type Name="Animation" Kind="Class" />
       <Type Name="AnimationExtensions" Kind="Class" />
@@ -341,6 +342,7 @@
       <Type Name="ButtonsMask" Kind="Enumeration" />
       <Type Name="CarouselPage" Kind="Class" />
       <Type Name="Cell" Kind="Class" />
+      <Type Name="ChildGestureRecognizer" Kind="Class" />
       <Type Name="ClickedEventArgs" Kind="Class" />
       <Type Name="ClickGestureRecognizer" Kind="Class" />
       <Type Name="CollectionSynchronizationCallback" Kind="Delegate" />
@@ -362,6 +364,8 @@
       <Type Name="ContentPropertyAttribute" Kind="Class" />
       <Type Name="ContentView" Kind="Class" />
       <Type Name="ControlTemplate" Kind="Class" />
+      <Type Name="CornerRadius" Kind="Structure" />
+      <Type Name="CornerRadiusTypeConverter" Kind="Class" />
       <Type Name="DataTemplate" Kind="Class" />
       <Type Name="DataTemplateSelector" Kind="Class" />
       <Type Name="DataTrigger" Kind="Class" />
@@ -414,6 +418,7 @@
       <Type Name="FontTypeConverter" Kind="Class" />
       <Type Name="FormattedString" Kind="Class" />
       <Type Name="Frame" Kind="Class" />
+      <Type Name="GestureElement" Kind="Class" />
       <Type Name="GestureRecognizer" Kind="Class" />
       <Type Name="GestureState" Kind="Enumeration" />
       <Type Name="GestureStatus" Kind="Enumeration" />
@@ -539,6 +544,7 @@
       <Type Name="Rectangle" Kind="Structure" />
       <Type Name="RectangleTypeConverter" Kind="Class" />
       <Type Name="ReferenceTypeConverter" Kind="Class" />
+      <Type Name="Region" Kind="Structure" />
       <Type Name="RelativeLayout" Kind="Class" />
       <Type Name="RelativeLayout+IRelativeList`1" DisplayName="RelativeLayout+IRelativeList&lt;T&gt;" Kind="Interface" />
       <Type Name="RenderWithAttribute" Kind="Class" />
@@ -655,6 +661,7 @@
       <Type Name="IDynamicResourceHandler" Kind="Interface" />
       <Type Name="IExpressionSearch" Kind="Interface" />
       <Type Name="IFontElement" Kind="Interface" />
+      <Type Name="IGestureController" Kind="Interface" />
       <Type Name="IIsolatedStorageFile" Kind="Interface" />
       <Type Name="INameScope" Kind="Interface" />
       <Type Name="InvalidationTrigger" Kind="Enumeration" />
@@ -662,6 +669,7 @@
       <Type Name="IPlatform" Kind="Interface" />
       <Type Name="IPlatformServices" Kind="Interface" />
       <Type Name="IResourceDictionary" Kind="Interface" />
+      <Type Name="ISpatialElement" Kind="Interface" />
       <Type Name="ISystemResourcesProvider" Kind="Interface" />
       <Type Name="LockableObservableListWrapper" Kind="Class" />
       <Type Name="Log" Kind="Class" />
@@ -763,6 +771,7 @@
       <Type Name="Picker" Kind="Class" />
       <Type Name="ScrollView" Kind="Class" />
       <Type Name="SeparatorStyle" Kind="Enumeration" />
+      <Type Name="Slider" Kind="Class" />
       <Type Name="StatusBarHiddenMode" Kind="Enumeration" />
       <Type Name="StatusBarTextColorMode" Kind="Enumeration" />
       <Type Name="UIStatusBarAnimation" Kind="Enumeration" />
@@ -817,6 +826,7 @@
       <Type Name="IMarkupExtension" Kind="Interface" />
       <Type Name="IMarkupExtension`1" DisplayName="IMarkupExtension&lt;T&gt;" Kind="Interface" />
       <Type Name="IProvideValueTarget" Kind="Interface" />
+      <Type Name="IReferenceProvider" Kind="Interface" />
       <Type Name="IRootObjectProvider" Kind="Interface" />
       <Type Name="IServiceProviderExtensions" Kind="Class" />
       <Type Name="IValueProvider" Kind="Interface" />
@@ -1596,6 +1606,39 @@
           <summary>For internal use by the Xamarin.Forms platform.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.Internals.EnumerableExtensions" Member="M:Xamarin.Forms.Internals.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.Collections.Generic.IEnumerable`1" />
+      </Targets>
+      <Member MemberName="GetChildGesturesFor&lt;T&gt;">
+        <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetChildGesturesFor&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.GestureElement&gt; elements, Func&lt;T,bool&gt; predicate = null) where T : Xamarin.Forms.GestureRecognizer;" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetChildGesturesFor&lt;(class Xamarin.Forms.GestureRecognizer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Xamarin.Forms.GestureElement&gt; elements, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.EnumerableExtensions.GetChildGesturesFor``1(System.Collections.Generic.IEnumerable{Xamarin.Forms.GestureElement},System.Func{``0,System.Boolean})" />
+        <MemberSignature Language="F#" Value="static member GetChildGesturesFor : seq&lt;Xamarin.Forms.GestureElement&gt; * Func&lt;'T, bool (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; -&gt; seq&lt;'T (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)" Usage="Xamarin.Forms.Internals.EnumerableExtensions.GetChildGesturesFor (elements, predicate)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="T">
+            <Constraints>
+              <BaseTypeName>Xamarin.Forms.GestureRecognizer</BaseTypeName>
+            </Constraints>
+          </TypeParameter>
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.GestureElement&gt;" RefType="this" />
+          <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+        </Parameters>
+        <Docs>
+          <typeparam name="T">To be added.</typeparam>
+          <param name="elements">To be added.</param>
+          <param name="predicate">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.Internals.EnumerableExtensions" Member="M:Xamarin.Forms.Internals.EnumerableExtensions.GetChildGesturesFor``1(System.Collections.Generic.IEnumerable{Xamarin.Forms.GestureElement},System.Func{``0,System.Boolean})" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -3537,6 +3580,54 @@
           <summary>Returns a Boolean value that tells whether iOS will wait to determine if a touch is intended as a scroll, or scroll immediately.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ScrollView" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ScrollView.ShouldDelayContentTouches(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ScrollView})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="GetUpdateOnTap">
+        <MemberSignature Language="C#" Value="public static bool GetUpdateOnTap (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider&gt; config);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetUpdateOnTap(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Slider&gt; config) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.GetUpdateOnTap(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider})" />
+        <MemberSignature Language="F#" Value="static member GetUpdateOnTap : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Slider&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.GetUpdateOnTap config" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.GetUpdateOnTap(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="SetUpdateOnTap">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider&gt; SetUpdateOnTap (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider&gt; config, bool value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Slider&gt; SetUpdateOnTap(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Slider&gt; config, bool value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.SetUpdateOnTap(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider},System.Boolean)" />
+        <MemberSignature Language="F#" Value="static member SetUpdateOnTap : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Slider&gt; * bool -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Slider&gt;" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.SetUpdateOnTap (config, value)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider&gt;" RefType="this" />
+          <Parameter Name="value" Type="System.Boolean" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.SetUpdateOnTap(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider},System.Boolean)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -5622,6 +5713,98 @@
       <Targets>
         <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
       </Targets>
+      <Member MemberName="GetAccessKey">
+        <MemberSignature Language="C#" Value="public static string GetAccessKey (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; config);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAccessKey(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; config) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKey(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement})" />
+        <MemberSignature Language="F#" Value="static member GetAccessKey : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt; -&gt; string" Usage="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKey config" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement" Member="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKey(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="GetAccessKeyHorizontalOffset">
+        <MemberSignature Language="C#" Value="public static double GetAccessKeyHorizontalOffset (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; config);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetAccessKeyHorizontalOffset(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; config) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKeyHorizontalOffset(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement})" />
+        <MemberSignature Language="F#" Value="static member GetAccessKeyHorizontalOffset : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt; -&gt; double" Usage="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKeyHorizontalOffset config" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Double</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement" Member="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKeyHorizontalOffset(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="GetAccessKeyPlacement">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.AccessKeyPlacement GetAccessKeyPlacement (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; config);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.AccessKeyPlacement GetAccessKeyPlacement(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; config) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKeyPlacement(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement})" />
+        <MemberSignature Language="F#" Value="static member GetAccessKeyPlacement : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt; -&gt; Xamarin.Forms.AccessKeyPlacement" Usage="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKeyPlacement config" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.AccessKeyPlacement</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement" Member="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKeyPlacement(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="GetAccessKeyVerticalOffset">
+        <MemberSignature Language="C#" Value="public static double GetAccessKeyVerticalOffset (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; config);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetAccessKeyVerticalOffset(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; config) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKeyVerticalOffset(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement})" />
+        <MemberSignature Language="F#" Value="static member GetAccessKeyVerticalOffset : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt; -&gt; double" Usage="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKeyVerticalOffset config" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Double</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement" Member="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetAccessKeyVerticalOffset(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
       <Member MemberName="GetIsLegacyColorModeEnabled">
         <MemberSignature Language="C#" Value="public static bool GetIsLegacyColorModeEnabled (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; config);" />
         <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsLegacyColorModeEnabled(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; config) cil managed" />
@@ -5639,6 +5822,106 @@
           <summary>To be added.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement" Member="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.GetIsLegacyColorModeEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="SetAccessKey">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; SetAccessKey (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; config, string value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; SetAccessKey(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; config, string value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKey(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement},System.String)" />
+        <MemberSignature Language="F#" Value="static member SetAccessKey : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt; * string -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt;" Usage="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKey (config, value)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
+          <Parameter Name="value" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement" Member="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKey(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement},System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="SetAccessKeyHorizontalOffset">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; SetAccessKeyHorizontalOffset (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; config, double value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; SetAccessKeyHorizontalOffset(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; config, float64 value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKeyHorizontalOffset(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement},System.Double)" />
+        <MemberSignature Language="F#" Value="static member SetAccessKeyHorizontalOffset : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt; * double -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt;" Usage="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKeyHorizontalOffset (config, value)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
+          <Parameter Name="value" Type="System.Double" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement" Member="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKeyHorizontalOffset(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement},System.Double)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="SetAccessKeyPlacement">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; SetAccessKeyPlacement (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; config, Xamarin.Forms.AccessKeyPlacement value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; SetAccessKeyPlacement(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; config, valuetype Xamarin.Forms.AccessKeyPlacement value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKeyPlacement(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement},Xamarin.Forms.AccessKeyPlacement)" />
+        <MemberSignature Language="F#" Value="static member SetAccessKeyPlacement : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt; * Xamarin.Forms.AccessKeyPlacement -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt;" Usage="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKeyPlacement (config, value)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
+          <Parameter Name="value" Type="Xamarin.Forms.AccessKeyPlacement" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement" Member="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKeyPlacement(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement},Xamarin.Forms.AccessKeyPlacement)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="SetAccessKeyVerticalOffset">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; SetAccessKeyVerticalOffset (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt; config, double value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; SetAccessKeyVerticalOffset(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Windows, class Xamarin.Forms.VisualElement&gt; config, float64 value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKeyVerticalOffset(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement},System.Double)" />
+        <MemberSignature Language="F#" Value="static member SetAccessKeyVerticalOffset : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt; * double -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows, Xamarin.Forms.VisualElement&gt;" Usage="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKeyVerticalOffset (config, value)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
+          <Parameter Name="value" Type="System.Double" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement" Member="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.VisualElement.SetAccessKeyVerticalOffset(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement},System.Double)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>

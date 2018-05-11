@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Extension class for <see cref="T:Xamarin.Forms.View" /> defining <see cref="M:Xamarin.Forms.Xaml.Extensions.LoadFromXaml{TView}" /> method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,11 +37,11 @@
         <Parameter Name="xaml" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TXaml">To be added.</typeparam>
-        <param name="view">To be added.</param>
+        <typeparam name="TXaml">The type of view to initialize with state from XAML.</typeparam>
+        <param name="view">The view on which this method operates.</param>
         <param name="xaml">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an initialized view by loading the specified <paramref name="xaml" />.</summary>
+        <returns>The initialized view.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,11 +66,11 @@
         <Parameter Name="callingType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <typeparam name="TXaml">To be added.</typeparam>
-        <param name="view">To be added.</param>
+        <typeparam name="TXaml">The type of view to initialize with state from XAML.</typeparam>
+        <param name="view">The view on which this method operates.</param>
         <param name="callingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <paramref name="TXaml" /> with the properties that are defined in the application manifest for <paramref name="callingType" />.</summary>
+        <returns>A <paramref name="TXaml" /> with the properties that are defined in the application manifest for <paramref name="callingType" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

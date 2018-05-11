@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to the back button icon on navigation pages on the GTK platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that stores the back button icon.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The navigation page on the GTK platform whose back button icon to get.</param>
+        <summary>Gets the icon for the back button.</summary>
+        <returns>The path to the back button icon.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +74,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.GTK,Xamarin.Forms.NavigationPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the navigation page on the GTK platform whose back button icon to get.</param>
+        <summary>Gets the path to the back button icon.</summary>
+        <returns>The path to the back button icon.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +98,9 @@
         <Parameter Name="backButtonIcon" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
+        <param name="element">The navigation page on the GTK platform whose back button icon to get.</param>
         <param name="backButtonIcon">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the path to the back button icon.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +122,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
+        <param name="config">The platform configuration for the navigation page on the GTK platform whose back button icon to set.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets the path to the back button icon.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

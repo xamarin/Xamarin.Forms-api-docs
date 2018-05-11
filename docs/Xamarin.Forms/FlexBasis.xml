@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Struct that represents an absolute or relative element size.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,9 +36,9 @@
         <Parameter Name="isRelative" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="length">To be added.</param>
+        <param name="length">The absolute size (in device-independent pixels) or the relative size (a float in the range [0,1]), depending on the value of <paramref name="isRelative" />.</param>
         <param name="isRelative">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Creates a new flex basis struct.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +56,7 @@
         <ReturnType>Xamarin.Forms.FlexBasis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns a flex basis struct with default values for it's members.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +74,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the absolute or relative length of the basis.</summary>
+        <value>The absolute or relative length of the basis.</value>
+        <remarks>
+          <para>If <see langword="true" /> was passed for the <paramref name="isRelative" /> parameter of the <see cref="M:Xamarin.Forms.FlexBasis" /> constructor, then the returned value is the relative length basis, which is a value in the range [0,1], of UI elements that are described by this struct. If <see langword="false" /> or no value was passed, then the returned value is the absolute length basis, in device-indepentend pixels, of UI elements that are described by this struct.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -96,9 +98,9 @@
         <Parameter Name="length" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="length">The length, in device-independent pixels, to convert.</param>
+        <summary>Returns a new absolute flex basis struct for the specified absolute <paramref name="length" />.</summary>
+        <returns>A new absolute flex basis struct.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

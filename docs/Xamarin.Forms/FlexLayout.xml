@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A Flexbox-like layout that lays out child elements in optionally wrappable rows or columns of child elements.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.FlexLayout" /> with default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +48,7 @@
         <ReturnType>Xamarin.Forms.FlexAlignContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value that controls how multiple rows or columns of child elements are aligned.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,7 +67,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.FlexLayout.AlignContent" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
         <ReturnType>Xamarin.Forms.FlexAlignItems</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that controls how child elements are laid out within their row or column.</summary>
+        <value>A value that controls how child elements are laid out within their row or column.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +104,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.FlexLayout.Items" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +122,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that optionally overrides the item alignment for this child within its row or column in the parent.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +140,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that contains information about this element's relative or absolute basis.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,8 +158,8 @@
         <ReturnType>Xamarin.Forms.FlexDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the flex direction for child elements within this layout.</summary>
+        <value>The flex direction for child elements within this layout.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +177,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.FlexLayout.Direction" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +198,9 @@
         <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindable">The object for which to retrieve the property value.</param>
+        <summary>Returns the value that optionally overrides the item alignment for this child within its row or column in the parent.</summary>
+        <returns>The value that optionally overrides the item alignment for this child within its row or column in the parent.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,9 +221,9 @@
         <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindable">The object for which to retrieve the property value.</param>
+        <summary>Returns the value that describes this element's relative or absolute basis length.</summary>
+        <returns>The value that describes this element's relative or absolute basis length.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,9 +244,9 @@
         <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindable">The object for which to retrieve the property value.</param>
+        <summary>Returns the value that determines the proportional growth that this element will accept to acccommodate the layout in the row or column.</summary>
+        <returns>The value that determines the proportional growth that this element will accept to acccommodate the layout in the row or column.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,9 +267,9 @@
         <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindable">The object for which to retrieve the property value.</param>
+        <summary>Returns the visual order of the element among its siblings.</summary>
+        <returns>The visual order of the element among its siblings.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,9 +290,9 @@
         <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindable">The object for which to retrieve the property value.</param>
+        <summary>Returns the value that determines the proportional reduction in size that this element will accept to acccommodate the layout in the row or column.</summary>
+        <returns>The proportional reduction in size that this element will accept to acccommodate the layout in the row or column.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +310,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that determines the proportional growth that this element will accept to acccommodate the layout in the row or column.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,8 +328,8 @@
         <ReturnType>Xamarin.Forms.FlexJustify</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that that describes how child elements are justified when there is extra space around them.</summary>
+        <value>A value that that describes how child elements are justified when there is extra space around them.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,7 +347,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.FlexLayout.JustifyContent" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,11 +371,11 @@
         <Parameter Name="height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
+        <param name="x">The X-coordinate of the origin of the rectangle.</param>
         <param name="y">To be added.</param>
         <param name="width">To be added.</param>
         <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Lays out the <see cref="P:Xamarin.Forms.FlexLayou.Children" /> in the specified rectangle.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,8 +396,8 @@
         <Parameter Name="view" Type="Xamarin.Forms.View" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="view">The view to which the layout was added.</param>
+        <summary>Method that is called when the flex layout is added to a view.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -419,9 +419,9 @@
         <Parameter Name="heightConstraint" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="widthConstraint">To be added.</param>
+        <param name="widthConstraint">The width constraint.</param>
         <param name="heightConstraint">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Method that is called to request that the layout measure its child elements.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -441,7 +441,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Method that is called when the layout's parent is set.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,8 +462,8 @@
         <Parameter Name="view" Type="Xamarin.Forms.View" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="view">The view from which the layout was removed.</param>
+        <summary>Method that is called when the layout is removed from a view.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,7 +481,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that determines this element's visual order among its siblings.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,8 +499,8 @@
         <ReturnType>Xamarin.Forms.FlexPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that controls whether the coordinates of child elements are specified in absolute or relative terms.</summary>
+        <value>A value that controls whether the coordinates of child elements are specified in absolute or relative terms.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,7 +518,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.FlexLayout.Position" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -540,9 +540,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.FlexAlignSelf" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
+        <param name="bindable">The object for which to retrieve the property value.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets a value that optionally overrides the parent element's item aliginment for this child element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -564,9 +564,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.FlexBasis" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
+        <param name="bindable">The object for which to retrieve the property value.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the value that describes this element's relative or absolute basis length.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,9 +588,9 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
+        <param name="bindable">The object for which to retrieve the property value.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the value that determines the proportional growth that this element will accept to acccommodate the layout in the row or column.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,9 +612,9 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
+        <param name="bindable">The object for which to retrieve the property value.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the visual order of the element among its siblings.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -636,9 +636,9 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
+        <param name="bindable">The object for which to retrieve the property value.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the value that determines the proportional reduction in size that this element will accept to acccommodate the layout in the row or column.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -656,7 +656,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that determines the proportional reduction in size that this element will accept to acccommodate the layout in the row or column.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -674,8 +674,8 @@
         <ReturnType>Xamarin.Forms.FlexWrap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that controls whether and how child elements within this layout wrap.</summary>
+        <value>A value that controls whether and how child elements within this layout wrap.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -693,7 +693,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.FlexLayout.Wrap" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -12,9 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A visual element instance that Xamarin.Forms created on the iOS platform.</summary>
+    <summary>Provides access to the blur effect and legacy color mode on the iOS platform.</summary>
     <remarks>
-      <para>Developers use this type to set iOS-specific blur effects on visual elements.</para>
+      <para>To be added.</para>
     </remarks>
   </Docs>
   <Members>
@@ -99,9 +99,10 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The platform specific element on which to perform the operation..</param>
+        <summary>Returns the legacy color mode.</summary>
+        <returns>
+          <see langword="true" /> if the legacy color mode is enabled. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +123,10 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <summary>Returns the legacy color mode.</summary>
+        <returns>
+          <see langword="true" /> if the legacy color mode is enabled. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,7 +374,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that turns the legacy color mode on and off.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,9 +438,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
+        <param name="element">The platform specific element on which to perform the operation.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the legacy color mode.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,10 +462,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets the legacy color mode.</summary>
+        <returns>A fluent object on which the developer may make more method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

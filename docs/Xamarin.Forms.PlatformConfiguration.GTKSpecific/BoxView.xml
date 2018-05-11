@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Controls the presence of the corner radius of box views on the GTK platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The box view element on the GTK platform whose corner radius to get.</param>
+        <summary>Returns a Boolean value that tells whether the box view has a corner radius set.</summary>
+        <returns>A Boolean value that tells whether the box view has a corner radius set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +56,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.GTK,Xamarin.Forms.BoxView&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the box view element on the GTK platform whose  to get.</param>
+        <summary>Returns a Boolean value that tells whether the box view has a corner radius set.</summary>
+        <returns>A Boolean value that tells whether the box view has a corner radius set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +76,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls whether the box view has a corner radius.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +98,9 @@
         <Parameter Name="tabPosition" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
+        <param name="element">The box view element on the GTK platform whose corner radius presence to set.</param>
         <param name="tabPosition">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the corner radius presence.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +122,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
+        <param name="config">The platform configuration for the  element on the GTK platform whose  to set.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

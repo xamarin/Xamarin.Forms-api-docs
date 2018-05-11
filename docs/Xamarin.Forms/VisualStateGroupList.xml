@@ -22,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a list of visual state groups for an application.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.VisualStateGroupList" /> object with default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <Parameter Name="item" Type="Xamarin.Forms.VisualStateGroup" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The visual state group to add to the list.</param>
+        <summary>Adds the specified visual state group to the list.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +84,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all visual state groups from the list.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +108,10 @@
         <Parameter Name="item" Type="Xamarin.Forms.VisualStateGroup" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The visual state group whose membership to check.</param>
+        <summary>Checks whether <paramref name="item" /> is in the list of visual state groups.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is in the list of groups. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +135,7 @@
       <Docs>
         <param name="array">To be added.</param>
         <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Copies the list group to the specified <paramref name="array" />, starting at <paramref name="arrayIndex" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +156,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of visual state groups in the list.</summary>
+        <value>The number of visual state groups in the list.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,8 +179,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator for iterating over the groups in the list.</summary>
+        <returns>An enumerator for iterating over the groups in the list..</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,9 +204,9 @@
         <Parameter Name="item" Type="Xamarin.Forms.VisualStateGroup" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The group whose index to get.</param>
+        <summary>Returns the index of <paramref name="item" /> if found. Otherwise, returns <c>-1</c>.</summary>
+        <returns>The index of <paramref name="item" /> if found. Otherwise, <c>-1</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,10 +231,13 @@
         <Parameter Name="item" Type="Xamarin.Forms.VisualStateGroup" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
+        <param name="index">The index at which to insert <paramref name="item" />.</param>
         <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Inserts <paramref name="item" /> at <paramref name="index" /> in the list of groups.</summary>
+        <remarks>
+          <para>
+            <paramref name="index" /> must be less than the number of items in the list.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -253,8 +257,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a Boolean value that tells whether this list is read-only.</summary>
+        <value>
+          <see langword="true" /> if the list is read-only. Otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,9 +283,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the item to get or set.</param>
+        <summary>Gets or sets the item at the specified <paramref name="index" />.</summary>
+        <value>The item at the specified <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,9 +309,9 @@
         <Parameter Name="item" Type="Xamarin.Forms.VisualStateGroup" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to remove.</param>
+        <summary>Removes the group from the list of groups.</summary>
+        <returns>The removed group.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,8 +335,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the item to remove.</param>
+        <summary>Removes the item at the specified <paramref name="index" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,8 +357,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an enumerator that iterates over the groups in this list.</summary>
+        <returns>An enumerator that iterates over the groups in this list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

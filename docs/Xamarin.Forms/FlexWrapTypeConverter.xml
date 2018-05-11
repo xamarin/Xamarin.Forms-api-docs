@@ -17,8 +17,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts a string representation of a wrapping style to a <see cref="T:Xamarin.Forms.FlexWrap" />.</summary>
+    <remarks>
+      <para>This converter recognizes and converts string representations of the <see cref="T:Xamarin.Forms.FlexWrap" /> enumeration, as well as, regardless of case, "wrap-reverse".</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new default converter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +55,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <summary>Returns the object for the string representation.</summary>
+        <returns>The object for the string representation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -49,6 +49,44 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetChildGesturesFor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetChildGesturesFor&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.GestureElement&gt; elements, Func&lt;T,bool&gt; predicate = null) where T : Xamarin.Forms.GestureRecognizer;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetChildGesturesFor&lt;(class Xamarin.Forms.GestureRecognizer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Xamarin.Forms.GestureElement&gt; elements, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.EnumerableExtensions.GetChildGesturesFor``1(System.Collections.Generic.IEnumerable{Xamarin.Forms.GestureElement},System.Func{``0,System.Boolean})" />
+      <MemberSignature Language="F#" Value="static member GetChildGesturesFor : seq&lt;Xamarin.Forms.GestureElement&gt; * Func&lt;'T, bool (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; -&gt; seq&lt;'T (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)" Usage="Xamarin.Forms.Internals.EnumerableExtensions.GetChildGesturesFor (elements, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;GetChildGesturesFor&gt;d__0`1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.GestureRecognizer</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.GestureElement&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="elements">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetGesturesFor&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetGesturesFor&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.IGestureRecognizer&gt; gestures, Func&lt;T,bool&gt; predicate = null) where T : Xamarin.Forms.GestureRecognizer;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetGesturesFor&lt;(class Xamarin.Forms.GestureRecognizer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Xamarin.Forms.IGestureRecognizer&gt; gestures, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
@@ -61,7 +99,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;GetGesturesFor&gt;d__0`1))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;GetGesturesFor&gt;d__1`1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -83,7 +121,7 @@
         <param name="gestures">For internal use by the Xamarin.Forms platform.</param>
         <param name="predicate">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +150,7 @@
         <param name="enumerable">For internal use by the Xamarin.Forms platform.</param>
         <param name="predicate">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,7 +179,7 @@
         <param name="enumerable">For internal use by the Xamarin.Forms platform.</param>
         <param name="item">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,7 +195,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;Prepend&gt;d__5`1))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;Prepend&gt;d__6`1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -175,7 +213,7 @@
         <param name="enumerable">For internal use by the Xamarin.Forms platform.</param>
         <param name="item">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

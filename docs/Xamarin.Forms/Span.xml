@@ -1,8 +1,8 @@
 <Type Name="Span" FullName="Xamarin.Forms.Span">
-  <TypeSignature Language="C#" Value="public sealed class Span : Xamarin.Forms.Element, Xamarin.Forms.Internals.IFontElement" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Span extends Xamarin.Forms.Element implements class Xamarin.Forms.Internals.IFontElement" />
+  <TypeSignature Language="C#" Value="public sealed class Span : Xamarin.Forms.GestureElement, Xamarin.Forms.Internals.IFontElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Span extends Xamarin.Forms.GestureElement implements class Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Span" />
-  <TypeSignature Language="F#" Value="type Span = class&#xA;    inherit Element&#xA;    interface IFontElement&#xA;    interface ITextElement" />
+  <TypeSignature Language="F#" Value="type Span = class&#xA;    inherit GestureElement&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface ILineHeightElement" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -14,6 +14,7 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="xamarin-forms">Xamarin.Forms.Element</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="xamarin-forms">Xamarin.Forms.GestureElement</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -299,6 +300,43 @@
           <AttributeName>System.Obsolete("Foreground is obsolete as of version 3.1.0. Please use the TextColor property instead.")</AttributeName>
         </Attribute>
       </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeight">
+      <MemberSignature Language="C#" Value="public double LineHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LineHeight" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Span.LineHeight" />
+      <MemberSignature Language="F#" Value="member this.LineHeight : double with get, set" Usage="Xamarin.Forms.Span.LineHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty LineHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty LineHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Span.LineHeightProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable LineHeightProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Span.LineHeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>

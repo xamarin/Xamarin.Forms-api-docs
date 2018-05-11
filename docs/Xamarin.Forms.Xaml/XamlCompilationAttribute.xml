@@ -17,8 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Attribute that controls whether XAML will be compiled at build time or run time.</summary>
+    <remarks>By default, XAML compilation at build time is turned off.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +35,8 @@
         <Parameter Name="xamlCompilationOptions" Type="Xamarin.Forms.Xaml.XamlCompilationOptions" />
       </Parameters>
       <Docs>
-        <param name="xamlCompilationOptions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xamlCompilationOptions">A value that tells whether to compile XAML at run time or compile time.</param>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.Xaml.XamlCompilationAttribute" /> with the specified value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +54,9 @@
         <ReturnType>Xamarin.Forms.Xaml.XamlCompilationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value that tells whether to compile XAML at run time or compile time.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>By default, XAML compilation at build time is turned off.</remarks>
       </Docs>
     </Member>
   </Members>
