@@ -99,10 +99,10 @@
       </Parameters>
       <Docs>
         <param name="view">The view to add.</param>
-        <param name="left">The left edge of the column span. Must be greater than 0.</param>
-        <param name="right">The right edge of the column span. Must be greater than left.</param>
-        <param name="top">The top edge of the row span. Must be greater than 0.</param>
-        <param name="bottom">The bottom edge of the row span. Must be greater than top.</param>
+        <param name="left">The left edge of the column span. Must be greater than or equal to 0.</param>
+        <param name="right">The right edge of the column span. Must be greater than left. The view won't occupy this column, but will stop just before it.</param>
+        <param name="top">The top edge of the row span. Must be greater than or equal to 0.</param>
+        <param name="bottom">The bottom edge of the row span. Must be greater than top. The view won't occupy this row, but will stop just before it.</param>
         <summary>Adds a view to the List at the specified row and column spans.</summary>
         <remarks>
         </remarks>
