@@ -1,4 +1,4 @@
-﻿<Type Name="ListView" FullName="Xamarin.Forms.ListView">
+<Type Name="ListView" FullName="Xamarin.Forms.ListView">
   <TypeSignature Language="C#" Value="public class ListView : Xamarin.Forms.ItemsView&lt;Xamarin.Forms.Cell&gt;, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.ListView&gt;, Xamarin.Forms.IListViewController" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListView extends Xamarin.Forms.ItemsView`1&lt;class Xamarin.Forms.Cell&gt; implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.ListView&gt;, class Xamarin.Forms.IElementController, class Xamarin.Forms.IListViewController, class Xamarin.Forms.IViewController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ListView" />
@@ -174,7 +174,7 @@ class ListViewDemoPage : ContentPage
       <Parameters />
       <Docs>
         <summary>Creates and initializes a new instance of the <see cref="T:Xamarin.Forms.ListView" /> class.</summary>
-        <remarks></remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -506,7 +506,7 @@ class ListViewDemoPage : ContentPage
         <ReturnType>Xamarin.Forms.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the binding to use for display the group header.</summary>
+        <summary>Gets or sets the binding to use for displaying the group header.</summary>
         <value>The <see cref="T:Xamarin.Forms.BindingBase" /> instance to apply to grouped lists, or <see cref="null" />.</value>
         <remarks>
           <para>
@@ -642,7 +642,7 @@ class ListViewDemoPage : ContentPage
       </ReturnValue>
       <Docs>
         <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.GroupHeaderTemplate" /> property.</summary>
-        <remarks></remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupShortNameBinding">
@@ -797,7 +797,7 @@ ListView CreateListView()
       </ReturnValue>
       <Docs>
         <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.HasUnevenRowsProperty" /> property.</summary>
-        <remarks></remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -938,7 +938,7 @@ ListView CreateListView()
         <value>
           <see langword="true" /> if grouping is enabled, <see langword="false" /> otherwise and by default.
         </value>
-        <remarks></remarks>
+        <remarks>To be added.</remarks>
         <altmember cref="P:Xamarin.Forms.ListView.GroupDisplayBinding" />
         <altmember cref="P:Xamarin.Forms.ListView.GroupHeaderTemplate" />
       </Docs>
@@ -965,7 +965,7 @@ ListView CreateListView()
       </ReturnValue>
       <Docs>
         <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.IsGroupingEnabledProperty" /> property.</summary>
-        <remarks></remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPullToRefreshEnabled">
@@ -1440,7 +1440,7 @@ ListView CreateListView()
       </ReturnValue>
       <Docs>
         <summary>The backing store for the <see cref="P:Xamarin.Forms.ListView.RowHeightProperty" /> property.</summary>
-        <remarks></remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollTo">
@@ -1565,7 +1565,7 @@ ListView CreateListView()
       <Docs>
         <summary>Gets or sets the currently selected item from the <see cref="P:Xamarin.Forms.ListView.ItemsSource" />.</summary>
         <value>The selected item or <see langword="null" /> if no item is selected.</value>
-        <remarks></remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedItemProperty">
@@ -1590,7 +1590,7 @@ ListView CreateListView()
       </ReturnValue>
       <Docs>
         <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.SelectedItemProperty" /> property.</summary>
-        <remarks></remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendCellAppearing">
@@ -1846,7 +1846,8 @@ ListView CreateListView()
       <Docs>
         <param name="template">To be added.</param>
         <summary>Returns <see langword="false" /> if <paramref name="template" /> is a template selector and elements are being retained. Otherwise, returns <see langword="true" />.</summary>
-        <returns><see langword="false" /> if <paramref name="template" /> is a template selector and elements are being retained. Otherwise, <see langword="true" />.</returns>
+        <returns>
+          <see langword="false" /> if <paramref name="template" /> is a template selector and elements are being retained. Otherwise, <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
