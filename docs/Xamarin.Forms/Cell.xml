@@ -1,4 +1,4 @@
-﻿<Type Name="Cell" FullName="Xamarin.Forms.Cell">
+<Type Name="Cell" FullName="Xamarin.Forms.Cell">
   <TypeSignature Language="C#" Value="public abstract class Cell : Xamarin.Forms.Element, Xamarin.Forms.ICellController" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Cell extends Xamarin.Forms.Element implements class Xamarin.Forms.ICellController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Cell" />
@@ -364,7 +364,8 @@ Content = new TableView
       <Docs>
         <summary>Gets or sets the IsEnabled state of the Cell. This is a bindable property.</summary>
         <value>A bool. Default is <see langword="true" />.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabledProperty">
@@ -388,7 +389,8 @@ Content = new TableView
       </ReturnValue>
       <Docs>
         <summary>Identifies the IsEnabled bindable property.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAppearing">
@@ -413,7 +415,8 @@ Content = new TableView
       <Parameters />
       <Docs>
         <summary>Invoked whenever an <see cref="E:Xamarin.Forms.Cell.Appearing" /> event occurs. Implement this method to add class handling for this event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBindingContextChanged">
@@ -460,7 +463,8 @@ Content = new TableView
       <Parameters />
       <Docs>
         <summary>Invoked whenever an <see cref="E:Xamarin.Forms.Cell.Disappearing" /> event occurs. Implement this method to add class handling for this event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnParentSet">
@@ -528,7 +532,8 @@ Content = new TableView
       <Parameters />
       <Docs>
         <summary>Invoked whenever the Cell is Tapped.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderHeight">
@@ -552,8 +557,10 @@ Content = new TableView
       </ReturnValue>
       <Docs>
         <summary>Gets the height of the rendered cell on the device.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendAppearing">
@@ -631,7 +638,8 @@ Content = new TableView
       </ReturnValue>
       <Docs>
         <summary>Occurs when the Cell is Tapped.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

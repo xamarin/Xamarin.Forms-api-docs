@@ -1,4 +1,4 @@
-﻿<Type Name="Slider" FullName="Xamarin.Forms.Slider">
+<Type Name="Slider" FullName="Xamarin.Forms.Slider">
   <TypeSignature Language="C#" Value="public class Slider : Xamarin.Forms.View, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Slider&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Slider extends Xamarin.Forms.View implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Slider&gt;" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Slider" />
@@ -166,7 +166,8 @@ namespace FormsGallery
         <param name="max">The maximum selectable value.</param>
         <param name="val">The actual value.</param>
         <summary>Initializes a new instance of the Slider class.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -191,7 +192,8 @@ namespace FormsGallery
       <Docs>
         <summary>Gets or sets the maximum selectable value for the Slider. This is a bindable property.</summary>
         <value>A double.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumProperty">
@@ -215,7 +217,45 @@ namespace FormsGallery
       </ReturnValue>
       <Docs>
         <summary>Identifies the Maximum bindable property.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumTrackColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color MaximumTrackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color MaximumTrackColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Slider.MaximumTrackColor" />
+      <MemberSignature Language="F#" Value="member this.MaximumTrackColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Slider.MaximumTrackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumTrackColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty MaximumTrackColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty MaximumTrackColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Slider.MaximumTrackColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaximumTrackColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Slider.MaximumTrackColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -240,7 +280,8 @@ namespace FormsGallery
       <Docs>
         <summary>Gets or sets the minimum selectable value for the Slider. This is a bindable property.</summary>
         <value>A double.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumProperty">
@@ -264,7 +305,45 @@ namespace FormsGallery
       </ReturnValue>
       <Docs>
         <summary>Identifies the Minimum bindable property.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumTrackColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color MinimumTrackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color MinimumTrackColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Slider.MinimumTrackColor" />
+      <MemberSignature Language="F#" Value="member this.MinimumTrackColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Slider.MinimumTrackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumTrackColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty MinimumTrackColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty MinimumTrackColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Slider.MinimumTrackColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinimumTrackColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Slider.MinimumTrackColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="On&lt;T&gt;">
@@ -298,6 +377,80 @@ namespace FormsGallery
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ThumbColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color ThumbColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color ThumbColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Slider.ThumbColor" />
+      <MemberSignature Language="F#" Value="member this.ThumbColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Slider.ThumbColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ThumbColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ThumbColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Slider.ThumbColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ThumbColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Slider.ThumbColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbImage">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.FileImageSource ThumbImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.FileImageSource ThumbImage" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Slider.ThumbImage" />
+      <MemberSignature Language="F#" Value="member this.ThumbImage : Xamarin.Forms.FileImageSource with get, set" Usage="Xamarin.Forms.Slider.ThumbImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbImageProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ThumbImageProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ThumbImageProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Slider.ThumbImageProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ThumbImageProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Slider.ThumbImageProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public double Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
@@ -320,7 +473,8 @@ namespace FormsGallery
       <Docs>
         <summary>Gets or sets the current value. This is a bindable property.</summary>
         <value>A double.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueChanged">
@@ -344,7 +498,8 @@ namespace FormsGallery
       </ReturnValue>
       <Docs>
         <summary>The ValueChanged event is fired when the Value property changes.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueProperty">
@@ -368,7 +523,8 @@ namespace FormsGallery
       </ReturnValue>
       <Docs>
         <summary>Identifies the Value bindable property.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

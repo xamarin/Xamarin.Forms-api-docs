@@ -110,7 +110,8 @@
       <Docs>
         <param name="item">The visual state group whose membership to check.</param>
         <summary>Checks whether <paramref name="item" /> is in the list of visual state groups.</summary>
-        <returns><see langword="true" /> if <paramref name="item" /> is in the list of groups. Otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is in the list of groups. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,7 +234,10 @@
         <param name="index">The index at which to insert <paramref name="item" />.</param>
         <param name="item">The group to insert.</param>
         <summary>Inserts <paramref name="item" /> at <paramref name="index" /> in the list of groups.</summary>
-        <remarks><para><paramref name="index" /> must be less than the number of items in the list.</para></remarks>
+        <remarks>
+          <para>
+            <paramref name="index" /> must be less than the number of items in the list.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -254,7 +258,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a Boolean value that tells whether this list is read-only.</summary>
-        <value><see langword="true" /> if the list is read-only. Otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the list is read-only. Otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,6 +337,7 @@
       <Docs>
         <param name="index">The index of the item to remove.</param>
         <summary>Removes the item at the specified <paramref name="index" />.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">

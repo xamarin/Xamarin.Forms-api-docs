@@ -1,4 +1,4 @@
-﻿<Type Name="Entry" FullName="Xamarin.Forms.Entry">
+<Type Name="Entry" FullName="Xamarin.Forms.Entry">
   <TypeSignature Language="C#" Value="public class Entry : Xamarin.Forms.InputView, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Entry&gt;, Xamarin.Forms.IEntryController, Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Entry extends Xamarin.Forms.InputView implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Entry&gt;, class Xamarin.Forms.IEntryController, class Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Entry" />
@@ -111,7 +111,8 @@ View CreateLoginForm ()
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the Entry class.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -346,7 +347,45 @@ View CreateLoginForm ()
       </ReturnValue>
       <Docs>
         <summary>Identifies the IsPassword bindable property.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTextPredictionEnabled">
+      <MemberSignature Language="C#" Value="public bool IsTextPredictionEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTextPredictionEnabled" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Entry.IsTextPredictionEnabled" />
+      <MemberSignature Language="F#" Value="member this.IsTextPredictionEnabled : bool with get, set" Usage="Xamarin.Forms.Entry.IsTextPredictionEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTextPredictionEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsTextPredictionEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsTextPredictionEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Entry.IsTextPredictionEnabledProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTextPredictionEnabledProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.IsTextPredictionEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="On&lt;T&gt;">
@@ -402,7 +441,8 @@ View CreateLoginForm ()
       <Docs>
         <summary>Gets or sets the placeholder text shown when the entry <see cref="P:Xamarin.Forms.Entry.Text" /> is null or empty. This is a bindable property.</summary>
         <value>The placeholder text shown when <see cref="P:Xamarin.Forms.Entry.Text" /> is null or empty. The default value is <see langword="null" />.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PlaceholderColor">
@@ -465,7 +505,119 @@ View CreateLoginForm ()
       </ReturnValue>
       <Docs>
         <summary>Identifies the Placeholder bindable property.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnCommand">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand ReturnCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand ReturnCommand" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Entry.ReturnCommand" />
+      <MemberSignature Language="F#" Value="member this.ReturnCommand : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.Entry.ReturnCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnCommandParameter">
+      <MemberSignature Language="C#" Value="public object ReturnCommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ReturnCommandParameter" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Entry.ReturnCommandParameter" />
+      <MemberSignature Language="F#" Value="member this.ReturnCommandParameter : obj with get, set" Usage="Xamarin.Forms.Entry.ReturnCommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnCommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ReturnCommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ReturnCommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Entry.ReturnCommandParameterProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ReturnCommandParameterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.ReturnCommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnCommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ReturnCommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ReturnCommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Entry.ReturnCommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ReturnCommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.ReturnCommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnType">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ReturnType ReturnType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ReturnType ReturnType" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Entry.ReturnType" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Xamarin.Forms.ReturnType with get, set" Usage="Xamarin.Forms.Entry.ReturnType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ReturnType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ReturnTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ReturnTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Entry.ReturnTypeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ReturnTypeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.ReturnTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendCompleted">
@@ -566,7 +718,8 @@ View CreateLoginForm ()
       <Docs>
         <summary>Gets or sets the <see cref="T:Xamarin.Forms.Color" /> for the text of the Entry. This is a bindable property.</summary>
         <value>The <see cref="T:Xamarin.Forms.Color" /> of the text.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextColorProperty">
@@ -590,7 +743,8 @@ View CreateLoginForm ()
       </ReturnValue>
       <Docs>
         <summary>Identifies the TextColor bindable property.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextProperty">
@@ -614,7 +768,8 @@ View CreateLoginForm ()
       </ReturnValue>
       <Docs>
         <summary>Identifies the Text bindable property.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator">

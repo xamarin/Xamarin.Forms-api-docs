@@ -1,4 +1,4 @@
-﻿<Type Name="ScrollView" FullName="Xamarin.Forms.ScrollView">
+<Type Name="ScrollView" FullName="Xamarin.Forms.ScrollView">
   <TypeSignature Language="C#" Value="public class ScrollView : Xamarin.Forms.Layout, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.ScrollView&gt;, Xamarin.Forms.IScrollViewController" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollView extends Xamarin.Forms.Layout implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.ScrollView&gt;, class Xamarin.Forms.ILayoutController, class Xamarin.Forms.IScrollViewController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ScrollView" />
@@ -97,7 +97,8 @@ MainPage = new ContentPage
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the ScrollView class.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -123,7 +124,8 @@ MainPage = new ContentPage
       <Docs>
         <summary>Gets or sets a <see cref="T:Xamarin.Forms.View" /> to display in the <see cref="T:Xamarin.Forms.ScrollView" />.</summary>
         <value>The <see cref="T:Xamarin.Forms.View" /> that is displayed.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentSize">
@@ -149,7 +151,8 @@ MainPage = new ContentPage
       <Docs>
         <summary>Gets the size of the Content. This is a bindable property.</summary>
         <value>A <see cref="T:Xamarin.Forms.Size" /> that represents the size of the content.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentSizeProperty">
@@ -210,6 +213,43 @@ MainPage = new ContentPage
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="HorizontalScrollBarVisibility">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ScrollBarVisibility HorizontalScrollBarVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ScrollBarVisibility HorizontalScrollBarVisibility" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ScrollView.HorizontalScrollBarVisibility" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarVisibility : Xamarin.Forms.ScrollBarVisibility with get, set" Usage="Xamarin.Forms.ScrollView.HorizontalScrollBarVisibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ScrollBarVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalScrollBarVisibilityProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty HorizontalScrollBarVisibilityProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty HorizontalScrollBarVisibilityProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ScrollView.HorizontalScrollBarVisibilityProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalScrollBarVisibilityProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ScrollView.HorizontalScrollBarVisibilityProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="LayoutChildren">
       <MemberSignature Language="C#" Value="protected override void LayoutChildren (double x, double y, double width, double height);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LayoutChildren(float64 x, float64 y, float64 width, float64 height) cil managed" />
@@ -242,7 +282,8 @@ MainPage = new ContentPage
         <param name="width">A value that represents  the y coordinate of the child region bounding box.</param>
         <param name="height">A value that represents the y coordinate of the child region bounding box.</param>
         <summary>Positions and sizes the content of a ScrollView.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="On&lt;T&gt;">
@@ -334,8 +375,10 @@ MainPage = new ContentPage
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the scrolling direction of the ScrollView. This is a bindable property.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OrientationProperty">
@@ -360,7 +403,8 @@ MainPage = new ContentPage
       </ReturnValue>
       <Docs>
         <summary>Identifies the Orientation bindable property.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Scrolled">
@@ -605,6 +649,43 @@ MainPage = new ContentPage
         <param name="x">For internal use by the Xamarin.Forms platform.</param>
         <param name="y">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalScrollBarVisibility">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ScrollBarVisibility VerticalScrollBarVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ScrollBarVisibility VerticalScrollBarVisibility" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ScrollView.VerticalScrollBarVisibility" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarVisibility : Xamarin.Forms.ScrollBarVisibility with get, set" Usage="Xamarin.Forms.ScrollView.VerticalScrollBarVisibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ScrollBarVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalScrollBarVisibilityProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty VerticalScrollBarVisibilityProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty VerticalScrollBarVisibilityProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ScrollView.VerticalScrollBarVisibilityProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalScrollBarVisibilityProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ScrollView.VerticalScrollBarVisibilityProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
