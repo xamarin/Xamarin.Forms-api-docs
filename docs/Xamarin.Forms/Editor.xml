@@ -102,9 +102,9 @@ var editor = new Editor {
         <ReturnType>Xamarin.Forms.EditorAutoSizeOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that controls whether the editor will change size to accommodate input as the user enters it.</summary>
+        <value>Whether the editor will change size to accommodate input as the user enters it.</value>
+        <remarks>Automatic resizing is turned off by default.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSizeProperty">
@@ -121,7 +121,7 @@ var editor = new Editor {
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the property that controls whether the editor will change size to accommodate input as the user enters it.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -456,7 +456,7 @@ var editor = new Editor {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
