@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides control over the legacy color mode on visual elements.</summary>
+    <summary>Provides access to platform-specific features of visual elements on the Windows platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that gets and sets the horizontal offset from the nominal position to use for displaying the access key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +48,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that gets and sets the nominal position to use for displaying the access key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +66,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that gets and sets value to display in an access key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +84,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that gets and sets the vertical offset from the nominal position to use for displaying the access key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,9 +105,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element for which to get the access key.</param>
+        <summary>Returns the value that the access key displays.</summary>
+        <returns>The value that the access key displays.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,9 +128,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element for which to get the access key.</param>
+        <summary>Returns the value that the access key displays.</summary>
+        <returns>The value that the access key displays.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,9 +151,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element for which to get the horizontal offset.</param>
+        <summary>Gets the horizontal offset from the nominal position to use for displaying the access key.</summary>
+        <returns>The horizontal offset from the nominal position to use for displaying the access key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,9 +174,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element for which to get the horizontal offset.</param>
+        <summary>Gets the horizontal offset from the nominal position to use for displaying the access key.</summary>
+        <returns>The horizontal offset from the nominal position to use for displaying the access key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,9 +197,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element for which to get the access key placement.</param>
+        <summary>Gets the nominal position to use for displaying the access key.</summary>
+        <returns>The nominal position to use for displaying the access key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,9 +220,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element for which to get the access key placement.</param>
+        <summary>Gets the nominal position to use for displaying the access key.</summary>
+        <returns>The nominal position to use for displaying the access key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +243,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element for which to get the vertical offset.</param>
+        <summary>Gets the vertical offset from the nominal position to use for displaying the access key.</summary>
+        <returns>The vertical offset from the nominal position to use for displaying the access key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,9 +266,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element for which to get the vertical offset.</param>
+        <summary>Gets the vertical offset from the nominal position to use for displaying the access key.</summary>
+        <returns>The vertical offset from the nominal position to use for displaying the access key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,9 +356,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element for which to set the access key string.</param>
+        <param name="value">The new access key value.</param>
+        <summary>Sets the value that the access key displays.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,10 +380,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element for which to set the access key string.</param>
+        <param name="value">The new access key value.</param>
+        <summary>Sets the value that the access key displays.</summary>
+        <returns>A fluent object on which the developer may make furter method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,9 +405,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element for which to set the horizontal access key offset.</param>
+        <param name="value">The new offset value.</param>
+        <summary>Sets the horizontal offset from the nominal position to use for displaying the access key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,10 +429,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element for which to set the horizontal access key offset.</param>
+        <param name="value">The new offset value.</param>
+        <summary>Sets the horizontal offset from the nominal position to use for displaying the access key.</summary>
+        <returns>A fluent object on which the developer may make furter method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,9 +454,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.AccessKeyPlacement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element for which to set the horizontal access key placement.</param>
+        <param name="value">The new placement value.</param>
+        <summary>Sets nominal position to use for displaying the access key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -478,10 +478,10 @@
         <Parameter Name="value" Type="Xamarin.Forms.AccessKeyPlacement" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element for which to set the new placement.</param>
+        <param name="value">The new placement value.</param>
+        <summary>Sets nominal position to use for displaying the access key.</summary>
+        <returns>A fluent object on which the developer may make furter method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,9 +503,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element for which to set the vertical access key offset.</param>
+        <param name="value">The new offset value.</param>
+        <summary>Sets the vertical offset from the nominal position to use for displaying the access key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,10 +527,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element for which to set the vertical access key offset.</param>
+        <param name="value">The new offset value.</param>
+        <summary>Sets the vertical offset from the nominal position to use for displaying the access key.</summary>
+        <returns>A fluent object on which the developer may make furter method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
