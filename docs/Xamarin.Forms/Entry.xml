@@ -37,9 +37,7 @@
     <remarks>
       <para>Entry is a single line text entry. It is best used for collecting small discrete pieces of information, like usernames and passwords.</para>
       <example>
-        <para>
-                The following example creates a new username and password set of entries.
-                </para>
+        <para>The following example creates a new username and password set of entries.</para>
         <code lang="C#"><![CDATA[
 View CreateLoginForm ()
 {
@@ -57,36 +55,8 @@ View CreateLoginForm ()
   };
 }
             ]]></code>
-        <para>The FormsGallery sample, which can be found on the <format type="text/html"><a href="http://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, has an EntryDemoPage.cs file. This file contains a longer and more complicated example.</para>
+        <para>The FormsGallery sample, which can be found on the <format type="text/html"><a href="http://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, has an EntryDemoPage.cs file. This file contains a more complete example.</para>
       </example>
-      <para>XAML for Xamarin.Forms supports the following properties for the <see cref="T:Xamarin.Forms.Entry" /> class:</para>
-      <list type="table">
-        <listheader>
-          <term>Property</term>
-          <description>Value</description>
-        </listheader>
-        <item>
-          <term>IsPassword</term>
-          <description>
-            <c>true</c> to indicate that the <see cref="T:Xamarin.Forms.Entry" /> is a password field. Otherwise, <c>false</c>.</description>
-        </item>
-        <item>
-          <term>Placeholder</term>
-          <description>The default text that will appear in the control.</description>
-        </item>
-        <item>
-          <term>Text</term>
-          <description>
-            <para>The initial text that will appear in the entry.</para>
-          </description>
-        </item>
-        <item>
-          <term>TextColor</term>
-          <description>
-            <para>A color specification, with or without the prefix, "Color". For example, "Color.Red" and "Red" both specify the color red.</para>
-          </description>
-        </item>
-      </list>
       <para>
         <img href="xamarin-media/Xamarin.Forms/_images/Entry.TripleScreenShot.png" />
       </para>
@@ -320,7 +290,7 @@ View CreateLoginForm ()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates if the entry should visually obscure typed text. This is a bindable property.</summary>
+        <summary>Gets or sets a value that indicates if the entry should visually obscure typed text.</summary>
         <value>
           <see langword="true" /> if the element is a password box; otherwise, <see langword="false" />. Default value is <see langword="false" />.</value>
         <remarks>Toggling this value does not reset the contents of the entry, therefore it is advisable to be careful about setting IsPassword to false, as it may contain sensitive information.</remarks>
@@ -346,7 +316,7 @@ View CreateLoginForm ()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the IsPassword bindable property.</summary>
+        <summary>Backing store for the IsPassword property.</summary>
         <remarks>
         </remarks>
       </Docs>
@@ -365,8 +335,8 @@ View CreateLoginForm ()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that controls whether text prediction and automatic text correction is on or off.</summary>
+        <value><see langword="true" /> if text correction is on. Otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,7 +354,7 @@ View CreateLoginForm ()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Entry.IsTextPredictionEnabled" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -439,7 +409,7 @@ View CreateLoginForm ()
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the placeholder text shown when the entry <see cref="P:Xamarin.Forms.Entry.Text" /> is null or empty. This is a bindable property.</summary>
+        <summary>Gets or sets the placeholder text shown when the entry <see cref="P:Xamarin.Forms.Entry.Text" /> is null or empty.</summary>
         <value>The placeholder text shown when <see cref="P:Xamarin.Forms.Entry.Text" /> is null or empty. The default value is <see langword="null" />.</value>
         <remarks>
         </remarks>
@@ -504,7 +474,7 @@ View CreateLoginForm ()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Placeholder bindable property.</summary>
+        <summary>Backing store for the Placeholder property.</summary>
         <remarks>
         </remarks>
       </Docs>
@@ -523,8 +493,8 @@ View CreateLoginForm ()
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the command to run when the user returns the input.</summary>
+        <value>The command to run.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -542,8 +512,8 @@ View CreateLoginForm ()
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the parameter for the <see cref="P:Xamarin.Forms.Entry.ReturnCommand" />.</summary>
+        <value>Parameter for the <see cref="P:Xamarin.Forms.Entry.ReturnCommand" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -561,7 +531,7 @@ View CreateLoginForm ()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Entry.ReturnCommandParameter" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -579,7 +549,7 @@ View CreateLoginForm ()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Entry.ReturnCommand" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,8 +567,8 @@ View CreateLoginForm ()
         <ReturnType>Xamarin.Forms.ReturnType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an enumeration value that controls the appearance of the return button.</summary>
+        <value>An enumeration value that controls the appearance of the return button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -616,7 +586,7 @@ View CreateLoginForm ()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Entry.ReturnType" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -667,7 +637,7 @@ View CreateLoginForm ()
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text of the entry. This is a bindable property.</summary>
+        <summary>Gets or sets the text of the entry.</summary>
         <value>A string containing the text of the entry. The default value is <see langword="null" />.</value>
         <remarks>Setting this property will cause the <see cref="E:Xamarin.Forms.Entry.ValueChanged" /> event to be emitted.</remarks>
       </Docs>
@@ -716,7 +686,7 @@ View CreateLoginForm ()
         <ReturnType>Xamarin.Forms.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:Xamarin.Forms.Color" /> for the text of the Entry. This is a bindable property.</summary>
+        <summary>Gets or sets the <see cref="T:Xamarin.Forms.Color" /> for the text of the Entry.</summary>
         <value>The <see cref="T:Xamarin.Forms.Color" /> of the text.</value>
         <remarks>
         </remarks>
@@ -742,7 +712,7 @@ View CreateLoginForm ()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the TextColor bindable property.</summary>
+        <summary>Backing store for the TextColor property.</summary>
         <remarks>
         </remarks>
       </Docs>
@@ -767,7 +737,7 @@ View CreateLoginForm ()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Text bindable property.</summary>
+        <summary>Backing store for the Text property.</summary>
         <remarks>
         </remarks>
       </Docs>

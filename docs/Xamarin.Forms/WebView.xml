@@ -261,10 +261,10 @@ namespace FormsGallery
         <Parameter Name="script" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="script">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="script">The script to evaluate.</param>
+        <summary>On platforms that support JavaScript evaluation, evaluates <paramref name="script" />.</summary>
+        <returns>A task that contains the result of the evaluation as a string.</returns>
+        <remarks>Native JavaScript evaluation is supported neither on Tizen nor GTK (Linux).</remarks>
       </Docs>
     </Member>
     <Member MemberName="EvaluateJavaScriptRequested">
@@ -289,7 +289,7 @@ namespace FormsGallery
         <ReturnType>Xamarin.Forms.Internals.EvaluateJavaScriptDelegate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

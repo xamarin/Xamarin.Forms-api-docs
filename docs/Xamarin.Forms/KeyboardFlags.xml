@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Flagging enumeration for Keyboard options such as Capitalization, Spellcheck, and Suggestions.</summary>
+    <summary>Enumberates keyboard option flags that controls capitalization, spellcheck, and suggestion behavior.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
       </ReturnValue>
       <MemberValue>-1</MemberValue>
       <Docs>
-        <summary>Capitalize the first words of sentences, and perform spellcheck and offer suggested word completions on text that the user enters.</summary>
+        <summary>Capitalize the first leter of the first words of sentences, perform spellcheck, and offer suggested word completions on text that the user enters.</summary>
       </Docs>
     </Member>
     <Member MemberName="CapitalizeCharacter">
@@ -65,7 +65,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that every character will be automatically capitalized.</summary>
       </Docs>
     </Member>
     <Member MemberName="CapitalizeNone">
@@ -83,7 +83,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that nothing will be automatically capitalized.</summary>
       </Docs>
     </Member>
     <Member MemberName="CapitalizeSentence">
@@ -107,7 +107,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Capitalize the first words of sentences.</summary>
+        <summary>Indicates that the first letters of the first words of each sentence will be automatically capitalized.</summary>
       </Docs>
     </Member>
     <Member MemberName="CapitalizeWord">
@@ -125,7 +125,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the first letter of each word will be automatically capitalized.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -143,7 +143,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>No special features provided by the keyboard.</summary>
+        <summary>Indicates that nothing will be automatically capitalized.</summary>
       </Docs>
     </Member>
     <Member MemberName="Spellcheck">
