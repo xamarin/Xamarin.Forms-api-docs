@@ -1607,9 +1607,9 @@ ListView CreateListView()
         <ReturnType>Xamarin.Forms.ListViewSelectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that controls whether and how many items can be selected.</summary>
+        <value><see cref="F:Xamarin.Forms.ListViewSelectionMode.None" /> if no selections can be made. <see cref="F:Xamarin.Forms.ListViewSelectionMode.Single" /> if one selection can be made.</value>
+        <remarks>If an item is selected, changing <see cref="P:Xamarin.Forms.ListView.SelectionMode" /> to <see cref="F:Xamarin.Forms.ListViewSelectionMode.None" /> will cause the item to be deselected, and <see cref="E:Xamarin.Forms.ListView.ItemSelected" /> to be raised with a <see langword="null" /> item value.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionModeProperty">
@@ -1626,7 +1626,7 @@ ListView CreateListView()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.ListView.SelectionMode" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

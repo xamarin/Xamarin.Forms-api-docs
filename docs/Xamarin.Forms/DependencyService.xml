@@ -52,9 +52,9 @@
         <Parameter Name="fetchTarget" Type="Xamarin.Forms.DependencyFetchTarget" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="T">The type of object to fetch.</typeparam>
         <param name="fetchTarget">The dependency fetch target.</param>
-        <summary>Returns the platform-specific implementation of type T.</summary>
+        <summary>Returns the platform-specific implementation of type <paramref name="T" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +84,7 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="T">The type of object to register.</typeparam>
         <summary>Registers the platform-specific implementation of type T.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,8 +120,8 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <typeparam name="TImpl">To be added.</typeparam>
+        <typeparam name="T">The type of object to register.</typeparam>
+        <typeparam name="TImpl">The implementation to register.</typeparam>
         <summary>Registers the platform-specific implementation of type T.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <Parameter Name="fallbackFetchTarget" Type="Xamarin.Forms.DependencyFetchTarget" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="fallbackFetchTarget">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type to resolve.</typeparam>
+        <param name="fallbackFetchTarget">The fetch target to use if fetching initially fails.</param>
+        <summary>The method to use to resolve dependencies by type.</summary>
+        <returns>The resolved dependency instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
