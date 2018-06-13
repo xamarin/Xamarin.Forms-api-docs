@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides control over header icons on the Windows platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <summary>Disables header icons.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <summary>Enables header icons.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +77,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether header icons are enabled.</summary>
+        <returns><see langword="true" /> if header icons are enabled. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +100,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether header icons are enabled.</summary>
+        <returns><see langword="true" /> if header icons are enabled. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +123,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element on which to perform the operation.</param>
+        <summary>Returns the size of header icons.</summary>
+        <returns>The size of header icons.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +146,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <summary>Returns the size of header icons.</summary>
+        <returns>The size of header icons.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,7 +166,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that enables and disables header icons.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +184,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls the size of header icons.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,9 +205,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether header icons are enabled.</summary>
+        <returns><see langword="true" /> if header icons are enabled. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,9 +229,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element on which to perform the operation.</param>
+        <param name="value"><see langword="true" /> to enable header icons. <see langword="false" /> to disable them.</param>
+        <summary>Turns header icons on and off.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,10 +253,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <param name="value"><see langword="true" /> to enable header icons. <see langword="false" /> to disable them.</param>
+        <summary>Turns header icons on and off.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,9 +278,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.Size" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element on which to perform the operation.</param>
+        <param name="value">The new header icon size.</param>
+        <summary>Specifies the size of header icons.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,10 +302,10 @@
         <Parameter Name="value" Type="Xamarin.Forms.Size" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <param name="value">The new header icon size.</param>
+        <summary>Specifies the size of header icons.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
