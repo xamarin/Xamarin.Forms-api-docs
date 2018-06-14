@@ -12,10 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the blur effect and legacy color mode on the iOS platform.</summary>
-    <remarks>
-      <para>To be added.</para>
-    </remarks>
+    <summary>Provides access to the blur effect, shadow effect, and legacy color mode on the iOS platform.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BlurEffectProperty">
@@ -147,9 +145,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <summary>Gets a Boolean value that tells whether the shadow effect is enabled.</summary>
+        <returns><see langword="true" /> if the shadow effect is enabled. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +168,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <summary>Gets a Boolean value that tells whether the shadow effect is enabled.</summary>
+        <returns><see langword="true" /> if the shadow effect is enabled. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,9 +191,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <summary>Gets the shadow color.</summary>
+        <returns>The shadow color.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,9 +214,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <summary>Gets the shadow color.</summary>
+        <returns>The shadow color.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,9 +237,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <summary>Gets the shadow offset.</summary>
+        <returns>The shadow offset.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,9 +260,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <summary>Gets the shadow offset.</summary>
+        <returns>The shadow offset.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,9 +283,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <summary>Gets the shadow opacity.</summary>
+        <returns>The shadow opacity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,9 +306,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <summary>Gets the shadow opacity.</summary>
+        <returns>The shadow opacity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,9 +329,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <summary>Gets the shadow radius.</summary>
+        <returns>The shadow radius.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,9 +352,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.VisualElement&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <summary>Gets the shadow radius.</summary>
+        <returns>The shadow radius.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,7 +390,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls whether the shadow effect is enabled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -489,9 +487,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <param name="value"><see langword="true" /> to enable the shadow. Otherwise, <see langword="false" />.</param>
+        <summary>Sets a Boolean value that controls whether the shadow effect is enabled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -513,10 +511,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <param name="value">><see langword="true" /> to enable the shadow. Otherwise, <see langword="false" />.</param>
+        <summary>Sets a Boolean value that controls whether the shadow effect is enabled.</summary>
+        <returns>The updated configuration object on which developers can make successive method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -538,9 +536,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.Color" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <param name="value">The new shadow color value.</param>
+        <summary>Sets the shadow color.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -562,10 +560,10 @@
         <Parameter Name="value" Type="Xamarin.Forms.Color" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <param name="value">The new shadow color value.</param>
+        <summary>Sets the shadow color.</summary>
+        <returns>The updated configuration object on which developers can make successive method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,9 +585,9 @@
         <Parameter Name="value" Type="Xamarin.Forms.Size" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <param name="value">The new shadow offset value.</param>
+        <summary>Sets the shadow offset.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -611,10 +609,10 @@
         <Parameter Name="value" Type="Xamarin.Forms.Size" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <param name="value">The new shadow offset value.</param>
+        <summary>Sets the shadow offset.</summary>
+        <returns>The updated configuration object on which developers can make successive method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -636,9 +634,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <param name="value">The new shadow opacity value.</param>
+        <summary>Sets the shadow opacity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -660,10 +658,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <param name="value">The new shadow opacity value.</param>
+        <summary>Sets the shadow opacity.</summary>
+        <returns>The updated configuration object on which developers can make successive method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -685,9 +683,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The platform specific element on which to perform the operation.</param>
+        <param name="value">The new shadow radius value.</param>
+        <summary>Sets the shadow radius.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -709,10 +707,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <param name="value">The new shadow radius value.</param>
+        <summary>Sets the shadow radius.</summary>
+        <returns>The updated configuration object on which developers can make successive method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -730,7 +728,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls the shadow color.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -748,7 +746,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls the shadow offset.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -766,7 +764,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls the shadow opacity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -784,7 +782,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls the shadow radius.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

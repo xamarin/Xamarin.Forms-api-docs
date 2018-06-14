@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides control over simultaneous recognition for pan gesture recognizers.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
+        <returns><see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +56,9 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Application&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <summary>Returns a Boolean value that tells whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
+        <returns><see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +76,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that controls whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +98,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="config">The element on which to perform the operation.</param>
+        <param name="value"><see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</param>
+        <summary>Sets a Boolean value that controls whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +122,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <param name="value"><see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</param>
+        <summary>Sets a Boolean value that controls whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
+        <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
