@@ -33,9 +33,10 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="config">The element on which to perform the operation.</param>
+        <param name="element">The element on which to perform the operation.</param>
         <summary>Returns a Boolean value that tells whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
-        <returns><see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +59,8 @@
       <Docs>
         <param name="config">The platform configuration for the element on which to perform the operation.</param>
         <summary>Returns a Boolean value that tells whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
-        <returns><see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +100,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The element on which to perform the operation.</param>
-        <param name="value"><see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</param>
+        <param name="element">The element on which to perform the operation.</param>
+        <param name="value">
+          <see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</param>
         <summary>Sets a Boolean value that controls whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,7 +126,8 @@
       </Parameters>
       <Docs>
         <param name="config">The platform configuration for the element on which to perform the operation.</param>
-        <param name="value"><see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</param>
+        <param name="value">
+          <see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</param>
         <summary>Sets a Boolean value that controls whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
         <returns>A fluent object on which the developer may make further method calls.</returns>
         <remarks>To be added.</remarks>
