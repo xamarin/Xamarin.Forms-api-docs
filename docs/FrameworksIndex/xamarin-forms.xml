@@ -3316,6 +3316,8 @@
       <Member Id="M:Xamarin.Forms.Internals.ISystemResourcesProvider.GetSystemResources" />
     </Type>
     <Type Name="Xamarin.Forms.Internals.LockableObservableListWrapper" Id="T:Xamarin.Forms.Internals.LockableObservableListWrapper">
+      <Member Id="E:Xamarin.Forms.Internals.LockableObservableListWrapper.System#Collections#Specialized#INotifyCollectionChanged#CollectionChanged" />
+      <Member Id="E:Xamarin.Forms.Internals.LockableObservableListWrapper.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
       <Member Id="F:Xamarin.Forms.Internals.LockableObservableListWrapper._list" />
       <Member Id="M:Xamarin.Forms.Internals.LockableObservableListWrapper.#ctor" />
       <Member Id="M:Xamarin.Forms.Internals.LockableObservableListWrapper.Add(System.String)" />
@@ -3579,10 +3581,14 @@
       <Member Id="M:Xamarin.Forms.Internals.Ticker.DisableTimer" />
       <Member Id="M:Xamarin.Forms.Internals.Ticker.EnableTimer" />
       <Member Id="M:Xamarin.Forms.Internals.Ticker.Insert(System.Func{System.Int64,System.Boolean})" />
+      <Member Id="M:Xamarin.Forms.Internals.Ticker.OnSystemEnabledChanged" />
       <Member Id="M:Xamarin.Forms.Internals.Ticker.Remove(System.Int32)" />
+      <Member Id="M:Xamarin.Forms.Internals.Ticker.SendFinish" />
       <Member Id="M:Xamarin.Forms.Internals.Ticker.SendSignals(System.Int32)" />
+      <Member Id="M:Xamarin.Forms.Internals.Ticker.SendSignals(System.Int64)" />
       <Member Id="M:Xamarin.Forms.Internals.Ticker.SetDefault(Xamarin.Forms.Internals.Ticker)" />
       <Member Id="P:Xamarin.Forms.Internals.Ticker.Default" />
+      <Member Id="P:Xamarin.Forms.Internals.Ticker.SystemEnabled" />
     </Type>
     <Type Name="Xamarin.Forms.Internals.ToolbarTracker" Id="T:Xamarin.Forms.Internals.ToolbarTracker">
       <Member Id="E:Xamarin.Forms.Internals.ToolbarTracker.CollectionChanged" />
@@ -3698,6 +3704,7 @@
   </Namespace>
   <Namespace Name="Xamarin.Forms.Pages">
     <Type Name="Xamarin.Forms.Pages.BaseDataSource" Id="T:Xamarin.Forms.Pages.BaseDataSource">
+      <Member Id="E:Xamarin.Forms.Pages.BaseDataSource.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
       <Member Id="M:Xamarin.Forms.Pages.BaseDataSource.#ctor" />
       <Member Id="M:Xamarin.Forms.Pages.BaseDataSource.GetRawData" />
       <Member Id="M:Xamarin.Forms.Pages.BaseDataSource.GetValue(System.String)" />

@@ -63,7 +63,7 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Pages.DataItem.Equals(System.Object)" />
-      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataItem.Equals obj" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="dataItem.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
@@ -86,7 +86,7 @@
       <MemberSignature Language="C#" Value="protected bool Equals (Xamarin.Forms.Pages.DataItem other);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool Equals(class Xamarin.Forms.Pages.DataItem other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Pages.DataItem.Equals(Xamarin.Forms.Pages.DataItem)" />
-      <MemberSignature Language="F#" Value="override this.Equals : Xamarin.Forms.Pages.DataItem -&gt; bool" Usage="dataItem.Equals other" />
+      <MemberSignature Language="F#" Value="member this.Equals : Xamarin.Forms.Pages.DataItem -&gt; bool" Usage="dataItem.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
@@ -109,7 +109,7 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Pages.DataItem.GetHashCode" />
-      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataItem.GetHashCode " />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="dataItem.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
@@ -231,6 +231,9 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Pages.DataItem.PropertyChanged" />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>

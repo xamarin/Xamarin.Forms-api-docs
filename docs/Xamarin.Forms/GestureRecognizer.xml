@@ -1,5 +1,5 @@
 <Type Name="GestureRecognizer" FullName="Xamarin.Forms.GestureRecognizer">
-  <TypeSignature Language="C#" Value="public class GestureRecognizer : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizer" />
+  <TypeSignature Language="C#" Value="public class GestureRecognizer : Xamarin.Forms.Element, System.ComponentModel.INotifyPropertyChanged, Xamarin.Forms.IGestureRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureRecognizer extends Xamarin.Forms.Element implements class System.ComponentModel.INotifyPropertyChanged, class Xamarin.Forms.IGestureRecognizer" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.GestureRecognizer" />
   <TypeSignature Language="F#" Value="type GestureRecognizer = class&#xA;    inherit Element&#xA;    interface IGestureRecognizer&#xA;    interface INotifyPropertyChanged" />
@@ -17,6 +17,9 @@
     <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IGestureRecognizer</InterfaceName>
     </Interface>

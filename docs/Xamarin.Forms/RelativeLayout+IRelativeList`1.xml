@@ -1,5 +1,5 @@
 <Type Name="RelativeLayout+IRelativeList&lt;T&gt;" FullName="Xamarin.Forms.RelativeLayout+IRelativeList&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public interface RelativeLayout.IRelativeList&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt; where T : View" />
+  <TypeSignature Language="C#" Value="public interface RelativeLayout.IRelativeList&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.IEnumerable where T : View" />
   <TypeSignature Language="ILAsm" Value=".class nested public interface auto ansi abstract RelativeLayout/IRelativeList`1&lt;(class Xamarin.Forms.View) T&gt; implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.RelativeLayout.IRelativeList`1" />
   <TypeSignature Language="F#" Value="type RelativeLayout.IRelativeList&lt;'T (requires 'T :&gt; View)&gt; = interface&#xA;    interface IList&lt;'T (requires 'T :&gt; View)&gt;&#xA;    interface ICollection&lt;'T (requires 'T :&gt; View)&gt;&#xA;    interface seq&lt;'T (requires 'T :&gt; View)&gt;&#xA;    interface IEnumerable" />
@@ -29,6 +29,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.Generic.IList&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>

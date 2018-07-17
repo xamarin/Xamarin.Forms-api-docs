@@ -3,9 +3,6 @@
     <Assembly Name="Xamarin.Forms.Core" Version="2.0.0.0">
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
-        </Attribute>
-        <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("Xamarin Inc.")</AttributeName>
         </Attribute>
         <Attribute>
@@ -113,13 +110,13 @@
         <Attribute>
           <AttributeName>Xamarin.Forms.Internals.Preserve</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable</AttributeName>
+        </Attribute>
       </Attributes>
     </Assembly>
     <Assembly Name="Xamarin.Forms.Maps" Version="2.0.0.0">
       <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("Xamarin Inc.")</AttributeName>
         </Attribute>
@@ -147,13 +144,13 @@
         <Attribute>
           <AttributeName>Xamarin.Forms.Internals.Preserve</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable</AttributeName>
+        </Attribute>
       </Attributes>
     </Assembly>
     <Assembly Name="Xamarin.Forms.Pages" Version="1.0.0.0">
       <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("Xamarin.Forms.Pages")</AttributeName>
         </Attribute>
@@ -181,13 +178,13 @@
         <Attribute>
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable</AttributeName>
+        </Attribute>
       </Attributes>
     </Assembly>
     <Assembly Name="Xamarin.Forms.Platform" Version="1.0.0.0">
       <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("Xamarin.Forms.Platform")</AttributeName>
         </Attribute>
@@ -218,13 +215,13 @@
         <Attribute>
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable</AttributeName>
+        </Attribute>
       </Attributes>
     </Assembly>
     <Assembly Name="Xamarin.Forms.Xaml" Version="2.0.0.0">
       <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("Xamarin Inc.")</AttributeName>
         </Attribute>
@@ -287,6 +284,9 @@
         </Attribute>
         <Attribute>
           <AttributeName>Xamarin.Forms.Internals.XmlnsDefinition("http://schemas.microsoft.com/winfx/2009/xaml", "System", AssemblyName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable</AttributeName>
         </Attribute>
       </Attributes>
     </Assembly>
@@ -1574,7 +1574,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Collections.Generic.IEnumerable`1" />
+        <Target Type="System.Collections.Generic.IEnumerable`1" />
       </Targets>
       <Member MemberName="ForEach&lt;T&gt;">
         <MemberSignature Language="C#" Value="public static void ForEach&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; enumeration, Action&lt;T&gt; action);" />
@@ -1603,7 +1603,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Collections.Generic.IEnumerable`1" />
+        <Target Type="System.Collections.Generic.IEnumerable`1" />
       </Targets>
       <Member MemberName="GetGesturesFor&lt;T&gt;">
         <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetGesturesFor&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.IGestureRecognizer&gt; gestures, Func&lt;T,bool&gt; predicate = null) where T : Xamarin.Forms.GestureRecognizer;" />
@@ -1636,7 +1636,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Collections.Generic.IEnumerable`1" />
+        <Target Type="System.Collections.Generic.IEnumerable`1" />
       </Targets>
       <Member MemberName="IndexOf&lt;T&gt;">
         <MemberSignature Language="C#" Value="public static int IndexOf&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; enumerable, T item);" />
@@ -1665,7 +1665,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Collections.Generic.IEnumerable`1" />
+        <Target Type="System.Collections.Generic.IEnumerable`1" />
       </Targets>
       <Member MemberName="IndexOf&lt;T&gt;">
         <MemberSignature Language="C#" Value="public static int IndexOf&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; enumerable, Func&lt;T,bool&gt; predicate);" />
@@ -1694,7 +1694,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Collections.Generic.IEnumerable`1" />
+        <Target Type="System.Collections.Generic.IEnumerable`1" />
       </Targets>
       <Member MemberName="Prepend&lt;T&gt;">
         <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; Prepend&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; enumerable, T item);" />
@@ -1723,7 +1723,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+        <Target Type="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Targets>
       <Member MemberName="Apply">
         <MemberSignature Language="C#" Value="public static System.Collections.Specialized.NotifyCollectionChangedAction Apply (this System.Collections.Specialized.NotifyCollectionChangedEventArgs self, Action&lt;object,int,bool&gt; insert, Action&lt;object,int&gt; removeAt, Action reset);" />
@@ -1752,7 +1752,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+        <Target Type="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Targets>
       <Member MemberName="Apply&lt;TFrom&gt;">
         <MemberSignature Language="C#" Value="public static void Apply&lt;TFrom&gt; (this System.Collections.Specialized.NotifyCollectionChangedEventArgs self, System.Collections.Generic.IList&lt;TFrom&gt; from, System.Collections.Generic.IList&lt;object&gt; to);" />
@@ -1783,7 +1783,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+        <Target Type="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Targets>
       <Member MemberName="WithCount">
         <MemberSignature Language="C#" Value="public static Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx WithCount (this System.Collections.Specialized.NotifyCollectionChangedEventArgs e, int count);" />
@@ -1808,7 +1808,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Double" />
+        <Target Type="System.Double" />
       </Targets>
       <Member MemberName="Clamp">
         <MemberSignature Language="C#" Value="public static double Clamp (this double self, double min, double max);" />
@@ -1835,7 +1835,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Int32" />
+        <Target Type="System.Int32" />
       </Targets>
       <Member MemberName="Clamp">
         <MemberSignature Language="C#" Value="public static int Clamp (this int self, int min, int max);" />
@@ -1862,7 +1862,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Type" />
+        <Target Type="System.Type" />
       </Targets>
       <Member MemberName="GetField">
         <MemberSignature Language="C#" Value="public static System.Reflection.FieldInfo GetField (this Type type, Func&lt;System.Reflection.FieldInfo,bool&gt; predicate);" />
@@ -1887,7 +1887,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Type" />
+        <Target Type="System.Type" />
       </Targets>
       <Member MemberName="GetField">
         <MemberSignature Language="C#" Value="public static System.Reflection.FieldInfo GetField (this Type type, string name);" />
@@ -1912,7 +1912,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Type" />
+        <Target Type="System.Type" />
       </Targets>
       <Member MemberName="GetFields">
         <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.FieldInfo&gt; GetFields (this Type type);" />
@@ -1935,7 +1935,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Type" />
+        <Target Type="System.Type" />
       </Targets>
       <Member MemberName="GetProperties">
         <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.PropertyInfo&gt; GetProperties (this Type type);" />
@@ -1958,7 +1958,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Type" />
+        <Target Type="System.Type" />
       </Targets>
       <Member MemberName="GetProperty">
         <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo GetProperty (this Type type, string name);" />
@@ -1983,7 +1983,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Type" />
+        <Target Type="System.Type" />
       </Targets>
       <Member MemberName="IsAssignableFrom">
         <MemberSignature Language="C#" Value="public static bool IsAssignableFrom (this Type self, Type c);" />
@@ -2008,7 +2008,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Type" />
+        <Target Type="System.Type" />
       </Targets>
       <Member MemberName="IsInstanceOfType">
         <MemberSignature Language="C#" Value="public static bool IsInstanceOfType (this Type self, object o);" />
@@ -6139,7 +6139,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Collections.Generic.IList`1" />
+        <Target Type="System.Collections.Generic.IList`1" />
       </Targets>
       <Member MemberName="Add">
         <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.IList&lt;Xamarin.Forms.Setter&gt; setters, Xamarin.Forms.BindableProperty property, object value);" />
@@ -6166,7 +6166,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Collections.Generic.IList`1" />
+        <Target Type="System.Collections.Generic.IList`1" />
       </Targets>
       <Member MemberName="AddBinding">
         <MemberSignature Language="C#" Value="public static void AddBinding (this System.Collections.Generic.IList&lt;Xamarin.Forms.Setter&gt; setters, Xamarin.Forms.BindableProperty property, Xamarin.Forms.Binding binding);" />
@@ -6193,7 +6193,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.Collections.Generic.IList`1" />
+        <Target Type="System.Collections.Generic.IList`1" />
       </Targets>
       <Member MemberName="AddDynamicResource">
         <MemberSignature Language="C#" Value="public static void AddDynamicResource (this System.Collections.Generic.IList&lt;Xamarin.Forms.Setter&gt; setters, Xamarin.Forms.BindableProperty property, string key);" />
@@ -6591,7 +6591,7 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:System.IServiceProvider" />
+        <Target Type="System.IServiceProvider" />
       </Targets>
       <Member MemberName="GetService&lt;T&gt;">
         <MemberSignature Language="C#" Value="public static T GetService&lt;T&gt; (this IServiceProvider provider);" />

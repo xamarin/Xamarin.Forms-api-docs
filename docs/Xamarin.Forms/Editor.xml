@@ -2,7 +2,7 @@
   <TypeSignature Language="C#" Value="public class Editor : Xamarin.Forms.InputView, Xamarin.Forms.IEditorController, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Editor&gt;, Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Editor extends Xamarin.Forms.InputView implements class Xamarin.Forms.IEditorController, class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Editor&gt;, class Xamarin.Forms.IElementController, class Xamarin.Forms.Internals.IFontElement, class Xamarin.Forms.IViewController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Editor" />
-  <TypeSignature Language="F#" Value="type Editor = class&#xA;    inherit InputView&#xA;    interface IEditorController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface IElementConfiguration&lt;Editor&gt;" />
+  <TypeSignature Language="F#" Value="type Editor = class&#xA;    inherit InputView&#xA;    interface IEditorController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;Editor&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -315,7 +315,7 @@ var editor = new Editor {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

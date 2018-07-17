@@ -13,7 +13,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -116,6 +116,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnSystemEnabledChanged">
+      <MemberSignature Language="C#" Value="protected void OnSystemEnabledChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnSystemEnabledChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.OnSystemEnabledChanged" />
+      <MemberSignature Language="F#" Value="member this.OnSystemEnabledChanged : unit -&gt; unit" Usage="ticker.OnSystemEnabledChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public virtual void Remove (int handle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(int32 handle) cil managed" />
@@ -135,6 +154,25 @@
       <Docs>
         <param name="handle">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendFinish">
+      <MemberSignature Language="C#" Value="protected void SendFinish ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SendFinish() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.SendFinish" />
+      <MemberSignature Language="F#" Value="member this.SendFinish : unit -&gt; unit" Usage="ticker.SendFinish " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,6 +198,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendSignals">
+      <MemberSignature Language="C#" Value="protected void SendSignals (long step);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SendSignals(int64 step) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.SendSignals(System.Int64)" />
+      <MemberSignature Language="F#" Value="member this.SendSignals : int64 -&gt; unit" Usage="ticker.SendSignals step" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="step" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="step">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetDefault">
       <MemberSignature Language="C#" Value="public static void SetDefault (Xamarin.Forms.Internals.Ticker ticker);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDefault(class Xamarin.Forms.Internals.Ticker ticker) cil managed" />
@@ -179,6 +239,25 @@
       <Docs>
         <param name="ticker">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemEnabled">
+      <MemberSignature Language="C#" Value="public virtual bool SystemEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SystemEnabled" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.Ticker.SystemEnabled" />
+      <MemberSignature Language="F#" Value="member this.SystemEnabled : bool" Usage="Xamarin.Forms.Internals.Ticker.SystemEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

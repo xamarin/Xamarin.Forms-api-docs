@@ -249,6 +249,34 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="x" Type="System.Double" RefType="out" />
+        <Parameter Name="y" Type="System.Double" RefType="out" />
+        <Parameter Name="width" Type="System.Double" RefType="out" />
+        <Parameter Name="height" Type="System.Double" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deconstruct">
+      <MemberSignature Language="C#" Value="public void Deconstruct (out double x, out double y, out double width, out double height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] float64&amp; x, [out] float64&amp; y, [out] float64&amp; width, [out] float64&amp; height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.Deconstruct(System.Double@,System.Double@,System.Double@,System.Double@)" />
+      <MemberSignature Language="F#" Value="member this.Deconstruct :  *  *  *  -&gt; unit" Usage="rectangle.Deconstruct (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
         <Parameter Name="x" Type="System.Double&amp;" RefType="out" />
         <Parameter Name="y" Type="System.Double&amp;" RefType="out" />
         <Parameter Name="width" Type="System.Double&amp;" RefType="out" />
@@ -267,7 +295,7 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.Equals(System.Object)" />
-      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rectangle.Equals obj" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="rectangle.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -297,7 +325,7 @@
       <MemberSignature Language="C#" Value="public bool Equals (Xamarin.Forms.Rectangle other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype Xamarin.Forms.Rectangle other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.Equals(Xamarin.Forms.Rectangle)" />
-      <MemberSignature Language="F#" Value="override this.Equals : Xamarin.Forms.Rectangle -&gt; bool" Usage="rectangle.Equals other" />
+      <MemberSignature Language="F#" Value="member this.Equals : Xamarin.Forms.Rectangle -&gt; bool" Usage="rectangle.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -363,7 +391,7 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.GetHashCode" />
-      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rectangle.GetHashCode " />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="rectangle.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -886,7 +914,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.ToString" />
-      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rectangle.ToString " />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="rectangle.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
