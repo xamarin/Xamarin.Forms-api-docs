@@ -727,7 +727,7 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
       <Docs>
         <param name="interval">The interval between invocations of the callback.</param>
         <param name="callback">The action to run when the timer elapses.</param>
-        <summary>Starts a recurring timer using the device clock capabilities.</summary>
+        <summary>Starts a recurring timer on the UI thread using the device clock capabilities.</summary>
         <remarks>While the callback returns <see langword="true" />, the timer will keep recurring.</remarks>
       </Docs>
     </Member>
