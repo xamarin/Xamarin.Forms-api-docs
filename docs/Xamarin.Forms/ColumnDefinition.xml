@@ -24,21 +24,8 @@
   <Docs>
     <summary>An <see cref="T:Xamarin.Forms.IDefinition" /> that defines properties for a column in a <see cref="T:Xamarin.Forms.Grid" />.</summary>
     <remarks>
-      <para>XAML for Xamarin.Forms supports the following property for the <see cref="T:Xamarin.Forms.ColumnDefinition" /> class:</para>
-      <list type="table">
-        <listheader>
-          <term>Property</term>
-          <description>Value</description>
-        </listheader>
-        <item>
-          <term>Width</term>
-          <description>
-            <para>"*" or "Auto" to indicate the corresponding <see cref="T:Xamarin.Forms.GridUnitType" /> enumeration values, or a number to indicate an absolute width.</para>
-          </description>
-        </item>
-      </list>
       <example>
-        <para>App developers can specify <see cref="T:Xamarin.Forms.GridUnitType" /> values for the <see cref="P:Xamarin.Forms.ColumnDefinition.Width" /> property in XAML by nesting <c>ColumnDefinition</c> tags inside tags for the <see cref="P:Xamarin.Forms.Grid.ColumnDefinitions" /> collection property. The following example demonstrates setting three column widths to each of the three valid <see cref="T:Xamarin.Forms.GridUnitType" /> values:</para>
+        <para>The following example demonstrates setting three column widths to each of the three valid <see cref="T:Xamarin.Forms.GridUnitType" /> values:</para>
         <code lang="XAML"><![CDATA[
 <Grid.ColumnDefinitions>
     <ColumnDefinition Width="Auto" />

@@ -36,48 +36,6 @@
       <para>
         <img href="xamarin-media/Xamarin.Forms/_images/DatePicker.TripleScreenShot.png" />
       </para>
-      <para>The following example shows a basic use:</para>
-      <example>
-        <code lang="C#"><![CDATA[
-DatePicker datePicker = new DatePicker
-    {
-        Format = "D",
-        VerticalOptions = LayoutOptions.CenterAndExpand
-    };
-
-]]></code>
-      </example>
-      <para>XAML for Xamarin.Forms supports the following properties for the <see cref="T:Xamarin.Forms.DatePicker" /> class:</para>
-      <list type="table">
-        <listheader>
-          <term>Property</term>
-          <description>Value</description>
-        </listheader>
-        <item>
-          <term>Format</term>
-          <description>
-            <para>A string that specifies the display format in the control of the chosen date.</para>
-          </description>
-        </item>
-        <item>
-          <term>Date</term>
-          <description>
-            <para>An <c>x:FactoryMethod</c> call to the <see cref="M:System.DateTime.Parse" /> method, or a markup extension call to a method that produces a <see cref="T:System.DateTime" /> object. See below.</para>
-          </description>
-        </item>
-        <item>
-          <term>MinimumDate</term>
-          <description>
-            <para>An <c>x:FactoryMethod</c> call to the <see cref="M:System.DateTime.Parse" /> method, or a markup extension call to a method that produces a <see cref="T:System.DateTime" /> object. See below.</para>
-          </description>
-        </item>
-        <item>
-          <term>MaximumDate</term>
-          <description>
-            <para>An <c>x:FactoryMethod</c> call to the <see cref="M:System.DateTime.Parse" /> method, or a markup extension call to a method that produces a <see cref="T:System.DateTime" /> object. See below.</para>
-          </description>
-        </item>
-      </list>
       <example>
         <para>The example below creates a working <see cref="T:Xamarin.Forms.DatePicker" /> that displays the current date and allows the user to select a date between the specified ranges. The value for the <see cref="P:Xamarin.Forms.DatePicker.Date" /> property is specified with the <c>x:Static</c> markup extension, and the <see cref="P:Xamarin.Forms.DatePicker.MinimumDate" /> and <see cref="P:Xamarin.Forms.DatePicker.MaximumDate" /> properties are specified by calling the <see cref="M:System.DateTime.Parse" /> method with the <c>x:FactoryMethod</c> and <x>x:Arguments</x> tags. <block type="note">The example below requires a namespace declaration in the root <c>ContentPage</c> or <c>ContentView</c> tags. In particular, <c>xmlns:sys="clr-namespace:System;assembly=mscorlib"</c> must appear in the attribute list for the root element, so that the XAML parser can resolve the name, <c>sys:DateTime</c>.</block></para>
         <code lang="XAML"><![CDATA[<StackLayout>

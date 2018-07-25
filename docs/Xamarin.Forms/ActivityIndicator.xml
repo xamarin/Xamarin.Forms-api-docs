@@ -33,26 +33,6 @@
       <para>
         <img href="xamarin-media/Xamarin.Forms/_images/ActivityIndicator.TripleScreenShot.png" />
       </para>
-      <para>XAML for Xamarin.Forms supports the following properties for the <see cref="T:Xamarin.Forms.ActivityIndicator" /> class:</para>
-      <list type="table">
-        <listheader>
-          <term>Property</term>
-          <description>Value</description>
-        </listheader>
-        <item>
-          <term>Color</term>
-          <description>
-            <para>A color specification, with or without the prefix, "Color". For example, "Color.Red" and "Red" both specify the color red.</para>
-          </description>
-        </item>
-        <item>
-          <term>IsRunning</term>
-          <description>
-            <para>
-              <see langword="true" /> or <see langword="false" />, to indicate whether the animation for <see cref="T:Xamarin.Forms.ActivityIndicator" /> is displayed.</para>
-          </description>
-        </item>
-      </list>
       <example>
         <para>The example below creates a red activity indicator that is animated to imply that an activity is ongoing:</para>
         <code lang="XAML"><![CDATA[<ActivityIndicator Color="Red" IsRunning="true" />]]></code>
