@@ -87,7 +87,7 @@ private void PressMeButton_Clicked(object sender, EventArgs e)
         Command="{Binding IncrementLabelCommand}" />
 ]]></code>
         <para>With the XAML above, the developer first defines the <c>IncrementLabelCommand</c> property on the view model and implements a method with which to later instantiate the command:</para>
-        <code lang="C#"><![CDATA[public ICommand IncrementLabelCommand { get; private set; }
+        <code lang="csharp"><![CDATA[public ICommand IncrementLabelCommand { get; private set; }
 
 void IncrementLabel()
 {
