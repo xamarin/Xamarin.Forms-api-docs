@@ -41,7 +41,7 @@
       <para>In addition to the appearance properties common to all <see cref="T:Xamarin.Forms.View" /> objects, the Button class provides the <see cref="P:Xamarin.Forms.Button.BorderColor" />, <see cref="P:Xamarin.Forms.Button.BorderWidth" />, <see cref="P:Xamarin.Forms.Button.BorderRadius" />, <see cref="P:Xamarin.Forms.Button.BackgroundColor" />, and <see cref="P:Xamarin.Forms.Button.Image" /> properties.</para>
       <example>
         <para>The XAML code snippet below demonstrates how to use these properties to create a basic button with the text "Press me!" The image that the button displays appears on the start side of the layout, which is the left side for left-to-right languages.</para>
-        <code lang="XAML"><![CDATA[
+        <code lang="xaml"><![CDATA[
 <Button Text="Press me!"
         Image="icon.png"
         BackgroundColor="White"
@@ -58,14 +58,14 @@
       <para>Buttons notify the developer of press, release, and click events with the <see cref="E:Xamarin.Forms.Button.Pressed" />, <see cref="E:Xamarin.Forms.Button.Released" />, and <see cref="E:Xamarin.Forms.Button.Clicked" /> events, respectively.</para>
       <example>
         <para>The following XAML assigns handlers to two of these button events:</para>
-        <code lang="XAML"><![CDATA[
+        <code lang="xaml"><![CDATA[
 <Button x:Name="PressMeButton"
         Text="Press Me!"
         Pressed="PressMeButton_Pressed"
         Clicked="PressMeButton_Clicked"/>
 ]]></code>
         <para>With the XAML above, the following event handlers in the code-behind file change the button's text when these events are raised:</para>
-        <code lang="C#"><![CDATA[private void PressMeButton_Pressed(object sender, EventArgs e)
+        <code lang="csharp"><![CDATA[private void PressMeButton_Pressed(object sender, EventArgs e)
 {
    (sender as Button).Text = "You pressed me!";
 }
