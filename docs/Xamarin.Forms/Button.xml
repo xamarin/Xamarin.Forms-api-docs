@@ -41,8 +41,7 @@
       <para>In addition to the appearance properties common to all <see cref="T:Xamarin.Forms.View" /> objects, the Button class provides the <see cref="P:Xamarin.Forms.Button.BorderColor" />, <see cref="P:Xamarin.Forms.Button.BorderWidth" />, <see cref="P:Xamarin.Forms.Button.BorderRadius" />, <see cref="P:Xamarin.Forms.Button.BackgroundColor" />, and <see cref="P:Xamarin.Forms.Button.Image" /> properties.</para>
       <example>
         <para>The XAML code snippet below demonstrates how to use these properties to create a basic button with the text "Press me!" The image that the button displays appears on the start side of the layout, which is the left side for left-to-right languages.</para>
-         <format type="text/markdown"><![CDATA[
-```xaml
+         <code lang="xaml"><![CDATA[
 <Button Text="Press me!"
         Image="icon.png"
         BackgroundColor="White"
@@ -50,8 +49,7 @@
         BorderWidth="2"
         BorderColor="Black"
         HorizontalOptions="Center"/>
-```
-]]></format>
+]]></code>
         <block type="note">To display the <c>icon.png</c> image with the above XAML, the developer must place it in the appropriate location, with the appropriate build action, specific to each platform project. The <format type="text/html"><a href="https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/">Images</a></format> topic explains this and other important details about working with images in Xamarin.Forms.</block>
       </example>
       <format type="text/html">
