@@ -58,14 +58,14 @@
       <para>Buttons notify the developer of press, release, and click events with the <see cref="E:Xamarin.Forms.Button.Pressed" />, <see cref="E:Xamarin.Forms.Button.Released" />, and <see cref="E:Xamarin.Forms.Button.Clicked" /> events, respectively.</para>
       <example>
         <para>The following XAML assigns handlers to two of these button events:</para>
-        <code lang="xaml"><![CDATA[
+        <code lang="xaml lang-xaml"><![CDATA[
 <Button x:Name="PressMeButton"
         Text="Press Me!"
         Pressed="PressMeButton_Pressed"
         Clicked="PressMeButton_Clicked"/>
 ]]></code>
         <para>With the XAML above, the following event handlers in the code-behind file change the button's text when these events are raised:</para>
-        <code lang="csharp"><![CDATA[private void PressMeButton_Pressed(object sender, EventArgs e)
+        <code lang="csharp lang-csharp"><![CDATA[private void PressMeButton_Pressed(object sender, EventArgs e)
 {
    (sender as Button).Text = "You pressed me!";
 }
