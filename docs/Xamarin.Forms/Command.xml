@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type Command = class&#xA;    interface ICommand" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@ var button = new Button {
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Command : Action -&gt; Xamarin.Forms.Command" Usage="new Xamarin.Forms.Command execute" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -84,6 +86,7 @@ var button = new Button {
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Command : Action&lt;obj&gt; -&gt; Xamarin.Forms.Command" Usage="new Xamarin.Forms.Command execute" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -109,6 +112,7 @@ var button = new Button {
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Command : Action * Func&lt;bool&gt; -&gt; Xamarin.Forms.Command" Usage="new Xamarin.Forms.Command (execute, canExecute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -136,6 +140,7 @@ var button = new Button {
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Command : Action&lt;obj&gt; * Func&lt;obj, bool&gt; -&gt; Xamarin.Forms.Command" Usage="new Xamarin.Forms.Command (execute, canExecute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -162,10 +167,8 @@ var button = new Button {
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Command.CanExecute(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member CanExecute : obj -&gt; bool&#xA;override this.CanExecute : obj -&gt; bool" Usage="command.CanExecute parameter" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Windows.Input.ICommand.CanExecute(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -198,10 +201,8 @@ var button = new Button {
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Command.CanExecuteChanged" />
       <MemberSignature Language="F#" Value="member this.CanExecuteChanged : EventHandler " Usage="member this.CanExecuteChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.Windows.Input.ICommand.CanExecuteChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -226,6 +227,7 @@ var button = new Button {
       <MemberSignature Language="F#" Value="member this.ChangeCanExecute : unit -&gt; unit" Usage="command.ChangeCanExecute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -250,10 +252,8 @@ var button = new Button {
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Command.Execute(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member Execute : obj -&gt; unit&#xA;override this.Execute : obj -&gt; unit" Usage="command.Execute parameter" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Windows.Input.ICommand.Execute(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

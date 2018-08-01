@@ -1,0 +1,171 @@
+<Type Name="Region" FullName="Xamarin.Forms.Region">
+  <TypeSignature Language="C#" Value="public struct Region" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Region extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Region" />
+  <TypeSignature Language="F#" Value="type Region = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Xamarin.Forms.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(valuetype Xamarin.Forms.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Region.Contains(Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="member this.Contains : Xamarin.Forms.Point -&gt; bool" Usage="region.Contains pt" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="pt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (double x, double y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(float64 x, float64 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Region.Contains(System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="member this.Contains : double * double -&gt; bool" Usage="region.Contains (x, y)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deflate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Region Deflate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Xamarin.Forms.Region Deflate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Region.Deflate" />
+      <MemberSignature Language="F#" Value="member this.Deflate : unit -&gt; Xamarin.Forms.Region" Usage="region.Deflate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Region</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromLines">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Region FromLines (double[] lineHeights, double maxWidth, double startX, double endX, double startY);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Region FromLines(float64[] lineHeights, float64 maxWidth, float64 startX, float64 endX, float64 startY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Region.FromLines(System.Double[],System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="static member FromLines : double[] * double * double * double * double -&gt; Xamarin.Forms.Region" Usage="Xamarin.Forms.Region.FromLines (lineHeights, maxWidth, startX, endX, startY)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Region</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineHeights" Type="System.Double[]" />
+        <Parameter Name="maxWidth" Type="System.Double" />
+        <Parameter Name="startX" Type="System.Double" />
+        <Parameter Name="endX" Type="System.Double" />
+        <Parameter Name="startY" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="lineHeights">To be added.</param>
+        <param name="maxWidth">To be added.</param>
+        <param name="startX">To be added.</param>
+        <param name="endX">To be added.</param>
+        <param name="startY">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inflate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Region Inflate (double size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Xamarin.Forms.Region Inflate(float64 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Region.Inflate(System.Double)" />
+      <MemberSignature Language="F#" Value="member this.Inflate : double -&gt; Xamarin.Forms.Region" Usage="region.Inflate size" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Region</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inflate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Region Inflate (double left, double top, double right, double bottom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Xamarin.Forms.Region Inflate(float64 left, float64 top, float64 right, float64 bottom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Region.Inflate(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="member this.Inflate : double * double * double * double -&gt; Xamarin.Forms.Region" Usage="region.Inflate (left, top, right, bottom)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Region</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" />
+        <Parameter Name="top" Type="System.Double" />
+        <Parameter Name="right" Type="System.Double" />
+        <Parameter Name="bottom" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="right">To be added.</param>
+        <param name="bottom">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

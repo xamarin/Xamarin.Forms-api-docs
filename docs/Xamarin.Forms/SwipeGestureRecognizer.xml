@@ -1,0 +1,284 @@
+<Type Name="SwipeGestureRecognizer" FullName="Xamarin.Forms.SwipeGestureRecognizer">
+  <TypeSignature Language="C#" Value="public sealed class SwipeGestureRecognizer : Xamarin.Forms.GestureRecognizer, Xamarin.Forms.ISwipeGestureController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SwipeGestureRecognizer extends Xamarin.Forms.GestureRecognizer implements class Xamarin.Forms.ISwipeGestureController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.SwipeGestureRecognizer" />
+  <TypeSignature Language="F#" Value="type SwipeGestureRecognizer = class&#xA;    inherit GestureRecognizer&#xA;    interface ISwipeGestureController" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.GestureRecognizer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.ISwipeGestureController</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SwipeGestureRecognizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeGestureRecognizer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand Command { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand Command" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SwipeGestureRecognizer.Command" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.SwipeGestureRecognizer.Command" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandParameter">
+      <MemberSignature Language="C#" Value="public object CommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandParameter" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SwipeGestureRecognizer.CommandParameter" />
+      <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="Xamarin.Forms.SwipeGestureRecognizer.CommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SwipeGestureRecognizer.CommandParameterProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandParameterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SwipeGestureRecognizer.CommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SwipeGestureRecognizer.CommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SwipeGestureRecognizer.CommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.SwipeDirection Direction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.SwipeDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SwipeGestureRecognizer.Direction" />
+      <MemberSignature Language="F#" Value="member this.Direction : Xamarin.Forms.SwipeDirection with get, set" Usage="Xamarin.Forms.SwipeGestureRecognizer.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.SwipeDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectionProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DirectionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DirectionProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SwipeGestureRecognizer.DirectionProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DirectionProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SwipeGestureRecognizer.DirectionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendSwiped">
+      <MemberSignature Language="C#" Value="public void SendSwiped (Xamarin.Forms.View sender, Xamarin.Forms.SwipeDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendSwiped(class Xamarin.Forms.View sender, valuetype Xamarin.Forms.SwipeDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeGestureRecognizer.SendSwiped(Xamarin.Forms.View,Xamarin.Forms.SwipeDirection)" />
+      <MemberSignature Language="F#" Value="member this.SendSwiped : Xamarin.Forms.View * Xamarin.Forms.SwipeDirection -&gt; unit" Usage="swipeGestureRecognizer.SendSwiped (sender, direction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.View" />
+        <Parameter Name="direction" Type="Xamarin.Forms.SwipeDirection" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Swiped">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.SwipedEventArgs&gt; Swiped;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.SwipedEventArgs&gt; Swiped" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.SwipeGestureRecognizer.Swiped" />
+      <MemberSignature Language="F#" Value="member this.Swiped : EventHandler&lt;Xamarin.Forms.SwipedEventArgs&gt; " Usage="member this.Swiped : System.EventHandler&lt;Xamarin.Forms.SwipedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.SwipedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Threshold">
+      <MemberSignature Language="C#" Value="public uint Threshold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 Threshold" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SwipeGestureRecognizer.Threshold" />
+      <MemberSignature Language="F#" Value="member this.Threshold : uint32 with get, set" Usage="Xamarin.Forms.SwipeGestureRecognizer.Threshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ThresholdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ThresholdProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SwipeGestureRecognizer.ThresholdProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ThresholdProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SwipeGestureRecognizer.ThresholdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ISwipeGestureController.DetectSwipe">
+      <MemberSignature Language="C#" Value="bool ISwipeGestureController.DetectSwipe (Xamarin.Forms.View sender, Xamarin.Forms.SwipeDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.ISwipeGestureController.DetectSwipe(class Xamarin.Forms.View sender, valuetype Xamarin.Forms.SwipeDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeGestureRecognizer.Xamarin#Forms#ISwipeGestureController#DetectSwipe(Xamarin.Forms.View,Xamarin.Forms.SwipeDirection)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ISwipeGestureController.DetectSwipe(Xamarin.Forms.View,Xamarin.Forms.SwipeDirection)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.View" />
+        <Parameter Name="direction" Type="Xamarin.Forms.SwipeDirection" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ISwipeGestureController.SendSwipe">
+      <MemberSignature Language="C#" Value="void ISwipeGestureController.SendSwipe (Xamarin.Forms.Element sender, double totalX, double totalY);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ISwipeGestureController.SendSwipe(class Xamarin.Forms.Element sender, float64 totalX, float64 totalY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeGestureRecognizer.Xamarin#Forms#ISwipeGestureController#SendSwipe(Xamarin.Forms.Element,System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ISwipeGestureController.SendSwipe(Xamarin.Forms.Element,System.Double,System.Double)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.Element" />
+        <Parameter Name="totalX" Type="System.Double" />
+        <Parameter Name="totalY" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="totalX">To be added.</param>
+        <param name="totalY">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

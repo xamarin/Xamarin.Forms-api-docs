@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type BindingBase = class" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="F#" Value="static member DisableCollectionSynchronization : System.Collections.IEnumerable -&gt; unit" Usage="Xamarin.Forms.BindingBase.DisableCollectionSynchronization collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -57,6 +59,7 @@
       <MemberSignature Language="F#" Value="static member EnableCollectionSynchronization : System.Collections.IEnumerable * obj * Xamarin.Forms.CollectionSynchronizationCallback -&gt; unit" Usage="Xamarin.Forms.BindingBase.EnableCollectionSynchronization (collection, context, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -85,6 +88,25 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="FallbackValue">
+      <MemberSignature Language="C#" Value="public object FallbackValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object FallbackValue" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.BindingBase.FallbackValue" />
+      <MemberSignature Language="F#" Value="member this.FallbackValue : obj with get, set" Usage="Xamarin.Forms.BindingBase.FallbackValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Mode">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.BindingMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.BindingMode Mode" />
@@ -92,6 +114,7 @@
       <MemberSignature Language="F#" Value="member this.Mode : Xamarin.Forms.BindingMode with get, set" Usage="Xamarin.Forms.BindingBase.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -117,6 +140,7 @@
       <MemberSignature Language="F#" Value="member this.StringFormat : string with get, set" Usage="Xamarin.Forms.BindingBase.StringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -158,6 +182,25 @@ label.AddBinding (new Binding (Label.TextProperty, "Price") {
         <altmember cref="M:System.String.Format" />
       </Docs>
     </Member>
+    <Member MemberName="TargetNullValue">
+      <MemberSignature Language="C#" Value="public object TargetNullValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TargetNullValue" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.BindingBase.TargetNullValue" />
+      <MemberSignature Language="F#" Value="member this.TargetNullValue : obj with get, set" Usage="Xamarin.Forms.BindingBase.TargetNullValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ThrowIfApplied">
       <MemberSignature Language="C#" Value="protected void ThrowIfApplied ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfApplied() cil managed" />
@@ -165,6 +208,7 @@ label.AddBinding (new Binding (Label.TextProperty, "Price") {
       <MemberSignature Language="F#" Value="member this.ThrowIfApplied : unit -&gt; unit" Usage="bindingBase.ThrowIfApplied " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
