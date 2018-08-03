@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains methods and properties for specifying corner radiuses.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +38,8 @@
         <Parameter Name="uniformRadius" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="uniformRadius">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="uniformRadius">The radius for all four corners.</param>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.CornerRadius" /> such that all four of its corners have the same radius.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,11 +60,11 @@
         <Parameter Name="bottomRight" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="topLeft">To be added.</param>
-        <param name="topRight">To be added.</param>
-        <param name="bottomLeft">To be added.</param>
-        <param name="bottomRight">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="topLeft">The radius of the top left corner.</param>
+        <param name="topRight">The radius of the top right corner.</param>
+        <param name="bottomLeft">The radius of the bottom left corner.</param>
+        <param name="bottomRight">The radius of the bottom right corner.</param>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.CornerRadius" /> such that each of four of its corners have the specified radiuses.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the radius of the top left corner.</summary>
+        <value>The radius of the top left corner.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +101,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the radius of the bottom right corner.</summary>
+        <value>The radius of the bottom right corner.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,11 +126,11 @@
         <Parameter Name="bottomRight" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="topLeft">To be added.</param>
-        <param name="topRight">To be added.</param>
-        <param name="bottomLeft">To be added.</param>
-        <param name="bottomRight">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="topLeft">Location to receive the radius of the top left corner.</param>
+        <param name="topRight">Location to receive the radius of the top right corner.</param>
+        <param name="bottomLeft">Location to receive the radius of the bottom left corner.</param>
+        <param name="bottomRight">Location to receive the radius of the bottom right corner.</param>
+        <summary>Fills the <see langword="out" /> parameters with the radiuses of the four corners.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,9 +151,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object against which to compare.</param>
+        <summary>Compares this corner radius to another.</summary>
+        <returns><see langword="true" /> if <paramref name="obj" /> has the same effective corner radius values. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +172,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hashcode for the corner radius.</summary>
+        <returns>The hashcode for the corner radius.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +197,8 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Compares the <paramref name="left" /> and <paramref name="right" /> corner radius values.</summary>
+        <returns><see langword="true" /> if <paramref name="left" /> has the same effective corner radius values as <paramref name="right" />. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +219,8 @@
         <Parameter Name="uniformRadius" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="uniformRadius">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="uniformRadius">The uniform radius to convert to a corner radius object.</param>
+        <summary>Creates and returns a new <see cref="T:Xamarin.Forms.CornerRadius" /> such that all four of its corners have the same radius.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,8 +245,8 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Compares the <paramref name="left" /> and <paramref name="right" /> corner radius values.</summary>
+        <returns><see langword="true" /> if <paramref name="left" /> has different effective corner radius values as <paramref name="right" />. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +264,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the radius of the top left corner.</summary>
+        <value>The radius of the top left corner.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,8 +283,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the radius of the top right corner.</summary>
+        <value>The radius of the top right corner.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
