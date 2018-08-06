@@ -16,7 +16,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Recognizer for swipe gestures.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.SwipeGestureRecognizer" /> with default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the command to run when a swipe gesture is recognized.</summary>
+        <value>The command to run when a swipe gesture is recognized.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the parameter to pass to commands that take one.</summary>
+        <value>The parameter to pass to commands that take one.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.SwipeGestureRecognizer.CommandParameter" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +105,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.SwipeGestureRecognizer.Command" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +123,8 @@
         <ReturnType>Xamarin.Forms.SwipeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the direction of swipes to recognize.</summary>
+        <value>The direction of swipes to recognize.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +142,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.SwipeGestureRecognizer.Direction" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +164,9 @@
         <Parameter Name="direction" Type="Xamarin.Forms.SwipeDirection" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The view that was swiped.</param>
+        <param name="direction">The swipe direction.</param>
+        <summary>Method that is called by the platform renderer when a swipe occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +184,7 @@
         <ReturnType>System.EventHandler&lt;Xamarin.Forms.SwipedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Method that is called when a view is swiped.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,8 +202,8 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the minimum swipe distance that will cause the gesture to be recognized.</summary>
+        <value>The minimum swipe distance that will cause the gesture to be recognized.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,7 +221,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.SwipeGestureRecognizer.Threshold" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,9 +245,9 @@
         <Parameter Name="direction" Type="Xamarin.Forms.SwipeDirection" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">For internal use by the Xamarin.Forms platform.</param>
+        <param name="direction">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,10 +273,10 @@
         <Parameter Name="totalY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="totalX">To be added.</param>
-        <param name="totalY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">For internal use by the Xamarin.Forms platform.</param>
+        <param name="totalX">For internal use by the Xamarin.Forms platform.</param>
+        <param name="totalY">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -348,9 +348,9 @@ public class App : Application
         <Parameter Name="point" Type="Xamarin.Forms.Point" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point">The point under which to look for child elements.</param>
+        <summary>Returns the child elements that are under the specified point.</summary>
+        <returns>The child elements that are under the specified point.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,8 +462,8 @@ public class App : Application
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the multiplier to apply to the default line height when displaying text.</summary>
+        <value>The multiplier to apply to the default line height when displaying text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,7 +481,7 @@ public class App : Application
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.BindableProperty.LineHeight" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
