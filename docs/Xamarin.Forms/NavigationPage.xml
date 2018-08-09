@@ -399,9 +399,9 @@
         <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindable">The bindable object whose title view to get.</param>
+        <summary>Returns the view to use as a title for the navigation page.</summary>
+        <returns>The view to use as a title for the navigation page.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1201,9 +1201,9 @@ public class MyPage : NavigationPage
         <Parameter Name="value" Type="Xamarin.Forms.View" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindable">The bindable object whose title to set.</param>
+        <param name="value">The view to use.</param>
+        <summary>Sets the view to use as the title for the navigation page.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1337,7 +1337,7 @@ public class MyPage : NavigationPage
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the attached property that gets and sets title views.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

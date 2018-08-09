@@ -12,8 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a visual region in a Xamarin.Forms UI.</summary>
+    <remarks><para>Currently, regions represent rectangles, or collections of rectangles, only.</para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Contains">
@@ -33,9 +33,9 @@
         <Parameter Name="pt" Type="Xamarin.Forms.Point" />
       </Parameters>
       <Docs>
-        <param name="pt">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pt">The point to check.</param>
+        <summary>Returns <see langword="true" /> if the specified point is inside the region. Otherwise, returns <see langword="false" />.</summary>
+        <returns><see langword="true" /> if the specified point is inside the region. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,10 +57,10 @@
         <Parameter Name="y" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The X-coordinate to check.</param>
+        <param name="y">The Y-coordinate to check.</param>
+        <summary>Returns <see langword="true" /> if the point that is represented by the specified coordinates is inside the region. Otherwise, returns <see langword="false" />.</summary>
+        <returns><see langword="true" /> if the specified point that is represented by the specified coordinates is inside the region. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a region shrunk by the values in the most recent inflation, or does nothing if there has not been a previous inflation.</summary>
+        <returns>A region shrunk by the values in the most recent inflation, or does nothing if there has not been a previous inflation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,13 +105,13 @@
         <Parameter Name="startY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="lineHeights">To be added.</param>
-        <param name="maxWidth">To be added.</param>
-        <param name="startX">To be added.</param>
-        <param name="endX">To be added.</param>
-        <param name="startY">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lineHeights">The list of line heights to use.</param>
+        <param name="maxWidth">The width of a line that spans the rectangle that encloses the region.</param>
+        <param name="startX">The starting X value on the first line, equivalent to an indent.</param>
+        <param name="endX">The width of the last line.</param>
+        <param name="startY">The top of the region.</param>
+        <summary>Creates and returns a region that detects points inside a collection of rectangles created from the lines that are specified by the provided data.</summary>
+        <returns>A region that detects points inside a collection of rectangles created from the lines that are specified by the provided data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,9 +132,9 @@
         <Parameter Name="size" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="size">The amount by which to move each side of the region or its subregions.</param>
+        <summary>Returns a region that is expanded by or has all of its subregions expanded by the specified <paramref name="size" />.</summary>
+        <returns>A  region that is expanded by or has all of its subregions expanded by the specified <paramref name="size" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,12 +158,12 @@
         <Parameter Name="bottom" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="top">To be added.</param>
-        <param name="right">To be added.</param>
-        <param name="bottom">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The amount to move the left side to the left.</param>
+        <param name="top">The amount to move the top upward.</param>
+        <param name="right">The amount to move the right side to the right.</param>
+        <param name="bottom">The amount to move the bottom down.</param>
+        <summary>Returns a region that is expanded by or has all of its subregions expanded by the specified values.</summary>
+        <returns>A  region that is expanded by or has all of its subregions expanded by the specified values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
