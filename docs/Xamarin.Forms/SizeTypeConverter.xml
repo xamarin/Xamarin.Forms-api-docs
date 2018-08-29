@@ -1,11 +1,10 @@
-<Type Name="CornerRadiusTypeConverter" FullName="Xamarin.Forms.CornerRadiusTypeConverter">
-  <TypeSignature Language="C#" Value="public class CornerRadiusTypeConverter : Xamarin.Forms.TypeConverter" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CornerRadiusTypeConverter extends Xamarin.Forms.TypeConverter" />
-  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.CornerRadiusTypeConverter" />
-  <TypeSignature Language="F#" Value="type CornerRadiusTypeConverter = class&#xA;    inherit TypeConverter" />
+<Type Name="SizeTypeConverter" FullName="Xamarin.Forms.SizeTypeConverter">
+  <TypeSignature Language="C#" Value="public class SizeTypeConverter : Xamarin.Forms.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SizeTypeConverter extends Xamarin.Forms.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.SizeTypeConverter" />
+  <TypeSignature Language="F#" Value="type SizeTypeConverter = class&#xA;    inherit TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,7 +13,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Xamarin.Forms.Xaml.TypeConversion(typeof(Xamarin.Forms.CornerRadius))</AttributeName>
+      <AttributeName>Xamarin.Forms.Xaml.TypeConversion(typeof(Xamarin.Forms.Size))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -23,13 +22,12 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CornerRadiusTypeConverter ();" />
+      <MemberSignature Language="C#" Value="public SizeTypeConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CornerRadiusTypeConverter.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SizeTypeConverter.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -41,12 +39,11 @@
     <Member MemberName="ConvertFromInvariantString">
       <MemberSignature Language="C#" Value="public override object ConvertFromInvariantString (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFromInvariantString(string value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CornerRadiusTypeConverter.ConvertFromInvariantString(System.String)" />
-      <MemberSignature Language="F#" Value="override this.ConvertFromInvariantString : string -&gt; obj" Usage="cornerRadiusTypeConverter.ConvertFromInvariantString value" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SizeTypeConverter.ConvertFromInvariantString(System.String)" />
+      <MemberSignature Language="F#" Value="override this.ConvertFromInvariantString : string -&gt; obj" Usage="sizeTypeConverter.ConvertFromInvariantString value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

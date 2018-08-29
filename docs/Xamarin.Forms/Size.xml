@@ -22,6 +22,9 @@
     <Attribute>
       <AttributeName>System.Diagnostics.DebuggerDisplay("Width={Width}, Height={Height}")</AttributeName>
     </Attribute>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.SizeTypeConverter))</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>Struct defining height and width as a pair of doubles.</summary>
@@ -75,30 +78,6 @@
       <Parameters>
         <Parameter Name="width" Type="System.Double" RefType="out" />
         <Parameter Name="height" Type="System.Double" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="width">Variable in which to store the width of the size.</param>
-        <param name="height">Variable in which to store the width of the size.</param>
-        <summary>Stores the components of the size in the corresponding arguments.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Deconstruct">
-      <MemberSignature Language="C#" Value="public void Deconstruct (out double width, out double height);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] float64&amp; width, [out] float64&amp; height) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Size.Deconstruct(System.Double@,System.Double@)" />
-      <MemberSignature Language="F#" Value="member this.Deconstruct :  *  -&gt; unit" Usage="size.Deconstruct (width, height)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="width" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="height" Type="System.Double&amp;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="width">Variable in which to store the width of the size.</param>

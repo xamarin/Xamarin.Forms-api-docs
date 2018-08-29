@@ -82,35 +82,10 @@
         <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
+        <param name="index">The identifier of the object to be retrieved.</param>
         <param name="value">To be added.</param>
-        <summary>For internal use by platform renderers.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TryGetValue">
-      <MemberSignature Language="C#" Value="public bool TryGetValue (int index, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(int32 index, [out] object&amp; value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IListProxy.TryGetValue(System.Int32,System.Object@)" />
-      <MemberSignature Language="F#" Value="abstract member TryGetValue : int *  -&gt; bool" Usage="iListProxy.TryGetValue (index, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>For internal use by platform renderers.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the object specified by <paramref name="index" /> or, if not present, the default value of <see langword="null" />.</summary>
+        <returns>The object specified by <paramref name="index" /> or, if not present, the default value of <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

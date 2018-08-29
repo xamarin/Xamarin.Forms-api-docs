@@ -386,7 +386,7 @@
       <MemberSignature Language="F#" Value="abstract member GetGroupIndexFromGlobal : int *  -&gt; int&#xA;override this.GetGroupIndexFromGlobal : int *  -&gt; int" Usage="templatedItemsList.GetGroupIndexFromGlobal (globalIndex, leftOver)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupIndexFromGlobal(System.Int32,System.Int32)</InterfaceMember>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupIndexFromGlobal(System.Int32,System.Int32@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -401,36 +401,8 @@
         <Parameter Name="leftOver" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="globalIndex">To be added.</param>
-        <param name="leftOver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetGroupIndexFromGlobal">
-      <MemberSignature Language="C#" Value="public int GetGroupIndexFromGlobal (int globalIndex, out int leftOver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetGroupIndexFromGlobal(int32 globalIndex, [out] int32&amp; leftOver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.GetGroupIndexFromGlobal(System.Int32,System.Int32@)" />
-      <MemberSignature Language="F#" Value="abstract member GetGroupIndexFromGlobal : int *  -&gt; int&#xA;override this.GetGroupIndexFromGlobal : int *  -&gt; int" Usage="templatedItemsList.GetGroupIndexFromGlobal (globalIndex, leftOver)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupIndexFromGlobal(System.Int32,System.Int32@)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="globalIndex" Type="System.Int32" />
-        <Parameter Name="leftOver" Type="System.Int32&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
         <param name="globalIndex">For internal use by the Xamarin.Forms platform.</param>
-        <param name="leftOver">For internal use by the Xamarin.Forms platform.</param>
+        <param name="leftOver">To be added.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
@@ -876,7 +848,7 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#ICollection#IsSynchronized" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -896,7 +868,7 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#ICollection#SyncRoot" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1048,7 +1020,7 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#IsFixedSize" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1068,7 +1040,7 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#IsReadOnly" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1088,7 +1060,7 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#Item(System.Int32)" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.System.Collections.IList.Item" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1156,7 +1128,7 @@
       <MemberSignature Language="C#" Value="object Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.BindingContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.BindingContext" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#BindingContext" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.BindingContext" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.BindingContext" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.BindingContext</InterfaceMember>
@@ -1226,7 +1198,7 @@
       <MemberSignature Language="C#" Value="Xamarin.Forms.IListProxy Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IListProxy Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#ListProxy" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.ListProxy</InterfaceMember>

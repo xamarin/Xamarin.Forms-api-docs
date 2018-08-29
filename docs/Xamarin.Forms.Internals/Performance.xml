@@ -82,10 +82,10 @@
       </Docs>
     </Member>
     <Member MemberName="Start">
-      <MemberSignature Language="C#" Value="public static void Start (out string reference, string tag = null, string path = null, string member = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Start([out] string&amp; reference, string tag, string path, string member) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Performance.Start(System.String@,System.String,System.String,System.String)" />
-      <MemberSignature Language="F#" Value="static member Start :  * string * string * string -&gt; unit" Usage="Xamarin.Forms.Internals.Performance.Start (reference, tag, path, member)" />
+      <MemberSignature Language="C#" Value="public static void Start (string reference, string tag = null, string path = null, string member = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Start(string reference, string tag, string path, string member) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Performance.Start(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="static member Start : string * string * string * string -&gt; unit" Usage="Xamarin.Forms.Internals.Performance.Start (reference, tag, path, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -123,46 +123,6 @@
       </Docs>
     </Member>
     <Member MemberName="Start">
-      <MemberSignature Language="C#" Value="public static void Start (string reference, string tag = null, string path = null, string member = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Start(string reference, string tag, string path, string member) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Performance.Start(System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="F#" Value="static member Start : string * string * string * string -&gt; unit" Usage="Xamarin.Forms.Internals.Performance.Start (reference, tag, path, member)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="reference" Type="System.String" />
-        <Parameter Name="tag" Type="System.String" />
-        <Parameter Name="path" Type="System.String">
-          <Attributes>
-            <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-        <Parameter Name="member" Type="System.String">
-          <Attributes>
-            <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="reference">To be added.</param>
-        <param name="tag">To be added.</param>
-        <param name="path">To be added.</param>
-        <param name="member">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Start">
       <MemberSignature Language="C#" Value="public static void Start (out string reference, string tag = null, string path = null, string member = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Start([out] string&amp; reference, string tag, string path, string member) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Performance.Start(System.String@,System.String,System.String,System.String)" />
@@ -176,7 +136,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reference" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="reference" Type="System.String" RefType="out" />
         <Parameter Name="tag" Type="System.String" />
         <Parameter Name="path" Type="System.String">
           <Attributes>

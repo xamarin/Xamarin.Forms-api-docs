@@ -74,7 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.XamlTypeResolver.Xamarin#Forms#Xaml#IXamlTypeResolver#TryResolve(System.String,System.Type@)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Xaml.IXamlTypeResolver.TryResolve(System.String,System.Type)</InterfaceMember>
+        <InterfaceMember>M:Xamarin.Forms.Xaml.IXamlTypeResolver.TryResolve(System.String,System.Type@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
@@ -88,35 +88,8 @@
         <Parameter Name="type" Type="System.Type" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="qualifiedTypeName">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Xamarin.Forms.Xaml.IXamlTypeResolver.TryResolve">
-      <MemberSignature Language="C#" Value="bool IXamlTypeResolver.TryResolve (string qualifiedTypeName, out Type type);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.Xaml.IXamlTypeResolver.TryResolve(string qualifiedTypeName, [out] class System.Type&amp; type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.XamlTypeResolver.Xamarin#Forms#Xaml#IXamlTypeResolver#TryResolve(System.String,System.Type@)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Xaml.IXamlTypeResolver.TryResolve(System.String,System.Type@)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="qualifiedTypeName" Type="System.String" />
-        <Parameter Name="type" Type="System.Type&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
         <param name="qualifiedTypeName">For internal use by the Xamarin.Forms platform.</param>
-        <param name="type">For internal use by the Xamarin.Forms platform.</param>
+        <param name="type">To be added.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
