@@ -41,29 +41,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetModalPresentationStyle">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle GetModalPresentationStyle (Xamarin.Forms.BindableObject element);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle GetModalPresentationStyle(class Xamarin.Forms.BindableObject element) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetModalPresentationStyle(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetModalPresentationStyle : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetModalPresentationStyle element" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
-      </Parameters>
-      <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetPreferredStatusBarUpdateAnimation">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIStatusBarAnimation GetPreferredStatusBarUpdateAnimation (Xamarin.Forms.BindableObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIStatusBarAnimation GetPreferredStatusBarUpdateAnimation(class Xamarin.Forms.BindableObject element) cil managed" />
@@ -200,47 +177,6 @@
       </ReturnValue>
       <Docs>
         <summary>Backing store for the attached property that defines the large title preferences of the page.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ModalPresentationStyle">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle ModalPresentationStyle (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page&gt; config);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle ModalPresentationStyle(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Page&gt; config) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.ModalPresentationStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})" />
-      <MemberSignature Language="F#" Value="static member ModalPresentationStyle : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Page&gt; -&gt; Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.ModalPresentationStyle config" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page&gt;" RefType="this" />
-      </Parameters>
-      <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ModalPresentationStyleProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ModalPresentationStyleProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ModalPresentationStyleProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.ModalPresentationStyleProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ModalPresentationStyleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.ModalPresentationStyleProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,31 +357,6 @@
         <param name="value">The new large title display preferences.</param>
         <summary>Sets the large title display preferences of <paramref name="config" /> to <paramref name="value" />.</summary>
         <returns>The updated configuration object on which developers can make successive method calls.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetModalPresentationStyle">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page&gt; SetModalPresentationStyle (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page&gt; config, Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Page&gt; SetModalPresentationStyle(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Page&gt; config, valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetModalPresentationStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page},Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle)" />
-      <MemberSignature Language="F#" Value="static member SetModalPresentationStyle : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Page&gt; * Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Page&gt;" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetModalPresentationStyle (config, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page&gt;" RefType="this" />
-        <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle" />
-      </Parameters>
-      <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
