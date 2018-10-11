@@ -136,9 +136,9 @@ namespace FormsGallery
       <para>
         <img href="xamarin-media/Xamarin.Forms/_images/Grid.TripleScreenShot.png" />
       </para>
-      <para>It is convenient for the <see cref="T:Xamarin.Forms.Grid" /> layout class to store row and column indices of each of its child elements. Additionally, when a <see cref="T:Xamarin.Forms.View" /> element is laid out with a grid, application developers can access and change the child's position and span from the child itself by using the <see cref="M:Xamarin.Forms.Get(BindableObject)" />, <see cref="M:Xamarin.Forms..Grid.GetRow(BindableObject)" />, <see cref="M:Xamarin.Forms.Grid.SetRow(BindableObject)" />, <see cref="M:Xamarin.Forms.Grid.GetRowSpan(BindableObject)" />, <see cref="M:Xamarin.Forms.Grid.SetRowSpan(BindableObject)" /> static methods, and the equivalent static methods for columns and column spans.</para>
+      <para>It is convenient for the <see cref="T:Xamarin.Forms.Grid" /> layout class to store row and column indices of each of its child elements. Additionally, when a <see cref="T:Xamarin.Forms.View" /> element is laid out with a grid, application developers can access and change the child's position and span from the child itself by using the <see cref="M:Xamarin.Forms.Get(System.Xamarin.Forms.BindableObject)" />, <see cref="M:Xamarin.Forms.Grid.GetRow(Xamarin.Forms.BindableObject)" />, <see cref="M:Xamarin.Forms.Grid.SetRow(BindableObject,System.Int32)" />, <see cref="M:Xamarin.Forms.Grid.GetRowSpan(Xamarin.Forms.BindableObject)" />, <see cref="M:Xamarin.Forms.Grid.SetRowSpan(BindableObject,System.Int32)" /> static methods, and the equivalent static methods for columns and column spans.</para>
       <para>The documentation for the following <see cref="T:Xamarin.Forms.Grid" /> member methods contains XAML syntax examples:
-<list type="bullet"><item><term><see cref="M:Xamarin.Forms.Grid.SetRow" /></term></item><item><term><see cref="M:Xamarin.Forms.Grid.SetRowSpan" /></term></item><item><term><see cref="M:Xamarin.Forms.Grid.SetColumn" /></term></item><item><term><see cref="M:Xamarin.Forms.Grid.SetColumnSpan" /></term></item></list></para>
+<list type="bullet"><item><term><see cref="M:Xamarin.Forms.Grid.SetRow(Xamarin.Forms.BindableObject,System.Int32)" /></term></item><item><term><see cref="M:Xamarin.Forms.Grid.SetRowSpan(Xamarin.Forms.BindableObject,System.Int32)" /></term></item><item><term><see cref="M:Xamarin.Forms.Grid.SetColumn(Xamarin.Forms.BindableObject,System.Int32)" /></term></item><item><term><see cref="M:Xamarin.Forms.Grid.SetColumnSpan(Xamarin.Forms.BindableObject,System.Int32)" /></term></item></list></para>
     </remarks>
   </Docs>
   <Members>
@@ -271,7 +271,7 @@ namespace FormsGallery
       <Docs>
         <summary>Implements the attached property that represents the zero-based column index of a child element. See Remarks.</summary>
         <remarks>
-          <para>The interface for this property is defined by the <see cref="M:Xamarin.Forms.Grid.GetColumn" /> and <see cref="M:Xamarin.Forms.Grid.SetColumn" /> methods.</para>
+          <para>The interface for this property is defined by the <see cref="M:Xamarin.Forms.Grid.GetColumn(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Grid.SetColumn(Xamarin.Forms.BindableObject,System.Int32)" /> methods.</para>
         </remarks>
       </Docs>
     </Member>
@@ -352,7 +352,7 @@ namespace FormsGallery
       <Docs>
         <summary>Implements the attached property that represents the number of columns that a child element spans. See Remarks.</summary>
         <remarks>
-          <para>The interface for this property is defined by the <see cref="M:Xamarin.Forms.Grid.GetColumnSpan" /> and <see cref="M:Xamarin.Forms.Grid.SetColumnSpan" /> methods.</para>
+          <para>The interface for this property is defined by the <see cref="M:Xamarin.Forms.Grid.GetColumnSpan(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Grid.SetColumnSpan(Xamarin.Forms.BindableObject,System.Int32)" /> methods.</para>
         </remarks>
       </Docs>
     </Member>
@@ -384,7 +384,7 @@ namespace FormsGallery
         <summary>Gets the column of the <paramref name="bindable" /> child element.</summary>
         <returns>The column that the child element is in.</returns>
         <remarks>
-          <para>The <see cref="M:Xamarin.Forms.Grid.GetColum" /> method corresponds to the value that is set by the following XAML attached property.</para>
+          <para>The <see cref="M:Xamarin.Forms.Grid.GetColumn(Xamarin.Forms.BindableObject)" /> method corresponds to the value that is set by the following XAML attached property.</para>
           <list type="table">
             <listheader>
               <term>Attached Property</term>
@@ -397,7 +397,7 @@ namespace FormsGallery
               </description>
             </item>
           </list>
-          <para>The remarks for the <see cref="M:Xamarin.Forms.Grid.SetColumn" /> method contain syntax for and information about the <c>Column</c> attached property.</para>
+          <para>The remarks for the <see cref="M:Xamarin.Forms.Grid.SetColumn(Xamarin.Forms.BindableObject,System.Int32)" /> method contain syntax for and information about the <c>Column</c> attached property.</para>
         </remarks>
       </Docs>
     </Member>
@@ -429,7 +429,7 @@ namespace FormsGallery
         <summary>Gets the column span of the <paramref name="bindable" /> child element.</summary>
         <returns>The column that the child element is in.</returns>
         <remarks>
-          <para>The <see cref="M:Xamarin.Forms.Grid.GetColumSpan" /> method corresponds to the value that is set by the following XAML attached property.</para>
+          <para>The <see cref="M:Xamarin.Forms.Grid.GetColumnSpan(Xamarin.Forms.BindableObject)" /> method corresponds to the value that is set by the following XAML attached property.</para>
           <list type="table">
             <listheader>
               <term>Attached Property</term>
@@ -442,7 +442,7 @@ namespace FormsGallery
               </description>
             </item>
           </list>
-          <para>The remarks for the <see cref="M:Xamarin.Forms.Grid.SetColumnSpan" /> method contain syntax for and information about the <c>ColumnSpan</c> attached property.</para>
+          <para>The remarks for the <see cref="M:Xamarin.Forms.Grid.SetColumnSpan(Xamarin.Forms.BindableObject,System.Int32)" /> method contain syntax for and information about the <c>ColumnSpan</c> attached property.</para>
         </remarks>
       </Docs>
     </Member>
@@ -474,7 +474,7 @@ namespace FormsGallery
         <summary>Gets the row of the <paramref name="bindable" /> child element.</summary>
         <returns>The row that the child element is in.</returns>
         <remarks>
-          <para>The <see cref="M:Xamarin.Forms.Grid.GetRow" /> method corresponds to the following XAML attached property:</para>
+          <para>The <see cref="M:Xamarin.Forms.Grid.GetRow(Xamarin.Forms.BindableObject)" /> method corresponds to the following XAML attached property:</para>
           <list type="table">
             <listheader>
               <term>Attached Property</term>
@@ -487,7 +487,7 @@ namespace FormsGallery
               </description>
             </item>
           </list>
-          <para>The remarks for the <see cref="M:Xamarin.Forms.Grid.SetRow" /> method contain syntax for and information about the <c>Row</c> attached property.</para>
+          <para>The remarks for the <see cref="M:Xamarin.Forms.Grid.SetRow(Xamarin.Forms.BindableObject,System.Int32)" /> method contain syntax for and information about the <c>Row</c> attached property.</para>
         </remarks>
       </Docs>
     </Member>
@@ -519,7 +519,7 @@ namespace FormsGallery
         <summary>Gets the row span of the <paramref name="bindable" /> child element.</summary>
         <returns>The row that the child element is in.</returns>
         <remarks>
-          <para>The <see cref="M:Xamarin.Forms.Grid.GetRowSpan" /> method corresponds to the following XAML attached properties:</para>
+          <para>The <see cref="M:Xamarin.Forms.Grid.GetRowSpan(Xamarin.Forms.BindableObject)" /> method corresponds to the following XAML attached properties:</para>
           <list type="table">
             <listheader>
               <term>Attached Property</term>
@@ -530,7 +530,7 @@ namespace FormsGallery
               <description>An integer that represents the number of rows that the item will span.<para></para></description>
             </item>
           </list>
-          <para>The remarks for the <see cref="M:Xamarin.Forms.Grid.SetRowSpan" /> method contain syntax for and information about the <c>RowSpan</c> attached property.</para>
+          <para>The remarks for the <see cref="M:Xamarin.Forms.Grid.SetRowSpan(Xamarin.Forms.BindableObject,System.Int32)" /> method contain syntax for and information about the <c>RowSpan</c> attached property.</para>
         </remarks>
       </Docs>
     </Member>
@@ -830,7 +830,7 @@ namespace FormsGallery
       <Docs>
         <summary>Implements the attached property that represents the zero-based row index of a child element. See Remarks.</summary>
         <remarks>
-          <para>The interface for this property is defined by the <see cref="M:Xamarin.Forms.Grid.GetRow" /> and <see cref="M:Xamarin.Forms.Grid.SetRowf" /> methods.</para>
+          <para>The interface for this property is defined by the <see cref="M:Xamarin.Forms.Grid.GetRow(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Grid.SetRow(Xamarin.Forms.BindableObject,System.Int32)" /> methods.</para>
         </remarks>
       </Docs>
     </Member>
@@ -911,7 +911,7 @@ namespace FormsGallery
       <Docs>
         <summary>Implements the attached property that represents the number of rows that a child element spans, and allows the <see cref="T:Xamarin.Forms.Grid" /> class to bind it to properties on other objects at run time.</summary>
         <remarks>
-          <para>The interface for this property is defined by the <see cref="M:Xamarin.Forms.Grid.GetRowSpan" /> and <see cref="M:Xamarin.Forms.Grid.SetRowSpan" /> methods.</para>
+          <para>The interface for this property is defined by the <see cref="M:Xamarin.Forms.Grid.GetRowSpan(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Grid.SetRowSpan(Xamarin.Forms.BindableObject,System.Int32)" /> methods.</para>
         </remarks>
       </Docs>
     </Member>
@@ -944,7 +944,7 @@ namespace FormsGallery
         <param name="value">The column in which to place the child element.</param>
         <summary>Changes the column in which a child element will be placed.</summary>
         <remarks>
-          <para>The <see cref="M:Xamarin.Forms.Grid.GetColumSpan" /> method corresponds to the value that is set by the following XAML attached property.</para>
+          <para>The <see cref="M:Xamarin.Forms.Grid.GetColumnSpan(Xamarin.Forms.BindableObject)" /> method corresponds to the value that is set by the following XAML attached property.</para>
           <list type="table">
             <listheader>
               <term>Attached Property</term>
@@ -989,7 +989,7 @@ namespace FormsGallery
         <param name="value">The new column span.</param>
         <summary>Changes the column span of the specified child element.</summary>
         <remarks>
-          <para>The <see cref="M:Xamarin.Forms.Grid.GetColum" /> method corresponds to the value that is set by the following XAML attached property.</para>
+          <para>The <see cref="M:Xamarin.Forms.Grid.GetColumn(Xamarin.Forms.BindableObject)" /> method corresponds to the value that is set by the following XAML attached property.</para>
           <list type="table">
             <listheader>
               <term>Attached Property</term>
@@ -1034,7 +1034,7 @@ namespace FormsGallery
         <param name="value">The row in which to place the child element.</param>
         <summary>Changes the row in which a child element will be placed.</summary>
         <remarks>
-          <para>The <see cref="M:Xamarin.Forms.Grid.SetRow" /> method corresponds to the following XAML attached property:</para>
+          <para>The <see cref="M:Xamarin.Forms.Grid.SetRow(Xamarin.Forms.BindableObject,System.Int32)" /> method corresponds to the following XAML attached property:</para>
           <list type="table">
             <listheader>
               <term>Attached Property</term>
@@ -1079,7 +1079,7 @@ namespace FormsGallery
         <param name="value">The new row span.</param>
         <summary>Changes the row span of the specified child element.</summary>
         <remarks>
-          <para>The <see cref="M:Xamarin.Forms.Grid.SetRowSpan" /> method corresponds to the following XAML attached property:</para>
+          <para>The <see cref="M:Xamarin.Forms.Grid.SetRowSpan(Xamarin.Forms.BindableObject,System.Int32)" /> method corresponds to the following XAML attached property:</para>
           <list type="table">
             <listheader>
               <term>Attached Property</term>

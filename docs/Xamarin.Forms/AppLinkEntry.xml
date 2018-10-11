@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:Xamrin.Forms.AppLinkEntry" /> with default values.</summary>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.AppLinkEntry" /> with default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +145,7 @@
       </Parameters>
       <Docs>
         <param name="uri">A URI that can be parsed by the target appliction to recreate a specific state.</param>
-        <summary>Creates and returns a new <see cref="T:Xamrin.Forms.AppLinkEntry" /> for the specified <paramref name="uri" />.</summary>
+        <summary>Creates and returns a new <see cref="T:Xamarin.Forms.AppLinkEntry" /> for the specified <paramref name="uri" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,7 +170,7 @@
       <Docs>
         <summary>Gets or sets a value that tells whether the item that is identified by the link entry is currently open.</summary>
         <value>A value that tells whether the item that is identified by the link entry is currently open.</value>
-        <remarks>Application developers can set this value in <see cref="M:Xamarin.Forms.Application.OnAppearing" /> and <see cref="M:Xamarin.Forms.Application.OnDisappearing" /> methods to control whether the app link is shown for indexing or Handoff.</remarks>
+        <remarks>Application developers can set this value in <see cref="E:Xamarin.Forms.Application.PageAppearing" /> and <see cref="E:Xamarin.Forms.Application.PageDisappearing" /> methods to control whether the app link is shown for indexing or Handoff.</remarks>
         <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
       </Docs>
     </Member>
@@ -320,8 +320,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation of this <see cref="T:Xamrin.Forms.AppLinkEntry" />.</summary>
-        <returns>A  string representation of this <see cref="T:Xamrin.Forms.AppLinkEntry" />.</returns>
+        <summary>Returns a string representation of this <see cref="T:Xamarin.Forms.AppLinkEntry" />.</summary>
+        <returns>A  string representation of this <see cref="T:Xamarin.Forms.AppLinkEntry" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

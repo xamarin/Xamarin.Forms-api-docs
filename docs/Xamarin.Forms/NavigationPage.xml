@@ -290,7 +290,7 @@
       <Docs>
         <param name="page">The <see cref="T:Xamarin.Forms.Page" /> whose back-button's title is being requested.</param>
         <summary>The title of the back button for the specified <paramref name="page" />.</summary>
-        <returns>The title of the back button that would be shown if the specified <paramref name="page" /> were the <see cref="P:Xamarin.Forms.CurrentPage" />.</returns>
+        <returns>The title of the back button that would be shown if the specified <paramref name="page" /> were the <see cref="P:Xamarin.Forms.NavigationPage.CurrentPage" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1303,7 +1303,7 @@ public class MyPage : NavigationPage
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the <see cref="M:Xamarin.Forms.NavigationPage.SetTitleIcon" />/<see cref="M:Xamarin.Forms.NavigationPage.GetTitleIcon" /> property.</summary>
+        <summary>Indicates the <see cref="M:Xamarin.Forms.NavigationPage.SetTitleIcon(Xamarin.Forms.BindableObject,Xamarin.Forms.FileImageSource)" />/<see cref="M:Xamarin.Forms.NavigationPage.GetTitleIcon(Xamarin.Forms.BindableObject)" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

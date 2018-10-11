@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="xamarin-forms">
   <Namespace Name="Xamarin.Forms">
     <Type Name="Xamarin.Forms.AbsoluteLayout" Id="T:Xamarin.Forms.AbsoluteLayout">
@@ -1014,7 +1014,7 @@
       <Member Id="M:Xamarin.Forms.FileImageSource.op_Implicit(System.String)~Xamarin.Forms.FileImageSource" />
       <Member Id="M:Xamarin.Forms.FileImageSource.op_Implicit(Xamarin.Forms.FileImageSource)~System.String" />
       <Member Id="M:Xamarin.Forms.FileImageSource.ToString" />
-      <Member Id="P:Xamarin.Forms.FileImageSource.File" />
+      <Member Id="T:Xamarin.Forms.FileImageSource.File" />
     </Type>
     <Type Name="Xamarin.Forms.FileImageSourceConverter" Id="T:Xamarin.Forms.FileImageSourceConverter">
       <Member Id="M:Xamarin.Forms.FileImageSourceConverter.#ctor" />
@@ -2263,6 +2263,7 @@
       <Member Id="M:Xamarin.Forms.ProgressBar.#ctor" />
       <Member Id="M:Xamarin.Forms.ProgressBar.On``1" />
       <Member Id="M:Xamarin.Forms.ProgressBar.ProgressTo(System.Double,System.UInt32,Xamarin.Forms.Easing)" />
+      <Member Id="M:Xamarin.Forms.ProgressBar.TabStopDefaultValueCreator" />
       <Member Id="P:Xamarin.Forms.ProgressBar.Progress" />
       <Member Id="P:Xamarin.Forms.ProgressBar.ProgressColor" />
     </Type>
@@ -2604,6 +2605,7 @@
       <Member Id="F:Xamarin.Forms.Span.TextDecorationsProperty" />
       <Member Id="F:Xamarin.Forms.Span.TextProperty" />
       <Member Id="M:Xamarin.Forms.Span.#ctor" />
+      <Member Id="M:Xamarin.Forms.Span.OnBindingContextChanged" />
       <Member Id="M:Xamarin.Forms.Span.Xamarin#Forms#Internals#IFontElement#FontSizeDefaultValueCreator" />
       <Member Id="M:Xamarin.Forms.Span.Xamarin#Forms#Internals#IFontElement#OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)" />
       <Member Id="M:Xamarin.Forms.Span.Xamarin#Forms#Internals#IFontElement#OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)" />
@@ -2719,6 +2721,10 @@
       <Member Id="M:Xamarin.Forms.TabbedPage.On``1" />
       <Member Id="P:Xamarin.Forms.TabbedPage.BarBackgroundColor" />
       <Member Id="P:Xamarin.Forms.TabbedPage.BarTextColor" />
+    </Type>
+    <Type Name="Xamarin.Forms.TabIndexExtensions" Id="T:Xamarin.Forms.TabIndexExtensions">
+      <Member Id="M:Xamarin.Forms.TabIndexExtensions.FindNextElement(Xamarin.Forms.VisualElement,System.Boolean,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.List{Xamarin.Forms.VisualElement}},System.Int32@)" />
+      <Member Id="M:Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage(Xamarin.Forms.VisualElement,System.Int32@)" />
     </Type>
     <Type Name="Xamarin.Forms.TableIntent" Id="T:Xamarin.Forms.TableIntent">
       <Member Id="F:Xamarin.Forms.TableIntent.Data" />
@@ -3073,6 +3079,7 @@
       <Member Id="F:Xamarin.Forms.VisualElement.IsEnabledProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.IsFocusedProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.IsFocusedPropertyKey" />
+      <Member Id="F:Xamarin.Forms.VisualElement.IsTabStopProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.IsVisibleProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.MinimumHeightRequestProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.MinimumWidthRequestProperty" />
@@ -3085,6 +3092,7 @@
       <Member Id="F:Xamarin.Forms.VisualElement.ScaleXProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.ScaleYProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.StyleProperty" />
+      <Member Id="F:Xamarin.Forms.VisualElement.TabIndexProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.TranslationXProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.TranslationYProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.TriggersProperty" />
@@ -3109,7 +3117,11 @@
       <Member Id="M:Xamarin.Forms.VisualElement.OnParentSet" />
       <Member Id="M:Xamarin.Forms.VisualElement.OnSizeAllocated(System.Double,System.Double)" />
       <Member Id="M:Xamarin.Forms.VisualElement.OnSizeRequest(System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.VisualElement.OnTabIndexPropertyChanged(System.Int32,System.Int32)" />
+      <Member Id="M:Xamarin.Forms.VisualElement.OnTabStopPropertyChanged(System.Boolean,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.VisualElement.SizeAllocated(System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.VisualElement.TabIndexDefaultValueCreator" />
+      <Member Id="M:Xamarin.Forms.VisualElement.TabStopDefaultValueCreator" />
       <Member Id="M:Xamarin.Forms.VisualElement.Unfocus" />
       <Member Id="M:Xamarin.Forms.VisualElement.Xamarin#Forms#IVisualElementController#InvalidateMeasure(Xamarin.Forms.Internals.InvalidationTrigger)" />
       <Member Id="P:Xamarin.Forms.VisualElement.AnchorX" />
@@ -3129,6 +3141,7 @@
       <Member Id="P:Xamarin.Forms.VisualElement.IsInNativeLayout" />
       <Member Id="P:Xamarin.Forms.VisualElement.IsNativeStateConsistent" />
       <Member Id="P:Xamarin.Forms.VisualElement.IsPlatformEnabled" />
+      <Member Id="P:Xamarin.Forms.VisualElement.IsTabStop" />
       <Member Id="P:Xamarin.Forms.VisualElement.IsVisible" />
       <Member Id="P:Xamarin.Forms.VisualElement.MinimumHeightRequest" />
       <Member Id="P:Xamarin.Forms.VisualElement.MinimumWidthRequest" />
@@ -3144,6 +3157,7 @@
       <Member Id="P:Xamarin.Forms.VisualElement.ScaleY" />
       <Member Id="P:Xamarin.Forms.VisualElement.Style" />
       <Member Id="P:Xamarin.Forms.VisualElement.StyleClass" />
+      <Member Id="P:Xamarin.Forms.VisualElement.TabIndex" />
       <Member Id="P:Xamarin.Forms.VisualElement.TranslationX" />
       <Member Id="P:Xamarin.Forms.VisualElement.TranslationY" />
       <Member Id="P:Xamarin.Forms.VisualElement.Triggers" />
@@ -3342,6 +3356,7 @@
       <Member Id="M:Xamarin.Forms.Internals.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})" />
       <Member Id="M:Xamarin.Forms.Internals.EnumerableExtensions.GetChildGesturesFor``1(System.Collections.Generic.IEnumerable{Xamarin.Forms.GestureElement},System.Func{``0,System.Boolean})" />
       <Member Id="M:Xamarin.Forms.Internals.EnumerableExtensions.GetGesturesFor``1(System.Collections.Generic.IEnumerable{Xamarin.Forms.IGestureRecognizer},System.Func{``0,System.Boolean})" />
+      <Member Id="M:Xamarin.Forms.Internals.EnumerableExtensions.GroupToDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
       <Member Id="M:Xamarin.Forms.Internals.EnumerableExtensions.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0)" />
       <Member Id="M:Xamarin.Forms.Internals.EnumerableExtensions.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})" />
       <Member Id="M:Xamarin.Forms.Internals.EnumerableExtensions.Prepend``1(System.Collections.Generic.IEnumerable{``0},``0)" />

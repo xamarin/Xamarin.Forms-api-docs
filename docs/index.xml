@@ -586,6 +586,7 @@
       <Type Name="Switch" Kind="Class" />
       <Type Name="SwitchCell" Kind="Class" />
       <Type Name="TabbedPage" Kind="Class" />
+      <Type Name="TabIndexExtensions" Kind="Class" />
       <Type Name="TableIntent" Kind="Enumeration" />
       <Type Name="TableRoot" Kind="Class" />
       <Type Name="TableSection" Kind="Class" />
@@ -1141,7 +1142,7 @@
           <param name="self">The <see cref="T:Xamarin.Forms.BindableObject" />.</param>
           <param name="targetProperty">The BindableProperty on which to set a bindinge.</param>
           <param name="path">A <see cref="T:System.String" /> indicating the property path to bind to.</param>
-          <param name="mode">The <see cref="T:Xamarin.Forms.BindingMode" /> for the binding. This parameter is optional. Default is <see cref="E:Xamarin.Forms.BindingMode.Default" />.</param>
+          <param name="mode">The <see cref="T:Xamarin.Forms.BindingMode" /> for the binding. This parameter is optional. Default is <see cref="F:Xamarin.Forms.BindingMode.Default" />.</param>
           <param name="converter">An <see cref="T:Xamarin.Forms.IValueConverter" /> for the binding. This parameter is optional. Default is <see langword="null" />.</param>
           <param name="stringFormat">A string used as stringFormat for the binding. This parameter is optional. Default is <see langword="null" />.</param>
           <summary>Creates and applies a binding to a property.</summary>
@@ -1178,7 +1179,7 @@
           <param name="self">The BindableObject.</param>
           <param name="targetProperty">The BindableProperty to bind to</param>
           <param name="sourceProperty">An expression used to retrieve the source path.</param>
-          <param name="mode">The BindingMode for the binding. This parameter is optional. Default is <see cref="E:Xamarin.Forms.BindingMode.Default" />.</param>
+          <param name="mode">The BindingMode for the binding. This parameter is optional. Default is <see cref="F:Xamarin.Forms.BindingMode.Default" />.</param>
           <param name="converter">An IValueConverter for the binding. This parameter is optional. Default is <see langword="null" />.</param>
           <param name="stringFormat">A string used as stringFormat for the binding. This parameter is optional. Default is <see langword="null" />.</param>
           <summary>Creates and applies a binding from an expression.</summary>
@@ -1686,6 +1687,37 @@
           <summary>For internal use by the Xamarin.Forms platform.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.Internals.EnumerableExtensions" Member="M:Xamarin.Forms.Internals.EnumerableExtensions.GetGesturesFor``1(System.Collections.Generic.IEnumerable{Xamarin.Forms.IGestureRecognizer},System.Func{``0,System.Boolean})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="System.Collections.Generic.IEnumerable`1" />
+      </Targets>
+      <Member MemberName="GroupToDictionary&lt;TSource,TKey&gt;">
+        <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;TKey,System.Collections.Generic.List&lt;TSource&gt;&gt; GroupToDictionary&lt;TSource,TKey&gt; (this System.Collections.Generic.IEnumerable&lt;TSource&gt; enumeration, Func&lt;TSource,TKey&gt; func);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;!!TKey, class System.Collections.Generic.List`1&lt;!!TSource&gt;&gt; GroupToDictionary&lt;TSource, TKey&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; enumeration, class System.Func`2&lt;!!TSource, !!TKey&gt; func) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.EnumerableExtensions.GroupToDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
+        <MemberSignature Language="F#" Value="static member GroupToDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; -&gt; System.Collections.Generic.IDictionary&lt;'Key, System.Collections.Generic.List&lt;'Source&gt;&gt;" Usage="Xamarin.Forms.Internals.EnumerableExtensions.GroupToDictionary (enumeration, func)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Collections.Generic.IDictionary&lt;TKey,System.Collections.Generic.List&lt;TSource&gt;&gt;</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="TSource" />
+          <TypeParameter Name="TKey" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="enumeration" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
+          <Parameter Name="func" Type="System.Func&lt;TSource,TKey&gt;" />
+        </Parameters>
+        <Docs>
+          <typeparam name="TSource">To be added.</typeparam>
+          <typeparam name="TKey">To be added.</typeparam>
+          <param name="enumeration">To be added.</param>
+          <param name="func">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.Internals.EnumerableExtensions" Member="M:Xamarin.Forms.Internals.EnumerableExtensions.GroupToDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -2275,8 +2307,8 @@
           <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.NavigationPage&gt;" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="config">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="config">The platform configuration for the element whose bar height to get.</param>
+          <summary>Gets the navigation bar height for the specified <paramref name="element" />.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.NavigationPage" Member="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.NavigationPage.GetBarHeight(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.NavigationPage})" />
       </Member>
@@ -3635,9 +3667,9 @@
           <Parameter Name="value" Type="System.Boolean" />
         </Parameters>
         <Docs>
-          <param name="config">To be added.</param>
+          <param name="config">The platform configuration for the element for which to set whether the navigation bar separator is hidden.</param>
           <param name="value">To be added.</param>
-          <summary>To be added.</summary>
+          <summary>Developers set this to <see langword="true" /> to hide the separator. Otherwise, <see langword="false" />.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.SetHideNavigationBarSeparator(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.NavigationPage},System.Boolean)" />
       </Member>
@@ -4118,8 +4150,8 @@
           <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider&gt;" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="config">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="config">The platform configuration for the element for which to get whether tapping on the slider updates its value.</param>
+          <summary>Returns a Boolean value that tells whether tapping on the slider will update its value.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.GetUpdateOnTap(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider})" />
       </Member>
@@ -4142,9 +4174,9 @@
           <Parameter Name="value" Type="System.Boolean" />
         </Parameters>
         <Docs>
-          <param name="config">To be added.</param>
+          <param name="config">The platform configuration for the element for which to set whether tapping on the slider updates its value.</param>
           <param name="value">To be added.</param>
-          <summary>To be added.</summary>
+          <summary>Sets a Boolean value that tells whether tapping on the slider will update its value.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.SetUpdateOnTap(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider},System.Boolean)" />
       </Member>
@@ -6604,6 +6636,60 @@
           <summary>Add a Setter with a DynamicResource to the IList&lt;Setter&gt;</summary>
         </Docs>
         <Link Type="Xamarin.Forms.SettersExtensions" Member="M:Xamarin.Forms.SettersExtensions.AddDynamicResource(System.Collections.Generic.IList{Xamarin.Forms.Setter},Xamarin.Forms.BindableProperty,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.VisualElement" />
+      </Targets>
+      <Member MemberName="FindNextElement">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.VisualElement FindNextElement (this Xamarin.Forms.VisualElement element, bool forwardDirection, System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt; tabIndexes, ref int tabIndex);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.VisualElement FindNextElement(class Xamarin.Forms.VisualElement element, bool forwardDirection, class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.VisualElement&gt;&gt; tabIndexes, int32&amp; tabIndex) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.FindNextElement(Xamarin.Forms.VisualElement,System.Boolean,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.List{Xamarin.Forms.VisualElement}},System.Int32@)" />
+        <MemberSignature Language="F#" Value="static member FindNextElement : Xamarin.Forms.VisualElement * bool * System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt; *  -&gt; Xamarin.Forms.VisualElement" Usage="Xamarin.Forms.TabIndexExtensions.FindNextElement (element, forwardDirection, tabIndexes, tabIndex)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.VisualElement</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="element" Type="Xamarin.Forms.VisualElement" RefType="this" />
+          <Parameter Name="forwardDirection" Type="System.Boolean" />
+          <Parameter Name="tabIndexes" Type="System.Collections.Generic.IDictionary&lt;System.Int32,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt;" />
+          <Parameter Name="tabIndex" Type="System.Int32" RefType="ref" />
+        </Parameters>
+        <Docs>
+          <param name="element">To be added.</param>
+          <param name="forwardDirection">To be added.</param>
+          <param name="tabIndexes">To be added.</param>
+          <param name="tabIndex">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.TabIndexExtensions" Member="M:Xamarin.Forms.TabIndexExtensions.FindNextElement(Xamarin.Forms.VisualElement,System.Boolean,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.List{Xamarin.Forms.VisualElement}},System.Int32@)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.VisualElement" />
+      </Targets>
+      <Member MemberName="GetTabIndexesOnParentPage">
+        <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt; GetTabIndexesOnParentPage (this Xamarin.Forms.VisualElement element, out int countChildrensWithTabStopWithoutThis);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.VisualElement&gt;&gt; GetTabIndexesOnParentPage(class Xamarin.Forms.VisualElement element, [out] int32&amp; countChildrensWithTabStopWithoutThis) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage(Xamarin.Forms.VisualElement,System.Int32@)" />
+        <MemberSignature Language="F#" Value="static member GetTabIndexesOnParentPage : Xamarin.Forms.VisualElement *  -&gt; System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage (element, countChildrensWithTabStopWithoutThis)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Collections.Generic.IDictionary&lt;System.Int32,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="element" Type="Xamarin.Forms.VisualElement" RefType="this" />
+          <Parameter Name="countChildrensWithTabStopWithoutThis" Type="System.Int32" RefType="out" />
+        </Parameters>
+        <Docs>
+          <param name="element">To be added.</param>
+          <param name="countChildrensWithTabStopWithoutThis">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.TabIndexExtensions" Member="M:Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage(Xamarin.Forms.VisualElement,System.Int32@)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>

@@ -28,7 +28,7 @@
   <Docs>
     <summary>Positions child elements at absolute positions.</summary>
     <remarks>
-      <para>Application developers can control the placement of child elements by providing proportional coordinates, device coordinates, or a combination of both, depending on the <see cref="T:Xamarin.Forms.AbsoluteLayoutFlags" /> values that are passed to <see cref="M:Xamarin.Forms.AbsoluteLayout.SetLayoutFlags" /> method. When one of the proportional <see cref="T:Xamarin.Forms.AbsoluteLayoutFlags" /> enumeration values is provided, the corresponding X, or Y arguments that range between 0.0 and 1.0 will always cause the child to be displayed completely on screen. That is, you do not need to subtract or add the height or width of a child in order to display it flush with the left, right, top, or bottom of the <see cref="T:Xamarin.Forms.AbsoluteLayout" />. For width, height, X, or Y values that are not specified proportionally, application developers use device-dependent units to locate and size the child element.</para>
+      <para>Application developers can control the placement of child elements by providing proportional coordinates, device coordinates, or a combination of both, depending on the <see cref="T:Xamarin.Forms.AbsoluteLayoutFlags" /> values that are passed to <see cref="M:Xamarin.Forms.AbsoluteLayout.SetLayoutFlags(Xamarin.Forms.BindableObject,Xamarin.Forms.AbsoluteLayoutFlags)" /> method. When one of the proportional <see cref="T:Xamarin.Forms.AbsoluteLayoutFlags" /> enumeration values is provided, the corresponding X, or Y arguments that range between 0.0 and 1.0 will always cause the child to be displayed completely on screen. That is, you do not need to subtract or add the height or width of a child in order to display it flush with the left, right, top, or bottom of the <see cref="T:Xamarin.Forms.AbsoluteLayout" />. For width, height, X, or Y values that are not specified proportionally, application developers use device-dependent units to locate and size the child element.</para>
       <example>
         <para>The following example shows how to use an <see cref="T:Xamarin.Forms.AbsoluteLayout" /> with proportional position arguments.</para>
         <code lang="C#"><![CDATA[
@@ -224,7 +224,7 @@
         <value>
         </value>
         <remarks>
-          <para>Application developers can set the width or height of the <see cref="P:Xamarin.Forms.VisualElement.Bounds" /> property to <see cref="P:Xamarin.Forms.AboluteLayout.AutoSize" /> on a visual element when adding to the layout to cause that element to be measured during the layout pass and sized appropriately.</para>
+          <para>Application developers can set the width or height of the <see cref="P:Xamarin.Forms.VisualElement.Bounds" /> property to <see cref="P:Xamarin.Forms.AbsoluteLayout.AutoSize" /> on a visual element when adding to the layout to cause that element to be measured during the layout pass and sized appropriately.</para>
         </remarks>
       </Docs>
     </Member>
@@ -390,7 +390,7 @@
       </ReturnValue>
       <Docs>
         <summary>Implements the attached property that represents the layout bounds of child elements. Bindable at run time with the string "LayoutBounds". See Remarks.</summary>
-        <remarks>The interface for this property is defined by the <see cref="M:Xamarin.Forms.AbsoluteLayout.GetLayoutBounds" /> and <see cref="M:Xamarin.Forms.AbsoluteLayout.SetLayoutBounds" /> methods.
+        <remarks>The interface for this property is defined by the <see cref="M:Xamarin.Forms.AbsoluteLayout.GetLayoutBounds(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.AbsoluteLayout.SetLayoutBounds(Xamarin.Forms.BindableObject,Xamarin.Forms.Rectangle)" /> methods.
         </remarks>
       </Docs>
     </Member>
@@ -427,7 +427,7 @@
         <param name="height">The height of the region that contains the child elements and that is used to calulate proportional values.</param>
         <summary>Positions and sizes the children of an AbsoluteLayout.</summary>
         <remarks>
-          <para>Application developers can override <see cref="M:Xamarin.Forms.AbsoluteLayout.LayoutChildren" /> to change the default behavior of <see cref="T:Xamarin.Forms.AbsoluteLayout" />. When doing so, it is recommended to call the base <see cref="M:Xamarin.Forms.AbsoluteLayout.LayoutChildren" /> method and then modify the dimensions and locations of the children directly.</para>
+          <para>Application developers can override <see cref="M:Xamarin.Forms.AbsoluteLayout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)" /> to change the default behavior of <see cref="T:Xamarin.Forms.AbsoluteLayout" />. When doing so, it is recommended to call the base <see cref="M:Xamarin.Forms.AbsoluteLayout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)" /> method and then modify the dimensions and locations of the children directly.</para>
         </remarks>
       </Docs>
     </Member>
@@ -453,7 +453,7 @@
       </ReturnValue>
       <Docs>
         <summary>Implements the attached property that contains the <see cref="T:Xamarin.Forms.AbsoluteLayoutFlags" /> values for child elements.</summary>
-        <remarks>The interface for this property is defined by the <see cref="M:Xamarin.Forms.AbsoluteLayout.GetLayoutFlags" /> and <see cref="M:Xamarin.Forms.AbsoluteLayout.SetLayoutFlags" /> methods.
+        <remarks>The interface for this property is defined by the <see cref="M:Xamarin.Forms.AbsoluteLayout.GetLayoutFlags(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.AbsoluteLayout.SetLayoutFlags(Xamarin.Forms.BindableObject,Xamarin.Forms.AbsoluteLayoutFlags)" /> methods.
         </remarks>
       </Docs>
     </Member>
@@ -516,7 +516,7 @@
         <param name="child">The element that was added to the children.</param>
         <summary>Called when a child is added to the <see cref="T:Xamarin.Forms.AbsoluteLayout" />.</summary>
         <remarks>
-          <para>Application developers can override <see cref="M:Xamarin.Forms.AbsoluteLayout.OnChildAdded" /> to change the default behavior thata is triggered when a child is added. When doing so, it is recommended to call the base <see cref="M:Xamarin.Forms.AbsoluteLayout.OnChildAdded" /> method and then add additional logic.</para>
+          <para>Application developers can override <see cref="M:Xamarin.Forms.AbsoluteLayout.OnChildAdded(Xamarin.Forms.Element)" /> to change the default behavior thata is triggered when a child is added. When doing so, it is recommended to call the base <see cref="M:Xamarin.Forms.AbsoluteLayout.OnChildAdded(Xamarin.Forms.Element)" /> method and then add additional logic.</para>
         </remarks>
       </Docs>
     </Member>
@@ -547,7 +547,7 @@
         <param name="child">The element that was removed from the children.</param>
         <summary>Called when a child is removed from the <see cref="T:Xamarin.Forms.AbsoluteLayout" />.</summary>
         <remarks>
-          <para>Application developers can override <see cref="M:Xamarin.Forms.AbsoluteLayout.OnChildRemoved" /> to change the default behavior thata is triggered when a child is removed. When doing so, it is recommended to call the base <see cref="M:Xamarin.Forms.AbsoluteLayout.OnChildRemoved" /> method and then add additional logic.</para>
+          <para>Application developers can override <see cref="M:Xamarin.Forms.AbsoluteLayout.OnChildRemoved(Xamarin.Forms.Element)" /> to change the default behavior thata is triggered when a child is removed. When doing so, it is recommended to call the base <see cref="M:Xamarin.Forms.AbsoluteLayout.OnChildRemoved(Xamarin.Forms.Element)" /> method and then add additional logic.</para>
         </remarks>
       </Docs>
     </Member>
@@ -586,7 +586,7 @@
         <summary>Called during the measure pass of a layout cycle to get the desired size of the AbsoluteLayout.</summary>
         <returns>A <see cref="T:Xamarin.Forms.SizeRequest" /> which contains the desired size of the AbsoluteLayout.</returns>
         <remarks>
-          <para>Application developers can override <see cref="M:Xamarin.Forms.AbsoluteLayout.OnSizeRequest" /> to change the default behavior thata is triggered when a child is removed. When doing so, it is recommended to call the base <see cref="M:Xamarin.Forms.AbsoluteLayout.OnSizeRequest" /> method and then modify the dimensions and locations of the children directly.</para>
+          <para>Application developers can override <see cref="M:Xamarin.Forms.AbsoluteLayout.OnSizeRequest(System.Double,System.Double)" /> to change the default behavior thata is triggered when a child is removed. When doing so, it is recommended to call the base <see cref="M:Xamarin.Forms.AbsoluteLayout.OnSizeRequest(System.Double,System.Double)" /> method and then modify the dimensions and locations of the children directly.</para>
         </remarks>
       </Docs>
     </Member>

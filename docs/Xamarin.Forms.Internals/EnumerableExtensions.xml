@@ -129,6 +129,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GroupToDictionary&lt;TSource,TKey&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;TKey,System.Collections.Generic.List&lt;TSource&gt;&gt; GroupToDictionary&lt;TSource,TKey&gt; (this System.Collections.Generic.IEnumerable&lt;TSource&gt; enumeration, Func&lt;TSource,TKey&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;!!TKey, class System.Collections.Generic.List`1&lt;!!TSource&gt;&gt; GroupToDictionary&lt;TSource, TKey&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; enumeration, class System.Func`2&lt;!!TSource, !!TKey&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.EnumerableExtensions.GroupToDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
+      <MemberSignature Language="F#" Value="static member GroupToDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; -&gt; System.Collections.Generic.IDictionary&lt;'Key, System.Collections.Generic.List&lt;'Source&gt;&gt;" Usage="Xamarin.Forms.Internals.EnumerableExtensions.GroupToDictionary (enumeration, func)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;TKey,System.Collections.Generic.List&lt;TSource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="enumeration" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
+        <Parameter Name="func" Type="System.Func&lt;TSource,TKey&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="enumeration">To be added.</param>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IndexOf&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static int IndexOf&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; enumerable, Func&lt;T,bool&gt; predicate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 IndexOf&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; enumerable, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
@@ -202,7 +233,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;Prepend&gt;d__6`1))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;Prepend&gt;d__7`1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

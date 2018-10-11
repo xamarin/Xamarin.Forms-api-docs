@@ -53,7 +53,7 @@
       </Parameters>
       <Docs>
         <param name="sz">
-          <see cref="T:Xamarin.Forms.Size" /> that specifies a <see cref="T:Xamarin.Forms.Point" /> that has the coordinates (<see cref="P:Xamarin.Forms.Size.width" />, <see cref="P:Xamarin.Forms.Size.height" />).</param>
+          <see cref="T:Xamarin.Forms.Size" /> that specifies a <see cref="T:Xamarin.Forms.Point" /> that has the coordinates (<see cref="P:Xamarin.Forms.Size.Width" />, <see cref="P:Xamarin.Forms.Size.Height" />).</param>
         <summary>Creates a new <see cref="T:Xamarin.Forms.Point" /> object that has coordinates that are specified by the width and height of <paramref name="sz" />, in that order.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,7 +170,7 @@
         <returns>
           <see langword="true" /> if the X and Y values are equal to those in <paramref name="o" />. Returns <see langword="false" /> if <paramref name="o" /> is not a <see cref="T:Xamarin.Forms.Point" />.</returns>
         <remarks>
-          <para>The <see cref="P:Xamarin.Forms.Point.X" /> and <see cref="P:Xamarin.Forms.Point.Y" /> values of the <see cref="T:Xamarin.Forms.Point" /> are stored as <see langword="double" />s. Developers should be aware of the precision limits and issues that can arise when comparing floating-point values. In some circumstances, developers should consider the possibility of measuring approximate equality using the (considerably slower) <see cref="M:Xamarin.Forms.Point.Distance" /> method.</para>
+          <para>The <see cref="P:Xamarin.Forms.Point.X" /> and <see cref="P:Xamarin.Forms.Point.Y" /> values of the <see cref="T:Xamarin.Forms.Point" /> are stored as <see langword="double" />s. Developers should be aware of the precision limits and issues that can arise when comparing floating-point values. In some circumstances, developers should consider the possibility of measuring approximate equality using the (considerably slower) <see cref="M:Xamarin.Forms.Point.Distance(Xamarin.Forms.Point)" /> method.</para>
         </remarks>
       </Docs>
     </Member>
