@@ -1,8 +1,9 @@
+<?xml version="1.0"?>
 <Type Name="AbsoluteLayoutFlags" FullName="Xamarin.Forms.AbsoluteLayoutFlags">
-  <TypeSignature Language="C#" Value="public enum AbsoluteLayoutFlags" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AbsoluteLayoutFlags extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.AbsoluteLayoutFlags" />
-  <TypeSignature Language="F#" Value="type AbsoluteLayoutFlags = " />
+  <TypeSignature Language="C#" Value="public enum AbsoluteLayoutFlags"/>
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AbsoluteLayoutFlags extends System.Enum"/>
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.AbsoluteLayoutFlags"/>
+  <TypeSignature Language="F#" Value="type AbsoluteLayoutFlags = "/>
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -23,18 +24,35 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Flags used to modify how layout bounds are interpreted in an <see cref="T:Xamarin.Forms.AbsoluteLayout" />.</summary>
+    <summary>Flags used to modify how layout bounds are interpreted in an <see cref="T:Xamarin.Forms.AbsoluteLayout"/>.</summary>
     <remarks>
-      <para>The <see cref="T:Xamarin.Forms.AbsoluteLayout" /> class can lay its child elements out in proportional units, device units, or a combination of both. Application developers should remember the following points when specifying a <see cref="T:Xamarin.Forms.Rectangle" /> structure that will define the layout bounds of a child element:
-                <list type="bullet"><item><term>For elements whose height and width fit on the screen, proportional position dimensions in the range [0,1] represent elements that are completely on the screen, regardless of whether the height, width, or both are specified in device or proportional units.</term></item><item><term>The above point means that, to specify an element in the lower right hand corner of the screen and that is half as wide and half as all as the screen, with a  <see cref="T:Xamarin.Forms.LayoutFlags" /> value of <c>All</c>, the application developer would specify "0.1, 0.1, 0.5, 0.5".</term></item><item><term>The app developer can inadvertently cause child elements for which one or both size dimensions were specified proportionally to be displayed partially off the screen, or hidden altogether, by specifying device-unit positions that do not leave enough room for the calculated size of the child.</term></item><item><term>Each part of the bounding <see cref="T:Xamarin.Forms.Rectangle" /> structure is interpreted according to the <see cref="T:Xamarin.Forms.LayoutFlags" /> value that controls it. A given rectangle might, for example, have an X-coordinate that is in device units, a Y-coordinate that is in proportional units, a height that is in proportional units, and a width that is in device units, or any other combination of device and proportional units. </term></item><item><term>Rectangles that, when interpreted by using the current <see cref="T:Xamarin.Forms.LayoutFlags" /> set on the child, represent bounding boxes that are partially or wholly off-screen—for example, by having a width that is larger than the screen width—may give unexpected results.</term></item></list></para>
+      <para>The <see cref="T:Xamarin.Forms.AbsoluteLayout"/> class can lay its child elements out in proportional units, device units, or a combination of both. Application developers should remember the following points when specifying a <see cref="T:Xamarin.Forms.Rectangle"/> structure that will define the layout bounds of a child element:
+        <list type="bullet">
+          <item>
+            <term>For elements whose height and width fit on the screen, proportional position dimensions in the range [0,1] represent elements that are completely on the screen, regardless of whether the height, width, or both are specified in device or proportional units.</term>
+          </item>
+          <item>
+            <term>The above point means that, to specify an element in the lower right hand corner of the screen and that is half as wide and half as all as the screen, with a  <see cref="T:Xamarin.Forms.AbsoluteLayoutFlags"/> value of <c>All</c>, the application developer would specify "0.1, 0.1, 0.5, 0.5".</term>
+          </item>
+          <item>
+            <term>The app developer can inadvertently cause child elements for which one or both size dimensions were specified proportionally to be displayed partially off the screen, or hidden altogether, by specifying device-unit positions that do not leave enough room for the calculated size of the child.</term>
+          </item>
+          <item>
+            <term>Each part of the bounding <see cref="T:Xamarin.Forms.Rectangle"/> structure is interpreted according to the <see cref="T:Xamarin.Forms.AbsoluteLayoutFlags"/> value that controls it. A given rectangle might, for example, have an X-coordinate that is in device units, a Y-coordinate that is in proportional units, a height that is in proportional units, and a width that is in device units, or any other combination of device and proportional units. </term>
+          </item>
+          <item>
+            <term>Rectangles that, when interpreted by using the current <see cref="T:Xamarin.Forms.AbsoluteLayoutFlags"/> set on the child, represent bounding boxes that are partially or wholly off-screen&#x2014;for example, by having a width that is larger than the screen width&#x2014;may give unexpected results.</term>
+          </item>
+        </list>
+      </para>
     </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
-      <MemberSignature Language="C#" Value="All" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags All = int32(-1)" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.All" />
-      <MemberSignature Language="F#" Value="All = -1" Usage="Xamarin.Forms.AbsoluteLayoutFlags.All" />
+      <MemberSignature Language="C#" Value="All"/>
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags All = int32(-1)"/>
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.All"/>
+      <MemberSignature Language="F#" Value="All = -1" Usage="Xamarin.Forms.AbsoluteLayoutFlags.All"/>
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -56,10 +74,10 @@
       </Docs>
     </Member>
     <Member MemberName="HeightProportional">
-      <MemberSignature Language="C#" Value="HeightProportional" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags HeightProportional = int32(8)" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.HeightProportional" />
-      <MemberSignature Language="F#" Value="HeightProportional = 8" Usage="Xamarin.Forms.AbsoluteLayoutFlags.HeightProportional" />
+      <MemberSignature Language="C#" Value="HeightProportional"/>
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags HeightProportional = int32(8)"/>
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.HeightProportional"/>
+      <MemberSignature Language="F#" Value="HeightProportional = 8" Usage="Xamarin.Forms.AbsoluteLayoutFlags.HeightProportional"/>
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -81,10 +99,10 @@
       </Docs>
     </Member>
     <Member MemberName="None">
-      <MemberSignature Language="C#" Value="None" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags None = int32(0)" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.None" />
-      <MemberSignature Language="F#" Value="None = 0" Usage="Xamarin.Forms.AbsoluteLayoutFlags.None" />
+      <MemberSignature Language="C#" Value="None"/>
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags None = int32(0)"/>
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.None"/>
+      <MemberSignature Language="F#" Value="None = 0" Usage="Xamarin.Forms.AbsoluteLayoutFlags.None"/>
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -106,10 +124,10 @@
       </Docs>
     </Member>
     <Member MemberName="PositionProportional">
-      <MemberSignature Language="C#" Value="PositionProportional" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags PositionProportional = int32(3)" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.PositionProportional" />
-      <MemberSignature Language="F#" Value="PositionProportional = 3" Usage="Xamarin.Forms.AbsoluteLayoutFlags.PositionProportional" />
+      <MemberSignature Language="C#" Value="PositionProportional"/>
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags PositionProportional = int32(3)"/>
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.PositionProportional"/>
+      <MemberSignature Language="F#" Value="PositionProportional = 3" Usage="Xamarin.Forms.AbsoluteLayoutFlags.PositionProportional"/>
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -131,10 +149,10 @@
       </Docs>
     </Member>
     <Member MemberName="SizeProportional">
-      <MemberSignature Language="C#" Value="SizeProportional" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags SizeProportional = int32(12)" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.SizeProportional" />
-      <MemberSignature Language="F#" Value="SizeProportional = 12" Usage="Xamarin.Forms.AbsoluteLayoutFlags.SizeProportional" />
+      <MemberSignature Language="C#" Value="SizeProportional"/>
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags SizeProportional = int32(12)"/>
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.SizeProportional"/>
+      <MemberSignature Language="F#" Value="SizeProportional = 12" Usage="Xamarin.Forms.AbsoluteLayoutFlags.SizeProportional"/>
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -156,10 +174,10 @@
       </Docs>
     </Member>
     <Member MemberName="WidthProportional">
-      <MemberSignature Language="C#" Value="WidthProportional" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags WidthProportional = int32(4)" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.WidthProportional" />
-      <MemberSignature Language="F#" Value="WidthProportional = 4" Usage="Xamarin.Forms.AbsoluteLayoutFlags.WidthProportional" />
+      <MemberSignature Language="C#" Value="WidthProportional"/>
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags WidthProportional = int32(4)"/>
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.WidthProportional"/>
+      <MemberSignature Language="F#" Value="WidthProportional = 4" Usage="Xamarin.Forms.AbsoluteLayoutFlags.WidthProportional"/>
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -181,10 +199,10 @@
       </Docs>
     </Member>
     <Member MemberName="XProportional">
-      <MemberSignature Language="C#" Value="XProportional" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags XProportional = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.XProportional" />
-      <MemberSignature Language="F#" Value="XProportional = 1" Usage="Xamarin.Forms.AbsoluteLayoutFlags.XProportional" />
+      <MemberSignature Language="C#" Value="XProportional"/>
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags XProportional = int32(1)"/>
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.XProportional"/>
+      <MemberSignature Language="F#" Value="XProportional = 1" Usage="Xamarin.Forms.AbsoluteLayoutFlags.XProportional"/>
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -206,10 +224,10 @@
       </Docs>
     </Member>
     <Member MemberName="YProportional">
-      <MemberSignature Language="C#" Value="YProportional" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags YProportional = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.YProportional" />
-      <MemberSignature Language="F#" Value="YProportional = 2" Usage="Xamarin.Forms.AbsoluteLayoutFlags.YProportional" />
+      <MemberSignature Language="C#" Value="YProportional"/>
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Xamarin.Forms.AbsoluteLayoutFlags YProportional = int32(2)"/>
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.AbsoluteLayoutFlags.YProportional"/>
+      <MemberSignature Language="F#" Value="YProportional = 2" Usage="Xamarin.Forms.AbsoluteLayoutFlags.YProportional"/>
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

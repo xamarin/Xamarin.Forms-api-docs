@@ -19,7 +19,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Event args for <see cref="T:Xamarin.Forms.VisualElement" />'s <see cref="E:Xamarin.Forms.VisualElement.Focused" /> and <see cref="T:Xamarin.Forms.VisualElement.Unfocused" /> events.</summary>
+    <summary>Event args for <see cref="T:Xamarin.Forms.VisualElement" />'s <see cref="E:Xamarin.Forms.VisualElement.Focused" /> and <see cref="E:Xamarin.Forms.VisualElement.Unfocused" /> events.</summary>
     <remarks>
     </remarks>
   </Docs>
@@ -46,7 +46,7 @@
         <Parameter Name="isFocused" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="visualElement">The <see cref="T:Xamarin.Foms.VisualElement" /> who's focused was changed.</param>
+        <param name="visualElement">The <see cref="T:Xamarin.Forms.VisualElement" /> who's focused was changed.</param>
         <param name="isFocused">Whether or not the <paramref name="visualElement" /> was focused.</param>
         <summary>Constructs and initializes a new instance of the <see cref="T:Xamarin.Forms.FocusEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
@@ -73,7 +73,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether or not the <see cref="P:Xamarin.Forms.FocusEventArgs.View" /> was focused.</summary>
+        <summary>Gets whether or not the <see cref="P:Xamarin.Forms.FocusEventArgs.VisualElement" /> was focused.</summary>
         <value>
           <see langword="true" /> if the view was focused, <see langword="false" /> otherwise.</value>
         <remarks>To be added.</remarks>
@@ -100,8 +100,8 @@
         <ReturnType>Xamarin.Forms.VisualElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:Xamarin.Foms.VisualElement" /> who's focused was changed.</summary>
-        <value>The <see cref="T:Xamarin.Foms.VisualElement" /> who's focused was changed.</value>
+        <summary>Gets the <see cref="T:Xamarin.Forms.VisualElement" /> who's focused was changed.</summary>
+        <value>The <see cref="T:Xamarin.Forms.VisualElement" /> who's focused was changed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

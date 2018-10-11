@@ -79,7 +79,7 @@
         <summary>Gets a nullable Boolean value that tells whether the bindable object is available to the accessibility system.</summary>
         <returns>
           <see langword="true" /> if <paramref name="bindable" /> is available to the accessibility system. <see langword="false" /> or <see langword="null" /> if it is not.</returns>
-        <remarks>Developers use <see cref="M:Xamarin.Forms.AutomationProperties.SetIsInAccessibilityTree" /> to set this attached property to <see langword="true" /> in order to make the bindable object available to the accessibility system.</remarks>
+        <remarks>Developers use <see cref="M:Xamarin.Forms.AutomationProperties.SetIsInAccessibleTree(Xamarin.Forms.BindableObject,System.Nullable{System.Boolean})" /> to set this attached property to <see langword="true" /> in order to make the bindable object available to the accessibility system.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLabeledBy">

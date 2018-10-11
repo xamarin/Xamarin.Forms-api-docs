@@ -531,7 +531,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <Docs>
         <param name="r">A <see cref="T:Xamarin.Forms.Rectangle" /><c>this</c> will be intersected with.</param>
         <summary>A new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <c>this</c> and <paramref name="r" />.</summary>
-        <returns>Returns a new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <c>this</c><see cref="T:Xamarin.Forms.Rectangle" /> and <paramref name="r" />, or <see cref="P:Xamarin.Forms.Rectangle.Zero" /> if there is no intersection.</returns>
+        <returns>Returns a new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <c>this</c><see cref="T:Xamarin.Forms.Rectangle" /> and <paramref name="r" />, or <see cref="F:Xamarin.Forms.Rectangle.Zero" /> if there is no intersection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -563,7 +563,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
         <param name="r1">A <see cref="T:Xamarin.Forms.Rectangle" /> being intersected.</param>
         <param name="r2">A <see cref="T:Xamarin.Forms.Rectangle" /> being intersected.</param>
         <summary>A new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <paramref name="r1" /> and <paramref name="r2" />.</summary>
-        <returns>Returns a new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <paramref name="r1" /> and <paramref name="r2" />, or <see cref="P:Xamarin.Forms.Rectangle.Zero" /> if there is no intersection.</returns>
+        <returns>Returns a new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <paramref name="r1" /> and <paramref name="r2" />, or <see cref="F:Xamarin.Forms.Rectangle.Zero" /> if there is no intersection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -768,7 +768,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
         <param name="r2">A <see cref="T:Xamarin.Forms.Rectangle" /> being compared.</param>
         <summary>Whether two <see cref="T:Xamarin.Forms.Rectangle" />s have equal values.</summary>
         <returns>
-          <see langword="true" /> if both the <see cref="P:Xamarin.Forms.Rectangle.Position" /> and <see cref="P:Xamarin.Forms.Rectangle.Size" /> of the two rectangles are equivalent.</returns>
+          <see langword="true" /> if both the <see cref="P:Xamarin.Forms.Rectangle.Location" /> and <see cref="P:Xamarin.Forms.Rectangle.Size" /> of the two rectangles are equivalent.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -801,7 +801,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
         <param name="r2">A <see cref="T:Xamarin.Forms.Rectangle" /> being compared.</param>
         <summary>Whether two <see cref="T:Xamarin.Forms.Rectangle" />s have unequal values.</summary>
         <returns>
-          <see langword="true" /> if either the <see cref="P:Xamarin.Forms.Rectangle.Position" /> or <see cref="P:Xamarin.Forms.Rectangle.Size" /> of the two rectangles have differences.</returns>
+          <see langword="true" /> if either the <see cref="P:Xamarin.Forms.Rectangle.Location" /> or <see cref="P:Xamarin.Forms.Rectangle.Size" /> of the two rectangles have differences.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

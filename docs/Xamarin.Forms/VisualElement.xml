@@ -627,7 +627,7 @@
         <param name="heightConstraint">The available height that a parent element can allocated to a child. Value will be between 0 and double.PositiveInfinity.</param>
         <summary>Returns the <see cref="T:Xamarin.Forms.SizeRequest" /> of the element. Calling this method begins the measure pass of a layout cycle.</summary>
         <returns>A <see cref="T:Xamarin.Forms.SizeRequest" /> which contains a requested size and a minimum size.</returns>
-        <remarks>Calling GetSizeRequest causes a measure pass to occur for the subtree of elements it is called on. It is ideal to only call GetSizeRequest when needed as excessive calls can negatively impact the performance of your app. Overriding GetSizeRequest should only be done if you want to ignore Width/HeightRequest. More likely a subclass would wish to override <see cref="M:Xamarin.Forms.VisualElement.OnSizeRequest" />.</remarks>
+        <remarks>Calling GetSizeRequest causes a measure pass to occur for the subtree of elements it is called on. It is ideal to only call GetSizeRequest when needed as excessive calls can negatively impact the performance of your app. Overriding GetSizeRequest should only be done if you want to ignore Width/HeightRequest. More likely a subclass would wish to override <see cref="M:Xamarin.Forms.VisualElement.OnSizeRequest(System.Double,System.Double)" />.</remarks>
         <altmember cref="M:Xamarin.Forms.OnSizeRequest" />
       </Docs>
     </Member>
@@ -1320,7 +1320,7 @@
         <value>The minimum height the element requires. Default value is -1.</value>
         <remarks>
           <para>
-            MinimumHeightRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest (double, double)" /> by setting the minimum height property. This causes overflow handling to shrink this element to its minimum height before elements who do not have a minimum size set.
+            MinimumHeightRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest(System.Double,System.Double)" /> by setting the minimum height property. This causes overflow handling to shrink this element to its minimum height before elements who do not have a minimum size set.
           </para>
           <para>
               The following example sets the MinimumHeightRequest to enable an image to shrink below it's normal size.
@@ -1392,7 +1392,7 @@
         <value>The minimum width the element requires. Default value is -1.</value>
         <remarks>
           <para>
-            MinimumWidthRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest (double, double)" /> by setting the minimum width property. This causes overflow handling to shrink this element to its minimum width before elements who do not have a minimum size set.
+            MinimumWidthRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest(System.Double,System.Double)" /> by setting the minimum width property. This causes overflow handling to shrink this element to its minimum width before elements who do not have a minimum size set.
           </para>
           <para>
               The following example sets the MinimumWidthRequest to enable an image to shrink below it's normal size.
@@ -1496,17 +1496,17 @@
             Use the Navigation property to perform navigation from any element. If the element has not yet been added to a tree which contains a navigation implementor, the actions are queued up until it is.
           </para>
           <para>
-            The following example navigates to a new page created in the callback of a buttons <see cref="E:Xamarin.Forms.VisualElement.Activated" /> event.</para>
+            The following example navigates to a new page created in the callback of a button's <see cref="E:Xamarin.Forms.Button.Clicked" /> event.</para>
           <example>
             <code lang="C#"><![CDATA[
   partial class NavigationTest {
     void BuildContent 
     {
       Button button = new Button {Text = "Tap to Navigate"};
-      button.Activated += OnButtonActivated;
+      button.Clicked += OnButtonClicked;
     }
 
-    void OnButtonActivated (object sender, EventArgs args)
+    void OnButtonClicked (object sender, EventArgs args)
     {
       Button button = (Button) sender;
       Page newPage = new ContentPage {
@@ -2281,7 +2281,7 @@
       </ReturnValue>
       <Docs>
         <summary>Occurs when either the Width or the Height properties change value on this element.</summary>
-        <remarks>Classes should implement <see cref="M:Xamarin.Forms.VisualElement.OnSizeAllocated (double, double)" /> if they wish to respond to size change events directly.</remarks>
+        <remarks>Classes should implement <see cref="M:Xamarin.Forms.VisualElement.OnSizeAllocated(System.Double,System.Double)" /> if they wish to respond to size change events directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
