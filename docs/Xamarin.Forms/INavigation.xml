@@ -188,7 +188,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
         ]]></code>
           </example>
           <block subset="none" type="note">
-            <para>Application developers must <see langword="await" /> the result of <see cref="M:Xamarin.Forms.INavigation.PushModalAsync(Xamarin.Forms.Page)" /> and <see cref="M:Xamarin.Forms.INavigation.PopModalAsync" />. Calling <see cref="M:System.Threading.Tasks.Task.Wait" /> may cause a deadlock if a previous call to <see cref="M:Xamarin.Forms.INavigation.PushModalAsync" /> or <see cref="M:Xamarin.Forms.INavigation.PopModalAsync" /> has not completed.</para>
+            <para>Application developers must <see langword="await" /> the result of <see cref="M:Xamarin.Forms.INavigation.PushModalAsync(Xamarin.Forms.Page)" /> and <see cref="M:Xamarin.Forms.INavigation.PopModalAsync" />. Calling <see cref="M:System.Threading.Tasks.Task.Wait" /> may cause a deadlock if a previous call to <see cref="M:Xamarin.Forms.INavigation.PushModalAsync(Xamarin.Forms.Page)" /> or <see cref="M:Xamarin.Forms.INavigation.PopModalAsync" /> has not completed.</para>
           </block>
         </remarks>
       </Docs>
