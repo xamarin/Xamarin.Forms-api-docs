@@ -627,7 +627,7 @@
         <param name="heightConstraint">The available height that a parent element can allocated to a child. Value will be between 0 and double.PositiveInfinity.</param>
         <summary>Returns the <see cref="T:Xamarin.Forms.SizeRequest" /> of the element. Calling this method begins the measure pass of a layout cycle.</summary>
         <returns>A <see cref="T:Xamarin.Forms.SizeRequest" /> which contains a requested size and a minimum size.</returns>
-        <remarks>Calling GetSizeRequest causes a measure pass to occur for the subtree of elements it is called on. It is ideal to only call GetSizeRequest when needed as excessive calls can negatively impact the performance of your app. Overriding GetSizeRequest should only be done if you want to ignore Width/HeightRequest. More likely a subclass would wish to override <see cref="M:Xamarin.Forms.VisualElement.OnSizeRequest" />.</remarks>
+        <remarks>Calling GetSizeRequest causes a measure pass to occur for the subtree of elements it is called on. It is ideal to only call GetSizeRequest when needed as excessive calls can negatively impact the performance of your app. Overriding GetSizeRequest should only be done if you want to ignore Width/HeightRequest. More likely a subclass would wish to override <see cref="M:Xamarin.Forms.VisualElement.OnSizeRequest(System.Double,System.Double)" />.</remarks>
         <altmember cref="M:Xamarin.Forms.OnSizeRequest" />
       </Docs>
     </Member>
@@ -1083,6 +1083,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsTabStop">
+      <MemberSignature Language="C#" Value="public bool IsTabStop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTabStop" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.IsTabStop" />
+      <MemberSignature Language="F#" Value="member this.IsTabStop : bool with get, set" Usage="Xamarin.Forms.VisualElement.IsTabStop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTabStopProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsTabStopProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsTabStopProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.IsTabStopProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTabStopProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.IsTabStopProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsVisible">
       <MemberSignature Language="C#" Value="public bool IsVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVisible" />
@@ -1283,7 +1320,7 @@
         <value>The minimum height the element requires. Default value is -1.</value>
         <remarks>
           <para>
-            MinimumHeightRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest (double, double)" /> by setting the minimum height property. This causes overflow handling to shrink this element to its minimum height before elements who do not have a minimum size set.
+            MinimumHeightRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest(System.Double,System.Double)" /> by setting the minimum height property. This causes overflow handling to shrink this element to its minimum height before elements who do not have a minimum size set.
           </para>
           <para>
               The following example sets the MinimumHeightRequest to enable an image to shrink below it's normal size.
@@ -1355,7 +1392,7 @@
         <value>The minimum width the element requires. Default value is -1.</value>
         <remarks>
           <para>
-            MinimumWidthRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest (double, double)" /> by setting the minimum width property. This causes overflow handling to shrink this element to its minimum width before elements who do not have a minimum size set.
+            MinimumWidthRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest(System.Double,System.Double)" /> by setting the minimum width property. This causes overflow handling to shrink this element to its minimum width before elements who do not have a minimum size set.
           </para>
           <para>
               The following example sets the MinimumWidthRequest to enable an image to shrink below it's normal size.
@@ -1459,17 +1496,17 @@
             Use the Navigation property to perform navigation from any element. If the element has not yet been added to a tree which contains a navigation implementor, the actions are queued up until it is.
           </para>
           <para>
-            The following example navigates to a new page created in the callback of a buttons <see cref="E:Xamarin.Forms.VisualElement.Activated" /> event.</para>
+            The following example navigates to a new page created in the callback of a button's <see cref="E:Xamarin.Forms.Button.Clicked" /> event.</para>
           <example>
             <code lang="C#"><![CDATA[
   partial class NavigationTest {
     void BuildContent 
     {
       Button button = new Button {Text = "Tap to Navigate"};
-      button.Activated += OnButtonActivated;
+      button.Clicked += OnButtonClicked;
     }
 
-    void OnButtonActivated (object sender, EventArgs args)
+    void OnButtonClicked (object sender, EventArgs args)
     {
       Button button = (Button) sender;
       Page newPage = new ContentPage {
@@ -1729,6 +1766,54 @@
         <summary>This method is called during the measure pass of a layout cycle to get the desired size of an element.</summary>
         <returns>A <see cref="T:Xamarin.Forms.SizeRequest" /> which contains the desired size of the element.</returns>
         <remarks>The results of this method will be (-1, -1) if the element has not yet been realized with a platform specific backing control. Overriding this method does not require a call to the base class so long as a valid SizeRequest is returned.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTabIndexPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTabIndexPropertyChanged (int oldValue, int newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTabIndexPropertyChanged(int32 oldValue, int32 newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.OnTabIndexPropertyChanged(System.Int32,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member OnTabIndexPropertyChanged : int * int -&gt; unit&#xA;override this.OnTabIndexPropertyChanged : int * int -&gt; unit" Usage="visualElement.OnTabIndexPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Int32" />
+        <Parameter Name="newValue" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTabStopPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTabStopPropertyChanged (bool oldValue, bool newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTabStopPropertyChanged(bool oldValue, bool newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.OnTabStopPropertyChanged(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member OnTabStopPropertyChanged : bool * bool -&gt; unit&#xA;override this.OnTabStopPropertyChanged : bool * bool -&gt; unit" Usage="visualElement.OnTabStopPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Boolean" />
+        <Parameter Name="newValue" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Opacity">
@@ -2196,7 +2281,7 @@
       </ReturnValue>
       <Docs>
         <summary>Occurs when either the Width or the Height properties change value on this element.</summary>
-        <remarks>Classes should implement <see cref="M:Xamarin.Forms.VisualElement.OnSizeAllocated (double, double)" /> if they wish to respond to size change events directly.</remarks>
+        <remarks>Classes should implement <see cref="M:Xamarin.Forms.VisualElement.OnSizeAllocated(System.Double,System.Double)" /> if they wish to respond to size change events directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -2266,6 +2351,83 @@
       </ReturnValue>
       <Docs>
         <summary>Backing store for the Style property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabIndex">
+      <MemberSignature Language="C#" Value="public int TabIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TabIndex" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.TabIndex" />
+      <MemberSignature Language="F#" Value="member this.TabIndex : int with get, set" Usage="Xamarin.Forms.VisualElement.TabIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabIndexDefaultValueCreator">
+      <MemberSignature Language="C#" Value="protected virtual int TabIndexDefaultValueCreator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 TabIndexDefaultValueCreator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.TabIndexDefaultValueCreator" />
+      <MemberSignature Language="F#" Value="abstract member TabIndexDefaultValueCreator : unit -&gt; int&#xA;override this.TabIndexDefaultValueCreator : unit -&gt; int" Usage="visualElement.TabIndexDefaultValueCreator " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabIndexProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabIndexProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabIndexProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.TabIndexProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabIndexProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.TabIndexProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabStopDefaultValueCreator">
+      <MemberSignature Language="C#" Value="protected virtual bool TabStopDefaultValueCreator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TabStopDefaultValueCreator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.TabStopDefaultValueCreator" />
+      <MemberSignature Language="F#" Value="abstract member TabStopDefaultValueCreator : unit -&gt; bool&#xA;override this.TabStopDefaultValueCreator : unit -&gt; bool" Usage="visualElement.TabStopDefaultValueCreator " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

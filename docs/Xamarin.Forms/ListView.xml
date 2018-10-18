@@ -35,7 +35,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An <see cref="T:Xamarin.Forms.ItemsView{TVisual}" /> that displays a collection of data as a vertical list.</summary>
+    <summary>An <see cref="T:Xamarin.Forms.ItemsView`1" /> that displays a collection of data as a vertical list.</summary>
     <remarks>
       <para>
         <img href="xamarin-media/Xamarin.Forms/_images/ListView.TripleScreenShot.png" />
@@ -285,7 +285,7 @@ class ListViewDemoPage : ContentPage
         </returns>
         <remarks>
           <para>
-            This method is called by the templating system when <see cref="P:Xamarin.Forms.ListView.ItemTemplate" /> is <see langword="null" />.
+            This method is called by the templating system when <see cref="P:Xamarin.Forms.ItemsView`1.ItemTemplate" /> is <see langword="null" />.
           </para>
           <para>
             The <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> of the returned object will automatically be set to <paramref name="item" />, there is no
@@ -522,7 +522,7 @@ class ListViewDemoPage : ContentPage
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the binding to use for displaying the group header.</summary>
-        <value>The <see cref="T:Xamarin.Forms.BindingBase" /> instance to apply to grouped lists, or <see cref="null" />.</value>
+        <value>The <see cref="T:Xamarin.Forms.BindingBase" /> instance to apply to grouped lists, or <see langword="null" />.</value>
         <remarks>
           <para>
                         This binding can be used to simply set a the text of the group headers without defining a full template and uses the default visuals
@@ -622,7 +622,7 @@ class ListViewDemoPage : ContentPage
         <remarks>
           <para>
             Use this property to define a template for a <see cref="T:Xamarin.Forms.Cell" /> that will be used as the header for groups in this
-            <see cref="T:Xamarin.Forms.ListView" />. The <see cref="P:Xamarin.BindableObject.BindingContext" /> will be the <see cref="T:System.Collections.IEnumerable" />
+            <see cref="T:Xamarin.Forms.ListView" />. The <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> will be the <see cref="T:System.Collections.IEnumerable" />
             for each group.
           </para>
           <para>
@@ -631,7 +631,7 @@ class ListViewDemoPage : ContentPage
           </para>
           <para>Empty groups will still display a group header.</para>
         </remarks>
-        <altmember cref="P:Xamarin.Forms.ListView.ItemsSource" />
+        <altmember cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" />
         <altmember cref="P:Xamarin.Forms.ListView.GroupDisplayBinding" />
         <altmember cref="P:Xamarin.Forms.ListView.IsGroupingEnabled" />
       </Docs>
@@ -816,7 +816,7 @@ ListView CreateListView()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.HasUnevenRowsProperty" /> property.</summary>
+        <summary>Identifies the <see cref="F:Xamarin.Forms.ListView.HasUnevenRowsProperty" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -991,7 +991,7 @@ ListView CreateListView()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.IsGroupingEnabledProperty" /> property.</summary>
+        <summary>Identifies the <see cref="F:Xamarin.Forms.ListView.IsGroupingEnabledProperty" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1485,7 +1485,7 @@ ListView CreateListView()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Xamarin.Forms.ListView.RowHeightProperty" /> property.</summary>
+        <summary>The backing store for the <see cref="F:Xamarin.Forms.ListView.RowHeightProperty" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1513,7 +1513,7 @@ ListView CreateListView()
         <Parameter Name="animated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="item">The item from your <see cref="P:Xamarin.Forms.ListView.ItemsSource" /> to scroll to.</param>
+        <param name="item">The item from your <see cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" /> to scroll to.</param>
         <param name="position">How the item should be positioned on screen.</param>
         <param name="animated">Whether or not the scroll should be animated.</param>
         <summary>Scrolls the ListView to the <paramref name="item" />.</summary>
@@ -1549,8 +1549,8 @@ ListView CreateListView()
         <Parameter Name="animated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="item">The item from your <see cref="P:Xamarin.Forms.ListView.ItemsSource" /> to scroll to.</param>
-        <param name="group">The group from your <see cref="P:Xamarin.Forms.ListView.ItemsSource" /> to scroll to.</param>
+        <param name="item">The item from your <see cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" /> to scroll to.</param>
+        <param name="group">The group from your <see cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" /> to scroll to.</param>
         <param name="position">How the item should be positioned on screen.</param>
         <param name="animated">Whether or not the scroll should be animated.</param>
         <summary>Scrolls the ListView to the <paramref name="item" /> in the <paramref name="group" /></summary>
@@ -1613,7 +1613,7 @@ ListView CreateListView()
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the currently selected item from the <see cref="P:Xamarin.Forms.ListView.ItemsSource" />.</summary>
+        <summary>Gets or sets the currently selected item from the <see cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" />.</summary>
         <value>The selected item or <see langword="null" /> if no item is selected.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1640,7 +1640,7 @@ ListView CreateListView()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="P:Xamarin.Forms.ListView.SelectedItemProperty" /> property.</summary>
+        <summary>Identifies the <see cref="F:Xamarin.Forms.ListView.SelectedItemProperty" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1894,7 +1894,7 @@ ListView CreateListView()
         <param name="index">The index of the cell in the list of items.</param>
         <summary>Application developers override this method to register event handlers for list view items.</summary>
         <remarks>
-          <para>Application developers must call <see cref="M:Xamarin.Forms.ListView.SetupContent(Xamarin.Forms.Cell, int)" /> before performing any other action when overriding this method.</para>
+          <para>Application developers must call <see cref="M:Xamarin.Forms.ListView.SetupContent(Xamarin.Forms.Cell,System.Int32)" /> before performing any other action when overriding this method.</para>
           <block type="note">Application developers who override this method to allocate resources must override <see cref="M:Xamarin.Forms.ListView.UnhookContent(Xamarin.Forms.Cell)" /> in order to deallocate them.</block>
         </remarks>
       </Docs>
@@ -1920,10 +1920,10 @@ ListView CreateListView()
       </Parameters>
       <Docs>
         <param name="content">The cell to unhook.</param>
-        <summary>Application developers override this method to unregister event handlers for list view items that they registered in <see cref="M:Xamarin.Forms.ListView.SetupContent(Xamarin.Forms.Cell, int)" />.</summary>
+        <summary>Application developers override this method to unregister event handlers for list view items that they registered in <see cref="M:Xamarin.Forms.ListView.SetupContent(Xamarin.Forms.Cell,System.Int32)" />.</summary>
         <remarks>
-          <para>Application developers must call <see cref="M:Xamarin.Forms.ListView.UnhookContent(Xamarin.Forms.Cell, int)" /> before performing any other action when overriding this method.</para>
-          <block type="note">Application developers who override <see cref="M:Xamarin.Forms.ListView.SetupContent(Xamarin.Forms.Cell, int)" /> to allocate resources must override this method in order to deallocate them.</block>
+          <para>Application developers must call <see cref="M:Xamarin.Forms.ListView.UnhookContent(Xamarin.Forms.Cell)" /> before performing any other action when overriding this method.</para>
+          <block type="note">Application developers who override <see cref="M:Xamarin.Forms.ListView.SetupContent(Xamarin.Forms.Cell,System.Int32)" /> to allocate resources must override this method in order to deallocate them.</block>
         </remarks>
       </Docs>
     </Member>

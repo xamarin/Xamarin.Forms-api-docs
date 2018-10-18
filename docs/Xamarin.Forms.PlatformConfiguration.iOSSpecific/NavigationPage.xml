@@ -85,7 +85,7 @@
       <Docs>
         <param name="element">The element for which to return whether the navigation bar separator is hidden.</param>
         <summary>Returns <see langword="true" /> if the separator is hidden. Otherwise, returns <see langword="false" />.</summary>
-        <returns>see langword="true" /&gt; if the separator is hidden. Otherwise, <see langword="false" /></returns>
+        <returns>see langword="true" /> if the separator is hidden. Otherwise, <see langword="false" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +205,7 @@
       <Docs>
         <param name="config">The platform configuration for the element for which to return whether the navigation bar separator is hidden.</param>
         <summary>Returns <see langword="true" /> if the separator is hidden. Otherwise, returns <see langword="false" />.</summary>
-        <returns>
-          <see langword="true" /> if the separator is hidden. Otherwise, <see langword="false" /></returns>
+        <returns><see langword="true" /> if the separator is hidden. Otherwise, <see langword="false" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,7 +267,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.IsNavigationBarTranslucent" /> property</summary>
+        <summary>Backing store for the <see cref="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.IsNavigationBarTranslucent(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.NavigationPage})" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,7 +334,7 @@
       </Parameters>
       <Docs>
         <param name="element">The element for which to set whether the navigation bar separator is hidden.</param>
-        <param name="value">To be added.</param>
+        <param name="value"><see langword="true" /> to hide the separator. Otherwise, <see langword="false" />.</param>
         <summary>Developers set this to <see langword="true" /> to hide the separator. Otherwise, <see langword="false" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -360,7 +359,7 @@
       </Parameters>
       <Docs>
         <param name="config">The platform configuration for the element for which to set whether the navigation bar separator is hidden.</param>
-        <param name="value">To be added.</param>
+        <param name="value"><see langword="true" /> to hide the separator. Otherwise, <see langword="false" />.</param>
         <summary>Developers set this to <see langword="true" /> to hide the separator. Otherwise, <see langword="false" />.</summary>
         <returns>A fluent object on which the developer can make further method calls.</returns>
         <remarks>To be added.</remarks>

@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A <see cref='T:Xamarin.Forms.TypeConverter' /> that can convert a string into a <see cref='T:Xamarin.Forms.Size' /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,9 +53,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A string that must have two values parseable as <see cref='T:System.Double' /> objects, separated by a comma.</param>
+        <summary>Converts a string of the form <c>$"{width},{height}"</c> to a <see cref='T:Xamarin.Forms.Size' /> object.</summary>
+        <returns>A <see cref='T:Xamarin.Forms.Size' /> object corresponding to the values in <param name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,74 @@
+<Type Name="TabIndexExtensions" FullName="Xamarin.Forms.TabIndexExtensions">
+  <TypeSignature Language="C#" Value="public static class TabIndexExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TabIndexExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.TabIndexExtensions" />
+  <TypeSignature Language="F#" Value="type TabIndexExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Extensions methods supporting iteration and retrieval of tab indexes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FindNextElement">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.VisualElement FindNextElement (this Xamarin.Forms.VisualElement element, bool forwardDirection, System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt; tabIndexes, ref int tabIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.VisualElement FindNextElement(class Xamarin.Forms.VisualElement element, bool forwardDirection, class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.VisualElement&gt;&gt; tabIndexes, int32&amp; tabIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.FindNextElement(Xamarin.Forms.VisualElement,System.Boolean,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.List{Xamarin.Forms.VisualElement}},System.Int32@)" />
+      <MemberSignature Language="F#" Value="static member FindNextElement : Xamarin.Forms.VisualElement * bool * System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt; *  -&gt; Xamarin.Forms.VisualElement" Usage="Xamarin.Forms.TabIndexExtensions.FindNextElement (element, forwardDirection, tabIndexes, tabIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.VisualElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.VisualElement" RefType="this" />
+        <Parameter Name="forwardDirection" Type="System.Boolean" />
+        <Parameter Name="tabIndexes" Type="System.Collections.Generic.IDictionary&lt;System.Int32,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt;" />
+        <Parameter Name="tabIndex" Type="System.Int32" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="element"><c>this</c> <see cref='T:Xamarin.Forms.VisualElement' /></param>
+        <param name="forwardDirection">If <see langword="false" />, retrieves the previous element.</param>
+        <param name="tabIndexes">Maps indices to tab groups.</param>
+        <param name="tabIndex">The value within <param name="tabIndexes" /> specifying the tab group to search.</param>
+        <summary>Retrieves the next (or previous if <param name="forwardDirection" /> = <see langword="false" />) <see cref='T:Xamarin.Forms.VisualElement' /> within the tab group at <param name="tabIndexes" />[<param name="tabIndex" />].</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTabIndexesOnParentPage">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt; GetTabIndexesOnParentPage (this Xamarin.Forms.VisualElement element, out int countChildrensWithTabStopWithoutThis);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.VisualElement&gt;&gt; GetTabIndexesOnParentPage(class Xamarin.Forms.VisualElement element, [out] int32&amp; countChildrensWithTabStopWithoutThis) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage(Xamarin.Forms.VisualElement,System.Int32@)" />
+      <MemberSignature Language="F#" Value="static member GetTabIndexesOnParentPage : Xamarin.Forms.VisualElement *  -&gt; System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage (element, countChildrensWithTabStopWithoutThis)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Int32,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.VisualElement" RefType="this" />
+        <Parameter Name="countChildrensWithTabStopWithoutThis" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="element"><c>this</c> <see cref='T:Xamarin.Forms.VisualElement' /></param>
+        <param name="countChildrensWithTabStopWithoutThis">To be added.</param>
+        <summary>Gets a dictionary mapping between index values and lists of <see cref='T:Xamarin.Forms.VisualElement' /> objects whose <see cref='P:Xamarin.Forms.VisualElement.IsTabStop' /> value is <see langword="true" />.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -69,7 +69,7 @@
       </Parameters>
       <Docs>
         <param name="path">The property path.</param>
-        <param name="mode">The binding mode. This property is optional. Default is <see cref="E:Xamarin.Forms.BindingMode.Default" />.</param>
+        <param name="mode">The binding mode. This property is optional. Default is <see cref="F:Xamarin.Forms.BindingMode.Default" />.</param>
         <param name="converter">The converter. This parameter is optional. Default is <see langword="null" />.</param>
         <param name="converterParameter">An user-defined parameter to pass to the converter. This parameter is optional. Default is <see langword="null" />.</param>
         <param name="stringFormat">A String format. This parameter is optional. Default is <see langword="null" />.</param>
@@ -207,7 +207,7 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
       <Docs>
         <typeparam name="TSource">The type of the source of the binding.</typeparam>
         <param name="propertyGetter">An expression used to retrieve the binding path.</param>
-        <param name="mode">The binding mode. This property is optional. Default is <see cref="E:Xamarin.Forms.BindingMode.Default" />.</param>
+        <param name="mode">The binding mode. This property is optional. Default is <see cref="F:Xamarin.Forms.BindingMode.Default" />.</param>
         <param name="converter">The converter. This parameter is optional. Default is <see langword="null" />.</param>
         <param name="converterParameter">An user-defined parameter to pass to the converter. This parameter is optional. Default is <see langword="null" />.</param>
         <param name="stringFormat">A String format. This parameter is optional. Default is <see langword="null" />.</param>

@@ -33,7 +33,7 @@
   <Docs>
     <summary>A Page that users can swipe from side to side to display pages of content, like a gallery.</summary>
     <remarks>
-      <para>The <see cref="T:Xamarin.Forms.CarouselPage" /> provides a navigation experience that will feel natural and familiar to Windows Phone users. By using <see cref="M:Xamarin.Forms.TargetPlatform" />, application developers can provide customized navigation on a per-platform basis. For example, an application developer could use a <see cref="T:Xamarin.Forms.NavigationPage" /> for Android and iOS, and use a <see cref="T:Xamarin.Forms.CarouselPage" /> on Windows Phone.</para>
+      <para>The <see cref="T:Xamarin.Forms.CarouselPage" /> provides a navigation experience that will feel natural and familiar to Windows Phone users. By using <see cref="T:Xamarin.Forms.TargetPlatform" />, application developers can provide customized navigation on a per-platform basis. For example, an application developer could use a <see cref="T:Xamarin.Forms.NavigationPage" /> for Android and iOS, and use a <see cref="T:Xamarin.Forms.CarouselPage" /> on Windows Phone.</para>
       <example>
         <para>The following XAML example, when properly included and referenced in a Xamarin.Forms project, creates a <see cref="T:Xamarin.Forms.CarouselPage" /> that displays three simple <see cref="T:Xamarin.Forms.ContentPage" /> elements:
   </para>
@@ -141,7 +141,7 @@ MainPage = new CarouselPage {
         <param name="item">The object representing the model ofr the page.</param>
         <summary>Creates a default page, suitable for display in <c>this</c><see cref="T:Xamarin.Forms.CarouselPage" />, for an object.</summary>
         <returns>A page that is titled with the string value of <paramref name="item" />.</returns>
-        <remarks>This returns a new <see cref="T:Xamarin.Forms.Page" /> object that has its <see cref="P:Xamarin.Forms.Page.Title" /> property set to the value of <see cref="M:Object.ToString" /> when called on <paramref name="item" />.</remarks>
+        <remarks>This returns a new <see cref="T:Xamarin.Forms.Page" /> object that has its <see cref="P:Xamarin.Forms.Page.Title" /> property set to the value of <see cref="M:System.Object.ToString" /> when called on <paramref name="item" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="On&lt;T&gt;">

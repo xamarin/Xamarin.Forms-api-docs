@@ -23,11 +23,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of which the <see cref="P:Xamarin.Forms.TriggerAction`1.AttachedObject" /> property must be an instance.</typeparam>
+    <typeparam name="T">The type on which <see cref='M:Xamarin.Forms.TriggerAction`1.Invoke(`0)' /> acts.</typeparam>
     <summary>A generic base class for user-defined actions that are performed when a trigger condition is met.</summary>
     <remarks>
       <example>
-        <para>The example below shows how developers can use a trigger to respond to events and update the value of a control property by using <see cref="T:Xamarin.Forms.TriggerAction{T}" /> classes. The example prompts the user to answer a question about the color of the text, and then calls <c>ColorTriggerAction</c> to turn the text red when the user types "The text color is red". Developers should note that, while this example does not change the text back to the default color when the user continues to edit the string, the developer could additionally implement and specify an exit action to obtain that result.</para>
+        <para>The example below shows how developers can use a trigger to respond to events and update the value of a control property by using <see cref="T:Xamarin.Forms.TriggerAction`1" /> classes. The example prompts the user to answer a question about the color of the text, and then calls <c>ColorTriggerAction</c> to turn the text red when the user types "The text color is red". Developers should note that, while this example does not change the text back to the default color when the user continues to edit the string, the developer could additionally implement and specify an exit action to obtain that result.</para>
         <para>With the ColorTriggerAction class below defined in the <c>TriggerDemo</c> namespace:</para>
         <code lang="C#"><![CDATA[public class ColorTriggerAction : TriggerAction<Entry>
 {

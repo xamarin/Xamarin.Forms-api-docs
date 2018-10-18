@@ -21,7 +21,7 @@
     <summary>Enumerates caching strategies for a ListView.</summary>
     <remarks>
       <para>Application developers can specify one of these values when constructing a <see cref="T:Xamarin.Forms.ListView" /> to determine whether the List View will minimize their memory footprint and speed execution by recycling list cells, or will instead generate a cell for every item in the list. Currently, the default behavior is to retain item data in their generated cells when they are not needed. (Items are not needed, for example, when they are far enough off screen that their display is not imminent.) This behavior corresponds to a value of <see cref="F:Xamarin.Forms.ListViewCachingStrategy.RetainElement" />. For performance reasons, it is likely that the default behavior will be changed to <see cref="F:Xamarin.Forms.ListViewCachingStrategy.RecycleElement" /> in a future release. In the meantime, for memory and performance reasons, app developers should specify <see cref="F:Xamarin.Forms.ListViewCachingStrategy.RecycleElement" /> when constructing a new List View.</para>
-      <para>The performance advantage of <see cref="F:Xamarin.Forms.ListViewCachingStrategy.RecycleElement" /> is so great that application developers have been provided with a XAML syntax shortcut for initializing List Views. Instead of <c>x:TypeArguments</c> syntax that specifies a parameter for the <see cref="M:Xamarin.Forms.ListView.ListView(Xamarin.Forms.ListViewCachingStrategy)" /> constructor, XAML for Xamarin.Forms provides a XAML attribute for a non-existent property that corresponds to the caching strategy argument of the constructor. Application developers can set the <c>CachingStrategy</c> attribute to either of the <c>RecycleElement</c> (preferred) or <c>RetainElement</c> values to choose a caching strategy. For example:</para>
+      <para>The performance advantage of <see cref="F:Xamarin.Forms.ListViewCachingStrategy.RecycleElement" /> is so great that application developers have been provided with a XAML syntax shortcut for initializing List Views. Instead of <c>x:TypeArguments</c> syntax that specifies a parameter for the <see cref="M:Xamarin.Forms.ListView.#ctor(Xamarin.Forms.ListViewCachingStrategy)" /> constructor, XAML for Xamarin.Forms provides a XAML attribute for a non-existent property that corresponds to the caching strategy argument of the constructor. Application developers can set the <c>CachingStrategy</c> attribute to either of the <c>RecycleElement</c> (preferred) or <c>RetainElement</c> values to choose a caching strategy. For example:</para>
       <code lang="XAML"><![CDATA[
 <ListView CachingStrategy="RecycleElement" >
     <ListView.ItemTemplate>
@@ -97,7 +97,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Indicates that for every item in the List View's <see cref="P:Xamarin.Forms.ItemsView{TVisual}.ItemsSource" /> property, a single unique element will be constructed from the DataTemplate.</summary>
+        <summary>Indicates that for every item in the List View's <see cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" /> property, a single unique element will be constructed from the DataTemplate.</summary>
       </Docs>
     </Member>
   </Members>

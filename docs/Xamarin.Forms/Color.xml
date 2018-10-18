@@ -29,7 +29,7 @@
   <Docs>
     <summary>Class that represents a color and exposes it as RGBA and HSL values.</summary>
     <remarks>
-      <para>This type is immutable. Colors can be expressed in the RGB or HSL modes. While the <see cref="C:Xamarin.Forms.Color" /> constructor takes R, G, B, and A values, the <see cref="T:Xamarin.Forms.Color" /> class also calculates and makes available HSL data for the color.</para>
+      <para>This type is immutable. Colors can be expressed in the RGB or HSL modes. While the <see cref="M:Xamarin.Forms.Color.#ctor(System.Double,System.Double,System.Double)" /> constructor takes R, G, B, and A values, the <see cref="T:Xamarin.Forms.Color" /> class also calculates and makes available HSL data for the color.</para>
       <example>
         <para>In XAML, application developers can specify any property that is of type <see cref="T:Xamarin.Forms.Color" />, for example, <see cref="P:Xamarin.Forms.Label.TextColor" /> either as a XAML attribute or as a nested tag. The following code example shows how to specify the text color for a label by using an attribute:</para>
         <code lang="XAML"><![CDATA[
@@ -72,7 +72,7 @@
       <Docs>
         <param name="value">The luminosity of the gray-scale color.</param>
         <summary>Initialize a new gray color.</summary>
-        <remarks>This is equivalent to new Color (value, value, value). The value is clamped to [0-1]. App developers should use the <see cref="M:Xamarin.Forms.Color.FromRgb" /> equivalent methods, instead.</remarks>
+        <remarks>This is equivalent to new Color (value, value, value). The value is clamped to [0-1]. App developers should use the <see cref="M:Xamarin.Forms.Color.FromRgb(System.Double,System.Double,System.Double)" /> equivalent methods, instead.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,7 +102,7 @@
         <param name="g">The green component of the color.</param>
         <param name="b">The blue component of the color.</param>
         <summary>Initializes a new RGB color.</summary>
-        <remarks>This is equivalent to new Color (r, g, b, 1). Values are clamped to [0-1]. Prefer the <see cref="M:Xamarin.Forms.Color.FromRgb" /> equivalent methods.</remarks>
+        <remarks>This is equivalent to new Color (r, g, b, 1). Values are clamped to [0-1]. Prefer the <see cref="M:Xamarin.Forms.Color.FromRgb(System.Double,System.Double,System.Double)" /> equivalent methods.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1323,7 +1323,7 @@
         <param name="b">The blue component of the color.</param>
         <summary>Returns a new rgb color instance.</summary>
         <returns>An RGB color</returns>
-        <remarks>Component values are clamped to [0,1]. The <see cref="M:Xamarin.Forms.Color.FromRgb" /> method is striclty equivalent to <c>new Color (r, g, b)</c>, and is present for API consistency.</remarks>
+        <remarks>Component values are clamped to [0,1]. The <see cref="M:Xamarin.Forms.Color.FromRgb(System.Double,System.Double,System.Double)" /> method is strictly equivalent to <c>new Color (r, g, b)</c>, and is present for API consistency.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromRgb">
@@ -1393,7 +1393,7 @@
         <param name="a">The alpha component of the color.</param>
         <summary>Returns a new RGBA color instance.</summary>
         <returns>A new RGBA color.</returns>
-        <remarks>Component values are clamped to [0,1]. The <see cref="M:Xamarin.Forms.Color.FromRgba" /> method is striclty equivalent to <c>new Color (r, g, b, a)</c>, and is present for API consistency.</remarks>
+        <remarks>Component values are clamped to [0,1]. The <see cref="M:Xamarin.Forms.Color.FromRgba(System.Double,System.Double,System.Double,System.Double)" /> method is striclty equivalent to <c>new Color (r, g, b, a)</c>, and is present for API consistency.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromRgba">
@@ -1514,7 +1514,7 @@
       </ReturnValue>
       <Docs>
         <summary>Fucshia, the color that is represented by the RGB value #ff00ff. Deprecated. See Remarks.</summary>
-        <remarks>Use the <see cref="F:Xamarin.Forms.Color.Fucshia" /> color, instead.</remarks>
+        <remarks>Use the <see cref="F:Xamarin.Forms.Color.Fuchsia" /> color, instead.</remarks>
       </Docs>
     </Member>
     <Member MemberName="G">
