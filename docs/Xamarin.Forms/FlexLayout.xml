@@ -668,7 +668,7 @@
         <remarks>
           <para>Multiple elements may have the same ordering priority, in which case they will appear in the order in which they occur in the <see cref='P:Xamarin.Forms.Layout`1.Children' /> list. By default, the value of <see cref='M:Xamarin.Forms.FlexLayout.GetOrder(Xamarin.Forms.BindableObject)' /> is 0.</para>
           <para>For instance, if 3 children <c>a</c>, <c>b</c>, and <c>c</c> are added in order, and the developer wishes <c>c</c> to appear in the middle, the proper code is <c>FlexLayout.SetOrder(b, 1)</c>. (A developer mistaking order priority for an index might wrongly expect <c>FlexLayout.SetOrder(c, 1)</c> to work, but as <c>a</c> and <c>b</c> will still have order priority <c>0</c>, the elements in that case would still layout in the sequence <c>a, b, c</c>.</para>
-          <para><img href="~/Xamarin.Forms/_images/xamarin-media/Xamarin.Forms/_images/FlexLayout.SetOrder.png"/></para>
+          <para><img href="~/Xamarin.Forms/_images/FlexLayout.SetOrder.png"/></para>
         </remarks>
       </Docs>
     </Member>
