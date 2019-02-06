@@ -12,7 +12,7 @@
   <Docs>
     <summary>Interface that defines the methods that are required for registering and deregistering links to content in apps.</summary>
     <remarks>Developers should note that extra steps are required to enable deep linking on the Android platform. See the related article that is linked below.</remarks>
-    <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
+    <related type="article" href="https://docs.microsoft.com/xamarin/xamarin-forms/platform/deep-linking">Application Indexing and Deep Linking</related>
   </Docs>
   <Members>
     <Member MemberName="DeregisterLink">
@@ -36,7 +36,7 @@
         <param name="appLinkUri">The <see cref="T:System.Uri" /> that represents the link to remove from the app index.</param>
         <summary>Removes the provided application link from the application index.</summary>
         <remarks>This method has no effect on the Android platform.</remarks>
-        <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
+        <related type="article" href="https://docs.microsoft.com/xamarin/xamarin-forms/platform/deep-linking">Application Indexing and Deep Linking</related>
       </Docs>
     </Member>
     <Member MemberName="DeregisterLink">
@@ -60,7 +60,7 @@
         <param name="appLink">The <see cref="T:Xamarin.Forms.IAppLinkEntry" /> to remove from the app index.</param>
         <summary>Removes the provided application link from the application index.</summary>
         <remarks>This method has no effect on the Android platform.</remarks>
-        <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
+        <related type="article" href="https://docs.microsoft.com/xamarin/xamarin-forms/platform/deep-linking">Application Indexing and Deep Linking</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterLink">
@@ -84,7 +84,7 @@
         <param name="appLink">The <see cref="T:Xamarin.Forms.IAppLinkEntry" /> to add to the app index.</param>
         <summary>Adds the provided application link to the application index.</summary>
         <remarks>To be added.</remarks>
-        <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
+        <related type="article" href="https://docs.microsoft.com/xamarin/xamarin-forms/platform/deep-linking">Application Indexing and Deep Linking</related>
       </Docs>
     </Member>
   </Members>

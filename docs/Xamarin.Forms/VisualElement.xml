@@ -533,7 +533,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Attemps to set focus to this element.</summary>
+        <summary>Attempts to set focus to this element.</summary>
         <returns>
           <see langword="true" /> if the keyboard focus was set to this element; <see langword="false" /> if the call to this method did not force a focus change.</returns>
         <remarks>Element must be able to receive focus for this to work. Calling Focus on offscreen or unrealized elements has undefined behavior.</remarks>
@@ -1919,7 +1919,7 @@
         <remarks>
           <para>In XAML, resource dictionaries are filled with key/value pairs that are specified in XML and consequently created at run time. The keys in the resource dictionary are specified with the <c>x:Key</c> attribute of the XML tag for the type to create. An object of that type is created, and is initialized with the property and field values that are specified either by additional attributes or by nested tags, both of which, when present are simply string representations of the property or field names. The object is then inserted into the <see cref="T:Xamarin.Forms.ResourceDictionary" /> for the enclosing type at runtime.</para>
           <example>
-            <para>For example, the XAML below, taken from  the <format type="text/html"><a href="https://docs.microsoft.com/xamarin/xamarin-forms/xaml/">XAML for Xamarin.Forms</a></format> series, creates a resource dictionary that contains <see cref="T:Xamarin.Forms.LayoutOptions" /> object constants that can be used for any <see cref="T:Xamarin.Forms.Layout" /> objects that are added to the surrounding <see cref="T:Xamarin.Forms.ContentPage" />:</para>
+            <para>For example, the XAML below, taken from  the <format type="text/html"><a href="https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/">XAML for Xamarin.Forms</a></format> series, creates a resource dictionary that contains <see cref="T:Xamarin.Forms.LayoutOptions" /> object constants that can be used for any <see cref="T:Xamarin.Forms.Layout" /> objects that are added to the surrounding <see cref="T:Xamarin.Forms.ContentPage" />:</para>
             <code><![CDATA[
 <ContentPage.Resources>
     <ResourceDictionary>
@@ -1932,7 +1932,7 @@
     </ResourceDictionary>
 </ContentPage.Resources>
 ]]></code>
-            <para>Note that the above snippet is only valid when nested within a <c>&lt;ContentPage&gt;...&lt;/ContentPage&gt;</c> tag pair. Within that pair, the app developer can use both of the <c>horzOptions</c> and <c>vertOptions</c> keys to specify values for properties of type <see cref="T:Xamarin.Forms.LayoutOptions" /> by using the <c>"{...}"</c> static resource syntax. The short example below, also taken from  the <format type="text/html"><a href="https://docs.microsoft.com/xamarin/xamarin-forms/xaml/">XAML for Xamarin.Forms</a></format> series, illustrates this syntax:</para>
+            <para>Note that the above snippet is only valid when nested within a <c>&lt;ContentPage&gt;...&lt;/ContentPage&gt;</c> tag pair. Within that pair, the app developer can use both of the <c>horzOptions</c> and <c>vertOptions</c> keys to specify values for properties of type <see cref="T:Xamarin.Forms.LayoutOptions" /> by using the <c>"{...}"</c> static resource syntax. The short example below, also taken from  the <format type="text/html"><a href="https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/">XAML for Xamarin.Forms</a></format> series, illustrates this syntax:</para>
             <code><![CDATA[
 <Button Text="Do this!"
         HorizontalOptions="{StaticResource horzOptions}"

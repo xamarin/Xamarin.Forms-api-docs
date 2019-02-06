@@ -22,7 +22,7 @@
       <para>The <see cref='P:Xamarin.Forms.FlexLayout.Direction' /> property determines the primary axis of the layout. The <see cref='P:Xamarin.Forms.FlexLayout.JustifyContent' /> property determines how <see cref='P:Xamarin.Forms.Layout`1.Children' /> are laid out along the primary axis. The <see cref='P:Xamarin.Forms.FlexLayout.AlignItems' /> property specifies how <see cref='P:Xamarin.Forms.Layout`1.Children' /> are laid out along the cross axis; the <see cref='P:Xamarin.Forms.FlexLayout.AlignContent' /> property works similarly, but applies to entire rows or columns, not individual elements.</para>
       <para>The initial size of a child element is set with <see cref='M:Xamarin.Forms.FlexLayout.SetBasis(Xamarin.Forms.BindableObject,Xamarin.Forms.FlexBasis)' /> and its resizing behavior is set with  <see cref='M:Xamarin.Forms.FlexLayout.SetGrow(Xamarin.Forms.BindableObject,System.Single)' /> and <see cref='M:Xamarin.Forms.FlexLayout.SetShrink(Xamarin.Forms.BindableObject,System.Single)' />.</para>
     </remarks>
-    <related type="article" href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/flex-layout">The Xamarin.Forms FlexLayout</related>
+    <related type="article" href="https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/layouts/flex-layout">The Xamarin.Forms FlexLayout</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,7 +59,7 @@
         <summary>Gets or sets a value that controls how multiple rows or columns of child elements are aligned.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>This property behaves similarly to <see cref='P:Xamarin.Forms.FlexLayout.AlignItems' />, but applies to how entire rows or columns are aligned, not individual elements. The below image illustrates three differnt <see cref='P:Xamarin.Forms.FlexLayout.AlignContent' /> values working on wrapped rows. The iOS screenshot shows <see cref='F:Xamarin.Forms.FlexAlignContent.SpaceBetween' />, the Android screenshot shows <see cref='F:Xamarin.Forms.FlexAlignContent.SpaceAround' />, and the UWP screenshot shows <see cref='F:Xamarin.Forms.FlexAlignContent.SpaceEvenly' />.</para>
+          <para>This property behaves similarly to <see cref='P:Xamarin.Forms.FlexLayout.AlignItems' />, but applies to how entire rows or columns are aligned, not individual elements. The below image illustrates three different <see cref='P:Xamarin.Forms.FlexLayout.AlignContent' /> values working on wrapped rows. The iOS screenshot shows <see cref='F:Xamarin.Forms.FlexAlignContent.SpaceBetween' />, the Android screenshot shows <see cref='F:Xamarin.Forms.FlexAlignContent.SpaceAround' />, and the UWP screenshot shows <see cref='F:Xamarin.Forms.FlexAlignContent.SpaceEvenly' />.</para>
           <para><img href="~/Xamarin.Forms/_images/ExperimentAlignContent2-Large.png"/></para>
         </remarks>
       </Docs>
