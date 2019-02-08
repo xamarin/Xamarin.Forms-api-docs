@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type Rectangle = struct" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Rectangle : Xamarin.Forms.Point * Xamarin.Forms.Size -&gt; Xamarin.Forms.Rectangle" Usage="new Xamarin.Forms.Rectangle (loc, sz)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -67,6 +69,7 @@
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Rectangle : double * double * double * double -&gt; Xamarin.Forms.Rectangle" Usage="new Xamarin.Forms.Rectangle (x, y, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -98,6 +101,7 @@
       <MemberSignature Language="F#" Value="member this.Bottom : double with get, set" Usage="Xamarin.Forms.Rectangle.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -125,6 +129,7 @@
       <MemberSignature Language="F#" Value="member this.Center : Xamarin.Forms.Point" Usage="Xamarin.Forms.Rectangle.Center" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -150,6 +155,7 @@
       <MemberSignature Language="F#" Value="member this.Contains : Xamarin.Forms.Point -&gt; bool" Usage="rectangle.Contains pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -169,7 +175,7 @@
         <param name="pt">The  <see cref="T:Xamarin.Forms.Point" /> being checked for containment.</param>
         <summary>Whether the <paramref name="pt" /> is within, or along the periphery, of this <see cref="T:Xamarin.Forms.Rectangle" />.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="pt" /> is within, or along the periphery, of <c>this</c><see cref="T:Xamarin.Forms.Rectangle" />.</returns>
+          <see langword="true" /> if <paramref name="pt" /> is within, or along the periphery, of this <see cref="T:Xamarin.Forms.Rectangle" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,6 +186,7 @@
       <MemberSignature Language="F#" Value="member this.Contains : Xamarin.Forms.Rectangle -&gt; bool" Usage="rectangle.Contains rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -210,6 +217,7 @@
       <MemberSignature Language="F#" Value="member this.Contains : double * double -&gt; bool" Usage="rectangle.Contains (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -243,16 +251,17 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="y" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="width" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="height" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="x" Type="System.Double" RefType="out" />
+        <Parameter Name="y" Type="System.Double" RefType="out" />
+        <Parameter Name="width" Type="System.Double" RefType="out" />
+        <Parameter Name="height" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
         <param name="x">Variable in which to store the X component of the origin of the rectangle.</param>
@@ -267,9 +276,10 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.Equals(System.Object)" />
-      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rectangle.Equals obj" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="rectangle.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -297,9 +307,10 @@
       <MemberSignature Language="C#" Value="public bool Equals (Xamarin.Forms.Rectangle other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype Xamarin.Forms.Rectangle other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.Equals(Xamarin.Forms.Rectangle)" />
-      <MemberSignature Language="F#" Value="override this.Equals : Xamarin.Forms.Rectangle -&gt; bool" Usage="rectangle.Equals other" />
+      <MemberSignature Language="F#" Value="member this.Equals : Xamarin.Forms.Rectangle -&gt; bool" Usage="rectangle.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -330,6 +341,7 @@
       <MemberSignature Language="F#" Value="static member FromLTRB : double * double * double * double -&gt; Xamarin.Forms.Rectangle" Usage="Xamarin.Forms.Rectangle.FromLTRB (left, top, right, bottom)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -363,9 +375,10 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.GetHashCode" />
-      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rectangle.GetHashCode " />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="rectangle.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -392,6 +405,7 @@
       <MemberSignature Language="F#" Value="member this.Height : double with get, set" Usage="Xamarin.Forms.Rectangle.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -418,6 +432,7 @@
       <MemberSignature Language="F#" Value="member this.Inflate : Xamarin.Forms.Size -&gt; Xamarin.Forms.Rectangle" Usage="rectangle.Inflate sz" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -456,6 +471,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Inflate : double * double -&gt; Xamarin.Forms.Rectangle" Usage="rectangle.Inflate (width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -496,6 +512,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Intersect : Xamarin.Forms.Rectangle -&gt; Xamarin.Forms.Rectangle" Usage="rectangle.Intersect r" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -514,7 +531,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <Docs>
         <param name="r">A <see cref="T:Xamarin.Forms.Rectangle" /><c>this</c> will be intersected with.</param>
         <summary>A new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <c>this</c> and <paramref name="r" />.</summary>
-        <returns>Returns a new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <c>this</c><see cref="T:Xamarin.Forms.Rectangle" /> and <paramref name="r" />, or <see cref="P:Xamarin.Forms.Rectangle.Zero" /> if there is no intersection.</returns>
+        <returns>Returns a new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <c>this</c><see cref="T:Xamarin.Forms.Rectangle" /> and <paramref name="r" />, or <see cref="F:Xamarin.Forms.Rectangle.Zero" /> if there is no intersection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -525,6 +542,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="static member Intersect : Xamarin.Forms.Rectangle * Xamarin.Forms.Rectangle -&gt; Xamarin.Forms.Rectangle" Usage="Xamarin.Forms.Rectangle.Intersect (r1, r2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -545,7 +563,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
         <param name="r1">A <see cref="T:Xamarin.Forms.Rectangle" /> being intersected.</param>
         <param name="r2">A <see cref="T:Xamarin.Forms.Rectangle" /> being intersected.</param>
         <summary>A new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <paramref name="r1" /> and <paramref name="r2" />.</summary>
-        <returns>Returns a new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <paramref name="r1" /> and <paramref name="r2" />, or <see cref="P:Xamarin.Forms.Rectangle.Zero" /> if there is no intersection.</returns>
+        <returns>Returns a new <see cref="T:Xamarin.Forms.Rectangle" /> that is the intersection of <paramref name="r1" /> and <paramref name="r2" />, or <see cref="F:Xamarin.Forms.Rectangle.Zero" /> if there is no intersection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,6 +574,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.IntersectsWith : Xamarin.Forms.Rectangle -&gt; bool" Usage="rectangle.IntersectsWith r" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -586,6 +605,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="Xamarin.Forms.Rectangle.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -612,6 +632,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Left : double with get, set" Usage="Xamarin.Forms.Rectangle.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -637,6 +658,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Location : Xamarin.Forms.Point with get, set" Usage="Xamarin.Forms.Rectangle.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -662,6 +684,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Offset : Xamarin.Forms.Point -&gt; Xamarin.Forms.Rectangle" Usage="rectangle.Offset dr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -691,6 +714,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Offset : double * double -&gt; Xamarin.Forms.Rectangle" Usage="rectangle.Offset (dx, dy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -722,6 +746,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.Rectangle * Xamarin.Forms.Rectangle -&gt; bool" Usage="r1 = r2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -743,7 +768,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
         <param name="r2">A <see cref="T:Xamarin.Forms.Rectangle" /> being compared.</param>
         <summary>Whether two <see cref="T:Xamarin.Forms.Rectangle" />s have equal values.</summary>
         <returns>
-          <see langword="true" /> if both the <see cref="P:Xamarin.Forms.Rectangle.Position" /> and <see cref="P:Xamarin.Forms.Rectangle.Size" /> of the two rectangles are equivalent.</returns>
+          <see langword="true" /> if both the <see cref="P:Xamarin.Forms.Rectangle.Location" /> and <see cref="P:Xamarin.Forms.Rectangle.Size" /> of the two rectangles are equivalent.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -754,6 +779,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.Rectangle * Xamarin.Forms.Rectangle -&gt; bool" Usage="Xamarin.Forms.Rectangle.op_Inequality (r1, r2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -775,7 +801,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
         <param name="r2">A <see cref="T:Xamarin.Forms.Rectangle" /> being compared.</param>
         <summary>Whether two <see cref="T:Xamarin.Forms.Rectangle" />s have unequal values.</summary>
         <returns>
-          <see langword="true" /> if either the <see cref="P:Xamarin.Forms.Rectangle.Position" /> or <see cref="P:Xamarin.Forms.Rectangle.Size" /> of the two rectangles have differences.</returns>
+          <see langword="true" /> if either the <see cref="P:Xamarin.Forms.Rectangle.Location" /> or <see cref="P:Xamarin.Forms.Rectangle.Size" /> of the two rectangles have differences.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -786,6 +812,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Right : double with get, set" Usage="Xamarin.Forms.Rectangle.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -811,6 +838,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Round : unit -&gt; Xamarin.Forms.Rectangle" Usage="rectangle.Round " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -839,6 +867,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Size : Xamarin.Forms.Size with get, set" Usage="Xamarin.Forms.Rectangle.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -864,6 +893,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Top : double with get, set" Usage="Xamarin.Forms.Rectangle.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -886,9 +916,10 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.ToString" />
-      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rectangle.ToString " />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="rectangle.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -915,6 +946,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Union : Xamarin.Forms.Rectangle -&gt; Xamarin.Forms.Rectangle" Usage="rectangle.Union r" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -944,6 +976,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="static member Union : Xamarin.Forms.Rectangle * Xamarin.Forms.Rectangle -&gt; Xamarin.Forms.Rectangle" Usage="Xamarin.Forms.Rectangle.Union (r1, r2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -975,6 +1008,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Width : double with get, set" Usage="Xamarin.Forms.Rectangle.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1000,6 +1034,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.X : double with get, set" Usage="Xamarin.Forms.Rectangle.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1025,6 +1060,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value="member this.Y : double with get, set" Usage="Xamarin.Forms.Rectangle.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1050,6 +1086,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
       <MemberSignature Language="F#" Value=" staticval mutable Zero : Xamarin.Forms.Rectangle" Usage="Xamarin.Forms.Rectangle.Zero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

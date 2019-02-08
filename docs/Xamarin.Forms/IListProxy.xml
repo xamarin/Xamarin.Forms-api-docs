@@ -1,13 +1,20 @@
 <Type Name="IListProxy" FullName="Xamarin.Forms.IListProxy">
-  <TypeSignature Language="C#" Value="public interface IListProxy : System.Collections.IList" />
+  <TypeSignature Language="C#" Value="public interface IListProxy : System.Collections.ICollection, System.Collections.IEnumerable, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IListProxy implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IListProxy" />
   <TypeSignature Language="F#" Value="type IListProxy = interface&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
@@ -24,6 +31,7 @@
       <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -42,6 +50,7 @@
       <MemberSignature Language="F#" Value="member this.ProxiedEnumerable : System.Collections.IEnumerable" Usage="Xamarin.Forms.IListProxy.ProxiedEnumerable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -61,19 +70,20 @@
       <MemberSignature Language="F#" Value="abstract member TryGetValue : int *  -&gt; bool" Usage="iListProxy.TryGetValue (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The identifier of the object to be retrieved.</param>
-        <param name="value">An <see langword="out" /> reference to the object being retrieved, or it's default value.</param>
+        <param name="value">To be added.</param>
         <summary>Retrieves the object specified by <paramref name="index" /> or, if not present, the default value of <see langword="null" />.</summary>
         <returns>The object specified by <paramref name="index" /> or, if not present, the default value of <see langword="null" />.</returns>
         <remarks>To be added.</remarks>

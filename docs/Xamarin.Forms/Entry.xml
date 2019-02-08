@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class Entry : Xamarin.Forms.InputView, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Entry&gt;, Xamarin.Forms.IEntryController, Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Entry extends Xamarin.Forms.InputView implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Entry&gt;, class Xamarin.Forms.IEntryController, class Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Entry" />
-  <TypeSignature Language="F#" Value="type Entry = class&#xA;    inherit InputView&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface ITextAlignmentElement&#xA;    interface IEntryController&#xA;    interface IElementConfiguration&lt;Entry&gt;" />
+  <TypeSignature Language="F#" Value="type Entry = class&#xA;    inherit InputView&#xA;    interface IFontElement&#xA;    interface IEntryController&#xA;    interface IElementConfiguration&lt;Entry&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -55,10 +56,10 @@ View CreateLoginForm ()
   };
 }
             ]]></code>
-        <para>The FormsGallery sample, which can be found on the <format type="text/html"><a href="http://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, has an EntryDemoPage.cs file. This file contains a more complete example.</para>
+        <para>The FormsGallery sample, which can be found on the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, has an EntryDemoPage.cs file. This file contains a more complete example.</para>
       </example>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/Entry.TripleScreenShot.png" />
+        <img href="~/Xamarin.Forms/_images/Entry.TripleScreenShot.png" />
       </para>
     </remarks>
   </Docs>
@@ -69,6 +70,7 @@ View CreateLoginForm ()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Entry.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -92,6 +94,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.Completed : EventHandler " Usage="member this.Completed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -109,6 +112,45 @@ View CreateLoginForm ()
         <remarks>This finalization will usually but not always be accompanied by IsFocused being set to false.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CursorPosition">
+      <MemberSignature Language="C#" Value="public int CursorPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CursorPosition" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Entry.CursorPosition" />
+      <MemberSignature Language="F#" Value="member this.CursorPosition : int with get, set" Usage="Xamarin.Forms.Entry.CursorPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the position of the cursor.</summary>
+        <value>The position of the cursor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CursorPositionProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CursorPositionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CursorPositionProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Entry.CursorPositionProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CursorPositionProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.CursorPositionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Entry.CursorPosition" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FontAttributes">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.FontAttributes FontAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.FontAttributes FontAttributes" />
@@ -116,6 +158,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.FontAttributes : Xamarin.Forms.FontAttributes with get, set" Usage="Xamarin.Forms.Entry.FontAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -136,6 +179,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value=" staticval mutable FontAttributesProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.FontAttributesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -155,6 +199,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.FontFamily : string with get, set" Usage="Xamarin.Forms.Entry.FontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -175,6 +220,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value=" staticval mutable FontFamilyProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.FontFamilyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -194,6 +240,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="Xamarin.Forms.Entry.FontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -219,6 +266,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value=" staticval mutable FontSizeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.FontSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -238,6 +286,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.HorizontalTextAlignment : Xamarin.Forms.TextAlignment with get, set" Usage="Xamarin.Forms.Entry.HorizontalTextAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -258,6 +307,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value=" staticval mutable HorizontalTextAlignmentProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.HorizontalTextAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -277,6 +327,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.IsPassword : bool with get, set" Usage="Xamarin.Forms.Entry.IsPassword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -303,6 +354,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value=" staticval mutable IsPasswordProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.IsPasswordProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -329,6 +381,7 @@ View CreateLoginForm ()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -349,6 +402,7 @@ View CreateLoginForm ()
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,6 +423,7 @@ View CreateLoginForm ()
         <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -397,6 +452,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.Placeholder : string with get, set" Usage="Xamarin.Forms.Entry.Placeholder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -423,6 +479,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.PlaceholderColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Entry.PlaceholderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -443,6 +500,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value=" staticval mutable PlaceholderColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.PlaceholderColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -462,6 +520,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value=" staticval mutable PlaceholderProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.PlaceholderProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -488,13 +547,14 @@ View CreateLoginForm ()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the command to run when the user returns the input.</summary>
+        <summary>Gets or sets the command to run when the user presses the return key.</summary>
         <value>The command to run.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -507,6 +567,7 @@ View CreateLoginForm ()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -526,6 +587,7 @@ View CreateLoginForm ()
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -544,6 +606,7 @@ View CreateLoginForm ()
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -562,6 +625,7 @@ View CreateLoginForm ()
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -581,6 +645,7 @@ View CreateLoginForm ()
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -588,6 +653,45 @@ View CreateLoginForm ()
       </ReturnValue>
       <Docs>
         <summary>Backing store for the <see cref="P:Xamarin.Forms.Entry.ReturnType" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionLength">
+      <MemberSignature Language="C#" Value="public int SelectionLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionLength" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Entry.SelectionLength" />
+      <MemberSignature Language="F#" Value="member this.SelectionLength : int with get, set" Usage="Xamarin.Forms.Entry.SelectionLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the length of the selection.</summary>
+        <value>The length of the selection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionLengthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SelectionLengthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SelectionLengthProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Entry.SelectionLengthProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionLengthProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.SelectionLengthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Entry.SelectionLength" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -601,12 +705,13 @@ View CreateLoginForm ()
         <InterfaceMember>M:Xamarin.Forms.IEntryController.SendCompleted</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -625,6 +730,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Xamarin.Forms.Entry.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -640,7 +746,7 @@ View CreateLoginForm ()
       <Docs>
         <summary>Gets or sets the text of the entry.</summary>
         <value>A string containing the text of the entry. The default value is <see langword="null" />.</value>
-        <remarks>Setting this property will cause the <see cref="E:Xamarin.Forms.Entry.ValueChanged" /> event to be emitted.</remarks>
+        <remarks>Setting this property will cause the <see cref="E:Xamarin.Forms.Entry.TextChanged" /> event to be emitted.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -650,6 +756,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt; " Usage="member this.TextChanged : System.EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -674,6 +781,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value="member this.TextColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Entry.TextColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -700,6 +808,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value=" staticval mutable TextColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.TextColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -725,6 +834,7 @@ View CreateLoginForm ()
       <MemberSignature Language="F#" Value=" staticval mutable TextProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Entry.TextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -752,6 +862,7 @@ View CreateLoginForm ()
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -774,6 +885,7 @@ View CreateLoginForm ()
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -800,6 +912,7 @@ View CreateLoginForm ()
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -826,6 +939,7 @@ View CreateLoginForm ()
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged(System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -852,6 +966,7 @@ View CreateLoginForm ()
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged(System.Double,System.Double)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>

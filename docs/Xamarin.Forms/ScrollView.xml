@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type ScrollView = class&#xA;    inherit Layout&#xA;    interface IScrollViewController&#xA;    interface ILayoutController&#xA;    interface IElementConfiguration&lt;ScrollView&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -53,28 +54,8 @@ MainPage = new ContentPage
       </example>
       <block type="note">Application developers should not nest one <see cref="T:Xamarin.Forms.ScrollView" /> within another. Additionally, they should refrain from nesting them  other elements that can scroll, such as <see cref="T:Xamarin.Forms.WebView" />.</block>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/ScrollView.TripleScreenShot.png" />
+        <img href="~/Xamarin.Forms/_images/ScrollView.TripleScreenShot.png" />
       </para>
-      <para>XAML for Xamarin.Forms supports the following properties for the <see cref="T:Xamarin.Forms.ScrollView" /> class:</para>
-      <list type="table">
-        <listheader>
-          <term>Property</term>
-          <description>Value</description>
-        </listheader>
-        <item>
-          <term>Content</term>
-          <description>
-            <para>Markup that specifies a <see cref="T:Xamarin.Forms.View" /> to display in the <see cref="T:Xamarin.Forms.ScrollView" />.</para>
-          </description>
-        </item>
-        <item>
-          <term>Orientation</term>
-          <description>
-            <para>
-              <c>Horizontal</c> or <c>Vertical</c>, to indicate the scroll direction.</para>
-          </description>
-        </item>
-      </list>
     </remarks>
   </Docs>
   <Members>
@@ -84,6 +65,7 @@ MainPage = new ContentPage
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ScrollView.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -108,6 +90,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="member this.Content : Xamarin.Forms.View with get, set" Usage="Xamarin.Forms.ScrollView.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -135,6 +118,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="member this.ContentSize : Xamarin.Forms.Size" Usage="Xamarin.Forms.ScrollView.ContentSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -162,6 +146,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value=" staticval mutable ContentSizeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ScrollView.ContentSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -190,12 +175,13 @@ MainPage = new ContentPage
         <InterfaceMember>M:Xamarin.Forms.IScrollViewController.GetScrollPositionForElement(Xamarin.Forms.VisualElement,Xamarin.Forms.ScrollToPosition)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -221,6 +207,7 @@ MainPage = new ContentPage
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -240,6 +227,7 @@ MainPage = new ContentPage
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,6 +245,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="override this.LayoutChildren : double * double * double * double -&gt; unit" Usage="scrollView.LayoutChildren (x, y, width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -296,6 +285,7 @@ MainPage = new ContentPage
         <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -324,6 +314,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="override this.OnSizeRequest : double * double -&gt; Xamarin.Forms.SizeRequest" Usage="scrollView.OnSizeRequest (widthConstraint, heightConstraint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -348,7 +339,7 @@ MainPage = new ContentPage
         <param name="heightConstraint">The available height for the element to use.</param>
         <summary>This method is called during the measure pass of a layout cycle to get the desired size of an element.</summary>
         <returns>
-          A <see cref="T:Xamarin.Forms.SizeRequest&gt;" /> which contains the desired size of the element.
+          A <see cref="T:Xamarin.Forms.SizeRequest" /> which contains the desired size of the element.
         </returns>
         <remarks>The results of this method will be (-1, -1) if the element has not yet been realized with a platform specific backing control. Overriding this method does not require a call to the base class so long as a valid SizeRequest is returned.</remarks>
       </Docs>
@@ -360,6 +351,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="member this.Orientation : Xamarin.Forms.ScrollOrientation with get, set" Usage="Xamarin.Forms.ScrollView.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -388,6 +380,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value=" staticval mutable OrientationProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ScrollView.OrientationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -414,6 +407,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="member this.Scrolled : EventHandler&lt;Xamarin.Forms.ScrolledEventArgs&gt; " Usage="member this.Scrolled : System.EventHandler&lt;Xamarin.Forms.ScrolledEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -434,6 +428,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="member this.ScrollToAsync : double * double * bool -&gt; System.Threading.Tasks.Task" Usage="scrollView.ScrollToAsync (x, y, animated)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -463,6 +458,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="member this.ScrollToAsync : Xamarin.Forms.Element * Xamarin.Forms.ScrollToPosition * bool -&gt; System.Threading.Tasks.Task" Usage="scrollView.ScrollToAsync (element, position, animated)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -495,12 +491,13 @@ MainPage = new ContentPage
         <InterfaceMember>E:Xamarin.Forms.IScrollViewController.ScrollToRequested</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -518,6 +515,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="member this.ScrollX : double" Usage="Xamarin.Forms.ScrollView.ScrollX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -539,6 +537,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value=" staticval mutable ScrollXProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ScrollView.ScrollXProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -559,6 +558,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="member this.ScrollY : double" Usage="Xamarin.Forms.ScrollView.ScrollY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -580,6 +580,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value=" staticval mutable ScrollYProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ScrollView.ScrollYProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -603,12 +604,13 @@ MainPage = new ContentPage
         <InterfaceMember>M:Xamarin.Forms.IScrollViewController.SendScrollFinished</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -630,12 +632,13 @@ MainPage = new ContentPage
         <InterfaceMember>M:Xamarin.Forms.IScrollViewController.SetScrolledPosition(System.Double,System.Double)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -660,6 +663,7 @@ MainPage = new ContentPage
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -679,6 +683,7 @@ MainPage = new ContentPage
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

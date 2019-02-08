@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type Image = class&#xA;    inherit View&#xA;    interface IImageController&#xA;    interface IElementConfiguration&lt;Image&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -40,7 +41,7 @@
         <code lang="csharp lang-csharp"><![CDATA[
 var image = new Image { Source = "picture.png" };]]></code>
       </example>
-      <para>The FormsGallery sample, which can be found on the <format type="text/html"><a href="http://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, has a ImageDemoPage.cs file. This file contains a longer and more complete example.</para>
+      <para>The FormsGallery sample, which can be found on the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, has a ImageDemoPage.cs file. This file contains a longer and more complete example.</para>
     </remarks>
   </Docs>
   <Members>
@@ -50,6 +51,7 @@ var image = new Image { Source = "picture.png" };]]></code>
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Image.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -80,6 +82,7 @@ var image = new Image { Source = "picture.png" };]]></code>
       <MemberSignature Language="F#" Value="member this.Aspect : Xamarin.Forms.Aspect with get, set" Usage="Xamarin.Forms.Image.Aspect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -94,7 +97,7 @@ var image = new Image { Source = "picture.png" };]]></code>
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the scaling mode for the image. This is a bindable property.</summary>
-        <value>A <see cref="T:Xamarin.Forms.Aspect" /> representing the scaling mode of the image. Default is <see cref="E:Xamarin.Forms.Aspect.AspectFit" />.</value>
+        <value>A <see cref="T:Xamarin.Forms.Aspect" /> representing the scaling mode of the image. Default is <see cref="F:Xamarin.Forms.Aspect.AspectFit" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,6 +108,7 @@ var image = new Image { Source = "picture.png" };]]></code>
       <MemberSignature Language="F#" Value=" staticval mutable AspectProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Image.AspectProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -129,6 +133,7 @@ var image = new Image { Source = "picture.png" };]]></code>
       <MemberSignature Language="F#" Value="member this.IsLoading : bool" Usage="Xamarin.Forms.Image.IsLoading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -172,6 +177,7 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="F#" Value=" staticval mutable IsLoadingProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Image.IsLoadingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -196,6 +202,7 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="F#" Value="member this.IsOpaque : bool with get, set" Usage="Xamarin.Forms.Image.IsOpaque" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -212,7 +219,7 @@ indicator.BindingContext = image;]]></code>
         <summary>Gets or sets a Boolean value that, if <see langword="true" /> hints to the rendering engine that it may safely omit drawing visual elements behind the image.</summary>
         <value>The value of the opacity rendering hint.</value>
         <remarks>
-          <para>When this property is <see langword="true" />, and if the <see cref="P:Xamarin.Forms.Image.Opacity" /> property is set to its default value of <c>1.0</c>, and if the source image is not transparent, then the rendering engine on the target platform can safely ignore those portions of visual elements that appear behind this image when drawing the screen. This can improve performance. However, developers should not set this property to <see langword="true" /> if the alpha channel of the image indicates transparency, if the <see cref="P:Xamarin.Forms.Image.Opacity" /> property is less than <c>1.0</c>, or if the source image itself is transparent. Doing any of these when this property is <see langword="true" /> may result in visual artifacts or other (undefined) behavior. Conversely, developers should ensure that this property is set to <see langword="false" /> if they suspect or know that any of the previously mentioned conditions may indicate that the image will be transparent or partially transparent.</para>
+          <para>When this property is <see langword="true" />, and if the <see cref="P:Xamarin.Forms.VisualElement.Opacity" /> property is set to its default value of <c>1.0</c>, and if the source image is not transparent, then the rendering engine on the target platform can safely ignore those portions of visual elements that appear behind this image when drawing the screen. This can improve performance. However, developers should not set this property to <see langword="true" /> if the alpha channel of the image indicates transparency, if the <see cref="P:Xamarin.Forms.VisualElement.Opacity" /> property is less than <c>1.0</c>, or if the source image itself is transparent. Doing any of these when this property is <see langword="true" /> may result in visual artifacts or other (undefined) behavior. Conversely, developers should ensure that this property is set to <see langword="false" /> if they suspect or know that any of the previously mentioned conditions may indicate that the image will be transparent or partially transparent.</para>
           <para>Setting this property does not change the opacity of the image. Instead, it indicates whether the rendering engine may treat the image as opaque while rendering.</para>
         </remarks>
       </Docs>
@@ -224,6 +231,7 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="F#" Value=" staticval mutable IsOpaqueProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Image.IsOpaqueProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -251,6 +259,7 @@ indicator.BindingContext = image;]]></code>
         <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -279,6 +288,7 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="image.OnBindingContextChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -304,6 +314,7 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="F#" Value="override this.OnSizeRequest : double * double -&gt; Xamarin.Forms.SizeRequest" Usage="image.OnSizeRequest (widthConstraint, heightConstraint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -344,12 +355,13 @@ indicator.BindingContext = image;]]></code>
         <InterfaceMember>M:Xamarin.Forms.IImageController.SetIsLoading(System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -371,6 +383,7 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="F#" Value="member this.Source : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Image.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -401,6 +414,7 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Image.SourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

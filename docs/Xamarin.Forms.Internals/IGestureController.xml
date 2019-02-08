@@ -1,0 +1,62 @@
+<Type Name="IGestureController" FullName="Xamarin.Forms.Internals.IGestureController">
+  <TypeSignature Language="C#" Value="public interface IGestureController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGestureController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.IGestureController" />
+  <TypeSignature Language="F#" Value="type IGestureController = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompositeGestureRecognizers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.IGestureRecognizer&gt; CompositeGestureRecognizers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.IGestureRecognizer&gt; CompositeGestureRecognizers" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.IGestureController.CompositeGestureRecognizers" />
+      <MemberSignature Language="F#" Value="member this.CompositeGestureRecognizers : System.Collections.Generic.IList&lt;Xamarin.Forms.IGestureRecognizer&gt;" Usage="Xamarin.Forms.Internals.IGestureController.CompositeGestureRecognizers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.IGestureRecognizer&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildElements">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt; GetChildElements (Xamarin.Forms.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.GestureElement&gt; GetChildElements(valuetype Xamarin.Forms.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IGestureController.GetChildElements(Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="abstract member GetChildElements : Xamarin.Forms.Point -&gt; System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;" Usage="iGestureController.GetChildElements point" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

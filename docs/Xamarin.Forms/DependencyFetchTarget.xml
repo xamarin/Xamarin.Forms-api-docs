@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type DependencyFetchTarget = " />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -17,7 +18,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumeration specifying whether <see cref="M:Xamarin.Forms.DependencyService.Get" /> should return a reference to a global or new instance.</summary>
+    <summary>Enumeration specifying whether <see cref="M:Xamarin.Forms.DependencyService.Get``1(Xamarin.Forms.DependencyFetchTarget)" /> should return a reference to a global or new instance.</summary>
     <remarks>
       <para>The following example shows how <see cref="T:Xamarin.Forms.DependencyFetchTarget" /> can be used to specify a new instance:</para>
       <example>
@@ -35,6 +36,7 @@ var secondFetch = DependencyService.Get<IDependencyTest> (DependencyFetchTarget.
       <MemberSignature Language="F#" Value="GlobalInstance = 0" Usage="Xamarin.Forms.DependencyFetchTarget.GlobalInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -59,6 +61,7 @@ var secondFetch = DependencyService.Get<IDependencyTest> (DependencyFetchTarget.
       <MemberSignature Language="F#" Value="NewInstance = 1" Usage="Xamarin.Forms.DependencyFetchTarget.NewInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

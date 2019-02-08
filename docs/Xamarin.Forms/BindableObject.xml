@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type BindableObject = class&#xA;    interface INotifyPropertyChanged&#xA;    interface IDynamicResourceHandler" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -32,6 +33,8 @@
         <para>To bind the data behind a property in a <see cref="T:Xamarin.Forms.BindableObject" />, typically a view, to a property in the View Model, application developers should do the following.</para>
         <para> First, the developer creates a pair of properties on the view, one of which is a <see cref="T:Xamarin.Forms.BindableProperty" />, and the other of which is a property of whatever type is required. In the code below, <c>MockBindableObject</c> stands in for what would typically be a user interface object in production code. Application developers should note the use of <see cref="M:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty, System.Object)" /> and <see cref="M:Xamarin.Forms.BindableObject.GetValue" /> to get and set the value on the bound property; The property of the desired type provides the interface that the target of the bound property will implement.</para>
         <code lang="csharp lang-csharp"><![CDATA[
+        <para> First, the developer creates a pair of properties on the view, one of which is a <see cref="T:Xamarin.Forms.BindableProperty" />, and the other of which is a property of whatever type is required. In the code below, <c>MockBindableObject</c> stands in for what would typically be a user interface object in production code. Application developers should note the use of <see cref="M:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)" /> and <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> to get and set the value on the bound property; The property of the desired type provides the interface that the target of the bound property will implement.</para>
+        <code lang="C#"><![CDATA[
 class MockBindableObject : BindableObject
 {
     // App developers should use the method below in production code for 
@@ -123,6 +126,7 @@ public static void OneWayDemo ()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObject.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -145,6 +149,7 @@ public static void OneWayDemo ()
       <MemberSignature Language="F#" Value="member this.ApplyBindings : unit -&gt; unit" Usage="bindableObject.ApplyBindings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -164,6 +169,7 @@ public static void OneWayDemo ()
       <MemberSignature Language="F#" Value="member this.BindingContext : obj with get, set" Usage="Xamarin.Forms.BindableObject.BindingContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -180,7 +186,7 @@ public static void OneWayDemo ()
         <summary>Gets or sets object that contains the properties that will be targeted by the bound properties that belong to this <see cref="T:Xamarin.Forms.BindableObject" />.</summary>
         <value>An <see cref="T:System.Object" /> that contains the properties that will be targeted by the bound properties that belong to this <see cref="T:Xamarin.Forms.BindableObject" />. This is a bindable property.</value>
         <remarks>
-          <block subset="none" type="note">Typically, the runtime performance is better if  <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> is set after all calls to <see cref="M:Xamarin.Forms.BindableObject.SetBinding" /> have been made.</block>
+          <block subset="none" type="note">Typically, the runtime performance is better if  <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> is set after all calls to <see cref="M:Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)" /> have been made.</block>
           <para>The following example shows how to apply a BindingContext and a Binding to a Label (inherits from BindableObject):</para>
           <example>
             <code lang="csharp lang-csharp"><![CDATA[
@@ -200,6 +206,7 @@ Debug.WriteLine (label.Text); //prints "John Doe"
       <MemberSignature Language="F#" Value="member this.BindingContextChanged : EventHandler " Usage="member this.BindingContextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -224,6 +231,7 @@ Debug.WriteLine (label.Text); //prints "John Doe"
       <MemberSignature Language="F#" Value=" staticval mutable BindingContextProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.BindableObject.BindingContextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -239,7 +247,7 @@ Debug.WriteLine (label.Text); //prints "John Doe"
       <Docs>
         <summary>Implements the bound property whose interface is provided by the <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> property.</summary>
         <remarks>
-          <block subset="none" type="note">Typically, the runtime performance is better if  <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> is set after all calls to <see cref="M:Xamarin.Forms.BindableObject.SetBinding" /> have been made.</block>
+          <block subset="none" type="note">Typically, the runtime performance is better if  <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> is set after all calls to <see cref="M:Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)" /> have been made.</block>
           <para>The following example shows how to set a binding to the BindingContext:</para>
           <example>
             <code lang="csharp lang-csharp"><![CDATA[
@@ -278,6 +286,7 @@ stack.BindingContext = new {Jane = new {Name = "Jane Doe"}, John = new {Name = "
       <MemberSignature Language="F#" Value="member this.ClearValue : Xamarin.Forms.BindableProperty -&gt; unit" Usage="bindableObject.ClearValue property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -295,7 +304,7 @@ stack.BindingContext = new {Jane = new {Name = "Jane Doe"}, John = new {Name = "
       </Parameters>
       <Docs>
         <param name="property">The BindableProperty to clear.</param>
-        <summary>Clears any value set by <see cref="M:Xamarin.Forms.BindableObject.SetValue" /> for <paramref name="property" />.</summary>
+        <summary>Clears any value set by <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> for <paramref name="property" />.</summary>
         <remarks>
           <para>Calling this method on a readonly property will result in an InvalidOperationException.</para>
         </remarks>
@@ -308,6 +317,7 @@ stack.BindingContext = new {Jane = new {Name = "Jane Doe"}, John = new {Name = "
       <MemberSignature Language="F#" Value="member this.ClearValue : Xamarin.Forms.BindablePropertyKey -&gt; unit" Usage="bindableObject.ClearValue propertyKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -325,7 +335,7 @@ stack.BindingContext = new {Jane = new {Name = "Jane Doe"}, John = new {Name = "
       </Parameters>
       <Docs>
         <param name="propertyKey">The BindablePropertyKey that identifies the <see cref="T:Xamarin.Forms.BindableProperty" /> to clear.</param>
-        <summary>Clears any value set by <see cref="M:Xamarin.Forms.BindableObject.SetValue" /> for the property that is identified by <paramref name="propertyKey" />.</summary>
+        <summary>Clears any value set by <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> for the property that is identified by <paramref name="propertyKey" />.</summary>
         <remarks>
           <para>Calling this method on a readonly property will result in an InvalidOperationException.</para>
         </remarks>
@@ -338,6 +348,7 @@ stack.BindingContext = new {Jane = new {Name = "Jane Doe"}, John = new {Name = "
       <MemberSignature Language="F#" Value="member this.GetValue : Xamarin.Forms.BindableProperty -&gt; obj" Usage="bindableObject.GetValue property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -359,7 +370,7 @@ stack.BindingContext = new {Jane = new {Name = "Jane Doe"}, John = new {Name = "
         <returns>The value that is contained the <see cref="T:Xamarin.Forms.BindableProperty" />.</returns>
         <remarks>
           <para>
-            <see cref="M:Xamarin.Forms.BindableObject.GetValue" /> and <see cref="M:Xamarin.Forms.BindableObject.SetValue" /> are used to access the values of properties that are implemented by a <see cref="T:Xamarin.Forms.BindableProperty" />. That is, application developers typically provide an interface for a bound property by defining <see langword="public" /> property whose <see langword="get" /> accessor casts  the result of <see cref="M:Xamarin.Forms.BindableObject.GetValue" /> to the appropriate type and returns it, and whose <see langword="set" /> accessor uses <see cref="M:Xamarin.Forms.BindableObject.SetValue" /> to set the value on the correct property. Application developers should perform no other steps in the public property that defines the interface of the bound property.</para>
+            <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> and <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> are used to access the values of properties that are implemented by a <see cref="T:Xamarin.Forms.BindableProperty" />. That is, application developers typically provide an interface for a bound property by defining <see langword="public" /> property whose <see langword="get" /> accessor casts  the result of <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> to the appropriate type and returns it, and whose <see langword="set" /> accessor uses <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> to set the value on the correct property. Application developers should perform no other steps in the public property that defines the interface of the bound property.</para>
           <example>
             <para>The following example shows how to create a bindable property interface for an implementation that will be provided in the target property when the binding is made at run time.</para>
             <code lang="csharp lang-csharp"><![CDATA[
@@ -385,12 +396,13 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="member this.GetValues : Xamarin.Forms.BindableProperty * Xamarin.Forms.BindableProperty -&gt; obj[]" Usage="bindableObject.GetValues (property0, property1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -415,12 +427,13 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="member this.GetValues : Xamarin.Forms.BindableProperty * Xamarin.Forms.BindableProperty * Xamarin.Forms.BindableProperty -&gt; obj[]" Usage="bindableObject.GetValues (property0, property1, property2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -448,6 +461,7 @@ class MyBindable : BindableObject
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -471,6 +485,7 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="abstract member OnBindingContextChanged : unit -&gt; unit&#xA;override this.OnBindingContextChanged : unit -&gt; unit" Usage="bindableObject.OnBindingContextChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -496,6 +511,7 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : string -&gt; unit&#xA;override this.OnPropertyChanged : string -&gt; unit" Usage="bindableObject.OnPropertyChanged propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -532,6 +548,7 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="abstract member OnPropertyChanging : string -&gt; unit&#xA;override this.OnPropertyChanging : string -&gt; unit" Usage="bindableObject.OnPropertyChanging propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -565,7 +582,11 @@ class MyBindable : BindableObject
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.BindableObject.PropertyChanged" />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -590,6 +611,7 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="member this.PropertyChanging : Xamarin.Forms.PropertyChangingEventHandler " Usage="member this.PropertyChanging : Xamarin.Forms.PropertyChangingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -614,6 +636,7 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="member this.RemoveBinding : Xamarin.Forms.BindableProperty -&gt; unit" Usage="bindableObject.RemoveBinding property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -644,6 +667,7 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="member this.SetBinding : Xamarin.Forms.BindableProperty * Xamarin.Forms.BindingBase -&gt; unit" Usage="bindableObject.SetBinding (targetProperty, binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -682,6 +706,7 @@ label.SetBinding (Label.TextProperty, new Binding ("Name"));
       <MemberSignature Language="F#" Value="static member SetInheritedBindingContext : Xamarin.Forms.BindableObject * obj -&gt; unit" Usage="Xamarin.Forms.BindableObject.SetInheritedBindingContext (bindable, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -693,7 +718,7 @@ label.SetBinding (Label.TextProperty, new Binding ("Name"));
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -717,6 +742,7 @@ label.SetBinding (Label.TextProperty, new Binding ("Name"));
       <MemberSignature Language="F#" Value="member this.SetValue : Xamarin.Forms.BindableProperty * obj -&gt; unit" Usage="bindableObject.SetValue (property, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -739,7 +765,7 @@ label.SetBinding (Label.TextProperty, new Binding ("Name"));
         <summary>Sets the value of the specified property.</summary>
         <remarks>
           <para>
-            <see cref="M:Xamarin.Forms.BindableObject.GetValue" /> and <see cref="M:Xamarin.Forms.BindableObject.SetValue" /> are used to access the values of properties that are implemented by a <see cref="T:Xamarin.Forms.BindableProperty" />. That is, application developers typically provide an interface for a bound property by defining <see langword="public" /> property whose <see langword="get" /> accessor casts  the result of <see cref="M:Xamarin.Forms.BindableObject.GetValue" /> to the appropriate type and returns it, and whose <see langword="set" /> accessor uses <see cref="M:Xamarin.Forms.BindableObject.SetValue" /> to set the value on the correct property. Application developers should perform no other steps in the public property that defines the interface of the bound property.</para>
+            <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> and <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> are used to access the values of properties that are implemented by a <see cref="T:Xamarin.Forms.BindableProperty" />. That is, application developers typically provide an interface for a bound property by defining <see langword="public" /> property whose <see langword="get" /> accessor casts  the result of <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> to the appropriate type and returns it, and whose <see langword="set" /> accessor uses <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> to set the value on the correct property. Application developers should perform no other steps in the public property that defines the interface of the bound property.</para>
           <example>
             <para>The following example shows how to create a bindable property interface for an implementation that will be provided in the target property when the binding is made at run time.</para>
             <code lang="csharp lang-csharp"><![CDATA[
@@ -765,6 +791,7 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="member this.SetValue : Xamarin.Forms.BindablePropertyKey * obj -&gt; unit" Usage="bindableObject.SetValue (propertyKey, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -813,12 +840,13 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="member this.SetValueCore : Xamarin.Forms.BindableProperty * obj * Xamarin.Forms.Internals.SetValueFlags -&gt; unit" Usage="bindableObject.SetValueCore (property, value, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -844,6 +872,7 @@ class MyBindable : BindableObject
       <MemberSignature Language="F#" Value="member this.UnapplyBindings : unit -&gt; unit" Usage="bindableObject.UnapplyBindings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -861,7 +890,7 @@ class MyBindable : BindableObject
         <summary>Unapplies all previously set bindings.</summary>
         <remarks>
           <para>This method removes all current bindings from the current context.</para>
-          <block subset="none" type="note">Changing a bound property requires that the binding count for a bound property must be 0. The <see cref="M:Xamarin.Forms.BindableObject.UnApplyBindings" /> method merely decrements the cound, and does not remove all bindings everywhere.</block>
+          <block subset="none" type="note">Changing a bound property requires that the binding count for a bound property must be 0. The <see cref="M:Xamarin.Forms.BindableObject.UnapplyBindings" /> method merely decrements the cound, and does not remove all bindings everywhere.</block>
         </remarks>
       </Docs>
     </Member>
@@ -874,6 +903,7 @@ class MyBindable : BindableObject
         <InterfaceMember>M:Xamarin.Forms.Internals.IDynamicResourceHandler.SetDynamicResource(Xamarin.Forms.BindableProperty,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>

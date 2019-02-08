@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type ItemsView&lt;'Visual (requires 'Visual :&gt; BindableObject)&gt; = class&#xA;    inherit View&#xA;    interface ITemplatedItemsView&lt;'Visual (requires 'Visual :&gt; BindableObject)&gt;&#xA;    interface IItemsView&lt;'Visual (requires 'Visual :&gt; BindableObject)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -32,7 +33,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TVisual">The type of visual that the <see cref="P:Xamarin.Forms.ItemsView{TVisual}.ItemsSource" /> items will be templated into.</typeparam>
+    <typeparam name="TVisual">The type of visual that the <see cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" /> items will be templated into.</typeparam>
     <summary>A base class for a view that contains a templated list of items.</summary>
     <remarks>
       <para>
@@ -53,6 +54,7 @@
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -73,7 +75,7 @@
         <summary>Creates a default <typeparamref name="TVisual" /> instance for <paramref name="item" />.</summary>
         <returns>An instance of the <typeparamref name="TVisual" /> class.</returns>
         <remarks>
-          <para>This method is called by the templating system when <see cref="P:Xamarin.Forms.ItemsView{TVisual}.ItemTemplate" /> is <see langword="null" />.</para>
+          <para>This method is called by the templating system when <see cref="P:Xamarin.Forms.ItemsView`1.ItemTemplate" /> is <see langword="null" />.</para>
           <para>The <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> of the returned object will automatically be set to <paramref name="item" />, there is no
           need to set it yourself. If you do, it will be overridden.</para>
         </remarks>
@@ -86,6 +88,7 @@
       <MemberSignature Language="F#" Value="member this.ItemsSource : System.Collections.IEnumerable with get, set" Usage="Xamarin.Forms.ItemsView&lt;'Visual (requires 'Visual :&gt; Xamarin.Forms.BindableObject)&gt;.ItemsSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -102,11 +105,11 @@
         <summary>Gets or sets the source of items to template and display.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>While any <see cref="T:System.Collections.IEnumerable" /> implementer is accepted, any that do not implement <see cref="T:System.Collections.IList" /> or <see cref="T:System.Collections.Generic.IReadOnlyList{T}" />
+          <para>While any <see cref="T:System.Collections.IEnumerable" /> implementer is accepted, any that do not implement <see cref="T:System.Collections.IList" /> or <see cref="T:System.Collections.Generic.IReadOnlyList`1" />
 						(where T is a class) will be converted to list by iterating.</para>
           <para>If your collection implements <see cref="T:System.Collections.Specialized.INotifyCollectionChanged" />, any changes raised from the event on this interface will be reflected in the items view. Note that if the event
 						is raised on another thread the main thread, the results will be unpredictable depending on the platform. To safely modify your collection (and raise the event) from another thread, call
-						<see cref="M:Xamarin.Forms.BindingBase.EnableCollectionSynchronization" /> to enable proper synchronization of access to the thread.</para>
+						<see cref="M:Xamarin.Forms.BindingBase.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,Xamarin.Forms.CollectionSynchronizationCallback)" /> to enable proper synchronization of access to the thread.</para>
         </remarks>
       </Docs>
     </Member>
@@ -117,6 +120,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable ItemsSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView&lt;'Visual (requires 'Visual :&gt; Xamarin.Forms.BindableObject)&gt;.ItemsSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -130,7 +134,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="P:Xamarin.Forms.ItemsView{TVisual}.ItemSource" /> property.</summary>
+        <summary>Identifies the <see cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,6 +145,7 @@
       <MemberSignature Language="F#" Value="member this.ItemTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.ItemsView&lt;'Visual (requires 'Visual :&gt; Xamarin.Forms.BindableObject)&gt;.ItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -154,13 +159,13 @@
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:Xamarin.Forms.DataTemplate" /> to apply to the <see cref="M:Xamarin.Forms.ItemsView{TVisual}.ItemsSource" />.</summary>
-        <value>The <see cref="T:Xamarin.Forms.DataTemplate" /> for the <see cref="T:Xamarin.Forms.ItemsView" />, or <see langword="null" /></value>
+        <summary>Gets or sets the <see cref="T:Xamarin.Forms.DataTemplate" /> to apply to the <see cref="M:Xamarin.Forms.ItemsView`1.ItemsSource" />.</summary>
+        <value>The <see cref="T:Xamarin.Forms.DataTemplate" /> for the <see cref="T:Xamarin.Forms.ItemsView`1" />, or <see langword="null" /></value>
         <remarks>
-          <para>The ItemTemplate is used to define the visual appearance of objects from the <see cref="P.Xamarin.Forms.ItemsView{TVisual}.ItemsSource" />. Through
+          <para>The ItemTemplate is used to define the visual appearance of objects from the <see cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" />. Through
           the item template you can set up data bindings to the user objects supplied to automatically fill in the visual and respond to any changes in the user
           object.</para>
-          <para>If the item template is <see langword="null" />, <see cref="M.Xamarin.Forms.ItemsView{TVisual}.CreateDefault" /> is called and the result is used as the visual.</para>
+          <para>If the item template is <see langword="null" />, <see cref="M:Xamarin.Forms.ItemsView`1.CreateDefault(System.Object)" /> is called and the result is used as the visual.</para>
           <example>
             <para>In this example, a template for a <see cref="T:Xamarin.Forms.TextCell" /> is created for a simple user object.</para>
             <code lang="csharp lang-csharp"><![CDATA[
@@ -200,8 +205,8 @@ void SetupView()
           </example>
         </remarks>
         <altmember cref="T:Xamarin.Forms.DataTemplate" />
-        <altmember cref="P:Xamarin.Forms.ItemsView{TVisual}.ItemsSource" />
-        <altmember cref="M:Xamarin.Forms.ItemsView{TVisual}.CreateDefault" />
+        <altmember cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" />
+        <altmember cref="M:Xamarin.Forms.ItemsView`1.CreateDefault" />
       </Docs>
     </Member>
     <Member MemberName="ItemTemplateProperty">
@@ -211,6 +216,7 @@ void SetupView()
       <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView&lt;'Visual (requires 'Visual :&gt; Xamarin.Forms.BindableObject)&gt;.ItemTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -224,7 +230,7 @@ void SetupView()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="P:Xamarin.Forms.ItemsView{TVisual}.ItemTemplate" /> property.</summary>
+        <summary>Identifies the <see cref="P:Xamarin.Forms.ItemsView`1.ItemTemplate" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,6 +244,7 @@ void SetupView()
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -259,9 +266,9 @@ void SetupView()
         <param name="index">The index of the content.</param>
         <summary>Performs any additional setup for the content at creation time.</summary>
         <remarks>
-          <para>This method is called when the <see cref="T:Xamarin.Forms.ItemsView{TVisual}" /> is creating visuals for user items. At this point,
+          <para>This method is called when the <see cref="T:Xamarin.Forms.ItemsView`1" /> is creating visuals for user items. At this point,
           the <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> will have been set. You can override this method to perform additional setup
-          for content specific to your <see cref="T:Xamarin.Forms.ItemsView{TVisual}" /> subclass. <see cref="T:Xamarin.Forms.ListView" />, for example, uses
+          for content specific to your <see cref="T:Xamarin.Forms.ItemsView`1" /> subclass. <see cref="T:Xamarin.Forms.ListView" />, for example, uses
           this method to set <see cref="P:Xamarin.Forms.Element.Parent" /> to itself.</para>
         </remarks>
       </Docs>
@@ -273,12 +280,13 @@ void SetupView()
       <MemberSignature Language="F#" Value="member this.TemplatedItems : Xamarin.Forms.Internals.TemplatedItemsList&lt;Xamarin.Forms.ItemsView&lt;'Visual&gt;, 'Visual (requires 'Visual :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="Xamarin.Forms.ItemsView&lt;'Visual (requires 'Visual :&gt; Xamarin.Forms.BindableObject)&gt;.TemplatedItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -300,6 +308,7 @@ void SetupView()
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -313,10 +322,10 @@ void SetupView()
       </Parameters>
       <Docs>
         <param name="content">The content to unhook.</param>
-        <summary>Application developers override this method to unregister event handlers for items that they registered in <see cref="M:Xamarin.Forms.ItemsView{TVisual}.SetupContent(`0, int)" />.</summary>
+        <summary>Application developers override this method to unregister event handlers for items that they registered in <see cref="M:Xamarin.Forms.ItemsView`1.SetupContent(`0,System.Int32)" />.</summary>
         <remarks>
-          <para>Application developers must call <see cref="M:Xamarin.Forms.ItemsView{TVisual}.UnhookContent(`0, int)" /> before performing any other action when overriding this method.</para>
-          <block type="note">Application developers who override <see cref="M:Xamarin.Forms.ItemsView{TVisual}.SetupContent(`0, int)" /> to allocate resources must override this method in order to deallocate them.</block>
+          <para>Application developers must call <see cref="M:Xamarin.Forms.ItemsView`1.UnhookContent(`0)" /> before performing any other action when overriding this method.</para>
+          <block type="note">Application developers who override <see cref="M:Xamarin.Forms.ItemsView`1.SetupContent(`0,System.Int32)" /> to allocate resources must override this method in order to deallocate them.</block>
         </remarks>
       </Docs>
     </Member>
@@ -328,6 +337,7 @@ void SetupView()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -352,6 +362,7 @@ void SetupView()
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -383,6 +394,7 @@ void SetupView()
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -415,6 +427,7 @@ void SetupView()
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -436,12 +449,13 @@ void SetupView()
       <MemberSignature Language="C#" Value="Xamarin.Forms.IListProxy Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IListProxy Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView`1.Xamarin#Forms#ITemplatedItemsView&lt;TVisual&gt;#ListProxy" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.ItemsView&lt;'Visual (requires 'Visual :&gt; Xamarin.Forms.BindableObject)&gt;.Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsView`1.ListProxy</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -458,12 +472,13 @@ void SetupView()
       <MemberSignature Language="C#" Value="Xamarin.Forms.ITemplatedItemsList&lt;TVisual&gt; Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ITemplatedItemsList`1&lt;!TVisual&gt; Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView`1.Xamarin#Forms#ITemplatedItemsView&lt;TVisual&gt;#TemplatedItems" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.ItemsView&lt;'Visual (requires 'Visual :&gt; Xamarin.Forms.BindableObject)&gt;.Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsView`1.TemplatedItems</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>

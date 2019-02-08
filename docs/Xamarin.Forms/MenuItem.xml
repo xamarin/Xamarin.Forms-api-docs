@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type MenuItem = class&#xA;    inherit BaseMenuItem&#xA;    interface IMenuItemController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -20,45 +21,7 @@
   </Interfaces>
   <Docs>
     <summary>Class that presents a menu item and associates it with a command.</summary>
-    <remarks>
-      <para>XAML for Xamarin.Forms supports the following properties for the <see cref="T:Xamarin.Forms.MenuItem" /> class:</para>
-      <list type="table">
-        <listheader>
-          <term>Property</term>
-          <description>Value</description>
-        </listheader>
-        <item>
-          <term>Command</term>
-          <description>
-            <para>A binding to a command.</para>
-          </description>
-        </item>
-        <item>
-          <term>CommandParameter</term>
-          <description>
-            <para>A parameter to pass to the command.</para>
-          </description>
-        </item>
-        <!-- TODO: Getting info from Jason on how to specify images
-                  <item>
-                      <term>Icon</term>
-                      <description><para></para></description>
-                  </item> -->
-        <item>
-          <term>IsDestructive</term>
-          <description>
-            <para>
-              <c>true</c> or <c>false</c>, to indicate whether the command deletes an item in a list.</para>
-          </description>
-        </item>
-        <item>
-          <term>Text</term>
-          <description>
-            <para>The text to display on the menu item.</para>
-          </description>
-        </item>
-      </list>
-    </remarks>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MenuItem.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -86,6 +50,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable AcceleratorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.MenuItem.AcceleratorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -107,12 +72,13 @@
         <InterfaceMember>M:Xamarin.Forms.IMenuItemController.Activate</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,6 +97,7 @@
       <MemberSignature Language="F#" Value="member this.Clicked : EventHandler " Usage="member this.Clicked : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -152,6 +119,7 @@
       <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.MenuItem.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -174,6 +142,7 @@
       <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="Xamarin.Forms.MenuItem.CommandParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -196,6 +165,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable CommandParameterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.MenuItem.CommandParameterProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -217,6 +187,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable CommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.MenuItem.CommandProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -238,6 +209,7 @@
       <MemberSignature Language="F#" Value="static member GetAccelerator : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Accelerator" Usage="Xamarin.Forms.MenuItem.GetAccelerator bindable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -261,6 +233,7 @@
       <MemberSignature Language="F#" Value="member this.Icon : Xamarin.Forms.FileImageSource with get, set" Usage="Xamarin.Forms.MenuItem.Icon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -283,6 +256,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable IconProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.MenuItem.IconProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -304,6 +278,7 @@
       <MemberSignature Language="F#" Value="member this.IsDestructive : bool with get, set" Usage="Xamarin.Forms.MenuItem.IsDestructive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -326,6 +301,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable IsDestructiveProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.MenuItem.IsDestructiveProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -350,12 +326,13 @@
         <InterfaceMember>P:Xamarin.Forms.IMenuItemController.IsEnabled</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -374,12 +351,13 @@
       <MemberSignature Language="F#" Value=" staticval mutable IsEnabledProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.MenuItem.IsEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -400,12 +378,13 @@
         <InterfaceMember>P:Xamarin.Forms.IMenuItemController.IsEnabledPropertyName</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -424,6 +403,7 @@
       <MemberSignature Language="F#" Value="abstract member OnClicked : unit -&gt; unit&#xA;override this.OnClicked : unit -&gt; unit" Usage="menuItem.OnClicked " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -446,6 +426,7 @@
       <MemberSignature Language="F#" Value="static member SetAccelerator : Xamarin.Forms.BindableObject * Xamarin.Forms.Accelerator -&gt; unit" Usage="Xamarin.Forms.MenuItem.SetAccelerator (bindable, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -470,6 +451,7 @@
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Xamarin.Forms.MenuItem.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -492,6 +474,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable TextProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.MenuItem.TextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>

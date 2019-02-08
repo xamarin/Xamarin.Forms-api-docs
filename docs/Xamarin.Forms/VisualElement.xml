@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class VisualElement : Xamarin.Forms.Element, Xamarin.Forms.IAnimatable, Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualElement extends Xamarin.Forms.Element implements class Xamarin.Forms.IAnimatable, class Xamarin.Forms.IElementController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.VisualElement" />
-  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit Element&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IResourcesProvider&#xA;    interface IFlowDirectionController&#xA;    interface IStyleSelectable&#xA;    interface IStylable" />
+  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit Element&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="F#" Value="member this.AnchorX : double with get, set" Usage="Xamarin.Forms.VisualElement.AnchorX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -64,6 +66,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable AnchorXProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.AnchorXProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -88,6 +91,7 @@
       <MemberSignature Language="F#" Value="member this.AnchorY : double with get, set" Usage="Xamarin.Forms.VisualElement.AnchorY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -114,6 +118,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable AnchorYProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.AnchorYProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -138,6 +143,7 @@
       <MemberSignature Language="F#" Value="member this.BackgroundColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.VisualElement.BackgroundColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -163,6 +169,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable BackgroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.BackgroundColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -190,6 +197,7 @@
         <InterfaceMember>M:Xamarin.Forms.IAnimatable.BatchBegin</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -218,6 +226,7 @@
         <InterfaceMember>M:Xamarin.Forms.IAnimatable.BatchCommit</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -246,12 +255,13 @@
         <InterfaceMember>E:Xamarin.Forms.IVisualElementController.BatchCommitted</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -272,12 +282,13 @@
         <InterfaceMember>P:Xamarin.Forms.IVisualElementController.Batched</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -296,6 +307,7 @@
       <MemberSignature Language="F#" Value="member this.Behaviors : System.Collections.Generic.IList&lt;Xamarin.Forms.Behavior&gt;" Usage="Xamarin.Forms.VisualElement.Behaviors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -319,6 +331,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable BehaviorsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.BehaviorsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -340,6 +353,7 @@
       <MemberSignature Language="F#" Value="member this.Bounds : Xamarin.Forms.Rectangle" Usage="Xamarin.Forms.VisualElement.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -368,6 +382,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -386,6 +401,7 @@
       <MemberSignature Language="F#" Value="member this.ChildrenReordered : EventHandler " Usage="member this.ChildrenReordered : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -411,6 +427,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -437,12 +454,13 @@
         <InterfaceMember>P:Xamarin.Forms.IVisualElementController.DisableLayout</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -462,6 +480,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -481,6 +500,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -498,6 +518,7 @@
       <MemberSignature Language="F#" Value="member this.Focus : unit -&gt; bool" Usage="visualElement.Focus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -528,12 +549,13 @@
         <InterfaceMember>E:Xamarin.Forms.IVisualElementController.FocusChangeRequested</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -551,6 +573,7 @@
       <MemberSignature Language="F#" Value="member this.Focused : EventHandler&lt;Xamarin.Forms.FocusEventArgs&gt; " Usage="member this.Focused : System.EventHandler&lt;Xamarin.Forms.FocusEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -577,6 +600,7 @@
       <MemberSignature Language="F#" Value="abstract member GetSizeRequest : double * double -&gt; Xamarin.Forms.SizeRequest&#xA;override this.GetSizeRequest : double * double -&gt; Xamarin.Forms.SizeRequest" Usage="visualElement.GetSizeRequest (widthConstraint, heightConstraint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -603,7 +627,7 @@
         <param name="heightConstraint">The available height that a parent element can allocated to a child. Value will be between 0 and double.PositiveInfinity.</param>
         <summary>Returns the <see cref="T:Xamarin.Forms.SizeRequest" /> of the element. Calling this method begins the measure pass of a layout cycle.</summary>
         <returns>A <see cref="T:Xamarin.Forms.SizeRequest" /> which contains a requested size and a minimum size.</returns>
-        <remarks>Calling GetSizeRequest causes a measure pass to occur for the subtree of elements it is called on. It is ideal to only call GetSizeRequest when needed as excessive calls can negatively impact the performance of your app. Overriding GetSizeRequest should only be done if you want to ignore Width/HeightRequest. More likely a subclass would wish to override <see cref="M:Xamarin.Forms.VisualElement.OnSizeRequest" />.</remarks>
+        <remarks>Calling GetSizeRequest causes a measure pass to occur for the subtree of elements it is called on. It is ideal to only call GetSizeRequest when needed as excessive calls can negatively impact the performance of your app. Overriding GetSizeRequest should only be done if you want to ignore Width/HeightRequest. More likely a subclass would wish to override <see cref="M:Xamarin.Forms.VisualElement.OnSizeRequest(System.Double,System.Double)" />.</remarks>
         <altmember cref="M:Xamarin.Forms.OnSizeRequest" />
       </Docs>
     </Member>
@@ -614,6 +638,7 @@
       <MemberSignature Language="F#" Value="member this.Height : double" Usage="Xamarin.Forms.VisualElement.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -639,6 +664,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable HeightProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.HeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -663,6 +689,7 @@
       <MemberSignature Language="F#" Value="member this.HeightRequest : double with get, set" Usage="Xamarin.Forms.VisualElement.HeightRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -688,6 +715,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable HeightRequestProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.HeightRequestProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -709,6 +737,7 @@
       <MemberSignature Language="F#" Value="member this.InputTransparent : bool with get, set" Usage="Xamarin.Forms.VisualElement.InputTransparent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -736,6 +765,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable InputTransparentProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.InputTransparentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -760,6 +790,7 @@
       <MemberSignature Language="F#" Value="abstract member InvalidateMeasure : unit -&gt; unit&#xA;override this.InvalidateMeasure : unit -&gt; unit" Usage="visualElement.InvalidateMeasure " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -785,12 +816,13 @@
       <MemberSignature Language="F#" Value="member this.InvalidateMeasureNonVirtual : Xamarin.Forms.Internals.InvalidationTrigger -&gt; unit" Usage="visualElement.InvalidateMeasureNonVirtual trigger" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -812,6 +844,7 @@
       <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="Xamarin.Forms.VisualElement.IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -857,6 +890,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable IsEnabledProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.IsEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -881,6 +915,7 @@
       <MemberSignature Language="F#" Value="member this.IsFocused : bool" Usage="Xamarin.Forms.VisualElement.IsFocused" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -925,6 +960,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable IsFocusedProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.IsFocusedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -946,12 +982,13 @@
       <MemberSignature Language="F#" Value=" staticval mutable IsFocusedPropertyKey : Xamarin.Forms.BindablePropertyKey" Usage="Xamarin.Forms.VisualElement.IsFocusedPropertyKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -972,12 +1009,13 @@
         <InterfaceMember>P:Xamarin.Forms.IVisualElementController.IsInNativeLayout</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -999,12 +1037,13 @@
         <InterfaceMember>P:Xamarin.Forms.IVisualElementController.IsNativeStateConsistent</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1026,12 +1065,13 @@
         <InterfaceMember>P:Xamarin.Forms.IVisualElementController.IsPlatformEnabled</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1043,6 +1083,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsTabStop">
+      <MemberSignature Language="C#" Value="public bool IsTabStop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTabStop" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.IsTabStop" />
+      <MemberSignature Language="F#" Value="member this.IsTabStop : bool with get, set" Usage="Xamarin.Forms.VisualElement.IsTabStop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTabStopProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsTabStopProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsTabStopProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.IsTabStopProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTabStopProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.IsTabStopProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsVisible">
       <MemberSignature Language="C#" Value="public bool IsVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVisible" />
@@ -1050,6 +1127,7 @@
       <MemberSignature Language="F#" Value="member this.IsVisible : bool with get, set" Usage="Xamarin.Forms.VisualElement.IsVisible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1115,6 +1193,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable IsVisibleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.IsVisibleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1139,6 +1218,7 @@
       <MemberSignature Language="F#" Value="member this.Layout : Xamarin.Forms.Rectangle -&gt; unit" Usage="visualElement.Layout bounds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1167,6 +1247,7 @@
       <MemberSignature Language="F#" Value="member this.Measure : double * double * Xamarin.Forms.MeasureFlags -&gt; Xamarin.Forms.SizeRequest" Usage="visualElement.Measure (widthConstraint, heightConstraint, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -1196,6 +1277,7 @@
       <MemberSignature Language="F#" Value="member this.MeasureInvalidated : EventHandler " Usage="member this.MeasureInvalidated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1220,6 +1302,7 @@
       <MemberSignature Language="F#" Value="member this.MinimumHeightRequest : double with get, set" Usage="Xamarin.Forms.VisualElement.MinimumHeightRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1237,7 +1320,7 @@
         <value>The minimum height the element requires. Default value is -1.</value>
         <remarks>
           <para>
-            MinimumHeightRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest (double, double)" /> by setting the minimum height property. This causes overflow handling to shrink this element to its minimum height before elements who do not have a minimum size set.
+            MinimumHeightRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest(System.Double,System.Double)" /> by setting the minimum height property. This causes overflow handling to shrink this element to its minimum height before elements who do not have a minimum size set.
           </para>
           <para>
               The following example sets the MinimumHeightRequest to enable an image to shrink below it's normal size.
@@ -1269,6 +1352,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable MinimumHeightRequestProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.MinimumHeightRequestProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -1290,6 +1374,7 @@
       <MemberSignature Language="F#" Value="member this.MinimumWidthRequest : double with get, set" Usage="Xamarin.Forms.VisualElement.MinimumWidthRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1307,7 +1392,7 @@
         <value>The minimum width the element requires. Default value is -1.</value>
         <remarks>
           <para>
-            MinimumWidthRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest (double, double)" /> by setting the minimum width property. This causes overflow handling to shrink this element to its minimum width before elements who do not have a minimum size set.
+            MinimumWidthRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest(System.Double,System.Double)" /> by setting the minimum width property. This causes overflow handling to shrink this element to its minimum width before elements who do not have a minimum size set.
           </para>
           <para>
               The following example sets the MinimumWidthRequest to enable an image to shrink below it's normal size.
@@ -1340,6 +1425,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable MinimumWidthRequestProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.MinimumWidthRequestProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -1364,12 +1450,13 @@
         <InterfaceMember>M:Xamarin.Forms.IVisualElementController.NativeSizeChanged</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1388,6 +1475,7 @@
       <MemberSignature Language="F#" Value="member this.Navigation : Xamarin.Forms.INavigation" Usage="Xamarin.Forms.VisualElement.Navigation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1408,17 +1496,17 @@
             Use the Navigation property to perform navigation from any element. If the element has not yet been added to a tree which contains a navigation implementor, the actions are queued up until it is.
           </para>
           <para>
-            The following example navigates to a new page created in the callback of a buttons <see cref="E:Xamarin.Forms.VisualElement.Activated" /> event.</para>
+            The following example navigates to a new page created in the callback of a button's <see cref="E:Xamarin.Forms.Button.Clicked" /> event.</para>
           <example>
             <code lang="csharp lang-csharp"><![CDATA[
   partial class NavigationTest {
     void BuildContent 
     {
       Button button = new Button {Text = "Tap to Navigate"};
-      button.Activated += OnButtonActivated;
+      button.Clicked += OnButtonClicked;
     }
 
-    void OnButtonActivated (object sender, EventArgs args)
+    void OnButtonClicked (object sender, EventArgs args)
     {
       Button button = (Button) sender;
       Page newPage = new ContentPage {
@@ -1440,6 +1528,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable NavigationProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.NavigationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1467,12 +1556,13 @@
         <InterfaceMember>P:Xamarin.Forms.IVisualElementController.NavigationProxy</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1491,6 +1581,7 @@
       <MemberSignature Language="F#" Value="override this.OnChildAdded : Xamarin.Forms.Element -&gt; unit" Usage="visualElement.OnChildAdded child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1514,6 +1605,7 @@
       <MemberSignature Language="F#" Value="override this.OnChildRemoved : Xamarin.Forms.Element -&gt; unit" Usage="visualElement.OnChildRemoved child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1537,6 +1629,7 @@
       <MemberSignature Language="F#" Value="member this.OnChildrenReordered : unit -&gt; unit" Usage="visualElement.OnChildrenReordered " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1562,6 +1655,7 @@
       <MemberSignature Language="F#" Value="abstract member OnMeasure : double * double -&gt; Xamarin.Forms.SizeRequest&#xA;override this.OnMeasure : double * double -&gt; Xamarin.Forms.SizeRequest" Usage="visualElement.OnMeasure (widthConstraint, heightConstraint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -1587,6 +1681,7 @@
       <MemberSignature Language="F#" Value="override this.OnParentSet : unit -&gt; unit" Usage="visualElement.OnParentSet " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1612,6 +1707,7 @@
       <MemberSignature Language="F#" Value="abstract member OnSizeAllocated : double * double -&gt; unit&#xA;override this.OnSizeAllocated : double * double -&gt; unit" Usage="visualElement.OnSizeAllocated (width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1642,6 +1738,7 @@
       <MemberSignature Language="F#" Value="abstract member OnSizeRequest : double * double -&gt; Xamarin.Forms.SizeRequest&#xA;override this.OnSizeRequest : double * double -&gt; Xamarin.Forms.SizeRequest" Usage="visualElement.OnSizeRequest (widthConstraint, heightConstraint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1671,6 +1768,54 @@
         <remarks>The results of this method will be (-1, -1) if the element has not yet been realized with a platform specific backing control. Overriding this method does not require a call to the base class so long as a valid SizeRequest is returned.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnTabIndexPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTabIndexPropertyChanged (int oldValue, int newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTabIndexPropertyChanged(int32 oldValue, int32 newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.OnTabIndexPropertyChanged(System.Int32,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member OnTabIndexPropertyChanged : int * int -&gt; unit&#xA;override this.OnTabIndexPropertyChanged : int * int -&gt; unit" Usage="visualElement.OnTabIndexPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Int32" />
+        <Parameter Name="newValue" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTabStopPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTabStopPropertyChanged (bool oldValue, bool newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTabStopPropertyChanged(bool oldValue, bool newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.OnTabStopPropertyChanged(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member OnTabStopPropertyChanged : bool * bool -&gt; unit&#xA;override this.OnTabStopPropertyChanged : bool * bool -&gt; unit" Usage="visualElement.OnTabStopPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Boolean" />
+        <Parameter Name="newValue" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Opacity">
       <MemberSignature Language="C#" Value="public double Opacity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Opacity" />
@@ -1678,6 +1823,7 @@
       <MemberSignature Language="F#" Value="member this.Opacity : double with get, set" Usage="Xamarin.Forms.VisualElement.Opacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1726,6 +1872,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable OpacityProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.OpacityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1753,6 +1900,7 @@
         <InterfaceMember>P:Xamarin.Forms.IResourcesProvider.Resources</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1771,7 +1919,7 @@
         <remarks>
           <para>In XAML, resource dictionaries are filled with key/value pairs that are specified in XML and consequently created at run time. The keys in the resource dictionary are specified with the <c>x:Key</c> attribute of the XML tag for the type to create. An object of that type is created, and is initialized with the property and field values that are specified either by additional attributes or by nested tags, both of which, when present are simply string representations of the property or field names. The object is then inserted into the <see cref="T:Xamarin.Forms.ResourceDictionary" /> for the enclosing type at runtime.</para>
           <example>
-            <para>For example, the XAML below, taken from  the <format type="text/html"><a href="http://developer.xamarin.com/guides/cross-platform/xamarin-forms/xaml-for-xamarin-forms/">XAML for Xamarin.Forms</a></format> series, creates a resource dictionary that contains <see cref="T:Xamarin.Forms.LayoutOptions" /> object constants that can be used for any <see cref="T:Xamarin.Forms.Layout" /> objects that are added to the surrounding <see cref="T:Xamarin.Forms.ContentPage" />:</para>
+            <para>For example, the XAML below, taken from  the <format type="text/html"><a href="https://docs.microsoft.com/xamarin/xamarin-forms/xaml/">XAML for Xamarin.Forms</a></format> series, creates a resource dictionary that contains <see cref="T:Xamarin.Forms.LayoutOptions" /> object constants that can be used for any <see cref="T:Xamarin.Forms.Layout" /> objects that are added to the surrounding <see cref="T:Xamarin.Forms.ContentPage" />:</para>
             <code><![CDATA[
 <ContentPage.Resources>
     <ResourceDictionary>
@@ -1784,7 +1932,7 @@
     </ResourceDictionary>
 </ContentPage.Resources>
 ]]></code>
-            <para>Note that the above snippet is only valid when nested within a <c>&lt;ContentPage&gt;...&lt;/ContentPage&gt;</c> tag pair. Within that pair, the app developer can use both of the <c>horzOptions</c> and <c>vertOptions</c> keys to specify values for properties of type <see cref="T:Xamarin.Forms.LayoutOptions" /> by using the <c>"{...}"</c> static resource syntax. The short example below, also taken from  the <format type="text/html"><a href="http://developer.xamarin.com/guides/cross-platform/xamarin-forms/xaml-for-xamarin-forms/">XAML for Xamarin.Forms</a></format> series, illustrates this syntax:</para>
+            <para>Note that the above snippet is only valid when nested within a <c>&lt;ContentPage&gt;...&lt;/ContentPage&gt;</c> tag pair. Within that pair, the app developer can use both of the <c>horzOptions</c> and <c>vertOptions</c> keys to specify values for properties of type <see cref="T:Xamarin.Forms.LayoutOptions" /> by using the <c>"{...}"</c> static resource syntax. The short example below, also taken from  the <format type="text/html"><a href="https://docs.microsoft.com/xamarin/xamarin-forms/xaml/">XAML for Xamarin.Forms</a></format> series, illustrates this syntax:</para>
             <code><![CDATA[
 <Button Text="Do this!"
         HorizontalOptions="{StaticResource horzOptions}"
@@ -1805,6 +1953,7 @@
       <MemberSignature Language="F#" Value="member this.Rotation : double with get, set" Usage="Xamarin.Forms.VisualElement.Rotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1830,6 +1979,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable RotationProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.RotationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1854,6 +2004,7 @@
       <MemberSignature Language="F#" Value="member this.RotationX : double with get, set" Usage="Xamarin.Forms.VisualElement.RotationX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1879,6 +2030,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable RotationXProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.RotationXProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1903,6 +2055,7 @@
       <MemberSignature Language="F#" Value="member this.RotationY : double with get, set" Usage="Xamarin.Forms.VisualElement.RotationY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1928,6 +2081,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable RotationYProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.RotationYProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1952,6 +2106,7 @@
       <MemberSignature Language="F#" Value="member this.Scale : double with get, set" Usage="Xamarin.Forms.VisualElement.Scale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1977,6 +2132,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable ScaleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.ScaleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -1994,6 +2150,84 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ScaleX">
+      <MemberSignature Language="C#" Value="public double ScaleX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ScaleX" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.ScaleX" />
+      <MemberSignature Language="F#" Value="member this.ScaleX : double with get, set" Usage="Xamarin.Forms.VisualElement.ScaleX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a scale value to apply to the X direction.</summary>
+        <value>The scale value to apply to the X direction.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleXProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ScaleXProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ScaleXProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.ScaleXProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScaleXProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.ScaleXProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.VisualElement.ScaleX" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleY">
+      <MemberSignature Language="C#" Value="public double ScaleY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ScaleY" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.ScaleY" />
+      <MemberSignature Language="F#" Value="member this.ScaleY : double with get, set" Usage="Xamarin.Forms.VisualElement.ScaleY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a scale value to apply to the Y direction.</summary>
+        <value>The scale value to apply to the Y direction.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleYProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ScaleYProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ScaleYProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.ScaleYProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScaleYProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.ScaleYProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.VisualElement.ScaleY" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SizeAllocated">
       <MemberSignature Language="C#" Value="protected void SizeAllocated (double width, double height);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SizeAllocated(float64 width, float64 height) cil managed" />
@@ -2001,6 +2235,7 @@
       <MemberSignature Language="F#" Value="member this.SizeAllocated : double * double -&gt; unit" Usage="visualElement.SizeAllocated (width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -2031,6 +2266,7 @@
       <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -2045,7 +2281,7 @@
       </ReturnValue>
       <Docs>
         <summary>Occurs when either the Width or the Height properties change value on this element.</summary>
-        <remarks>Classes should implement <see cref="M:Xamarin.Forms.VisualElement.OnSizeAllocated (double, double)" /> if they wish to respond to size change events directly.</remarks>
+        <remarks>Classes should implement <see cref="M:Xamarin.Forms.VisualElement.OnSizeAllocated(System.Double,System.Double)" /> if they wish to respond to size change events directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -2055,6 +2291,7 @@
       <MemberSignature Language="F#" Value="member this.Style : Xamarin.Forms.Style with get, set" Usage="Xamarin.Forms.VisualElement.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -2077,6 +2314,7 @@
       <MemberSignature Language="F#" Value="member this.StyleClass : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Xamarin.Forms.VisualElement.StyleClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -2101,6 +2339,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable StyleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.StyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -2115,6 +2354,83 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TabIndex">
+      <MemberSignature Language="C#" Value="public int TabIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TabIndex" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.TabIndex" />
+      <MemberSignature Language="F#" Value="member this.TabIndex : int with get, set" Usage="Xamarin.Forms.VisualElement.TabIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabIndexDefaultValueCreator">
+      <MemberSignature Language="C#" Value="protected virtual int TabIndexDefaultValueCreator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 TabIndexDefaultValueCreator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.TabIndexDefaultValueCreator" />
+      <MemberSignature Language="F#" Value="abstract member TabIndexDefaultValueCreator : unit -&gt; int&#xA;override this.TabIndexDefaultValueCreator : unit -&gt; int" Usage="visualElement.TabIndexDefaultValueCreator " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabIndexProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabIndexProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabIndexProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.TabIndexProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabIndexProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.TabIndexProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabStopDefaultValueCreator">
+      <MemberSignature Language="C#" Value="protected virtual bool TabStopDefaultValueCreator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TabStopDefaultValueCreator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.TabStopDefaultValueCreator" />
+      <MemberSignature Language="F#" Value="abstract member TabStopDefaultValueCreator : unit -&gt; bool&#xA;override this.TabStopDefaultValueCreator : unit -&gt; bool" Usage="visualElement.TabStopDefaultValueCreator " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TranslationX">
       <MemberSignature Language="C#" Value="public double TranslationX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 TranslationX" />
@@ -2122,6 +2438,7 @@
       <MemberSignature Language="F#" Value="member this.TranslationX : double with get, set" Usage="Xamarin.Forms.VisualElement.TranslationX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -2145,6 +2462,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable TranslationXProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.TranslationXProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -2167,6 +2485,7 @@
       <MemberSignature Language="F#" Value="member this.TranslationY : double with get, set" Usage="Xamarin.Forms.VisualElement.TranslationY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -2190,6 +2509,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable TranslationYProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.TranslationYProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -2212,6 +2532,7 @@
       <MemberSignature Language="F#" Value="member this.Triggers : System.Collections.Generic.IList&lt;Xamarin.Forms.TriggerBase&gt;" Usage="Xamarin.Forms.VisualElement.Triggers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -2235,6 +2556,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable TriggersProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.TriggersProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -2256,6 +2578,7 @@
       <MemberSignature Language="F#" Value="member this.Unfocus : unit -&gt; unit" Usage="visualElement.Unfocus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -2281,6 +2604,7 @@
       <MemberSignature Language="F#" Value="member this.Unfocused : EventHandler&lt;Xamarin.Forms.FocusEventArgs&gt; " Usage="member this.Unfocused : System.EventHandler&lt;Xamarin.Forms.FocusEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -2305,6 +2629,7 @@
       <MemberSignature Language="F#" Value="member this.Width : double" Usage="Xamarin.Forms.VisualElement.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -2330,6 +2655,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable WidthProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.WidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -2354,6 +2680,7 @@
       <MemberSignature Language="F#" Value="member this.WidthRequest : double with get, set" Usage="Xamarin.Forms.VisualElement.WidthRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -2379,6 +2706,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable WidthRequestProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.WidthRequestProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -2400,6 +2728,7 @@
       <MemberSignature Language="F#" Value="member this.X : double" Usage="Xamarin.Forms.VisualElement.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -2422,13 +2751,14 @@
       <MemberSignature Language="C#" Value="Xamarin.Forms.EffectiveFlowDirection Xamarin.Forms.IVisualElementController.EffectiveFlowDirection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.EffectiveFlowDirection Xamarin.Forms.IVisualElementController.EffectiveFlowDirection" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.Xamarin#Forms#IVisualElementController#EffectiveFlowDirection" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.VisualElement.Xamarin.Forms.IVisualElementController.EffectiveFlowDirection" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IVisualElementController.EffectiveFlowDirection" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IVisualElementController.EffectiveFlowDirection</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2449,6 +2779,7 @@
         <InterfaceMember>M:Xamarin.Forms.IVisualElementController.InvalidateMeasure(Xamarin.Forms.Internals.InvalidationTrigger)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -2471,6 +2802,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable XProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.XProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -2495,6 +2827,7 @@
       <MemberSignature Language="F#" Value="member this.Y : double" Usage="Xamarin.Forms.VisualElement.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -2520,6 +2853,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable YProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.YProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

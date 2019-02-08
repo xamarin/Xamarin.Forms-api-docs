@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public abstract class TriggerBase : Xamarin.Forms.BindableObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TriggerBase extends Xamarin.Forms.BindableObject" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.TriggerBase" />
-  <TypeSignature Language="F#" Value="type TriggerBase = class&#xA;    inherit BindableObject&#xA;    interface IAttachedObject" />
+  <TypeSignature Language="F#" Value="type TriggerBase = class&#xA;    inherit BindableObject" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="F#" Value="member this.EnterActions : System.Collections.Generic.IList&lt;Xamarin.Forms.TriggerAction&gt;" Usage="Xamarin.Forms.TriggerBase.EnterActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -38,7 +40,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.TriggerAction&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of <see cref="T:Xamarin.Forms.TirggerAction" /> objects that will be invoked when the trigger condition is met. Ignored for the <see cref="T:Xamarin.Forms.EventTrigger" /> class.</summary>
+        <summary>Gets the list of <see cref="T:Xamarin.Forms.TriggerAction" /> objects that will be invoked when the trigger condition is met. Ignored for the <see cref="T:Xamarin.Forms.EventTrigger" /> class.</summary>
         <value>
         </value>
         <remarks>To be added.</remarks>
@@ -51,6 +53,7 @@
       <MemberSignature Language="F#" Value="member this.ExitActions : System.Collections.Generic.IList&lt;Xamarin.Forms.TriggerAction&gt;" Usage="Xamarin.Forms.TriggerBase.ExitActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -61,7 +64,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.TriggerAction&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of <see cref="T:Xamarin.Forms.TirggerAction" /> objects that will be invoked after the trigger condition is no longer met. Ignored for the <see cref="T:Xamarin.Forms.EventTrigger" /> class.</summary>
+        <summary>Gets the list of <see cref="T:Xamarin.Forms.TriggerAction" /> objects that will be invoked after the trigger condition is no longer met. Ignored for the <see cref="T:Xamarin.Forms.EventTrigger" /> class.</summary>
         <value>
         </value>
         <remarks>To be added.</remarks>
@@ -74,6 +77,7 @@
       <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="Xamarin.Forms.TriggerBase.IsSealed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -86,7 +90,7 @@
       <Docs>
         <summary>Gets a value that indicates whether or not the trigger is sealed.</summary>
         <value>To be added.</value>
-        <remarks>A trigger becomes sealed when its <see cref="M:Xamarin.Forms.IAttachedObject.AttachTo" /> method is called. Once it is sealed, its <see cref="P:Xamarin.Forms.TriggerBase.EnterActions" /> and <see cref="P:Xamarin.Forms.TriggerBase.ExitActions" /> lists become readonly.</remarks>
+        <remarks>A trigger becomes sealed when its <see cref="M:Xamarin.Forms.TriggerBase.Xamarin#Forms#IAttachedObject#AttachTo(Xamarin.Forms.BindableObject)" /> method is called. Once it is sealed, its <see cref="P:Xamarin.Forms.TriggerBase.EnterActions" /> and <see cref="P:Xamarin.Forms.TriggerBase.ExitActions" /> lists become readonly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetType">
@@ -96,6 +100,7 @@
       <MemberSignature Language="F#" Value="member this.TargetType : Type" Usage="Xamarin.Forms.TriggerBase.TargetType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -120,6 +125,7 @@
         <InterfaceMember>M:Xamarin.Forms.IAttachedObject.AttachTo(Xamarin.Forms.BindableObject)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -147,6 +153,7 @@
         <InterfaceMember>M:Xamarin.Forms.IAttachedObject.DetachFrom(Xamarin.Forms.BindableObject)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>

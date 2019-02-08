@@ -1,10 +1,11 @@
 <Type Name="Label" FullName="Xamarin.Forms.Label">
-  <TypeSignature Language="C#" Value="public class Label : Xamarin.Forms.View, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Label&gt;, Xamarin.Forms.Internals.IFontElement" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Label extends Xamarin.Forms.View implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Label&gt;, class Xamarin.Forms.Internals.IFontElement" />
+  <TypeSignature Language="C#" Value="public class Label : Xamarin.Forms.View, Xamarin.Forms.IDecorableTextElement, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Label&gt;, Xamarin.Forms.Internals.IFontElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Label extends Xamarin.Forms.View implements class Xamarin.Forms.IDecorableTextElement, class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Label&gt;, class Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Label" />
-  <TypeSignature Language="F#" Value="type Label = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface ITextAlignmentElement&#xA;    interface IElementConfiguration&lt;Label&gt;" />
+  <TypeSignature Language="F#" Value="type Label = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;Label&gt;&#xA;    interface IDecorableTextElement" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -17,6 +18,9 @@
     <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IDecorableTextElement</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Label&gt;</InterfaceName>
     </Interface>
@@ -37,7 +41,7 @@
     <remarks>
       <para>A Label is used to display single-line text elements as well as multi-line blocks of text.</para>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/Label.TripleScreenShot.png" />
+        <img href="~/Xamarin.Forms/_images/Label.TripleScreenShot.png" />
       </para>
       <para>The following example, adapted from the default Xamarin.Forms solution, shows a basic use:</para>
       <example>
@@ -56,7 +60,7 @@ public class App : Application
     };
 }
 ]]></code>
-        <para>The FormsGallery sample, which can be found on the <format type="text/html"><a href="http://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, has a LabelDemoPage.cs file. This file contains a longer and more complete example.</para>
+        <para>The FormsGallery sample, which can be found on the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, has a LabelDemoPage.cs file. This file contains a longer and more complete example.</para>
       </example>
     </remarks>
   </Docs>
@@ -67,6 +71,7 @@ public class App : Application
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Label.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -90,6 +95,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.Font : Xamarin.Forms.Font with get, set" Usage="Xamarin.Forms.Label.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -121,6 +127,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.FontAttributes : Xamarin.Forms.FontAttributes with get, set" Usage="Xamarin.Forms.Label.FontAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -143,6 +150,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable FontAttributesProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.FontAttributesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -164,6 +172,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.FontFamily : string with get, set" Usage="Xamarin.Forms.Label.FontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -186,6 +195,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable FontFamilyProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.FontFamilyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -207,6 +217,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable FontProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.FontProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -232,6 +243,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="Xamarin.Forms.Label.FontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -259,6 +271,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable FontSizeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.FontSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -280,6 +293,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.FormattedText : Xamarin.Forms.FormattedString with get, set" Usage="Xamarin.Forms.Label.FormattedText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -304,6 +318,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable FormattedTextProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.FormattedTextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -319,6 +334,30 @@ public class App : Application
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetChildElements">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt; GetChildElements (Xamarin.Forms.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.GestureElement&gt; GetChildElements(valuetype Xamarin.Forms.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Label.GetChildElements(Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="override this.GetChildElements : Xamarin.Forms.Point -&gt; System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;" Usage="label.GetChildElements point" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">The point under which to look for child elements.</param>
+        <summary>Returns the child elements that are under the specified point.</summary>
+        <returns>The child elements that are under the specified point.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HorizontalTextAlignment">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.TextAlignment HorizontalTextAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.TextAlignment HorizontalTextAlignment" />
@@ -326,6 +365,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.HorizontalTextAlignment : Xamarin.Forms.TextAlignment with get, set" Usage="Xamarin.Forms.Label.HorizontalTextAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -346,6 +386,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable HorizontalTextAlignmentProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.HorizontalTextAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -365,6 +406,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.LineBreakMode : Xamarin.Forms.LineBreakMode with get, set" Usage="Xamarin.Forms.Label.LineBreakMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -379,7 +421,7 @@ public class App : Application
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the LineBreakMode for the Label. This is a bindable property.</summary>
-        <value>The <see cref="T:Xamarin.Forms.LineBreakMode" /> value for the Label. The default is <see cref="E:Xamarin.Forms.LineBreakMode.WordWrap" /></value>
+        <value>The <see cref="T:Xamarin.Forms.LineBreakMode" /> value for the Label. The default is <see cref="F:Xamarin.Forms.LineBreakMode.WordWrap" /></value>
         <remarks>
         </remarks>
       </Docs>
@@ -391,6 +433,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable LineBreakModeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.LineBreakModeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -409,6 +452,82 @@ public class App : Application
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="LineHeight">
+      <MemberSignature Language="C#" Value="public double LineHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LineHeight" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Label.LineHeight" />
+      <MemberSignature Language="F#" Value="member this.LineHeight : double with get, set" Usage="Xamarin.Forms.Label.LineHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the multiplier to apply to the default line height when displaying text.</summary>
+        <value>The multiplier to apply to the default line height when displaying text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty LineHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty LineHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Label.LineHeightProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable LineHeightProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.LineHeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Label.LineHeight" /> bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLines">
+      <MemberSignature Language="C#" Value="public int MaxLines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLines" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Label.MaxLines" />
+      <MemberSignature Language="F#" Value="member this.MaxLines : int with get, set" Usage="Xamarin.Forms.Label.MaxLines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of lines allowed in the <see cref='T:Xamarin.Forms.Label' />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLinesProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty MaxLinesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty MaxLinesProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Label.MaxLinesProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxLinesProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.MaxLinesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Static method providing the <see cref='T:Xamarin.Forms.BindableProperty' /> for <see cref='P:Xamarin.Forms.Label.MaxLines' />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="On&lt;T&gt;">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.Label&gt; On&lt;T&gt; () where T : Xamarin.Forms.IConfigPlatform;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.IPlatformElementConfiguration`2&lt;!!T, class Xamarin.Forms.Label&gt; On&lt;(class Xamarin.Forms.IConfigPlatform) T&gt;() cil managed" />
@@ -419,6 +538,7 @@ public class App : Application
         <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -448,6 +568,7 @@ public class App : Application
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -466,6 +587,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Xamarin.Forms.Label.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -492,6 +614,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.TextColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Label.TextColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -518,6 +641,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable TextColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.TextColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -536,6 +660,46 @@ public class App : Application
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="TextDecorations">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.TextDecorations TextDecorations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.TextDecorations TextDecorations" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Label.TextDecorations" />
+      <MemberSignature Language="F#" Value="member this.TextDecorations : Xamarin.Forms.TextDecorations with get, set" Usage="Xamarin.Forms.Label.TextDecorations" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IDecorableTextElement.TextDecorations</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.TextDecorations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref='T:Xamarin.Forms.TextDecorations' /> applied to <see cref='P:Xamarin.Forms.Label.Text' />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextDecorationsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TextDecorationsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TextDecorationsProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Label.TextDecorationsProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextDecorationsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.TextDecorationsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Static method providing the <see cref='T:Xamarin.Forms.BindableProperty' /> associated with <see cref='P:Xamarin.Forms.Label.TextDecorations' />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TextProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TextProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TextProperty" />
@@ -543,6 +707,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable TextProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.TextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -568,6 +733,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.VerticalTextAlignment : Xamarin.Forms.TextAlignment with get, set" Usage="Xamarin.Forms.Label.VerticalTextAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -588,6 +754,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable VerticalTextAlignmentProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.VerticalTextAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -607,6 +774,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.XAlign : Xamarin.Forms.TextAlignment with get, set" Usage="Xamarin.Forms.Label.XAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -626,7 +794,7 @@ public class App : Application
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the horizontal alignment for the Text inside of the Label bound.</summary>
-        <value>The <see cref="T:Xamarin.Forms.TextAlignment" /> value. The default is <see cref="E:Xamarin.Forms.TextAlignment.Start" />, i.e. the text is left-aligned.</value>
+        <value>The <see cref="T:Xamarin.Forms.TextAlignment" /> value. The default is <see cref="F:Xamarin.Forms.TextAlignment.Start" />, i.e. the text is left-aligned.</value>
         <remarks>
         </remarks>
       </Docs>
@@ -638,6 +806,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable XAlignProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.XAlignProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -670,6 +839,7 @@ public class App : Application
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -692,6 +862,7 @@ public class App : Application
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -718,6 +889,7 @@ public class App : Application
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -744,6 +916,7 @@ public class App : Application
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged(System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -770,6 +943,7 @@ public class App : Application
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged(System.Double,System.Double)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -794,6 +968,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.YAlign : Xamarin.Forms.TextAlignment with get, set" Usage="Xamarin.Forms.Label.YAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -813,7 +988,7 @@ public class App : Application
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the vertical alignment for the Text inside of the Label bound.</summary>
-        <value>The <see cref="T:Xamarin.Forms.TextAlignment" /> value. The default is <see cref="E:Xamarin.Forms.TextAlignment.Start" />, i.e. the text is top-aligned.</value>
+        <value>The <see cref="T:Xamarin.Forms.TextAlignment" /> value. The default is <see cref="F:Xamarin.Forms.TextAlignment.Start" />, i.e. the text is top-aligned.</value>
         <remarks>
         </remarks>
       </Docs>
@@ -825,6 +1000,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable YAlignProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Label.YAlignProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

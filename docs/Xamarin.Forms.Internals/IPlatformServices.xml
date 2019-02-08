@@ -5,12 +5,13 @@
   <TypeSignature Language="F#" Value="type IPlatformServices = interface" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -25,6 +26,7 @@
       <MemberSignature Language="F#" Value="abstract member BeginInvokeOnMainThread : Action -&gt; unit" Usage="iPlatformServices.BeginInvokeOnMainThread action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -47,6 +49,7 @@
       <MemberSignature Language="F#" Value="abstract member CreateTicker : unit -&gt; Xamarin.Forms.Internals.Ticker" Usage="iPlatformServices.CreateTicker " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -67,6 +70,7 @@
       <MemberSignature Language="F#" Value="abstract member GetAssemblies : unit -&gt; System.Reflection.Assembly[]" Usage="iPlatformServices.GetAssemblies " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -87,6 +91,7 @@
       <MemberSignature Language="F#" Value="abstract member GetMD5Hash : string -&gt; string" Usage="iPlatformServices.GetMD5Hash input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -110,6 +115,7 @@
       <MemberSignature Language="F#" Value="abstract member GetNamedSize : Xamarin.Forms.NamedSize * Type * bool -&gt; double" Usage="iPlatformServices.GetNamedSize (size, targetElementType, useOldSizes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -137,6 +143,7 @@
       <MemberSignature Language="F#" Value="abstract member GetStreamAsync : Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="iPlatformServices.GetStreamAsync (uri, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -162,6 +169,7 @@
       <MemberSignature Language="F#" Value="abstract member GetUserStoreForApplication : unit -&gt; Xamarin.Forms.Internals.IIsolatedStorageFile" Usage="iPlatformServices.GetUserStoreForApplication " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -182,6 +190,7 @@
       <MemberSignature Language="F#" Value="member this.IsInvokeRequired : bool" Usage="Xamarin.Forms.Internals.IPlatformServices.IsInvokeRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -201,6 +210,7 @@
       <MemberSignature Language="F#" Value="abstract member OpenUriAction : Uri -&gt; unit" Usage="iPlatformServices.OpenUriAction uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -223,6 +233,7 @@
       <MemberSignature Language="F#" Value="abstract member QuitApplication : unit -&gt; unit" Usage="iPlatformServices.QuitApplication " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -242,6 +253,7 @@
       <MemberSignature Language="F#" Value="member this.RuntimePlatform : string" Usage="Xamarin.Forms.Internals.IPlatformServices.RuntimePlatform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -261,6 +273,7 @@
       <MemberSignature Language="F#" Value="abstract member StartTimer : TimeSpan * Func&lt;bool&gt; -&gt; unit" Usage="iPlatformServices.StartTimer (interval, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>

@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public class Frame : Xamarin.Forms.ContentView, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Frame&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Frame extends Xamarin.Forms.ContentView implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Frame&gt;" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Frame" />
-  <TypeSignature Language="F#" Value="type Frame = class&#xA;    inherit ContentView&#xA;    interface IElementConfiguration&lt;Frame&gt;&#xA;    interface IPaddingElement&#xA;    interface IBorderElement" />
+  <TypeSignature Language="F#" Value="type Frame = class&#xA;    inherit ContentView&#xA;    interface IElementConfiguration&lt;Frame&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -49,28 +50,8 @@ MainPage = new ContentPage () {
           ]]></code>
       </example>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/Frame.TripleScreenShot.png" />
+        <img href="~/Xamarin.Forms/_images/Frame.TripleScreenShot.png" />
       </para>
-      <para>XAML for Xamarin.Forms supports the following properties for the <see cref="T:Xamarin.Forms.Frame" /> class:</para>
-      <list type="table">
-        <listheader>
-          <term>Property</term>
-          <description>Value</description>
-        </listheader>
-        <item>
-          <term>HasShadow</term>
-          <description>
-            <para>
-              <c>true</c> or <c>false</c>, to indicate whether to show a shadow effect where the platform supports it.</para>
-          </description>
-        </item>
-        <item>
-          <term>OutlineColor</term>
-          <description>
-            <para>A color specification, with or without the prefix, "Color". For example, "Color.Red" and "Red" both specify the color red.</para>
-          </description>
-        </item>
-      </list>
     </remarks>
   </Docs>
   <Members>
@@ -80,6 +61,7 @@ MainPage = new ContentPage () {
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Frame.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -103,6 +85,7 @@ MainPage = new ContentPage () {
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,6 +105,7 @@ MainPage = new ContentPage () {
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,6 +123,7 @@ MainPage = new ContentPage () {
       <MemberSignature Language="F#" Value="member this.CornerRadius : single with get, set" Usage="Xamarin.Forms.Frame.CornerRadius" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -158,6 +143,7 @@ MainPage = new ContentPage () {
       <MemberSignature Language="F#" Value=" staticval mutable CornerRadiusProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Frame.CornerRadiusProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -176,6 +162,7 @@ MainPage = new ContentPage () {
       <MemberSignature Language="F#" Value="member this.HasShadow : bool with get, set" Usage="Xamarin.Forms.Frame.HasShadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -202,6 +189,7 @@ MainPage = new ContentPage () {
       <MemberSignature Language="F#" Value=" staticval mutable HasShadowProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Frame.HasShadowProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -230,6 +218,7 @@ MainPage = new ContentPage () {
         <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -258,6 +247,7 @@ MainPage = new ContentPage () {
       <MemberSignature Language="F#" Value="member this.OutlineColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Frame.OutlineColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -289,6 +279,7 @@ MainPage = new ContentPage () {
       <MemberSignature Language="F#" Value=" staticval mutable OutlineColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Frame.OutlineColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

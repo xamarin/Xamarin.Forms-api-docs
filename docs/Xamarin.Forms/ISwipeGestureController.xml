@@ -1,0 +1,71 @@
+<Type Name="ISwipeGestureController" FullName="Xamarin.Forms.ISwipeGestureController">
+  <TypeSignature Language="C#" Value="public interface ISwipeGestureController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISwipeGestureController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ISwipeGestureController" />
+  <TypeSignature Language="F#" Value="type ISwipeGestureController = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>For internal use by platform renderers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DetectSwipe">
+      <MemberSignature Language="C#" Value="public bool DetectSwipe (Xamarin.Forms.View sender, Xamarin.Forms.SwipeDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool DetectSwipe(class Xamarin.Forms.View sender, valuetype Xamarin.Forms.SwipeDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ISwipeGestureController.DetectSwipe(Xamarin.Forms.View,Xamarin.Forms.SwipeDirection)" />
+      <MemberSignature Language="F#" Value="abstract member DetectSwipe : Xamarin.Forms.View * Xamarin.Forms.SwipeDirection -&gt; bool" Usage="iSwipeGestureController.DetectSwipe (sender, direction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.View" />
+        <Parameter Name="direction" Type="Xamarin.Forms.SwipeDirection" />
+      </Parameters>
+      <Docs>
+        <param name="sender">For internal use by platform renderers.</param>
+        <param name="direction">For internal use by platform renderers.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendSwipe">
+      <MemberSignature Language="C#" Value="public void SendSwipe (Xamarin.Forms.Element sender, double totalX, double totalY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendSwipe(class Xamarin.Forms.Element sender, float64 totalX, float64 totalY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ISwipeGestureController.SendSwipe(Xamarin.Forms.Element,System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="abstract member SendSwipe : Xamarin.Forms.Element * double * double -&gt; unit" Usage="iSwipeGestureController.SendSwipe (sender, totalX, totalY)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Xamarin.Forms.Element" />
+        <Parameter Name="totalX" Type="System.Double" />
+        <Parameter Name="totalY" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="sender">For internal use by platform renderers.</param>
+        <param name="totalX">For internal use by platform renderers.</param>
+        <param name="totalY">For internal use by platform renderers.</param>
+        <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

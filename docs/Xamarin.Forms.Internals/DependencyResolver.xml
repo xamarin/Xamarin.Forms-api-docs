@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type DependencyResolver = class" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains static methods that add functions to use for resolving dependencies.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,6 +25,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -33,9 +35,10 @@
         <Parameter Name="resolver" Type="System.Func&lt;System.Type,System.Object[],System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="resolver">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="resolver">A function that returns an instance of a type from an array that provides matching types, or <see langword="null" /> if the type is not supported.</param>
+        <summary>Specifies a resolution function that attempts to return an instance of a specified type.</summary>
+        <remarks>
+          <paramref name="resolver" /> must return <see langword="null" /> for types that it does not support, because a return value of <see langword="null" /> passes the type through to Xamarin.Forms so that it may attempt to resolve the type itself.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveUsing">
@@ -46,6 +49,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,9 +59,12 @@
         <Parameter Name="resolver" Type="System.Func&lt;System.Type,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="resolver">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="resolver">A function that returns an instance of a type, or <see langword="null" /> if the type is not supported.</param>
+        <summary>Specifies a resolution function that attempts to return an instance of the specified type.</summary>
+        <remarks>
+          <para>
+            <paramref name="resolver" /> must return <see langword="null" /> for types that it does not support, because a return value of <see langword="null" /> passes the type through to Xamarin.Forms so that it may attempt to resolve the type itself.</para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

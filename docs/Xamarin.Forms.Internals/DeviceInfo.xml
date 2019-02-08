@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type DeviceInfo = class&#xA;    interface INotifyPropertyChanged&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,7 +21,7 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.DeviceInfo.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -50,6 +52,7 @@
       <MemberSignature Language="F#" Value="member this.CurrentOrientation : Xamarin.Forms.Internals.DeviceOrientation with get, set" Usage="Xamarin.Forms.Internals.DeviceInfo.CurrentOrientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -70,6 +73,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,10 +95,8 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.DeviceInfo.Dispose" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="deviceInfo.Dispose " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -114,6 +116,7 @@
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="deviceInfo.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -136,6 +139,7 @@
       <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : string -&gt; unit&#xA;override this.OnPropertyChanged : string -&gt; unit" Usage="deviceInfo.OnPropertyChanged propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -164,6 +168,7 @@
       <MemberSignature Language="F#" Value="member this.PixelScreenSize : Xamarin.Forms.Size" Usage="Xamarin.Forms.Internals.DeviceInfo.PixelScreenSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -182,7 +187,11 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.DeviceInfo.PropertyChanged" />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -201,6 +210,7 @@
       <MemberSignature Language="F#" Value="member this.ScaledScreenSize : Xamarin.Forms.Size" Usage="Xamarin.Forms.Internals.DeviceInfo.ScaledScreenSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -220,6 +230,7 @@
       <MemberSignature Language="F#" Value="member this.ScalingFactor : double" Usage="Xamarin.Forms.Internals.DeviceInfo.ScalingFactor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>

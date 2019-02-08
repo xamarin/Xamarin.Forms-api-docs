@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type ActivityIndicator = class&#xA;    inherit View&#xA;    interface IElementConfiguration&lt;ActivityIndicator&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -31,28 +32,8 @@
     <remarks>
       <para>This control gives a visual clue to the user that something is happening, without information about its progress.</para>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/ActivityIndicator.TripleScreenShot.png" />
+        <img href="~/Xamarin.Forms/_images/ActivityIndicator.TripleScreenShot.png" />
       </para>
-      <para>XAML for Xamarin.Forms supports the following properties for the <see cref="T:Xamarin.Forms.ActivityIndicator" /> class:</para>
-      <list type="table">
-        <listheader>
-          <term>Property</term>
-          <description>Value</description>
-        </listheader>
-        <item>
-          <term>Color</term>
-          <description>
-            <para>A color specification, with or without the prefix, "Color". For example, "Color.Red" and "Red" both specify the color red.</para>
-          </description>
-        </item>
-        <item>
-          <term>IsRunning</term>
-          <description>
-            <para>
-              <see langword="true" /> or <see langword="false" />, to indicate whether the animation for <see cref="T:Xamarin.Forms.ActivityIndicator" /> is displayed.</para>
-          </description>
-        </item>
-      </list>
       <example>
         <para>The example below creates a red activity indicator that is animated to imply that an activity is ongoing:</para>
         <code lang="XAML"><![CDATA[<ActivityIndicator Color="Red" IsRunning="true" />]]></code>
@@ -66,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ActivityIndicator.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -98,6 +80,7 @@ var indicator = new ActivityIndicator {
       <MemberSignature Language="F#" Value="member this.Color : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.ActivityIndicator.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -124,6 +107,7 @@ var indicator = new ActivityIndicator {
       <MemberSignature Language="F#" Value=" staticval mutable ColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ActivityIndicator.ColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -149,6 +133,7 @@ var indicator = new ActivityIndicator {
       <MemberSignature Language="F#" Value="member this.IsRunning : bool with get, set" Usage="Xamarin.Forms.ActivityIndicator.IsRunning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -175,6 +160,7 @@ var indicator = new ActivityIndicator {
       <MemberSignature Language="F#" Value=" staticval mutable IsRunningProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ActivityIndicator.IsRunningProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -203,6 +189,7 @@ var indicator = new ActivityIndicator {
         <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>

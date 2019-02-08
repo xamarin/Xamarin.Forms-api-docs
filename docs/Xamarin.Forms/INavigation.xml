@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type INavigation = interface" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="F#" Value="abstract member InsertPageBefore : Xamarin.Forms.Page * Xamarin.Forms.Page -&gt; unit" Usage="iNavigation.InsertPageBefore (page, before)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -56,6 +58,7 @@
       <MemberSignature Language="F#" Value="member this.ModalStack : System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;" Usage="Xamarin.Forms.INavigation.ModalStack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -78,6 +81,7 @@
       <MemberSignature Language="F#" Value="member this.NavigationStack : System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt;" Usage="Xamarin.Forms.INavigation.NavigationStack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -100,6 +104,7 @@
       <MemberSignature Language="F#" Value="abstract member PopAsync : unit -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="iNavigation.PopAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -126,6 +131,7 @@
       <MemberSignature Language="F#" Value="abstract member PopAsync : bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="iNavigation.PopAsync animated" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -152,6 +158,7 @@
       <MemberSignature Language="F#" Value="abstract member PopModalAsync : unit -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="iNavigation.PopModalAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -169,7 +176,7 @@
         <summary>Asynchronously dismisses the most recent modally presented <see cref="T:Xamarin.Forms.Page" />.</summary>
         <returns>An awaitable Task&lt;Page&gt;, indicating the PopModalAsync completion. The Task.Result is the Page that has been popped.</returns>
         <remarks>
-          <para>The following example shows PushModal and PopModal usage:</para>
+          <para>The following example shows PushModalAsync and PopModalAsync usage:</para>
           <example>
             <code lang="csharp lang-csharp"><![CDATA[
 var modalPage = new ContentPage ();
@@ -181,7 +188,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
         ]]></code>
           </example>
           <block subset="none" type="note">
-            <para>Application developers must <see langword="await" /> the result of <see cref="M:Xamarin.Forms.INavigation.PushModal" /> and <see cref="M:Xamarin.Forms.INavigation.PopModal" />. Calling <see cref="M:System.Threading.Tasks.Task.Wait" /> may cause a deadlock if a previous call to <see cref="M:Xamarin.Forms.INavigation.PushModal" /> or <see cref="M:Xamarin.Forms.INavigation.PopModal" /> has not completed.</para>
+            <para>Application developers must <see langword="await" /> the result of <see cref="M:Xamarin.Forms.INavigation.PushModalAsync(Xamarin.Forms.Page)" /> and <see cref="M:Xamarin.Forms.INavigation.PopModalAsync" />. Calling <see cref="M:System.Threading.Tasks.Task.Wait" /> may cause a deadlock if a previous call to <see cref="M:Xamarin.Forms.INavigation.PushModalAsync(Xamarin.Forms.Page)" /> or <see cref="M:Xamarin.Forms.INavigation.PopModalAsync" /> has not completed.</para>
           </block>
         </remarks>
       </Docs>
@@ -193,6 +200,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
       <MemberSignature Language="F#" Value="abstract member PopModalAsync : bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="iNavigation.PopModalAsync animated" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -219,6 +227,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
       <MemberSignature Language="F#" Value="abstract member PopToRootAsync : unit -&gt; System.Threading.Tasks.Task" Usage="iNavigation.PopToRootAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -245,6 +254,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
       <MemberSignature Language="F#" Value="abstract member PopToRootAsync : bool -&gt; System.Threading.Tasks.Task" Usage="iNavigation.PopToRootAsync animated" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -271,6 +281,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
       <MemberSignature Language="F#" Value="abstract member PushAsync : Xamarin.Forms.Page -&gt; System.Threading.Tasks.Task" Usage="iNavigation.PushAsync page" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -292,7 +303,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
         <returns>A task that represents the asynchronous push operation.</returns>
         <remarks>
           <para>
-						The following example shows <see cref="M:Xamarin.Forms.INavigation.Push" /> and <see cref="M:Xamarin.Forms.INavigation.Pop" /> usage:
+						The following example shows <see cref="M:Xamarin.Forms.INavigation.PushAsync*" /> and <see cref="M:Xamarin.Forms.INavigation.PopAsync" /> usage:
 					</para>
           <example>
             <code lang="csharp lang-csharp"><![CDATA[
@@ -314,6 +325,7 @@ Debug.WriteLine (Object.ReferenceEquals (newPage, poppedPage)); //prints "true"
       <MemberSignature Language="F#" Value="abstract member PushAsync : Xamarin.Forms.Page * bool -&gt; System.Threading.Tasks.Task" Usage="iNavigation.PushAsync (page, animated)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -342,6 +354,7 @@ Debug.WriteLine (Object.ReferenceEquals (newPage, poppedPage)); //prints "true"
       <MemberSignature Language="F#" Value="abstract member PushModalAsync : Xamarin.Forms.Page -&gt; System.Threading.Tasks.Task" Usage="iNavigation.PushModalAsync page" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -383,6 +396,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
       <MemberSignature Language="F#" Value="abstract member PushModalAsync : Xamarin.Forms.Page * bool -&gt; System.Threading.Tasks.Task" Usage="iNavigation.PushModalAsync (page, animated)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -411,6 +425,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
       <MemberSignature Language="F#" Value="abstract member RemovePage : Xamarin.Forms.Page -&gt; unit" Usage="iNavigation.RemovePage page" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>

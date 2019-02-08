@@ -49,7 +49,7 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Maps.Distance.Equals(System.Object)" />
-      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="distance.Equals obj" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="distance.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -78,7 +78,7 @@
       <MemberSignature Language="C#" Value="public bool Equals (Xamarin.Forms.Maps.Distance other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype Xamarin.Forms.Maps.Distance other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Maps.Distance.Equals(Xamarin.Forms.Maps.Distance)" />
-      <MemberSignature Language="F#" Value="override this.Equals : Xamarin.Forms.Maps.Distance -&gt; bool" Usage="distance.Equals other" />
+      <MemberSignature Language="F#" Value="member this.Equals : Xamarin.Forms.Maps.Distance -&gt; bool" Usage="distance.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -97,9 +97,9 @@
       </Parameters>
       <Docs>
         <param name="other">The <see cref="T:Xamarin.Forms.Maps.Distance" /> being compared to <c>this</c><see cref="T:Xamarin.Forms.Maps.Distance" />.</param>
-        <summary>Whether a <see cref="T:Xamaring.Forms.Maps.Distance" /> has exactly the same values as <c>this </c><see cref="T:Xamaring.Forms.Maps.Distance" />.</summary>
+        <summary>Whether a <see cref="T:Xamarin.Forms.Maps.Distance" /> has exactly the same values as <c>this </c><see cref="T:Xamarin.Forms.Maps.Distance" />.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="other" /> has exactly the same value as <c>this</c><see cref="T:Xamaring.Forms.Maps.Distance" />.</returns>
+          <see langword="true" /> if <paramref name="other" /> has exactly the same value as <c>this</c><see cref="T:Xamarin.Forms.Maps.Distance" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +191,7 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Maps.Distance.GetHashCode" />
-      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="distance.GetHashCode " />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="distance.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>

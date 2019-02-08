@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type BindingBase = class" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="F#" Value="static member DisableCollectionSynchronization : System.Collections.IEnumerable -&gt; unit" Usage="Xamarin.Forms.BindingBase.DisableCollectionSynchronization collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -47,7 +49,7 @@
       <Docs>
         <param name="collection">The collection on which to stop synchronization.</param>
         <summary>Stops synchronization on the <paramref name="collection" />.</summary>
-        <remarks>See <see cref="M:Xamarin.Forms.BindingBase.EnableCollectionSynchronization" /> for more information on enabling and disabling synchronization of collections in multithreaded environments.</remarks>
+        <remarks>See <see cref="M:Xamarin.Forms.BindingBase.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,Xamarin.Forms.CollectionSynchronizationCallback)" /> for more information on enabling and disabling synchronization of collections in multithreaded environments.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableCollectionSynchronization">
@@ -57,6 +59,7 @@
       <MemberSignature Language="F#" Value="static member EnableCollectionSynchronization : System.Collections.IEnumerable * obj * Xamarin.Forms.CollectionSynchronizationCallback -&gt; unit" Usage="Xamarin.Forms.BindingBase.EnableCollectionSynchronization (collection, context, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -80,9 +83,29 @@
         <param name="callback">The synchronization callback.</param>
         <summary>Starts synchronization on the <paramref name="collection" /> by using <paramref name="callback" /> and <paramref name="context" />.</summary>
         <remarks>
-          <para>Application developers implement <paramref name="callback" /> and pass it to the <see cref="M:Xamarin.Forms.BindingBase.EnableCollectionSynchronization" /> method to enable correct multithreaded access to <paramref name="collection" />. After synchronization is enabled, the Xamarin.Forms framework passes an access method, <paramref name="context" />, and a <see langword="bool" /> that indicates whether write access is needed, to the application developer's implementation of <see cref="T:Xamarin.Forms.CollectionSynchronizationCallback" /> each time that the framework needs to modify the collection in a multithreaded environment. The application developer's implementation should decide, based on the <paramref name="context" /> object (which may be merely a locking object or the object on which the collection lives) and the value of the <paramref name="writeAccess" /><see langword="bool" /> parameter, whether or not to <c>lock</c> while calling <paramref name="accessMethod" />.</para>
-          <para>Because Xamarin.Forms maintains a weak reference to <paramref name="collection" />, application developers do not need to call <see cref="M:Xamarin.Forms.BindingBase.DisableCollectionSynchronization" /> to aid in garbage collection.</para>
+          <para>Application developers implement <paramref name="callback" /> and pass it to the <see cref="M:Xamarin.Forms.BindingBase.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,Xamarin.Forms.CollectionSynchronizationCallback)" /> method to enable correct multithreaded access to <paramref name="collection" />. After synchronization is enabled, the Xamarin.Forms framework passes an access method, <paramref name="context" />, and a <see langword="bool" /> that indicates whether write access is needed, to the application developer's implementation of <see cref="T:Xamarin.Forms.CollectionSynchronizationCallback" /> each time that the framework needs to modify the collection in a multithreaded environment. The application developer's implementation should decide, based on the <paramref name="context" /> object (which may be merely a locking object or the object on which the collection lives) and the value of the <paramref name="writeAccess" /><see langword="bool" /> parameter, whether or not to <c>lock</c> while calling <paramref name="accessMethod" />.</para>
+          <para>Because Xamarin.Forms maintains a weak reference to <paramref name="collection" />, application developers do not need to call <see cref="M:Xamarin.Forms.BindingBase.DisableCollectionSynchronization(System.Collections.IEnumerable)" /> to aid in garbage collection.</para>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackValue">
+      <MemberSignature Language="C#" Value="public object FallbackValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object FallbackValue" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.BindingBase.FallbackValue" />
+      <MemberSignature Language="F#" Value="member this.FallbackValue : obj with get, set" Usage="Xamarin.Forms.BindingBase.FallbackValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value to use instead of the default value for the property, if no specified value exists.</summary>
+        <value>The value to use instead of the default value for the property, if no specified value exists</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -92,6 +115,7 @@
       <MemberSignature Language="F#" Value="member this.Mode : Xamarin.Forms.BindingMode with get, set" Usage="Xamarin.Forms.BindingBase.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -117,6 +141,7 @@
       <MemberSignature Language="F#" Value="member this.StringFormat : string with get, set" Usage="Xamarin.Forms.BindingBase.StringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -138,7 +163,7 @@
           <para>
             Used for providing a display format for the binding value or compositing the value with other
             text. Implementors of <see cref="T:Xamarin.Forms.BindingBase" /> decide how the string format is utilized, but
-            all support standard <see cref="M:System.String.Format" /> conventions.
+            all support standard <see cref="M:System.String.Format*" /> conventions.
           </para>
           <para>
             <see cref="T:Xamarin.Forms.Binding" /> allows for one argument for its singular value.
@@ -155,7 +180,27 @@ label.AddBinding (new Binding (Label.TextProperty, "Price") {
 ]]></code>
           </example>
         </remarks>
-        <altmember cref="M:System.String.Format" />
+        <altmember cref="M:System.String.Format*" />
+      </Docs>
+    </Member>
+    <Member MemberName="TargetNullValue">
+      <MemberSignature Language="C#" Value="public object TargetNullValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TargetNullValue" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.BindingBase.TargetNullValue" />
+      <MemberSignature Language="F#" Value="member this.TargetNullValue : obj with get, set" Usage="Xamarin.Forms.BindingBase.TargetNullValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value to supply for a bound property when the target of the binding is <see langword="null" />.</summary>
+        <value>The value to supply for a bound property when the target of the binding is <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThrowIfApplied">
@@ -165,6 +210,7 @@ label.AddBinding (new Binding (Label.TextProperty, "Price") {
       <MemberSignature Language="F#" Value="member this.ThrowIfApplied : unit -&gt; unit" Usage="bindingBase.ThrowIfApplied " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

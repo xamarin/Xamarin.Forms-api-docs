@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type DelegateLogListener = class&#xA;    inherit LogListener" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -28,6 +29,7 @@
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Internals.DelegateLogListener : Action&lt;string, string&gt; -&gt; Xamarin.Forms.Internals.DelegateLogListener" Usage="new Xamarin.Forms.Internals.DelegateLogListener log" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -47,6 +49,7 @@
       <MemberSignature Language="F#" Value="override this.Warning : string * string -&gt; unit" Usage="delegateLogListener.Warning (category, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>

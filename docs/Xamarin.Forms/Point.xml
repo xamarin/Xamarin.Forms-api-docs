@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type Point = struct" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Point : Xamarin.Forms.Size -&gt; Xamarin.Forms.Point" Usage="new Xamarin.Forms.Point sz" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -51,7 +53,7 @@
       </Parameters>
       <Docs>
         <param name="sz">
-          <see cref="T:Xamarin.Forms.Size" /> that specifies a <see cref="T:Xamarin.Forms.Point" /> that has the coordinates (<see cref="P:Xamarin.Forms.Size.width" />, <see cref="P:Xamarin.Forms.Size.height" />).</param>
+          <see cref="T:Xamarin.Forms.Size" /> that specifies a <see cref="T:Xamarin.Forms.Point" /> that has the coordinates (<see cref="P:Xamarin.Forms.Size.Width" />, <see cref="P:Xamarin.Forms.Size.Height" />).</param>
         <summary>Creates a new <see cref="T:Xamarin.Forms.Point" /> object that has coordinates that are specified by the width and height of <paramref name="sz" />, in that order.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Point : double * double -&gt; Xamarin.Forms.Point" Usage="new Xamarin.Forms.Point (x, y)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -91,14 +94,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="y" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="x" Type="System.Double" RefType="out" />
+        <Parameter Name="y" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
         <param name="x">Variable in which to store the X component of the point.</param>
@@ -114,6 +118,7 @@
       <MemberSignature Language="F#" Value="member this.Distance : Xamarin.Forms.Point -&gt; double" Usage="point.Distance other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -140,9 +145,10 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Point.Equals(System.Object)" />
-      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="point.Equals o" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="point.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -164,7 +170,7 @@
         <returns>
           <see langword="true" /> if the X and Y values are equal to those in <paramref name="o" />. Returns <see langword="false" /> if <paramref name="o" /> is not a <see cref="T:Xamarin.Forms.Point" />.</returns>
         <remarks>
-          <para>The <see cref="P:Xamarin.Forms.Point.X" /> and <see cref="P:Xamarin.Forms.Point.Y" /> values of the <see cref="T:Xamarin.Forms.Point" /> are stored as <see langword="double" />s. Developers should be aware of the precision limits and issues that can arise when comparing floating-point values. In some circumstances, developers should consider the possibility of measuring approximate equality using the (considerably slower) <see cref="M:Xamarin.Forms.Point.Distance" /> method.</para>
+          <para>The <see cref="P:Xamarin.Forms.Point.X" /> and <see cref="P:Xamarin.Forms.Point.Y" /> values of the <see cref="T:Xamarin.Forms.Point" /> are stored as <see langword="double" />s. Developers should be aware of the precision limits and issues that can arise when comparing floating-point values. In some circumstances, developers should consider the possibility of measuring approximate equality using the (considerably slower) <see cref="M:Xamarin.Forms.Point.Distance(Xamarin.Forms.Point)" /> method.</para>
         </remarks>
       </Docs>
     </Member>
@@ -172,9 +178,10 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Point.GetHashCode" />
-      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="point.GetHashCode " />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="point.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -201,6 +208,7 @@
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="Xamarin.Forms.Point.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -227,6 +235,7 @@
       <MemberSignature Language="F#" Value="member this.Offset : double * double -&gt; Xamarin.Forms.Point" Usage="point.Offset (dx, dy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -258,6 +267,7 @@
       <MemberSignature Language="F#" Value="static member ( + ) : Xamarin.Forms.Point * Xamarin.Forms.Size -&gt; Xamarin.Forms.Point" Usage="pt + sz" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -289,6 +299,7 @@
       <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.Point * Xamarin.Forms.Point -&gt; bool" Usage="ptA = ptB" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -321,6 +332,7 @@
       <MemberSignature Language="F#" Value="static member op_Explicit : Xamarin.Forms.Point -&gt; Xamarin.Forms.Size" Usage="Xamarin.Forms.Point.op_Explicit pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -350,6 +362,7 @@
       <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.Point * Xamarin.Forms.Point -&gt; bool" Usage="Xamarin.Forms.Point.op_Inequality (ptA, ptB)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -382,6 +395,7 @@
       <MemberSignature Language="F#" Value="static member ( - ) : Xamarin.Forms.Point * Xamarin.Forms.Size -&gt; Xamarin.Forms.Point" Usage="pt - sz" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -413,6 +427,7 @@
       <MemberSignature Language="F#" Value="member this.Round : unit -&gt; Xamarin.Forms.Point" Usage="point.Round " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -436,9 +451,10 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Point.ToString" />
-      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="point.ToString " />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="point.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -465,6 +481,7 @@
       <MemberSignature Language="F#" Value="member this.X : double with get, set" Usage="Xamarin.Forms.Point.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -490,6 +507,7 @@
       <MemberSignature Language="F#" Value="member this.Y : double with get, set" Usage="Xamarin.Forms.Point.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -515,6 +533,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable Zero : Xamarin.Forms.Point" Usage="Xamarin.Forms.Point.Zero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

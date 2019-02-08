@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type Layout&lt;'T (requires 'T :&gt; View)&gt; = class&#xA;    inherit Layout&#xA;    interface IViewContainer&lt;'T (requires 'T :&gt; View)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Layout`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -88,6 +90,7 @@
         <InterfaceMember>P:Xamarin.Forms.IViewContainer`1.Children</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -131,6 +134,7 @@
       <MemberSignature Language="F#" Value="abstract member OnAdded : 'T -&gt; unit&#xA;override this.OnAdded : 'T -&gt; unit" Usage="layout.OnAdded view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -149,7 +153,7 @@
       <Docs>
         <param name="view">The view which was added.</param>
         <summary>Invoked when a child is added to the layout. Implement this method to add class handling for this event.</summary>
-        <remarks>This method is different from <see cref="M:Xamarin.Forms.Element.OnChildAdded (Xamarin.Forms.Element element)" /> in that it provides a typed child consistent with the type of the Layout&lt;T&gt;.</remarks>
+        <remarks>This method is different from <see cref="M:Xamarin.Forms.Element.OnChildAdded(Xamarin.Forms.Element)" /> in that it provides a typed child consistent with the type of the Layout&lt;T&gt;.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildAdded">
@@ -159,6 +163,7 @@
       <MemberSignature Language="F#" Value="override this.OnChildAdded : Xamarin.Forms.Element -&gt; unit" Usage="layout.OnChildAdded child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="F#" Value="override this.OnChildRemoved : Xamarin.Forms.Element -&gt; unit" Usage="layout.OnChildRemoved child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="F#" Value="abstract member OnRemoved : 'T -&gt; unit&#xA;override this.OnRemoved : 'T -&gt; unit" Usage="layout.OnRemoved view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -223,7 +230,7 @@
       <Docs>
         <param name="view">The view which was removed.</param>
         <summary>Invoked when a child is removed from the layout. Implement this method to add class handling for this event.</summary>
-        <remarks>This method is different from <see cref="M:Xamarin.Forms.Element.OnChildRemoved (Xamarin.Forms.Element element)" /> in that it provides a typed child consistent with the type of the Layout&lt;T&gt;.</remarks>
+        <remarks>This method is different from <see cref="M:Xamarin.Forms.Element.OnChildRemoved(Xamarin.Forms.Element)" /> in that it provides a typed child consistent with the type of the Layout&lt;T&gt;.</remarks>
       </Docs>
     </Member>
   </Members>

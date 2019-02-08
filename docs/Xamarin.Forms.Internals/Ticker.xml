@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type Ticker = class" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -43,6 +45,7 @@
       <MemberSignature Language="F#" Value="member this.Default : Xamarin.Forms.Internals.Ticker" Usage="Xamarin.Forms.Internals.Ticker.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -62,6 +65,7 @@
       <MemberSignature Language="F#" Value="abstract member DisableTimer : unit -&gt; unit" Usage="ticker.DisableTimer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -81,6 +85,7 @@
       <MemberSignature Language="F#" Value="abstract member EnableTimer : unit -&gt; unit" Usage="ticker.EnableTimer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -100,6 +105,7 @@
       <MemberSignature Language="F#" Value="abstract member Insert : Func&lt;int64, bool&gt; -&gt; int&#xA;override this.Insert : Func&lt;int64, bool&gt; -&gt; int" Usage="ticker.Insert timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -116,6 +122,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnSystemEnabledChanged">
+      <MemberSignature Language="C#" Value="protected void OnSystemEnabledChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnSystemEnabledChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.OnSystemEnabledChanged" />
+      <MemberSignature Language="F#" Value="member this.OnSystemEnabledChanged : unit -&gt; unit" Usage="ticker.OnSystemEnabledChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public virtual void Remove (int handle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(int32 handle) cil managed" />
@@ -123,6 +149,7 @@
       <MemberSignature Language="F#" Value="abstract member Remove : int -&gt; unit&#xA;override this.Remove : int -&gt; unit" Usage="ticker.Remove handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -138,6 +165,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendFinish">
+      <MemberSignature Language="C#" Value="protected void SendFinish ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SendFinish() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.SendFinish" />
+      <MemberSignature Language="F#" Value="member this.SendFinish : unit -&gt; unit" Usage="ticker.SendFinish " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SendSignals">
       <MemberSignature Language="C#" Value="protected void SendSignals (int timestep = -1);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SendSignals(int32 timestep) cil managed" />
@@ -145,6 +192,7 @@
       <MemberSignature Language="F#" Value="member this.SendSignals : int -&gt; unit" Usage="ticker.SendSignals timestep" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -160,6 +208,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendSignals">
+      <MemberSignature Language="C#" Value="protected void SendSignals (long step);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SendSignals(int64 step) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Ticker.SendSignals(System.Int64)" />
+      <MemberSignature Language="F#" Value="member this.SendSignals : int64 -&gt; unit" Usage="ticker.SendSignals step" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="step" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="step">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetDefault">
       <MemberSignature Language="C#" Value="public static void SetDefault (Xamarin.Forms.Internals.Ticker ticker);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDefault(class Xamarin.Forms.Internals.Ticker ticker) cil managed" />
@@ -167,6 +238,7 @@
       <MemberSignature Language="F#" Value="static member SetDefault : Xamarin.Forms.Internals.Ticker -&gt; unit" Usage="Xamarin.Forms.Internals.Ticker.SetDefault ticker" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -179,6 +251,26 @@
       <Docs>
         <param name="ticker">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemEnabled">
+      <MemberSignature Language="C#" Value="public virtual bool SystemEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SystemEnabled" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.Ticker.SystemEnabled" />
+      <MemberSignature Language="F#" Value="member this.SystemEnabled : bool" Usage="Xamarin.Forms.Internals.Ticker.SystemEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

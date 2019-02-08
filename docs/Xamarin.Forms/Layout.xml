@@ -2,9 +2,10 @@
   <TypeSignature Language="C#" Value="public abstract class Layout : Xamarin.Forms.View, Xamarin.Forms.ILayout, Xamarin.Forms.ILayoutController" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Layout extends Xamarin.Forms.View implements class Xamarin.Forms.ILayout, class Xamarin.Forms.ILayoutController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Layout" />
-  <TypeSignature Language="F#" Value="type Layout = class&#xA;    inherit View&#xA;    interface ILayout&#xA;    interface ILayoutController&#xA;    interface IPaddingElement" />
+  <TypeSignature Language="F#" Value="type Layout = class&#xA;    inherit View&#xA;    interface ILayout&#xA;    interface ILayoutController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Layout.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -67,6 +69,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,6 +90,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,12 +111,13 @@
         <InterfaceMember>P:Xamarin.Forms.ILayoutController.Children</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,6 +136,7 @@
       <MemberSignature Language="F#" Value="member this.ForceLayout : unit -&gt; unit" Usage="layout.ForceLayout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -158,6 +164,7 @@
       <MemberSignature Language="F#" Value="override this.GetSizeRequest : double * double -&gt; Xamarin.Forms.SizeRequest" Usage="layout.GetSizeRequest (widthConstraint, heightConstraint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -186,7 +193,7 @@
         <returns>A <see cref="T:Xamarin.Forms.SizeRequest" /> which contains a requested size and a minimum size.</returns>
         <remarks>
           <para>
-            Calling GetSizeRequest causes a measure pass to occur for the subtree of elements it is called on. It is ideal to only call GetSizeRequest when needed as excessive calls can negatively impact the performance of the app. Overriding GetSizeRequest should only be done if the developer wants to ignore Width/HeightRequest. More likely a subclass would wish to override <see cref="M:Xamarin.Forms.VisualElement.OnSizeRequest (double, double)" />.
+            Calling GetSizeRequest causes a measure pass to occur for the subtree of elements it is called on. It is ideal to only call GetSizeRequest when needed as excessive calls can negatively impact the performance of the app. Overriding GetSizeRequest should only be done if the developer wants to ignore Width/HeightRequest. More likely a subclass would wish to override <see cref="M:Xamarin.Forms.VisualElement.OnSizeRequest(System.Double,System.Double)" />.
             </para>
         </remarks>
         <altmember cref="M:Xamarin.Forms.OnSizeRequest (double, double)" />
@@ -199,6 +206,7 @@
       <MemberSignature Language="F#" Value="abstract member InvalidateLayout : unit -&gt; unit&#xA;override this.InvalidateLayout : unit -&gt; unit" Usage="layout.InvalidateLayout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -222,6 +230,7 @@
       <MemberSignature Language="F#" Value="member this.IsClippedToBounds : bool with get, set" Usage="Xamarin.Forms.Layout.IsClippedToBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -248,6 +257,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable IsClippedToBoundsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Layout.IsClippedToBoundsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -275,6 +285,7 @@
         <InterfaceMember>E:Xamarin.Forms.ILayout.LayoutChanged</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -301,6 +312,7 @@
       <MemberSignature Language="F#" Value="static member LayoutChildIntoBoundingRegion : Xamarin.Forms.VisualElement * Xamarin.Forms.Rectangle -&gt; unit" Usage="Xamarin.Forms.Layout.LayoutChildIntoBoundingRegion (child, region)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -320,7 +332,7 @@
       <Docs>
         <param name="child">The child element to be positioned.</param>
         <param name="region">The bounding region in which the child should be positioned.</param>
-        <summary>Positions a child element into a bounding region while respecting the child elements <see cref="P:Xamarin.Forms.VisualElement.HorizontalOptions" /> and <see cref="P:Xamarin.Forms.VisualElement.VerticalOptions" />.</summary>
+        <summary>Positions a child element into a bounding region while respecting the child elements <see cref="P:Xamarin.Forms.View.HorizontalOptions" /> and <see cref="P:Xamarin.Forms.View.VerticalOptions" />.</summary>
         <remarks>This method is called in the layout cycle after the general regions for each child have been calculated. This method will handle positioning the element relative to the bounding region given if the bounding region given is larger than the child's desired size.</remarks>
       </Docs>
     </Member>
@@ -331,6 +343,7 @@
       <MemberSignature Language="F#" Value="abstract member LayoutChildren : double * double * double * double -&gt; unit" Usage="layout.LayoutChildren (x, y, width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -365,6 +378,7 @@
       <MemberSignature Language="F#" Value="member this.LowerChild : Xamarin.Forms.View -&gt; unit" Usage="layout.LowerChild view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -393,6 +407,7 @@
       <MemberSignature Language="F#" Value="abstract member OnChildMeasureInvalidated : unit -&gt; unit&#xA;override this.OnChildMeasureInvalidated : unit -&gt; unit" Usage="layout.OnChildMeasureInvalidated " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -404,7 +419,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invoked whenever a child of the layout has emitted <see cref="E:Xamarin.Forms.VisualElement.MeaureInvalidated" />. Implement this method to add class handling for this event.</summary>
+        <summary>Invoked whenever a child of the layout has emitted <see cref="E:Xamarin.Forms.VisualElement.MeasureInvalidated" />. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,6 +430,7 @@
       <MemberSignature Language="F#" Value="member this.OnChildMeasureInvalidated : obj * EventArgs -&gt; unit" Usage="layout.OnChildMeasureInvalidated (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -434,7 +450,7 @@
       <Docs>
         <param name="sender">The child element whose preferred size changed.</param>
         <param name="e">The event data.</param>
-        <summary>Invoked whenever a child of the layout has emitted <see cref="E:Xamarin.Forms.VisualElement.MeaureInvalidated" />. Implement this method to add class handling for this event.</summary>
+        <summary>Invoked whenever a child of the layout has emitted <see cref="E:Xamarin.Forms.VisualElement.MeasureInvalidated" />. Implement this method to add class handling for this event.</summary>
         <remarks>This method has a default implementation and and application developers must call the base implementation.</remarks>
       </Docs>
     </Member>
@@ -445,6 +461,7 @@
       <MemberSignature Language="F#" Value="override this.OnSizeAllocated : double * double -&gt; unit" Usage="layout.OnSizeAllocated (width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -475,6 +492,7 @@
       <MemberSignature Language="F#" Value="member this.Padding : Xamarin.Forms.Thickness with get, set" Usage="Xamarin.Forms.Layout.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -518,6 +536,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable PaddingProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Layout.PaddingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -542,6 +561,7 @@
       <MemberSignature Language="F#" Value="member this.RaiseChild : Xamarin.Forms.View -&gt; unit" Usage="layout.RaiseChild view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -570,6 +590,7 @@
       <MemberSignature Language="F#" Value="abstract member ShouldInvalidateOnChildAdded : Xamarin.Forms.View -&gt; bool&#xA;override this.ShouldInvalidateOnChildAdded : Xamarin.Forms.View -&gt; bool" Usage="layout.ShouldInvalidateOnChildAdded child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -596,6 +617,7 @@
       <MemberSignature Language="F#" Value="abstract member ShouldInvalidateOnChildRemoved : Xamarin.Forms.View -&gt; bool&#xA;override this.ShouldInvalidateOnChildRemoved : Xamarin.Forms.View -&gt; bool" Usage="layout.ShouldInvalidateOnChildRemoved child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -622,6 +644,7 @@
       <MemberSignature Language="F#" Value="member this.UpdateChildrenLayout : unit -&gt; unit" Usage="layout.UpdateChildrenLayout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

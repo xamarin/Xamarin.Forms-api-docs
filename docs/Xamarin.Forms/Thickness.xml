@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type Thickness = struct" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Thickness : double -&gt; Xamarin.Forms.Thickness" Usage="new Xamarin.Forms.Thickness uniformSize" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -62,6 +64,7 @@
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Thickness : double * double -&gt; Xamarin.Forms.Thickness" Usage="new Xamarin.Forms.Thickness (horizontalSize, verticalSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -89,6 +92,7 @@
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Thickness : double * double * double * double -&gt; Xamarin.Forms.Thickness" Usage="new Xamarin.Forms.Thickness (left, top, right, bottom)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -120,6 +124,7 @@
       <MemberSignature Language="F#" Value="member this.Bottom : double with get, set" Usage="Xamarin.Forms.Thickness.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -146,16 +151,17 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="top" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="right" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="bottom" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="left" Type="System.Double" RefType="out" />
+        <Parameter Name="top" Type="System.Double" RefType="out" />
+        <Parameter Name="right" Type="System.Double" RefType="out" />
+        <Parameter Name="bottom" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
         <param name="left">Variable in which to store the left thickness of thickness object.</param>
@@ -170,9 +176,10 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Thickness.Equals(System.Object)" />
-      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="thickness.Equals obj" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="thickness.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -200,9 +207,10 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Thickness.GetHashCode" />
-      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="thickness.GetHashCode " />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="thickness.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -229,6 +237,7 @@
       <MemberSignature Language="F#" Value="member this.HorizontalThickness : double" Usage="Xamarin.Forms.Thickness.HorizontalThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -254,6 +263,7 @@
       <MemberSignature Language="F#" Value="member this.Left : double with get, set" Usage="Xamarin.Forms.Thickness.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -279,6 +289,7 @@
       <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.Thickness * Xamarin.Forms.Thickness -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -311,6 +322,7 @@
       <MemberSignature Language="F#" Value="static member op_Implicit : double -&gt; Xamarin.Forms.Thickness" Usage="Xamarin.Forms.Thickness.op_Implicit uniformSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -342,6 +354,7 @@
       <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.Size -&gt; Xamarin.Forms.Thickness" Usage="Xamarin.Forms.Thickness.op_Implicit size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -373,6 +386,7 @@
       <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.Thickness * Xamarin.Forms.Thickness -&gt; bool" Usage="Xamarin.Forms.Thickness.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -405,6 +419,7 @@
       <MemberSignature Language="F#" Value="member this.Right : double with get, set" Usage="Xamarin.Forms.Thickness.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -430,6 +445,7 @@
       <MemberSignature Language="F#" Value="member this.Top : double with get, set" Usage="Xamarin.Forms.Thickness.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -455,6 +471,7 @@
       <MemberSignature Language="F#" Value="member this.VerticalThickness : double" Usage="Xamarin.Forms.Thickness.VerticalThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

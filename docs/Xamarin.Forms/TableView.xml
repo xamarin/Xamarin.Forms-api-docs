@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type TableView = class&#xA;    inherit View&#xA;    interface ITableViewController&#xA;    interface IElementConfiguration&lt;TableView&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -35,7 +36,7 @@
   <Docs>
     <summary>A <see cref="T:Xamarin.Forms.View" /> that holds rows of <see cref="T:Xamarin.Forms.Cell" /> elements.</summary>
     <remarks>
-      <para>A <see cref="T:Xamarin.Forms.TableView" /> has a <see cref="T:Xamarin.Forms.TableRoot" /> as its <see cref="P:Xamarin.Forms.TableView.Root" /> property. The <see cref="T:Xamarin.Forms.TableView.TableRoot" /> is a type of <see cref="T:Xamarin.Forms.TableSection" />. </para>
+      <para>A <see cref="T:Xamarin.Forms.TableView" /> has a <see cref="T:Xamarin.Forms.TableRoot" /> as its <see cref="P:Xamarin.Forms.TableView.Root" /> property. The <see cref="T:Xamarin.Forms.TableRoot" /> is a type of <see cref="T:Xamarin.Forms.TableSection" />. </para>
       <para>The following example shows a basic table with two sections.</para>
       <example>
         <code lang="csharp lang-csharp"><![CDATA[
@@ -77,7 +78,7 @@ public class App : Application
           ]]></code>
       </example>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/TableView.TripleScreenShot.png" />
+        <img href="~/Xamarin.Forms/_images/TableView.TripleScreenShot.png" />
       </para>
     </remarks>
   </Docs>
@@ -88,6 +89,7 @@ public class App : Application
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableView.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -110,6 +112,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="new Xamarin.Forms.TableView : Xamarin.Forms.TableRoot -&gt; Xamarin.Forms.TableView" Usage="new Xamarin.Forms.TableView root" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -135,6 +138,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.HasUnevenRows : bool with get, set" Usage="Xamarin.Forms.TableView.HasUnevenRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -165,6 +169,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable HasUnevenRowsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.TableView.HasUnevenRowsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -189,6 +194,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.Intent : Xamarin.Forms.TableIntent with get, set" Usage="Xamarin.Forms.TableView.Intent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -214,12 +220,13 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.Model : Xamarin.Forms.Internals.TableModel with get, set" Usage="Xamarin.Forms.TableView.Model" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -241,12 +248,13 @@ public class App : Application
         <InterfaceMember>E:Xamarin.Forms.ITableViewController.ModelChanged</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -267,6 +275,7 @@ public class App : Application
         <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -295,6 +304,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="tableView.OnBindingContextChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -320,6 +330,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="abstract member OnModelChanged : unit -&gt; unit&#xA;override this.OnModelChanged : unit -&gt; unit" Usage="tableView.OnModelChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -345,6 +356,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="override this.OnSizeRequest : double * double -&gt; Xamarin.Forms.SizeRequest" Usage="tableView.OnSizeRequest (widthConstraint, heightConstraint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -378,6 +390,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.Root : Xamarin.Forms.TableRoot with get, set" Usage="Xamarin.Forms.TableView.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -403,6 +416,7 @@ public class App : Application
       <MemberSignature Language="F#" Value="member this.RowHeight : int with get, set" Usage="Xamarin.Forms.TableView.RowHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -428,6 +442,7 @@ public class App : Application
       <MemberSignature Language="F#" Value=" staticval mutable RowHeightProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.TableView.RowHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -449,12 +464,13 @@ public class App : Application
       <MemberSignature Language="C#" Value="Xamarin.Forms.ITableModel Xamarin.Forms.ITableViewController.Model { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ITableModel Xamarin.Forms.ITableViewController.Model" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TableView.Xamarin#Forms#ITableViewController#Model" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.TableView.Xamarin.Forms.ITableViewController.Model" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.ITableViewController.Model" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.ITableViewController.Model</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>

@@ -1,8 +1,8 @@
 <Type Name="SimpleValueTargetProvider" FullName="Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider">
-  <TypeSignature Language="C#" Value="public class SimpleValueTargetProvider" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimpleValueTargetProvider extends System.Object implements class Xamarin.Forms.Xaml.IProvideValueTarget" />
+  <TypeSignature Language="C#" Value="public class SimpleValueTargetProvider : Xamarin.Forms.Xaml.IReferenceProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimpleValueTargetProvider extends System.Object implements class Xamarin.Forms.Xaml.IProvideValueTarget, class Xamarin.Forms.Xaml.IReferenceProvider" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider" />
-  <TypeSignature Language="F#" Value="type SimpleValueTargetProvider = class&#xA;    interface IProvideParentValues&#xA;    interface IProvideValueTarget" />
+  <TypeSignature Language="F#" Value="type SimpleValueTargetProvider = class&#xA;    interface IProvideValueTarget&#xA;    interface IReferenceProvider" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -10,7 +10,11 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.Xaml.IReferenceProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>For internal use by the Xamarin.Forms platform.</summary>
     <remarks>To be added.</remarks>
@@ -61,11 +65,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FindByName">
+      <MemberSignature Language="C#" Value="public object FindByName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object FindByName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.FindByName(System.String)" />
+      <MemberSignature Language="F#" Value="abstract member FindByName : string -&gt; obj&#xA;override this.FindByName : string -&gt; obj" Usage="simpleValueTargetProvider.FindByName name" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Xaml.IReferenceProvider.FindByName(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>For internal use by the XAML infrastructure.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject">
       <MemberSignature Language="C#" Value="object Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin#Forms#Xaml#IProvideValueTarget#TargetObject" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject</InterfaceMember>
@@ -87,7 +117,7 @@
       <MemberSignature Language="C#" Value="object Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin#Forms#Xaml#IProvideValueTarget#TargetProperty" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty</InterfaceMember>

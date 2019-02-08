@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type ExportEffectAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,13 +14,13 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
+      <AttributeName>System.AttributeUsage</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Attribute that identifies a <see cref="T:Xamarin.Forms.Effect" /> with a unique identifier that can be used with <see cref="M:Xamarin.Forms.Effect.Resolve" /> to locate an effect.</summary>
+    <summary>Attribute that identifies a <see cref="T:Xamarin.Forms.Effect" /> with a unique identifier that can be used with <see cref="M:Xamarin.Forms.Effect.Resolve(System.String)" /> to locate an effect.</summary>
     <remarks>
-      <para>Developers must supply a name that is unique over the scope of the value that was supplied to <see cref="T:Xamarin.Forms.ResolutionGroupNameAttribute" />. The <see cref="T:Xamarin.Forms.Effect.Resolve" /> method takes a string that is the concatenation of the the resolution group name that was provided to <see cref="T:Xamarin.Forms.ResolutionGroupNameAttribute" />, '<c>.</c>', and the name that was supplied to <see cref="T:Xamarin.Forms.ExportEffectAttribute" />, and returns an effect that will have the type <paramref name="effectType" />.</para>
+      <para>Developers must supply a name that is unique over the scope of the value that was supplied to <see cref="T:Xamarin.Forms.ResolutionGroupNameAttribute" />. The <see cref="M:Xamarin.Forms.Effect.Resolve(System.String)" /> method takes a string that is the concatenation of the the resolution group name that was provided to <see cref="T:Xamarin.Forms.ResolutionGroupNameAttribute" />, '<c>.</c>', and the name that was supplied to <see cref="T:Xamarin.Forms.ExportEffectAttribute" />, and returns an effect that will have the type <paramref name="effectType" />.</para>
       <example>
         <para>For example, with the declarations:</para>
         <code lang="csharp lang-csharp"><![CDATA[
@@ -41,6 +42,7 @@ button.Effects.Add (Effect.Resolve ("com.YourCompany.ShadowEffect"));]]></code>
       <MemberSignature Language="F#" Value="new Xamarin.Forms.ExportEffectAttribute : Type * string -&gt; Xamarin.Forms.ExportEffectAttribute" Usage="new Xamarin.Forms.ExportEffectAttribute (effectType, uniqueName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -53,7 +55,7 @@ button.Effects.Add (Effect.Resolve ("com.YourCompany.ShadowEffect"));]]></code>
         <param name="uniqueName">A unique name for the <see cref="T:Xamarin.Forms.Effect" />.</param>
         <summary>Creates a new <see cref="T:Xamarin.Forms.ExportEffectAttribute" />.</summary>
         <remarks>
-          <para>Developers must supply a <paramref name="uniqueName" /> that is unique over the scope of the value that was supplied to <see cref="T:Xamarin.Forms.ResolutionGroupNameAttribute" />. The <see cref="T:Xamarin.Forms.Effect.Resolve" /> method takes a string that is the concatenation of the the resolution group name that was provided to <see cref="T:Xamarin.Forms.ResolutionGroupNameAttribute" />, '<c>.</c>', and the name that was supplied to <see cref="T:Xamarin.Forms.ExportEffectAttribute" />, and returns an effect that will have the type <paramref name="effectType" />.</para>
+          <para>Developers must supply a <paramref name="uniqueName" /> that is unique over the scope of the value that was supplied to <see cref="T:Xamarin.Forms.ResolutionGroupNameAttribute" />. The <see cref="M:Xamarin.Forms.Effect.Resolve(System.String)" /> method takes a string that is the concatenation of the the resolution group name that was provided to <see cref="T:Xamarin.Forms.ResolutionGroupNameAttribute" />, '<c>.</c>', and the name that was supplied to <see cref="T:Xamarin.Forms.ExportEffectAttribute" />, and returns an effect that will have the type <paramref name="effectType" />.</para>
           <example>
             <para>For example, with the declarations:</para>
             <code lang="csharp lang-csharp"><![CDATA[

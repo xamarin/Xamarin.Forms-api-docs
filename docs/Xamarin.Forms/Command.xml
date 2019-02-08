@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type Command = class&#xA;    interface ICommand" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@ var button = new Button {
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Command : Action -&gt; Xamarin.Forms.Command" Usage="new Xamarin.Forms.Command execute" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -84,6 +86,7 @@ var button = new Button {
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Command : Action&lt;obj&gt; -&gt; Xamarin.Forms.Command" Usage="new Xamarin.Forms.Command execute" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -109,6 +112,7 @@ var button = new Button {
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Command : Action * Func&lt;bool&gt; -&gt; Xamarin.Forms.Command" Usage="new Xamarin.Forms.Command (execute, canExecute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -124,9 +128,9 @@ var button = new Button {
       </Parameters>
       <Docs>
         <param name="execute">An Action to execute when the Command is executed.</param>
-        <param name="canExecute">A <see cref="T:System.Func&lt;bool&gt;" /> indicating if the Command can be executed.</param>
+        <param name="canExecute">A <see cref="T:System.Func`1" /> indicating if the Command can be executed.</param>
         <summary>Initializes a new instance of the Command class.</summary>
-        <remarks>Whenever the value returned by canExecute has changed, a call to <see cref="M:Xamarin.Forms.Core.Command.ChangeCanExecute" /> is required to trigger <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" />.</remarks>
+        <remarks>Whenever the value returned by canExecute has changed, a call to <see cref="M:Xamarin.Forms.Command.ChangeCanExecute" /> is required to trigger <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -136,6 +140,7 @@ var button = new Button {
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Command : Action&lt;obj&gt; * Func&lt;obj, bool&gt; -&gt; Xamarin.Forms.Command" Usage="new Xamarin.Forms.Command (execute, canExecute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -151,9 +156,9 @@ var button = new Button {
       </Parameters>
       <Docs>
         <param name="execute">An Action&lt;object&gt; to execute when the Command is executed.</param>
-        <param name="canExecute">A <see cref="T:System.Func&lt;object,bool&gt;" /> indicating if the Command can be executed.</param>
+        <param name="canExecute">A <see cref="T:System.Func`2" /> indicating if the Command can be executed.</param>
         <summary>Initializes a new instance of the Command class.</summary>
-        <remarks>Whenever the value returned by canExecute has changed, a call to <see cref="M:Xamarin.Forms.Core.Command.ChangeCanExecute" /> is required to trigger <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" />.</remarks>
+        <remarks>Whenever the value returned by canExecute has changed, a call to <see cref="M:Xamarin.Forms.Command.ChangeCanExecute" /> is required to trigger <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanExecute">
@@ -162,7 +167,11 @@ var button = new Button {
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Command.CanExecute(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member CanExecute : obj -&gt; bool&#xA;override this.CanExecute : obj -&gt; bool" Usage="command.CanExecute parameter" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Input.ICommand.CanExecute(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -195,7 +204,11 @@ var button = new Button {
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Command.CanExecuteChanged" />
       <MemberSignature Language="F#" Value="member this.CanExecuteChanged : EventHandler " Usage="member this.CanExecuteChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Windows.Input.ICommand.CanExecuteChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -220,6 +233,7 @@ var button = new Button {
       <MemberSignature Language="F#" Value="member this.ChangeCanExecute : unit -&gt; unit" Usage="command.ChangeCanExecute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -244,7 +258,11 @@ var button = new Button {
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Command.Execute(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member Execute : obj -&gt; unit&#xA;override this.Execute : obj -&gt; unit" Usage="command.Execute parameter" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Input.ICommand.Execute(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

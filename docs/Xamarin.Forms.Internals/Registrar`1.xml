@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type Registrar&lt;'Registrable (requires 'Registrable : null)&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -20,7 +21,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -45,12 +47,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetHandler&lt;TOut&gt;">
-      <MemberSignature Language="C#" Value="public TOut GetHandler&lt;TOut&gt; (Type type) where TOut : TRegistrable;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TOut GetHandler&lt;(!TRegistrable) TOut&gt;(class System.Type type) cil managed" />
+      <MemberSignature Language="C#" Value="public TOut GetHandler&lt;TOut&gt; (Type type) where TOut : class, TRegistrable;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TOut GetHandler&lt;class (!TRegistrable) TOut&gt;(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar`1.GetHandler``1(System.Type)" />
       <MemberSignature Language="F#" Value="member this.GetHandler : Type -&gt; 'Out" Usage="registrar.GetHandler type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -76,12 +79,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetHandler&lt;TOut&gt;">
-      <MemberSignature Language="C#" Value="public TOut GetHandler&lt;TOut&gt; (Type type, params object[] args) where TOut : TRegistrable;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TOut GetHandler&lt;(!TRegistrable) TOut&gt;(class System.Type type, object[] args) cil managed" />
+      <MemberSignature Language="C#" Value="public TOut GetHandler&lt;TOut&gt; (Type type, params object[] args) where TOut : class, TRegistrable;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TOut GetHandler&lt;class (!TRegistrable) TOut&gt;(class System.Type type, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar`1.GetHandler``1(System.Type,System.Object[])" />
       <MemberSignature Language="F#" Value="member this.GetHandler : Type * obj[] -&gt; 'Out" Usage="registrar.GetHandler (type, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -115,12 +119,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetHandlerForObject&lt;TOut&gt;">
-      <MemberSignature Language="C#" Value="public TOut GetHandlerForObject&lt;TOut&gt; (object obj) where TOut : TRegistrable;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TOut GetHandlerForObject&lt;(!TRegistrable) TOut&gt;(object obj) cil managed" />
+      <MemberSignature Language="C#" Value="public TOut GetHandlerForObject&lt;TOut&gt; (object obj) where TOut : class, TRegistrable;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TOut GetHandlerForObject&lt;class (!TRegistrable) TOut&gt;(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar`1.GetHandlerForObject``1(System.Object)" />
       <MemberSignature Language="F#" Value="member this.GetHandlerForObject : obj -&gt; 'Out" Usage="registrar.GetHandlerForObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -146,13 +151,14 @@
       </Docs>
     </Member>
     <Member MemberName="GetHandlerForObject&lt;TOut&gt;">
-      <MemberSignature Language="C#" Value="public TOut GetHandlerForObject&lt;TOut&gt; (object obj, params object[] args) where TOut : TRegistrable;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TOut GetHandlerForObject&lt;(!TRegistrable) TOut&gt;(object obj, object[] args) cil managed" />
+      <MemberSignature Language="C#" Value="public TOut GetHandlerForObject&lt;TOut&gt; (object obj, params object[] args) where TOut : class, TRegistrable;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TOut GetHandlerForObject&lt;class (!TRegistrable) TOut&gt;(object obj, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar`1.GetHandlerForObject``1(System.Object,System.Object[])" />
       <MemberSignature Language="F#" Value="member this.GetHandlerForObject : obj * obj[] -&gt; 'Out" Usage="registrar.GetHandlerForObject (obj, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,6 +197,7 @@
       <MemberSignature Language="F#" Value="member this.GetHandlerType : Type -&gt; Type" Usage="registrar.GetHandlerType viewType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -214,6 +221,7 @@
       <MemberSignature Language="F#" Value="member this.GetHandlerTypeForObject : obj -&gt; Type" Usage="registrar.GetHandlerTypeForObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -237,6 +245,7 @@
       <MemberSignature Language="F#" Value="member this.Register : Type * Type -&gt; unit" Usage="registrar.Register (tview, trender)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>

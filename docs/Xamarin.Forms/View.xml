@@ -1,10 +1,11 @@
 <Type Name="View" FullName="Xamarin.Forms.View">
-  <TypeSignature Language="C#" Value="public class View : Xamarin.Forms.VisualElement, Xamarin.Forms.IViewController" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit View extends Xamarin.Forms.VisualElement implements class Xamarin.Forms.IElementController, class Xamarin.Forms.IViewController, class Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="C#" Value="public class View : Xamarin.Forms.VisualElement, Xamarin.Forms.Internals.IGestureController, Xamarin.Forms.IViewController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit View extends Xamarin.Forms.VisualElement implements class Xamarin.Forms.IElementController, class Xamarin.Forms.Internals.IGestureController, class Xamarin.Forms.IViewController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.View" />
-  <TypeSignature Language="F#" Value="type View = class&#xA;    inherit VisualElement&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
+  <TypeSignature Language="F#" Value="type View = class&#xA;    inherit VisualElement&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IGestureController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -17,6 +18,9 @@
     <BaseTypeName>Xamarin.Forms.VisualElement</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.Internals.IGestureController</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
     </Interface>
@@ -34,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.View.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -49,6 +54,26 @@
         <remarks>It is unlikely that an application developer would want to create a new View instance on their own.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GestureController">
+      <MemberSignature Language="C#" Value="protected internal Xamarin.Forms.Internals.IGestureController GestureController { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Internals.IGestureController GestureController" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.View.GestureController" />
+      <MemberSignature Language="F#" Value="member this.GestureController : Xamarin.Forms.Internals.IGestureController" Usage="Xamarin.Forms.View.GestureController" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Internals.IGestureController</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the gesture controller for the view.</summary>
+        <value>The gesture controller for the view.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GestureRecognizers">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.IGestureRecognizer&gt; GestureRecognizers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.IGestureRecognizer&gt; GestureRecognizers" />
@@ -56,6 +81,7 @@
       <MemberSignature Language="F#" Value="member this.GestureRecognizers : System.Collections.Generic.IList&lt;Xamarin.Forms.IGestureRecognizer&gt;" Usage="Xamarin.Forms.View.GestureRecognizers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -91,6 +117,33 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetChildElements">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt; GetChildElements (Xamarin.Forms.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.GestureElement&gt; GetChildElements(valuetype Xamarin.Forms.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.View.GetChildElements(Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="abstract member GetChildElements : Xamarin.Forms.Point -&gt; System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;&#xA;override this.GetChildElements : Xamarin.Forms.Point -&gt; System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;" Usage="view.GetChildElements point" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IGestureController.GetChildElements(Xamarin.Forms.Point)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">The point under which to search for child elements.</param>
+        <summary>Returns the child elements that are visually beneath the specified <paramref name="point" />.</summary>
+        <returns>The child elements that are visually beneath the specified <paramref name="point" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HorizontalOptions">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.LayoutOptions HorizontalOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.LayoutOptions HorizontalOptions" />
@@ -98,6 +151,7 @@
       <MemberSignature Language="F#" Value="member this.HorizontalOptions : Xamarin.Forms.LayoutOptions with get, set" Usage="Xamarin.Forms.View.HorizontalOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -152,6 +206,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable HorizontalOptionsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.View.HorizontalOptionsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -176,6 +231,7 @@
       <MemberSignature Language="F#" Value="member this.Margin : Xamarin.Forms.Thickness with get, set" Usage="Xamarin.Forms.View.Margin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -195,6 +251,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable MarginProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.View.MarginProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -213,6 +270,7 @@
       <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="view.OnBindingContextChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -240,6 +298,7 @@
       <MemberSignature Language="F#" Value="member this.VerticalOptions : Xamarin.Forms.LayoutOptions with get, set" Usage="Xamarin.Forms.View.VerticalOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -295,6 +354,7 @@
       <MemberSignature Language="F#" Value=" staticval mutable VerticalOptionsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.View.VerticalOptionsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -309,6 +369,29 @@
       </ReturnValue>
       <Docs>
         <summary>Identifies the VerticalOptions bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.Internals.IGestureController.CompositeGestureRecognizers">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IList&lt;Xamarin.Forms.IGestureRecognizer&gt; Xamarin.Forms.Internals.IGestureController.CompositeGestureRecognizers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.IGestureRecognizer&gt; Xamarin.Forms.Internals.IGestureController.CompositeGestureRecognizers" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.View.Xamarin#Forms#Internals#IGestureController#CompositeGestureRecognizers" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.IGestureController.CompositeGestureRecognizers" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.IGestureController.CompositeGestureRecognizers</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.IGestureRecognizer&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>For internal use by the Xamarin.Forms platform.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

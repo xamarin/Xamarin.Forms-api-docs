@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type ToolbarItem = class&#xA;    inherit MenuItem" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     <summary>An item in a toolbar or displayed on a <see cref="T:Xamarin.Forms.Page" />.</summary>
     <remarks>
       <para>Any changes made to the properties of the toolbar item after it has been added will be ignored.</para>
-      <block type="note">Windows Phone ApplicationBarButtons and MenuItems always display an associated text. Therefore, when developing for Windows Phone, application devs should provide a value for the <see cref="P:Xamarin.Forms.ToolbarItem.Text" /> property. Otherwise, the file name of the icon image will be dixplayed as the text of the <see cref="T:Xamarin.Forms.ToolbarItem" />. (For example, the user might see "menu.png" in the user interface.)</block>
+      <block type="note">Windows Phone ApplicationBarButtons and MenuItems always display an associated text. Therefore, when developing for Windows Phone, application devs should provide a value for the <see cref="P:Xamarin.Forms.MenuItem.Text" /> property. Otherwise, the file name of the icon image will be dixplayed as the text of the <see cref="T:Xamarin.Forms.ToolbarItem" />. (For example, the user might see "menu.png" in the user interface.)</block>
     </remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ToolbarItem.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -54,6 +56,7 @@
       <MemberSignature Language="F#" Value="new Xamarin.Forms.ToolbarItem : string * string * Action * Xamarin.Forms.ToolbarItemOrder * int -&gt; Xamarin.Forms.ToolbarItem" Usage="new Xamarin.Forms.ToolbarItem (name, icon, activated, order, priority)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -87,6 +90,7 @@
       <MemberSignature Language="F#" Value="member this.Activated : EventHandler " Usage="member this.Activated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -116,6 +120,7 @@
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Xamarin.Forms.ToolbarItem.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -146,6 +151,7 @@
       <MemberSignature Language="F#" Value="member this.Order : Xamarin.Forms.ToolbarItemOrder with get, set" Usage="Xamarin.Forms.ToolbarItem.Order" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -171,6 +177,7 @@
       <MemberSignature Language="F#" Value="member this.Priority : int with get, set" Usage="Xamarin.Forms.ToolbarItem.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

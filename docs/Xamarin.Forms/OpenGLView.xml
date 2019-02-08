@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type OpenGLView = class&#xA;    inherit View&#xA;    interface IOpenGlViewController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;OpenGLView&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -89,7 +90,7 @@ namespace opengl
           ]]></code>
       </example>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/OpenGL.Example.png" />
+        <img href="~/Xamarin.Forms/_images/OpenGLView.Example.png" />
       </para>
     </remarks>
   </Docs>
@@ -100,6 +101,7 @@ namespace opengl
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.OpenGLView.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -122,6 +124,7 @@ namespace opengl
       <MemberSignature Language="F#" Value="member this.Display : unit -&gt; unit" Usage="openGLView.Display " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -150,12 +153,13 @@ namespace opengl
         <InterfaceMember>E:Xamarin.Forms.IOpenGlViewController.DisplayRequested</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -173,6 +177,7 @@ namespace opengl
       <MemberSignature Language="F#" Value="member this.HasRenderLoop : bool with get, set" Usage="Xamarin.Forms.OpenGLView.HasRenderLoop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -198,6 +203,7 @@ namespace opengl
       <MemberSignature Language="F#" Value=" staticval mutable HasRenderLoopProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.OpenGLView.HasRenderLoopProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -225,6 +231,7 @@ namespace opengl
         <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -253,6 +260,7 @@ namespace opengl
       <MemberSignature Language="F#" Value="member this.OnDisplay : Action&lt;Xamarin.Forms.Rectangle&gt; with get, set" Usage="Xamarin.Forms.OpenGLView.OnDisplay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>

@@ -1,10 +1,11 @@
 <Type Name="Span" FullName="Xamarin.Forms.Span">
-  <TypeSignature Language="C#" Value="public sealed class Span : Xamarin.Forms.Element, Xamarin.Forms.Internals.IFontElement" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Span extends Xamarin.Forms.Element implements class Xamarin.Forms.Internals.IFontElement" />
+  <TypeSignature Language="C#" Value="public sealed class Span : Xamarin.Forms.GestureElement, Xamarin.Forms.IDecorableTextElement, Xamarin.Forms.Internals.IFontElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Span extends Xamarin.Forms.GestureElement implements class Xamarin.Forms.IDecorableTextElement, class Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Span" />
-  <TypeSignature Language="F#" Value="type Span = class&#xA;    inherit Element&#xA;    interface IFontElement&#xA;    interface ITextElement" />
+  <TypeSignature Language="F#" Value="type Span = class&#xA;    inherit GestureElement&#xA;    interface IFontElement&#xA;    interface IDecorableTextElement" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -14,8 +15,12 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="xamarin-forms">Xamarin.Forms.Element</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="xamarin-forms">Xamarin.Forms.GestureElement</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IDecorableTextElement</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.Internals.IFontElement</InterfaceName>
     </Interface>
@@ -27,7 +32,7 @@
   </Attributes>
   <Docs>
     <summary>Represents a section of a <see cref="T:Xamarin.Forms.FormattedString" />.</summary>
-    <remarks>To be added.</remarks>
+    <remarks><para>Bindings to Span properties are OneTime by default.</para></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Span.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -56,6 +62,7 @@
       <MemberSignature Language="F#" Value="member this.BackgroundColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Span.BackgroundColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -80,13 +87,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="T:Xamarin.Forms.Span.BackgroundColor" /> property.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Span.BackgroundColor" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,6 +105,7 @@
       <MemberSignature Language="F#" Value="member this.Font : Xamarin.Forms.Font with get, set" Usage="Xamarin.Forms.Span.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -125,6 +134,7 @@
       <MemberSignature Language="F#" Value="member this.FontAttributes : Xamarin.Forms.FontAttributes with get, set" Usage="Xamarin.Forms.Span.FontAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -148,13 +158,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="T:Xamarin.Forms.Span.FontAttributes" /> property.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Span.FontAttributes" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,6 +176,7 @@
       <MemberSignature Language="F#" Value="member this.FontFamily : string with get, set" Usage="Xamarin.Forms.Span.FontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -188,13 +200,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="T:Xamarin.Forms.Span.FontFamily" /> property.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Span.FontFamily" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,13 +219,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="T:Xamarin.Forms.Span.Font" /> property.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Span.Font" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,6 +237,7 @@
       <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="Xamarin.Forms.Span.FontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -251,13 +266,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="T:Xamarin.Forms.Span.FontSize" /> property.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Span.FontSize" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,6 +284,7 @@
       <MemberSignature Language="F#" Value="member this.ForegroundColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Span.ForegroundColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -292,6 +309,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -303,7 +321,65 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="T:Xamarin.Forms.Span.ForegroundColor" /> property.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Span.ForegroundColor" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeight">
+      <MemberSignature Language="C#" Value="public double LineHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LineHeight" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Span.LineHeight" />
+      <MemberSignature Language="F#" Value="member this.LineHeight : double with get, set" Usage="Xamarin.Forms.Span.LineHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the multiplier to apply to the default line height when displaying text.</summary>
+        <value>The multiplier to apply to the default line height when displaying text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty LineHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty LineHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Span.LineHeightProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable LineHeightProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Span.LineHeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Span.LineHeight" /> bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingContextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingContextChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Span.OnBindingContextChanged" />
+      <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="span.OnBindingContextChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Override this method to execute an action when the BindingContext changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,6 +391,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -334,13 +411,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="T:Xamarin.Forms.Span.Style" /> property.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Span.Style" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,6 +429,7 @@
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Xamarin.Forms.Span.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -375,6 +454,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -394,13 +474,54 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="T:Xamarin.Forms.Span.TextColor" /> property.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Span.TextColor" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextDecorations">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.TextDecorations TextDecorations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.TextDecorations TextDecorations" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Span.TextDecorations" />
+      <MemberSignature Language="F#" Value="member this.TextDecorations : Xamarin.Forms.TextDecorations with get, set" Usage="Xamarin.Forms.Span.TextDecorations" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IDecorableTextElement.TextDecorations</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.TextDecorations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref='T:Xamarin.Forms.TextDecorations' /> applied to this span.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextDecorationsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TextDecorationsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TextDecorationsProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Span.TextDecorationsProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextDecorationsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Span.TextDecorationsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref='T:Xamarin.Forms.BindableProperty' /> associated with the <see cref='P:Xamarin.Forms.Span.TextDecorations' /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -412,13 +533,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="T:Xamarin.Forms.Span.Text" /> property.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Span.Text" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,6 +553,7 @@
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -453,6 +576,7 @@
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -479,6 +603,7 @@
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -505,6 +630,7 @@
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged(System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -531,6 +657,7 @@
         <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged(System.Double,System.Double)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>

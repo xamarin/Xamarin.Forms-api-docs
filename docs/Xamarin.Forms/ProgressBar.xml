@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type ProgressBar = class&#xA;    inherit View&#xA;    interface IElementConfiguration&lt;ProgressBar&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -45,21 +46,8 @@ Debug.WriteLine ("Animation completed");
 ]]></code>
       </example>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/ProgressBar.TripleScreenShot.png" />
+        <img href="~/Xamarin.Forms/_images/ProgressBar.TripleScreenShot.png" />
       </para>
-      <para>XAML for Xamarin.Forms supports the following property for the <see cref="T:Xamarin.Forms.ProgressBar" /> class:</para>
-      <list type="table">
-        <listheader>
-          <term>Property</term>
-          <description>Value</description>
-        </listheader>
-        <item>
-          <term>Progress</term>
-          <description>
-            <para>A decimal value between 0 and 1, inclusive, that specifies the fraction of the bar that is colored.</para>
-          </description>
-        </item>
-      </list>
     </remarks>
   </Docs>
   <Members>
@@ -69,6 +57,7 @@ Debug.WriteLine ("Animation completed");
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ProgressBar.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -95,6 +84,7 @@ Debug.WriteLine ("Animation completed");
         <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -123,6 +113,7 @@ Debug.WriteLine ("Animation completed");
       <MemberSignature Language="F#" Value="member this.Progress : double with get, set" Usage="Xamarin.Forms.ProgressBar.Progress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -149,6 +140,7 @@ Debug.WriteLine ("Animation completed");
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,6 +160,7 @@ Debug.WriteLine ("Animation completed");
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,6 +178,7 @@ Debug.WriteLine ("Animation completed");
       <MemberSignature Language="F#" Value=" staticval mutable ProgressProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ProgressBar.ProgressProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -210,6 +204,7 @@ Debug.WriteLine ("Animation completed");
       <MemberSignature Language="F#" Value="member this.ProgressTo : double * uint32 * Xamarin.Forms.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="progressBar.ProgressTo (value, length, easing)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -235,6 +230,26 @@ Debug.WriteLine ("Animation completed");
         <returns>A Task&lt;bool&gt; you can await on.</returns>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabStopDefaultValueCreator">
+      <MemberSignature Language="C#" Value="protected override bool TabStopDefaultValueCreator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TabStopDefaultValueCreator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ProgressBar.TabStopDefaultValueCreator" />
+      <MemberSignature Language="F#" Value="override this.TabStopDefaultValueCreator : unit -&gt; bool" Usage="progressBar.TabStopDefaultValueCreator " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

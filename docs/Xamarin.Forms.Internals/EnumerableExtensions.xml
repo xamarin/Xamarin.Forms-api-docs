@@ -5,6 +5,7 @@
   <TypeSignature Language="F#" Value="type EnumerableExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -28,6 +29,7 @@
       <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'T&gt; * Action&lt;'T&gt; -&gt; unit" Usage="Xamarin.Forms.Internals.EnumerableExtensions.ForEach (enumeration, action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -49,6 +51,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetChildGesturesFor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetChildGesturesFor&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.GestureElement&gt; elements, Func&lt;T,bool&gt; predicate = null) where T : Xamarin.Forms.GestureRecognizer;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetChildGesturesFor&lt;(class Xamarin.Forms.GestureRecognizer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Xamarin.Forms.GestureElement&gt; elements, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.EnumerableExtensions.GetChildGesturesFor``1(System.Collections.Generic.IEnumerable{Xamarin.Forms.GestureElement},System.Func{``0,System.Boolean})" />
+      <MemberSignature Language="F#" Value="static member GetChildGesturesFor : seq&lt;Xamarin.Forms.GestureElement&gt; * Func&lt;'T, bool (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; -&gt; seq&lt;'T (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)" Usage="Xamarin.Forms.Internals.EnumerableExtensions.GetChildGesturesFor (elements, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;GetChildGesturesFor&gt;d__0`1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.GestureRecognizer</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.GestureElement&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="elements">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetGesturesFor&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetGesturesFor&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.IGestureRecognizer&gt; gestures, Func&lt;T,bool&gt; predicate = null) where T : Xamarin.Forms.GestureRecognizer;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetGesturesFor&lt;(class Xamarin.Forms.GestureRecognizer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Xamarin.Forms.IGestureRecognizer&gt; gestures, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
@@ -56,12 +97,13 @@
       <MemberSignature Language="F#" Value="static member GetGesturesFor : seq&lt;Xamarin.Forms.IGestureRecognizer&gt; * Func&lt;'T, bool (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; -&gt; seq&lt;'T (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)" Usage="Xamarin.Forms.Internals.EnumerableExtensions.GetGesturesFor (gestures, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;GetGesturesFor&gt;d__0`1))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;GetGesturesFor&gt;d__1`1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -87,6 +129,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GroupToDictionary&lt;TSource,TKey&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;TKey,System.Collections.Generic.List&lt;TSource&gt;&gt; GroupToDictionary&lt;TSource,TKey&gt; (this System.Collections.Generic.IEnumerable&lt;TSource&gt; enumeration, Func&lt;TSource,TKey&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;!!TKey, class System.Collections.Generic.List`1&lt;!!TSource&gt;&gt; GroupToDictionary&lt;TSource, TKey&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; enumeration, class System.Func`2&lt;!!TSource, !!TKey&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.EnumerableExtensions.GroupToDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
+      <MemberSignature Language="F#" Value="static member GroupToDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; -&gt; System.Collections.Generic.IDictionary&lt;'Key, System.Collections.Generic.List&lt;'Source&gt;&gt;" Usage="Xamarin.Forms.Internals.EnumerableExtensions.GroupToDictionary (enumeration, func)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;TKey,System.Collections.Generic.List&lt;TSource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="enumeration" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
+        <Parameter Name="func" Type="System.Func&lt;TSource,TKey&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="enumeration">To be added.</param>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IndexOf&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static int IndexOf&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; enumerable, Func&lt;T,bool&gt; predicate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 IndexOf&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; enumerable, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
@@ -94,6 +167,7 @@
       <MemberSignature Language="F#" Value="static member IndexOf : seq&lt;'T&gt; * Func&lt;'T, bool&gt; -&gt; int" Usage="Xamarin.Forms.Internals.EnumerableExtensions.IndexOf (enumerable, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -123,6 +197,7 @@
       <MemberSignature Language="F#" Value="static member IndexOf : seq&lt;'T&gt; * 'T -&gt; int" Usage="Xamarin.Forms.Internals.EnumerableExtensions.IndexOf (enumerable, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
@@ -152,12 +227,13 @@
       <MemberSignature Language="F#" Value="static member Prepend : seq&lt;'T&gt; * 'T -&gt; seq&lt;'T&gt;" Usage="Xamarin.Forms.Internals.EnumerableExtensions.Prepend (enumerable, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;Prepend&gt;d__5`1))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Internals.EnumerableExtensions/&lt;Prepend&gt;d__7`1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
