@@ -44,7 +44,7 @@
           The following example shows one way to add elements to a layout.
           </para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
   void UpdateItems (Layout<View> layout, IEnumerable newItems)
   {
     layout.Children.Clear ();
@@ -111,7 +111,7 @@
               The following shows the creation of a layout, setting a property, and adding the children in the object initializer.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   var stack = new StackLayout {
     Spacing = 20,
     Children = {

@@ -41,7 +41,7 @@
       </para>
       <para>The following example shows a basic use:</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
@@ -520,7 +520,7 @@ class ListViewDemoPage : ContentPage
         </remarks>
         <example>
           <para>This example shows an alphabetized list of people, grouped by first initial with the display binding set.</para>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
     class Person
     {
         public string FullName
@@ -536,7 +536,7 @@ class ListViewDemoPage : ContentPage
         }
     }
                         ]]></code>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
     class Group : ObservableCollection<Person>
     {
         public Group (string firstInitial)
@@ -551,7 +551,7 @@ class ListViewDemoPage : ContentPage
         }
     }
                         ]]></code>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
     ListView CreateListView()
     {
         var listView = new ListView {
@@ -681,7 +681,7 @@ class ListViewDemoPage : ContentPage
         </remarks>
         <example>
           <para>This example shows an alphabetized list of people, grouped by first initial with the short name binding set.</para>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
 class Person
 {
   public string FullName
@@ -697,7 +697,7 @@ class Person
   }
 }
           ]]></code>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
 class Group : ObservableCollection<Person>
 {
   public Group (string firstInitial)
@@ -712,7 +712,7 @@ class Group : ObservableCollection<Person>
   }
 }
           ]]></code>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
 ListView CreateListView()
 {
   var listView = new ListView {

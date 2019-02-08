@@ -836,7 +836,7 @@
               The following example shows a handler on a button which will then set IsEnabled to false on another button.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   public partial class ButtonDisableExample {
     void BuildButtons ()
     {
@@ -905,7 +905,7 @@
               The following example shows conditionally setting a background color based on the focus state.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   void UpdateBackground ()
   {
     if (myElement.IsFocused)
@@ -1077,7 +1077,7 @@
               The following example shows a stack where the middle element is toggled when a button is activated.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   partial class LabelToggle {
     Label label;
 
@@ -1243,7 +1243,7 @@
               The following example sets the MinimumHeightRequest to enable an image to shrink below it's normal size.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   void Build (string veryLongString)
   {
     var label = new Label {Text = veryLongString};
@@ -1313,7 +1313,7 @@
               The following example sets the MinimumWidthRequest to enable an image to shrink below it's normal size.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   void Build (string veryLongString)
   {
     var label = new Label {Text = veryLongString};
@@ -1410,7 +1410,7 @@
           <para>
             The following example navigates to a new page created in the callback of a buttons <see cref="E:Xamarin.Forms.VisualElement.Activated" /> event.</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   partial class NavigationTest {
     void BuildContent 
     {
@@ -1701,7 +1701,7 @@
               The following example sets the opacity of a layout to 0.5 and the opacity of one of its children to 0.5, making the child 25% opaque.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   StackLayout stack = new StackLayout ();
   Button button1 = new Button {Text="A Button"};
   Button button2 = new Button {Text="Another Button"};

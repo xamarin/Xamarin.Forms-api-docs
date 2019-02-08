@@ -28,7 +28,7 @@
               The following example creates a new Command and set it to a button.
               </para>
       <example language="C#">
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 var command = new Command<string> (s => Debug.WriteLine ("Command executed: {0}", s));
 var button = new Button {
   Text = "Hit me to execute the command",

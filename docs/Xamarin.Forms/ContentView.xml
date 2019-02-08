@@ -42,7 +42,7 @@
           The following example shows how to construct a new ContentView with a Label inside.
           </para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 MainPage = new ContentPage () {
     // Accomodate iPhone status bar.
     Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5),

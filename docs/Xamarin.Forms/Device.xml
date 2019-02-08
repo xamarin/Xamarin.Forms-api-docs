@@ -70,7 +70,7 @@
           <para>This example shows how to set the Text of Label on the main thread, e.g. in response to an async event.
           </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 Device.BeginInvokeOnMainThread (() => {
   label.Text = "Async operation completed";
 });
@@ -429,7 +429,7 @@ Device.BeginInvokeOnMainThread (() => {
           <para>This example shows how to change the font of a Label on a single OS.
           </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 Device.OnPlatform (iOS: () => label.Font = Font.OfSize ("HelveticaNeue-UltraLight", NamedSize.Large));
           ]]></code>
           </example>
@@ -479,7 +479,7 @@ Device.OnPlatform (iOS: () => label.Font = Font.OfSize ("HelveticaNeue-UltraLigh
           <para>This example shows how to use different heights for a Button on different OS.
           </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 button.HeightRequest = Device.OnPlatform (20,30,30);
           ]]></code>
           </example>

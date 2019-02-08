@@ -37,7 +37,7 @@
       <para>App developers can create tabbed pages in either of two ways. First, application developers can assign a list of objects of a single class, or its subclasses, to the <see cref="P:Xamarin.Forms.MultiPage.ItemsSource" /> property and assign a <see cref="T:Xamarin.Forms.DataTemplate" /> to the <see cref="P:Xamarin.Forms.MultiPage{T}.ItemTemplate" /> property to return pages for objects of the least derived type. Second, app developers can add a succession of <see cref="T:Xamarin.Forms.Page" /> objects to the <see cref="P:Xamarin.Forms.MultiPage{T}.Children" /> property. Both methods are shown in the code examples below.</para>
       <example>
         <para>The following example code, adapted for brevity from the FormsGallery sample that can be found on the <format type="text/html"><a href="http://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, shows how to display data of a specific type by assigning a <see cref="T:Xamarin.Forms.DataTemplate" /> to the <see cref="P:Xamarin.Forms.MultiPage{T}.ItemTemplate" /> property. Note how <c>NamedColorPage</c> gets its color by binding its <see cref="F:Xamarin.Forms.BoxView.ColorProperty" /> field.</para>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 using System;
 using Xamarin.Forms;
 
@@ -110,7 +110,7 @@ namespace MinimalTabbed
       </example>
       <example>
         <para>The example below creates a tabbed view with two <see cref="T:Xamarin.Forms.ContentPage" /> instances.</para>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 class TabbedPageDemoPage2 : TabbedPage
 {
     public TabbedPageDemoPage2 ()

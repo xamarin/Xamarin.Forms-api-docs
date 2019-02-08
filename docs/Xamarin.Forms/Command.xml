@@ -28,7 +28,7 @@
               The following example creates a new Command and set it to a button.
               </para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 var command = new Command (() => Debug.WriteLine ("Command executed"));
 var button = new Button {
   Text = "Hit me to execute the command",
@@ -40,7 +40,7 @@ var button = new Button {
               More useful scenarios takes a parameter
               </para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 var command = new Command (o => Debug.WriteLine ("Command executed: {0}", o));
 var button = new Button {
   Text = "Hit me to execute the command",

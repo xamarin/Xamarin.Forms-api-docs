@@ -79,7 +79,7 @@
               This example creates a tap gesture recognizer and associates it with an image. When the image is double tapped, it will become semi-transparent.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   var image = new Image {Source = "image.png"};
   var gestureRecognizer = new TapGestureRecognizer {
     TappedCallback = o => image.Opacity = 0.5,
@@ -121,7 +121,7 @@
               This example creates four views and adds them to a stack, each laying out in a different manner.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   private View CreateButtons ()
   {
     var button1 = new Button {Text = "LeftAligned", HorizontalOptions=LayoutOptions.Start};
@@ -263,7 +263,7 @@
               This example creates four views and adds them to a stack, each laying out in a different manner.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   private View CreateButtons ()
   {
     var button1 = new Button {Text = "TopAligned", VerticalOptions=LayoutOptions.Start};

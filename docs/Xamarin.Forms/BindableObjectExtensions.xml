@@ -59,7 +59,7 @@
         <remarks>
           <para>The following example shows how to use the extension method to set a binding.</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 var label = new Label ();
 label.SetBinding (Label.TextProperty, "Name");
 label.BindingContext = new {Name = "John Doe", Company = "Xamarin"};
@@ -117,7 +117,7 @@ Debug.WriteLine (label.Text); //prints "John Doe"
           <para>This extension method uses Expression instead of path to creates and sets bindings. Using Expressions is more refactoring friendly.</para>
           <para>This following example illustrates the setting of a binding using the extension method.</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 public class PersonViewModel
 {
   public string Name { get; set; }

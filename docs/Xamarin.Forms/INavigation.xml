@@ -171,7 +171,7 @@
         <remarks>
           <para>The following example shows PushModal and PopModal usage:</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 var modalPage = new ContentPage ();
 await Navigation.PushModalAsync (modalPage);
 Debug.WriteLine ("The modal page is now on screen");
@@ -295,7 +295,7 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
 						The following example shows <see cref="M:Xamarin.Forms.INavigation.Push" /> and <see cref="M:Xamarin.Forms.INavigation.Pop" /> usage:
 					</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 var newPage = new ContentPage ();
 await Navigation.PushAsync (newPage);
 Debug.WriteLine ("the new page is now showing");
@@ -364,7 +364,7 @@ Debug.WriteLine (Object.ReferenceEquals (newPage, poppedPage)); //prints "true"
         <remarks>
           <para>The following example shows PushModalAsync and PopModalAsync usage:</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 var modalPage = new ContentPage ();
 await Navigation.PushModalAsync (modalPage);
 Debug.WriteLine ("The modal page is now on screen");

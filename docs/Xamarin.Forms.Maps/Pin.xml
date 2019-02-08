@@ -21,7 +21,7 @@
     <remarks>
       <para> A <see cref="T:Xamarin.Forms.Maps.Pin" /> must have its <see cref="P:Xamarin.Forms.Maps.Pin.Label" /> property assigned before it is added to a map. If not, a <see cref="T:System.ArgumentException" /> is thrown.</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 public static Page GetMapPage ()
 {	
 	var map = new Map (MapSpan.FromCenterAndRadius (new Position (37, -122), Distance.FromMiles (10)));

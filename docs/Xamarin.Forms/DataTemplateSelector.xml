@@ -18,7 +18,7 @@
       <block subset="none" type="note">Developers should note the following items:        <list type="bullet"><item><term>OnSelectTemplate must not return another DataTemplateSelector, and
         </term></item><item><term>The Android platform is limited to 20 templates per list view.</term></item></list></block>
       <example>The following example shows a basic use:
-<code lang="c#"><![CDATA[class MyDataTemplateSelector : DataTemplateSelector
+<code lang="csharp lang-csharp"><![CDATA[class MyDataTemplateSelector : DataTemplateSelector
 {
     public MyDataTemplateSelector ()
     {

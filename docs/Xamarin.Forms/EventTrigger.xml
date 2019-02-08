@@ -26,7 +26,7 @@
       <example>
         <para>The example below shows how developers can use an event trigger to respond to events and update the value of a control property.</para>
         <para>With the <c>ColorTriggerAction</c> class below defined in the <c>TriggerDemo</c> namespace:</para>
-        <code lang="C#"><![CDATA[public class ColorTriggerAction : TriggerAction<Entry>
+        <code lang="csharp lang-csharp"><![CDATA[public class ColorTriggerAction : TriggerAction<Entry>
 {
   protected override void Invoke(Entry sender)
   {

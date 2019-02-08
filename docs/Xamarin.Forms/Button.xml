@@ -93,12 +93,12 @@ void IncrementLabel()
    modelUpdateCount++;
 }]]></code>
         <para>Second, the developer initializes the command with the method (or action):</para>
-        <code lang="C#"><![CDATA[public ViewModelDemo()
+        <code lang="csharp lang-csharp"><![CDATA[public ViewModelDemo()
 {
    IncrementLabelCommand = new Command(IncrementLabel);
 }]]></code>
         <para>Finally, the developer must sets the binding context in the constructor for the main page to that of the view model where the property is implemented:</para>
-        <code lang="C#"><![CDATA[public MainPage()
+        <code lang="csharp lang-csharp"><![CDATA[public MainPage()
 {
     InitializeComponent();
     BindingContext = new ViewModelDemo();

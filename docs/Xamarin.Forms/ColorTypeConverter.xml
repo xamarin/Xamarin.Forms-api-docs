@@ -27,7 +27,7 @@
     <remarks>
       <para>The following example shows some variations of <see cref="T:Xamarin.Forms.ColorTypeConverter" />:</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 var converter = new ColorTypeConverter ();
 Assert.True (converter.CanConvertFrom (typeof(string)));
 Assert.AreEqual (Color.Blue, converter.ConvertFrom ("Color.Blue"));
