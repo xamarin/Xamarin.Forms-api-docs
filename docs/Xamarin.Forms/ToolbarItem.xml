@@ -50,10 +50,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolbarItem (string text, string icon, Action activated, Xamarin.Forms.ToolbarItemOrder order = Xamarin.Forms.ToolbarItemOrder.Default, int priority = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string icon, class System.Action activated, valuetype Xamarin.Forms.ToolbarItemOrder order, int32 priority) cil managed" />
+      <MemberSignature Language="C#" Value="public ToolbarItem (string name, string icon, Action activated, Xamarin.Forms.ToolbarItemOrder order = Xamarin.Forms.ToolbarItemOrder.Default, int priority = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string icon, class System.Action activated, valuetype Xamarin.Forms.ToolbarItemOrder order, int32 priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ToolbarItem.#ctor(System.String,System.String,System.Action,Xamarin.Forms.ToolbarItemOrder,System.Int32)" />
-      <MemberSignature Language="F#" Value="new Xamarin.Forms.ToolbarItem : string * string * Action * Xamarin.Forms.ToolbarItemOrder * int -&gt; Xamarin.Forms.ToolbarItem" Usage="new Xamarin.Forms.ToolbarItem (text, icon, activated, order, priority)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.ToolbarItem : string * string * Action * Xamarin.Forms.ToolbarItemOrder * int -&gt; Xamarin.Forms.ToolbarItem" Usage="new Xamarin.Forms.ToolbarItem (name, icon, activated, order, priority)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -67,14 +67,14 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
         <Parameter Name="icon" Type="System.String" />
         <Parameter Name="activated" Type="System.Action" />
         <Parameter Name="order" Type="Xamarin.Forms.ToolbarItemOrder" />
         <Parameter Name="priority" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
+        <param name="name">To be added.</param>
         <param name="icon">The icon for the toolbar item.</param>
         <param name="activated">The action to perform when the toolbar item is activated.</param>
         <param name="order">The order for the toolbar item.</param>

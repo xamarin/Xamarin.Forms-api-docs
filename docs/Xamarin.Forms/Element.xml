@@ -733,6 +733,65 @@
         <remarks>Convenient way of accessing the nearest ancestor of an element which is actually represented on screen visually. If this element is a visual element, its bounds are relative to its ParentView.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Platform">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Internals.IPlatform Platform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Internals.IPlatform Platform" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Element.Platform" />
+      <MemberSignature Language="F#" Value="member this.Platform : Xamarin.Forms.Internals.IPlatform with get, set" Usage="Xamarin.Forms.Element.Platform" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IElementController.Platform</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("IPlatform is obsolete as of 3.5.0. Do not use this property.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Internals.IPlatform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformSet">
+      <MemberSignature Language="C#" Value="public event EventHandler PlatformSet;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PlatformSet" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Element.PlatformSet" />
+      <MemberSignature Language="F#" Value="member this.PlatformSet : EventHandler " Usage="member this.PlatformSet : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IElementController.PlatformSet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("PlatformSet is obsolete as of 3.5.0. Do not use this event.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RealParent">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Element RealParent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Element RealParent" />

@@ -114,13 +114,19 @@
           <AttributeName>System.Reflection.AssemblyFileVersion("2.0.0.0")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Xamarin.Forms.Material.iOS")</AttributeName>
-        </Attribute>
-        <Attribute>
           <AttributeName>Xamarin.Forms.XmlnsDefinition("http://xamarin.com/schemas/2014/forms", "Xamarin.Forms")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>Xamarin.Forms.XmlnsDefinition("http://xamarin.com/schemas/2014/forms/design", "Xamarin.Forms")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Xamarin.Forms.Material")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.XmlnsPrefix("http://xamarin.com/schemas/2014/forms", "xf")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.XmlnsPrefix("http://xamarin.com/schemas/2014/forms/design", "d")</AttributeName>
         </Attribute>
       </Attributes>
     </Assembly>
@@ -128,9 +134,6 @@
       <Attributes>
         <Attribute>
           <AttributeName>Microsoft.Windows.Design.Metadata.ProvideMetadata(typeof(Xamarin.Forms.Maps.RegisterMetadata))</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("Xamarin Inc.")</AttributeName>
@@ -161,6 +164,9 @@
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.7", FrameworkDisplayName=".NET Framework 4.7")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.Default | System.Diagnostics.DebuggableAttribute+DebuggingModes.DisableOptimizations | System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints | System.Diagnostics.DebuggableAttribute+DebuggingModes.EnableEditAndContinue)</AttributeName>
         </Attribute>
       </Attributes>
     </Assembly>
@@ -204,9 +210,6 @@
           <AttributeName>System.Reflection.AssemblyCompany("Xamarin.Forms.Pages")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
-        </Attribute>
-        <Attribute>
           <AttributeName>System.Reflection.AssemblyFileVersion("1.0.0.0")</AttributeName>
         </Attribute>
         <Attribute>
@@ -230,15 +233,15 @@
         <Attribute>
           <AttributeName>System.Diagnostics.Debuggable</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("Debug")</AttributeName>
+        </Attribute>
       </Attributes>
     </Assembly>
     <Assembly Name="Xamarin.Forms.Platform" Version="1.0.0.0">
       <Attributes>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("Xamarin.Forms.Platform")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyFileVersion("1.0.0.0")</AttributeName>
@@ -266,6 +269,9 @@
         </Attribute>
         <Attribute>
           <AttributeName>System.Diagnostics.Debuggable</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("Debug")</AttributeName>
         </Attribute>
       </Attributes>
     </Assembly>
@@ -476,6 +482,7 @@
       <Type Name="Font" Kind="Structure" />
       <Type Name="FontAttributes" Kind="Enumeration" />
       <Type Name="FontAttributesConverter" Kind="Class" />
+      <Type Name="FontImageSource" Kind="Class" />
       <Type Name="FontSizeConverter" Kind="Class" />
       <Type Name="FontTypeConverter" Kind="Class" />
       <Type Name="FormattedString" Kind="Class" />
@@ -535,9 +542,9 @@
       <Type Name="IMultiPageController`1" DisplayName="IMultiPageController&lt;T&gt;" Kind="Interface" />
       <Type Name="INativeElementView" Kind="Interface" />
       <Type Name="INavigation" Kind="Interface" />
-      <Type Name="INavigationMenuController" Kind="Interface" />
       <Type Name="INavigationPageController" Kind="Interface" />
       <Type Name="InputView" Kind="Class" />
+      <Type Name="InvalidNavigationException" Kind="Class" />
       <Type Name="IOpenGlViewController" Kind="Interface" />
       <Type Name="IPageContainer`1" DisplayName="IPageContainer&lt;T&gt;" Kind="Interface" />
       <Type Name="IPageController" Kind="Interface" />
@@ -555,6 +562,7 @@
       <Type Name="IShellController" Kind="Interface" />
       <Type Name="IShellItemController" Kind="Interface" />
       <Type Name="IShellSectionController" Kind="Interface" />
+      <Type Name="ISliderController" Kind="Interface" />
       <Type Name="IStreamImageSource" Kind="Interface" />
       <Type Name="ISwipeGestureController" Kind="Interface" />
       <Type Name="ITableModel" Kind="Interface" />
@@ -562,6 +570,7 @@
       <Type Name="ITemplatedItemsList`1" DisplayName="ITemplatedItemsList&lt;TItem&gt;" Kind="Interface" />
       <Type Name="ITemplatedItemsListScrollToRequestedEventArgs" Kind="Interface" />
       <Type Name="ITemplatedItemsView`1" DisplayName="ITemplatedItemsView&lt;TItem&gt;" Kind="Interface" />
+      <Type Name="ItemSizingStrategy" Kind="Enumeration" />
       <Type Name="ItemsLayout" Kind="Class" />
       <Type Name="ItemsLayoutOrientation" Kind="Enumeration" />
       <Type Name="ItemsView" Kind="Class" />
@@ -742,13 +751,13 @@
       <Type Name="ViewCell" Kind="Class" />
       <Type Name="ViewExtensions" Kind="Class" />
       <Type Name="ViewState" Kind="Enumeration" />
+      <Type Name="VisualAttribute" Kind="Class" />
       <Type Name="VisualElement" Kind="Class" />
       <Type Name="VisualElement+FocusRequestArgs" Kind="Class" />
       <Type Name="VisualElement+VisibilityConverter" Kind="Class" />
       <Type Name="VisualMarker" Kind="Class" />
-      <Type Name="VisualRendererMarker" Kind="Class" />
-      <Type Name="VisualRendererMarker+Default" Kind="Class" />
-      <Type Name="VisualRendererMarker+Material" Kind="Class" />
+      <Type Name="VisualMarker+DefaultVisual" Kind="Class" />
+      <Type Name="VisualMarker+MaterialVisual" Kind="Class" />
       <Type Name="VisualState" Kind="Class" />
       <Type Name="VisualStateGroup" Kind="Class" />
       <Type Name="VisualStateGroupList" Kind="Class" />
@@ -764,6 +773,7 @@
       <Type Name="WebViewSource" Kind="Class" />
       <Type Name="WebViewSourceTypeConverter" Kind="Class" />
       <Type Name="XmlnsDefinitionAttribute" Kind="Class" />
+      <Type Name="XmlnsPrefixAttribute" Kind="Class" />
     </Namespace>
     <Namespace Name="Xamarin.Forms.Internals">
       <Type Name="ActionSheetArguments" Kind="Class" />
@@ -795,6 +805,7 @@
       <Type Name="INavigationProxy" Kind="Interface" />
       <Type Name="InvalidationTrigger" Kind="Enumeration" />
       <Type Name="IPerformanceProvider" Kind="Interface" />
+      <Type Name="IPlatform" Kind="Interface" />
       <Type Name="IPlatformServices" Kind="Interface" />
       <Type Name="IResourceDictionary" Kind="Interface" />
       <Type Name="ISpatialElement" Kind="Interface" />
@@ -804,7 +815,6 @@
       <Type Name="LogListener" Kind="Class" />
       <Type Name="NameScope" Kind="Class" />
       <Type Name="NativeBindingHelpers" Kind="Class" />
-      <Type Name="NavigationMenu" Kind="Class" />
       <Type Name="NavigationModel" Kind="Class" />
       <Type Name="NavigationProxy" Kind="Class" />
       <Type Name="NavigationRequestedEventArgs" Kind="Class" />
@@ -899,7 +909,9 @@
     <Namespace Name="Xamarin.Forms.PlatformConfiguration.iOSSpecific">
       <Type Name="Application" Kind="Class" />
       <Type Name="BlurEffectStyle" Kind="Enumeration" />
+      <Type Name="Cell" Kind="Class" />
       <Type Name="Entry" Kind="Class" />
+      <Type Name="GroupHeaderStyle" Kind="Enumeration" />
       <Type Name="LargeTitleDisplayMode" Kind="Enumeration" />
       <Type Name="ListView" Kind="Class" />
       <Type Name="NavigationPage" Kind="Class" />
@@ -2138,6 +2150,29 @@
           <summary>For internal use by the Xamarin.Forms platform.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.Internals.NumericExtensions" Member="M:Xamarin.Forms.Internals.NumericExtensions.Clamp(System.Int32,System.Int32,System.Int32)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="System.Reflection.Assembly" />
+      </Targets>
+      <Member MemberName="GetExportedTypes">
+        <MemberSignature Language="C#" Value="public static Type[] GetExportedTypes (this System.Reflection.Assembly assembly);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type[] GetExportedTypes(class System.Reflection.Assembly assembly) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.ReflectionExtensions.GetExportedTypes(System.Reflection.Assembly)" />
+        <MemberSignature Language="F#" Value="static member GetExportedTypes : System.Reflection.Assembly -&gt; Type[]" Usage="Xamarin.Forms.Internals.ReflectionExtensions.GetExportedTypes assembly" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Type[]</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="assembly" Type="System.Reflection.Assembly" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="assembly">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.Internals.ReflectionExtensions" Member="M:Xamarin.Forms.Internals.ReflectionExtensions.GetExportedTypes(System.Reflection.Assembly)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -3762,6 +3797,54 @@
       <Targets>
         <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
       </Targets>
+      <Member MemberName="DefaultBackgroundColor">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color DefaultBackgroundColor (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Cell&gt; config);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color DefaultBackgroundColor(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Cell&gt; config) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Cell.DefaultBackgroundColor(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Cell})" />
+        <MemberSignature Language="F#" Value="static member DefaultBackgroundColor : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Cell&gt; -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Cell.DefaultBackgroundColor config" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.Color</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Cell&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Cell" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Cell.DefaultBackgroundColor(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Cell})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="SetDefaultBackgroundColor">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Cell&gt; SetDefaultBackgroundColor (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Cell&gt; config, Xamarin.Forms.Color value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Cell&gt; SetDefaultBackgroundColor(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Cell&gt; config, valuetype Xamarin.Forms.Color value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Cell.SetDefaultBackgroundColor(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Cell},Xamarin.Forms.Color)" />
+        <MemberSignature Language="F#" Value="static member SetDefaultBackgroundColor : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Cell&gt; * Xamarin.Forms.Color -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Cell&gt;" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Cell.SetDefaultBackgroundColor (config, value)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Cell&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Cell&gt;" RefType="this" />
+          <Parameter Name="value" Type="Xamarin.Forms.Color" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Cell" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Cell.SetDefaultBackgroundColor(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Cell},Xamarin.Forms.Color)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
       <Member MemberName="AdjustsFontSizeToFitWidth">
         <MemberSignature Language="C#" Value="public static bool AdjustsFontSizeToFitWidth (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Entry&gt; config);" />
         <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AdjustsFontSizeToFitWidth(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Entry&gt; config) cil managed" />
@@ -3904,6 +3987,29 @@
       <Targets>
         <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
       </Targets>
+      <Member MemberName="GetGroupHeaderStyle">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle GetGroupHeaderStyle (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; config);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle GetGroupHeaderStyle(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; config) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GetGroupHeaderStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView})" />
+        <MemberSignature Language="F#" Value="static member GetGroupHeaderStyle : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt; -&gt; Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GetGroupHeaderStyle config" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GetGroupHeaderStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
       <Member MemberName="GetSeparatorStyle">
         <MemberSignature Language="C#" Value="public static Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle GetSeparatorStyle (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; config);" />
         <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle GetSeparatorStyle(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; config) cil managed" />
@@ -3921,6 +4027,79 @@
           <summary>Returns the separator style for a list view.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GetSeparatorStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="RowAnimationsEnabled">
+        <MemberSignature Language="C#" Value="public static bool RowAnimationsEnabled (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; config);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RowAnimationsEnabled(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; config) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.RowAnimationsEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView})" />
+        <MemberSignature Language="F#" Value="static member RowAnimationsEnabled : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.RowAnimationsEnabled config" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.RowAnimationsEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="SetGroupHeaderStyle">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; SetGroupHeaderStyle (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; config, Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; SetGroupHeaderStyle(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; config, valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetGroupHeaderStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView},Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle)" />
+        <MemberSignature Language="F#" Value="static member SetGroupHeaderStyle : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt; * Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt;" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetGroupHeaderStyle (config, value)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;" RefType="this" />
+          <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetGroupHeaderStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView},Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="SetRowAnimationsEnabled">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; SetRowAnimationsEnabled (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; config, bool value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; SetRowAnimationsEnabled(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; config, bool value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetRowAnimationsEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView},System.Boolean)" />
+        <MemberSignature Language="F#" Value="static member SetRowAnimationsEnabled : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt; * bool -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt;" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetRowAnimationsEnabled (config, value)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;" RefType="this" />
+          <Parameter Name="value" Type="System.Boolean" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView" Member="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetRowAnimationsEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView},System.Boolean)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>

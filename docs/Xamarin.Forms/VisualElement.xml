@@ -2478,41 +2478,6 @@
         <remarks>Unfocused event is raised whenever the VisualElement loses focus. This event is not bubbled through the Xamarin.Forms stack and is received directly from the native control. This event is emitted by the IsFocusedProperty setter.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="VerifyVisualFlagEnabled">
-      <MemberSignature Language="C#" Value="public static void VerifyVisualFlagEnabled (string constructorHint = null, string memberName = &quot;&quot;);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VerifyVisualFlagEnabled(string constructorHint, string memberName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.VerifyVisualFlagEnabled(System.String,System.String)" />
-      <MemberSignature Language="F#" Value="static member VerifyVisualFlagEnabled : string * string -&gt; unit" Usage="Xamarin.Forms.VisualElement.VerifyVisualFlagEnabled (constructorHint, memberName)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="constructorHint" Type="System.String" />
-        <Parameter Name="memberName" Type="System.String">
-          <Attributes>
-            <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="constructorHint">To be added.</param>
-        <param name="memberName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Visual">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.IVisual Visual { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IVisual Visual" />

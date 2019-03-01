@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A <see cref='T:Xamarin.Forms.View' /> that serves as a base class for views that contain a templated list of items.</summary>
+    <summary>A <see cref="T:Xamarin.Forms.View" /> that serves as a base class for views that contain a templated list of items.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,6 +27,28 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLogicalChild">
+      <MemberSignature Language="C#" Value="public void AddLogicalChild (Xamarin.Forms.Element element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddLogicalChild(class Xamarin.Forms.Element element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView.AddLogicalChild(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="member this.AddLogicalChild : Xamarin.Forms.Element -&gt; unit" Usage="itemsView.AddLogicalChild element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,6 +114,43 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty EmptyViewTemplateProperty" />
       <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.EmptyViewTemplateProperty" />
       <MemberSignature Language="F#" Value=" staticval mutable EmptyViewTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.EmptyViewTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemSizingStrategy">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ItemSizingStrategy ItemSizingStrategy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ItemSizingStrategy ItemSizingStrategy" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.ItemSizingStrategy" />
+      <MemberSignature Language="F#" Value="member this.ItemSizingStrategy : Xamarin.Forms.ItemSizingStrategy with get, set" Usage="Xamarin.Forms.ItemsView.ItemSizingStrategy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ItemSizingStrategy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemSizingStrategyProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemSizingStrategyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemSizingStrategyProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.ItemSizingStrategyProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemSizingStrategyProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.ItemSizingStrategyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -259,6 +318,28 @@
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveLogicalChild">
+      <MemberSignature Language="C#" Value="public void RemoveLogicalChild (Xamarin.Forms.Element element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveLogicalChild(class Xamarin.Forms.Element element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView.RemoveLogicalChild(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="member this.RemoveLogicalChild : Xamarin.Forms.Element -&gt; unit" Usage="itemsView.RemoveLogicalChild element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
