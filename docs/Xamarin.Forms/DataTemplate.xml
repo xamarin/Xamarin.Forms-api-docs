@@ -1,8 +1,8 @@
 <Type Name="DataTemplate" FullName="Xamarin.Forms.DataTemplate">
-  <TypeSignature Language="C#" Value="public class DataTemplate : Xamarin.Forms.ElementTemplate" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataTemplate extends Xamarin.Forms.ElementTemplate" />
+  <TypeSignature Language="C#" Value="public class DataTemplate : Xamarin.Forms.ElementTemplate, Xamarin.Forms.Internals.IDataTemplateController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataTemplate extends Xamarin.Forms.ElementTemplate implements class Xamarin.Forms.Internals.IDataTemplateController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.DataTemplate" />
-  <TypeSignature Language="F#" Value="type DataTemplate = class&#xA;    inherit ElementTemplate" />
+  <TypeSignature Language="F#" Value="type DataTemplate = class&#xA;    inherit ElementTemplate&#xA;    interface IDataTemplateController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -19,6 +19,9 @@
     <BaseTypeName>Xamarin.Forms.ElementTemplate</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.Internals.IDataTemplateController</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>A template for multiple bindings, commonly used by <see cref="T:Xamarin.Forms.ListView" />s and <see cref="T:Xamarin.Forms.MultiPage`1" />s.</summary>
@@ -209,6 +212,50 @@
       </ReturnValue>
       <Docs>
         <summary>Returns a dictionary of property values for this <see cref="T:Xamarin.Forms.DataTemplate" />, indexed by property.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.Internals.IDataTemplateController.Id">
+      <MemberSignature Language="C#" Value="int Xamarin.Forms.Internals.IDataTemplateController.Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Xamarin.Forms.Internals.IDataTemplateController.Id" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DataTemplate.Xamarin#Forms#Internals#IDataTemplateController#Id" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.IDataTemplateController.Id" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.IDataTemplateController.Id</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.Internals.IDataTemplateController.IdString">
+      <MemberSignature Language="C#" Value="string Xamarin.Forms.Internals.IDataTemplateController.IdString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Xamarin.Forms.Internals.IDataTemplateController.IdString" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DataTemplate.Xamarin#Forms#Internals#IDataTemplateController#IdString" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.IDataTemplateController.IdString" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.IDataTemplateController.IdString</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

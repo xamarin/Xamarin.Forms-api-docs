@@ -62,34 +62,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Activate">
-      <MemberSignature Language="C#" Value="public void Activate ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MenuItem.Activate" />
-      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit&#xA;override this.Activate : unit -&gt; unit" Usage="menuItem.Activate " />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IMenuItemController.Activate</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Clicked">
       <MemberSignature Language="C#" Value="public event EventHandler Clicked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Clicked" />
@@ -332,7 +304,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>set: System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -355,44 +327,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsEnabledPropertyName">
-      <MemberSignature Language="C#" Value="public string IsEnabledPropertyName { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string IsEnabledPropertyName" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MenuItem.IsEnabledPropertyName" />
-      <MemberSignature Language="F#" Value="member this.IsEnabledPropertyName : string" Usage="Xamarin.Forms.MenuItem.IsEnabledPropertyName" />
-      <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IMenuItemController.IsEnabledPropertyName</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,6 +425,32 @@
       </ReturnValue>
       <Docs>
         <summary>Identifies the text bound property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IMenuItemController.Activate">
+      <MemberSignature Language="C#" Value="void IMenuItemController.Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMenuItemController.Activate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MenuItem.Xamarin#Forms#IMenuItemController#Activate" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IMenuItemController.Activate</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

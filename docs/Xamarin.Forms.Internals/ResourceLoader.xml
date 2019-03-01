@@ -12,11 +12,47 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>For internal use by the Xamarin.Forms platform.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="CanProvideContentFor">
+      <MemberSignature Language="C#" Value="public static bool CanProvideContentFor (Xamarin.Forms.Internals.ResourceLoader.ResourceLoadingQuery rlq);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanProvideContentFor(class Xamarin.Forms.Internals.ResourceLoader/ResourceLoadingQuery rlq) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.ResourceLoader.CanProvideContentFor(Xamarin.Forms.Internals.ResourceLoader.ResourceLoadingQuery)" />
+      <MemberSignature Language="F#" Value="static member CanProvideContentFor : Xamarin.Forms.Internals.ResourceLoader.ResourceLoadingQuery -&gt; bool" Usage="Xamarin.Forms.Internals.ResourceLoader.CanProvideContentFor rlq" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Can't touch this")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rlq" Type="Xamarin.Forms.Internals.ResourceLoader+ResourceLoadingQuery" />
+      </Parameters>
+      <Docs>
+        <param name="rlq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ResourceProvider">
       <MemberSignature Language="C#" Value="public static Func&lt;System.Reflection.AssemblyName,string,string&gt; ResourceProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Func`3&lt;class System.Reflection.AssemblyName, string, string&gt; ResourceProvider" />
@@ -28,12 +64,39 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("You shouldn't have used this one to begin with, don't use the other one either")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.Reflection.AssemblyName,System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <value>For internal use by the Xamarin.Forms platform.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceProvider2">
+      <MemberSignature Language="C#" Value="public static Func&lt;Xamarin.Forms.Internals.ResourceLoader.ResourceLoadingQuery,Xamarin.Forms.Internals.ResourceLoader.ResourceLoadingResponse&gt; ResourceProvider2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Func`2&lt;class Xamarin.Forms.Internals.ResourceLoader/ResourceLoadingQuery, class Xamarin.Forms.Internals.ResourceLoader/ResourceLoadingResponse&gt; ResourceProvider2" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.ResourceLoader.ResourceProvider2" />
+      <MemberSignature Language="F#" Value="member this.ResourceProvider2 : Func&lt;Xamarin.Forms.Internals.ResourceLoader.ResourceLoadingQuery, Xamarin.Forms.Internals.ResourceLoader.ResourceLoadingResponse&gt;" Usage="Xamarin.Forms.Internals.ResourceLoader.ResourceProvider2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;Xamarin.Forms.Internals.ResourceLoader+ResourceLoadingQuery,Xamarin.Forms.Internals.ResourceLoader+ResourceLoadingResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

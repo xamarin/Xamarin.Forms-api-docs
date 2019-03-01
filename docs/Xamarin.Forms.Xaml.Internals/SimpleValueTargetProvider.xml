@@ -12,6 +12,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Xamarin.Forms.Xaml.IProvideValueTarget</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.Xaml.IReferenceProvider</InterfaceName>
     </Interface>
   </Interfaces>
@@ -34,6 +37,9 @@
         <Attribute>
           <AttributeName>System.Obsolete("SimpleValueTargetProvider(object[] objectAndParents) is obsolete as of version 2.3.4. Please use SimpleValueTargetProvider(object[] objectAndParents, object targetProperty) instead.")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="objectAndParents" Type="System.Object[]" />
@@ -54,6 +60,14 @@
         <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("SimpleValueTargetProvider(object[] objectAndParents) is obsolete as of version 3.3.0. Please use SimpleValueTargetProvider(object[] objectAndParents, object targetProperty, NameScope scope) instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="objectAndParents" Type="System.Object[]" />
         <Parameter Name="targetProperty" Type="System.Object" />
@@ -62,6 +76,29 @@
         <param name="objectAndParents">For internal use by the Xamarin.Forms platform.</param>
         <param name="targetProperty">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SimpleValueTargetProvider (object[] objectAndParents, object targetProperty, Xamarin.Forms.Internals.INameScope scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object[] objectAndParents, object targetProperty, class Xamarin.Forms.Internals.INameScope scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.#ctor(System.Object[],System.Object,Xamarin.Forms.Internals.INameScope)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider : obj[] * obj * Xamarin.Forms.Internals.INameScope -&gt; Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider" Usage="new Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider (objectAndParents, targetProperty, scope)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="objectAndParents" Type="System.Object[]" />
+        <Parameter Name="targetProperty" Type="System.Object" />
+        <Parameter Name="scope" Type="Xamarin.Forms.Internals.INameScope" />
+      </Parameters>
+      <Docs>
+        <param name="objectAndParents">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <param name="scope">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

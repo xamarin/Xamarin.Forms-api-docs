@@ -1,0 +1,100 @@
+<Type Name="ShellNavigatedEventArgs" FullName="Xamarin.Forms.ShellNavigatedEventArgs">
+  <TypeSignature Language="C#" Value="public class ShellNavigatedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ShellNavigatedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ShellNavigatedEventArgs" />
+  <TypeSignature Language="F#" Value="type ShellNavigatedEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ShellNavigatedEventArgs (Xamarin.Forms.ShellNavigationState previous, Xamarin.Forms.ShellNavigationState current, Xamarin.Forms.ShellNavigationSource source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Xamarin.Forms.ShellNavigationState previous, class Xamarin.Forms.ShellNavigationState current, valuetype Xamarin.Forms.ShellNavigationSource source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellNavigatedEventArgs.#ctor(Xamarin.Forms.ShellNavigationState,Xamarin.Forms.ShellNavigationState,Xamarin.Forms.ShellNavigationSource)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.ShellNavigatedEventArgs : Xamarin.Forms.ShellNavigationState * Xamarin.Forms.ShellNavigationState * Xamarin.Forms.ShellNavigationSource -&gt; Xamarin.Forms.ShellNavigatedEventArgs" Usage="new Xamarin.Forms.ShellNavigatedEventArgs (previous, current, source)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="previous" Type="Xamarin.Forms.ShellNavigationState" />
+        <Parameter Name="current" Type="Xamarin.Forms.ShellNavigationState" />
+        <Parameter Name="source" Type="Xamarin.Forms.ShellNavigationSource" />
+      </Parameters>
+      <Docs>
+        <param name="previous">To be added.</param>
+        <param name="current">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellNavigationState Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellNavigationState Current" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellNavigatedEventArgs.Current" />
+      <MemberSignature Language="F#" Value="member this.Current : Xamarin.Forms.ShellNavigationState" Usage="Xamarin.Forms.ShellNavigatedEventArgs.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ShellNavigationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Previous">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellNavigationState Previous { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellNavigationState Previous" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellNavigatedEventArgs.Previous" />
+      <MemberSignature Language="F#" Value="member this.Previous : Xamarin.Forms.ShellNavigationState" Usage="Xamarin.Forms.ShellNavigatedEventArgs.Previous" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ShellNavigationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellNavigationSource Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ShellNavigationSource Source" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellNavigatedEventArgs.Source" />
+      <MemberSignature Language="F#" Value="member this.Source : Xamarin.Forms.ShellNavigationSource" Usage="Xamarin.Forms.ShellNavigatedEventArgs.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ShellNavigationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

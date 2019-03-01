@@ -1,6 +1,6 @@
 <Type Name="Span" FullName="Xamarin.Forms.Span">
-  <TypeSignature Language="C#" Value="public sealed class Span : Xamarin.Forms.GestureElement, Xamarin.Forms.IDecorableTextElement, Xamarin.Forms.Internals.IFontElement" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Span extends Xamarin.Forms.GestureElement implements class Xamarin.Forms.IDecorableTextElement, class Xamarin.Forms.Internals.IFontElement" />
+  <TypeSignature Language="C#" Value="public class Span : Xamarin.Forms.GestureElement, Xamarin.Forms.IDecorableTextElement, Xamarin.Forms.Internals.IFontElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Span extends Xamarin.Forms.GestureElement implements class Xamarin.Forms.IDecorableTextElement, class Xamarin.Forms.Internals.IFontElement" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Span" />
   <TypeSignature Language="F#" Value="type Span = class&#xA;    inherit GestureElement&#xA;    interface IFontElement&#xA;    interface IDecorableTextElement" />
   <AssemblyInfo>
@@ -13,7 +13,7 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName>Xamarin.Forms.GestureElement</BaseTypeName>
     <BaseTypeName FrameworkAlternate="xamarin-forms">Xamarin.Forms.Element</BaseTypeName>
     <BaseTypeName FrameworkAlternate="xamarin-forms">Xamarin.Forms.GestureElement</BaseTypeName>
   </Base>
@@ -32,7 +32,9 @@
   </Attributes>
   <Docs>
     <summary>Represents a section of a <see cref="T:Xamarin.Forms.FormattedString" />.</summary>
-    <remarks><para>Bindings to Span properties are OneTime by default.</para></remarks>
+    <remarks>
+      <para>Bindings to Span properties are OneTime by default.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,6 +118,9 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("Font is obsolete as of version 1.3.0. Please use the Font properties directly.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -316,6 +321,9 @@
         <Attribute>
           <AttributeName>System.Obsolete("Foreground is obsolete as of version 3.1.0. Please use the TextColor property instead.")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
@@ -502,7 +510,7 @@
         <ReturnType>Xamarin.Forms.TextDecorations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref='T:Xamarin.Forms.TextDecorations' /> applied to this span.</summary>
+        <summary>Gets or sets the <see cref="T:Xamarin.Forms.TextDecorations" /> applied to this span.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -521,7 +529,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref='T:Xamarin.Forms.BindableProperty' /> associated with the <see cref='P:Xamarin.Forms.Span.TextDecorations' /> property.</summary>
+        <summary>The <see cref="T:Xamarin.Forms.BindableProperty" /> associated with the <see cref="P:Xamarin.Forms.Span.TextDecorations" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

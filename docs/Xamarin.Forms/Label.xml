@@ -109,6 +109,9 @@ public class App : Application
         <Attribute>
           <AttributeName>System.Obsolete("Font is obsolete as of version 1.3.0. Please use the Font attributes which are on the class itself.")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.Font</ReturnType>
@@ -505,7 +508,7 @@ public class App : Application
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of lines allowed in the <see cref='T:Xamarin.Forms.Label' />.</summary>
+        <summary>Gets or sets the maximum number of lines allowed in the <see cref="T:Xamarin.Forms.Label" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -524,7 +527,7 @@ public class App : Application
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Static method providing the <see cref='T:Xamarin.Forms.BindableProperty' /> for <see cref='P:Xamarin.Forms.Label.MaxLines' />.</summary>
+        <summary>Static method providing the <see cref="T:Xamarin.Forms.BindableProperty" /> for <see cref="P:Xamarin.Forms.Label.MaxLines" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,7 +680,7 @@ public class App : Application
         <ReturnType>Xamarin.Forms.TextDecorations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref='T:Xamarin.Forms.TextDecorations' /> applied to <see cref='P:Xamarin.Forms.Label.Text' />.</summary>
+        <summary>Gets or sets the <see cref="T:Xamarin.Forms.TextDecorations" /> applied to <see cref="P:Xamarin.Forms.Label.Text" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -696,7 +699,7 @@ public class App : Application
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Static method providing the <see cref='T:Xamarin.Forms.BindableProperty' /> associated with <see cref='P:Xamarin.Forms.Label.TextDecorations' />.</summary>
+        <summary>Static method providing the <see cref="T:Xamarin.Forms.BindableProperty" /> associated with <see cref="P:Xamarin.Forms.Label.TextDecorations" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -788,6 +791,9 @@ public class App : Application
         <Attribute>
           <AttributeName>System.Obsolete("XAlign is obsolete as of version 2.0.0. Please use HorizontalTextAlignment instead.")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.TextAlignment</ReturnType>
@@ -819,6 +825,9 @@ public class App : Application
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("XAlignProperty is obsolete as of version 2.0.0. Please use HorizontalTextAlignmentProperty instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -982,6 +991,9 @@ public class App : Application
         <Attribute>
           <AttributeName>System.Obsolete("YAlign is obsolete as of version 2.0.0. Please use VerticalTextAlignment instead.")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.TextAlignment</ReturnType>
@@ -1013,6 +1025,9 @@ public class App : Application
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("YAlignProperty is obsolete as of version 2.0.0. Please use VerticalTextAlignmentProperty instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

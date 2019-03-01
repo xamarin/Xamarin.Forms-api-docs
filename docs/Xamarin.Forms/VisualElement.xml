@@ -1,8 +1,8 @@
 <Type Name="VisualElement" FullName="Xamarin.Forms.VisualElement">
-  <TypeSignature Language="C#" Value="public class VisualElement : Xamarin.Forms.Element, Xamarin.Forms.IAnimatable, Xamarin.Forms.IVisualElementController" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualElement extends Xamarin.Forms.Element implements class Xamarin.Forms.IAnimatable, class Xamarin.Forms.IElementController, class Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="C#" Value="public class VisualElement : Xamarin.Forms.NavigableElement, Xamarin.Forms.IAnimatable, Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualElement extends Xamarin.Forms.NavigableElement implements class Xamarin.Forms.IAnimatable, class Xamarin.Forms.IElementController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.VisualElement" />
-  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit Element&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
+  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit NavigableElement&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -16,10 +16,14 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="xamarin-forms">Xamarin.Forms.NavigableElement</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
       <InterfaceName>Xamarin.Forms.IAnimatable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
@@ -613,6 +617,9 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1468,112 +1475,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Navigation">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.INavigation Navigation { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.INavigation Navigation" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.Navigation" />
-      <MemberSignature Language="F#" Value="member this.Navigation : Xamarin.Forms.INavigation" Usage="Xamarin.Forms.VisualElement.Navigation" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.INavigation</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the context aware navigation interface for the element.</summary>
-        <value>An <see cref="T:Xamarin.Forms.INavigation" /> that allows for navigation using the ancestral navigation implementor.</value>
-        <remarks>
-          <para>
-            Use the Navigation property to perform navigation from any element. If the element has not yet been added to a tree which contains a navigation implementor, the actions are queued up until it is.
-          </para>
-          <para>
-            The following example navigates to a new page created in the callback of a button's <see cref="E:Xamarin.Forms.Button.Clicked" /> event.</para>
-          <example>
-            <code lang="C#"><![CDATA[
-  partial class NavigationTest {
-    void BuildContent 
-    {
-      Button button = new Button {Text = "Tap to Navigate"};
-      button.Clicked += OnButtonClicked;
-    }
-
-    void OnButtonClicked (object sender, EventArgs args)
-    {
-      Button button = (Button) sender;
-      Page newPage = new ContentPage {
-        Content = new Label {Text = "Hello New Page"}
-      };
-
-      button.Navigation.Push (newPage);
-    }
-  }
-              ]]></code>
-          </example>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NavigationProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty NavigationProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty NavigationProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.NavigationProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable NavigationProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.NavigationProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Identifies the Navigation bindable property.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NavigationProxy">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.Internals.NavigationProxy NavigationProxy { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Internals.NavigationProxy NavigationProxy" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.NavigationProxy" />
-      <MemberSignature Language="F#" Value="member this.NavigationProxy : Xamarin.Forms.Internals.NavigationProxy" Usage="Xamarin.Forms.VisualElement.NavigationProxy" />
-      <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.NavigationProxy</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Internals.NavigationProxy</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="OnChildAdded">
       <MemberSignature Language="C#" Value="protected override void OnChildAdded (Xamarin.Forms.Element child);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildAdded(class Xamarin.Forms.Element child) cil managed" />
@@ -1674,32 +1575,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnParentSet">
-      <MemberSignature Language="C#" Value="protected override void OnParentSet ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnParentSet() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.OnParentSet" />
-      <MemberSignature Language="F#" Value="override this.OnParentSet : unit -&gt; unit" Usage="visualElement.OnParentSet " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Invoked whenever the Parent of an element is set. Implement this method in order to add behavior when the element is added to a parent.</summary>
-        <remarks>It is required to call the base implementation.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="OnSizeAllocated">
       <MemberSignature Language="C#" Value="protected virtual void OnSizeAllocated (double width, double height);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSizeAllocated(float64 width, float64 height) cil managed" />
@@ -1751,6 +1626,9 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2332,28 +2210,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="StyleProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty StyleProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty StyleProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.StyleProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable StyleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.StyleProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Backing store for the Style property.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="TabIndex">
       <MemberSignature Language="C#" Value="public int TabIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TabIndex" />
@@ -2620,6 +2476,78 @@
       <Docs>
         <summary>Occurs when the element loses focus.</summary>
         <remarks>Unfocused event is raised whenever the VisualElement loses focus. This event is not bubbled through the Xamarin.Forms stack and is received directly from the native control. This event is emitted by the IsFocusedProperty setter.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyVisualFlagEnabled">
+      <MemberSignature Language="C#" Value="public static void VerifyVisualFlagEnabled (string constructorHint = null, string memberName = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VerifyVisualFlagEnabled(string constructorHint, string memberName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.VerifyVisualFlagEnabled(System.String,System.String)" />
+      <MemberSignature Language="F#" Value="static member VerifyVisualFlagEnabled : string * string -&gt; unit" Usage="Xamarin.Forms.VisualElement.VerifyVisualFlagEnabled (constructorHint, memberName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constructorHint" Type="System.String" />
+        <Parameter Name="memberName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="constructorHint">To be added.</param>
+        <param name="memberName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visual">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.IVisual Visual { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IVisual Visual" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.Visual" />
+      <MemberSignature Language="F#" Value="member this.Visual : Xamarin.Forms.IVisual with get, set" Usage="Xamarin.Forms.VisualElement.Visual" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IVisual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty VisualProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty VisualProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.VisualProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable VisualProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.VisualProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">

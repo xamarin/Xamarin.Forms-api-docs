@@ -190,6 +190,9 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
         <Attribute>
           <AttributeName>System.Obsolete</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.Binding</ReturnType>

@@ -36,11 +36,14 @@
         <Parameter Name="tabIndex" Type="System.Int32" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="element"><c>this</c> <see cref='T:Xamarin.Forms.VisualElement' /></param>
+        <param name="element">
+          <c>this</c>
+          <see cref="T:Xamarin.Forms.VisualElement" />
+        </param>
         <param name="forwardDirection">If <see langword="false" />, retrieves the previous element.</param>
         <param name="tabIndexes">Maps indices to tab groups.</param>
         <param name="tabIndex">The value within <param name="tabIndexes" /> specifying the tab group to search.</param>
-        <summary>Retrieves the next (or previous if <param name="forwardDirection" /> = <see langword="false" />) <see cref='T:Xamarin.Forms.VisualElement' /> within the tab group at <param name="tabIndexes" />[<param name="tabIndex" />].</summary>
+        <summary>Retrieves the next (or previous if <param name="forwardDirection" /> = <see langword="false" />) <see cref="T:Xamarin.Forms.VisualElement" /> within the tab group at <param name="tabIndexes" />[<param name="tabIndex" />].</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,9 +66,12 @@
         <Parameter Name="countChildrensWithTabStopWithoutThis" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="element"><c>this</c> <see cref='T:Xamarin.Forms.VisualElement' /></param>
+        <param name="element">
+          <c>this</c>
+          <see cref="T:Xamarin.Forms.VisualElement" />
+        </param>
         <param name="countChildrensWithTabStopWithoutThis">To be added.</param>
-        <summary>Gets a dictionary mapping between index values and lists of <see cref='T:Xamarin.Forms.VisualElement' /> objects whose <see cref='P:Xamarin.Forms.VisualElement.IsTabStop' /> value is <see langword="true" />.</summary>
+        <summary>Gets a dictionary mapping between index values and lists of <see cref="T:Xamarin.Forms.VisualElement" /> objects whose <see cref="P:Xamarin.Forms.VisualElement.IsTabStop" /> value is <see langword="true" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

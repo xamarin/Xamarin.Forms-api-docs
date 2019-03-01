@@ -10,7 +10,13 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -131,6 +137,24 @@
       </ReturnValue>
       <Docs>
         <summary>For internal use by platform renderers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReloadRequested">
+      <MemberSignature Language="C#" Value="event EventHandler ReloadRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ReloadRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IWebViewController.ReloadRequested" />
+      <MemberSignature Language="F#" Value="member this.ReloadRequested : EventHandler " Usage="member this.ReloadRequested : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,215 @@
+<Type Name="BindableLayout" FullName="Xamarin.Forms.BindableLayout">
+  <TypeSignature Language="C#" Value="public static class BindableLayout" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BindableLayout extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.BindableLayout" />
+  <TypeSignature Language="F#" Value="type BindableLayout = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Static class specifying the attached properties that allow a <see cref='T:Xamarin.Forms.Layout`1' /> work with a data-bound <see cref='T:System.Collections.IEnumerable' />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetItemsSource">
+      <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetItemsSource (Xamarin.Forms.BindableObject b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetItemsSource(class Xamarin.Forms.BindableObject b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableLayout.GetItemsSource(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetItemsSource : Xamarin.Forms.BindableObject -&gt; System.Collections.IEnumerable" Usage="Xamarin.Forms.BindableLayout.GetItemsSource b" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemTemplate">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.DataTemplate GetItemTemplate (Xamarin.Forms.BindableObject b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.DataTemplate GetItemTemplate(class Xamarin.Forms.BindableObject b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableLayout.GetItemTemplate(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetItemTemplate : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.DataTemplate" Usage="Xamarin.Forms.BindableLayout.GetItemTemplate b" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemTemplateSelector">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.DataTemplateSelector GetItemTemplateSelector (Xamarin.Forms.BindableObject b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.DataTemplateSelector GetItemTemplateSelector(class Xamarin.Forms.BindableObject b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableLayout.GetItemTemplateSelector(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetItemTemplateSelector : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.DataTemplateSelector" Usage="Xamarin.Forms.BindableLayout.GetItemTemplateSelector b" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemsSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemsSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.BindableLayout.ItemsSourceProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.BindableLayout.ItemsSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.BindableLayout.ItemTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.BindableLayout.ItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemTemplateSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.BindableLayout.ItemTemplateSelectorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateSelectorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.BindableLayout.ItemTemplateSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemsSource">
+      <MemberSignature Language="C#" Value="public static void SetItemsSource (Xamarin.Forms.BindableObject b, System.Collections.IEnumerable value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetItemsSource(class Xamarin.Forms.BindableObject b, class System.Collections.IEnumerable value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableLayout.SetItemsSource(Xamarin.Forms.BindableObject,System.Collections.IEnumerable)" />
+      <MemberSignature Language="F#" Value="static member SetItemsSource : Xamarin.Forms.BindableObject * System.Collections.IEnumerable -&gt; unit" Usage="Xamarin.Forms.BindableLayout.SetItemsSource (b, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemTemplate">
+      <MemberSignature Language="C#" Value="public static void SetItemTemplate (Xamarin.Forms.BindableObject b, Xamarin.Forms.DataTemplate value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetItemTemplate(class Xamarin.Forms.BindableObject b, class Xamarin.Forms.DataTemplate value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableLayout.SetItemTemplate(Xamarin.Forms.BindableObject,Xamarin.Forms.DataTemplate)" />
+      <MemberSignature Language="F#" Value="static member SetItemTemplate : Xamarin.Forms.BindableObject * Xamarin.Forms.DataTemplate -&gt; unit" Usage="Xamarin.Forms.BindableLayout.SetItemTemplate (b, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.DataTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemTemplateSelector">
+      <MemberSignature Language="C#" Value="public static void SetItemTemplateSelector (Xamarin.Forms.BindableObject b, Xamarin.Forms.DataTemplateSelector value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetItemTemplateSelector(class Xamarin.Forms.BindableObject b, class Xamarin.Forms.DataTemplateSelector value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableLayout.SetItemTemplateSelector(Xamarin.Forms.BindableObject,Xamarin.Forms.DataTemplateSelector)" />
+      <MemberSignature Language="F#" Value="static member SetItemTemplateSelector : Xamarin.Forms.BindableObject * Xamarin.Forms.DataTemplateSelector -&gt; unit" Usage="Xamarin.Forms.BindableLayout.SetItemTemplateSelector (b, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.DataTemplateSelector" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
