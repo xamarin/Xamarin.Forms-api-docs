@@ -17,9 +17,6 @@
     
     <!-- Filter out types that are in binary, but hidden behind feature flags -->
       <namespaceFilter name="*">
-        <!-- Hide until 3.6 stable -->
-        <typeFilter name="ResourceLoader+ResourceLoadingQuery" expose="false"/>
-        <typeFilter name="ResourceLoader+ResourceLoadingResponse" expose="false"/>
         <!-- Hide until 4.0 stable -->
         <typeFilter name="BackButtonBehavior" expose="false"/>
         <typeFilter name="BaseShellItem" expose="false"/>
@@ -77,11 +74,6 @@
         <typeFilter name="ShellSection" expose="false"/>
         <typeFilter name="ShellSection+NavigationImpl" expose="false"/>
         <typeFilter name="ShellSectionCollection" expose="false"/>
-        <typeFilter name="VisualMarker" expose="false"/>
-        <typeFilter name="VisualRendererMarker" expose="false"/>
-        <typeFilter name="VisualRendererMarker+Default" expose="false"/>
-        <typeFilter name="VisualRendererMarker+Material" expose="false"/>
-        <typeFilter name="VisualTypeConverter" expose="false"/>
       </namespaceFilter>
   </apiFilter>
 </filter>
