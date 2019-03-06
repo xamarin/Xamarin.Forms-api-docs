@@ -92,6 +92,9 @@ Debug.WriteLine (label.Text); //prints "John Doe"
         <Attribute>
           <AttributeName>System.Obsolete</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

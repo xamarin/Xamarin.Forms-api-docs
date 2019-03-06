@@ -58,8 +58,8 @@
         <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref='T:Xamarin.Forms.BindableObject' /> whose modal presentation style is being retrieved.</param>
-        <summary>Gets the <see cref='T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle' /> for <param name="element" />.</summary>
+        <param name="element">The <see cref="T:Xamarin.Forms.BindableObject" /> whose modal presentation style is being retrieved.</param>
+        <summary>Gets the <see cref="T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle" /> for <param name="element" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -220,8 +220,10 @@
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config"><c>this</c> <see cref='T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page' />.</param>
-        <summary>Gets the modal presentation style of <c>this</c> <see cref='T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page' />.</summary>
+        <param name="config">
+          <c>this</c>
+          <see cref="T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page" />.</param>
+        <summary>Gets the modal presentation style of <c>this</c><see cref="T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,7 +242,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref='T:Xamarin.Forms.BindableProperty' /> associated with the modal presentation style.</summary>
+        <summary>The <see cref="T:Xamarin.Forms.BindableProperty" /> associated with the modal presentation style.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,8 +444,10 @@
         <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle" />
       </Parameters>
       <Docs>
-        <param name="config"><c>this</c></param>
-        <param name="value">The desired <see cref='T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle' />.</param>
+        <param name="config">
+          <c>this</c>
+        </param>
+        <param name="value">The desired <see cref="T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle" />.</param>
         <summary>Sets the modal presentation style to <param name="value" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

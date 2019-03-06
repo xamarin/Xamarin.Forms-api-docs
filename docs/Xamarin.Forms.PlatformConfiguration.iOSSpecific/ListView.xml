@@ -17,6 +17,75 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetGroupHeaderStyle">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle GetGroupHeaderStyle (Xamarin.Forms.BindableObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle GetGroupHeaderStyle(class Xamarin.Forms.BindableObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GetGroupHeaderStyle(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetGroupHeaderStyle : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GetGroupHeaderStyle element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGroupHeaderStyle">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle GetGroupHeaderStyle (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle GetGroupHeaderStyle(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GetGroupHeaderStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView})" />
+      <MemberSignature Language="F#" Value="static member GetGroupHeaderStyle : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt; -&gt; Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GetGroupHeaderStyle config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowAnimationsEnabled">
+      <MemberSignature Language="C#" Value="public static bool GetRowAnimationsEnabled (Xamarin.Forms.BindableObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetRowAnimationsEnabled(class Xamarin.Forms.BindableObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GetRowAnimationsEnabled(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetRowAnimationsEnabled : Xamarin.Forms.BindableObject -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GetRowAnimationsEnabled element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetSeparatorStyle">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle GetSeparatorStyle (Xamarin.Forms.BindableObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle GetSeparatorStyle(class Xamarin.Forms.BindableObject element) cil managed" />
@@ -65,6 +134,65 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GroupHeaderStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty GroupHeaderStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty GroupHeaderStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GroupHeaderStyleProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable GroupHeaderStyleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.GroupHeaderStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowAnimationsEnabled">
+      <MemberSignature Language="C#" Value="public static bool RowAnimationsEnabled (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RowAnimationsEnabled(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.RowAnimationsEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView})" />
+      <MemberSignature Language="F#" Value="static member RowAnimationsEnabled : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.RowAnimationsEnabled config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowAnimationsEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty RowAnimationsEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty RowAnimationsEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.RowAnimationsEnabledProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable RowAnimationsEnabledProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.RowAnimationsEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SeparatorStyleProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SeparatorStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SeparatorStyleProperty" />
@@ -81,6 +209,104 @@
       </ReturnValue>
       <Docs>
         <summary>Backing store for the attached property that controls the separator style.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetGroupHeaderStyle">
+      <MemberSignature Language="C#" Value="public static void SetGroupHeaderStyle (Xamarin.Forms.BindableObject element, Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetGroupHeaderStyle(class Xamarin.Forms.BindableObject element, valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetGroupHeaderStyle(Xamarin.Forms.BindableObject,Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle)" />
+      <MemberSignature Language="F#" Value="static member SetGroupHeaderStyle : Xamarin.Forms.BindableObject * Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle -&gt; unit" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetGroupHeaderStyle (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetGroupHeaderStyle">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; SetGroupHeaderStyle (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; config, Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; SetGroupHeaderStyle(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; config, valuetype Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetGroupHeaderStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView},Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle)" />
+      <MemberSignature Language="F#" Value="static member SetGroupHeaderStyle : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt; * Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt;" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetGroupHeaderStyle (config, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;" RefType="this" />
+        <Parameter Name="value" Type="Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRowAnimationsEnabled">
+      <MemberSignature Language="C#" Value="public static void SetRowAnimationsEnabled (Xamarin.Forms.BindableObject element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRowAnimationsEnabled(class Xamarin.Forms.BindableObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetRowAnimationsEnabled(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetRowAnimationsEnabled : Xamarin.Forms.BindableObject * bool -&gt; unit" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetRowAnimationsEnabled (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRowAnimationsEnabled">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; SetRowAnimationsEnabled (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt; config, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; SetRowAnimationsEnabled(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.ListView&gt; config, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetRowAnimationsEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView},System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetRowAnimationsEnabled : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt; * bool -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.ListView&gt;" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetRowAnimationsEnabled (config, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

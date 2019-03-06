@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- Root -->
+	<xs:element name="filter" >
+		<xs:complexType >
+			<xs:sequence>
+				<xs:element name="apiFilter" maxOccurs="1" minOccurs="0" type="apiFilter"/>
+				<xs:element name="attributeFilter" maxOccurs="1" minOccurs="0" type="attributeFilter"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Abstract base type for api and attribute filters -->
+	<xs:complexType name="filterBase" abstract="true">
+		<!-- Sequence of filter trees -->
+		<xs:sequence>
+			<xs:element name="namespaceFilter" maxOccurs="unbounded" minOccurs="1" type="namespaceFilter"/>
+		</xs:sequence>
+		<!-- Turns the filter on or off -->
+		<xs:attribute name="apply" use="required" type="xs:boolean"/>		
+	</xs:complexType>
+	
+	<!-- Holds elements that specify filtered namespaces, types, and members -->
+	<xs:complexType name="apiFilter">
+		<xs:complexContent>
+			<xs:extension base="filterBase"/>
+		</xs:complexContent>
+	</xs:complexType>
+	
+		
+	<!-- Holds elements that specify Attributes types that should be universally filtered -->
+	<xs:complexType name="attributeFilter">
+		<xs:complexContent>
+			<xs:extension base="filterBase"/>
+		</xs:complexContent>	
+	</xs:complexType>
+		
+	<!-- Filter tree begins with namespace -->
+	<xs:complexType name="namespaceFilter">
+		<xs:sequence>
+			<xs:element name="typeFilter" maxOccurs="unbounded" type="typeFilter"/>
+		</xs:sequence>
+		<!-- Note that '*' is valid, but not full RegEx -->
+		<xs:attribute name="name" use="required" type="xs:string"/>
+	</xs:complexType>
+	
+	<!-- Composite pattern base-class filter -->
+	<xs:complexType name="basicFilter" abstract="true">
+		<!-- Note that '*' is valid, but not full RegEx -->
+		<xs:attribute name="name" use="required" type="xs:string"/>
+		<!-- Whether `name` should be displayed. Note that this is optional, in which case it will be interpreted as `true` -->
+		<xs:attribute name="expose" default="true" type="xs:boolean"/>
+	</xs:complexType>
+	
+	<!-- A type to be filtered  -->
+	<xs:complexType name="typeFilter">
+		<xs:complexContent>
+			<xs:extension base="basicFilter" >
+				<xs:sequence maxOccurs="unbounded" minOccurs="0" >
+					<xs:choice>
+						<xs:element name="typeFilter" type="basicFilter" />
+						<xs:element name="memberFilter" type="memberFilter"/>
+					</xs:choice>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<!-- A member to be filtered -->
+	<xs:complexType name="memberFilter">
+		<xs:complexContent>
+			<xs:extension base="basicFilter" />	
+		</xs:complexContent>
+	</xs:complexType>
+	
+</xs:schema>

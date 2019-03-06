@@ -25,7 +25,16 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Editor&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.Internals.IFontElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -264,6 +273,43 @@ var editor = new Editor {
       </ReturnValue>
       <Docs>
         <summary>Backing store for the FontSize property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTextPredictionEnabled">
+      <MemberSignature Language="C#" Value="public bool IsTextPredictionEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTextPredictionEnabled" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Editor.IsTextPredictionEnabled" />
+      <MemberSignature Language="F#" Value="member this.IsTextPredictionEnabled : bool with get, set" Usage="Xamarin.Forms.Editor.IsTextPredictionEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTextPredictionEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsTextPredictionEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsTextPredictionEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Editor.IsTextPredictionEnabledProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTextPredictionEnabledProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Editor.IsTextPredictionEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

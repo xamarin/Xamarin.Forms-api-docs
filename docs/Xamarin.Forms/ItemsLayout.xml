@@ -1,0 +1,139 @@
+<Type Name="ItemsLayout" FullName="Xamarin.Forms.ItemsLayout">
+  <TypeSignature Language="C#" Value="public abstract class ItemsLayout : Xamarin.Forms.BindableObject, System.ComponentModel.INotifyPropertyChanged, Xamarin.Forms.IItemsLayout" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ItemsLayout extends Xamarin.Forms.BindableObject implements class System.ComponentModel.INotifyPropertyChanged, class Xamarin.Forms.IItemsLayout" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ItemsLayout" />
+  <TypeSignature Language="F#" Value="type ItemsLayout = class&#xA;    inherit BindableObject&#xA;    interface IItemsLayout&#xA;    interface INotifyPropertyChanged" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IItemsLayout</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ItemsLayout (Xamarin.Forms.ItemsLayoutOrientation orientation);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.ItemsLayoutOrientation orientation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsLayout.#ctor(Xamarin.Forms.ItemsLayoutOrientation)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.ItemsLayout : Xamarin.Forms.ItemsLayoutOrientation -&gt; Xamarin.Forms.ItemsLayout" Usage="new Xamarin.Forms.ItemsLayout orientation" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="orientation" Type="Xamarin.Forms.ItemsLayoutOrientation" />
+      </Parameters>
+      <Docs>
+        <param name="orientation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orientation">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ItemsLayoutOrientation Orientation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ItemsLayoutOrientation Orientation" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsLayout.Orientation" />
+      <MemberSignature Language="F#" Value="member this.Orientation : Xamarin.Forms.ItemsLayoutOrientation" Usage="Xamarin.Forms.ItemsLayout.Orientation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ItemsLayoutOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SnapPointsAlignment">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.SnapPointsAlignment SnapPointsAlignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.SnapPointsAlignment SnapPointsAlignment" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsLayout.SnapPointsAlignment" />
+      <MemberSignature Language="F#" Value="member this.SnapPointsAlignment : Xamarin.Forms.SnapPointsAlignment with get, set" Usage="Xamarin.Forms.ItemsLayout.SnapPointsAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.SnapPointsAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SnapPointsAlignmentProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SnapPointsAlignmentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SnapPointsAlignmentProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsLayout.SnapPointsAlignmentProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SnapPointsAlignmentProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsLayout.SnapPointsAlignmentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SnapPointsType">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.SnapPointsType SnapPointsType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.SnapPointsType SnapPointsType" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsLayout.SnapPointsType" />
+      <MemberSignature Language="F#" Value="member this.SnapPointsType : Xamarin.Forms.SnapPointsType with get, set" Usage="Xamarin.Forms.ItemsLayout.SnapPointsType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.SnapPointsType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SnapPointsTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SnapPointsTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SnapPointsTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsLayout.SnapPointsTypeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SnapPointsTypeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsLayout.SnapPointsTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

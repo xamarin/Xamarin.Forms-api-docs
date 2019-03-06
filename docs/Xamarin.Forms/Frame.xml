@@ -1,8 +1,8 @@
 <Type Name="Frame" FullName="Xamarin.Forms.Frame">
-  <TypeSignature Language="C#" Value="public class Frame : Xamarin.Forms.ContentView, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Frame&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Frame extends Xamarin.Forms.ContentView implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Frame&gt;" />
+  <TypeSignature Language="C#" Value="public class Frame : Xamarin.Forms.ContentView, Xamarin.Forms.IBorderElement, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Frame&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Frame extends Xamarin.Forms.ContentView implements class Xamarin.Forms.IBorderElement, class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Frame&gt;" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Frame" />
-  <TypeSignature Language="F#" Value="type Frame = class&#xA;    inherit ContentView&#xA;    interface IElementConfiguration&lt;Frame&gt;" />
+  <TypeSignature Language="F#" Value="type Frame = class&#xA;    inherit ContentView&#xA;    interface IElementConfiguration&lt;Frame&gt;&#xA;    interface IBorderElement" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -18,6 +18,9 @@
     <BaseTypeName>Xamarin.Forms.ContentView</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IBorderElement</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Frame&gt;</InterfaceName>
     </Interface>
@@ -261,6 +264,9 @@ MainPage = new ContentPage () {
         <Attribute>
           <AttributeName>System.Obsolete("OutlineColor is obsolete as of version 3.0.0. Please use BorderColor instead.")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.Color</ReturnType>
@@ -293,6 +299,9 @@ MainPage = new ContentPage () {
         <Attribute>
           <AttributeName>System.Obsolete("OutlineColorProperty is obsolete as of version 3.0.0. Please use BorderColorProperty instead.")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
@@ -301,6 +310,230 @@ MainPage = new ContentPage () {
         <summary>Identifies the OutlineColor bindable property.</summary>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.BorderColorDefaultValue">
+      <MemberSignature Language="C#" Value="Xamarin.Forms.Color Xamarin.Forms.IBorderElement.BorderColorDefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color Xamarin.Forms.IBorderElement.BorderColorDefaultValue" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#BorderColorDefaultValue" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderColorDefaultValue" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderColorDefaultValue</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.BorderWidth">
+      <MemberSignature Language="C#" Value="double Xamarin.Forms.IBorderElement.BorderWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Xamarin.Forms.IBorderElement.BorderWidth" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#BorderWidth" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderWidth" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderWidth</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.BorderWidthDefaultValue">
+      <MemberSignature Language="C#" Value="double Xamarin.Forms.IBorderElement.BorderWidthDefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Xamarin.Forms.IBorderElement.BorderWidthDefaultValue" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#BorderWidthDefaultValue" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderWidthDefaultValue" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderWidthDefaultValue</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.CornerRadius">
+      <MemberSignature Language="C#" Value="int Xamarin.Forms.IBorderElement.CornerRadius { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Xamarin.Forms.IBorderElement.CornerRadius" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#CornerRadius" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.CornerRadius" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.CornerRadius</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue">
+      <MemberSignature Language="C#" Value="int Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#CornerRadiusDefaultValue" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.IsBackgroundColorSet">
+      <MemberSignature Language="C#" Value="bool IBorderElement.IsBackgroundColorSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBackgroundColorSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#IsBackgroundColorSet" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBackgroundColorSet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.IsBorderColorSet">
+      <MemberSignature Language="C#" Value="bool IBorderElement.IsBorderColorSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBorderColorSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#IsBorderColorSet" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderColorSet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.IsBorderWidthSet">
+      <MemberSignature Language="C#" Value="bool IBorderElement.IsBorderWidthSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBorderWidthSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#IsBorderWidthSet" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderWidthSet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.IsCornerRadiusSet">
+      <MemberSignature Language="C#" Value="bool IBorderElement.IsCornerRadiusSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsCornerRadiusSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#IsCornerRadiusSet" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsCornerRadiusSet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged">
+      <MemberSignature Language="C#" Value="void IBorderElement.OnBorderColorPropertyChanged (Xamarin.Forms.Color oldValue, Xamarin.Forms.Color newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(valuetype Xamarin.Forms.Color oldValue, valuetype Xamarin.Forms.Color newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Xamarin.Forms.Color" />
+        <Parameter Name="newValue" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

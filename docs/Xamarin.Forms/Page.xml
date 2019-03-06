@@ -1,8 +1,8 @@
 <Type Name="Page" FullName="Xamarin.Forms.Page">
   <TypeSignature Language="C#" Value="public class Page : Xamarin.Forms.VisualElement, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Page&gt;, Xamarin.Forms.ILayout, Xamarin.Forms.IPageController" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Page extends Xamarin.Forms.VisualElement implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Page&gt;, class Xamarin.Forms.ILayout, class Xamarin.Forms.IPageController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Page extends Xamarin.Forms.VisualElement implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Page&gt;, class Xamarin.Forms.IElementController, class Xamarin.Forms.ILayout, class Xamarin.Forms.IPageController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Page" />
-  <TypeSignature Language="F#" Value="type Page = class&#xA;    inherit VisualElement&#xA;    interface ILayout&#xA;    interface IPageController&#xA;    interface IElementConfiguration&lt;Page&gt;" />
+  <TypeSignature Language="F#" Value="type Page = class&#xA;    inherit VisualElement&#xA;    interface ILayout&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;Page&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -22,10 +22,16 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Page&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.ILayout</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IPageController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

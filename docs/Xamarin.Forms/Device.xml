@@ -426,6 +426,9 @@ Device.BeginInvokeOnMainThread (() => {
         <Attribute>
           <AttributeName>System.Obsolete("OnPlatform is obsolete as of version 2.3.4. Please use 'switch (Device.RuntimePlatform)' instead.")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -473,6 +476,9 @@ Device.OnPlatform (iOS: () => label.Font = Font.OfSize ("HelveticaNeue-UltraLigh
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("OnPlatform&lt;&gt; (generic) is obsolete as of version 2.3.4. Please use 'switch (Device.RuntimePlatform)' instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -553,6 +559,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("TargetPlatform is obsolete as of version 2.3.4. Please use RuntimePlatform instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

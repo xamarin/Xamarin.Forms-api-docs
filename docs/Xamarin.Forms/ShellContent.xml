@@ -1,0 +1,249 @@
+<Type Name="ShellContent" FullName="Xamarin.Forms.ShellContent">
+  <TypeSignature Language="C#" Value="public class ShellContent : Xamarin.Forms.BaseShellItem, Xamarin.Forms.IShellContentController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ShellContent extends Xamarin.Forms.BaseShellItem implements class Xamarin.Forms.IElementController, class Xamarin.Forms.IShellContentController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ShellContent" />
+  <TypeSignature Language="F#" Value="type ShellContent = class&#xA;    inherit BaseShellItem&#xA;    interface IShellContentController&#xA;    interface IElementController" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.BaseShellItem</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IShellContentController</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.ContentProperty("Content")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ShellContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellContent.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public object Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Content" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellContent.Content" />
+      <MemberSignature Language="F#" Value="member this.Content : obj with get, set" Usage="Xamarin.Forms.ShellContent.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ContentProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ShellContent.ContentProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ShellContent.ContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentTemplate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate ContentTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate ContentTemplate" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellContent.ContentTemplate" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.ShellContent.ContentTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ContentTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ContentTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ShellContent.ContentTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ShellContent.ContentTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuItems">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.MenuItemCollection MenuItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.MenuItemCollection MenuItems" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellContent.MenuItems" />
+      <MemberSignature Language="F#" Value="member this.MenuItems : Xamarin.Forms.MenuItemCollection" Usage="Xamarin.Forms.ShellContent.MenuItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.MenuItemCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuItemsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty MenuItemsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty MenuItemsProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ShellContent.MenuItemsProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable MenuItemsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ShellContent.MenuItemsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.ShellContent (Xamarin.Forms.TemplatedPage page);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Xamarin.Forms.ShellContent op_Implicit(class Xamarin.Forms.TemplatedPage page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellContent.op_Implicit(Xamarin.Forms.TemplatedPage)~Xamarin.Forms.ShellContent" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.TemplatedPage -&gt; Xamarin.Forms.ShellContent" Usage="Xamarin.Forms.ShellContent.op_Implicit page" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ShellContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Xamarin.Forms.TemplatedPage" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IShellContentController.GetOrCreateContent">
+      <MemberSignature Language="C#" Value="Xamarin.Forms.Page IShellContentController.GetOrCreateContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Xamarin.Forms.Page Xamarin.Forms.IShellContentController.GetOrCreateContent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellContent.Xamarin#Forms#IShellContentController#GetOrCreateContent" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellContentController.GetOrCreateContent</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Page</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IShellContentController.Page">
+      <MemberSignature Language="C#" Value="Xamarin.Forms.Page Xamarin.Forms.IShellContentController.Page { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Page Xamarin.Forms.IShellContentController.Page" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellContent.Xamarin#Forms#IShellContentController#Page" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellContentController.Page" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IShellContentController.Page</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Page</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IShellContentController.RecyclePage">
+      <MemberSignature Language="C#" Value="void IShellContentController.RecyclePage (Xamarin.Forms.Page page);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellContentController.RecyclePage(class Xamarin.Forms.Page page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellContent.Xamarin#Forms#IShellContentController#RecyclePage(Xamarin.Forms.Page)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellContentController.RecyclePage(Xamarin.Forms.Page)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Xamarin.Forms.Page" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

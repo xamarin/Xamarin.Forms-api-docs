@@ -1,0 +1,422 @@
+<Type Name="ItemsView" FullName="Xamarin.Forms.ItemsView">
+  <TypeSignature Language="C#" Value="public class ItemsView : Xamarin.Forms.View" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemsView extends Xamarin.Forms.View" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ItemsView" />
+  <TypeSignature Language="F#" Value="type ItemsView = class&#xA;    inherit View" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A <see cref="T:Xamarin.Forms.View" /> that serves as a base class for views that contain a templated list of items.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected internal ItemsView ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLogicalChild">
+      <MemberSignature Language="C#" Value="public void AddLogicalChild (Xamarin.Forms.Element element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddLogicalChild(class Xamarin.Forms.Element element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView.AddLogicalChild(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="member this.AddLogicalChild : Xamarin.Forms.Element -&gt; unit" Usage="itemsView.AddLogicalChild element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyView">
+      <MemberSignature Language="C#" Value="public object EmptyView { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object EmptyView" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.EmptyView" />
+      <MemberSignature Language="F#" Value="member this.EmptyView : obj with get, set" Usage="Xamarin.Forms.ItemsView.EmptyView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyViewProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty EmptyViewProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty EmptyViewProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.EmptyViewProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable EmptyViewProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.EmptyViewProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyViewTemplate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate EmptyViewTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate EmptyViewTemplate" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.EmptyViewTemplate" />
+      <MemberSignature Language="F#" Value="member this.EmptyViewTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.ItemsView.EmptyViewTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyViewTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty EmptyViewTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty EmptyViewTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.EmptyViewTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable EmptyViewTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.EmptyViewTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemSizingStrategy">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ItemSizingStrategy ItemSizingStrategy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ItemSizingStrategy ItemSizingStrategy" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.ItemSizingStrategy" />
+      <MemberSignature Language="F#" Value="member this.ItemSizingStrategy : Xamarin.Forms.ItemSizingStrategy with get, set" Usage="Xamarin.Forms.ItemsView.ItemSizingStrategy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ItemSizingStrategy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemSizingStrategyProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemSizingStrategyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemSizingStrategyProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.ItemSizingStrategyProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemSizingStrategyProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.ItemSizingStrategyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsLayout">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.IItemsLayout ItemsLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IItemsLayout ItemsLayout" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.ItemsLayout" />
+      <MemberSignature Language="F#" Value="member this.ItemsLayout : Xamarin.Forms.IItemsLayout with get, set" Usage="Xamarin.Forms.ItemsView.ItemsLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IItemsLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsLayoutProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemsLayoutProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemsLayoutProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.ItemsLayoutProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsLayoutProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.ItemsLayoutProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSource">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ItemsSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable ItemsSource" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.ItemsSource" />
+      <MemberSignature Language="F#" Value="member this.ItemsSource : System.Collections.IEnumerable with get, set" Usage="Xamarin.Forms.ItemsView.ItemsSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemsSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemsSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.ItemsSourceProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.ItemsSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate ItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate ItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.ItemTemplate" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.ItemsView.ItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.ItemTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.ItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMeasure">
+      <MemberSignature Language="C#" Value="protected override Xamarin.Forms.SizeRequest OnMeasure (double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Xamarin.Forms.SizeRequest OnMeasure(float64 widthConstraint, float64 heightConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView.OnMeasure(System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="override this.OnMeasure : double * double -&gt; Xamarin.Forms.SizeRequest" Usage="itemsView.OnMeasure (widthConstraint, heightConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.SizeRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widthConstraint" Type="System.Double" />
+        <Parameter Name="heightConstraint" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="widthConstraint">To be added.</param>
+        <param name="heightConstraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnScrollToRequested">
+      <MemberSignature Language="C#" Value="protected virtual void OnScrollToRequested (Xamarin.Forms.ScrollToRequestEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnScrollToRequested(class Xamarin.Forms.ScrollToRequestEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView.OnScrollToRequested(Xamarin.Forms.ScrollToRequestEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnScrollToRequested : Xamarin.Forms.ScrollToRequestEventArgs -&gt; unit&#xA;override this.OnScrollToRequested : Xamarin.Forms.ScrollToRequestEventArgs -&gt; unit" Usage="itemsView.OnScrollToRequested e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Xamarin.Forms.ScrollToRequestEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveLogicalChild">
+      <MemberSignature Language="C#" Value="public void RemoveLogicalChild (Xamarin.Forms.Element element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveLogicalChild(class Xamarin.Forms.Element element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView.RemoveLogicalChild(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="member this.RemoveLogicalChild : Xamarin.Forms.Element -&gt; unit" Usage="itemsView.RemoveLogicalChild element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollTo">
+      <MemberSignature Language="C#" Value="public void ScrollTo (int index, int groupIndex = -1, Xamarin.Forms.ScrollToPosition position = Xamarin.Forms.ScrollToPosition.MakeVisible, bool animate = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollTo(int32 index, int32 groupIndex, valuetype Xamarin.Forms.ScrollToPosition position, bool animate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView.ScrollTo(System.Int32,System.Int32,Xamarin.Forms.ScrollToPosition,System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ScrollTo : int * int * Xamarin.Forms.ScrollToPosition * bool -&gt; unit" Usage="itemsView.ScrollTo (index, groupIndex, position, animate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="groupIndex" Type="System.Int32" />
+        <Parameter Name="position" Type="Xamarin.Forms.ScrollToPosition" />
+        <Parameter Name="animate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="groupIndex">To be added.</param>
+        <param name="position">To be added.</param>
+        <param name="animate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollTo">
+      <MemberSignature Language="C#" Value="public void ScrollTo (object item, object group = null, Xamarin.Forms.ScrollToPosition position = Xamarin.Forms.ScrollToPosition.MakeVisible, bool animate = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollTo(object item, object group, valuetype Xamarin.Forms.ScrollToPosition position, bool animate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView.ScrollTo(System.Object,System.Object,Xamarin.Forms.ScrollToPosition,System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ScrollTo : obj * obj * Xamarin.Forms.ScrollToPosition * bool -&gt; unit" Usage="itemsView.ScrollTo (item, group, position, animate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="group" Type="System.Object" />
+        <Parameter Name="position" Type="Xamarin.Forms.ScrollToPosition" />
+        <Parameter Name="animate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="group">To be added.</param>
+        <param name="position">To be added.</param>
+        <param name="animate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollToRequested">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.ScrollToRequestEventArgs&gt; ScrollToRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.ScrollToRequestEventArgs&gt; ScrollToRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ItemsView.ScrollToRequested" />
+      <MemberSignature Language="F#" Value="member this.ScrollToRequested : EventHandler&lt;Xamarin.Forms.ScrollToRequestEventArgs&gt; " Usage="member this.ScrollToRequested : System.EventHandler&lt;Xamarin.Forms.ScrollToRequestEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.ScrollToRequestEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

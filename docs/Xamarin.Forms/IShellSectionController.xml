@@ -1,0 +1,218 @@
+<Type Name="IShellSectionController" FullName="Xamarin.Forms.IShellSectionController">
+  <TypeSignature Language="C#" Value="public interface IShellSectionController : Xamarin.Forms.IElementController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IShellSectionController implements class Xamarin.Forms.IElementController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IShellSectionController" />
+  <TypeSignature Language="F#" Value="type IShellSectionController = interface&#xA;    interface IElementController" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddContentInsetObserver">
+      <MemberSignature Language="C#" Value="public void AddContentInsetObserver (Xamarin.Forms.IShellContentInsetObserver observer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddContentInsetObserver(class Xamarin.Forms.IShellContentInsetObserver observer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.AddContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)" />
+      <MemberSignature Language="F#" Value="abstract member AddContentInsetObserver : Xamarin.Forms.IShellContentInsetObserver -&gt; unit" Usage="iShellSectionController.AddContentInsetObserver observer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="Xamarin.Forms.IShellContentInsetObserver" />
+      </Parameters>
+      <Docs>
+        <param name="observer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDisplayedPageObserver">
+      <MemberSignature Language="C#" Value="public void AddDisplayedPageObserver (object observer, Action&lt;Xamarin.Forms.Page&gt; callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddDisplayedPageObserver(object observer, class System.Action`1&lt;class Xamarin.Forms.Page&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver(System.Object,System.Action{Xamarin.Forms.Page})" />
+      <MemberSignature Language="F#" Value="abstract member AddDisplayedPageObserver : obj * Action&lt;Xamarin.Forms.Page&gt; -&gt; unit" Usage="iShellSectionController.AddDisplayedPageObserver (observer, callback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="System.Object" />
+        <Parameter Name="callback" Type="System.Action&lt;Xamarin.Forms.Page&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="observer">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoToPart">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToPart (System.Collections.Generic.List&lt;string&gt; parts, System.Collections.Generic.Dictionary&lt;string,string&gt; queryData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task GoToPart(class System.Collections.Generic.List`1&lt;string&gt; parts, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; queryData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <MemberSignature Language="F#" Value="abstract member GoToPart : System.Collections.Generic.List&lt;string&gt; * System.Collections.Generic.Dictionary&lt;string, string&gt; -&gt; System.Threading.Tasks.Task" Usage="iShellSectionController.GoToPart (parts, queryData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parts" Type="System.Collections.Generic.List&lt;System.String&gt;" />
+        <Parameter Name="queryData" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="parts">To be added.</param>
+        <param name="queryData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigationRequested">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; NavigationRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; NavigationRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IShellSectionController.NavigationRequested" />
+      <MemberSignature Language="F#" Value="member this.NavigationRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.NavigationRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PresentedPage">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Page PresentedPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Page PresentedPage" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IShellSectionController.PresentedPage" />
+      <MemberSignature Language="F#" Value="member this.PresentedPage : Xamarin.Forms.Page" Usage="Xamarin.Forms.IShellSectionController.PresentedPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Page</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveContentInsetObserver">
+      <MemberSignature Language="C#" Value="public bool RemoveContentInsetObserver (Xamarin.Forms.IShellContentInsetObserver observer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoveContentInsetObserver(class Xamarin.Forms.IShellContentInsetObserver observer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveContentInsetObserver : Xamarin.Forms.IShellContentInsetObserver -&gt; bool" Usage="iShellSectionController.RemoveContentInsetObserver observer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="Xamarin.Forms.IShellContentInsetObserver" />
+      </Parameters>
+      <Docs>
+        <param name="observer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveDisplayedPageObserver">
+      <MemberSignature Language="C#" Value="public bool RemoveDisplayedPageObserver (object observer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoveDisplayedPageObserver(object observer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveDisplayedPageObserver : obj -&gt; bool" Usage="iShellSectionController.RemoveDisplayedPageObserver observer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="observer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendInsetChanged">
+      <MemberSignature Language="C#" Value="public void SendInsetChanged (Xamarin.Forms.Thickness inset, double tabThickness);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendInsetChanged(valuetype Xamarin.Forms.Thickness inset, float64 tabThickness) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.SendInsetChanged(Xamarin.Forms.Thickness,System.Double)" />
+      <MemberSignature Language="F#" Value="abstract member SendInsetChanged : Xamarin.Forms.Thickness * double -&gt; unit" Usage="iShellSectionController.SendInsetChanged (inset, tabThickness)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inset" Type="Xamarin.Forms.Thickness" />
+        <Parameter Name="tabThickness" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="inset">To be added.</param>
+        <param name="tabThickness">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPopped">
+      <MemberSignature Language="C#" Value="public void SendPopped ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPopped() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.SendPopped" />
+      <MemberSignature Language="F#" Value="abstract member SendPopped : unit -&gt; unit" Usage="iShellSectionController.SendPopped " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

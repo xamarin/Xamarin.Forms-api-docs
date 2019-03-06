@@ -1,0 +1,156 @@
+<Type Name="Routing" FullName="Xamarin.Forms.Routing">
+  <TypeSignature Language="C#" Value="public static class Routing" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Routing extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Routing" />
+  <TypeSignature Language="F#" Value="type Routing = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetOrCreateContent">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Element GetOrCreateContent (string route);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.Element GetOrCreateContent(string route) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Routing.GetOrCreateContent(System.String)" />
+      <MemberSignature Language="F#" Value="static member GetOrCreateContent : string -&gt; Xamarin.Forms.Element" Usage="Xamarin.Forms.Routing.GetOrCreateContent route" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Element</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="route" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="route">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRoute">
+      <MemberSignature Language="C#" Value="public static string GetRoute (Xamarin.Forms.Element obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetRoute(class Xamarin.Forms.Element obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Routing.GetRoute(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="static member GetRoute : Xamarin.Forms.Element -&gt; string" Usage="Xamarin.Forms.Routing.GetRoute obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterRoute">
+      <MemberSignature Language="C#" Value="public static void RegisterRoute (string route, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterRoute(string route, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Routing.RegisterRoute(System.String,System.Type)" />
+      <MemberSignature Language="F#" Value="static member RegisterRoute : string * Type -&gt; unit" Usage="Xamarin.Forms.Routing.RegisterRoute (route, type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="route" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="route">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterRoute">
+      <MemberSignature Language="C#" Value="public static void RegisterRoute (string route, Xamarin.Forms.RouteFactory factory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterRoute(string route, class Xamarin.Forms.RouteFactory factory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Routing.RegisterRoute(System.String,Xamarin.Forms.RouteFactory)" />
+      <MemberSignature Language="F#" Value="static member RegisterRoute : string * Xamarin.Forms.RouteFactory -&gt; unit" Usage="Xamarin.Forms.Routing.RegisterRoute (route, factory)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="route" Type="System.String" />
+        <Parameter Name="factory" Type="Xamarin.Forms.RouteFactory" />
+      </Parameters>
+      <Docs>
+        <param name="route">To be added.</param>
+        <param name="factory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RouteProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty RouteProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty RouteProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Routing.RouteProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable RouteProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Routing.RouteProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRoute">
+      <MemberSignature Language="C#" Value="public static void SetRoute (Xamarin.Forms.Element obj, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRoute(class Xamarin.Forms.Element obj, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Routing.SetRoute(Xamarin.Forms.Element,System.String)" />
+      <MemberSignature Language="F#" Value="static member SetRoute : Xamarin.Forms.Element * string -&gt; unit" Usage="Xamarin.Forms.Routing.SetRoute (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.Element" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

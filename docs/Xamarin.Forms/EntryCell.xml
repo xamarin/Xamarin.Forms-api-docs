@@ -486,6 +486,9 @@ namespace FormsGallery
         <Attribute>
           <AttributeName>System.Obsolete("XAlign is obsolete as of version 2.0.0. Please use HorizontalTextAlignment instead.")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.TextAlignment</ReturnType>
@@ -517,6 +520,9 @@ namespace FormsGallery
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("XAlignProperty is obsolete as of version 2.0.0. Please use HorizontalTextAlignmentProperty instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

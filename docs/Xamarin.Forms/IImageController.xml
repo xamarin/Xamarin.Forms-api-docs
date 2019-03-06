@@ -1,14 +1,24 @@
 <Type Name="IImageController" FullName="Xamarin.Forms.IImageController">
-  <TypeSignature Language="C#" Value="public interface IImageController" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IImageController" />
+  <TypeSignature Language="C#" Value="public interface IImageController : Xamarin.Forms.IViewController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IImageController implements class Xamarin.Forms.IElementController, class Xamarin.Forms.IViewController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IImageController" />
-  <TypeSignature Language="F#" Value="type IImageController = interface" />
+  <TypeSignature Language="F#" Value="type IImageController = interface&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>For internal use by platform renderers.</summary>
     <remarks>To be added.</remarks>

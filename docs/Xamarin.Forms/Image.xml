@@ -1,8 +1,8 @@
 <Type Name="Image" FullName="Xamarin.Forms.Image">
-  <TypeSignature Language="C#" Value="public class Image : Xamarin.Forms.View, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Image&gt;, Xamarin.Forms.IImageController" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Image extends Xamarin.Forms.View implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Image&gt;, class Xamarin.Forms.IImageController" />
+  <TypeSignature Language="C#" Value="public class Image : Xamarin.Forms.View, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Image&gt;, Xamarin.Forms.IImageController, Xamarin.Forms.IImageElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Image extends Xamarin.Forms.View implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Image&gt;, class Xamarin.Forms.IElementController, class Xamarin.Forms.IImageController, class Xamarin.Forms.IImageElement, class Xamarin.Forms.IViewController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Image" />
-  <TypeSignature Language="F#" Value="type Image = class&#xA;    inherit View&#xA;    interface IImageController&#xA;    interface IElementConfiguration&lt;Image&gt;" />
+  <TypeSignature Language="F#" Value="type Image = class&#xA;    inherit View&#xA;    interface IImageController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;Image&gt;&#xA;    interface IImageElement" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -22,7 +22,19 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Image&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.IImageController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IImageElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -328,6 +340,9 @@ indicator.BindingContext = image;]]></code>
         <Attribute>
           <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.SizeRequest</ReturnType>
@@ -429,6 +444,53 @@ indicator.BindingContext = image;]]></code>
       </ReturnValue>
       <Docs>
         <summary>Identifies the Source bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged">
+      <MemberSignature Language="C#" Value="void IImageElement.OnImageSourcesSourceChanged (object sender, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(object sender, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Image.Xamarin#Forms#IImageElement#OnImageSourcesSourceChanged(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(System.Object,System.EventArgs)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged">
+      <MemberSignature Language="C#" Value="void IImageElement.RaiseImageSourcePropertyChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Image.Xamarin#Forms#IImageElement#RaiseImageSourcePropertyChanged" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

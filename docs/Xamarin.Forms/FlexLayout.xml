@@ -18,9 +18,9 @@
   <Docs>
     <summary>A Flexbox-like layout that lays out child elements in optionally wrappable rows or columns of child elements.</summary>
     <remarks>
-      <para>FlexLayout is a <see cref='T:Xamarin.Forms.Layout`1' /> that efficiently lays out it's <see cref='P:Xamarin.Forms.Layout`1.Children' /> in a manner similar to that of <format type="text/html"><a href="https://www.w3.org/TR/css-flexbox-1/">CSS Flexbox</a></format>.</para>
-      <para>The <see cref='P:Xamarin.Forms.FlexLayout.Direction' /> property determines the primary axis of the layout. The <see cref='P:Xamarin.Forms.FlexLayout.JustifyContent' /> property determines how <see cref='P:Xamarin.Forms.Layout`1.Children' /> are laid out along the primary axis. The <see cref='P:Xamarin.Forms.FlexLayout.AlignItems' /> property specifies how <see cref='P:Xamarin.Forms.Layout`1.Children' /> are laid out along the cross axis; the <see cref='P:Xamarin.Forms.FlexLayout.AlignContent' /> property works similarly, but applies to entire rows or columns, not individual elements.</para>
-      <para>The initial size of a child element is set with <see cref='M:Xamarin.Forms.FlexLayout.SetBasis(Xamarin.Forms.BindableObject,Xamarin.Forms.FlexBasis)' /> and its resizing behavior is set with  <see cref='M:Xamarin.Forms.FlexLayout.SetGrow(Xamarin.Forms.BindableObject,System.Single)' /> and <see cref='M:Xamarin.Forms.FlexLayout.SetShrink(Xamarin.Forms.BindableObject,System.Single)' />.</para>
+      <para>FlexLayout is a <see cref="T:Xamarin.Forms.Layout`1" /> that efficiently lays out it's <see cref="P:Xamarin.Forms.Layout`1.Children" /> in a manner similar to that of <format type="text/html"><a href="https://www.w3.org/TR/css-flexbox-1/">CSS Flexbox</a></format>.</para>
+      <para>The <see cref="P:Xamarin.Forms.FlexLayout.Direction" /> property determines the primary axis of the layout. The <see cref="P:Xamarin.Forms.FlexLayout.JustifyContent" /> property determines how <see cref="P:Xamarin.Forms.Layout`1.Children" /> are laid out along the primary axis. The <see cref="P:Xamarin.Forms.FlexLayout.AlignItems" /> property specifies how <see cref="P:Xamarin.Forms.Layout`1.Children" /> are laid out along the cross axis; the <see cref="P:Xamarin.Forms.FlexLayout.AlignContent" /> property works similarly, but applies to entire rows or columns, not individual elements.</para>
+      <para>The initial size of a child element is set with <see cref="M:Xamarin.Forms.FlexLayout.SetBasis(Xamarin.Forms.BindableObject,Xamarin.Forms.FlexBasis)" /> and its resizing behavior is set with  <see cref="M:Xamarin.Forms.FlexLayout.SetGrow(Xamarin.Forms.BindableObject,System.Single)" /> and <see cref="M:Xamarin.Forms.FlexLayout.SetShrink(Xamarin.Forms.BindableObject,System.Single)" />.</para>
     </remarks>
     <related type="article" href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/flex-layout">The Xamarin.Forms FlexLayout</related>
   </Docs>
@@ -59,8 +59,10 @@
         <summary>Gets or sets a value that controls how multiple rows or columns of child elements are aligned.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>This property behaves similarly to <see cref='P:Xamarin.Forms.FlexLayout.AlignItems' />, but applies to how entire rows or columns are aligned, not individual elements. The below image illustrates three differnt <see cref='P:Xamarin.Forms.FlexLayout.AlignContent' /> values working on wrapped rows. The iOS screenshot shows <see cref='F:Xamarin.Forms.FlexAlignContent.SpaceBetween' />, the Android screenshot shows <see cref='F:Xamarin.Forms.FlexAlignContent.SpaceAround' />, and the UWP screenshot shows <see cref='F:Xamarin.Forms.FlexAlignContent.SpaceEvenly' />.</para>
-          <para><img href="~/Xamarin.Forms/_images/ExperimentAlignContent2-Large.png"/></para>
+          <para>This property behaves similarly to <see cref="P:Xamarin.Forms.FlexLayout.AlignItems" />, but applies to how entire rows or columns are aligned, not individual elements. The below image illustrates three differnt <see cref="P:Xamarin.Forms.FlexLayout.AlignContent" /> values working on wrapped rows. The iOS screenshot shows <see cref="F:Xamarin.Forms.FlexAlignContent.SpaceBetween" />, the Android screenshot shows <see cref="F:Xamarin.Forms.FlexAlignContent.SpaceAround" />, and the UWP screenshot shows <see cref="F:Xamarin.Forms.FlexAlignContent.SpaceEvenly" />.</para>
+          <para>
+            <img href="~/Xamarin.Forms/_images/ExperimentAlignContent2-Large.png" />
+          </para>
         </remarks>
       </Docs>
     </Member>
@@ -101,8 +103,10 @@
         <summary>Gets or sets a value that controls how child elements are laid out within their row or column.</summary>
         <value>A value that controls how child elements are laid out within their row or column.</value>
         <remarks>
-          <para>The following image shows the options for <see cref='P:Xamarin.Forms.FlexLayout.AlignItems' /> with <see cref='P:Xamarin.Forms.FlexLayout.Direction' /> set to <see cref='F:Xamarin.Forms.FlexDirection.Column' /> and <see cref='P:Xamarin.Forms.FlexLayout.JustifyContent' /> set to <see cref='F:Xamarin.Forms.FlexJustify.Start' />:</para>
-          <para><img href="~/Xamarin.Forms/_images/FlexAlign.All.png"/></para>
+          <para>The following image shows the options for <see cref="P:Xamarin.Forms.FlexLayout.AlignItems" /> with <see cref="P:Xamarin.Forms.FlexLayout.Direction" /> set to <see cref="F:Xamarin.Forms.FlexDirection.Column" /> and <see cref="P:Xamarin.Forms.FlexLayout.JustifyContent" /> set to <see cref="F:Xamarin.Forms.FlexJustify.Start" />:</para>
+          <para>
+            <img href="~/Xamarin.Forms/_images/FlexAlign.All.png" />
+          </para>
         </remarks>
       </Docs>
     </Member>
@@ -181,8 +185,10 @@
         <summary>Gets or sets the flex direction for child elements within this layout.</summary>
         <value>The flex direction for child elements within this layout.</value>
         <remarks>
-          <para>The following image shows the options for <see cref='P:Xamarin.Forms.FlexLayout.Direction' /> with <see cref='P:Xamarin.Forms.FlexLayout.JustifyContent' /> set to <see cref='F:Xamarin.Forms.FlexJustify.Start' /> and <see cref='P:Xamarin.Forms.FlexLayout.AlignItems' /> set to <see cref='F:Xamarin.Forms.FlexAlignItems.Stretch' />:</para>
-          <para><img href="~/Xamarin.Forms/_images/FlexDirection.All.png"/></para>
+          <para>The following image shows the options for <see cref="P:Xamarin.Forms.FlexLayout.Direction" /> with <see cref="P:Xamarin.Forms.FlexLayout.JustifyContent" /> set to <see cref="F:Xamarin.Forms.FlexJustify.Start" /> and <see cref="P:Xamarin.Forms.FlexLayout.AlignItems" /> set to <see cref="F:Xamarin.Forms.FlexAlignItems.Stretch" />:</para>
+          <para>
+            <img href="~/Xamarin.Forms/_images/FlexDirection.All.png" />
+          </para>
         </remarks>
       </Docs>
     </Member>
@@ -362,8 +368,10 @@
         <summary>Gets or sets a value that that describes how child elements are justified when there is extra space around them.</summary>
         <value>A value that that describes how child elements are justified when there is extra space around them.</value>
         <remarks>
-          <para>The following image shows options for <see cref='P:Xamarin.Forms.FlexLayout.JustifyContent' /> when <see cref='P:Xamarin.Forms.FlexLayout.Direction' /> is set to <see cref='F:Xamarin.Forms.FlexDirection.Column' /> and <see cref='P:Xamarin.Forms.FlexLayout.AlignItems' /> is set to <see cref='F:Xamarin.Forms.FlexAlignItems.Stretch' />:</para>
-          <para><img href="~/Xamarin.Forms/_images/FlexJustify.All.png"/></para>
+          <para>The following image shows options for <see cref="P:Xamarin.Forms.FlexLayout.JustifyContent" /> when <see cref="P:Xamarin.Forms.FlexLayout.Direction" /> is set to <see cref="F:Xamarin.Forms.FlexDirection.Column" /> and <see cref="P:Xamarin.Forms.FlexLayout.AlignItems" /> is set to <see cref="F:Xamarin.Forms.FlexAlignItems.Stretch" />:</para>
+          <para>
+            <img href="~/Xamarin.Forms/_images/FlexJustify.All.png" />
+          </para>
         </remarks>
       </Docs>
     </Member>
@@ -588,8 +596,10 @@
         <param name="value">The new self-alignment value.</param>
         <summary>Sets a value that optionally overrides the parent element's item aliginment for this child element.</summary>
         <remarks>
-          <para>The following image shows the effect of <c>FlexLayout.SetAlignSelf(c, FlexAlignSelf.Start);</c> on a layout with<see cref='P:Xamarin.Forms.FlexLayout.AlignItems' /> value of <see cref='F:Xamarin.Forms.FlexAlignItems.Stretch' />: </para>
-          <para><img href="~/Xamarin.Forms/_images/FlexLayout.SetAlignSelf.png"/></para>
+          <para>The following image shows the effect of <c>FlexLayout.SetAlignSelf(c, FlexAlignSelf.Start);</c> on a layout with<see cref="P:Xamarin.Forms.FlexLayout.AlignItems" /> value of <see cref="F:Xamarin.Forms.FlexAlignItems.Stretch" />: </para>
+          <para>
+            <img href="~/Xamarin.Forms/_images/FlexLayout.SetAlignSelf.png" />
+          </para>
         </remarks>
       </Docs>
     </Member>
@@ -666,9 +676,11 @@
         <param name="value">The new flex order value.</param>
         <summary>Sets the visual order priority of the element among its siblings.</summary>
         <remarks>
-          <para>Multiple elements may have the same ordering priority, in which case they will appear in the order in which they occur in the <see cref='P:Xamarin.Forms.Layout`1.Children' /> list. By default, the value of <see cref='M:Xamarin.Forms.FlexLayout.GetOrder(Xamarin.Forms.BindableObject)' /> is 0.</para>
+          <para>Multiple elements may have the same ordering priority, in which case they will appear in the order in which they occur in the <see cref="P:Xamarin.Forms.Layout`1.Children" /> list. By default, the value of <see cref="M:Xamarin.Forms.FlexLayout.GetOrder(Xamarin.Forms.BindableObject)" /> is 0.</para>
           <para>For instance, if 3 children <c>a</c>, <c>b</c>, and <c>c</c> are added in order, and the developer wishes <c>c</c> to appear in the middle, the proper code is <c>FlexLayout.SetOrder(b, 1)</c>. (A developer mistaking order priority for an index might wrongly expect <c>FlexLayout.SetOrder(c, 1)</c> to work, but as <c>a</c> and <c>b</c> will still have order priority <c>0</c>, the elements in that case would still layout in the sequence <c>a, b, c</c>.</para>
-          <para><img href="~/Xamarin.Forms/_images/FlexLayout.SetOrder.png"/></para>
+          <para>
+            <img href="~/Xamarin.Forms/_images/FlexLayout.SetOrder.png" />
+          </para>
         </remarks>
       </Docs>
     </Member>
