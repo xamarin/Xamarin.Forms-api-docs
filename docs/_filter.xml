@@ -6,16 +6,7 @@
       <namespaceFilter name="System.Drawing">
         <typeFilter name="*" expose="false"/>
       </namespaceFilter>
-    
-    <!-- Filter out internal namespaces -->
-      <namespaceFilter name="Xamarin.Forms.Internals">
-        <typeFilter name="*" expose="false"/>
-      </namespaceFilter>
-      <namespaceFilter name="Xamarin.Forms.Xaml.Internals">
-        <typeFilter name="*" expose="false"/>
-      </namespaceFilter>
-    
-    <!-- Filter out types that are in binary, but hidden behind feature flags -->
+      <!-- Filter out types that are in binary, but hidden behind feature flags -->
       <namespaceFilter name="*">
         <!-- Hide until 4.0 stable -->
         <typeFilter name="BackButtonBehavior" expose="false"/>
