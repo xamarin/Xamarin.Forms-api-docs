@@ -18,6 +18,14 @@
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("This is no longer used, and might be removed at some point ")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Struct defining X and Y double values.</summary>
     <remarks>To be added.</remarks>

@@ -1,0 +1,1045 @@
+<Type Name="SearchHandler" FullName="Xamarin.Forms.SearchHandler">
+  <TypeSignature Language="C#" Value="public class SearchHandler : Xamarin.Forms.BindableObject, Xamarin.Forms.ISearchHandlerController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchHandler extends Xamarin.Forms.BindableObject implements class Xamarin.Forms.ISearchHandlerController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.SearchHandler" />
+  <TypeSignature Language="F#" Value="type SearchHandler = class&#xA;    inherit BindableObject&#xA;    interface ISearchHandlerController" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.ISearchHandlerController</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SearchHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SearchHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearIcon">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource ClearIcon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource ClearIcon" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ClearIcon" />
+      <MemberSignature Language="F#" Value="member this.ClearIcon : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.SearchHandler.ClearIcon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearIconHelpText">
+      <MemberSignature Language="C#" Value="public string ClearIconHelpText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClearIconHelpText" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ClearIconHelpText" />
+      <MemberSignature Language="F#" Value="member this.ClearIconHelpText : string with get, set" Usage="Xamarin.Forms.SearchHandler.ClearIconHelpText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearIconHelpTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ClearIconHelpTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ClearIconHelpTextProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ClearIconHelpTextProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClearIconHelpTextProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ClearIconHelpTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearIconName">
+      <MemberSignature Language="C#" Value="public string ClearIconName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClearIconName" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ClearIconName" />
+      <MemberSignature Language="F#" Value="member this.ClearIconName : string with get, set" Usage="Xamarin.Forms.SearchHandler.ClearIconName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearIconNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ClearIconNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ClearIconNameProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ClearIconNameProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClearIconNameProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ClearIconNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearIconProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ClearIconProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ClearIconProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ClearIconProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClearIconProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ClearIconProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderCommand">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand ClearPlaceholderCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand ClearPlaceholderCommand" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ClearPlaceholderCommand" />
+      <MemberSignature Language="F#" Value="member this.ClearPlaceholderCommand : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderCommandParameter">
+      <MemberSignature Language="C#" Value="public object ClearPlaceholderCommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ClearPlaceholderCommandParameter" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ClearPlaceholderCommandParameter" />
+      <MemberSignature Language="F#" Value="member this.ClearPlaceholderCommandParameter : obj with get, set" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderCommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderCommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ClearPlaceholderCommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ClearPlaceholderCommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ClearPlaceholderCommandParameterProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClearPlaceholderCommandParameterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderCommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderCommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ClearPlaceholderCommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ClearPlaceholderCommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ClearPlaceholderCommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClearPlaceholderCommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderCommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderEnabled">
+      <MemberSignature Language="C#" Value="public bool ClearPlaceholderEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ClearPlaceholderEnabled" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ClearPlaceholderEnabled" />
+      <MemberSignature Language="F#" Value="member this.ClearPlaceholderEnabled : bool with get, set" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ClearPlaceholderEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ClearPlaceholderEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ClearPlaceholderEnabledProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClearPlaceholderEnabledProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderHelpText">
+      <MemberSignature Language="C#" Value="public string ClearPlaceholderHelpText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClearPlaceholderHelpText" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ClearPlaceholderHelpText" />
+      <MemberSignature Language="F#" Value="member this.ClearPlaceholderHelpText : string with get, set" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderHelpText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderHelpTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ClearPlaceholderHelpTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ClearPlaceholderHelpTextProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ClearPlaceholderHelpTextProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClearPlaceholderHelpTextProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderHelpTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderIcon">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource ClearPlaceholderIcon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource ClearPlaceholderIcon" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ClearPlaceholderIcon" />
+      <MemberSignature Language="F#" Value="member this.ClearPlaceholderIcon : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderIcon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderIconProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ClearPlaceholderIconProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ClearPlaceholderIconProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ClearPlaceholderIconProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClearPlaceholderIconProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderIconProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderName">
+      <MemberSignature Language="C#" Value="public string ClearPlaceholderName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClearPlaceholderName" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ClearPlaceholderName" />
+      <MemberSignature Language="F#" Value="member this.ClearPlaceholderName : string with get, set" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPlaceholderNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ClearPlaceholderNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ClearPlaceholderNameProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ClearPlaceholderNameProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClearPlaceholderNameProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ClearPlaceholderNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand Command { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand Command" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.Command" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.SearchHandler.Command" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandParameter">
+      <MemberSignature Language="C#" Value="public object CommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandParameter" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.CommandParameter" />
+      <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="Xamarin.Forms.SearchHandler.CommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.CommandParameterProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandParameterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.CommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.CommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.CommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayMemberName">
+      <MemberSignature Language="C#" Value="public string DisplayMemberName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayMemberName" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.DisplayMemberName" />
+      <MemberSignature Language="F#" Value="member this.DisplayMemberName : string with get, set" Usage="Xamarin.Forms.SearchHandler.DisplayMemberName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayMemberNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DisplayMemberNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DisplayMemberNameProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.DisplayMemberNameProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DisplayMemberNameProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.DisplayMemberNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSearchEnabled">
+      <MemberSignature Language="C#" Value="public bool IsSearchEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSearchEnabled" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.IsSearchEnabled" />
+      <MemberSignature Language="F#" Value="member this.IsSearchEnabled : bool with get, set" Usage="Xamarin.Forms.SearchHandler.IsSearchEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSearchEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsSearchEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsSearchEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.IsSearchEnabledProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSearchEnabledProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.IsSearchEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSource">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ItemsSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable ItemsSource" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ItemsSource" />
+      <MemberSignature Language="F#" Value="member this.ItemsSource : System.Collections.IEnumerable with get, set" Usage="Xamarin.Forms.SearchHandler.ItemsSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemsSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemsSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ItemsSourceProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ItemsSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate ItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate ItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ItemTemplate" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.SearchHandler.ItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ItemTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClearPlaceholderClicked">
+      <MemberSignature Language="C#" Value="protected virtual void OnClearPlaceholderClicked ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClearPlaceholderClicked() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SearchHandler.OnClearPlaceholderClicked" />
+      <MemberSignature Language="F#" Value="abstract member OnClearPlaceholderClicked : unit -&gt; unit&#xA;override this.OnClearPlaceholderClicked : unit -&gt; unit" Usage="searchHandler.OnClearPlaceholderClicked " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemSelected">
+      <MemberSignature Language="C#" Value="protected virtual void OnItemSelected (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemSelected(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SearchHandler.OnItemSelected(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemSelected : obj -&gt; unit&#xA;override this.OnItemSelected : obj -&gt; unit" Usage="searchHandler.OnItemSelected item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnQueryChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnQueryChanged (string oldValue, string newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnQueryChanged(string oldValue, string newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SearchHandler.OnQueryChanged(System.String,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member OnQueryChanged : string * string -&gt; unit&#xA;override this.OnQueryChanged : string * string -&gt; unit" Usage="searchHandler.OnQueryChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.String" />
+        <Parameter Name="newValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnQueryConfirmed">
+      <MemberSignature Language="C#" Value="protected virtual void OnQueryConfirmed ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnQueryConfirmed() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SearchHandler.OnQueryConfirmed" />
+      <MemberSignature Language="F#" Value="abstract member OnQueryConfirmed : unit -&gt; unit&#xA;override this.OnQueryConfirmed : unit -&gt; unit" Usage="searchHandler.OnQueryConfirmed " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Placeholder">
+      <MemberSignature Language="C#" Value="public string Placeholder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Placeholder" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.Placeholder" />
+      <MemberSignature Language="F#" Value="member this.Placeholder : string with get, set" Usage="Xamarin.Forms.SearchHandler.Placeholder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceholderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty PlaceholderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty PlaceholderProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.PlaceholderProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlaceholderProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.PlaceholderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Query">
+      <MemberSignature Language="C#" Value="public string Query { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Query" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.Query" />
+      <MemberSignature Language="F#" Value="member this.Query : string with get, set" Usage="Xamarin.Forms.SearchHandler.Query" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryIcon">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource QueryIcon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource QueryIcon" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.QueryIcon" />
+      <MemberSignature Language="F#" Value="member this.QueryIcon : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.SearchHandler.QueryIcon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryIconHelpText">
+      <MemberSignature Language="C#" Value="public string QueryIconHelpText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryIconHelpText" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.QueryIconHelpText" />
+      <MemberSignature Language="F#" Value="member this.QueryIconHelpText : string with get, set" Usage="Xamarin.Forms.SearchHandler.QueryIconHelpText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryIconHelpTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty QueryIconHelpTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty QueryIconHelpTextProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.QueryIconHelpTextProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable QueryIconHelpTextProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.QueryIconHelpTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryIconName">
+      <MemberSignature Language="C#" Value="public string QueryIconName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryIconName" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.QueryIconName" />
+      <MemberSignature Language="F#" Value="member this.QueryIconName : string with get, set" Usage="Xamarin.Forms.SearchHandler.QueryIconName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryIconNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty QueryIconNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty QueryIconNameProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.QueryIconNameProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable QueryIconNameProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.QueryIconNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryIconProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty QueryIconProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty QueryIconProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.QueryIconProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable QueryIconProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.QueryIconProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty QueryProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty QueryProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.QueryProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable QueryProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.QueryProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchBoxVisibility">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.SearchBoxVisiblity SearchBoxVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.SearchBoxVisiblity SearchBoxVisibility" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.SearchBoxVisibility" />
+      <MemberSignature Language="F#" Value="member this.SearchBoxVisibility : Xamarin.Forms.SearchBoxVisiblity with get, set" Usage="Xamarin.Forms.SearchHandler.SearchBoxVisibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.SearchBoxVisiblity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchBoxVisibilityProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SearchBoxVisibilityProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SearchBoxVisibilityProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.SearchBoxVisibilityProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SearchBoxVisibilityProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.SearchBoxVisibilityProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowsResults">
+      <MemberSignature Language="C#" Value="public bool ShowsResults { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowsResults" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.ShowsResults" />
+      <MemberSignature Language="F#" Value="member this.ShowsResults : bool with get, set" Usage="Xamarin.Forms.SearchHandler.ShowsResults" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowsResultsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShowsResultsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShowsResultsProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.ShowsResultsProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowsResultsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.ShowsResultsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ISearchHandlerController.ClearPlaceholderClicked">
+      <MemberSignature Language="C#" Value="void ISearchHandlerController.ClearPlaceholderClicked ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ISearchHandlerController.ClearPlaceholderClicked() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SearchHandler.Xamarin#Forms#ISearchHandlerController#ClearPlaceholderClicked" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ISearchHandlerController.ClearPlaceholderClicked</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ISearchHandlerController.ItemSelected">
+      <MemberSignature Language="C#" Value="void ISearchHandlerController.ItemSelected (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ISearchHandlerController.ItemSelected(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SearchHandler.Xamarin#Forms#ISearchHandlerController#ItemSelected(System.Object)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ISearchHandlerController.ItemSelected(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ISearchHandlerController.ListProxy">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IReadOnlyList&lt;object&gt; Xamarin.Forms.ISearchHandlerController.ListProxy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;object&gt; Xamarin.Forms.ISearchHandlerController.ListProxy" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.Xamarin#Forms#ISearchHandlerController#ListProxy" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.ISearchHandlerController.ListProxy" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ISearchHandlerController.ListProxy</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ISearchHandlerController.ListProxyChanged">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.ListProxyChangedEventArgs&gt; Xamarin.Forms.ISearchHandlerController.ListProxyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.ListProxyChangedEventArgs&gt; Xamarin.Forms.ISearchHandlerController.ListProxyChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.SearchHandler.Xamarin#Forms#ISearchHandlerController#ListProxyChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.ISearchHandlerController.ListProxyChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.ListProxyChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ISearchHandlerController.QueryConfirmed">
+      <MemberSignature Language="C#" Value="void ISearchHandlerController.QueryConfirmed ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ISearchHandlerController.QueryConfirmed() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SearchHandler.Xamarin#Forms#ISearchHandlerController#QueryConfirmed" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ISearchHandlerController.QueryConfirmed</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

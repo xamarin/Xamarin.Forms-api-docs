@@ -137,10 +137,10 @@
 
     }]]></code>
       </example>
-      <para>The following image shows the AbsoluteLayout demo from the <format type="text/html"><a href="http://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">FormsGallery</a></format> sample.
+      <para>The following image shows the AbsoluteLayout demo from the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">FormsGallery</a></format> sample.
     </para>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/AbsoluteLayout.TripleScreenShot.png" />
+        <img href="~/Xamarin.Forms/_images/AbsoluteLayout.TripleScreenShot.png" />
       </para>
       <example>
         <para>XAML for Xamarin.Forms supports the following attached properties for the <see cref="T:Xamarin.Forms.AbsoluteLayout" /> class:</para>
@@ -571,6 +571,9 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

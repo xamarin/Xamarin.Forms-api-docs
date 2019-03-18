@@ -1,8 +1,8 @@
 <Type Name="Slider" FullName="Xamarin.Forms.Slider">
-  <TypeSignature Language="C#" Value="public class Slider : Xamarin.Forms.View, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Slider&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Slider extends Xamarin.Forms.View implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Slider&gt;" />
+  <TypeSignature Language="C#" Value="public class Slider : Xamarin.Forms.View, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Slider&gt;, Xamarin.Forms.ISliderController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Slider extends Xamarin.Forms.View implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Slider&gt;, class Xamarin.Forms.ISliderController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Slider" />
-  <TypeSignature Language="F#" Value="type Slider = class&#xA;    inherit View&#xA;    interface IElementConfiguration&lt;Slider&gt;" />
+  <TypeSignature Language="F#" Value="type Slider = class&#xA;    inherit View&#xA;    interface ISliderController&#xA;    interface IElementConfiguration&lt;Slider&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -21,6 +21,9 @@
     <Interface>
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Slider&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.ISliderController</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
@@ -31,7 +34,7 @@
     <summary>A <see cref="T:Xamarin.Forms.View" /> control that inputs a linear value.</summary>
     <remarks>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/Slider.TripleScreenShot.png" />
+        <img href="~/Xamarin.Forms/_images/Slider.TripleScreenShot.png" />
       </para>
     </remarks>
   </Docs>
@@ -146,6 +149,116 @@ namespace FormsGallery
         <summary>Initializes a new instance of the Slider class.</summary>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler DragCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DragCompleted" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Slider.DragCompleted" />
+      <MemberSignature Language="F#" Value="member this.DragCompleted : EventHandler " Usage="member this.DragCompleted : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragCompletedCommand">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand DragCompletedCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand DragCompletedCommand" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Slider.DragCompletedCommand" />
+      <MemberSignature Language="F#" Value="member this.DragCompletedCommand : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.Slider.DragCompletedCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragCompletedCommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DragCompletedCommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DragCompletedCommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Slider.DragCompletedCommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DragCompletedCommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Slider.DragCompletedCommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragStarted">
+      <MemberSignature Language="C#" Value="public event EventHandler DragStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DragStarted" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Slider.DragStarted" />
+      <MemberSignature Language="F#" Value="member this.DragStarted : EventHandler " Usage="member this.DragStarted : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragStartedCommand">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand DragStartedCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand DragStartedCommand" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Slider.DragStartedCommand" />
+      <MemberSignature Language="F#" Value="member this.DragStartedCommand : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.Slider.DragStartedCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragStartedCommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DragStartedCommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DragStartedCommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Slider.DragStartedCommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DragStartedCommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Slider.DragStartedCommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -519,6 +632,48 @@ namespace FormsGallery
         <summary>Identifies the Value bindable property.</summary>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ISliderController.SendDragCompleted">
+      <MemberSignature Language="C#" Value="void ISliderController.SendDragCompleted ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ISliderController.SendDragCompleted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Slider.Xamarin#Forms#ISliderController#SendDragCompleted" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ISliderController.SendDragCompleted</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ISliderController.SendDragStarted">
+      <MemberSignature Language="C#" Value="void ISliderController.SendDragStarted ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ISliderController.SendDragStarted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Slider.Xamarin#Forms#ISliderController#SendDragStarted" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ISliderController.SendDragStarted</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

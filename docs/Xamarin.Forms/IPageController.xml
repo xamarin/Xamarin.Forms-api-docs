@@ -1,14 +1,21 @@
 <Type Name="IPageController" FullName="Xamarin.Forms.IPageController">
-  <TypeSignature Language="C#" Value="public interface IPageController" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPageController" />
+  <TypeSignature Language="C#" Value="public interface IPageController : Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPageController implements class Xamarin.Forms.IElementController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IPageController" />
-  <TypeSignature Language="F#" Value="type IPageController = interface" />
+  <TypeSignature Language="F#" Value="type IPageController = interface&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>For internal use by platform renderers.</summary>
     <remarks>To be added.</remarks>

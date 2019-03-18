@@ -25,6 +25,12 @@
       <InterfaceName>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.Internals.IResourceDictionary</InterfaceName>
     </Interface>
   </Interfaces>
@@ -96,7 +102,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="style" Type="Xamarin.Forms.Style" Index="0" FrameworkAlternate="xamarin.forms;xamarin-forms" />
+        <Parameter Name="style" Type="Xamarin.Forms.Style" />
       </Parameters>
       <Docs>
         <param name="style">The implicit style to add.</param>
@@ -363,6 +369,9 @@
         </Attribute>
         <Attribute>
           <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.TypeTypeConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

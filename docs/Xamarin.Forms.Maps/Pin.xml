@@ -1,8 +1,8 @@
 <Type Name="Pin" FullName="Xamarin.Forms.Maps.Pin">
-  <TypeSignature Language="C#" Value="public class Pin : Xamarin.Forms.BindableObject" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Pin extends Xamarin.Forms.BindableObject" />
+  <TypeSignature Language="C#" Value="public class Pin : Xamarin.Forms.Element" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Pin extends Xamarin.Forms.Element" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Maps.Pin" />
-  <TypeSignature Language="F#" Value="type Pin = class&#xA;    inherit BindableObject" />
+  <TypeSignature Language="F#" Value="type Pin = class&#xA;    inherit Element" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -14,6 +14,7 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="xamarin-forms">Xamarin.Forms.Element</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

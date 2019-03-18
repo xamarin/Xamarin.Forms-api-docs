@@ -31,7 +31,7 @@
     <remarks>
       <para>Because <see cref="T:Xamarin.Forms.StackLayout" /> layouts override the bounds on their child elements, application developers should not set bounds on them.</para>
       <example>
-        <para>The following example code, adapted from the <format type="text/html"><a href="http://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">FormsGallery</a></format> example shows how to create a new <see cref="T:Xamarin.Forms.StackLayout" /> with children that explore many of the layout behaviors of <see cref="T:Xamarin.Forms.StackLayout" />:</para>
+        <para>The following example code, adapted from the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">FormsGallery</a></format> example shows how to create a new <see cref="T:Xamarin.Forms.StackLayout" /> with children that explore many of the layout behaviors of <see cref="T:Xamarin.Forms.StackLayout" />:</para>
         <code lang="C#"><![CDATA[
 StackLayout stackLayout = new StackLayout
 {
@@ -109,7 +109,7 @@ StackLayout stackLayout = new StackLayout
 ]]></code>
       </example>
       <para>
-        <img href="xamarin-media/Xamarin.Forms/_images/StackLayout.TripleScreenShot.png" />
+        <img href="~/Xamarin.Forms/_images/StackLayout.TripleScreenShot.png" />
       </para>
     </remarks>
   </Docs>
@@ -242,6 +242,9 @@ var stackLayout = new StackLayout {
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

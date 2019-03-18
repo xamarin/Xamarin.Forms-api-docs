@@ -1,0 +1,114 @@
+<Type Name="ISearchHandlerController" FullName="Xamarin.Forms.ISearchHandlerController">
+  <TypeSignature Language="C#" Value="public interface ISearchHandlerController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISearchHandlerController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ISearchHandlerController" />
+  <TypeSignature Language="F#" Value="type ISearchHandlerController = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClearPlaceholderClicked">
+      <MemberSignature Language="C#" Value="public void ClearPlaceholderClicked ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearPlaceholderClicked() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ISearchHandlerController.ClearPlaceholderClicked" />
+      <MemberSignature Language="F#" Value="abstract member ClearPlaceholderClicked : unit -&gt; unit" Usage="iSearchHandlerController.ClearPlaceholderClicked " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemSelected">
+      <MemberSignature Language="C#" Value="public void ItemSelected (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ItemSelected(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ISearchHandlerController.ItemSelected(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member ItemSelected : obj -&gt; unit" Usage="iSearchHandlerController.ItemSelected obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListProxy">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;object&gt; ListProxy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;object&gt; ListProxy" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ISearchHandlerController.ListProxy" />
+      <MemberSignature Language="F#" Value="member this.ListProxy : System.Collections.Generic.IReadOnlyList&lt;obj&gt;" Usage="Xamarin.Forms.ISearchHandlerController.ListProxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListProxyChanged">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.ListProxyChangedEventArgs&gt; ListProxyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.ListProxyChangedEventArgs&gt; ListProxyChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ISearchHandlerController.ListProxyChanged" />
+      <MemberSignature Language="F#" Value="member this.ListProxyChanged : EventHandler&lt;Xamarin.Forms.ListProxyChangedEventArgs&gt; " Usage="member this.ListProxyChanged : System.EventHandler&lt;Xamarin.Forms.ListProxyChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.ListProxyChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryConfirmed">
+      <MemberSignature Language="C#" Value="public void QueryConfirmed ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void QueryConfirmed() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ISearchHandlerController.QueryConfirmed" />
+      <MemberSignature Language="F#" Value="abstract member QueryConfirmed : unit -&gt; unit" Usage="iSearchHandlerController.QueryConfirmed " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

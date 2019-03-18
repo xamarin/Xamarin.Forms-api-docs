@@ -5,7 +5,6 @@
   <TypeSignature Language="F#" Value="type IPlatform = interface" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-    <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -13,9 +12,12 @@
     <Attribute>
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("This interface is obsolete as of 3.5.0. Do not use it.")</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
-    <summary>For internal use by the Xamarin.Forms platform.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,10 +28,14 @@
       <MemberSignature Language="F#" Value="abstract member GetNativeSize : Xamarin.Forms.VisualElement * double * double -&gt; Xamarin.Forms.SizeRequest" Usage="iPlatform.GetNativeSize (view, widthConstraint, heightConstraint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method is obsolete as of 3.5.0. Please use the static Platform.GetNativeSize(VisualElement view, double widthConstraint, double heightConstraint) method instead")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.SizeRequest</ReturnType>
       </ReturnValue>
@@ -39,11 +45,11 @@
         <Parameter Name="heightConstraint" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="view">For internal use by the Xamarin.Forms platform.</param>
-        <param name="widthConstraint">For internal use by the Xamarin.Forms platform.</param>
-        <param name="heightConstraint">For internal use by the Xamarin.Forms platform.</param>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>For internal use by the Xamarin.Forms platform.</returns>
+        <param name="view">To be added.</param>
+        <param name="widthConstraint">To be added.</param>
+        <param name="heightConstraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
