@@ -1,5 +1,45 @@
 <Overview>
   <Assemblies>
+    <Assembly Name="Xamarin.Forms.Maps.Design" Version="2.0.0.0">
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Windows.Design.Metadata.ProvideMetadata(typeof(Xamarin.Forms.Maps.RegisterMetadata))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Xamarin Inc.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright © Xamarin Inc. 2013-2017")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("Provides the design-time metadata for the XAML language service.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("2.0.0.0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("Xamarin.Forms")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Xamarin.Forms.Maps.Design")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.7", FrameworkDisplayName=".NET Framework 4.7")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.Default | System.Diagnostics.DebuggableAttribute+DebuggingModes.DisableOptimizations | System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints | System.Diagnostics.DebuggableAttribute+DebuggingModes.EnableEditAndContinue)</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
     <Assembly Name="Xamarin.Forms.Core" Version="2.0.0.0">
       <Attributes>
         <Attribute>
@@ -130,46 +170,6 @@
         </Attribute>
       </Attributes>
     </Assembly>
-    <Assembly Name="Xamarin.Forms.Maps.Design" Version="2.0.0.0">
-      <Attributes>
-        <Attribute>
-          <AttributeName>Microsoft.Windows.Design.Metadata.ProvideMetadata(typeof(Xamarin.Forms.Maps.RegisterMetadata))</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Reflection.AssemblyCompany("Xamarin Inc.")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Reflection.AssemblyCopyright("Copyright © Xamarin Inc. 2013-2017")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Reflection.AssemblyDescription("Provides the design-time metadata for the XAML language service.")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Reflection.AssemblyFileVersion("2.0.0.0")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Reflection.AssemblyProduct("Xamarin.Forms")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Reflection.AssemblyTitle("Xamarin.Forms.Maps.Design")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.7", FrameworkDisplayName=".NET Framework 4.7")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.Default | System.Diagnostics.DebuggableAttribute+DebuggingModes.DisableOptimizations | System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints | System.Diagnostics.DebuggableAttribute+DebuggingModes.EnableEditAndContinue)</AttributeName>
-        </Attribute>
-      </Attributes>
-    </Assembly>
     <Assembly Name="Xamarin.Forms.Maps" Version="2.0.0.0">
       <Attributes>
         <Attribute>
@@ -234,7 +234,7 @@
           <AttributeName>System.Diagnostics.Debuggable</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyConfiguration("Debug")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
         </Attribute>
       </Attributes>
     </Assembly>
@@ -271,7 +271,7 @@
           <AttributeName>System.Diagnostics.Debuggable</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyConfiguration("Debug")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
         </Attribute>
       </Attributes>
     </Assembly>
@@ -3508,6 +3508,52 @@
       <Targets>
         <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
       </Targets>
+      <Member MemberName="DisplayZoomControls">
+        <MemberSignature Language="C#" Value="public static bool DisplayZoomControls (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DisplayZoomControls(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.DisplayZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
+        <MemberSignature Language="F#" Value="static member DisplayZoomControls : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.DisplayZoomControls config" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView" Member="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.DisplayZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="EnableZoomControls">
+        <MemberSignature Language="C#" Value="public static bool EnableZoomControls (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool EnableZoomControls(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
+        <MemberSignature Language="F#" Value="static member EnableZoomControls : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControls config" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView" Member="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
       <Member MemberName="MixedContentMode">
         <MemberSignature Language="C#" Value="public static Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling MixedContentMode (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config);" />
         <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling MixedContentMode(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config) cil managed" />
@@ -3525,6 +3571,56 @@
           <summary>Gets the mixed content loading behavior.</summary>
         </Docs>
         <Link Type="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView" Member="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.MixedContentMode(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="SetDisplayZoomControls">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; SetDisplayZoomControls (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config, bool value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; SetDisplayZoomControls(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config, bool value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetDisplayZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView},System.Boolean)" />
+        <MemberSignature Language="F#" Value="static member SetDisplayZoomControls : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt; * bool -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt;" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetDisplayZoomControls (config, value)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;" RefType="this" />
+          <Parameter Name="value" Type="System.Boolean" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView" Member="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetDisplayZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView},System.Boolean)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Xamarin.Forms.IPlatformElementConfiguration`2" />
+      </Targets>
+      <Member MemberName="SetEnableZoomControls">
+        <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; SetEnableZoomControls (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config, bool value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; SetEnableZoomControls(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config, bool value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetEnableZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView},System.Boolean)" />
+        <MemberSignature Language="F#" Value="static member SetEnableZoomControls : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt; * bool -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt;" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetEnableZoomControls (config, value)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;" RefType="this" />
+          <Parameter Name="value" Type="System.Boolean" />
+        </Parameters>
+        <Docs>
+          <param name="config">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView" Member="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetEnableZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView},System.Boolean)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>

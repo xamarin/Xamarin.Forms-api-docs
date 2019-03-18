@@ -2,7 +2,6 @@
 <Framework Name="xamarin-forms">
   <Assemblies>
     <Assembly Name="Xamarin.Forms.Core" Version="2.0.0.0" />
-    <Assembly Name="Xamarin.Forms.Maps.Design" Version="2.0.0.0" />
     <Assembly Name="Xamarin.Forms.Maps" Version="2.0.0.0" />
     <Assembly Name="Xamarin.Forms.Pages" Version="1.0.0.0" />
     <Assembly Name="Xamarin.Forms.Platform" Version="1.0.0.0" />
@@ -1419,6 +1418,7 @@
       <Member Id="F:Xamarin.Forms.GridUnitType.Star" />
     </Type>
     <Type Name="Xamarin.Forms.HandlerAttribute" Id="T:Xamarin.Forms.HandlerAttribute">
+      <Member Id="M:Xamarin.Forms.HandlerAttribute.#ctor(System.Type,System.Type)" />
       <Member Id="M:Xamarin.Forms.HandlerAttribute.#ctor(System.Type,System.Type,System.Type[])" />
       <Member Id="M:Xamarin.Forms.HandlerAttribute.ShouldRegister" />
     </Type>
@@ -3501,11 +3501,15 @@
     <Type Name="Xamarin.Forms.TabbedPage" Id="T:Xamarin.Forms.TabbedPage">
       <Member Id="F:Xamarin.Forms.TabbedPage.BarBackgroundColorProperty" />
       <Member Id="F:Xamarin.Forms.TabbedPage.BarTextColorProperty" />
+      <Member Id="F:Xamarin.Forms.TabbedPage.SelectedTabColorProperty" />
+      <Member Id="F:Xamarin.Forms.TabbedPage.UnselectedTabColorProperty" />
       <Member Id="M:Xamarin.Forms.TabbedPage.#ctor" />
       <Member Id="M:Xamarin.Forms.TabbedPage.CreateDefault(System.Object)" />
       <Member Id="M:Xamarin.Forms.TabbedPage.On``1" />
       <Member Id="P:Xamarin.Forms.TabbedPage.BarBackgroundColor" />
       <Member Id="P:Xamarin.Forms.TabbedPage.BarTextColor" />
+      <Member Id="P:Xamarin.Forms.TabbedPage.SelectedTabColor" />
+      <Member Id="P:Xamarin.Forms.TabbedPage.UnselectedTabColor" />
     </Type>
     <Type Name="Xamarin.Forms.TabIndexExtensions" Id="T:Xamarin.Forms.TabIndexExtensions">
       <Member Id="M:Xamarin.Forms.TabIndexExtensions.FindNextElement(Xamarin.Forms.VisualElement,System.Boolean,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.List{Xamarin.Forms.VisualElement}},System.Int32@)" />
@@ -3876,6 +3880,7 @@
       <Member Id="F:Xamarin.Forms.VisualElement.IsVisibleProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.MinimumHeightRequestProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.MinimumWidthRequestProperty" />
+      <Member Id="F:Xamarin.Forms.VisualElement.NavigationProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.OpacityProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.RotationProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.RotationXProperty" />
@@ -3883,6 +3888,7 @@
       <Member Id="F:Xamarin.Forms.VisualElement.ScaleProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.ScaleXProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.ScaleYProperty" />
+      <Member Id="F:Xamarin.Forms.VisualElement.StyleProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.TabIndexProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.TranslationXProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.TranslationYProperty" />
@@ -5081,9 +5087,19 @@
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.VisualElement.SetIsLegacyColorModeEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.VisualElement},System.Boolean)" />
     </Type>
     <Type Name="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView" Id="T:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView">
+      <Member Id="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.DisplayZoomControlsProperty" />
+      <Member Id="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControlProperty" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.MixedContentModeProperty" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.DisplayZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.GetDisplayZoomControls(Xamarin.Forms.WebView)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.GetEnableZoomControls(Xamarin.Forms.WebView)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.GetMixedContentMode(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.MixedContentMode(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetDisplayZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView},System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetDisplayZoomControls(Xamarin.Forms.WebView,System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetEnableZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView},System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetEnableZoomControls(Xamarin.Forms.WebView,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetMixedContentMode(Xamarin.Forms.BindableObject,Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetMixedContentMode(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView},Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling)" />
     </Type>
