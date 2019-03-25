@@ -2981,12 +2981,14 @@
     <Type Name="Xamarin.Forms.SelectableItemsView" Id="T:Xamarin.Forms.SelectableItemsView">
       <Member Id="E:Xamarin.Forms.SelectableItemsView.SelectionChanged" />
       <Member Id="F:Xamarin.Forms.SelectableItemsView.SelectedItemProperty" />
+      <Member Id="F:Xamarin.Forms.SelectableItemsView.SelectedItemsProperty" />
       <Member Id="F:Xamarin.Forms.SelectableItemsView.SelectionChangedCommandParameterProperty" />
       <Member Id="F:Xamarin.Forms.SelectableItemsView.SelectionChangedCommandProperty" />
       <Member Id="F:Xamarin.Forms.SelectableItemsView.SelectionModeProperty" />
       <Member Id="M:Xamarin.Forms.SelectableItemsView.#ctor" />
       <Member Id="M:Xamarin.Forms.SelectableItemsView.OnSelectionChanged(Xamarin.Forms.SelectionChangedEventArgs)" />
       <Member Id="P:Xamarin.Forms.SelectableItemsView.SelectedItem" />
+      <Member Id="P:Xamarin.Forms.SelectableItemsView.SelectedItems" />
       <Member Id="P:Xamarin.Forms.SelectableItemsView.SelectionChangedCommand" />
       <Member Id="P:Xamarin.Forms.SelectableItemsView.SelectionChangedCommandParameter" />
       <Member Id="P:Xamarin.Forms.SelectableItemsView.SelectionMode" />
@@ -4426,6 +4428,9 @@
     <Type Name="Xamarin.Forms.Internals.NumericExtensions" Id="T:Xamarin.Forms.Internals.NumericExtensions">
       <Member Id="M:Xamarin.Forms.Internals.NumericExtensions.Clamp(System.Double,System.Double,System.Double)" />
       <Member Id="M:Xamarin.Forms.Internals.NumericExtensions.Clamp(System.Int32,System.Int32,System.Int32)" />
+    </Type>
+    <Type Name="Xamarin.Forms.Internals.PageExtensions" Id="T:Xamarin.Forms.Internals.PageExtensions">
+      <Member Id="M:Xamarin.Forms.Internals.PageExtensions.AncestorToRoot(Xamarin.Forms.Page)" />
     </Type>
     <Type Name="Xamarin.Forms.Internals.Performance" Id="T:Xamarin.Forms.Internals.Performance">
       <Member Id="M:Xamarin.Forms.Internals.Performance.#ctor" />
