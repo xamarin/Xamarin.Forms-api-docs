@@ -1237,6 +1237,10 @@
       <Member Id="F:Xamarin.Forms.FlyoutHeaderBehavior.Fixed" />
       <Member Id="F:Xamarin.Forms.FlyoutHeaderBehavior.Scroll" />
     </Type>
+    <Type Name="Xamarin.Forms.FlyoutItem" Id="T:Xamarin.Forms.FlyoutItem">
+      <Member Id="M:Xamarin.Forms.FlyoutItem.#ctor" />
+      <Member Id="P:Xamarin.Forms.FlyoutItem.Tabs" />
+    </Type>
     <Type Name="Xamarin.Forms.FocusEventArgs" Id="T:Xamarin.Forms.FocusEventArgs">
       <Member Id="M:Xamarin.Forms.FocusEventArgs.#ctor(Xamarin.Forms.VisualElement,System.Boolean)" />
       <Member Id="P:Xamarin.Forms.FocusEventArgs.IsFocused" />
@@ -1815,6 +1819,7 @@
       <Member Id="M:Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)" />
       <Member Id="M:Xamarin.Forms.IShellController.UpdateCurrentState(Xamarin.Forms.ShellNavigationSource)" />
       <Member Id="P:Xamarin.Forms.IShellController.FlyoutHeader" />
+      <Member Id="P:Xamarin.Forms.IShellController.FlyoutIcon" />
     </Type>
     <Type Name="Xamarin.Forms.IShellItemController" Id="T:Xamarin.Forms.IShellItemController">
       <Member Id="M:Xamarin.Forms.IShellItemController.GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})" />
@@ -3040,6 +3045,7 @@
       <Member Id="F:Xamarin.Forms.Shell.FlyoutHeaderBehaviorProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutHeaderProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutHeaderTemplateProperty" />
+      <Member Id="F:Xamarin.Forms.Shell.FlyoutIconProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutIsPresentedProperty" />
       <Member Id="F:Xamarin.Forms.Shell.GroupHeaderTemplateProperty" />
       <Member Id="F:Xamarin.Forms.Shell.ItemsProperty" />
@@ -3115,11 +3121,13 @@
       <Member Id="P:Xamarin.Forms.Shell.CurrentItem" />
       <Member Id="P:Xamarin.Forms.Shell.CurrentShell" />
       <Member Id="P:Xamarin.Forms.Shell.CurrentState" />
+      <Member Id="P:Xamarin.Forms.Shell.Flyout" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutBackgroundColor" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutBehavior" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutHeader" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutHeaderBehavior" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutHeaderTemplate" />
+      <Member Id="P:Xamarin.Forms.Shell.FlyoutIcon" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutIsPresented" />
       <Member Id="P:Xamarin.Forms.Shell.GroupHeaderTemplate" />
       <Member Id="P:Xamarin.Forms.Shell.Items" />
@@ -3500,6 +3508,10 @@
       <Member Id="P:Xamarin.Forms.SwitchCell.OnColor" />
       <Member Id="P:Xamarin.Forms.SwitchCell.Text" />
     </Type>
+    <Type Name="Xamarin.Forms.Tab" Id="T:Xamarin.Forms.Tab">
+      <Member Id="M:Xamarin.Forms.Tab.#ctor" />
+      <Member Id="P:Xamarin.Forms.Tab.Content" />
+    </Type>
     <Type Name="Xamarin.Forms.TabbedPage" Id="T:Xamarin.Forms.TabbedPage">
       <Member Id="F:Xamarin.Forms.TabbedPage.BarBackgroundColorProperty" />
       <Member Id="F:Xamarin.Forms.TabbedPage.BarTextColorProperty" />
@@ -3512,6 +3524,9 @@
       <Member Id="P:Xamarin.Forms.TabbedPage.BarTextColor" />
       <Member Id="P:Xamarin.Forms.TabbedPage.SelectedTabColor" />
       <Member Id="P:Xamarin.Forms.TabbedPage.UnselectedTabColor" />
+    </Type>
+    <Type Name="Xamarin.Forms.TabContent" Id="T:Xamarin.Forms.TabContent">
+      <Member Id="M:Xamarin.Forms.TabContent.#ctor" />
     </Type>
     <Type Name="Xamarin.Forms.TabIndexExtensions" Id="T:Xamarin.Forms.TabIndexExtensions">
       <Member Id="M:Xamarin.Forms.TabIndexExtensions.FindNextElement(Xamarin.Forms.VisualElement,System.Boolean,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.List{Xamarin.Forms.VisualElement}},System.Int32@)" />
@@ -3929,7 +3944,6 @@
       <Member Id="P:Xamarin.Forms.VisualElement.Batched" />
       <Member Id="P:Xamarin.Forms.VisualElement.Behaviors" />
       <Member Id="P:Xamarin.Forms.VisualElement.Bounds" />
-      <Member Id="P:Xamarin.Forms.VisualElement.class" />
       <Member Id="P:Xamarin.Forms.VisualElement.DisableLayout" />
       <Member Id="P:Xamarin.Forms.VisualElement.FlowDirection" />
       <Member Id="P:Xamarin.Forms.VisualElement.Height" />
@@ -3952,8 +3966,6 @@
       <Member Id="P:Xamarin.Forms.VisualElement.Scale" />
       <Member Id="P:Xamarin.Forms.VisualElement.ScaleX" />
       <Member Id="P:Xamarin.Forms.VisualElement.ScaleY" />
-      <Member Id="P:Xamarin.Forms.VisualElement.Style" />
-      <Member Id="P:Xamarin.Forms.VisualElement.StyleClass" />
       <Member Id="P:Xamarin.Forms.VisualElement.TabIndex" />
       <Member Id="P:Xamarin.Forms.VisualElement.TranslationX" />
       <Member Id="P:Xamarin.Forms.VisualElement.TranslationY" />
@@ -4636,6 +4648,7 @@
       <Member Id="F:Xamarin.Forms.Maps.Map.IsShowingUserProperty" />
       <Member Id="F:Xamarin.Forms.Maps.Map.ItemsSourceProperty" />
       <Member Id="F:Xamarin.Forms.Maps.Map.ItemTemplateProperty" />
+      <Member Id="F:Xamarin.Forms.Maps.Map.ItemTemplateSelectorProperty" />
       <Member Id="F:Xamarin.Forms.Maps.Map.MapTypeProperty" />
       <Member Id="M:Xamarin.Forms.Maps.Map.#ctor" />
       <Member Id="M:Xamarin.Forms.Maps.Map.#ctor(Xamarin.Forms.Maps.MapSpan)" />
@@ -4648,6 +4661,7 @@
       <Member Id="P:Xamarin.Forms.Maps.Map.IsShowingUser" />
       <Member Id="P:Xamarin.Forms.Maps.Map.ItemsSource" />
       <Member Id="P:Xamarin.Forms.Maps.Map.ItemTemplate" />
+      <Member Id="P:Xamarin.Forms.Maps.Map.ItemTemplateSelector" />
       <Member Id="P:Xamarin.Forms.Maps.Map.LastMoveToRegion" />
       <Member Id="P:Xamarin.Forms.Maps.Map.MapType" />
       <Member Id="P:Xamarin.Forms.Maps.Map.Pins" />
@@ -4687,6 +4701,7 @@
       <Member Id="P:Xamarin.Forms.Maps.Pin.Address" />
       <Member Id="P:Xamarin.Forms.Maps.Pin.Id" />
       <Member Id="P:Xamarin.Forms.Maps.Pin.Label" />
+      <Member Id="P:Xamarin.Forms.Maps.Pin.MarkerId" />
       <Member Id="P:Xamarin.Forms.Maps.Pin.Position" />
       <Member Id="P:Xamarin.Forms.Maps.Pin.Type" />
     </Type>
