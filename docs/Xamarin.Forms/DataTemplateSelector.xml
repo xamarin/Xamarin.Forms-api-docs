@@ -27,14 +27,14 @@
         this.templateOne = new DataTemplate (typeof (ViewA));
         this.templateTwo = new DataTemplate (typeof (ViewB));
     }
-
+    
     protected override DataTemplate OnSelectTemplate (object item, BindableObject container)
     {
         if (item is double)
             return this.templateOne;
         return this.templateTwo;
     }
-
+    
     private readonly DataTemplate templateOne;
     private readonly DataTemplate templateTwo;
 }]]></code></example>

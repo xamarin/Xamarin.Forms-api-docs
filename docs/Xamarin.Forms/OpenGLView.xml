@@ -48,28 +48,28 @@
         <code lang="C#"><![CDATA[
 using Xamarin.Forms;
 using OpenTK.Graphics.ES30;
-
+    
 namespace opengl
 {
     public class OpenGLPage : ContentPage
     {
         float red, green, blue;
-
+    
         public OpenGLPage ()
         {
             Title = "OpenGL";
             var view = new OpenGLView { HasRenderLoop = true };
             var toggle = new Switch { IsToggled = true };
             var button = new Button { Text = "Display" };
-
+    
             view.HeightRequest = 300;
             view.WidthRequest = 300;
-
+    
             view.OnDisplay = r => {
-
+    
                 GL.ClearColor (red, green, blue, 1.0f);
                 GL.Clear ((ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit));
-
+    
                 red += 0.01f;
                 if (red >= 1.0f)
                     red -= 1.0f;
@@ -80,22 +80,22 @@ namespace opengl
                 if (blue >= 1.0f)
                     blue -= 1.0f;
             };
-
+    
             toggle.Toggled += (s, a) => {
                 view.HasRenderLoop = toggle.IsToggled;
             };
             button.Clicked += (s, a) => view.Display ();
-
+    
             var stack = new StackLayout { 
                 Padding = new Size (20, 20),
                 Children = {view, toggle, button}
             };
-
+    
             Content = stack;
         }
     }
 }
-
+    
           ]]></code>
       </example>
       <para>
@@ -291,10 +291,10 @@ namespace opengl
             <code lang="C#"><![CDATA[
     var view = new OpenGLView { HasRenderLoop = true };
     view.OnDisplay = r => {
-
+    
         GL.ClearColor (red, green, blue, 1.0f);
         GL.Clear ((ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit));
-
+    
         red += 0.01f;
         if (red >= 1.0f)
             red -= 1.0f;

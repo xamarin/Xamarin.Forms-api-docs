@@ -39,7 +39,7 @@
         <code lang="C#"><![CDATA[using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
-
+    
 namespace FormsGallery
 {
     class PickerDemoPage : ContentPage
@@ -56,7 +56,7 @@ namespace FormsGallery
             { "Silver", Color.Silver }, { "Teal", Color.Teal },
             { "White", Color.White }, { "Yellow", Color.Yellow }
         };
-
+    
         public PickerDemoPage()
         {
             Label header = new Label
@@ -65,18 +65,18 @@ namespace FormsGallery
                 FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center
             };
-
+    
             Picker picker = new Picker
             {
                 Title = "Color",
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };
-
+    
             foreach (string colorName in nameToColor.Keys)
             {
                 picker.Items.Add(colorName);
             }
-
+    
             // Create BoxView for displaying picked Color
             BoxView boxView = new BoxView
             {
@@ -85,7 +85,7 @@ namespace FormsGallery
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };
-
+    
             picker.SelectedIndexChanged += (sender, args) =>
                 {
                     if (picker.SelectedIndex == -1)
@@ -98,10 +98,10 @@ namespace FormsGallery
                         boxView.Color = nameToColor[colorName];
                     }
                 };
-
+    
             // Accomodate iPhone status bar.
             this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
-
+    
             // Build the page.
             this.Content = new StackLayout
             {
@@ -112,7 +112,7 @@ namespace FormsGallery
                     boxView
                 }
             };
-
+    
         }
     }
 }
