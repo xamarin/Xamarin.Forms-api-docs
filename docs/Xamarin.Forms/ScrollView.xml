@@ -44,12 +44,12 @@
       <example>
         <code lang="C#"><![CDATA[
 var stack = new StackLayout();
-
+    
 for (int i = 0; i < 100; i++)
 {
     stack.Children.Add(new Button { Text = "Button " + i });
 }
-
+    
 MainPage = new ContentPage
 {
     Content = new ScrollView { Content = stack }

@@ -28,37 +28,37 @@ public class PersonViewModel
   public string Name { get; set; }
   public string Company { get; set; }
 }
-
+    
 Label label;
 PersonViewModel viewmodel;
-
+    
 //BindingMode.OneWay
 label = new Label ();
 label.BindingContext = viewmodel = new PersonViewModel ();
 label.SetBinding<PersonViewModel> (Label.TextProperty, vm => vm.Name, mode: BindingMode.OneWay);
-
+    
 viewmodel.Name = "John Doe";
 Debug.WriteLine (label.Text); //prints "John Doe"
 label.Text = "Foo";
 Debug.WriteLine (viewmodel.Name); //prints "John Doe"
-
+    
 
 //BindingMode.TwoWay
 label = new Label ();
 label.BindingContext = viewmodel = new PersonViewModel ();
 label.SetBinding<PersonViewModel> (Label.TextProperty, vm => vm.Name, mode: BindingMode.TwoWay);
-
+    
 viewmodel.Name = "John Doe";
 Debug.WriteLine (label.Text); //prints "John Doe"
 label.Text = "Foo";
 Debug.WriteLine (viewmodel.Name); //prints "Foo"
-
+    
 
 //BindingMode.OneWayToSource
 label = new Label ();
 label.BindingContext = viewmodel = new PersonViewModel ();
 label.SetBinding<PersonViewModel> (Label.TextProperty, vm => vm.Name, mode: BindingMode.OneWayToSource);
-
+    
 viewmodel.Name = "John Doe";
 Debug.WriteLine (label.Text); //prints ""
 label.Text = "Foo";

@@ -188,7 +188,7 @@
     var button2 = new Button {Text = "CenterAligned", HorizontalOptions=LayoutOptions.Center};
     var button3 = new Button {Text = "EndAligned", HorizontalOptions=LayoutOptions.End};
     var button4 = new Button {Text = "Fill", HorizontalOptions=LayoutOptions.Fill};
-
+    
     StackLayout stack = new StackLayout {
       Children = {
         button1,
@@ -197,7 +197,7 @@
         button4
       }
     };
-
+    
     return stack;
   }
               ]]></code>
@@ -335,7 +335,7 @@
     var button2 = new Button {Text = "CenterAligned", VerticalOptions=LayoutOptions.Center};
     var button3 = new Button {Text = "BottomAligned", VerticalOptions=LayoutOptions.End};
     var button4 = new Button {Text = "Fill", VerticalOptions=LayoutOptions.Fill};
-
+    
     StackLayout stack = new StackLayout {
       Orientation = StackOrientation.Horizontal,
       Children = {
@@ -345,7 +345,7 @@
         button4
       }
     };
-
+    
     return stack;
   }
               ]]></code>

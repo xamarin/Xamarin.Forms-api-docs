@@ -30,7 +30,7 @@
       <example>
         <code lang="C#"><![CDATA[
 			var converter = new GridLengthTypeConverter ();
-
+    
 			Assert.AreEqual (new GridLength (42), converter.ConvertFrom ("42"));
 			Assert.AreEqual (new GridLength (42.2), converter.ConvertFrom ("42.2"));
 			Assert.AreEqual (GridLength.Auto, converter.ConvertFrom ("auto"));

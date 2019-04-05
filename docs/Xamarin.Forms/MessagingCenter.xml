@@ -32,14 +32,14 @@ public class SubscriberThing
 {
 	public int IntProperty { get; set; }
 }
-
+    
 var subscriber = new SubscriberThing();
 MessagingCenter.Subscribe<MyPage, int> (subscriber, "IntPropertyMessage", (s, e) => {
 	subscriber.IntProperty = e; 
 });
-
+    
 //...later...
-
+    
 MessagingCenter.Send<MyPage, int>(this, "IntPropertyMessage", 2);
 Assert.AreEqual(2, subscriber.IntProperty);
           ]]></code>

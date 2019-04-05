@@ -129,7 +129,7 @@ public class PersonViewModel
   public string Name { get; set; }
   public string Company { get; set; }
 }
-
+    
 var label = new Label ();
 label.SetBinding<PersonViewModel> (Label.TextProperty, vm => vm.Name);
 label.BindingContext = new PersonViewModel {

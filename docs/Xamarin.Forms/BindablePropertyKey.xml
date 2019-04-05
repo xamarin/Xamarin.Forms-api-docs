@@ -28,9 +28,9 @@ class Bindable : BindableObject
 {
   internal static readonly BindablePropertyKey FooPropertyKey = 
     BindableProperty.CreateReadOnly<Bindable, string> (w => w.Foo, default(string));
-
+    
   public static readonly BindableProperty FooProperty = FooPropertyKey.BindableProperty;
-
+    
   public string Foo {
     get { return (string)GetValue (FooProperty); }
     internal set { SetValue (FooPropertyKey, value); } 
