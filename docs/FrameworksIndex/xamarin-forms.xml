@@ -193,6 +193,7 @@
       <Member Id="P:Xamarin.Forms.BaseShellItem.Title" />
     </Type>
     <Type Name="Xamarin.Forms.Behavior" Id="T:Xamarin.Forms.Behavior">
+      <Member Id="M:Xamarin.Forms.Behavior.#ctor" />
       <Member Id="M:Xamarin.Forms.Behavior.OnAttachedTo(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.Behavior.OnDetachingFrom(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.Behavior.Xamarin#Forms#IAttachedObject#AttachTo(Xamarin.Forms.BindableObject)" />
@@ -862,9 +863,14 @@
       <Member Id="F:Xamarin.Forms.Device.WPF" />
       <Member Id="M:Xamarin.Forms.Device.BeginInvokeOnMainThread(System.Action)" />
       <Member Id="M:Xamarin.Forms.Device.GetAssemblies" />
+      <Member Id="M:Xamarin.Forms.Device.GetMainThreadSynchronizationContextAsync" />
       <Member Id="M:Xamarin.Forms.Device.GetNamedSize(Xamarin.Forms.NamedSize,System.Type)" />
       <Member Id="M:Xamarin.Forms.Device.GetNamedSize(Xamarin.Forms.NamedSize,System.Type,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.Device.GetNamedSize(Xamarin.Forms.NamedSize,Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync(System.Action)" />
+      <Member Id="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync(System.Func{System.Threading.Tasks.Task})" />
+      <Member Id="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync``1(System.Func{``0})" />
+      <Member Id="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync``1(System.Func{System.Threading.Tasks.Task{``0}})" />
       <Member Id="M:Xamarin.Forms.Device.OnPlatform(System.Action,System.Action,System.Action,System.Action)" />
       <Member Id="M:Xamarin.Forms.Device.OnPlatform``1(``0,``0,``0)" />
       <Member Id="M:Xamarin.Forms.Device.OpenUri(System.Uri)" />
@@ -2950,6 +2956,7 @@
       <Member Id="F:Xamarin.Forms.SearchHandler.QueryIconProperty" />
       <Member Id="F:Xamarin.Forms.SearchHandler.QueryProperty" />
       <Member Id="F:Xamarin.Forms.SearchHandler.SearchBoxVisibilityProperty" />
+      <Member Id="F:Xamarin.Forms.SearchHandler.SelectedItemProperty" />
       <Member Id="F:Xamarin.Forms.SearchHandler.ShowsResultsProperty" />
       <Member Id="M:Xamarin.Forms.SearchHandler.#ctor" />
       <Member Id="M:Xamarin.Forms.SearchHandler.OnClearPlaceholderClicked" />
@@ -2980,6 +2987,7 @@
       <Member Id="P:Xamarin.Forms.SearchHandler.QueryIconHelpText" />
       <Member Id="P:Xamarin.Forms.SearchHandler.QueryIconName" />
       <Member Id="P:Xamarin.Forms.SearchHandler.SearchBoxVisibility" />
+      <Member Id="P:Xamarin.Forms.SearchHandler.SelectedItem" />
       <Member Id="P:Xamarin.Forms.SearchHandler.ShowsResults" />
       <Member Id="P:Xamarin.Forms.SearchHandler.Xamarin#Forms#ISearchHandlerController#ListProxy" />
     </Type>
@@ -3118,8 +3126,8 @@
       <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#RemoveAppearanceObserver(Xamarin.Forms.IAppearanceObserver)" />
       <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#RemoveFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)" />
       <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#UpdateCurrentState(Xamarin.Forms.ShellNavigationSource)" />
+      <Member Id="P:Xamarin.Forms.Shell.Current" />
       <Member Id="P:Xamarin.Forms.Shell.CurrentItem" />
-      <Member Id="P:Xamarin.Forms.Shell.CurrentShell" />
       <Member Id="P:Xamarin.Forms.Shell.CurrentState" />
       <Member Id="P:Xamarin.Forms.Shell.Flyout" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutBackgroundColor" />
