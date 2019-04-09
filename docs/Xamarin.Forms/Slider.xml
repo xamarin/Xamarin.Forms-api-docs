@@ -63,13 +63,13 @@
           <example>
             <code lang="C#"><![CDATA[using System;
 using Xamarin.Forms;
-
+    
 namespace FormsGallery
 {
     class SliderDemoPage : ContentPage
     {
         Label label;
-
+    
         public SliderDemoPage()
         {
             Label header = new Label
@@ -78,7 +78,7 @@ namespace FormsGallery
                 Font = Font.BoldSystemFontOfSize(50),
                 HorizontalOptions = LayoutOptions.Center
             };
-
+    
             Slider slider = new Slider
             {
                 Minimum = 0,
@@ -86,7 +86,7 @@ namespace FormsGallery
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };
             slider.ValueChanged += OnSliderValueChanged;
-
+    
             label = new Label
             {
                 Text = "Slider value is 0",
@@ -94,10 +94,10 @@ namespace FormsGallery
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };
-
+    
             // Accomodate iPhone status bar.
             this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
-
+    
             // Build the page.
             this.Content = new StackLayout
             {
@@ -109,7 +109,7 @@ namespace FormsGallery
                 }
             };
         }
-
+    
         void OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
             label.Text = String.Format("Slider value is {0:F1}", e.NewValue);
@@ -202,7 +202,7 @@ namespace FormsGallery
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Slider.DragCompletedCommand" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,7 +257,7 @@ namespace FormsGallery
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Slider.DragStartedCommand" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

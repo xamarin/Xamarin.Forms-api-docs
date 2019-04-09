@@ -41,7 +41,7 @@
         <code lang="C#"><![CDATA[
 using System;
 using Xamarin.Forms;
-
+    
 namespace MinimalTabbed
 {
     class TabbedPageDemoPage : TabbedPage
@@ -49,7 +49,7 @@ namespace MinimalTabbed
         public TabbedPageDemoPage ()
         {
             this.Title = "TabbedPage";
-
+    
             this.ItemsSource = new NamedColor[] {
                 new NamedColor ("Red", Color.Red),
                 new NamedColor ("Yellow", Color.Yellow),
@@ -58,13 +58,13 @@ namespace MinimalTabbed
                 new NamedColor ("Blue", Color.Blue),
                 new NamedColor ("Purple", Color.Purple)
             };
-
+    
             this.ItemTemplate = new DataTemplate (() => { 
                 return new NamedColorPage (); 
             });
         }
     }
-
+    
     // Data type:
     class NamedColor
     {
@@ -73,17 +73,17 @@ namespace MinimalTabbed
             this.Name = name;
             this.Color = color;
         }
-
+    
         public string Name { private set; get; }
-
+    
         public Color Color { private set; get; }
-
+    
         public override string ToString ()
         {
             return Name;
         }
     }
-
+    
     // Format page
     class NamedColorPage : ContentPage
     {
@@ -99,13 +99,13 @@ namespace MinimalTabbed
                 HorizontalOptions = LayoutOptions.Center
             };
             boxView.SetBinding (BoxView.ColorProperty, "Color");
-
+    
             // Build the page
             this.Content = boxView;
         }
     }
 }
-
+    
 
 ]]></code>
       </example>

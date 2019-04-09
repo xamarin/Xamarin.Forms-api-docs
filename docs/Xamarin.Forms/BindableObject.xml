@@ -41,14 +41,14 @@ class MockBindableObject : BindableObject
          BindableProperty.Create ("Foo", typeof (string),
                                   typeof (MockBindableObject),
                                   default(string));
-
+    
     // App developers should use the method below during development for
     // design-time error checking as the codebase evolves.
     // public static readonly BindableProperty FooProperty 
     //     = BindableProperty.Create<MockBindableObject, string> (
     //         o => o.Foo, default (string)
     //     );
-
+    
     public string BoundName
     {
         get { return (string) GetValue (BoundNameProperty); }
@@ -61,7 +61,7 @@ class MockBindableObject : BindableObject
 class MockViewModel : INotifyPropertyChanged
 {
     string name;
-
+    
     public string Name
     {
         get { return name; }
@@ -75,9 +75,9 @@ class MockViewModel : INotifyPropertyChanged
             OnPropertyChanged ();
         }
     }
-
+    
     public event PropertyChangedEventHandler PropertyChanged;
-
+    
     void OnPropertyChanged (string propertyName = null)
     {
         PropertyChangedEventHandler handler = PropertyChanged;
@@ -92,24 +92,24 @@ public static void OneWayDemo ()
 {
     var view = new MockBindableObject ();
     var viewModel = new MockViewModel ();
-
+    
     // Pre-load the ViewModel, for demonstration purposes
     viewModel.Name = "Testing";
-
+    
     // Create a one-way (default) binding
     view.SetBinding (MockBindableObject.BoundNameProperty, new Binding ("Name"));
     
     // App developers should only set the binding context after all
     // calls to SetBinding() have been made, for performance reasons.
     view.BindingContext = viewModel;
-
+    
     // In a one way binding, the ViewModel value will be used to update
     // the values in the View during initialization
     if (view.BoundName != "Testing")
         throw new Exception ();
-
+    
     view.BoundName = "gnitseT";
-
+    
     // in a one way binding, changes to the View will NOT update the ViewModel
     if (viewModel.Name == "gnitseT")
         throw new Exception ();
@@ -258,19 +258,19 @@ class PersonView : ContentView
     Content = label;
   }
 }
-
+    
 var stack = new StackLayout {
   Orientation = StackOrientation.Vertical,  
 };
-
+    
 var jane = new PersonView ();
 jane.SetBinding (BindableObject.BindingContext, "Jane");
 stack.Children.Add (jane);
-
+    
 var john = new PersonView ();
 john.SetBinding (BindableObject.BindingContext, "John");
 stack.Children.Add (john);
-
+    
 stack.BindingContext = new {Jane = new {Name = "Jane Doe"}, John = new {Name = "John Doe"}};
         ]]></code>
           </example>
@@ -376,7 +376,7 @@ class MyBindable : BindableObject
 {
   public static readonly BindableProperty MyProperty = 
     BindableProperty.Create<MyBindable, string> (w => w.My, default(string));
-
+    
   public string My {
     get { return (string)GetValue (MyProperty); }
     set { SetValue (MyProperty, value); } 
@@ -777,7 +777,7 @@ class MyBindable : BindableObject
 {
     public static readonly BindableProperty MyProperty = 
       BindableProperty.Create<MyBindable, string> (w => w.My, default(string));
-
+    
     public string My {
       get { return (string)GetValue (MyProperty); }
       set { SetValue (MyProperty, value); } 
@@ -826,7 +826,7 @@ class MyBindable : BindableObject
   internal static readonly BindablePropertyKey MyPropertyKey = 
     BindableProperty.CreateReadOnly<MyBindable, string> (w => w.My, default(string));
   public static readonly BindableProperty MyProperty = MyPropertyKey.BindableProperty;
-
+    
   public string My {
     get { return (string)GetValue (MyProperty); }
     internal set { SetValue (MyPropertyKey, value); } 

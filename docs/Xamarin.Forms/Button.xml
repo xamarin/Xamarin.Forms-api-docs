@@ -88,7 +88,7 @@
 {
    (sender as Button).Text = "You pressed me!";
 }
-
+    
 private void PressMeButton_Clicked(object sender, EventArgs e)
 {
    (sender as Button).Text = "I was just clicked!";
@@ -107,7 +107,7 @@ private void PressMeButton_Clicked(object sender, EventArgs e)
 ]]></code>
         <para>With the XAML above, the developer first defines the <c>IncrementLabelCommand</c> property on the view model and implements a method with which to later instantiate the command:</para>
         <code lang="C#"><![CDATA[public ICommand IncrementLabelCommand { get; private set; }
-
+    
 void IncrementLabel()
 {
    modelUpdateCount++;
@@ -824,7 +824,7 @@ void IncrementLabel()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Button.IsPressed" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

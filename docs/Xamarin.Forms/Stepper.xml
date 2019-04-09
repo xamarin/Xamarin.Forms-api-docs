@@ -35,13 +35,13 @@
         <code lang="C#"><![CDATA[using System;
             using System;
             using Xamarin.Forms;
-
+    
             namespace FormsGallery
             {
                 class StepperDemoPage : ContentPage
                 {
                     Label label;
-
+    
                     public StepperDemoPage()
                     {
                         Label header = new Label
@@ -50,7 +50,7 @@
                             FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
                             HorizontalOptions = LayoutOptions.Center
                         };
-
+    
                         Stepper stepper = new Stepper
                         {
                             Value = 5,
@@ -61,7 +61,7 @@
                             VerticalOptions = LayoutOptions.CenterAndExpand
                         };
                         stepper.ValueChanged += OnStepperValueChanged;
-
+    
                         label = new Label
                         {
                             Text = String.Format("Stepper value is {0:F1}", stepper.Value),
@@ -69,10 +69,10 @@
                             HorizontalOptions = LayoutOptions.Center,
                             VerticalOptions = LayoutOptions.CenterAndExpand
                         };
-
+    
                         // Accomodate iPhone status bar.
                         this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
-
+    
                         // Build the page.
                         this.Content = new StackLayout
                         {
@@ -84,7 +84,7 @@
                             }
                             };
                     }
-
+    
                     void OnStepperValueChanged(object sender, ValueChangedEventArgs e)
                     {
                         label.Text = String.Format("Stepper value is {0:F1}", e.NewValue);

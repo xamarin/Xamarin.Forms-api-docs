@@ -51,7 +51,7 @@ public class App : Application
             VerticalOptions = LayoutOptions.FillAndExpand,
             FontSize = 25
         };
-
+        
         searchBar = new SearchBar {
             Placeholder = "Enter search term",
             SearchCommand = new Command(() => {resultsLabel.Text = "Result: " + searchBar.Text + " is what you asked for.";})

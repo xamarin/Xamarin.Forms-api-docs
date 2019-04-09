@@ -41,7 +41,7 @@
         <code lang="C#"><![CDATA[
 using System;
 using Xamarin.Forms;
-
+    
 namespace FormsGallery
 {
     class MasterDetailPageDemoPage :  MasterDetailPage
@@ -54,7 +54,7 @@ namespace FormsGallery
                 FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center
             };
-
+    
             // Assemble an array of NamedColor objects.
             NamedColor[] namedColors = 
                 {
@@ -75,13 +75,13 @@ namespace FormsGallery
                     new NamedColor("White", Color.White),
                     new NamedColor("Yellow", Color.Yellow)
                 };
-
+    
             // Create ListView for the master page.
             ListView listView = new ListView
             {
                 ItemsSource = namedColors
             };
-
+    
             // Create the master page with the ListView.
             this.Master = new ContentPage
             {
@@ -95,11 +95,11 @@ namespace FormsGallery
                     }
                 }
             };
-
+    
             // Create the detail page using NamedColorPage and wrap it in a
             // navigation page to provide a NavigationBar and Toggle button
             this.Detail = new NavigationPage(new NamedColorPage(true));
-
+    
             // For Windows Phone, provide a way to get back to the master page.
             if (Device.OS == TargetPlatform.WinPhone)
             {
@@ -109,20 +109,20 @@ namespace FormsGallery
                         this.IsPresented = true;
                     }));
             }
-
+    
             // Define a selected handler for the ListView.
             listView.ItemSelected += (sender, args) =>
                 {
                     // Set the BindingContext of the detail page.
                     this.Detail.BindingContext = args.SelectedItem;
-
+    
                     // Show the detail page.
                     this.IsPresented = false;
                 };
-
+    
             // Initialize the ListView selection.
             listView.SelectedItem = namedColors[0];
-
+    
             
         }
     }

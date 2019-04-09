@@ -1098,7 +1098,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.VisualElement.IsTabStop" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1140,15 +1140,15 @@
             <code lang="C#"><![CDATA[
   partial class LabelToggle {
     Label label;
-
+    
     void Build ()
     {
       var firstView = new Button {Text = "Tap Me"};
       label = new Label {Text = "I can be toggled"};
       var thirdView = new Image {Source = "image.png"};
-
+    
       firstView.Activated += OnButtonActivated;
-
+    
       Content = new StackLayout {
         Children {
           firstView,
@@ -1157,7 +1157,7 @@
         }
       };
     }
-
+    
     void OnButtonActivated (object sender, EventArgs args)
     {
       label.IsVisible = !label.IsVisible;
@@ -1313,7 +1313,7 @@
   {
     var label = new Label {Text = veryLongString};
     var image = new Image {Source = "image500x500.png"};
-
+    
     image.MinimumHeightRequest = 20;
     Content = new StackLayout {
       Children {
@@ -1385,7 +1385,7 @@
   {
     var label = new Label {Text = veryLongString};
     var image = new Image {Source = "image500x500.png"};
-
+    
     image.MinimumWidthRequest = 20;
     Content = new StackLayout {
       Orientation = StackOrientation.Horizontal,
@@ -1722,13 +1722,13 @@
   StackLayout stack = new StackLayout ();
   Button button1 = new Button {Text="A Button"};
   Button button2 = new Button {Text="Another Button"};
-
+    
   stack.Children.Add (button1);
   stack.Children.Add (button2);
-
+    
   // The stack and everything in it will become 50% opaque
   stack.Opacity = 0.5;
-
+    
   // button1 will become 25% opaque while the stack and button2 remane 50% opaque
   button1.Opacity = 0.5;
               ]]></code>
@@ -1796,7 +1796,7 @@
     <ResourceDictionary>
         <LayoutOptions x:Key="horzOptions"
                      Alignment="Center" />
-
+    
         <LayoutOptions x:Key="vertOptions"
                      Alignment="Center"
                      Expands="True" />
@@ -2226,7 +2226,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.VisualElement.TabIndex" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2474,7 +2474,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.VisualElement.Visual" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
