@@ -64,10 +64,10 @@
       </Docs>
     </Member>
     <Member MemberName="GoToPart">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToPart (System.Collections.Generic.List&lt;string&gt; parts, System.Collections.Generic.Dictionary&lt;string,string&gt; queryData);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task GoToPart(class System.Collections.Generic.List`1&lt;string&gt; parts, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; queryData) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})" />
-      <MemberSignature Language="F#" Value="abstract member GoToPart : System.Collections.Generic.List&lt;string&gt; * System.Collections.Generic.Dictionary&lt;string, string&gt; -&gt; System.Threading.Tasks.Task" Usage="iShellSectionController.GoToPart (parts, queryData)" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToPart (Xamarin.Forms.NavigationRequest request, System.Collections.Generic.Dictionary&lt;string,string&gt; queryData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task GoToPart(class Xamarin.Forms.NavigationRequest request, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; queryData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.GoToPart(Xamarin.Forms.NavigationRequest,System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <MemberSignature Language="F#" Value="abstract member GoToPart : Xamarin.Forms.NavigationRequest * System.Collections.Generic.Dictionary&lt;string, string&gt; -&gt; System.Threading.Tasks.Task" Usage="iShellSectionController.GoToPart (request, queryData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -77,11 +77,11 @@
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parts" Type="System.Collections.Generic.List&lt;System.String&gt;" />
+        <Parameter Name="request" Type="Xamarin.Forms.NavigationRequest" />
         <Parameter Name="queryData" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="parts">To be added.</param>
+        <param name="request">To be added.</param>
         <param name="queryData">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>

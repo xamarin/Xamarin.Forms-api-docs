@@ -1,0 +1,126 @@
+<Type Name="NavigationRequest" FullName="Xamarin.Forms.NavigationRequest">
+  <TypeSignature Language="C#" Value="public class NavigationRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NavigationRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.NavigationRequest" />
+  <TypeSignature Language="F#" Value="type NavigationRequest = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("RequestDefinition = {Request}, StackRequest = {StackRequest}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NavigationRequest (Xamarin.Forms.RequestDefinition definition, Xamarin.Forms.NavigationRequest.WhatToDoWithTheStack stackRequest, string query, string fragment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Xamarin.Forms.RequestDefinition definition, valuetype Xamarin.Forms.NavigationRequest/WhatToDoWithTheStack stackRequest, string query, string fragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationRequest.#ctor(Xamarin.Forms.RequestDefinition,Xamarin.Forms.NavigationRequest.WhatToDoWithTheStack,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.NavigationRequest : Xamarin.Forms.RequestDefinition * Xamarin.Forms.NavigationRequest.WhatToDoWithTheStack * string * string -&gt; Xamarin.Forms.NavigationRequest" Usage="new Xamarin.Forms.NavigationRequest (definition, stackRequest, query, fragment)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="definition" Type="Xamarin.Forms.RequestDefinition" />
+        <Parameter Name="stackRequest" Type="Xamarin.Forms.NavigationRequest+WhatToDoWithTheStack" />
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="fragment" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="definition">To be added.</param>
+        <param name="stackRequest">To be added.</param>
+        <param name="query">To be added.</param>
+        <param name="fragment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fragment">
+      <MemberSignature Language="C#" Value="public string Fragment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Fragment" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.NavigationRequest.Fragment" />
+      <MemberSignature Language="F#" Value="member this.Fragment : string" Usage="Xamarin.Forms.NavigationRequest.Fragment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Query">
+      <MemberSignature Language="C#" Value="public string Query { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Query" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.NavigationRequest.Query" />
+      <MemberSignature Language="F#" Value="member this.Query : string" Usage="Xamarin.Forms.NavigationRequest.Query" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.RequestDefinition Request { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.RequestDefinition Request" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.NavigationRequest.Request" />
+      <MemberSignature Language="F#" Value="member this.Request : Xamarin.Forms.RequestDefinition" Usage="Xamarin.Forms.NavigationRequest.Request" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.RequestDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StackRequest">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.NavigationRequest.WhatToDoWithTheStack StackRequest { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.NavigationRequest/WhatToDoWithTheStack StackRequest" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.NavigationRequest.StackRequest" />
+      <MemberSignature Language="F#" Value="member this.StackRequest : Xamarin.Forms.NavigationRequest.WhatToDoWithTheStack" Usage="Xamarin.Forms.NavigationRequest.StackRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.NavigationRequest+WhatToDoWithTheStack</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

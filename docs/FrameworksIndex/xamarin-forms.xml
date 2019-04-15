@@ -1820,6 +1820,7 @@
       <Member Id="M:Xamarin.Forms.IShellController.GenerateFlyoutGrouping" />
       <Member Id="M:Xamarin.Forms.IShellController.GetNavigationState(Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.IShellController.OnFlyoutItemSelected(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.IShellController.ProposeNavigation(Xamarin.Forms.ShellNavigationSource,Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Collections.Generic.IReadOnlyList{Xamarin.Forms.Page},System.Boolean)" />
       <Member Id="M:Xamarin.Forms.IShellController.RemoveAppearanceObserver(Xamarin.Forms.IAppearanceObserver)" />
       <Member Id="M:Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)" />
@@ -1828,14 +1829,14 @@
       <Member Id="P:Xamarin.Forms.IShellController.FlyoutIcon" />
     </Type>
     <Type Name="Xamarin.Forms.IShellItemController" Id="T:Xamarin.Forms.IShellItemController">
-      <Member Id="M:Xamarin.Forms.IShellItemController.GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <Member Id="M:Xamarin.Forms.IShellItemController.GoToPart(Xamarin.Forms.NavigationRequest,System.Collections.Generic.Dictionary{System.String,System.String})" />
       <Member Id="M:Xamarin.Forms.IShellItemController.ProposeSection(Xamarin.Forms.ShellSection,System.Boolean)" />
     </Type>
     <Type Name="Xamarin.Forms.IShellSectionController" Id="T:Xamarin.Forms.IShellSectionController">
       <Member Id="E:Xamarin.Forms.IShellSectionController.NavigationRequested" />
       <Member Id="M:Xamarin.Forms.IShellSectionController.AddContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)" />
       <Member Id="M:Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver(System.Object,System.Action{Xamarin.Forms.Page})" />
-      <Member Id="M:Xamarin.Forms.IShellSectionController.GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <Member Id="M:Xamarin.Forms.IShellSectionController.GoToPart(Xamarin.Forms.NavigationRequest,System.Collections.Generic.Dictionary{System.String,System.String})" />
       <Member Id="M:Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)" />
       <Member Id="M:Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver(System.Object)" />
       <Member Id="M:Xamarin.Forms.IShellSectionController.SendInsetChanged(Xamarin.Forms.Thickness,System.Double)" />
@@ -2461,6 +2462,17 @@
       <Member Id="P:Xamarin.Forms.NavigationPage.StackDepth" />
       <Member Id="P:Xamarin.Forms.NavigationPage.Tint" />
     </Type>
+    <Type Name="Xamarin.Forms.NavigationRequest" Id="T:Xamarin.Forms.NavigationRequest">
+      <Member Id="M:Xamarin.Forms.NavigationRequest.#ctor(Xamarin.Forms.RequestDefinition,Xamarin.Forms.NavigationRequest.WhatToDoWithTheStack,System.String,System.String)" />
+      <Member Id="P:Xamarin.Forms.NavigationRequest.Fragment" />
+      <Member Id="P:Xamarin.Forms.NavigationRequest.Query" />
+      <Member Id="P:Xamarin.Forms.NavigationRequest.Request" />
+      <Member Id="P:Xamarin.Forms.NavigationRequest.StackRequest" />
+    </Type>
+    <Type Name="Xamarin.Forms.NavigationRequest/WhatToDoWithTheStack" Id="T:Xamarin.Forms.NavigationRequest.WhatToDoWithTheStack">
+      <Member Id="F:Xamarin.Forms.NavigationRequest.WhatToDoWithTheStack.PushToIt" />
+      <Member Id="F:Xamarin.Forms.NavigationRequest.WhatToDoWithTheStack.ReplaceIt" />
+    </Type>
     <Type Name="Xamarin.Forms.On" Id="T:Xamarin.Forms.On">
       <Member Id="M:Xamarin.Forms.On.#ctor" />
       <Member Id="P:Xamarin.Forms.On.Platform" />
@@ -2751,6 +2763,16 @@
       <Member Id="P:Xamarin.Forms.RenderWithAttribute.SupportedVisuals" />
       <Member Id="P:Xamarin.Forms.RenderWithAttribute.Type" />
     </Type>
+    <Type Name="Xamarin.Forms.RequestDefinition" Id="T:Xamarin.Forms.RequestDefinition">
+      <Member Id="M:Xamarin.Forms.RequestDefinition.#ctor(System.String,System.String,Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Collections.Generic.List{System.String})" />
+      <Member Id="M:Xamarin.Forms.RequestDefinition.#ctor(System.Uri,System.Uri,Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Collections.Generic.List{System.String})" />
+      <Member Id="P:Xamarin.Forms.RequestDefinition.Content" />
+      <Member Id="P:Xamarin.Forms.RequestDefinition.FullUri" />
+      <Member Id="P:Xamarin.Forms.RequestDefinition.GlobalRoutes" />
+      <Member Id="P:Xamarin.Forms.RequestDefinition.Item" />
+      <Member Id="P:Xamarin.Forms.RequestDefinition.Section" />
+      <Member Id="P:Xamarin.Forms.RequestDefinition.ShortUri" />
+    </Type>
     <Type Name="Xamarin.Forms.ResolutionGroupNameAttribute" Id="T:Xamarin.Forms.ResolutionGroupNameAttribute">
       <Member Id="M:Xamarin.Forms.ResolutionGroupNameAttribute.#ctor(System.String)" />
     </Type>
@@ -2801,11 +2823,15 @@
     </Type>
     <Type Name="Xamarin.Forms.Routing" Id="T:Xamarin.Forms.Routing">
       <Member Id="F:Xamarin.Forms.Routing.RouteProperty" />
+      <Member Id="M:Xamarin.Forms.Routing.FormatRoute(System.Collections.Generic.List{System.String})" />
+      <Member Id="M:Xamarin.Forms.Routing.FormatRoute(System.String)" />
       <Member Id="M:Xamarin.Forms.Routing.GetOrCreateContent(System.String)" />
       <Member Id="M:Xamarin.Forms.Routing.GetRoute(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.Routing.GetRouteKeys" />
       <Member Id="M:Xamarin.Forms.Routing.RegisterRoute(System.String,System.Type)" />
       <Member Id="M:Xamarin.Forms.Routing.RegisterRoute(System.String,Xamarin.Forms.RouteFactory)" />
       <Member Id="M:Xamarin.Forms.Routing.SetRoute(Xamarin.Forms.Element,System.String)" />
+      <Member Id="M:Xamarin.Forms.Routing.UnRegisterRoute(System.String)" />
     </Type>
     <Type Name="Xamarin.Forms.RoutingEffect" Id="T:Xamarin.Forms.RoutingEffect">
       <Member Id="M:Xamarin.Forms.RoutingEffect.#ctor(System.String)" />
@@ -3122,6 +3148,7 @@
       <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#GenerateFlyoutGrouping" />
       <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#GetNavigationState(Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#OnFlyoutItemSelected(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#ProposeNavigation(Xamarin.Forms.ShellNavigationSource,Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Collections.Generic.IReadOnlyList{Xamarin.Forms.Page},System.Boolean)" />
       <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#RemoveAppearanceObserver(Xamarin.Forms.IAppearanceObserver)" />
       <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#RemoveFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)" />
@@ -3146,6 +3173,15 @@
       <Member Id="P:Xamarin.Forms.Shell.RouteHost" />
       <Member Id="P:Xamarin.Forms.Shell.RouteScheme" />
       <Member Id="P:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#FlyoutHeader" />
+    </Type>
+    <Type Name="Xamarin.Forms.Shell/NavigationImpl" Id="T:Xamarin.Forms.Shell.NavigationImpl">
+      <Member Id="M:Xamarin.Forms.Shell.NavigationImpl.#ctor(Xamarin.Forms.Shell)" />
+      <Member Id="M:Xamarin.Forms.Shell.NavigationImpl.GetNavigationStack" />
+      <Member Id="M:Xamarin.Forms.Shell.NavigationImpl.OnInsertPageBefore(Xamarin.Forms.Page,Xamarin.Forms.Page)" />
+      <Member Id="M:Xamarin.Forms.Shell.NavigationImpl.OnPopAsync(System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.Shell.NavigationImpl.OnPopToRootAsync(System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.Shell.NavigationImpl.OnPushAsync(Xamarin.Forms.Page,System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.Shell.NavigationImpl.OnRemovePage(Xamarin.Forms.Page)" />
     </Type>
     <Type Name="Xamarin.Forms.ShellAppearance" Id="T:Xamarin.Forms.ShellAppearance">
       <Member Id="M:Xamarin.Forms.ShellAppearance.Equals(System.Object)" />
@@ -3216,7 +3252,7 @@
       <Member Id="M:Xamarin.Forms.ShellItem.op_Implicit(Xamarin.Forms.ShellContent)~Xamarin.Forms.ShellItem" />
       <Member Id="M:Xamarin.Forms.ShellItem.op_Implicit(Xamarin.Forms.ShellSection)~Xamarin.Forms.ShellItem" />
       <Member Id="M:Xamarin.Forms.ShellItem.op_Implicit(Xamarin.Forms.TemplatedPage)~Xamarin.Forms.ShellItem" />
-      <Member Id="M:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <Member Id="M:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#GoToPart(Xamarin.Forms.NavigationRequest,System.Collections.Generic.Dictionary{System.String,System.String})" />
       <Member Id="M:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#ProposeSection(Xamarin.Forms.ShellSection,System.Boolean)" />
       <Member Id="P:Xamarin.Forms.ShellItem.CurrentItem" />
       <Member Id="P:Xamarin.Forms.ShellItem.Items" />
@@ -3290,7 +3326,7 @@
       <Member Id="M:Xamarin.Forms.ShellSection.op_Implicit(Xamarin.Forms.TemplatedPage)~Xamarin.Forms.ShellSection" />
       <Member Id="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#AddContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)" />
       <Member Id="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#AddDisplayedPageObserver(System.Object,System.Action{Xamarin.Forms.Page})" />
-      <Member Id="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <Member Id="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#GoToPart(Xamarin.Forms.NavigationRequest,System.Collections.Generic.Dictionary{System.String,System.String})" />
       <Member Id="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#RemoveContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)" />
       <Member Id="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#RemoveDisplayedPageObserver(System.Object)" />
       <Member Id="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#SendInsetChanged(Xamarin.Forms.Thickness,System.Double)" />
@@ -3538,6 +3574,7 @@
     </Type>
     <Type Name="Xamarin.Forms.TabIndexExtensions" Id="T:Xamarin.Forms.TabIndexExtensions">
       <Member Id="M:Xamarin.Forms.TabIndexExtensions.FindNextElement(Xamarin.Forms.VisualElement,System.Boolean,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.List{Xamarin.Forms.VisualElement}},System.Int32@)" />
+      <Member Id="M:Xamarin.Forms.TabIndexExtensions.GetSortedTabIndexesOnParentPage(Xamarin.Forms.VisualElement,System.Int32@)" />
       <Member Id="M:Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage(Xamarin.Forms.VisualElement,System.Int32@)" />
     </Type>
     <Type Name="Xamarin.Forms.TableIntent" Id="T:Xamarin.Forms.TableIntent">
@@ -5259,18 +5296,21 @@
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.LargeTitleDisplayProperty" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.ModalPresentationStyleProperty" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.PreferredStatusBarUpdateAnimationProperty" />
+      <Member Id="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.PrefersHomeIndicatorAutoHiddenProperty" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.PrefersStatusBarHiddenProperty" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SafeAreaInsetsProperty" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.UseSafeAreaProperty" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetLargeTitleDisplay(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetModalPresentationStyle(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetPreferredStatusBarUpdateAnimation(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetPrefersHomeIndicatorAutoHidden(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetPrefersStatusBarHidden(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetSafeAreaInsets(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetUseSafeArea(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.LargeTitleDisplay(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.ModalPresentationStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.PreferredStatusBarUpdateAnimation(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.PrefersHomeIndicatorAutoHidden(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.PrefersStatusBarHidden(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SafeAreaInsets(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetLargeTitleDisplay(Xamarin.Forms.BindableObject,Xamarin.Forms.PlatformConfiguration.iOSSpecific.LargeTitleDisplayMode)" />
@@ -5278,6 +5318,8 @@
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetModalPresentationStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page},Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIModalPresentationStyle)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetPreferredStatusBarUpdateAnimation(Xamarin.Forms.BindableObject,Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIStatusBarAnimation)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetPreferredStatusBarUpdateAnimation(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page},Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIStatusBarAnimation)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetPrefersHomeIndicatorAutoHidden(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetPrefersHomeIndicatorAutoHidden(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page},System.Boolean)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetPrefersStatusBarHidden(Xamarin.Forms.BindableObject,Xamarin.Forms.PlatformConfiguration.iOSSpecific.StatusBarHiddenMode)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetPrefersStatusBarHidden(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page},Xamarin.Forms.PlatformConfiguration.iOSSpecific.StatusBarHiddenMode)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetSafeAreaInsets(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page},Xamarin.Forms.Thickness)" />
