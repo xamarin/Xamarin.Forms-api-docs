@@ -67,6 +67,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shell Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.Shell Current" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.Current" />
+      <MemberSignature Language="F#" Value="member this.Current : Xamarin.Forms.Shell" Usage="Xamarin.Forms.Shell.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shell</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CurrentItem">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellItem CurrentItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellItem CurrentItem" />
@@ -104,25 +123,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CurrentShell">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shell CurrentShell { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.Shell CurrentShell" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.CurrentShell" />
-      <MemberSignature Language="F#" Value="member this.CurrentShell : Xamarin.Forms.Shell" Usage="Xamarin.Forms.Shell.CurrentShell" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Shell</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CurrentState">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellNavigationState CurrentState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellNavigationState CurrentState" />
@@ -157,6 +157,25 @@
       </ReturnValue>
       <Docs>
         <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.CurrentState" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flyout">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellItemCollection Flyout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellItemCollection Flyout" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.Flyout" />
+      <MemberSignature Language="F#" Value="member this.Flyout : Xamarin.Forms.ShellItemCollection" Usage="Xamarin.Forms.Shell.Flyout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ShellItemCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,6 +361,43 @@
       </ReturnValue>
       <Docs>
         <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutHeaderTemplate" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutIcon">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource FlyoutIcon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource FlyoutIcon" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.FlyoutIcon" />
+      <MemberSignature Language="F#" Value="member this.FlyoutIcon : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Shell.FlyoutIcon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutIconProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FlyoutIconProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FlyoutIconProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.FlyoutIconProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlyoutIconProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.FlyoutIconProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,11 +839,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -800,43 +851,6 @@
         <param name="animate">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GroupHeaderTemplate">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate GroupHeaderTemplate { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate GroupHeaderTemplate" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.GroupHeaderTemplate" />
-      <MemberSignature Language="F#" Value="member this.GroupHeaderTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.Shell.GroupHeaderTemplate" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GroupHeaderTemplateProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty GroupHeaderTemplateProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty GroupHeaderTemplateProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.GroupHeaderTemplateProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable GroupHeaderTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.GroupHeaderTemplateProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.GroupHeaderTemplate" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2050,11 +2064,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2064,6 +2073,31 @@
       <Docs>
         <param name="element">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IShellController.OnFlyoutItemSelectedAsync (Xamarin.Forms.Element element);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync(class Xamarin.Forms.Element element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -48,6 +48,31 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetSortedTabIndexesOnParentPage">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.SortedDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt; GetSortedTabIndexesOnParentPage (this Xamarin.Forms.VisualElement element, out int countChildrensWithTabStopWithoutThis);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.SortedDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.VisualElement&gt;&gt; GetSortedTabIndexesOnParentPage(class Xamarin.Forms.VisualElement element, [out] int32&amp; countChildrensWithTabStopWithoutThis) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.GetSortedTabIndexesOnParentPage(Xamarin.Forms.VisualElement,System.Int32@)" />
+      <MemberSignature Language="F#" Value="static member GetSortedTabIndexesOnParentPage : Xamarin.Forms.VisualElement *  -&gt; System.Collections.Generic.SortedDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetSortedTabIndexesOnParentPage (element, countChildrensWithTabStopWithoutThis)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.SortedDictionary&lt;System.Int32,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.VisualElement" RefType="this" />
+        <Parameter Name="countChildrensWithTabStopWithoutThis" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="countChildrensWithTabStopWithoutThis">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetTabIndexesOnParentPage">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.VisualElement&gt;&gt; GetTabIndexesOnParentPage (this Xamarin.Forms.VisualElement element, out int countChildrensWithTabStopWithoutThis);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.VisualElement&gt;&gt; GetTabIndexesOnParentPage(class Xamarin.Forms.VisualElement element, [out] int32&amp; countChildrensWithTabStopWithoutThis) cil managed" />

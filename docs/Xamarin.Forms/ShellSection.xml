@@ -22,6 +22,9 @@
     <Attribute>
       <AttributeName>Xamarin.Forms.ContentProperty("Items")</AttributeName>
     </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>To be added.</summary>
@@ -110,11 +113,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -247,11 +245,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
       </ReturnValue>
@@ -275,11 +268,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -350,11 +338,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Please dont use this in core code... its SUPER hard to debug when this happens", true)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.ShellSection</ReturnType>
       </ReturnValue>
@@ -378,11 +361,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Please dont use this in core code... its SUPER hard to debug when this happens", true)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.ShellSection</ReturnType>
       </ReturnValue>
@@ -466,12 +444,12 @@
       </Docs>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellSectionController.GoToPart">
-      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IShellSectionController.GoToPart (System.Collections.Generic.List&lt;string&gt; parts, System.Collections.Generic.Dictionary&lt;string,string&gt; queryData);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Xamarin.Forms.IShellSectionController.GoToPart(class System.Collections.Generic.List`1&lt;string&gt; parts, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; queryData) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IShellSectionController.GoToPart (Xamarin.Forms.NavigationRequest request, System.Collections.Generic.Dictionary&lt;string,string&gt; queryData);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Xamarin.Forms.IShellSectionController.GoToPart(class Xamarin.Forms.NavigationRequest request, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; queryData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#GoToPart(Xamarin.Forms.NavigationRequest,System.Collections.Generic.Dictionary{System.String,System.String})" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})</InterfaceMember>
+        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.GoToPart(Xamarin.Forms.NavigationRequest,System.Collections.Generic.Dictionary{System.String,System.String})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -481,11 +459,11 @@
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parts" Type="System.Collections.Generic.List&lt;System.String&gt;" />
+        <Parameter Name="request" Type="Xamarin.Forms.NavigationRequest" />
         <Parameter Name="queryData" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="parts">To be added.</param>
+        <param name="request">To be added.</param>
         <param name="queryData">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>

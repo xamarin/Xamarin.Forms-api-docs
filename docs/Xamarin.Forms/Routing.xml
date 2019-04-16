@@ -16,6 +16,52 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="FormatRoute">
+      <MemberSignature Language="C#" Value="public static string FormatRoute (System.Collections.Generic.List&lt;string&gt; segments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatRoute(class System.Collections.Generic.List`1&lt;string&gt; segments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Routing.FormatRoute(System.Collections.Generic.List{System.String})" />
+      <MemberSignature Language="F#" Value="static member FormatRoute : System.Collections.Generic.List&lt;string&gt; -&gt; string" Usage="Xamarin.Forms.Routing.FormatRoute segments" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segments" Type="System.Collections.Generic.List&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="segments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatRoute">
+      <MemberSignature Language="C#" Value="public static string FormatRoute (string route);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatRoute(string route) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Routing.FormatRoute(System.String)" />
+      <MemberSignature Language="F#" Value="static member FormatRoute : string -&gt; string" Usage="Xamarin.Forms.Routing.FormatRoute route" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="route" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="route">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetOrCreateContent">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Element GetOrCreateContent (string route);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.Element GetOrCreateContent(string route) cil managed" />
@@ -57,6 +103,26 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRouteKeys">
+      <MemberSignature Language="C#" Value="public static string[] GetRouteKeys ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetRouteKeys() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Routing.GetRouteKeys" />
+      <MemberSignature Language="F#" Value="static member GetRouteKeys : unit -&gt; string[]" Usage="Xamarin.Forms.Routing.GetRouteKeys " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -148,6 +214,28 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnRegisterRoute">
+      <MemberSignature Language="C#" Value="public static void UnRegisterRoute (string route);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UnRegisterRoute(string route) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Routing.UnRegisterRoute(System.String)" />
+      <MemberSignature Language="F#" Value="static member UnRegisterRoute : string -&gt; unit" Usage="Xamarin.Forms.Routing.UnRegisterRoute route" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="route" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="route">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
