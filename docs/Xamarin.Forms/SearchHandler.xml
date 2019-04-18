@@ -49,7 +49,7 @@
         <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The icon displayed to clear the contents of the search box.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,7 +68,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The accessible help text for the clear icon.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +105,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of the clear icon for use with screen readers.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,7 +160,7 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>ICommand executed when the <see cref='P:Xamarin.Forms.SearchHandler.ClearPlaceholderIcon' /> is tapped.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,7 +179,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter passed to the <see cref='P:Xamarin.Forms.SearchHandler.ClearPlaceholderCommand' />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,8 +234,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Whether the <see cref='P:Xamarin.Forms.SearchHolder.ClearPlaceholderCommand' /> can be executed.</summary>
+        <value>The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,7 +271,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The accessible help text for the <see cref='P:Xamarin.Forms.SearchHandler.ClearPlaceholderIcon' />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -308,7 +308,7 @@
         <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The clear placeholder icon displayed when the search box is empty.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -345,7 +345,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of the clear placeholder icon for use with screen readers.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -382,7 +382,7 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the ICommand executed when the search query is confirmed.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -401,8 +401,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the parameter of the <see cref='P:Xamarin.Forms.SearchHandler.Command' />, which is executed when the search query is confirmed.</summary>
+        
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -456,7 +456,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name or path of the property that is displayed for each item of data in the <see cref='P:Xamarin.Forms.SearchHandler.ItemsSource' /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -493,8 +493,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether the search box is enabled.</summary>
+        <value>The default value is <see landword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,8 +530,8 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The collection of items to be displayed in the suggestion area. Default is <see langword="null"/>.</summary>
+        <value>The default value is <see langword="null"/>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -567,9 +567,64 @@
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref='T:Xamarin.Forms.DataTemplate' /> to apply to each item in <see cref='P:Xamarin.Forms.SearchHandler.ItemsSource' />.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>For example, to create the style shown here: <img src="search-results-template.png"/>, developers could use either the following XAML or C#:</para>
+          <example>
+            <code lang="XAML"><![CDATA[<ContentPage ...
+             xmlns:controls="clr-namespace:Xaminals.Controls">    
+    <Shell.SearchHandler>
+        <controls:MonkeySearchHandler Placeholder="Enter search term"
+                                      ShowsResults="true">
+            <controls:MonkeySearchHandler.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.15*" />
+                            <ColumnDefinition Width="0.85*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding ImageUrl}"
+                               Aspect="AspectFill"
+                               HeightRequest="40"
+                               WidthRequest="40" />
+                        <Label Grid.Column="1"
+                               Text="{Binding Name}"
+                               FontAttributes="Bold" />
+                    </Grid>
+                </DataTemplate>
+            </controls:MonkeySearchHandler.ItemTemplate>
+       </controls:MonkeySearchHandler>
+    </Shell.SearchHandler>
+    ...
+</ContentPage>]]>
+            </code>
+          </example>
+          <example>
+            <code lang="C#"><![CDATA[[Shell.SetSearchHandler(this, new MonkeySearchHandler
+{
+    Placeholder = "Enter search term",
+    ShowsResults = true,
+    DisplayMemberName = "Name",
+    ItemTemplate = new DataTemplate(() =>
+    {
+        Grid grid = new Grid { Padding = 10 };
+        grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(0.15, GridUnitType.Star) });
+        grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(0.85, GridUnitType.Star) });
+
+        Image image = new Image { Aspect = Aspect.AspectFill, HeightRequest = 40, WidthRequest = 40 };
+        image.SetBinding(Image.SourceProperty, "ImageUrl");
+        Label nameLabel = new Label { FontAttributes = FontAttributes.Bold };
+        nameLabel.SetBinding(Label.TextProperty, "Name");
+
+        grid.Children.Add(image);
+        grid.Children.Add(nameLabel, 1, 0);
+        return grid;
+    })
+});]]></code>
+          </example>
+          
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemTemplateProperty">
@@ -605,7 +660,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Developers may override this method to respond to the <see cref='P:Xamarin.Forms.SearchHandler.ClearPlaceholderIcon' /> being tapped.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -627,8 +682,19 @@
       </Parameters>
       <Docs>
         <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to respond to a search result being selected by the user.</summary>
+        <remarks>
+          <para>Typically, developers will override this method to navigate to a destination specified by <param name="item" />:</para>
+          <example>
+    <code lang="csharp csharp-lang"><![CDATA[protected override async void OnItemSelected(object item)
+{
+    base.OnItemSelected(item);
+
+    // Note: strings will be URL encoded for navigation (e.g. "Blue Monkey" becomes "Blue%20Monkey"). Therefore, decode at the receiver.
+    await (App.Current.MainPage as Xamarin.Forms.Shell).GoToAsync($"app://xamarin.com/xaminals/animals/monkeys/monkeydetails?name={((Animal)item).Name}");
+}]]></code>
+</example>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnQueryChanged">
@@ -651,8 +717,29 @@
       <Docs>
         <param name="oldValue">To be added.</param>
         <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to respond to the <see cref='P:Xamarin.Forms.SearchHandler.Query' /> being modified.</summary>
+        <remarks>
+          <para>A common use-case is modifying the set of suggestions as the user enters data:</para>
+          <example>
+    <code lang="C#"><![CDATA[
+%|protected override void OnQueryChanged(string oldValue, string newValue)
+{
+    base.OnQueryChanged(oldValue, newValue);
+
+    if (string.IsNullOrWhiteSpace(newValue))
+    {
+        ItemsSource = null;
+    }
+    else
+    {
+        ItemsSource = MonkeyData.Monkeys
+            .Where(monkey => monkey.Name.ToLower().Contains(newValue.ToLower()))
+            .ToList<Animal>();
+    }
+}
+    ]]></code>
+</example>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnQueryConfirmed">
@@ -670,7 +757,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Developers may override this method to respond to the user entering or confirming their query in the search box.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -688,7 +775,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text to display when the search box is empty.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -725,7 +812,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the text of the search box.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -744,7 +831,7 @@
         <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The icon used to indicate that search is available.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -763,7 +850,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The accessible help text for the <see cref='P:Xamarin.Forms.SearchHandler.QueryIcon' />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -800,7 +887,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of the <see cref='P:Xamarin.Forms.SearchHandler.QueryIcon' /> for use with screen readers.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -873,8 +960,8 @@
         <ReturnType>Xamarin.Forms.SearchBoxVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether the search box is visible.</summary>
+        <value>The default is <see cref="F:Xamarin.Forms.SearchBoxVisibility.Expanded"/> (visible and expanded).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -947,8 +1034,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether search results should be expected in the suggestion area on text entry.</summary>
+        <value>The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
