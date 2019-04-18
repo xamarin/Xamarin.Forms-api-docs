@@ -160,7 +160,7 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ICommand executed when the <see cref='P:Xamarin.Forms.SearchHandler.ClearPlaceholderIcon' /> is tapped.</summary>
+        <summary>ICommand executed when the <see cref="P:Xamarin.Forms.SearchHandler.ClearPlaceholderIcon" /> is tapped.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,7 +179,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The parameter passed to the <see cref='P:Xamarin.Forms.SearchHandler.ClearPlaceholderCommand' />.</summary>
+        <summary>The parameter passed to the <see cref="P:Xamarin.Forms.SearchHandler.ClearPlaceholderCommand" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,7 +234,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Whether the <see cref='P:Xamarin.Forms.SearchHolder.ClearPlaceholderCommand' /> can be executed.</summary>
+        <summary>Whether the <see cref="P:Xamarin.Forms.SearchHolder.ClearPlaceholderCommand" /> can be executed.</summary>
         <value>The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,7 +271,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The accessible help text for the <see cref='P:Xamarin.Forms.SearchHandler.ClearPlaceholderIcon' />.</summary>
+        <summary>The accessible help text for the <see cref="P:Xamarin.Forms.SearchHandler.ClearPlaceholderIcon" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -401,8 +401,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the parameter of the <see cref='P:Xamarin.Forms.SearchHandler.Command' />, which is executed when the search query is confirmed.</summary>
-        
+        <summary>Gets or sets the parameter of the <see cref="P:Xamarin.Forms.SearchHandler.Command" />, which is executed when the search query is confirmed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -456,7 +455,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name or path of the property that is displayed for each item of data in the <see cref='P:Xamarin.Forms.SearchHandler.ItemsSource' /> collection.</summary>
+        <summary>The name or path of the property that is displayed for each item of data in the <see cref="P:Xamarin.Forms.SearchHandler.ItemsSource" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -530,8 +529,8 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The collection of items to be displayed in the suggestion area. Default is <see langword="null"/>.</summary>
-        <value>The default value is <see langword="null"/>.</value>
+        <summary>The collection of items to be displayed in the suggestion area. Default is <see langword="null" />.</summary>
+        <value>The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -567,10 +566,10 @@
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref='T:Xamarin.Forms.DataTemplate' /> to apply to each item in <see cref='P:Xamarin.Forms.SearchHandler.ItemsSource' />.</summary>
+        <summary>The <see cref="T:Xamarin.Forms.DataTemplate" /> to apply to each item in <see cref="P:Xamarin.Forms.SearchHandler.ItemsSource" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>For example, to create the style shown here: <img src="search-results-template.png"/>, developers could use either the following XAML or C#:</para>
+          <para>For example, to create the style shown here: <img src="search-results-template.png" />, developers could use either the following XAML or C#:</para>
           <example>
             <code lang="XAML"><![CDATA[<ContentPage ...
              xmlns:controls="clr-namespace:Xaminals.Controls">    
@@ -597,8 +596,7 @@
        </controls:MonkeySearchHandler>
     </Shell.SearchHandler>
     ...
-</ContentPage>]]>
-            </code>
+</ContentPage>]]></code>
           </example>
           <example>
             <code lang="C#"><![CDATA[[Shell.SetSearchHandler(this, new MonkeySearchHandler
@@ -623,7 +621,6 @@
     })
 });]]></code>
           </example>
-          
         </remarks>
       </Docs>
     </Member>
@@ -660,7 +657,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Developers may override this method to respond to the <see cref='P:Xamarin.Forms.SearchHandler.ClearPlaceholderIcon' /> being tapped.</summary>
+        <summary>Developers may override this method to respond to the <see cref="P:Xamarin.Forms.SearchHandler.ClearPlaceholderIcon" /> being tapped.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -686,14 +683,14 @@
         <remarks>
           <para>Typically, developers will override this method to navigate to a destination specified by <param name="item" />:</para>
           <example>
-    <code lang="csharp csharp-lang"><![CDATA[protected override async void OnItemSelected(object item)
+            <code lang="csharp csharp-lang"><![CDATA[protected override async void OnItemSelected(object item)
 {
     base.OnItemSelected(item);
 
     // Note: strings will be URL encoded for navigation (e.g. "Blue Monkey" becomes "Blue%20Monkey"). Therefore, decode at the receiver.
     await (App.Current.MainPage as Xamarin.Forms.Shell).GoToAsync($"app://xamarin.com/xaminals/animals/monkeys/monkeydetails?name={((Animal)item).Name}");
 }]]></code>
-</example>
+          </example>
         </remarks>
       </Docs>
     </Member>
@@ -717,11 +714,11 @@
       <Docs>
         <param name="oldValue">To be added.</param>
         <param name="newValue">To be added.</param>
-        <summary>Developers may override this method to respond to the <see cref='P:Xamarin.Forms.SearchHandler.Query' /> being modified.</summary>
+        <summary>Developers may override this method to respond to the <see cref="P:Xamarin.Forms.SearchHandler.Query" /> being modified.</summary>
         <remarks>
           <para>A common use-case is modifying the set of suggestions as the user enters data:</para>
           <example>
-    <code lang="C#"><![CDATA[
+            <code lang="C#"><![CDATA[
 %|protected override void OnQueryChanged(string oldValue, string newValue)
 {
     base.OnQueryChanged(oldValue, newValue);
@@ -738,7 +735,7 @@
     }
 }
     ]]></code>
-</example>
+          </example>
         </remarks>
       </Docs>
     </Member>
@@ -850,7 +847,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The accessible help text for the <see cref='P:Xamarin.Forms.SearchHandler.QueryIcon' />.</summary>
+        <summary>The accessible help text for the <see cref="P:Xamarin.Forms.SearchHandler.QueryIcon" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -887,7 +884,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the <see cref='P:Xamarin.Forms.SearchHandler.QueryIcon' /> for use with screen readers.</summary>
+        <summary>The name of the <see cref="P:Xamarin.Forms.SearchHandler.QueryIcon" /> for use with screen readers.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -961,7 +958,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets whether the search box is visible.</summary>
-        <value>The default is <see cref="F:Xamarin.Forms.SearchBoxVisibility.Expanded"/> (visible and expanded).</value>
+        <value>The default is <see cref="F:Xamarin.Forms.SearchBoxVisibility.Expanded" /> (visible and expanded).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1016,7 +1013,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.SearchHandler.SelectedItem" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
