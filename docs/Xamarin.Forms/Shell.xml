@@ -855,7 +855,7 @@
         <remarks>
           <para>Note that <see cref='T:Xamarin.Forms.ShellNavigationState' /> has implicit conversions from <see langword="string" /> and <see cref='T:System.Uri' />, so developers may write code such as the following, with no explicit instantiation of the <see cref='T:Xamarin.Forms.ShellNavigationState' />:</para>
           <example>
-    <code lang="C#"><![CDATA[
+    <code lang="csharp csharp-lang"><![CDATA[
 await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     ]]></code>
 </example>
@@ -1188,22 +1188,26 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <Docs>
         <summary>Gets or sets the string used to address the <see cref='T:Xamarin.Forms.Shell' />.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[URI-based navigation is accomplished with routes, which are the URI segments that are used to navigate within a Shell application. Navigation URI’s are formatted as follows (items in bold are required, items in italics are optional):
+        <remarks><para><![CDATA[URI-based navigation is accomplished with routes, which are the URI segments that are used to navigate within a Shell application. Navigation URI’s are formatted as follows (items in bold are required, items in italics are optional):
 
 **RouteScheme**://**RouteHost**/**Route**/*page*?*QueryParameters*
-[!NOTE]
+
 Query parameters are parameters that can be passed to the destination page while navigating.
 The RouteScheme, RouteHost, and primary route must be defined in your Shell subclass with the RouteScheme, RouteHost, and Route properties:
-
+]]></para>
+          <example>
+    <code lang="XAML"><![CDATA[
 <Shell ...
        RouteScheme="app"
        RouteHost="xamarin.com"
        Route="xaminals">
     ...
 </Shell>
-Combined, the RouteScheme, RouteHost, and Route property values form the app://xamarin.com/xaminals root URI.]]>
-          
-          
+
+    ]]></code>
+</example>
+<para>
+Combined, the RouteScheme, RouteHost, and Route property values form the app://xamarin.com/xaminals root URI.</para>
         </remarks>
       </Docs>
     </Member>
