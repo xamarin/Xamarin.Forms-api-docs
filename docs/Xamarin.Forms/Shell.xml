@@ -81,9 +81,10 @@
         <ReturnType>Xamarin.Forms.Shell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Static property providing access to the current <see cref='T:Xamarin.Forms.Shell' />.</summary>
+        <remarks>
+          <para>This is a typecast alias for <see cref='T:Xamarin.Forms.Application.Current.MainPage' /></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentItem">
@@ -100,7 +101,7 @@
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The currently selected <see cref='T:Xamarin.Forms.ShellItem' />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +138,7 @@
         <ReturnType>Xamarin.Forms.ShellNavigationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current navigation state of the <see cref='T:Xamarin.Forms.Shell' />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -849,9 +850,16 @@
       <Docs>
         <param name="state">To be added.</param>
         <param name="animate">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Asynchronously navigates to <param name="state" />, optionally animating.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>Note that <see cref='T:Xamarin.Forms.ShellNavigationState' /> has implicit conversions from <see langword="string" /> and <see cref='T:System.Uri' />, so developers may write code such as the following, with no explicit instantiation of the <see cref='T:Xamarin.Forms.ShellNavigationState' />:</para>
+          <example>
+    <code lang="C#"><![CDATA[
+await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
+    ]]></code>
+</example>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -1034,7 +1042,7 @@
         <ReturnType>System.EventHandler&lt;Xamarin.Forms.ShellNavigatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The library raises this event after performing navigation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1052,7 +1060,7 @@
         <ReturnType>System.EventHandler&lt;Xamarin.Forms.ShellNavigatingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The library raises this event immediately prior to performing navigation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1178,9 +1186,25 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the string used to address the <see cref='T:Xamarin.Forms.Shell' />.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[URI-based navigation is accomplished with routes, which are the URI segments that are used to navigate within a Shell application. Navigation URI’s are formatted as follows (items in bold are required, items in italics are optional):
+
+**RouteScheme**://**RouteHost**/**Route**/*page*?*QueryParameters*
+[!NOTE]
+Query parameters are parameters that can be passed to the destination page while navigating.
+The RouteScheme, RouteHost, and primary route must be defined in your Shell subclass with the RouteScheme, RouteHost, and Route properties:
+
+<Shell ...
+       RouteScheme="app"
+       RouteHost="xamarin.com"
+       Route="xaminals">
+    ...
+</Shell>
+Combined, the RouteScheme, RouteHost, and Route property values form the app://xamarin.com/xaminals root URI.]]>
+          
+          
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RouteHost">
@@ -1197,7 +1221,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the <see langword="string" /> to place in the host portion of the navigation URI.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1216,8 +1240,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see langword="string" /> to place in the scheme portion of the navigation URI.</summary>
+        <value>The default value is "app".</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
