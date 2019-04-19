@@ -599,7 +599,7 @@
 </ContentPage>]]></code>
           </example>
           <example>
-            <code lang="C#"><![CDATA[[Shell.SetSearchHandler(this, new MonkeySearchHandler
+            <code lang="csharp lang-csharp"><![CDATA[[Shell.SetSearchHandler(this, new MonkeySearchHandler
 {
     Placeholder = "Enter search term",
     ShowsResults = true,
@@ -718,7 +718,7 @@
         <remarks>
           <para>A common use-case is modifying the set of suggestions as the user enters data:</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 %|protected override void OnQueryChanged(string oldValue, string newValue)
 {
     base.OnQueryChanged(oldValue, newValue);
