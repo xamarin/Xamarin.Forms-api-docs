@@ -84,7 +84,7 @@
         Clicked="PressMeButton_Clicked"/>
 ]]></code>
         <para>With the XAML above, the following event handlers in the code-behind file change the button's text when these events are raised:</para>
-        <code lang="C#"><![CDATA[private void PressMeButton_Pressed(object sender, EventArgs e)
+        <code lang="csharp lang-csharp"><![CDATA[private void PressMeButton_Pressed(object sender, EventArgs e)
 {
    (sender as Button).Text = "You pressed me!";
 }
@@ -106,19 +106,19 @@ private void PressMeButton_Clicked(object sender, EventArgs e)
         Command="{Binding IncrementLabelCommand}" />
 ]]></code>
         <para>With the XAML above, the developer first defines the <c>IncrementLabelCommand</c> property on the view model and implements a method with which to later instantiate the command:</para>
-        <code lang="C#"><![CDATA[public ICommand IncrementLabelCommand { get; private set; }
+        <code lang="csharp lang-csharp"><![CDATA[public ICommand IncrementLabelCommand { get; private set; }
     
 void IncrementLabel()
 {
    modelUpdateCount++;
 }]]></code>
         <para>Second, the developer initializes the command with the method (or action):</para>
-        <code lang="C#"><![CDATA[public ViewModelDemo()
+        <code lang="csharp lang-csharp"><![CDATA[public ViewModelDemo()
 {
    IncrementLabelCommand = new Command(IncrementLabel);
 }]]></code>
         <para>Finally, the developer must sets the binding context in the constructor for the main page to that of the view model where the property is implemented:</para>
-        <code lang="C#"><![CDATA[public MainPage()
+        <code lang="csharp lang-csharp"><![CDATA[public MainPage()
 {
     InitializeComponent();
     BindingContext = new ViewModelDemo();

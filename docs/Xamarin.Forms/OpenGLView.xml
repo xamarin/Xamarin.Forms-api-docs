@@ -45,7 +45,7 @@
       <para>
         <see cref="T:Xamarin.Forms.OpenGLView" />s are easiest to program using Shared Projects, in which case the reference to OpenTK is straightforward. The following example shows a simple OpenGL app with a render loop:</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 using Xamarin.Forms;
 using OpenTK.Graphics.ES30;
     
@@ -288,7 +288,7 @@ namespace opengl
         <remarks>
           <para>When overridden, creates a custom renderer: </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
     var view = new OpenGLView { HasRenderLoop = true };
     view.OnDisplay = r => {
     

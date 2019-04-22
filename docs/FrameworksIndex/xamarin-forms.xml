@@ -1812,7 +1812,6 @@
       <Member Id="M:Xamarin.Forms.IShellContentInsetObserver.OnInsetChanged(Xamarin.Forms.Thickness,System.Double)" />
     </Type>
     <Type Name="Xamarin.Forms.IShellController" Id="T:Xamarin.Forms.IShellController">
-      <Member Id="E:Xamarin.Forms.IShellController.HeaderChanged" />
       <Member Id="E:Xamarin.Forms.IShellController.StructureChanged" />
       <Member Id="M:Xamarin.Forms.IShellController.AddAppearanceObserver(Xamarin.Forms.IAppearanceObserver,Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)" />
@@ -2954,10 +2953,10 @@
       <Member Id="P:Xamarin.Forms.SearchBar.Text" />
       <Member Id="P:Xamarin.Forms.SearchBar.TextColor" />
     </Type>
-    <Type Name="Xamarin.Forms.SearchBoxVisiblity" Id="T:Xamarin.Forms.SearchBoxVisiblity">
-      <Member Id="F:Xamarin.Forms.SearchBoxVisiblity.Collapsable" />
-      <Member Id="F:Xamarin.Forms.SearchBoxVisiblity.Expanded" />
-      <Member Id="F:Xamarin.Forms.SearchBoxVisiblity.Hidden" />
+    <Type Name="Xamarin.Forms.SearchBoxVisibility" Id="T:Xamarin.Forms.SearchBoxVisibility">
+      <Member Id="F:Xamarin.Forms.SearchBoxVisibility.Collapsible" />
+      <Member Id="F:Xamarin.Forms.SearchBoxVisibility.Expanded" />
+      <Member Id="F:Xamarin.Forms.SearchBoxVisibility.Hidden" />
     </Type>
     <Type Name="Xamarin.Forms.SearchHandler" Id="T:Xamarin.Forms.SearchHandler">
       <Member Id="E:Xamarin.Forms.SearchHandler.Xamarin#Forms#ISearchHandlerController#ListProxyChanged" />
@@ -3069,7 +3068,6 @@
     <Type Name="Xamarin.Forms.Shell" Id="T:Xamarin.Forms.Shell">
       <Member Id="E:Xamarin.Forms.Shell.Navigated" />
       <Member Id="E:Xamarin.Forms.Shell.Navigating" />
-      <Member Id="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#HeaderChanged" />
       <Member Id="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#StructureChanged" />
       <Member Id="F:Xamarin.Forms.Shell.BackButtonBehaviorProperty" />
       <Member Id="F:Xamarin.Forms.Shell.CurrentItemProperty" />
@@ -3081,7 +3079,6 @@
       <Member Id="F:Xamarin.Forms.Shell.FlyoutHeaderTemplateProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutIconProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutIsPresentedProperty" />
-      <Member Id="F:Xamarin.Forms.Shell.GroupHeaderTemplateProperty" />
       <Member Id="F:Xamarin.Forms.Shell.ItemsProperty" />
       <Member Id="F:Xamarin.Forms.Shell.ItemTemplateProperty" />
       <Member Id="F:Xamarin.Forms.Shell.MenuItemsProperty" />
@@ -3121,6 +3118,7 @@
       <Member Id="M:Xamarin.Forms.Shell.GetTitleView(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.Shell.GoToAsync(Xamarin.Forms.ShellNavigationState,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.Shell.OnBackButtonPressed" />
+      <Member Id="M:Xamarin.Forms.Shell.OnBindingContextChanged" />
       <Member Id="M:Xamarin.Forms.Shell.OnChildAdded(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.Shell.OnChildRemoved(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.Shell.OnNavigated(Xamarin.Forms.ShellNavigatedEventArgs)" />
@@ -3164,7 +3162,6 @@
       <Member Id="P:Xamarin.Forms.Shell.FlyoutHeaderTemplate" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutIcon" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutIsPresented" />
-      <Member Id="P:Xamarin.Forms.Shell.GroupHeaderTemplate" />
       <Member Id="P:Xamarin.Forms.Shell.Items" />
       <Member Id="P:Xamarin.Forms.Shell.ItemTemplate" />
       <Member Id="P:Xamarin.Forms.Shell.MenuItems" />
@@ -3568,9 +3565,6 @@
       <Member Id="P:Xamarin.Forms.TabbedPage.BarTextColor" />
       <Member Id="P:Xamarin.Forms.TabbedPage.SelectedTabColor" />
       <Member Id="P:Xamarin.Forms.TabbedPage.UnselectedTabColor" />
-    </Type>
-    <Type Name="Xamarin.Forms.TabContent" Id="T:Xamarin.Forms.TabContent">
-      <Member Id="M:Xamarin.Forms.TabContent.#ctor" />
     </Type>
     <Type Name="Xamarin.Forms.TabIndexExtensions" Id="T:Xamarin.Forms.TabIndexExtensions">
       <Member Id="M:Xamarin.Forms.TabIndexExtensions.FindNextElement(Xamarin.Forms.VisualElement,System.Boolean,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.List{Xamarin.Forms.VisualElement}},System.Int32@)" />

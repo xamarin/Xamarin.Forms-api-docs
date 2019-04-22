@@ -30,7 +30,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A <see cref="T:Xamarin.Forms.Page" /> that provides fundamental UI features that most applications require, leaving you to focus on the application's core workload.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.Shell" /> element with default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +63,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.Shell.GetBackButtonBehavior" /> and <see cref="P:Xamarin.Forms.Shell.SetBackButtonBehavior" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +81,11 @@
         <ReturnType>Xamarin.Forms.Shell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Static property providing access to the current <see cref="T:Xamarin.Forms.Shell" />.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>This is a typecast alias for <see cref="T:Xamarin.Forms.Application.Current.MainPage" /></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentItem">
@@ -100,7 +102,7 @@
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The currently selected <see cref="T:Xamarin.Forms.ShellItem" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +139,7 @@
         <ReturnType>Xamarin.Forms.ShellNavigationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current navigation state of the <see cref="T:Xamarin.Forms.Shell" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,7 +176,7 @@
         <ReturnType>Xamarin.Forms.ShellItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The root menu for a Shell application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,7 +195,7 @@
         <ReturnType>Xamarin.Forms.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the background color of the <see cref="P:Xamarin.Forms.Shell.Flyout" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,8 +380,8 @@
         <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the icon that, when pressed, opens the <see cref="P:Xamarin.Forms.Shell.Flyout" />.</summary>
+        <value>The default icon is a "hamburger" icon.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,7 +399,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutIcon" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -849,46 +851,16 @@
       <Docs>
         <param name="state">To be added.</param>
         <param name="animate">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Asynchronously navigates to <param name="state" />, optionally animating.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GroupHeaderTemplate">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate GroupHeaderTemplate { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate GroupHeaderTemplate" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.GroupHeaderTemplate" />
-      <MemberSignature Language="F#" Value="member this.GroupHeaderTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.Shell.GroupHeaderTemplate" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GroupHeaderTemplateProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty GroupHeaderTemplateProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty GroupHeaderTemplateProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.GroupHeaderTemplateProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable GroupHeaderTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.GroupHeaderTemplateProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.GroupHeaderTemplate" /> field.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>Note that <see cref="T:Xamarin.Forms.ShellNavigationState" /> has implicit conversions from <see langword="string" /> and <see cref="T:System.Uri" />, so developers may write code such as the following, with no explicit instantiation of the <see cref="T:Xamarin.Forms.ShellNavigationState" />:</para>
+          <example>
+            <code lang="csharp lang-csharp"><![CDATA[
+await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
+    ]]></code>
+          </example>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -1071,7 +1043,7 @@
         <ReturnType>System.EventHandler&lt;Xamarin.Forms.ShellNavigatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The library raises this event after performing navigation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1089,7 +1061,7 @@
         <ReturnType>System.EventHandler&lt;Xamarin.Forms.ShellNavigatingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The library raises this event immediately prior to performing navigation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1110,6 +1082,25 @@
       <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingContextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingContextChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.OnBindingContextChanged" />
+      <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="shell.OnBindingContextChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1215,9 +1206,30 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the string used to address the <see cref="T:Xamarin.Forms.Shell" />.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para><![CDATA[URI-based navigation is accomplished with routes, which are the URI segments that are used to navigate within a Shell application. Navigation URI’s are formatted as follows (items in bold are required, items in italics are optional):
+
+**RouteScheme**://**RouteHost**/**Route**/*page*?*QueryParameters*
+
+Query parameters are parameters that can be passed to the destination page while navigating.
+The RouteScheme, RouteHost, and primary route must be defined in your Shell subclass with the RouteScheme, RouteHost, and Route properties:
+]]></para>
+          <example>
+            <code lang="XAML"><![CDATA[
+<Shell ...
+       RouteScheme="app"
+       RouteHost="xamarin.com"
+       Route="xaminals">
+    ...
+</Shell>
+
+    ]]></code>
+          </example>
+          <para>
+Combined, the RouteScheme, RouteHost, and Route property values form the app://xamarin.com/xaminals root URI.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RouteHost">
@@ -1234,7 +1246,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the <see langword="string" /> to place in the host portion of the navigation URI.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1253,8 +1265,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see langword="string" /> to place in the scheme portion of the navigation URI.</summary>
+        <value>The default value is "app".</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2066,26 +2078,6 @@
         <param name="includeStack">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Xamarin.Forms.IShellController.HeaderChanged">
-      <MemberSignature Language="C#" Value="event EventHandler Xamarin.Forms.IShellController.HeaderChanged;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Xamarin.Forms.IShellController.HeaderChanged" />
-      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#HeaderChanged" />
-      <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IShellController.HeaderChanged</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.EventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

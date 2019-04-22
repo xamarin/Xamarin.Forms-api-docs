@@ -31,13 +31,13 @@
 Decorating types with ContentPropertyAttribute allows shorter XAML syntax. As </para>
       <example>
         <see cref="T:Xamarin.Forms.ContentView" /> has a ContentProperty attribute applied, this XAML is valid:
-<code lang="C#"><![CDATA[
+<code lang="csharp lang-csharp"><![CDATA[
 <ContentView>
   <Label Text="Hello, Forms"\>
 </ContentView>
   ]]></code>
 This is equivalent to the following, more explicit XAML
-<code lang="C#"><![CDATA[
+<code lang="csharp lang-csharp"><![CDATA[
 <ContentView>
   <ContentView.Content>
     <Label Text="Hello, Forms"\>
