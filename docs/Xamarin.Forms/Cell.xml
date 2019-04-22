@@ -1,8 +1,8 @@
 <Type Name="Cell" FullName="Xamarin.Forms.Cell">
-  <TypeSignature Language="C#" Value="public abstract class Cell : Xamarin.Forms.Element, Xamarin.Forms.ICellController, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Cell&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Cell extends Xamarin.Forms.Element implements class Xamarin.Forms.ICellController, class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.Cell&gt;" />
+  <TypeSignature Language="C#" Value="public abstract class Cell : Xamarin.Forms.Element, Xamarin.Forms.ICellController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Cell extends Xamarin.Forms.Element implements class Xamarin.Forms.ICellController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Cell" />
-  <TypeSignature Language="F#" Value="type Cell = class&#xA;    inherit Element&#xA;    interface ICellController&#xA;    interface IElementConfiguration&lt;Cell&gt;" />
+  <TypeSignature Language="F#" Value="type Cell = class&#xA;    inherit Element&#xA;    interface ICellController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -20,9 +20,6 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Xamarin.Forms.ICellController</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Cell&gt;</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -390,13 +387,10 @@ Content = new TableView
     </Member>
     <Member MemberName="On&lt;T&gt;">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.Cell&gt; On&lt;T&gt; () where T : Xamarin.Forms.IConfigPlatform;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.IPlatformElementConfiguration`2&lt;!!T, class Xamarin.Forms.Cell&gt; On&lt;(class Xamarin.Forms.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Xamarin.Forms.IPlatformElementConfiguration`2&lt;!!T, class Xamarin.Forms.Cell&gt; On&lt;(class Xamarin.Forms.IConfigPlatform) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Cell.On``1" />
-      <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Cell (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Cell (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="cell.On " />
+      <MemberSignature Language="F#" Value="member this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Cell (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="cell.On " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>

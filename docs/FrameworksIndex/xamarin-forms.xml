@@ -1807,7 +1807,6 @@
       <Member Id="M:Xamarin.Forms.IShellContentInsetObserver.OnInsetChanged(Xamarin.Forms.Thickness,System.Double)" />
     </Type>
     <Type Name="Xamarin.Forms.IShellController" Id="T:Xamarin.Forms.IShellController">
-      <Member Id="E:Xamarin.Forms.IShellController.HeaderChanged" />
       <Member Id="E:Xamarin.Forms.IShellController.StructureChanged" />
       <Member Id="M:Xamarin.Forms.IShellController.AddAppearanceObserver(Xamarin.Forms.IAppearanceObserver,Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)" />
@@ -3064,7 +3063,6 @@
     <Type Name="Xamarin.Forms.Shell" Id="T:Xamarin.Forms.Shell">
       <Member Id="E:Xamarin.Forms.Shell.Navigated" />
       <Member Id="E:Xamarin.Forms.Shell.Navigating" />
-      <Member Id="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#HeaderChanged" />
       <Member Id="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#StructureChanged" />
       <Member Id="F:Xamarin.Forms.Shell.BackButtonBehaviorProperty" />
       <Member Id="F:Xamarin.Forms.Shell.CurrentItemProperty" />
@@ -3115,6 +3113,7 @@
       <Member Id="M:Xamarin.Forms.Shell.GetTitleView(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.Shell.GoToAsync(Xamarin.Forms.ShellNavigationState,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.Shell.OnBackButtonPressed" />
+      <Member Id="M:Xamarin.Forms.Shell.OnBindingContextChanged" />
       <Member Id="M:Xamarin.Forms.Shell.OnChildAdded(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.Shell.OnChildRemoved(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.Shell.OnNavigated(Xamarin.Forms.ShellNavigatedEventArgs)" />
