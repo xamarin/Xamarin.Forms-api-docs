@@ -417,7 +417,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the visible status of the <see cref='P:Xamarin.Forms.Shell.Flyout' />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -458,7 +458,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the value of the <see cref='M:Xamarin.Forms.Shell.BackButtonBehaviorProperty' /> of the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -481,7 +481,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the <see cref='P:Xamarin.Forms.Shell.FlyoutBehavior' /> of the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -504,8 +504,8 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the visibility of the navigation bar of the <paramref name="obj"/>  in a Shell application.</summary>
+        <returns><see langword="true"/> if the navigation bar is visible.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,7 +527,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the <see cref='T:Xamarin.Forms.SearchHandler' /> for the specified <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -550,7 +550,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the padding inset value for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -573,7 +573,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the Shell background color for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -596,7 +596,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the Shell disabled color for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -619,7 +619,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the foreground color for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -642,7 +642,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the background color for the tab bar for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -665,7 +665,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the disabled color for the tab bar for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -688,7 +688,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the foreground color for the tab bar for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -711,7 +711,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the title color for tab bar for the <paramref name="obj" />..</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -734,7 +734,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the color for unselected values in the tab bar for <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -757,7 +757,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the color of the title for <paramref name="obj"/>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -780,7 +780,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the color for unselected items in <paramref name="obj"/>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -803,7 +803,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets whether the tab bar is visible in <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -826,7 +826,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the title <see cref='P:Xamarin.Forms.View' /> of <paramref name="obj"/>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -877,7 +877,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.ShellItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The collection of <see cref='T:Xamarin.Forms.ShellItem' /> objects managed by <c>this</c> <see cref='T:Xamarin.Forms.Shell' />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -914,7 +914,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets <see cref='T:Xamarin.Forms.DataTemplate' /> applied to each of the <see cref='P:Xamarin.Forms.Shell.Items' />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -951,7 +951,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.MenuItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the menu of the Shell application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -988,7 +988,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the <see cref='T:Xamarin.Forms.DataTemplate' /> applied to <see cref='T:Xamarin.Forms.MenuItem' /> objects in the <see cref='P:Xamarin.Forms.Shell.MenuItems' /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1025,7 +1025,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetNavBarIsVisible' /> and <see cref='M:Xamarin.Forms.Shell.SetNavBarIsVisible' /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1080,9 +1080,11 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns <see langword="true" /> if the <see cref='P:Xamarin.Forms.Shell.CurrentItem' /> was popped in response to a press of the back button.</summary>
+        <returns><see langword="true"/> if <see cref='P:Xamarin.Forms.Shell.CurrentItem' /> is not <see langword="null"/> and is not the only item in the navigation stack.</returns>
+        <remarks>
+          <para>This method may return prior to the navigation having completed. (See <see cref='M:Xamarin.Forms.INavigation.PopAsync' />.)</para> 
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBindingContextChanged">
@@ -1100,8 +1102,10 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior in response to the binding context changing.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnBindingContextChanged()</c> at the beginning of their overriding method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildAdded">
@@ -1122,8 +1126,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior when a new <see cref='T:Xamarin.Forms.Element' /> is added.</summary>
+        <remarks><para>Developers should call <c>base.OnChildAdded()</c> at the beginning of their overriding method.</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildRemoved">
@@ -1144,8 +1148,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+       <summary>Developers may override this method to customize behavior when a child <see cref='T:Xamarin.Forms.Element' /> is removed.</summary>
+        <remarks><para>Developers should call <c>base.OnChildRemoved()</c> at the beginning of their overriding method.</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnNavigated">
@@ -1166,8 +1170,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </Parameters>
       <Docs>
         <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior on navigation.</summary>
+        <remarks><para>Developers should call <c>base.OnNavigated()</c> at the end of their overriding method or must raise the <see cref='E:Xamarin.Forms.Shell.Navigated' /> event themselves.</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnNavigating">
@@ -1188,8 +1192,9 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </Parameters>
       <Docs>
         <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior prior to navigation.</summary>
+        <remarks><para>Developers should call <c>base.OnNavigating()</c> at the end of their overriding method or must raise the <see cref='E:Xamarin.Forms.Shell.Navigating' /> event themselves.</para></remarks>
+
       </Docs>
     </Member>
     <Member MemberName="Route">
@@ -1284,7 +1289,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetSearchHandler' /> and <see cref='M:Xamarin.Forms.Shell.SetSearchHandler' /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1308,7 +1313,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
       <Docs>
         <param name="obj">To be added.</param>
         <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the back button behavior of <param name="obj" /> to <param name="behavior" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1332,7 +1337,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the flyout behavior of <param name="obj" /> to <param name="value" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1356,7 +1361,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the navigation bar visibility of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
