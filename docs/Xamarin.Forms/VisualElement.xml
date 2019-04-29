@@ -1,8 +1,8 @@
 <Type Name="VisualElement" FullName="Xamarin.Forms.VisualElement">
-  <TypeSignature Language="C#" Value="public class VisualElement : Xamarin.Forms.NavigableElement, Xamarin.Forms.IAnimatable, Xamarin.Forms.IVisualElementController" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualElement extends Xamarin.Forms.NavigableElement implements class Xamarin.Forms.IAnimatable, class Xamarin.Forms.IElementController, class Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="C#" Value="public class VisualElement : Xamarin.Forms.NavigableElement, Xamarin.Forms.IAnimatable, Xamarin.Forms.ITabStopElement, Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualElement extends Xamarin.Forms.NavigableElement implements class Xamarin.Forms.IAnimatable, class Xamarin.Forms.IElementController, class Xamarin.Forms.ITabStopElement, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.VisualElement" />
-  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit NavigableElement&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
+  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit NavigableElement&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface ITabStopElement" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -24,6 +24,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.ITabStopElement</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
@@ -1071,6 +1074,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.IsTabStop" />
       <MemberSignature Language="F#" Value="member this.IsTabStop : bool with get, set" Usage="Xamarin.Forms.VisualElement.IsTabStop" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITabStopElement.IsTabStop</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2179,6 +2185,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.TabIndex" />
       <MemberSignature Language="F#" Value="member this.TabIndex : int with get, set" Usage="Xamarin.Forms.VisualElement.TabIndex" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITabStopElement.TabIndex</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>

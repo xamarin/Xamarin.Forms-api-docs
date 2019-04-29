@@ -417,7 +417,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the visible status of the <see cref='P:Xamarin.Forms.Shell.Flyout' />.</summary>
+        <summary>Gets or sets the visible status of the <see cref="P:Xamarin.Forms.Shell.Flyout" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -458,7 +458,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>Gets the value of the <see cref='M:Xamarin.Forms.Shell.BackButtonBehaviorProperty' /> of the <paramref name="obj" />.</summary>
+        <summary>Gets the value of the <see cref="M:Xamarin.Forms.Shell.BackButtonBehaviorProperty" /> of the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -481,7 +481,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>Gets the <see cref='P:Xamarin.Forms.Shell.FlyoutBehavior' /> of the <paramref name="obj" />.</summary>
+        <summary>Gets the <see cref="P:Xamarin.Forms.Shell.FlyoutBehavior" /> of the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -504,8 +504,9 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>Gets the visibility of the navigation bar of the <paramref name="obj"/>  in a Shell application.</summary>
-        <returns><see langword="true"/> if the navigation bar is visible.</returns>
+        <summary>Gets the visibility of the navigation bar of the <paramref name="obj" />  in a Shell application.</summary>
+        <returns>
+          <see langword="true" /> if the navigation bar is visible.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,30 +528,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>Gets the <see cref='T:Xamarin.Forms.SearchHandler' /> for the specified <paramref name="obj" />.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetSetPaddingInsets">
-      <MemberSignature Language="C#" Value="public static bool GetSetPaddingInsets (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetSetPaddingInsets(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetSetPaddingInsets(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetSetPaddingInsets : Xamarin.Forms.BindableObject -&gt; bool" Usage="Xamarin.Forms.Shell.GetSetPaddingInsets obj" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <summary>Gets the padding inset value for the <paramref name="obj" />.</summary>
+        <summary>Gets the <see cref="T:Xamarin.Forms.SearchHandler" /> for the specified <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -757,7 +735,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>Gets the color of the title for <paramref name="obj"/>.</summary>
+        <summary>Gets the color of the title for <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -780,7 +758,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>Gets the color for unselected items in <paramref name="obj"/>.</summary>
+        <summary>Gets the color for unselected items in <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -826,7 +804,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>Gets the title <see cref='P:Xamarin.Forms.View' /> of <paramref name="obj"/>.</summary>
+        <summary>Gets the title <see cref="P:Xamarin.Forms.View" /> of <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -877,7 +855,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.ShellItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The collection of <see cref='T:Xamarin.Forms.ShellItem' /> objects managed by <c>this</c> <see cref='T:Xamarin.Forms.Shell' />.</summary>
+        <summary>The collection of <see cref="T:Xamarin.Forms.ShellItem" /> objects managed by <c>this</c><see cref="T:Xamarin.Forms.Shell" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -914,7 +892,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets <see cref='T:Xamarin.Forms.DataTemplate' /> applied to each of the <see cref='P:Xamarin.Forms.Shell.Items' />.</summary>
+        <summary>Gets or sets <see cref="T:Xamarin.Forms.DataTemplate" /> applied to each of the <see cref="P:Xamarin.Forms.Shell.Items" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -988,7 +966,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref='T:Xamarin.Forms.DataTemplate' /> applied to <see cref='T:Xamarin.Forms.MenuItem' /> objects in the <see cref='P:Xamarin.Forms.Shell.MenuItems' /> collection.</summary>
+        <summary>Gets or sets the <see cref="T:Xamarin.Forms.DataTemplate" /> applied to <see cref="T:Xamarin.Forms.MenuItem" /> objects in the <see cref="P:Xamarin.Forms.Shell.MenuItems" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1025,7 +1003,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetNavBarIsVisible' /> and <see cref='M:Xamarin.Forms.Shell.SetNavBarIsVisible' /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetNavBarIsVisible" /> and <see cref="M:Xamarin.Forms.Shell.SetNavBarIsVisible" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1080,10 +1058,11 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns <see langword="true" /> if the <see cref='P:Xamarin.Forms.Shell.CurrentItem' /> was popped in response to a press of the back button.</summary>
-        <returns><see langword="true"/> if <see cref='P:Xamarin.Forms.Shell.CurrentItem' /> is not <see langword="null"/> and is not the only item in the navigation stack.</returns>
+        <summary>Returns <see langword="true" /> if the <see cref="P:Xamarin.Forms.Shell.CurrentItem" /> was popped in response to a press of the back button.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="P:Xamarin.Forms.Shell.CurrentItem" /> is not <see langword="null" /> and is not the only item in the navigation stack.</returns>
         <remarks>
-          <para>This method may return prior to the navigation having completed. (See <see cref='M:Xamarin.Forms.INavigation.PopAsync' />.)</para> 
+          <para>This method may return prior to the navigation having completed. (See <see cref="M:Xamarin.Forms.INavigation.PopAsync" />.)</para>
         </remarks>
       </Docs>
     </Member>
@@ -1126,8 +1105,10 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
-        <summary>Developers may override this method to customize behavior when a new <see cref='T:Xamarin.Forms.Element' /> is added.</summary>
-        <remarks><para>Developers should call <c>base.OnChildAdded()</c> at the beginning of their overriding method.</para></remarks>
+        <summary>Developers may override this method to customize behavior when a new <see cref="T:Xamarin.Forms.Element" /> is added.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnChildAdded()</c> at the beginning of their overriding method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildRemoved">
@@ -1148,8 +1129,10 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
-       <summary>Developers may override this method to customize behavior when a child <see cref='T:Xamarin.Forms.Element' /> is removed.</summary>
-        <remarks><para>Developers should call <c>base.OnChildRemoved()</c> at the beginning of their overriding method.</para></remarks>
+        <summary>Developers may override this method to customize behavior when a child <see cref="T:Xamarin.Forms.Element" /> is removed.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnChildRemoved()</c> at the beginning of their overriding method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnNavigated">
@@ -1171,7 +1154,9 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <Docs>
         <param name="args">To be added.</param>
         <summary>Developers may override this method to customize behavior on navigation.</summary>
-        <remarks><para>Developers should call <c>base.OnNavigated()</c> at the end of their overriding method or must raise the <see cref='E:Xamarin.Forms.Shell.Navigated' /> event themselves.</para></remarks>
+        <remarks>
+          <para>Developers should call <c>base.OnNavigated()</c> at the end of their overriding method or must raise the <see cref="E:Xamarin.Forms.Shell.Navigated" /> event themselves.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnNavigating">
@@ -1193,8 +1178,9 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <Docs>
         <param name="args">To be added.</param>
         <summary>Developers may override this method to customize behavior prior to navigation.</summary>
-        <remarks><para>Developers should call <c>base.OnNavigating()</c> at the end of their overriding method or must raise the <see cref='E:Xamarin.Forms.Shell.Navigating' /> event themselves.</para></remarks>
-
+        <remarks>
+          <para>Developers should call <c>base.OnNavigating()</c> at the end of their overriding method or must raise the <see cref="E:Xamarin.Forms.Shell.Navigating" /> event themselves.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Route">
@@ -1289,7 +1275,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetSearchHandler' /> and <see cref='M:Xamarin.Forms.Shell.SetSearchHandler' /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetSearchHandler" /> and <see cref="M:Xamarin.Forms.Shell.SetSearchHandler" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1365,24 +1351,6 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetPaddingInsetsProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SetPaddingInsetsProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SetPaddingInsetsProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.SetPaddingInsetsProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable SetPaddingInsetsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.SetPaddingInsetsProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetSetPaddingInsets' /> and <see cref='M:Xamarin.Forms.Shell.SetSetPaddingInsets' /> methods.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SetSearchHandler">
       <MemberSignature Language="C#" Value="public static void SetSearchHandler (Xamarin.Forms.BindableObject obj, Xamarin.Forms.SearchHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSearchHandler(class Xamarin.Forms.BindableObject obj, class Xamarin.Forms.SearchHandler handler) cil managed" />
@@ -1403,31 +1371,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
       <Docs>
         <param name="obj">To be added.</param>
         <param name="handler">To be added.</param>
-        <summary>Sets the <see cref='T:Xamarin.Forms.SearchHandler' /> for <param name="obj" />.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetSetPaddingInsets">
-      <MemberSignature Language="C#" Value="public static void SetSetPaddingInsets (Xamarin.Forms.BindableObject obj, bool value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSetPaddingInsets(class Xamarin.Forms.BindableObject obj, bool value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetSetPaddingInsets(Xamarin.Forms.BindableObject,System.Boolean)" />
-      <MemberSignature Language="F#" Value="static member SetSetPaddingInsets : Xamarin.Forms.BindableObject * bool -&gt; unit" Usage="Xamarin.Forms.Shell.SetSetPaddingInsets (obj, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-        <Parameter Name="value" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>Sets the <see cref='P:Xamarin.Forms.Shell.SetPaddingInsetsProperty' /> of <param name="obj" /> to <param name="value" />.</summary>
+        <summary>Sets the <see cref="T:Xamarin.Forms.SearchHandler" /> for <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1499,7 +1443,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>Sets the foreground color of <see cref='obj:' />.</summary>
+        <summary>Sets the foreground color of <see cref="obj:" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1715,7 +1659,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>Sets the title <see cref='T:Xamarin.Forms.View' /> of <param name="obj" />.</summary>
+        <summary>Sets the title <see cref="T:Xamarin.Forms.View" /> of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1733,7 +1677,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetShellBackgroundColor' /> and <see cref='M:Xamarin.Forms.Shell.SetShellBackgroundColor' /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellBackgroundColor" /> and <see cref="M:Xamarin.Forms.Shell.SetShellBackgroundColor" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1751,7 +1695,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetNavBarIsVisible' /> and <see cref='M:Xamarin.Forms.Shell.SetNavBarIsVisible' /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetNavBarIsVisible" /> and <see cref="M:Xamarin.Forms.Shell.SetNavBarIsVisible" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1769,7 +1713,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetShellForegroundColor' /> and <see cref='M:Xamarin.Forms.Shell.SetShellForegroundColor' /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellForegroundColor" /> and <see cref="M:Xamarin.Forms.Shell.SetShellForegroundColor" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1787,7 +1731,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetShellTabBarBackroundColor' /> and <see cref='M:Xamarin.Forms.Shell.SetShellTabBarBackroundColor' /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarBackroundColor" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarBackroundColor" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1805,7 +1749,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetShellTabBarDisabledProperty' /> and <see cref='M:Xamarin.Forms.Shell.SetShellTabBarDisabledProperty' /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarDisabledProperty" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarDisabledProperty" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1823,7 +1767,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetShellTabBarForegroundColor' /> and <see cref='M:Xamarin.Forms.Shell.SetShellTabBarForegroundColor' /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarForegroundColor" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarForegroundColor" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1841,7 +1785,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>xThe backing store for the <see cref='M:Xamarin.Forms.Shell.GetShellTabBarTitleColor' /> and <see cref='M:Xamarin.Forms.Shell.SetShellTabBarTitleColor' /> methods.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarTitleColor" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarTitleColor" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1859,7 +1803,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>xThe backing store for the <see cref='M:Xamarin.Forms.Shell.GetShellTabBarUnselectedColor' /> and <see cref='M:Xamarin.Forms.Shell.SetShellTabBarUnselectedColor' /> methods.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarUnselectedColor" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarUnselectedColor" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1877,7 +1821,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetShellTitleColor' /> and <see cref='M:Xamarin.Forms.Shell.SetShellTitleColor' /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTitleColor" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTitleColor" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1895,7 +1839,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>xThe backing store for the <see cref='M:Xamarin.Forms.Shell.GetShellUnselectedColor' /> and <see cref='M:Xamarin.Forms.Shell.SetShellUnselectedColor' /> methods.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellUnselectedColor" /> and <see cref="M:Xamarin.Forms.Shell.SetShellUnselectedColor" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1913,7 +1857,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref='M:Xamarin.Forms.Shell.GetTabBarIsVisible' /> and <see cref='M:Xamarin.Forms.Shell.SetTabBarIsVisible' /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetTabBarIsVisible" /> and <see cref="M:Xamarin.Forms.Shell.SetTabBarIsVisible" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1931,7 +1875,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>xThe backing store for the <see cref='M:Xamarin.Forms.Shell.GetTitleView' /> and <see cref='M:Xamarin.Forms.Shell.SetTitleView' /> methods.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetTitleView" /> and <see cref="M:Xamarin.Forms.Shell.SetTitleView" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
