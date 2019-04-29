@@ -396,6 +396,24 @@ var cp = new ContentPage {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MapClicked">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.Maps.MapClickedEventArgs&gt; MapClicked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Maps.MapClickedEventArgs&gt; MapClicked" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Maps.Map.MapClicked" />
+      <MemberSignature Language="F#" Value="member this.MapClicked : EventHandler&lt;Xamarin.Forms.Maps.MapClickedEventArgs&gt; " Usage="member this.MapClicked : System.EventHandler&lt;Xamarin.Forms.Maps.MapClickedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Maps.MapClickedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MapType">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Maps.MapType MapType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Maps.MapType MapType" />
@@ -491,6 +509,33 @@ var cp = new ContentPage {
       <Docs>
         <summary>An <see cref="T:System.Collections.Generic.IList`1" /> of the <see cref="T:Xamarin.Forms.Maps.Pin" />s on this <see cref="T:Xamarin.Forms.Maps.Map" />.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMapClicked">
+      <MemberSignature Language="C#" Value="public void SendMapClicked (Xamarin.Forms.Maps.Position position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendMapClicked(valuetype Xamarin.Forms.Maps.Position position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Maps.Map.SendMapClicked(Xamarin.Forms.Maps.Position)" />
+      <MemberSignature Language="F#" Value="member this.SendMapClicked : Xamarin.Forms.Maps.Position -&gt; unit" Usage="map.SendMapClicked position" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="Xamarin.Forms.Maps.Position" />
+      </Parameters>
+      <Docs>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

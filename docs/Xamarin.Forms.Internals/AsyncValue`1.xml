@@ -1,0 +1,132 @@
+<Type Name="AsyncValue&lt;T&gt;" FullName="Xamarin.Forms.Internals.AsyncValue&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class AsyncValue&lt;T&gt; : System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AsyncValue`1&lt;T&gt; extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.AsyncValue`1" />
+  <TypeSignature Language="F#" Value="type AsyncValue&lt;'T&gt; = class&#xA;    interface INotifyPropertyChanged" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsyncValue (System.Threading.Tasks.Task&lt;T&gt; valueTask, T defaultValue = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.Task`1&lt;!T&gt; valueTask, !T defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.AsyncValue`1.#ctor(System.Threading.Tasks.Task{`0},`0)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Internals.AsyncValue&lt;'T&gt; : System.Threading.Tasks.Task&lt;'T&gt; * 'T -&gt; Xamarin.Forms.Internals.AsyncValue&lt;'T&gt;" Usage="new Xamarin.Forms.Internals.AsyncValue&lt;'T&gt; (valueTask, defaultValue)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="valueTask" Type="System.Threading.Tasks.Task&lt;T&gt;" />
+        <Parameter Name="defaultValue" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="valueTask">To be added.</param>
+        <param name="defaultValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRunning">
+      <MemberSignature Language="C#" Value="public bool IsRunning { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRunning" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.AsyncValue`1.IsRunning" />
+      <MemberSignature Language="F#" Value="member this.IsRunning : bool with get, set" Usage="Xamarin.Forms.Internals.AsyncValue&lt;'T&gt;.IsRunning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Internals.AsyncValue&lt;T&gt; Null { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.Internals.AsyncValue`1&lt;!T&gt; Null" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.AsyncValue`1.Null" />
+      <MemberSignature Language="F#" Value="member this.Null : Xamarin.Forms.Internals.AsyncValue&lt;'T&gt;" Usage="Xamarin.Forms.Internals.AsyncValue&lt;'T&gt;.Null" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Internals.AsyncValue&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.AsyncValue`1.PropertyChanged" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public T Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.AsyncValue`1.Value" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="Xamarin.Forms.Internals.AsyncValue&lt;'T&gt;.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

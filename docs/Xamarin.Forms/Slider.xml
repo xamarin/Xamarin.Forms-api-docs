@@ -527,6 +527,14 @@ namespace FormsGallery
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("ThumbImage is obsolete as of 4.0.0. Please use ThumbImageSource instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
       </ReturnValue>
@@ -547,11 +555,56 @@ namespace FormsGallery
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("ThumbImageProperty is obsolete as of 4.0.0. Please use ThumbImageSourceProperty instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Backing store for the <see cref="P:Xamarin.Forms.Slider.ThumbImage" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbImageSource">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource ThumbImageSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource ThumbImageSource" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Slider.ThumbImageSource" />
+      <MemberSignature Language="F#" Value="member this.ThumbImageSource : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Slider.ThumbImageSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ThumbImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ThumbImageSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Slider.ThumbImageSourceProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ThumbImageSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Slider.ThumbImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
