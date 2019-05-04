@@ -63,7 +63,7 @@
         <ReturnType>Xamarin.Forms.ShellSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The currently selected <see cref="T:Xamarin.Forms.Tab" /> or <see cref="T:Xamarin.Forms.ShellSection" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,7 +100,7 @@
         <ReturnType>Xamarin.Forms.ShellSectionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The collection of <see cref="T:Xamarin.Forms.ShellSection" /> objects managed by <c>this</c><see cref="T:Xamarin.Forms.ShellItem" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,8 +172,10 @@
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior when a new <see cref="T:Xamarin.Forms.Element" /> is added.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnChildAdded()</c> at the beginning of their overriding method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildRemoved">
@@ -194,8 +196,10 @@
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior when a child <see cref="T:Xamarin.Forms.Element" /> is removed.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnChildRemoved()</c> at the beginning of their overriding method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -216,7 +220,7 @@
       </Parameters>
       <Docs>
         <param name="menuItem">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.MenuShellItem" /> from a <see cref="T:Xamarin.Forms.ShellSection" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,7 +243,7 @@
       </Parameters>
       <Docs>
         <param name="shellContent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.ShellItem" /> from a <see cref="T:Xamarin.Forms.ShellContent" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,7 +266,7 @@
       </Parameters>
       <Docs>
         <param name="shellSection">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.ShellItem" /> from a <see cref="T:Xamarin.Forms.ShellSection" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -285,7 +289,7 @@
       </Parameters>
       <Docs>
         <param name="page">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.ShellItem" /> from a <see cref="T:Xamarin.Forms.TemplatedPage" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -312,7 +316,7 @@
       <Docs>
         <param name="shellSection">To be added.</param>
         <param name="setValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
