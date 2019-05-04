@@ -63,7 +63,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="M:Xamarin.Forms.Shell.GetBackButtonBehavior(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetBackButtonBehavior(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>Backing store for the <see cref="M:Xamarin.Forms.Shell.GetBackButtonBehavior(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetBackButtonBehavior(Xamarin.Forms.BindableObject,Xamarin.Forms.BackButtonBehavior)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1003,7 +1003,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetNavBarIsVisible(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetNavBarIsVisible(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetNavBarIsVisible(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetNavBarIsVisible(Xamarin.Forms.BindableObject,System.Boolean)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1275,7 +1275,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetSearchHandler(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetSearchHandler(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetSearchHandler(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetSearchHandler(Xamarin.Forms.BindableObject,Xamarin.Forms.SearchHandler)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1677,7 +1677,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellBackgroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellBackgroundColor(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellBackgroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1695,7 +1695,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetNavBarIsVisible(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetNavBarIsVisible(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetNavBarIsVisible(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetNavBarIsVisible(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1713,7 +1713,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellForegroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellForegroundColor(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellForegroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1731,7 +1731,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarBackgroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarBackroundColor(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarBackgroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarBackroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1749,7 +1749,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarDisabledProperty(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarDisabledProperty(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarDisabledProperty(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarDisabledProperty(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1767,7 +1767,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarForegroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarForegroundColor(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarForegroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1785,7 +1785,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarTitleColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarTitleColor(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarTitleColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1803,7 +1803,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarUnselectedColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarUnselectedColor(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarUnselectedColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1821,7 +1821,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTitleColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTitleColor(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTitleColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1839,7 +1839,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellUnselectedColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellUnselectedColor(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellUnselectedColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1857,7 +1857,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetTabBarIsVisible(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetTabBarIsVisible(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetTabBarIsVisible(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetTabBarIsVisible(Xamarin.Forms.BindableObject,System.Boolean)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1875,7 +1875,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetTitleView(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetTitleView(Xamarin.Forms.BindableObject)" /> methods.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetTitleView(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetTitleView(Xamarin.Forms.BindableObject,Xamarin.Forms.View)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
