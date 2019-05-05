@@ -133,10 +133,10 @@
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
-      <MemberSignature Language="C#" Value="public string BackgroundImage { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string BackgroundImage" />
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.FileImageSource BackgroundImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.FileImageSource BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Page.BackgroundImage" />
-      <MemberSignature Language="F#" Value="member this.BackgroundImage : string with get, set" Usage="Xamarin.Forms.Page.BackgroundImage" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : Xamarin.Forms.FileImageSource with get, set" Usage="Xamarin.Forms.Page.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -149,8 +149,16 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("BackgroundImage is obsolete as of 4.0.0. Please use BackgroundImageSource instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Identifies the image used as a background for the <see cref="T:Xamarin.Forms.Page" />.</summary>
@@ -175,11 +183,56 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("BackgroundImageProperty is obsolete as of 4.0.0. Please use BackgroundImageSourceProperty instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Identifies the <see cref="P:Xamarin.Forms.Page.BackgroundImage" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageSource">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource BackgroundImageSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource BackgroundImageSource" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Page.BackgroundImageSource" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageSource : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Page.BackgroundImageSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty BackgroundImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty BackgroundImageSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Page.BackgroundImageSourceProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundImageSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Page.BackgroundImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,12 +463,57 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Icon is obsolete as of 4.0.0. Please use IconImageSource instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Resource identifier for the <see cref="T:Xamarin.Forms.Page" />'s associated icon.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconImageSource">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource IconImageSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource IconImageSource" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Page.IconImageSource" />
+      <MemberSignature Language="F#" Value="member this.IconImageSource : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Page.IconImageSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IconImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IconImageSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Page.IconImageSourceProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IconImageSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Page.IconImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,6 +534,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("IconProperty is obsolete as of 4.0.0. Please use IconImageSourceProperty instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>

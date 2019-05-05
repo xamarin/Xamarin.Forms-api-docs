@@ -32,7 +32,7 @@
       <example>
         <para>To bind the data behind a property in a <see cref="T:Xamarin.Forms.BindableObject" />, typically a view, to a property in the View Model, application developers should do the following.</para>
         <para> First, the developer creates a pair of properties on the view, one of which is a <see cref="T:Xamarin.Forms.BindableProperty" />, and the other of which is a property of whatever type is required. In the code below, <c>MockBindableObject</c> stands in for what would typically be a user interface object in production code. Application developers should note the use of <see cref="M:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)" /> and <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> to get and set the value on the bound property; The property of the desired type provides the interface that the target of the bound property will implement.</para>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 class MockBindableObject : BindableObject
 {
     // App developers should use the method below in production code for 
@@ -57,7 +57,7 @@ class MockBindableObject : BindableObject
 }
     ]]></code>
         <para>Second, the developer creates the implementation for the bound property in a class that implements the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> interface. In the MVVM design pattern, this is typically done by the View Model. Application developers should implement the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> interface on classes that they want to use as View Models. In the example below, app developers should take note of the idiomatic way that the <c>Name</c> property is implemented to, first, ensure that the property actually changed and return if it did not, and only then assign the value and call the <see cref="M:Xamarin.Forms.BindableObject.OnPropertyChanged(System.String)" /> method. Additionally, the <c>Name</c> property in the example below merely wraps the <c>name</c> field. In practice, the application developer may choose a different model in which to store application data.</para>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 class MockViewModel : INotifyPropertyChanged
 {
     string name;
@@ -87,7 +87,7 @@ class MockViewModel : INotifyPropertyChanged
 }]]></code>
         <para>Third, and finally, the application developer binds an instance of a BindableObject to an instance that implements INotifyPropertyChanged. In the vocabulary of the MVVM design pattern, this is "binding an instance of the View to an instance of a View Model." Once this step is complete, changes in the data are propagated between the View and View Model in a way that is determined by the value of the <see cref="T:Xamarin.Forms.BindingMode" /> enumeration, if any, that was passed during the binding step.</para>
         <para>The code below, when included in a project that reference the classes above, creates an instance of both <c>MockBindable</c> and <c>MockViewModel</c>, performs some intitialization, sets the binding, and then demonstrates a one-way binding. The code below runs without throwing an exception.</para>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 public static void OneWayDemo ()
 {
     var view = new MockBindableObject ();
@@ -187,7 +187,7 @@ public static void OneWayDemo ()
           <block subset="none" type="note">Typically, the runtime performance is better if  <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> is set after all calls to <see cref="M:Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)" /> have been made.</block>
           <para>The following example shows how to apply a BindingContext and a Binding to a Label (inherits from BindableObject):</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 var label = new Label ();
 label.SetBinding (Label.TextProperty, "Name");
 label.BindingContext = new {Name = "John Doe", Company = "Xamarin"};
@@ -248,7 +248,7 @@ Debug.WriteLine (label.Text); //prints "John Doe"
           <block subset="none" type="note">Typically, the runtime performance is better if  <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> is set after all calls to <see cref="M:Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)" /> have been made.</block>
           <para>The following example shows how to set a binding to the BindingContext:</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 class PersonView : ContentView 
 {
   public PersonView ()
@@ -371,7 +371,7 @@ stack.BindingContext = new {Jane = new {Name = "Jane Doe"}, John = new {Name = "
             <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> and <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> are used to access the values of properties that are implemented by a <see cref="T:Xamarin.Forms.BindableProperty" />. That is, application developers typically provide an interface for a bound property by defining <see langword="public" /> property whose <see langword="get" /> accessor casts  the result of <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> to the appropriate type and returns it, and whose <see langword="set" /> accessor uses <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> to set the value on the correct property. Application developers should perform no other steps in the public property that defines the interface of the bound property.</para>
           <example>
             <para>The following example shows how to create a bindable property interface for an implementation that will be provided in the target property when the binding is made at run time.</para>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 class MyBindable : BindableObject
 {
   public static readonly BindableProperty MyProperty = 
@@ -401,6 +401,9 @@ class MyBindable : BindableObject
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("GetValues is obsolete as of 4.0.0. Please use GetValue instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -432,6 +435,9 @@ class MyBindable : BindableObject
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("GetValues is obsolete as of 4.0.0. Please use GetValue instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -689,7 +695,7 @@ class MyBindable : BindableObject
         <remarks>
           <para>The following example shows how to set a binding to a property:</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 var label = new Label ();
 label.SetBinding (Label.TextProperty, new Binding ("Name"));
         ]]></code>
@@ -766,7 +772,7 @@ label.SetBinding (Label.TextProperty, new Binding ("Name"));
             <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> and <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> are used to access the values of properties that are implemented by a <see cref="T:Xamarin.Forms.BindableProperty" />. That is, application developers typically provide an interface for a bound property by defining <see langword="public" /> property whose <see langword="get" /> accessor casts  the result of <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> to the appropriate type and returns it, and whose <see langword="set" /> accessor uses <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> to set the value on the correct property. Application developers should perform no other steps in the public property that defines the interface of the bound property.</para>
           <example>
             <para>The following example shows how to create a bindable property interface for an implementation that will be provided in the target property when the binding is made at run time.</para>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 class MyBindable : BindableObject
 {
     public static readonly BindableProperty MyProperty = 
@@ -814,7 +820,7 @@ class MyBindable : BindableObject
           <para>This method and <see cref="T:Xamarin.Forms.BindablePropertyKey" /> are useful to implement BindableProperties with limited write access. The write access is limited to the scope of the BindablePropertyKey.</para>
           <para>The following example shows how to declare a BindableProperty with "internal" write access.</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 class MyBindable : BindableObject
 {
   internal static readonly BindablePropertyKey MyPropertyKey = 

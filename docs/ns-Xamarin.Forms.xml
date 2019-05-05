@@ -10,7 +10,7 @@
       <para>The user-experience of a Xamarin.Forms application is usually defined in a cross-platform shared project (either a Portable Class Library or a Shared Project) and combined with platform-specific projects that, at the least, initialize the native platform rendering (note the call to <c>Forms.Init()</c> in the platform code samples below) and, more generally, extend the user-experience and user-interface in platform-specific manners (for instance, by accessing platform-specific sensors or capabilities).</para>
       <para>For example, the developer can create a cross-platform Xamarin.Forms <see cref="T:Xamarin.Forms.Label" /> and display it with the following code in the shared project:</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 public class App : Xamarin.Forms.Application
 {
     public App ()
@@ -38,7 +38,7 @@ public class App : Xamarin.Forms.Application
       </format>
       <para>On the iOS platform, Visual Studio registers a subclass of the framework class <c>Xamarin.Forms.Platform.iOS.FormsApplicationDelegate</c> as the entry point of the application, and immediately makes a call to <c>Xamarin.Forms.Forms.Init</c>.</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 [Register("AppDelegate")]
 public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
 {
@@ -57,7 +57,7 @@ public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsAppli
       </format>
       <para>The entry point on Android is a subclass of the framework class <c>Xamarin.Forms.Platform.Android.FormsAppCompatActivity</c>, and its <c>OnCreate</c> method must configure the tab bar and toolbars and call its <c>base</c> method before calling <c>Forms.Init</c>.</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
             [Activity(Label = "HelloXamarinFormsWorld.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
             public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
             {

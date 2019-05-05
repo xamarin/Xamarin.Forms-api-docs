@@ -38,7 +38,7 @@
       <para>App developers can create tabbed pages in either of two ways. First, application developers can assign a list of objects of a single class, or its subclasses, to the <see cref="P:Xamarin.Forms.MultiPage`1.ItemsSource" /> property and assign a <see cref="T:Xamarin.Forms.DataTemplate" /> to the <see cref="P:Xamarin.Forms.MultiPage`1.ItemTemplate" /> property to return pages for objects of the least derived type. Second, app developers can add a succession of <see cref="T:Xamarin.Forms.Page" /> objects to the <see cref="P:Xamarin.Forms.MultiPage`1.Children" /> property. Both methods are shown in the code examples below.</para>
       <example>
         <para>The following example code, adapted for brevity from the FormsGallery sample that can be found on the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, shows how to display data of a specific type by assigning a <see cref="T:Xamarin.Forms.DataTemplate" /> to the <see cref="P:Xamarin.Forms.MultiPage`1.ItemTemplate" /> property. Note how <c>NamedColorPage</c> gets its color by binding its <see cref="F:Xamarin.Forms.BoxView.ColorProperty" /> field.</para>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 using System;
 using Xamarin.Forms;
     
@@ -111,7 +111,7 @@ namespace MinimalTabbed
       </example>
       <example>
         <para>The example below creates a tabbed view with two <see cref="T:Xamarin.Forms.ContentPage" /> instances.</para>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 class TabbedPageDemoPage2 : TabbedPage
 {
     public TabbedPageDemoPage2 ()
@@ -306,6 +306,80 @@ class TabbedPageDemoPage2 : TabbedPage
         <typeparam name="T">To be added.</typeparam>
         <summary>Returns the platform-specific instance of this <see cref="T:Xamarin.Forms.TabbedPage" />, on which a platform-specific method may be called.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedTabColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color SelectedTabColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color SelectedTabColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TabbedPage.SelectedTabColor" />
+      <MemberSignature Language="F#" Value="member this.SelectedTabColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.TabbedPage.SelectedTabColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedTabColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SelectedTabColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SelectedTabColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.TabbedPage.SelectedTabColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedTabColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.TabbedPage.SelectedTabColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.TabbedPage.SelectedTabColor" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnselectedTabColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color UnselectedTabColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color UnselectedTabColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TabbedPage.UnselectedTabColor" />
+      <MemberSignature Language="F#" Value="member this.UnselectedTabColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.TabbedPage.UnselectedTabColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnselectedTabColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty UnselectedTabColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty UnselectedTabColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.TabbedPage.UnselectedTabColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnselectedTabColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.TabbedPage.UnselectedTabColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.TabbedPage.UnselectedTabColor" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

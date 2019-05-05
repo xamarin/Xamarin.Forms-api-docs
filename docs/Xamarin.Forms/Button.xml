@@ -84,7 +84,7 @@
         Clicked="PressMeButton_Clicked"/>
 ]]></code>
         <para>With the XAML above, the following event handlers in the code-behind file change the button's text when these events are raised:</para>
-        <code lang="C#"><![CDATA[private void PressMeButton_Pressed(object sender, EventArgs e)
+        <code lang="csharp lang-csharp"><![CDATA[private void PressMeButton_Pressed(object sender, EventArgs e)
 {
    (sender as Button).Text = "You pressed me!";
 }
@@ -106,19 +106,19 @@ private void PressMeButton_Clicked(object sender, EventArgs e)
         Command="{Binding IncrementLabelCommand}" />
 ]]></code>
         <para>With the XAML above, the developer first defines the <c>IncrementLabelCommand</c> property on the view model and implements a method with which to later instantiate the command:</para>
-        <code lang="C#"><![CDATA[public ICommand IncrementLabelCommand { get; private set; }
+        <code lang="csharp lang-csharp"><![CDATA[public ICommand IncrementLabelCommand { get; private set; }
     
 void IncrementLabel()
 {
    modelUpdateCount++;
 }]]></code>
         <para>Second, the developer initializes the command with the method (or action):</para>
-        <code lang="C#"><![CDATA[public ViewModelDemo()
+        <code lang="csharp lang-csharp"><![CDATA[public ViewModelDemo()
 {
    IncrementLabelCommand = new Command(IncrementLabel);
 }]]></code>
         <para>Finally, the developer must sets the binding context in the constructor for the main page to that of the view model where the property is implemented:</para>
-        <code lang="C#"><![CDATA[public MainPage()
+        <code lang="csharp lang-csharp"><![CDATA[public MainPage()
 {
     InitializeComponent();
     BindingContext = new ViewModelDemo();
@@ -741,10 +741,10 @@ void IncrementLabel()
       </Docs>
     </Member>
     <Member MemberName="Image">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.FileImageSource Image { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.FileImageSource Image" />
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource Image { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource Image" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.Image" />
-      <MemberSignature Language="F#" Value="member this.Image : Xamarin.Forms.FileImageSource with get, set" Usage="Xamarin.Forms.Button.Image" />
+      <MemberSignature Language="F#" Value="member this.Image : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Button.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -755,8 +755,16 @@ void IncrementLabel()
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Image is obsolete as of 4.0.0. Please use ImageSource instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the optional image source to display next to the text in the Button. This is a bindable property.</summary>
@@ -780,11 +788,56 @@ void IncrementLabel()
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("ImageProperty is obsolete as of 4.0.0. Please use ImageSourceProperty instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Backing store for the Image bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageSource">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource ImageSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource ImageSource" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.ImageSource" />
+      <MemberSignature Language="F#" Value="member this.ImageSource : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Button.ImageSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ImageSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Button.ImageSourceProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ImageSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Button.ImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
