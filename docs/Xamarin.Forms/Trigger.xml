@@ -34,7 +34,7 @@
       <example>
         <para>The XML example below prompts the user to type in the secret, which is, "The text color is red". When the user has typed the secret, the Entry text changes color to red. The code is turned back to the default color if the user then edits the text to differ from the secret. This example shows how to bind to the enclosing control with a trigger.</para>
         <code lang="XML"><![CDATA[
-
+    
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage    xmlns="http://xamarin.com/schemas/2014/forms"
                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -57,13 +57,13 @@
         </Entry>
     </StackLayout>
 </ContentPage>
-
+    
 ]]></code>
       </example>
       <example>
         <para>The example below shows how developers can use a trigger to respond to events and update the value of a control property by using <see cref="T:Xamarin.Forms.TriggerAction`1" /> classes. The example prompts the user to answer a question about the color of the text, and then calls <c>ColorTriggerAction</c> to turn the text red when the user types "The text color is red". Developers should note that, while this example does not change the text back to the default color when the user continues to edit the string, the developer could additionally implement and specify an exit action to obtain that result.</para>
         <para>With the ColorTriggerAction class below defined in the <c>TriggerDemo</c> namespace:</para>
-        <code lang="C#"><![CDATA[public class ColorTriggerAction : TriggerAction<Entry>
+        <code lang="csharp lang-csharp"><![CDATA[public class ColorTriggerAction : TriggerAction<Entry>
 {
     protected override void Invoke(Entry sender)
     {

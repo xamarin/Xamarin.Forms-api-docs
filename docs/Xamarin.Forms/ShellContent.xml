@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Corresponds to a <see cref="T:Xamarin.Forms.ContentPage" /> contained in a <see cref="T:Xamarin.Forms.ShellSection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -57,9 +57,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the <see cref="T:Xamarin.Forms.Page" />.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Using this property will cause performance issues. Please use <see cref="P:Xamarin.Forms.ShellContent.ContentTemplate" /> instead.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentProperty">
@@ -76,7 +76,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.ShellContent.Content" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +94,7 @@
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a data template to create when ShellContent becomes active.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +113,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.ShellContent.ContentTemplate" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +131,7 @@
         <ReturnType>Xamarin.Forms.MenuItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Add <see cref="T:Xamarin.Forms.MenuItem" /> instances to flyout.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +150,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.ShellContent.MenuItems" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,7 +172,7 @@
       </Parameters>
       <Docs>
         <param name="page">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Used primarily by XAML to implicitly wrap a page in with a <see cref="T:Xamarin.Forms.ShellContent" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,7 +194,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,7 +216,7 @@
         <ReturnType>Xamarin.Forms.Page</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,7 +241,7 @@
       </Parameters>
       <Docs>
         <param name="page">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

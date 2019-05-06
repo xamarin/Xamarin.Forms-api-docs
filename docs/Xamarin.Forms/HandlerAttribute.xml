@@ -29,7 +29,28 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected HandlerAttribute (Type handler, Type target, Type[] supportedVisuals = null);" />
+      <MemberSignature Language="C#" Value="protected HandlerAttribute (Type handler, Type target);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type handler, class System.Type target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.HandlerAttribute.#ctor(System.Type,System.Type)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.HandlerAttribute : Type * Type -&gt; Xamarin.Forms.HandlerAttribute" Usage="new Xamarin.Forms.HandlerAttribute (handler, target)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handler" Type="System.Type" />
+        <Parameter Name="target" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HandlerAttribute (Type handler, Type target, Type[] supportedVisuals);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type handler, class System.Type target, class System.Type[] supportedVisuals) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.HandlerAttribute.#ctor(System.Type,System.Type,System.Type[])" />
       <MemberSignature Language="F#" Value="new Xamarin.Forms.HandlerAttribute : Type * Type * Type[] -&gt; Xamarin.Forms.HandlerAttribute" Usage="new Xamarin.Forms.HandlerAttribute (handler, target, supportedVisuals)" />

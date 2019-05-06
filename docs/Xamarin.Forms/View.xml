@@ -111,7 +111,7 @@
               This example creates a tap gesture recognizer and associates it with an image. When the image is double tapped, it will become semi-transparent.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   var image = new Image {Source = "image.png"};
   var gestureRecognizer = new TapGestureRecognizer {
     TappedCallback = o => image.Opacity = 0.5,
@@ -181,14 +181,14 @@
               This example creates four views and adds them to a stack, each laying out in a different manner.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   private View CreateButtons ()
   {
     var button1 = new Button {Text = "LeftAligned", HorizontalOptions=LayoutOptions.Start};
     var button2 = new Button {Text = "CenterAligned", HorizontalOptions=LayoutOptions.Center};
     var button3 = new Button {Text = "EndAligned", HorizontalOptions=LayoutOptions.End};
     var button4 = new Button {Text = "Fill", HorizontalOptions=LayoutOptions.Fill};
-
+    
     StackLayout stack = new StackLayout {
       Children = {
         button1,
@@ -197,7 +197,7 @@
         button4
       }
     };
-
+    
     return stack;
   }
               ]]></code>
@@ -328,14 +328,14 @@
               This example creates four views and adds them to a stack, each laying out in a different manner.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   private View CreateButtons ()
   {
     var button1 = new Button {Text = "TopAligned", VerticalOptions=LayoutOptions.Start};
     var button2 = new Button {Text = "CenterAligned", VerticalOptions=LayoutOptions.Center};
     var button3 = new Button {Text = "BottomAligned", VerticalOptions=LayoutOptions.End};
     var button4 = new Button {Text = "Fill", VerticalOptions=LayoutOptions.Fill};
-
+    
     StackLayout stack = new StackLayout {
       Orientation = StackOrientation.Horizontal,
       Children = {
@@ -345,7 +345,7 @@
         button4
       }
     };
-
+    
     return stack;
   }
               ]]></code>

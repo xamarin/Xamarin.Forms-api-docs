@@ -1,0 +1,54 @@
+<Type Name="AsyncValueExtensions" FullName="Xamarin.Forms.Internals.AsyncValueExtensions">
+  <TypeSignature Language="C#" Value="public static class AsyncValueExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AsyncValueExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.AsyncValueExtensions" />
+  <TypeSignature Language="F#" Value="type AsyncValueExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsAsyncValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Internals.AsyncValue&lt;T&gt; AsAsyncValue&lt;T&gt; (this System.Threading.Tasks.Task&lt;T&gt; valueTask, T defaultValue = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.Internals.AsyncValue`1&lt;!!T&gt; AsAsyncValue&lt;T&gt;(class System.Threading.Tasks.Task`1&lt;!!T&gt; valueTask, !!T defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.AsyncValueExtensions.AsAsyncValue``1(System.Threading.Tasks.Task{``0},``0)" />
+      <MemberSignature Language="F#" Value="static member AsAsyncValue : System.Threading.Tasks.Task&lt;'T&gt; * 'T -&gt; Xamarin.Forms.Internals.AsyncValue&lt;'T&gt;" Usage="Xamarin.Forms.Internals.AsyncValueExtensions.AsAsyncValue (valueTask, defaultValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Internals.AsyncValue&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="valueTask" Type="System.Threading.Tasks.Task&lt;T&gt;" RefType="this" />
+        <Parameter Name="defaultValue" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="valueTask">To be added.</param>
+        <param name="defaultValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

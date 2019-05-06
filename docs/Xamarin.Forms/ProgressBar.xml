@@ -32,16 +32,16 @@
     <remarks>
       <para>The following example shows the usage of a ProgressBar.</para>
       <example>
-        <code lang="C#"><![CDATA[
-
+        <code lang="csharp lang-csharp"><![CDATA[
+    
 //initial progress is 20%
 var progressBar = new ProgressBar {
   Progress = .2,
 };
-
+    
 // animate the progression to 80%, in 250ms
 await progressBar.ProgressTo (.8, 250, Easing.Linear);
-
+    
 Debug.WriteLine ("Animation completed");
 ]]></code>
       </example>

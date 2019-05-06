@@ -27,19 +27,19 @@
     <remarks>
       <para>The following shows a simple example of a strongly-typed callback using <see cref="T:Xamarin.Forms.MessagingCenter" /> is:</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 public class SubscriberThing 
 {
 	public int IntProperty { get; set; }
 }
-
+    
 var subscriber = new SubscriberThing();
 MessagingCenter.Subscribe<MyPage, int> (subscriber, "IntPropertyMessage", (s, e) => {
 	subscriber.IntProperty = e; 
 });
-
+    
 //...later...
-
+    
 MessagingCenter.Send<MyPage, int>(this, "IntPropertyMessage", 2);
 Assert.AreEqual(2, subscriber.IntProperty);
           ]]></code>

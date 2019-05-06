@@ -353,32 +353,25 @@
       </Docs>
     </Member>
     <Member MemberName="GetTitleIcon">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.FileImageSource GetTitleIcon (Xamarin.Forms.BindableObject bindable);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.FileImageSource GetTitleIcon(class Xamarin.Forms.BindableObject bindable) cil managed" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ImageSource GetTitleIcon (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ImageSource GetTitleIcon(class Xamarin.Forms.BindableObject bindable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.GetTitleIcon(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetTitleIcon : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.FileImageSource" Usage="Xamarin.Forms.NavigationPage.GetTitleIcon bindable" />
+      <MemberSignature Language="F#" Value="static member GetTitleIcon : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.ImageSource" Usage="Xamarin.Forms.NavigationPage.GetTitleIcon bindable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">The <see cref="T:Xamarin.Forms.BindableObject" /> whose title icon is being set.</param>
-        <summary>Retrieves the path to the file providing the title icon for the <paramref name="bindable" />.</summary>
-        <returns>The path to the file providing the title icon for the <paramref name="bindable" />.</returns>
+        <param name="bindable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -637,11 +630,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
       </ReturnValue>
@@ -672,9 +660,6 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -812,11 +797,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -901,11 +881,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1135,53 +1110,27 @@
       </Docs>
     </Member>
     <Member MemberName="SetTitleIcon">
-      <MemberSignature Language="C#" Value="public static void SetTitleIcon (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.FileImageSource value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleIcon(class Xamarin.Forms.BindableObject bindable, class Xamarin.Forms.FileImageSource value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.SetTitleIcon(Xamarin.Forms.BindableObject,Xamarin.Forms.FileImageSource)" />
-      <MemberSignature Language="F#" Value="static member SetTitleIcon : Xamarin.Forms.BindableObject * Xamarin.Forms.FileImageSource -&gt; unit" Usage="Xamarin.Forms.NavigationPage.SetTitleIcon (bindable, value)" />
+      <MemberSignature Language="C#" Value="public static void SetTitleIcon (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.ImageSource value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleIcon(class Xamarin.Forms.BindableObject bindable, class Xamarin.Forms.ImageSource value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.SetTitleIcon(Xamarin.Forms.BindableObject,Xamarin.Forms.ImageSource)" />
+      <MemberSignature Language="F#" Value="static member SetTitleIcon : Xamarin.Forms.BindableObject * Xamarin.Forms.ImageSource -&gt; unit" Usage="Xamarin.Forms.NavigationPage.SetTitleIcon (bindable, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
-        <Parameter Name="value" Type="Xamarin.Forms.FileImageSource" />
+        <Parameter Name="value" Type="Xamarin.Forms.ImageSource" />
       </Parameters>
       <Docs>
-        <param name="bindable">The <see cref="T:Xamarin.Forms.BindableObject" /> whose title icon is being set.</param>
-        <param name="value">The FileImageSource of the icon.</param>
-        <summary>Sets the title icon of the <paramref name="bindable" /> to the icon file at <paramref name="value" />.</summary>
-        <remarks>
-          <example>
-            <code lang="C#"><![CDATA[
-public class MyPage : NavigationPage
-{
-	public MyPage ()
-	{
-		var myContentPage = new MyContentPage (Color.White);
-		this.Push (myContentPage);
-
-		var s = "icon-45.png";
-		NavigationPage.SetTitleIcon (myContentPage, s);
-	}
-}
-          ]]></code>
-          </example>
-          <para>
-            <img href="~/Xamarin.Forms/_images/NavigationPage.TitleIcon.png" />
-          </para>
-        </remarks>
+        <param name="bindable">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetTitleView">
@@ -1363,11 +1312,6 @@ public class MyPage : NavigationPage
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
       </ReturnValue>

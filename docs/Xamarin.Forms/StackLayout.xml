@@ -32,7 +32,7 @@
       <para>Because <see cref="T:Xamarin.Forms.StackLayout" /> layouts override the bounds on their child elements, application developers should not set bounds on them.</para>
       <example>
         <para>The following example code, adapted from the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">FormsGallery</a></format> example shows how to create a new <see cref="T:Xamarin.Forms.StackLayout" /> with children that explore many of the layout behaviors of <see cref="T:Xamarin.Forms.StackLayout" />:</para>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 StackLayout stackLayout = new StackLayout
 {
     Spacing = 0,
@@ -139,7 +139,7 @@ StackLayout stackLayout = new StackLayout
               The following example shows the initialization of a new StackLayout and setting its orientation and children.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 var stackLayout = new StackLayout {
   Orientation = StackOrientation.Horizontal,
   Children = {
@@ -348,7 +348,7 @@ var stackLayout = new StackLayout {
               The following example sets the Spacing on construction of a StackLayout.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 var stackLayout = new StackLayout {
   Spacing = 10
 };

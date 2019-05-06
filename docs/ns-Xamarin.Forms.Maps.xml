@@ -3,8 +3,8 @@
     <summary>Cross-Platform Library for Displaying and Annotating Maps.</summary>
     <remarks>
       <para>Xamarin.Forms.Maps provides a cross-platform abstraction for displaying maps. To use Xamarin.Forms.Maps, application developers must calls Xamarin.FormsMaps.Init() as part of platform initialization, as shown in the following example:</para>
-            <example>
-        <code lang="C#"><![CDATA[
+      <example>
+        <code lang="csharp lang-csharp"><![CDATA[
 //Shared
 public class App
 {
@@ -20,12 +20,12 @@ public class App
 public partial class AppDelegate : UIApplicationDelegate
 {
 	UIWindow window;
-
+    
 	public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 	{
 		Forms.Init ();
 		FormsMaps.Init ();
-
+    
 		window = new UIWindow (UIScreen.MainScreen.Bounds);
 		
 		window.RootViewController = App.GetMainPage ().CreateViewController ();
@@ -43,17 +43,16 @@ namespace HelloMap.Android
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
+    
 			Xamarin.Forms.Forms.Init (this, bundle);
 			FormsMaps.Init(this, bundle);
-
+    
 			SetPage (App.GetMainPage ());
 		}
 	}
 }
           ]]></code>
-        </example>
-      
+      </example>
     </remarks>
   </Docs>
 </Namespace>

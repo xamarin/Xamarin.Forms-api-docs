@@ -50,7 +50,7 @@
             The following example creates a new image from a file
             </para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 var image = new Image { Source = "picture.png" };]]></code>
       </example>
       <para>The FormsGallery sample, which can be found on the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">Sample Applications</a></format> page, has a ImageDemoPage.cs file. This file contains a longer and more complete example.</para>
@@ -81,7 +81,7 @@ var image = new Image { Source = "picture.png" };]]></code>
               The following example creates a new image from a file
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   var image = new Image { Source = "picture.png" };]]></code>
           </example>
         </remarks>
@@ -165,7 +165,7 @@ var image = new Image { Source = "picture.png" };]]></code>
           <para>
               The following example illustrates running a  <see cref="T:Xamarin.Forms.ActivityIndicator" /> to indicate that the image is loading:</para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
 var image = new Image { 
   Source = new ImageLoader {
     Uri = new Uri ("http://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57723/globe_west_2048.jpg"),
@@ -174,7 +174,7 @@ var image = new Image {
   WidthRequest = 200,
   HeightRequest = 200,
 };
-
+    
 var indicator = new ActivityIndicator {Color = new Color (.5),};
 indicator.SetBinding (ActivityIndicator.IsRunningProperty, "IsLoading");
 indicator.BindingContext = image;]]></code>

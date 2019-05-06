@@ -25,9 +25,12 @@
     <Attribute>
       <AttributeName>Xamarin.Forms.ContentProperty("Items")</AttributeName>
     </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>One or more items in the flyout. Contained within a <see cref="T:Xamarin.Forms.Shell" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -60,7 +63,7 @@
         <ReturnType>Xamarin.Forms.ShellSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The currently selected <see cref="T:Xamarin.Forms.Tab" /> or <see cref="T:Xamarin.Forms.ShellSection" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,7 +82,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.ShellItem.CurrentItem" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +100,7 @@
         <ReturnType>Xamarin.Forms.ShellSectionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The collection of <see cref="T:Xamarin.Forms.ShellSection" /> objects managed by <c>this</c><see cref="T:Xamarin.Forms.ShellItem" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +119,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.ShellItem.Items" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +172,10 @@
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior when a new <see cref="T:Xamarin.Forms.Element" /> is added.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnChildAdded()</c> at the beginning of their overriding method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildRemoved">
@@ -191,8 +196,10 @@
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior when a child <see cref="T:Xamarin.Forms.Element" /> is removed.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnChildRemoved()</c> at the beginning of their overriding method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -205,11 +212,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Please dont use this in core code... its SUPER hard to debug when this happens", true)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
@@ -218,7 +220,7 @@
       </Parameters>
       <Docs>
         <param name="menuItem">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.MenuShellItem" /> from a <see cref="T:Xamarin.Forms.ShellSection" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -233,11 +235,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Please dont use this in core code... its SUPER hard to debug when this happens", true)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
@@ -246,7 +243,7 @@
       </Parameters>
       <Docs>
         <param name="shellContent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.ShellItem" /> from a <see cref="T:Xamarin.Forms.ShellContent" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,11 +258,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Please dont use this in core code... its SUPER hard to debug when this happens", true)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
@@ -274,7 +266,7 @@
       </Parameters>
       <Docs>
         <param name="shellSection">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.ShellItem" /> from a <see cref="T:Xamarin.Forms.ShellSection" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -289,11 +281,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Please dont use this in core code... its SUPER hard to debug when this happens", true)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
@@ -302,34 +289,7 @@
       </Parameters>
       <Docs>
         <param name="page">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Xamarin.Forms.IShellItemController.GoToPart">
-      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IShellItemController.GoToPart (System.Collections.Generic.List&lt;string&gt; parts, System.Collections.Generic.Dictionary&lt;string,string&gt; queryData);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Xamarin.Forms.IShellItemController.GoToPart(class System.Collections.Generic.List`1&lt;string&gt; parts, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; queryData) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellItemController.GoToPart(System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String})</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="parts" Type="System.Collections.Generic.List&lt;System.String&gt;" />
-        <Parameter Name="queryData" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="parts">To be added.</param>
-        <param name="queryData">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.ShellItem" /> from a <see cref="T:Xamarin.Forms.TemplatedPage" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -356,7 +316,7 @@
       <Docs>
         <param name="shellSection">To be added.</param>
         <param name="setValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

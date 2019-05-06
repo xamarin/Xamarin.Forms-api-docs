@@ -28,15 +28,15 @@
     <remarks>
       <para>Here is a very simple example of a <see cref="T:Xamarin.Forms.Maps.Map" />:</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 var map = new Map (MapSpan.FromCenterAndRadius (new Position (37, -122), Distance.FromMiles (10)));
-
+    
 var pin = new Pin () {
 	Position = new Position (37, -122),
 	Label = "Some Pin!"
 };
 map.Pins.Add (pin);
-
+    
 var cp = new ContentPage { 
 	Content = map, 
 };          
@@ -294,7 +294,7 @@ var cp = new ContentPage {
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Maps.Map.ItemsSource" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,7 +331,7 @@ var cp = new ContentPage {
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Maps.Map.ItemTemplate" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

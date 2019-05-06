@@ -30,7 +30,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A <see cref="T:Xamarin.Forms.Page" /> that provides fundamental UI features that most applications require, leaving you to focus on the application's core workload.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.Shell" /> element with default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +63,29 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="M:Xamarin.Forms.Shell.GetBackButtonBehavior(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetBackButtonBehavior(Xamarin.Forms.BindableObject,Xamarin.Forms.BackButtonBehavior)" /> methods.</summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shell Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.Shell Current" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.Current" />
+      <MemberSignature Language="F#" Value="member this.Current : Xamarin.Forms.Shell" Usage="Xamarin.Forms.Shell.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shell</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Static property providing access to the current <see cref="T:Xamarin.Forms.Shell" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>This is a typecast alias for <c>Xamarin.Forms.Application.Current.MainPage</c>.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentItem">
@@ -81,7 +102,7 @@
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The currently selected <see cref="T:Xamarin.Forms.ShellItem" />, <see cref="T:Xamarin.Forms.TabBar" /> or <see cref="T:Xamarin.Forms.FlyoutItem" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,26 +121,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CurrentShell">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shell CurrentShell { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.Shell CurrentShell" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.CurrentShell" />
-      <MemberSignature Language="F#" Value="member this.CurrentShell : Xamarin.Forms.Shell" Usage="Xamarin.Forms.Shell.CurrentShell" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Shell</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.CurrentItem" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +139,7 @@
         <ReturnType>Xamarin.Forms.ShellNavigationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current navigation state of the <see cref="T:Xamarin.Forms.Shell" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,7 +158,26 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.CurrentState" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flyout">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellItemCollection Flyout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellItemCollection Flyout" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.Flyout" />
+      <MemberSignature Language="F#" Value="member this.Flyout : Xamarin.Forms.ShellItemCollection" Usage="Xamarin.Forms.Shell.Flyout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ShellItemCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The root menu for a Shell application.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +195,7 @@
         <ReturnType>Xamarin.Forms.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the background color of the <see cref="P:Xamarin.Forms.Shell.Flyout" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,7 +214,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutBackgroundColor" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +232,7 @@
         <ReturnType>Xamarin.Forms.FlyoutBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Setting the <see cref="T:Xamarin.Forms.FlyoutBehavior" /> property to Disabled hides the flyout, which is useful when you only have one ShellItem. The other valid FlyoutBehavior values are Flyout (default), and Locked.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,7 +251,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutBehavior" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,7 +269,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The flyout header is the content that optionally appears at the top of the flyout, with its appearance being defined by a <see cref="P:Xamarin.Forms.View" />  that can be set through the <see cref="P:Xamarin.Forms.Shell.FlyoutHeader" /> property value.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -267,7 +288,7 @@
         <ReturnType>Xamarin.Forms.FlyoutHeaderBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Setting the FlyoutHeaderBehavior to CollapseOnScroll collapses the flyout as scrolling occurs. The other valid FlyoutHeaderBehavior values are Default, Fixed, and Scroll (scroll with the menu items).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,7 +307,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutHeaderBehavior" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,7 +325,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutHeader" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,7 +343,7 @@
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The flyout header appearance can be defined by setting the <see cref="P:Xamarin.Forms.Shell.FlyoutHeaderTemplate" /> property to a <see cref="P:Xamarin.Forms.DataTemplate" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,7 +362,44 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutHeaderTemplate" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutIcon">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource FlyoutIcon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource FlyoutIcon" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.FlyoutIcon" />
+      <MemberSignature Language="F#" Value="member this.FlyoutIcon : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Shell.FlyoutIcon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the icon that, when pressed, opens the <see cref="P:Xamarin.Forms.Shell.Flyout" />.</summary>
+        <value>The default icon is a "hamburger" icon.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutIconProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FlyoutIconProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FlyoutIconProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.FlyoutIconProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlyoutIconProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.FlyoutIconProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutIcon" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,7 +417,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the visible status of the <see cref="P:Xamarin.Forms.Shell.Flyout" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,7 +436,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutIsPresented" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,7 +458,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the value of the <see cref="M:Xamarin.Forms.Shell.BackButtonBehaviorProperty" /> of the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -423,7 +481,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the <see cref="P:Xamarin.Forms.Shell.FlyoutBehavior" /> of the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -446,8 +504,9 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the visibility of the navigation bar of the <paramref name="obj" />  in a Shell application.</summary>
+        <returns>
+          <see langword="true" /> if the navigation bar is visible.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,30 +528,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetSetPaddingInsets">
-      <MemberSignature Language="C#" Value="public static bool GetSetPaddingInsets (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetSetPaddingInsets(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetSetPaddingInsets(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetSetPaddingInsets : Xamarin.Forms.BindableObject -&gt; bool" Usage="Xamarin.Forms.Shell.GetSetPaddingInsets obj" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the <see cref="T:Xamarin.Forms.SearchHandler" /> for the specified <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -515,7 +551,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the Shell background color for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -538,7 +574,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the Shell disabled color for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -561,7 +597,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the foreground color for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -584,7 +620,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the background color for the tab bar for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -607,7 +643,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the disabled color for the tab bar for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -630,7 +666,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the foreground color for the tab bar for the <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -653,7 +689,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the title color for tab bar for the <paramref name="obj" />..</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -676,7 +712,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the color for unselected values in the tab bar for <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -699,7 +735,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the color of the title for <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -722,7 +758,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the color for unselected items in <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -745,7 +781,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets whether the tab bar is visible in <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -768,7 +804,7 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the title <see cref="P:Xamarin.Forms.View" /> of <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -783,11 +819,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -798,46 +829,16 @@
       <Docs>
         <param name="state">To be added.</param>
         <param name="animate">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Asynchronously navigates to <param name="state" />, optionally animating.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GroupHeaderTemplate">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate GroupHeaderTemplate { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate GroupHeaderTemplate" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.GroupHeaderTemplate" />
-      <MemberSignature Language="F#" Value="member this.GroupHeaderTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.Shell.GroupHeaderTemplate" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GroupHeaderTemplateProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty GroupHeaderTemplateProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty GroupHeaderTemplateProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.GroupHeaderTemplateProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable GroupHeaderTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.GroupHeaderTemplateProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>Note that <see cref="T:Xamarin.Forms.ShellNavigationState" /> has implicit conversions from <see langword="string" /> and <see cref="T:System.Uri" />, so developers may write code such as the following, with no explicit instantiation of the <see cref="T:Xamarin.Forms.ShellNavigationState" />:</para>
+          <example>
+            <code lang="csharp lang-csharp"><![CDATA[
+await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
+    ]]></code>
+          </example>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -854,7 +855,7 @@
         <ReturnType>Xamarin.Forms.ShellItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The collection of <see cref="T:Xamarin.Forms.ShellItem" /> objects managed by <c>this</c><see cref="T:Xamarin.Forms.Shell" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -873,7 +874,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.Items" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -891,7 +892,7 @@
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets <see cref="T:Xamarin.Forms.DataTemplate" /> applied to each of the <see cref="P:Xamarin.Forms.Shell.Items" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -910,7 +911,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.ItemTemplate" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -928,7 +929,7 @@
         <ReturnType>Xamarin.Forms.MenuItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the menu of the Shell application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -947,7 +948,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.MenuItems" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -965,7 +966,7 @@
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the <see cref="T:Xamarin.Forms.DataTemplate" /> applied to <see cref="T:Xamarin.Forms.MenuItem" /> objects in the <see cref="P:Xamarin.Forms.Shell.MenuItems" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -984,7 +985,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.MenuItemTemplate" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1002,7 +1003,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetNavBarIsVisible(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetNavBarIsVisible(Xamarin.Forms.BindableObject,System.Boolean)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1020,7 +1021,7 @@
         <ReturnType>System.EventHandler&lt;Xamarin.Forms.ShellNavigatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The library raises this event after performing navigation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1038,7 +1039,7 @@
         <ReturnType>System.EventHandler&lt;Xamarin.Forms.ShellNavigatingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The library raises this event immediately prior to performing navigation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1057,9 +1058,33 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns <see langword="true" /> if the <see cref="P:Xamarin.Forms.Shell.CurrentItem" /> was popped in response to a press of the back button.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="P:Xamarin.Forms.Shell.CurrentItem" /> is not <see langword="null" /> and is not the only item in the navigation stack.</returns>
+        <remarks>
+          <para>This method may return prior to the navigation having completed. (See <see cref="M:Xamarin.Forms.INavigation.PopAsync" />.)</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingContextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingContextChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.OnBindingContextChanged" />
+      <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="shell.OnBindingContextChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Developers may override this method to customize behavior in response to the binding context changing.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnBindingContextChanged()</c> at the beginning of their overriding method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildAdded">
@@ -1080,8 +1105,10 @@
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior when a new <see cref="T:Xamarin.Forms.Element" /> is added.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnChildAdded()</c> at the beginning of their overriding method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildRemoved">
@@ -1102,8 +1129,10 @@
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior when a child <see cref="T:Xamarin.Forms.Element" /> is removed.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnChildRemoved()</c> at the beginning of their overriding method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnNavigated">
@@ -1124,8 +1153,10 @@
       </Parameters>
       <Docs>
         <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior on navigation.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnNavigated()</c> at the end of their overriding method or must raise the <see cref="E:Xamarin.Forms.Shell.Navigated" /> event themselves.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnNavigating">
@@ -1146,8 +1177,10 @@
       </Parameters>
       <Docs>
         <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Developers may override this method to customize behavior prior to navigation.</summary>
+        <remarks>
+          <para>Developers should call <c>base.OnNavigating()</c> at the end of their overriding method or must raise the <see cref="E:Xamarin.Forms.Shell.Navigating" /> event themselves.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Route">
@@ -1164,9 +1197,30 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the string used to address the <see cref="T:Xamarin.Forms.Shell" />.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para><![CDATA[URI-based navigation is accomplished with routes, which are the URI segments that are used to navigate within a Shell application. Navigation URI’s are formatted as follows (items in bold are required, items in italics are optional):
+
+**RouteScheme**://**RouteHost**/**Route**/*page*?*QueryParameters*
+
+Query parameters are parameters that can be passed to the destination page while navigating.
+The RouteScheme, RouteHost, and primary route must be defined in your Shell subclass with the RouteScheme, RouteHost, and Route properties:
+]]></para>
+          <example>
+            <code lang="XAML"><![CDATA[
+<Shell ...
+       RouteScheme="app"
+       RouteHost="xamarin.com"
+       Route="xaminals">
+    ...
+</Shell>
+
+    ]]></code>
+          </example>
+          <para>
+Combined, the RouteScheme, RouteHost, and Route property values form the app://xamarin.com/xaminals root URI.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RouteHost">
@@ -1221,7 +1275,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetSearchHandler(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetSearchHandler(Xamarin.Forms.BindableObject,Xamarin.Forms.SearchHandler)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1245,7 +1299,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the back button behavior of <param name="obj" /> to <param name="behavior" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1269,7 +1323,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the flyout behavior of <param name="obj" /> to <param name="value" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1293,25 +1347,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetPaddingInsetsProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SetPaddingInsetsProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SetPaddingInsetsProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.SetPaddingInsetsProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable SetPaddingInsetsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.SetPaddingInsetsProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the navigation bar visibility of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1335,31 +1371,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetSetPaddingInsets">
-      <MemberSignature Language="C#" Value="public static void SetSetPaddingInsets (Xamarin.Forms.BindableObject obj, bool value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSetPaddingInsets(class Xamarin.Forms.BindableObject obj, bool value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetSetPaddingInsets(Xamarin.Forms.BindableObject,System.Boolean)" />
-      <MemberSignature Language="F#" Value="static member SetSetPaddingInsets : Xamarin.Forms.BindableObject * bool -&gt; unit" Usage="Xamarin.Forms.Shell.SetSetPaddingInsets (obj, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-        <Parameter Name="value" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the <see cref="T:Xamarin.Forms.SearchHandler" /> for <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1383,7 +1395,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the background color of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1407,7 +1419,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the disabled color of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1431,7 +1443,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the foreground color of <paramref name="obj"/>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1455,7 +1467,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the background color of the tab bar of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1479,7 +1491,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the disabled color of the tab bar of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1503,7 +1515,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the foreground color of the tab bar of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1527,7 +1539,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the color of the title of the tab bar of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1551,7 +1563,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the color of unselected items in the tab bar of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1575,7 +1587,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the title color of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1599,7 +1611,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the color of unselected items in <param name="obj" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1623,7 +1635,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the tab bar visibility of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1647,7 +1659,7 @@
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the title <see cref="T:Xamarin.Forms.View" /> of <param name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1665,7 +1677,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellBackgroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1683,7 +1695,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetNavBarIsVisible(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetNavBarIsVisible(Xamarin.Forms.BindableObject,System.Boolean)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1701,7 +1713,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellForegroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1719,7 +1731,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarBackgroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1737,7 +1749,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarDisabledColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarDisabledColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1755,7 +1767,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarForegroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1773,7 +1785,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarTitleColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1791,7 +1803,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarUnselectedColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1809,7 +1821,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTitleColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1827,7 +1839,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellUnselectedColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1845,7 +1857,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetTabBarIsVisible(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetTabBarIsVisible(Xamarin.Forms.BindableObject,System.Boolean)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1863,7 +1875,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetTitleView(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetTitleView(Xamarin.Forms.BindableObject,Xamarin.Forms.View)" /> methods.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1889,7 +1901,7 @@
       <Docs>
         <param name="observer">To be added.</param>
         <param name="pivot">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1913,7 +1925,7 @@
       </Parameters>
       <Docs>
         <param name="observer">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1939,7 +1951,7 @@
       <Docs>
         <param name="source">To be added.</param>
         <param name="appearanceSet">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1960,7 +1972,7 @@
         <ReturnType>Xamarin.Forms.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1982,7 +1994,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2013,28 +2025,8 @@
         <param name="shellSection">To be added.</param>
         <param name="shellContent">To be added.</param>
         <param name="includeStack">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Xamarin.Forms.IShellController.HeaderChanged">
-      <MemberSignature Language="C#" Value="event EventHandler Xamarin.Forms.IShellController.HeaderChanged;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Xamarin.Forms.IShellController.HeaderChanged" />
-      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#HeaderChanged" />
-      <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IShellController.HeaderChanged</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.EventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2050,11 +2042,6 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2063,7 +2050,32 @@
       </Parameters>
       <Docs>
         <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IShellController.OnFlyoutItemSelectedAsync (Xamarin.Forms.Element element);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync(class Xamarin.Forms.Element element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2097,7 +2109,7 @@
         <param name="shellContent">To be added.</param>
         <param name="stack">To be added.</param>
         <param name="canCancel">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2122,7 +2134,7 @@
       </Parameters>
       <Docs>
         <param name="observer">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2147,7 +2159,7 @@
       </Parameters>
       <Docs>
         <param name="observer">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2168,7 +2180,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2192,7 +2204,7 @@
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

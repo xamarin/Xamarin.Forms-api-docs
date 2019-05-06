@@ -3,14 +3,14 @@
     <summary>Cross-platform, natively-backed UI toolkit.</summary>
     <remarks>
       <para>Xamarin.Forms is a cross-platform, natively-backed UI toolkit abstraction that allows developers to create user interfaces that can be shared across Android, iOS, and Windows Phone. Because the user interfaces use the native controls of the target platforms, they have the appearance and, importantly, the responsiveness of natively built apps.</para>
-        <format type="text/html">
+      <format type="text/html">
         <h2>Xamarin.Forms Solution Architecture</h2>
         <h3>Cross-Platform Project</h3>
       </format>
       <para>The user-experience of a Xamarin.Forms application is usually defined in a cross-platform shared project (either a Portable Class Library or a Shared Project) and combined with platform-specific projects that, at the least, initialize the native platform rendering (note the call to <c>Forms.Init()</c> in the platform code samples below) and, more generally, extend the user-experience and user-interface in platform-specific manners (for instance, by accessing platform-specific sensors or capabilities).</para>
       <para>For example, the developer can create a cross-platform Xamarin.Forms <see cref="T:Xamarin.Forms.Label" /> and display it with the following code in the shared project:</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 public class App : Xamarin.Forms.Application
 {
     public App ()
@@ -29,12 +29,16 @@ public class App : Xamarin.Forms.Application
           ]]></code>
       </example>
       <para>This code results in a centered label on the target platforms:</para>
-      <para><img href="~/Xamarin.Forms/_images/XamarinForms-ns.TripleScreenShot.png"/></para>
+      <para>
+        <img href="~/Xamarin.Forms/_images/XamarinForms-ns.TripleScreenShot.png" />
+      </para>
       <para>While more complicated layouts with more useful user interfaces are more typical, this example is useful for clearly illustrating the shared and platform-specific code that Xamarin.Forms uses to create and display the code on the target platforms. The code in the following discussion is created by Visual Studio in the target platform projects when the developer creates a new Xamarin.Forms project. In each case, a platform-specific <c>Forms.Init()</c> method is called to intitialize forms before any other method that depends on Xamarin.Forms is called. </para>
-      <format type="text/html" ><h3>iOS Platform Code</h3></format>
+      <format type="text/html">
+        <h3>iOS Platform Code</h3>
+      </format>
       <para>On the iOS platform, Visual Studio registers a subclass of the framework class <c>Xamarin.Forms.Platform.iOS.FormsApplicationDelegate</c> as the entry point of the application, and immediately makes a call to <c>Xamarin.Forms.Forms.Init</c>.</para>
-            <example>
-        <code lang="C#"><![CDATA[
+      <example>
+        <code lang="csharp lang-csharp"><![CDATA[
 [Register("AppDelegate")]
 public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
 {
@@ -42,17 +46,18 @@ public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsAppli
     {
         global::Xamarin.Forms.Forms.Init();
         LoadApplication(new App());
-
+    
         return base.FinishedLaunching(app, options);
     }
 }
           ]]></code>
       </example>
-      
-      <format type="text/html" ><h3>Android Platform Code</h3></format>
+      <format type="text/html">
+        <h3>Android Platform Code</h3>
+      </format>
       <para>The entry point on Android is a subclass of the framework class <c>Xamarin.Forms.Platform.Android.FormsAppCompatActivity</c>, and its <c>OnCreate</c> method must configure the tab bar and toolbars and call its <c>base</c> method before calling <c>Forms.Init</c>.</para>
-            <example>
-        <code lang="C#"><![CDATA[
+      <example>
+        <code lang="csharp lang-csharp"><![CDATA[
             [Activity(Label = "HelloXamarinFormsWorld.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
             public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
             {
@@ -60,14 +65,14 @@ public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsAppli
                 {
                     TabLayoutResource = Resource.Layout.Tabbar;
                     ToolbarResource = Resource.Layout.Toolbar;
-
+    
                     base.OnCreate(bundle);
-
+    
                     global::Xamarin.Forms.Forms.Init(this, bundle);
-
+    
                     LoadApplication(new App());
                 }
-
+    
                 protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
                 {
                     base.OnActivityResult(requestCode, resultCode, data);
@@ -75,20 +80,21 @@ public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsAppli
             }
           ]]></code>
       </example>
-      <format type="text/html" ><h3>UWP Code</h3></format>
+      <format type="text/html">
+        <h3>UWP Code</h3>
+      </format>
       <para>The entry point for a Xamarin.Forms app on UWP is just the constructor for a <see cref="T:Windows.UI.Xaml.Application" /> in <c>App.xaml.cs</c> in the UWP platform project. However, the application lifecycle on UWP is such that the call to <c>Forms.Init</c> must take place inside the <c>OnLaunched</c> method, and is guarded against being run more than once. The necessary code is beyond the scope of this documentation, but the curious developer is encouraged to create a test Xamarin.Forms solution and study the code in the <c>App.xaml.cs</c> file for more details</para>
-           <format type="text/html">
+      <format type="text/html">
         <h2>Elements in Xamarin.Forms</h2>
       </format>
-      <para>Important types in the Xamarin.Forms namespace include <see cref="T:Xamarin.Forms.Page"/>, <see cref="T:Xamarin.Forms.View"/>, and <see cref="T:Xamarin.Forms.Layout"/>. <see cref="T:Xamarin.Forms.Page"/>s typically correspond with controller objects (Activities in the Android world, UIViewControllers in the iOS world), <see cref="T:Xamarin.Forms.View"/>s with controls or widgets, and <see cref="T:Xamarin.Forms.Layout"/>s arrange <see cref="T:Xamarin.Forms.View"/>s on other <see cref="T:Xamarin.Forms.View"/>s. These types are all derived from <see cref="T:Xamarin.Forms.Element"/>.</para>
+      <para>Important types in the Xamarin.Forms namespace include <see cref="T:Xamarin.Forms.Page" />, <see cref="T:Xamarin.Forms.View" />, and <see cref="T:Xamarin.Forms.Layout" />. <see cref="T:Xamarin.Forms.Page" />s typically correspond with controller objects (Activities in the Android world, UIViewControllers in the iOS world), <see cref="T:Xamarin.Forms.View" />s with controls or widgets, and <see cref="T:Xamarin.Forms.Layout" />s arrange <see cref="T:Xamarin.Forms.View" />s on other <see cref="T:Xamarin.Forms.View" />s. These types are all derived from <see cref="T:Xamarin.Forms.Element" />.</para>
       <format type="text/html">
         <h2>Model-View-ViewModel and Xamarin.Forms</h2>
       </format>
       <para>Application developers use the Model-View-ViewModel (MVVM) pattern to create Xamarin.Forms apps that cleanly separate the concerns of data presentation and user interface from the concerns of data storage and manipulation. The <see cref="N:Xamarin.Forms" /> framework enables this by providing, among a few other related types, the <see cref="T:Xamarin.Forms.BindableObject" /> and <see cref="T:Xamarin.Forms.BindableProperty" /> classes. Objects that inherit from <see cref="T:Xamarin.Forms.BindableObject" /> can be bound to members of type <see cref="T:Xamarin.Forms.BindableProperty" /> on other objects.</para>
-            <para>A <see cref="T:Xamarin.Forms.BindableObject" /> maintains dictionary of <see cref="T:Xamarin.Forms.BindableProperty" /> names and an association with their corresponding binding contexts--simply the object on which the <see cref="T:Xamarin.Forms.BindableProperty" /> is defined and that the application developer has assigned to the <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> property--through a  <see cref="T:Xamarin.Forms.Binding" />. See <see cref="T:Xamarin.Forms.BindableObject" /> for more information.</para>
-     </remarks>
-     <related type="article" href="https://docs.microsoft.com/xamarin/xamarin-forms/get-started/introduction-to-xamarin-forms/">Introduction to Xamarin.Forms</related>
-     <related type="article" href="https://docs.microsoft.com/xamarin/xamarin-forms/controls/">Xamarin.Forms View Gallery</related>
-  
+      <para>A <see cref="T:Xamarin.Forms.BindableObject" /> maintains dictionary of <see cref="T:Xamarin.Forms.BindableProperty" /> names and an association with their corresponding binding contexts--simply the object on which the <see cref="T:Xamarin.Forms.BindableProperty" /> is defined and that the application developer has assigned to the <see cref="P:Xamarin.Forms.BindableObject.BindingContext" /> property--through a  <see cref="T:Xamarin.Forms.Binding" />. See <see cref="T:Xamarin.Forms.BindableObject" /> for more information.</para>
+    </remarks>
+    <related type="article" href="https://docs.microsoft.com/xamarin/xamarin-forms/get-started/introduction-to-xamarin-forms/">Introduction to Xamarin.Forms</related>
+    <related type="article" href="https://docs.microsoft.com/xamarin/xamarin-forms/controls/">Xamarin.Forms View Gallery</related>
   </Docs>
 </Namespace>

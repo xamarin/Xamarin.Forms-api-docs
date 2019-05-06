@@ -31,110 +31,110 @@
       <para>Application developers can control the placement of child elements by providing proportional coordinates, device coordinates, or a combination of both, depending on the <see cref="T:Xamarin.Forms.AbsoluteLayoutFlags" /> values that are passed to <see cref="M:Xamarin.Forms.AbsoluteLayout.SetLayoutFlags(Xamarin.Forms.BindableObject,Xamarin.Forms.AbsoluteLayoutFlags)" /> method. When one of the proportional <see cref="T:Xamarin.Forms.AbsoluteLayoutFlags" /> enumeration values is provided, the corresponding X, or Y arguments that range between 0.0 and 1.0 will always cause the child to be displayed completely on screen. That is, you do not need to subtract or add the height or width of a child in order to display it flush with the left, right, top, or bottom of the <see cref="T:Xamarin.Forms.AbsoluteLayout" />. For width, height, X, or Y values that are not specified proportionally, application developers use device-dependent units to locate and size the child element.</para>
       <example>
         <para>The following example shows how to use an <see cref="T:Xamarin.Forms.AbsoluteLayout" /> with proportional position arguments.</para>
-        <code lang="C#"><![CDATA[
-
+        <code lang="csharp lang-csharp"><![CDATA[
+    
     Label header = new Label
     {
         Text = "AbsoluteLayout Demo",
         FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
         HorizontalOptions = LayoutOptions.Center
     };
-
+    
     AbsoluteLayout simpleLayout = new AbsoluteLayout
     {
         BackgroundColor = Color.Blue.WithLuminosity(0.9),
         VerticalOptions = LayoutOptions.FillAndExpand
     };
-
+    
     topLeftLabel = new Label
     {
         Text = "Top Left",
         TextColor = Color.Black
     };
-
+    
     centerLabel = new Label
     {
         Text = "Centered",
         TextColor = Color.Black
     };
-
+    
     bottomRightLabel = new Label
     {
         Text = "Bottom Right",
         TextColor = Color.Black
     };
-
+    
     // PositionProportional flag maps the range (0.0, 1.0) to
     // the range "flush [left|top]" to "flush [right|bottom]"
     AbsoluteLayout.SetLayoutFlags(bottomRightLabel,
         AbsoluteLayoutFlags.PositionProportional);
-
+    
     AbsoluteLayout.SetLayoutBounds(topLeftLabel,
         new Rectangle(0f,
             0f, AbsoluteLayout.AutoSize, AbsoluteLayout.AutoSize));
-
+    
     AbsoluteLayout.SetLayoutFlags(centerLabel,
         AbsoluteLayoutFlags.PositionProportional);
-
+    
     AbsoluteLayout.SetLayoutBounds(centerLabel,
         new Rectangle(0.5,
             0.5, AbsoluteLayout.AutoSize, AbsoluteLayout.AutoSize));
-
+    
     AbsoluteLayout.SetLayoutFlags(bottomRightLabel,
         AbsoluteLayoutFlags.PositionProportional);
-
+    
     AbsoluteLayout.SetLayoutBounds(bottomRightLabel,
         new Rectangle(1f,
             1f, AbsoluteLayout.AutoSize, AbsoluteLayout.AutoSize));
-
+    
     simpleLayout.Children.Add(topLeftLabel);
     simpleLayout.Children.Add(centerLabel);
     simpleLayout.Children.Add(bottomRightLabel);
     ]]></code>
         <para>The code sample below shows how to place two labels by specifying device-dependent units.</para>
-        <code lang="C#"><![CDATA[
-
+        <code lang="csharp lang-csharp"><![CDATA[
+    
     AbsoluteLayout simpleLayout = new AbsoluteLayout
     {
-
+    
         BackgroundColor = Color.Blue.WithLuminosity(0.9),
         VerticalOptions = LayoutOptions.FillAndExpand
     };
-
+    
     Label header = new Label
     {
         Text = "Device Units Demo",
         TextColor = Color.Black,
         FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
     };
-
+    
     topLeftText = new Label
     {
         Text = "Left",
         TextColor = Color.Black
     };
-
+    
     AbsoluteLayout.SetLayoutFlags(topLeftText,
         AbsoluteLayoutFlags.None);
-
+    
     AbsoluteLayout.SetLayoutBounds(topLeftText,
         new Rectangle(0f, 0f, 100f, 50f));
-
+    
     middleText = new Label
     {
         Text = "Device-dependent location",
         TextColor = Color.Black
     };
-
+    
     AbsoluteLayout.SetLayoutFlags(middleText,
         AbsoluteLayoutFlags.None);
-
+    
     AbsoluteLayout.SetLayoutBounds(middleText,
         new Rectangle(100f, 200f, 200f, 50f));
-
+    
     simpleLayout.Children.Add(topLeftText);
     simpleLayout.Children.Add(middleText);
-
+    
     }]]></code>
       </example>
       <para>The following image shows the AbsoluteLayout demo from the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Xamarin.Forms/" target="_blank">FormsGallery</a></format> sample.

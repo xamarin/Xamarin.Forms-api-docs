@@ -39,7 +39,7 @@
       <para>Entry is a single line text entry. It is best used for collecting small discrete pieces of information, like usernames and passwords.</para>
       <example>
         <para>The following example creates a new username and password set of entries.</para>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 View CreateLoginForm ()
 {
   var usernameEntry = new Entry {Placeholder = "Username"};
@@ -47,7 +47,7 @@ View CreateLoginForm ()
     Placeholder = "Password",
     IsPassword = true
   };
-
+    
   return new StackLayout {
     Children = {
       usernameEntry,

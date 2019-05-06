@@ -37,10 +37,10 @@
       </example>
       <para>The following example shows a basic use:</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 using System;
 using Xamarin.Forms;
-
+    
 namespace FormsGallery
 {
     class BoxViewDemoPage : ContentPage
@@ -53,7 +53,7 @@ namespace FormsGallery
                 Font = Font.BoldSystemFontOfSize(50),
                 HorizontalOptions = LayoutOptions.Center
             };
-
+    
             BoxView boxView = new BoxView
             {
                 Color = Color.Accent,
@@ -62,10 +62,10 @@ namespace FormsGallery
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };
-
+    
             // Accomodate iPhone status bar.
             this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
-
+    
             // Build the page.
             this.Content = new StackLayout
             {

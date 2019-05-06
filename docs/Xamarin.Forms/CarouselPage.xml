@@ -61,7 +61,7 @@
       </example>
       <example>
         <para>The following C# example creates a <see cref="T:Xamarin.Forms.CarouselPage" /> that displays three simple <see cref="T:Xamarin.Forms.ContentPage" /> elements:</para>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 List<ContentPage> pages = new List<ContentPage> (0);
 Color[] colors = { Color.Red, Color.Green, Color.Blue };
 foreach (Color c in colors) {
@@ -76,7 +76,7 @@ foreach (Color c in colors) {
         }
     });
 }
-
+    
 MainPage = new CarouselPage {
     Children = { pages [0],
                  pages [1],

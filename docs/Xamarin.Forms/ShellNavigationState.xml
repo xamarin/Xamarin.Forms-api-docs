@@ -11,8 +11,13 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Location = {Location}")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A URI representing either the current page or a destination for navigation in a Shell application.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -70,10 +75,10 @@
       </Docs>
     </Member>
     <Member MemberName="Location">
-      <MemberSignature Language="C#" Value="public Uri Location { get; set; }" />
+      <MemberSignature Language="C#" Value="public Uri Location { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Location" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellNavigationState.Location" />
-      <MemberSignature Language="F#" Value="member this.Location : Uri with get, set" Usage="Xamarin.Forms.ShellNavigationState.Location" />
+      <MemberSignature Language="F#" Value="member this.Location : Uri" Usage="Xamarin.Forms.ShellNavigationState.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>

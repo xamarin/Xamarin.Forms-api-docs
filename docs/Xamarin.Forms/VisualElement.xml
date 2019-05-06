@@ -1,8 +1,8 @@
 <Type Name="VisualElement" FullName="Xamarin.Forms.VisualElement">
-  <TypeSignature Language="C#" Value="public class VisualElement : Xamarin.Forms.NavigableElement, Xamarin.Forms.IAnimatable, Xamarin.Forms.IVisualElementController" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualElement extends Xamarin.Forms.NavigableElement implements class Xamarin.Forms.IAnimatable, class Xamarin.Forms.IElementController, class Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="C#" Value="public class VisualElement : Xamarin.Forms.NavigableElement, Xamarin.Forms.IAnimatable, Xamarin.Forms.ITabStopElement, Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualElement extends Xamarin.Forms.NavigableElement implements class Xamarin.Forms.IAnimatable, class Xamarin.Forms.IElementController, class Xamarin.Forms.ITabStopElement, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.VisualElement" />
-  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit NavigableElement&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
+  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit NavigableElement&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface ITabStopElement" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -24,6 +24,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.ITabStopElement</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
@@ -420,31 +423,6 @@
       </ReturnValue>
       <Docs>
         <summary>Occurs when the Children of a VisualElement have been re-ordered.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="class">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; class { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; class" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.class" />
-      <MemberSignature Language="F#" Value="member this.class : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Xamarin.Forms.VisualElement.class" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.ListStringTypeConverter))</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the style class of the visual element.</summary>
-        <value>The style class of the visual element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -876,7 +854,7 @@
               The following example shows a handler on a button which will then set IsEnabled to false on another button.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   public partial class ButtonDisableExample {
     void BuildButtons ()
     {
@@ -947,7 +925,7 @@
               The following example shows conditionally setting a background color based on the focus state.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   void UpdateBackground ()
   {
     if (myElement.IsFocused)
@@ -1096,6 +1074,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.IsTabStop" />
       <MemberSignature Language="F#" Value="member this.IsTabStop : bool with get, set" Usage="Xamarin.Forms.VisualElement.IsTabStop" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITabStopElement.IsTabStop</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1123,7 +1104,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.VisualElement.IsTabStop" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1162,18 +1143,18 @@
               The following example shows a stack where the middle element is toggled when a button is activated.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   partial class LabelToggle {
     Label label;
-
+    
     void Build ()
     {
       var firstView = new Button {Text = "Tap Me"};
       label = new Label {Text = "I can be toggled"};
       var thirdView = new Image {Source = "image.png"};
-
+    
       firstView.Activated += OnButtonActivated;
-
+    
       Content = new StackLayout {
         Children {
           firstView,
@@ -1182,7 +1163,7 @@
         }
       };
     }
-
+    
     void OnButtonActivated (object sender, EventArgs args)
     {
       label.IsVisible = !label.IsVisible;
@@ -1333,12 +1314,12 @@
               The following example sets the MinimumHeightRequest to enable an image to shrink below it's normal size.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   void Build (string veryLongString)
   {
     var label = new Label {Text = veryLongString};
     var image = new Image {Source = "image500x500.png"};
-
+    
     image.MinimumHeightRequest = 20;
     Content = new StackLayout {
       Children {
@@ -1405,12 +1386,12 @@
               The following example sets the MinimumWidthRequest to enable an image to shrink below it's normal size.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   void Build (string veryLongString)
   {
     var label = new Label {Text = veryLongString};
     var image = new Image {Source = "image500x500.png"};
-
+    
     image.MinimumWidthRequest = 20;
     Content = new StackLayout {
       Orientation = StackOrientation.Horizontal,
@@ -1472,6 +1453,24 @@
       <Parameters />
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigationProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty NavigationProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty NavigationProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.NavigationProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable NavigationProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.NavigationProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1725,17 +1724,17 @@
               The following example sets the opacity of a layout to 0.5 and the opacity of one of its children to 0.5, making the child 25% opaque.
               </para>
           <example>
-            <code lang="C#"><![CDATA[
+            <code lang="csharp lang-csharp"><![CDATA[
   StackLayout stack = new StackLayout ();
   Button button1 = new Button {Text="A Button"};
   Button button2 = new Button {Text="Another Button"};
-
+    
   stack.Children.Add (button1);
   stack.Children.Add (button2);
-
+    
   // The stack and everything in it will become 50% opaque
   stack.Opacity = 0.5;
-
+    
   // button1 will become 25% opaque while the stack and button2 remane 50% opaque
   button1.Opacity = 0.5;
               ]]></code>
@@ -1803,7 +1802,7 @@
     <ResourceDictionary>
         <LayoutOptions x:Key="horzOptions"
                      Alignment="Center" />
-
+    
         <LayoutOptions x:Key="vertOptions"
                      Alignment="Center"
                      Expands="True" />
@@ -2162,51 +2161,21 @@
         <remarks>Classes should implement <see cref="M:Xamarin.Forms.VisualElement.OnSizeAllocated(System.Double,System.Double)" /> if they wish to respond to size change events directly.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Style">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.Style Style { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Style Style" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.Style" />
-      <MemberSignature Language="F#" Value="member this.Style : Xamarin.Forms.Style with get, set" Usage="Xamarin.Forms.VisualElement.Style" />
-      <MemberType>Property</MemberType>
+    <Member MemberName="StyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty StyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty StyleProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.StyleProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable StyleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.StyleProperty" />
+      <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.Style</ReturnType>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style that defines how this visual element is displayed.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="StyleClass">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; StyleClass { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; StyleClass" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.StyleClass" />
-      <MemberSignature Language="F#" Value="member this.StyleClass : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Xamarin.Forms.VisualElement.StyleClass" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.ListStringTypeConverter))</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the style class for the visual element.</summary>
-        <value>To be added.</value>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2216,6 +2185,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.TabIndex" />
       <MemberSignature Language="F#" Value="member this.TabIndex : int with get, set" Usage="Xamarin.Forms.VisualElement.TabIndex" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITabStopElement.TabIndex</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2263,7 +2235,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.VisualElement.TabIndex" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2511,7 +2483,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.VisualElement.Visual" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

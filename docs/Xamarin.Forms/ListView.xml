@@ -51,11 +51,11 @@
       </para>
       <para>The following example shows a basic use:</para>
       <example>
-        <code lang="C#"><![CDATA[
+        <code lang="csharp lang-csharp"><![CDATA[
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
-
+    
 namespace FormsGallery
 {
 class ListViewDemoPage : ContentPage
@@ -68,14 +68,14 @@ class ListViewDemoPage : ContentPage
                 this.Birthday = birthday;
                 this.FavoriteColor = favoriteColor;
             }
-
+    
             public string Name { private set; get; }
-
+    
             public DateTime Birthday { private set; get; }
-
+    
             public Color FavoriteColor { private set; get; }
         };
-
+    
         public ListViewDemoPage()
         {
             Label header = new Label
@@ -84,7 +84,7 @@ class ListViewDemoPage : ContentPage
                 FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center
             };
-
+    
             // Define some data.
             List<Person> people = new List<Person>
             {
@@ -94,13 +94,13 @@ class ListViewDemoPage : ContentPage
                 new Person("Yvonne", new DateTime(1987, 1, 10), Color.Purple),
                 new Person("Zachary", new DateTime(1988, 2, 5), Color.Red)
             };
-
+    
             // Create the ListView.
             ListView listView = new ListView
             {
                 // Source of data items.
                 ItemsSource = people,
-
+    
                 // Define template for displaying each item.
                 // (Argument of DataTemplate constructor is called for 
                 //      each item; it must return a Cell derivative.)
@@ -109,15 +109,15 @@ class ListViewDemoPage : ContentPage
                         // Create views with bindings for displaying each property.
                         Label nameLabel = new Label();
                         nameLabel.SetBinding(Label.TextProperty, "Name");
-
+    
                         Label birthdayLabel = new Label();
                         birthdayLabel.SetBinding(Label.TextProperty,
                             new Binding("Birthday", BindingMode.OneWay, 
                                 null, null, "Born {0:d}"));
-
+    
                         BoxView boxView = new BoxView();
                         boxView.SetBinding(BoxView.ColorProperty, "FavoriteColor");
-
+    
                         // Return an assembled ViewCell.
                         return new ViewCell
                         {
@@ -143,10 +143,10 @@ class ListViewDemoPage : ContentPage
                         };
                     })
             };
-
+    
             // Accomodate iPhone status bar.
             this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
-
+    
             // Build the page.
             this.Content = new StackLayout
             {
@@ -159,7 +159,7 @@ class ListViewDemoPage : ContentPage
         }
     }
 }
-
+    
 ]]></code>
       </example>
     </remarks>
@@ -539,7 +539,7 @@ class ListViewDemoPage : ContentPage
         </remarks>
         <example>
           <para>This example shows an alphabetized list of people, grouped by first initial with the display binding set.</para>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
     class Person
     {
         public string FullName
@@ -547,7 +547,7 @@ class ListViewDemoPage : ContentPage
             get;
             set;
         }
-
+    
         public string Address
         {
             get;
@@ -555,14 +555,14 @@ class ListViewDemoPage : ContentPage
         }
     }
                         ]]></code>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
     class Group : ObservableCollection<Person>
     {
         public Group (string firstInitial)
         {
             FirstInitial = firstInitial;
         }
-
+    
         public string FirstInitial
         {
             get;
@@ -570,7 +570,7 @@ class ListViewDemoPage : ContentPage
         }
     }
                         ]]></code>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
     ListView CreateListView()
     {
         var listView = new ListView {
@@ -578,17 +578,17 @@ class ListViewDemoPage : ContentPage
             GroupDisplayBinding = new Binding ("FirstInitial"),
             GroupShortNameBinding = new Binding ("FirstInitial")
         };
-
+    
         var template = new DataTemplate (typeof (TextCell));
         template.SetBinding (TextCell.TextProperty, "FullName");
         template.SetBinding (TextCell.DetailProperty, "Address");
-
+    
         itemsView.ItemTemplate = template;
         itemsView.ItemsSource = new[] {
             new Group ("C") {
                 new Person { FullName = "Caprice Nave" }
             },
-
+    
             new Group ("J") {
                 new Person { FullName = "James Smith", Address = "404 Nowhere Street" },
                 new Person { FullName = "John Doe", Address = "404 Nowhere Ave" }
@@ -703,7 +703,7 @@ class ListViewDemoPage : ContentPage
         </remarks>
         <example>
           <para>This example shows an alphabetized list of people, grouped by first initial with the short name binding set.</para>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
 class Person
 {
   public string FullName
@@ -711,7 +711,7 @@ class Person
     get;
     set;
   }
-
+    
   public string Address
   {
     get;
@@ -719,14 +719,14 @@ class Person
   }
 }
           ]]></code>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
 class Group : ObservableCollection<Person>
 {
   public Group (string firstInitial)
   {
     FirstInitial = firstInitial;
   }
-
+    
   public string FirstInitial
   {
     get;
@@ -734,7 +734,7 @@ class Group : ObservableCollection<Person>
   }
 }
           ]]></code>
-          <code lang="C#"><![CDATA[
+          <code lang="csharp lang-csharp"><![CDATA[
 ListView CreateListView()
 {
   var listView = new ListView {
@@ -742,17 +742,17 @@ ListView CreateListView()
     GroupDisplayBinding = new Binding ("FirstInitial"),
     GroupShortNameBinding = new Binding ("FirstInitial")
   };
-
+    
   var template = new DataTemplate (typeof (TextCell));
   template.SetBinding (TextCell.TextProperty, "FullName");
   template.SetBinding (TextCell.DetailProperty, "Address");
-
+    
   itemsView.ItemTemplate = template;
   itemsView.ItemsSource = new[] {
         new Group ("C") {
             new Person { FullName = "Caprice Nave" }
         },
-
+    
     new Group ("J") {
             new Person { FullName = "James Smith", Address = "404 Nowhere Street" },
             new Person { FullName = "John Doe", Address = "404 Nowhere Ave" }
@@ -975,7 +975,7 @@ ListView CreateListView()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.ListView.HorizontalScrollBarVisibility" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1491,7 +1491,7 @@ ListView CreateListView()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.ListView.RefreshControlColor" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2066,7 +2066,7 @@ ListView CreateListView()
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.ListView.VerticalScrollBarVisibility" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
