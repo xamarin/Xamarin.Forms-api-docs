@@ -65,9 +65,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PanGestureRecognizer.SendPan(Xamarin.Forms.Element,System.Double,System.Double,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member SendPan : Xamarin.Forms.Element * double * double * int -&gt; unit&#xA;override this.SendPan : Xamarin.Forms.Element * double * double * int -&gt; unit" Usage="panGestureRecognizer.SendPan (sender, totalX, totalY, gestureId)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPan(Xamarin.Forms.Element,System.Double,System.Double,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -95,6 +92,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPan(Xamarin.Forms.Element,System.Double,System.Double,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="SendPanCanceled">
       <MemberSignature Language="C#" Value="public void SendPanCanceled (Xamarin.Forms.Element sender, int gestureId);" />
@@ -102,9 +102,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PanGestureRecognizer.SendPanCanceled(Xamarin.Forms.Element,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member SendPanCanceled : Xamarin.Forms.Element * int -&gt; unit&#xA;override this.SendPanCanceled : Xamarin.Forms.Element * int -&gt; unit" Usage="panGestureRecognizer.SendPanCanceled (sender, gestureId)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPanCanceled(Xamarin.Forms.Element,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -128,6 +125,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPanCanceled(Xamarin.Forms.Element,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="SendPanCompleted">
       <MemberSignature Language="C#" Value="public void SendPanCompleted (Xamarin.Forms.Element sender, int gestureId);" />
@@ -135,9 +135,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PanGestureRecognizer.SendPanCompleted(Xamarin.Forms.Element,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member SendPanCompleted : Xamarin.Forms.Element * int -&gt; unit&#xA;override this.SendPanCompleted : Xamarin.Forms.Element * int -&gt; unit" Usage="panGestureRecognizer.SendPanCompleted (sender, gestureId)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPanCompleted(Xamarin.Forms.Element,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -161,6 +158,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPanCompleted(Xamarin.Forms.Element,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="SendPanStarted">
       <MemberSignature Language="C#" Value="public void SendPanStarted (Xamarin.Forms.Element sender, int gestureId);" />
@@ -168,9 +168,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PanGestureRecognizer.SendPanStarted(Xamarin.Forms.Element,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member SendPanStarted : Xamarin.Forms.Element * int -&gt; unit&#xA;override this.SendPanStarted : Xamarin.Forms.Element * int -&gt; unit" Usage="panGestureRecognizer.SendPanStarted (sender, gestureId)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPanStarted(Xamarin.Forms.Element,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -194,6 +191,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IPanGestureController.SendPanStarted(Xamarin.Forms.Element,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="TouchPoints">
       <MemberSignature Language="C#" Value="public int TouchPoints { get; set; }" />

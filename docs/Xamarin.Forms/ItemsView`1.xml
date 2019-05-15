@@ -26,9 +26,6 @@
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>Xamarin.Forms.IItemsView&lt;TItem&gt;</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>Xamarin.Forms.IItemsView&lt;TVisual&gt;</InterfaceName>
     </Interface>
     <Interface>
@@ -53,9 +50,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView`1.CreateDefault(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member CreateDefault : obj -&gt; 'Visual" Usage="itemsView.CreateDefault item" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -83,6 +77,9 @@
           need to set it yourself. If you do, it will be overridden.</para>
         </remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="ItemsSource">
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ItemsSource { get; set; }" />
@@ -243,9 +240,6 @@ void SetupView()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView`1.SetupContent(`0,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member SetupContent : 'Visual * int -&gt; unit&#xA;override this.SetupContent : 'Visual * int -&gt; unit" Usage="itemsView.SetupContent (content, index)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -275,6 +269,9 @@ void SetupView()
           this method to set <see cref="P:Xamarin.Forms.Element.Parent" /> to itself.</para>
         </remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="TemplatedItems">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Internals.TemplatedItemsList&lt;Xamarin.Forms.ItemsView&lt;TVisual&gt;,TVisual&gt; TemplatedItems { get; }" />
@@ -307,9 +304,6 @@ void SetupView()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView`1.UnhookContent(`0)" />
       <MemberSignature Language="F#" Value="abstract member UnhookContent : 'Visual -&gt; unit&#xA;override this.UnhookContent : 'Visual -&gt; unit" Usage="itemsView.UnhookContent content" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -331,6 +325,9 @@ void SetupView()
           <block type="note">Application developers who override <see cref="M:Xamarin.Forms.ItemsView`1.SetupContent(`0,System.Int32)" /> to allocate resources must override this method in order to deallocate them.</block>
         </remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="ValidateItemTemplate">
       <MemberSignature Language="C#" Value="protected virtual bool ValidateItemTemplate (Xamarin.Forms.DataTemplate template);" />
@@ -361,9 +358,6 @@ void SetupView()
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !TVisual Xamarin.Forms.IItemsView&lt;TVisual&gt;.CreateDefault(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView`1.Xamarin#Forms#IItemsView&lt;TVisual&gt;#CreateDefault(System.Object)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -387,15 +381,15 @@ void SetupView()
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IItemsView&lt;TVisual&gt;.SetupContent">
       <MemberSignature Language="C#" Value="void IItemsView&lt;TVisual&gt;.SetupContent (TVisual content, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IItemsView&lt;TVisual&gt;.SetupContent(!TVisual content, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView`1.Xamarin#Forms#IItemsView&lt;TVisual&gt;#SetupContent(`0,System.Int32)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -420,15 +414,15 @@ void SetupView()
         <summary>CInternal use only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IItemsView&lt;TVisual&gt;.UnhookContent">
       <MemberSignature Language="C#" Value="void IItemsView&lt;TVisual&gt;.UnhookContent (TVisual content);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IItemsView&lt;TVisual&gt;.UnhookContent(!TVisual content) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView`1.Xamarin#Forms#IItemsView&lt;TVisual&gt;#UnhookContent(`0)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -447,6 +441,9 @@ void SetupView()
         <summary>Internal use only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy">
       <MemberSignature Language="C#" Value="Xamarin.Forms.IListProxy Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy { get; }" />
@@ -454,9 +451,6 @@ void SetupView()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView`1.Xamarin#Forms#ITemplatedItemsView&lt;TVisual&gt;#ListProxy" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsView`1.ListProxy</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -470,6 +464,9 @@ void SetupView()
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsView`1.ListProxy</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems">
       <MemberSignature Language="C#" Value="Xamarin.Forms.ITemplatedItemsList&lt;TVisual&gt; Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems { get; }" />
@@ -477,9 +474,6 @@ void SetupView()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView`1.Xamarin#Forms#ITemplatedItemsView&lt;TVisual&gt;#TemplatedItems" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsView`1.TemplatedItems</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -493,6 +487,9 @@ void SetupView()
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsView`1.TemplatedItems</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

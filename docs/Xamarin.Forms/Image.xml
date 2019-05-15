@@ -22,19 +22,10 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Image&gt;</InterfaceName>
     </Interface>
     <Interface>
-      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>Xamarin.Forms.IImageController</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IImageElement</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -267,9 +258,6 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Image.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Image (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Image (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="image.On " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -292,6 +280,9 @@ indicator.BindingContext = image;]]></code>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="OnBindingContextChanged">
       <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
@@ -338,10 +329,10 @@ indicator.BindingContext = image;]]></code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -366,9 +357,6 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Image.SetIsLoading(System.Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SetIsLoading : bool -&gt; unit&#xA;override this.SetIsLoading : bool -&gt; unit" Usage="image.SetIsLoading isLoading" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IImageController.SetIsLoading(System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -390,6 +378,9 @@ indicator.BindingContext = image;]]></code>
         <summary>Sets a value that indicates whether the image is currently loading.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageController.SetIsLoading(System.Boolean)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Source">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource Source { get; set; }" />
@@ -452,9 +443,6 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Image.Xamarin#Forms#IImageElement#OnImageSourcesSourceChanged(System.Object,System.EventArgs)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(System.Object,System.EventArgs)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -472,15 +460,15 @@ indicator.BindingContext = image;]]></code>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(System.Object,System.EventArgs)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged">
       <MemberSignature Language="C#" Value="void IImageElement.RaiseImageSourcePropertyChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Image.Xamarin#Forms#IImageElement#RaiseImageSourcePropertyChanged" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -493,6 +481,9 @@ indicator.BindingContext = image;]]></code>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

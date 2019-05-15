@@ -9,13 +9,7 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
-      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>Xamarin.Forms.IPageController</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -305,7 +299,7 @@
       </Docs>
     </Member>
     <Member MemberName="StructureChanged">
-      <MemberSignature Language="C#" Value="event EventHandler StructureChanged;" />
+      <MemberSignature Language="C#" Value="public event EventHandler StructureChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler StructureChanged" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IShellController.StructureChanged" />
       <MemberSignature Language="F#" Value="member this.StructureChanged : EventHandler " Usage="member this.StructureChanged : System.EventHandler " />

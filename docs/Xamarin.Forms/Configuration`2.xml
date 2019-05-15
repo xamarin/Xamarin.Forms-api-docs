@@ -88,9 +88,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Configuration`2.Element" />
       <MemberSignature Language="F#" Value="member this.Element : 'Element" Usage="Xamarin.Forms.Configuration&lt;'Platform, 'Element (requires 'Platform :&gt; Xamarin.Forms.IConfigPlatform and 'Element :&gt; Xamarin.Forms.Element)&gt;.Element" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IConfigElement`1.Element</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -104,6 +101,9 @@
         <value>The platform-independent element for which platform-specific versions can be retrieved.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IConfigElement`1.Element</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

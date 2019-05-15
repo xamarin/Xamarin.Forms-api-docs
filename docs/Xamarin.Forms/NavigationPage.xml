@@ -353,10 +353,37 @@
       </Docs>
     </Member>
     <Member MemberName="GetTitleIcon">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ImageSource GetTitleIcon (Xamarin.Forms.BindableObject bindable);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ImageSource GetTitleIcon(class Xamarin.Forms.BindableObject bindable) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.GetTitleIcon(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetTitleIcon : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.ImageSource" Usage="Xamarin.Forms.NavigationPage.GetTitleIcon bindable" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.FileImageSource GetTitleIcon (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.FileImageSource GetTitleIcon(class Xamarin.Forms.BindableObject bindable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("GetTitleIcon is obsolete as of 4.0.0. Please use GetTitleIconImageSource instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTitleIconImageSource">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ImageSource GetTitleIconImageSource (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ImageSource GetTitleIconImageSource(class Xamarin.Forms.BindableObject bindable) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -452,9 +479,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.NavigationPage.InsertPageBeforeRequested" />
       <MemberSignature Language="F#" Value="member this.InsertPageBeforeRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.InsertPageBeforeRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.INavigationPageController.InsertPageBeforeRequested</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -472,6 +496,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.INavigationPageController.InsertPageBeforeRequested</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="On&lt;T&gt;">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.NavigationPage&gt; On&lt;T&gt; () where T : Xamarin.Forms.IConfigPlatform;" />
@@ -479,9 +506,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.On``1" />
       <MemberSignature Language="F#" Value="override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.NavigationPage (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="navigationPage.On " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -504,6 +528,9 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="OnBackButtonPressed">
       <MemberSignature Language="C#" Value="protected override bool OnBackButtonPressed ();" />
@@ -535,9 +562,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.NavigationPage.Pages" />
       <MemberSignature Language="F#" Value="member this.Pages : seq&lt;Xamarin.Forms.Page&gt;" Usage="Xamarin.Forms.NavigationPage.Pages" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.INavigationPageController.Pages</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -556,6 +580,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.INavigationPageController.Pages</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Peek">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Page Peek (int depth);" />
@@ -563,9 +590,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.Peek(System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member Peek : int -&gt; Xamarin.Forms.Page&#xA;override this.Peek : int -&gt; Xamarin.Forms.Page" Usage="navigationPage.Peek depth" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.INavigationPageController.Peek(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -588,6 +612,9 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigationPageController.Peek(System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="PopAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt; PopAsync ();" />
@@ -630,6 +657,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.NavigationPage/&lt;PopAsync&gt;d__47))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
       </ReturnValue>
@@ -649,9 +681,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.PopAsyncInner(System.Boolean,System.Boolean)" />
       <MemberSignature Language="F#" Value="abstract member PopAsyncInner : bool * bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;&#xA;override this.PopAsyncInner : bool * bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;" Usage="navigationPage.PopAsyncInner (animated, fast)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.INavigationPageController.PopAsyncInner(System.Boolean,System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -660,6 +689,9 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.NavigationPage/&lt;PopAsyncInner&gt;d__71))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -676,6 +708,9 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigationPageController.PopAsyncInner(System.Boolean,System.Boolean)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Popped">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.NavigationEventArgs&gt; Popped;" />
@@ -735,9 +770,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.NavigationPage.PopRequested" />
       <MemberSignature Language="F#" Value="member this.PopRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.PopRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.INavigationPageController.PopRequested</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -755,6 +787,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.INavigationPageController.PopRequested</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="PopToRootAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PopToRootAsync ();" />
@@ -797,6 +832,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.NavigationPage/&lt;PopToRootAsync&gt;d__55))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -816,9 +856,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.NavigationPage.PopToRootRequested" />
       <MemberSignature Language="F#" Value="member this.PopToRootRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.PopToRootRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.INavigationPageController.PopToRootRequested</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -836,6 +873,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.INavigationPageController.PopToRootRequested</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="PushAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PushAsync (Xamarin.Forms.Page page);" />
@@ -881,6 +921,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.NavigationPage/&lt;PushAsync&gt;d__57))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -927,9 +972,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.NavigationPage.PushRequested" />
       <MemberSignature Language="F#" Value="member this.PushRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.PushRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.INavigationPageController.PushRequested</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -947,6 +989,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.INavigationPageController.PushRequested</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="RemovePageRequested">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; RemovePageRequested;" />
@@ -954,9 +999,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.NavigationPage.RemovePageRequested" />
       <MemberSignature Language="F#" Value="member this.RemovePageRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.RemovePageRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.INavigationPageController.RemovePageRequested</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -974,6 +1016,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.INavigationPageController.RemovePageRequested</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="RootPage">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Page RootPage { get; }" />
@@ -1110,10 +1155,38 @@
       </Docs>
     </Member>
     <Member MemberName="SetTitleIcon">
-      <MemberSignature Language="C#" Value="public static void SetTitleIcon (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.ImageSource value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleIcon(class Xamarin.Forms.BindableObject bindable, class Xamarin.Forms.ImageSource value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.SetTitleIcon(Xamarin.Forms.BindableObject,Xamarin.Forms.ImageSource)" />
-      <MemberSignature Language="F#" Value="static member SetTitleIcon : Xamarin.Forms.BindableObject * Xamarin.Forms.ImageSource -&gt; unit" Usage="Xamarin.Forms.NavigationPage.SetTitleIcon (bindable, value)" />
+      <MemberSignature Language="C#" Value="public static void SetTitleIcon (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.FileImageSource value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleIcon(class Xamarin.Forms.BindableObject bindable, class Xamarin.Forms.FileImageSource value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("SetTitleIcon is obsolete as of 4.0.0. Please use SetTitleIconImageSource instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.FileImageSource" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTitleIconImageSource">
+      <MemberSignature Language="C#" Value="public static void SetTitleIconImageSource (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.ImageSource value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleIconImageSource(class Xamarin.Forms.BindableObject bindable, class Xamarin.Forms.ImageSource value) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1164,9 +1237,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.NavigationPage.StackDepth" />
       <MemberSignature Language="F#" Value="member this.StackDepth : int" Usage="Xamarin.Forms.NavigationPage.StackDepth" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.INavigationPageController.StackDepth</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1185,6 +1255,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.INavigationPageController.StackDepth</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Tint">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Color Tint { get; set; }" />
@@ -1205,10 +1278,10 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Tint is obsolete as of version 1.2.0. Please use BarBackgroundColor and BarTextColor to change NavigationPage bar color properties.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("Tint is obsolete as of version 1.2.0. Please use BarBackgroundColor and BarTextColor to change NavigationPage bar color properties.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1241,10 +1314,10 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("TintProperty is obsolete as of version 1.2.0. Please use BarBackgroundColorProperty and BarTextColorProperty to change NavigationPage bar color properties.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("TintProperty is obsolete as of version 1.2.0. Please use BarBackgroundColorProperty and BarTextColorProperty to change NavigationPage bar color properties.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1252,6 +1325,22 @@
       </ReturnValue>
       <Docs>
         <summary>Identifies the <see cref="P:Xamarin.Forms.NavigationPage.Tint" /> bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleIconImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TitleIconImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TitleIconImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1272,6 +1361,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("TitleIconProperty is obsolete as of 4.0.0. Please use TitleIconImageSourceProperty instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
@@ -1304,14 +1401,16 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Xamarin.Forms.Page&gt; Xamarin.Forms.INavigationPageController.RemoveAsyncInner(class Xamarin.Forms.Page page, bool animated, bool fast) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.Xamarin#Forms#INavigationPageController#RemoveAsyncInner(Xamarin.Forms.Page,System.Boolean,System.Boolean)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.INavigationPageController.RemoveAsyncInner(Xamarin.Forms.Page,System.Boolean,System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.NavigationPage/&lt;Xamarin-Forms-INavigationPageController-RemoveAsyncInner&gt;d__72))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
       </ReturnValue>
@@ -1328,6 +1427,9 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.INavigationPageController.RemoveAsyncInner(Xamarin.Forms.Page,System.Boolean,System.Boolean)</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

@@ -23,9 +23,6 @@
       <InterfaceName>Xamarin.Forms.IAnimatable</InterfaceName>
     </Interface>
     <Interface>
-      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>Xamarin.Forms.ITabStopElement</InterfaceName>
     </Interface>
     <Interface>
@@ -200,9 +197,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.BatchBegin" />
       <MemberSignature Language="F#" Value="abstract member BatchBegin : unit -&gt; unit&#xA;override this.BatchBegin : unit -&gt; unit" Usage="visualElement.BatchBegin " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IAnimatable.BatchBegin</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -222,6 +216,9 @@
         <summary>Signals the start of a batch of changes to the elements properties.</summary>
         <remarks>Application authors will not generally need to batch updates manually as the animation framework will do this for them.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IAnimatable.BatchBegin</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="BatchCommit">
       <MemberSignature Language="C#" Value="public void BatchCommit ();" />
@@ -229,9 +226,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.BatchCommit" />
       <MemberSignature Language="F#" Value="abstract member BatchCommit : unit -&gt; unit&#xA;override this.BatchCommit : unit -&gt; unit" Usage="visualElement.BatchCommit " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IAnimatable.BatchCommit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -251,6 +245,9 @@
         <summary>Signals the end of a batch of commands to the element and that those commands should now be committed.</summary>
         <remarks>This method merely ensures that updates sent during the batch have been committed. It does not ensure that they were not committed before calling this.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IAnimatable.BatchCommit</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="BatchCommitted">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.Internals.EventArg&lt;Xamarin.Forms.VisualElement&gt;&gt; BatchCommitted;" />
@@ -258,9 +255,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.VisualElement.BatchCommitted" />
       <MemberSignature Language="F#" Value="member this.BatchCommitted : EventHandler&lt;Xamarin.Forms.Internals.EventArg&lt;Xamarin.Forms.VisualElement&gt;&gt; " Usage="member this.BatchCommitted : System.EventHandler&lt;Xamarin.Forms.Internals.EventArg&lt;Xamarin.Forms.VisualElement&gt;&gt; " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IVisualElementController.BatchCommitted</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -278,6 +272,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IVisualElementController.BatchCommitted</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Batched">
       <MemberSignature Language="C#" Value="public bool Batched { get; }" />
@@ -285,9 +282,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.Batched" />
       <MemberSignature Language="F#" Value="member this.Batched : bool" Usage="Xamarin.Forms.VisualElement.Batched" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.Batched</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -306,6 +300,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.Batched</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Behaviors">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.Behavior&gt; Behaviors { get; }" />
@@ -382,7 +379,7 @@
       </Docs>
     </Member>
     <Member MemberName="ChangeVisualState">
-      <MemberSignature Language="C#" Value="protected internal virtual void ChangeVisualState ();" />
+      <MemberSignature Language="C#" Value="protected virtual void ChangeVisualState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void ChangeVisualState() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.ChangeVisualState" />
       <MemberSignature Language="F#" Value="abstract member ChangeVisualState : unit -&gt; unit&#xA;override this.ChangeVisualState : unit -&gt; unit" Usage="visualElement.ChangeVisualState " />
@@ -432,9 +429,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.DisableLayout" />
       <MemberSignature Language="F#" Value="member this.DisableLayout : bool with get, set" Usage="Xamarin.Forms.VisualElement.DisableLayout" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.DisableLayout</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -453,6 +447,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.DisableLayout</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="FlowDirection">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.FlowDirection FlowDirection { get; set; }" />
@@ -527,9 +524,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.VisualElement.FocusChangeRequested" />
       <MemberSignature Language="F#" Value="member this.FocusChangeRequested : EventHandler&lt;Xamarin.Forms.VisualElement.FocusRequestArgs&gt; " Usage="member this.FocusChangeRequested : System.EventHandler&lt;Xamarin.Forms.VisualElement.FocusRequestArgs&gt; " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IVisualElementController.FocusChangeRequested</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -547,6 +541,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IVisualElementController.FocusChangeRequested</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Focused">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.FocusEventArgs&gt; Focused;" />
@@ -594,10 +591,10 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -990,9 +987,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.IsInNativeLayout" />
       <MemberSignature Language="F#" Value="member this.IsInNativeLayout : bool with get, set" Usage="Xamarin.Forms.VisualElement.IsInNativeLayout" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.IsInNativeLayout</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1011,6 +1005,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.IsInNativeLayout</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="IsNativeStateConsistent">
       <MemberSignature Language="C#" Value="public bool IsNativeStateConsistent { get; set; }" />
@@ -1018,9 +1015,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.IsNativeStateConsistent" />
       <MemberSignature Language="F#" Value="member this.IsNativeStateConsistent : bool with get, set" Usage="Xamarin.Forms.VisualElement.IsNativeStateConsistent" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.IsNativeStateConsistent</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1039,6 +1033,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.IsNativeStateConsistent</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="IsPlatformEnabled">
       <MemberSignature Language="C#" Value="public bool IsPlatformEnabled { get; set; }" />
@@ -1046,9 +1043,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.IsPlatformEnabled" />
       <MemberSignature Language="F#" Value="member this.IsPlatformEnabled : bool with get, set" Usage="Xamarin.Forms.VisualElement.IsPlatformEnabled" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.IsPlatformEnabled</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1067,6 +1061,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.IsPlatformEnabled</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="IsTabStop">
       <MemberSignature Language="C#" Value="public bool IsTabStop { get; set; }" />
@@ -1074,9 +1071,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.IsTabStop" />
       <MemberSignature Language="F#" Value="member this.IsTabStop : bool with get, set" Usage="Xamarin.Forms.VisualElement.IsTabStop" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ITabStopElement.IsTabStop</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1089,6 +1083,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITabStopElement.IsTabStop</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="IsTabStopProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsTabStopProperty;" />
@@ -1434,9 +1431,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.NativeSizeChanged" />
       <MemberSignature Language="F#" Value="abstract member NativeSizeChanged : unit -&gt; unit&#xA;override this.NativeSizeChanged : unit -&gt; unit" Usage="visualElement.NativeSizeChanged " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IVisualElementController.NativeSizeChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1455,6 +1449,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IVisualElementController.NativeSizeChanged</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="NavigationProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty NavigationProperty;" />
@@ -1624,10 +1621,10 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1773,9 +1770,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.Resources" />
       <MemberSignature Language="F#" Value="member this.Resources : Xamarin.Forms.ResourceDictionary with get, set" Usage="Xamarin.Forms.VisualElement.Resources" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IResourcesProvider.Resources</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -1822,6 +1816,9 @@
           </example>
         </remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IResourcesProvider.Resources</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Rotation">
       <MemberSignature Language="C#" Value="public double Rotation { get; set; }" />
@@ -2185,9 +2182,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.TabIndex" />
       <MemberSignature Language="F#" Value="member this.TabIndex : int with get, set" Usage="Xamarin.Forms.VisualElement.TabIndex" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ITabStopElement.TabIndex</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2200,6 +2194,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITabStopElement.TabIndex</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="TabIndexDefaultValueCreator">
       <MemberSignature Language="C#" Value="protected virtual int TabIndexDefaultValueCreator ();" />
@@ -2618,9 +2615,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.Xamarin#Forms#IVisualElementController#EffectiveFlowDirection" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IVisualElementController.EffectiveFlowDirection" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.EffectiveFlowDirection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2634,15 +2628,15 @@
         <value>The effective flow direction for the visual element.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IVisualElementController.EffectiveFlowDirection</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IVisualElementController.InvalidateMeasure">
       <MemberSignature Language="C#" Value="void IVisualElementController.InvalidateMeasure (Xamarin.Forms.Internals.InvalidationTrigger trigger);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IVisualElementController.InvalidateMeasure(valuetype Xamarin.Forms.Internals.InvalidationTrigger trigger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.Xamarin#Forms#IVisualElementController#InvalidateMeasure(Xamarin.Forms.Internals.InvalidationTrigger)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IVisualElementController.InvalidateMeasure(Xamarin.Forms.Internals.InvalidationTrigger)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2659,6 +2653,9 @@
         <summary>This method is for internal use.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IVisualElementController.InvalidateMeasure(Xamarin.Forms.Internals.InvalidationTrigger)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="XProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty XProperty;" />

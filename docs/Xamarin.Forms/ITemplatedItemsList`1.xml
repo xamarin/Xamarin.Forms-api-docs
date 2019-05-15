@@ -1,5 +1,5 @@
 <Type Name="ITemplatedItemsList&lt;TItem&gt;" FullName="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;">
-  <TypeSignature Language="C#" Value="public interface ITemplatedItemsList&lt;TItem&gt; : System.Collections.Generic.IEnumerable&lt;TItem&gt;, System.Collections.Generic.IReadOnlyCollection&lt;TItem&gt;, System.Collections.Generic.IReadOnlyList&lt;TItem&gt;, System.Collections.IEnumerable, System.Collections.Specialized.INotifyCollectionChanged where TItem : BindableObject" />
+  <TypeSignature Language="C#" Value="public interface ITemplatedItemsList&lt;TItem&gt; : System.Collections.Generic.IEnumerable&lt;TItem&gt;, System.Collections.Generic.IReadOnlyCollection&lt;TItem&gt;, System.Collections.Generic.IReadOnlyList&lt;TItem&gt;, System.Collections.Specialized.INotifyCollectionChanged where TItem : BindableObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITemplatedItemsList`1&lt;(class Xamarin.Forms.BindableObject) TItem&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!TItem&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!TItem&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!TItem&gt;, class System.Collections.IEnumerable, class System.Collections.Specialized.INotifyCollectionChanged" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ITemplatedItemsList`1" />
   <TypeSignature Language="F#" Value="type ITemplatedItemsList&lt;'Item (requires 'Item :&gt; BindableObject)&gt; = interface&#xA;    interface IReadOnlyList&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface seq&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyCollection&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface INotifyCollectionChanged" />
@@ -24,9 +24,6 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;TItem&gt;</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.Specialized.INotifyCollectionChanged</InterfaceName>
@@ -208,13 +205,10 @@
     </Member>
     <Member MemberName="GetGroupIndexFromGlobal">
       <MemberSignature Language="C#" Value="public int GetGroupIndexFromGlobal (int globalIndex, out int leftOver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetGroupIndexFromGlobal(int32 globalIndex, [out] int32&amp; leftOver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupIndexFromGlobal(System.Int32,System.Int32@)" />
-      <MemberSignature Language="F#" Value="abstract member GetGroupIndexFromGlobal : int *  -&gt; int" Usage="iTemplatedItemsList.GetGroupIndexFromGlobal (globalIndex, leftOver)" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetGroupIndexFromGlobal(int32 globalIndex, int32 leftOver) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,18 +216,18 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="globalIndex" Type="System.Int32" />
-        <Parameter Name="leftOver" Type="System.Int32" RefType="out" />
+        <Parameter Name="leftOver" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="globalIndex">For internal use by the Xamarin.Forms platform.</param>
-        <param name="leftOver">For internal use by the Xamarin.Forms platform.</param>
-        <summary>For internal use by platform renderers.</summary>
+        <param name="globalIndex">To be added.</param>
+        <param name="leftOver">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupedCollectionChanged">
-      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler GroupedCollectionChanged;" />
+      <MemberSignature Language="C#" Value="public event System.Collections.Specialized.NotifyCollectionChangedEventHandler GroupedCollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler GroupedCollectionChanged" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ITemplatedItemsList`1.GroupedCollectionChanged" />
       <MemberSignature Language="F#" Value="member this.GroupedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.GroupedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
@@ -356,7 +350,7 @@
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
-      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ITemplatedItemsList`1.PropertyChanged" />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />

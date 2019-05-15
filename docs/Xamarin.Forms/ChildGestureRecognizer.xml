@@ -95,9 +95,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ChildGestureRecognizer.PropertyChanged" />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -110,6 +107,9 @@
         <summary>Event handler for changed properties.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

@@ -586,9 +586,6 @@ class MyBindable : BindableObject
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.BindableObject.PropertyChanged" />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -607,6 +604,9 @@ class MyBindable : BindableObject
         <summary>Raised when a property has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="PropertyChanging">
       <MemberSignature Language="C#" Value="public event Xamarin.Forms.PropertyChangingEventHandler PropertyChanging;" />
@@ -903,9 +903,6 @@ class MyBindable : BindableObject
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.IDynamicResourceHandler.SetDynamicResource(class Xamarin.Forms.BindableProperty property, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObject.Xamarin#Forms#Internals#IDynamicResourceHandler#SetDynamicResource(Xamarin.Forms.BindableProperty,System.String)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IDynamicResourceHandler.SetDynamicResource(Xamarin.Forms.BindableProperty,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -925,6 +922,9 @@ class MyBindable : BindableObject
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IDynamicResourceHandler.SetDynamicResource(Xamarin.Forms.BindableProperty,System.String)</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

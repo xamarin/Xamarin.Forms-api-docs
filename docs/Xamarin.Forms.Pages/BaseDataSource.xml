@@ -44,9 +44,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Pages.BaseDataSource.Data" />
       <MemberSignature Language="F#" Value="member this.Data : System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Pages.IDataItem&gt;" Usage="Xamarin.Forms.Pages.BaseDataSource.Data" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Pages.IDataSource.Data</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -59,6 +56,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Pages.IDataSource.Data</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetRawData">
       <MemberSignature Language="C#" Value="protected abstract System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Xamarin.Forms.Pages.IDataItem&gt;&gt; GetRawData ();" />
@@ -128,9 +128,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Pages.BaseDataSource.Item(System.String)" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="Xamarin.Forms.Pages.BaseDataSource.Item" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Pages.IDataSource.Item(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -147,6 +144,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Pages.IDataSource.Item(System.String)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="OnPropertyChanged">
       <MemberSignature Language="C#" Value="protected void OnPropertyChanged (string property = null);" />
@@ -201,35 +201,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.ComponentModel.INotifyPropertyChanged.PropertyChanged">
-      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
-      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Pages.BaseDataSource.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
-      <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Xamarin.Forms.Pages.IDataSource.MaskedKeys">
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;string&gt; Xamarin.Forms.Pages.IDataSource.MaskedKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Xamarin.Forms.Pages.IDataSource.MaskedKeys" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Pages.BaseDataSource.Xamarin#Forms#Pages#IDataSource#MaskedKeys" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.Pages.IDataSource.MaskedKeys" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Pages.IDataSource.MaskedKeys</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -242,19 +219,24 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Pages.IDataSource.MaskedKeys</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Pages.IDataSource.MaskKey">
       <MemberSignature Language="C#" Value="void IDataSource.MaskKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Pages.IDataSource.MaskKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Pages.BaseDataSource.Xamarin#Forms#Pages#IDataSource#MaskKey(System.String)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Pages.IDataSource.MaskKey(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.Pages.BaseDataSource/&lt;Xamarin-Forms-Pages-IDataSource-MaskKey&gt;d__13))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -266,19 +248,24 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Pages.IDataSource.MaskKey(System.String)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Pages.IDataSource.UnmaskKey">
       <MemberSignature Language="C#" Value="void IDataSource.UnmaskKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Pages.IDataSource.UnmaskKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Pages.BaseDataSource.Xamarin#Forms#Pages#IDataSource#UnmaskKey(System.String)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Pages.IDataSource.UnmaskKey(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.Pages.BaseDataSource/&lt;Xamarin-Forms-Pages-IDataSource-UnmaskKey&gt;d__14))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -290,6 +277,9 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Pages.IDataSource.UnmaskKey(System.String)</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

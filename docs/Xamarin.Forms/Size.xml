@@ -63,26 +63,23 @@
     </Member>
     <Member MemberName="Deconstruct">
       <MemberSignature Language="C#" Value="public void Deconstruct (out double width, out double height);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] float64&amp; width, [out] float64&amp; height) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Size.Deconstruct(System.Double@,System.Double@)" />
-      <MemberSignature Language="F#" Value="member this.Deconstruct :  *  -&gt; unit" Usage="size.Deconstruct (width, height)" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct(float64 width, float64 height) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="width" Type="System.Double" RefType="out" />
-        <Parameter Name="height" Type="System.Double" RefType="out" />
+        <Parameter Name="width" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="height" Type="System.Double&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="width">Variable in which to store the width of the size.</param>
-        <param name="height">Variable in which to store the width of the size.</param>
-        <summary>Stores the components of the size in the corresponding arguments.</summary>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,7 +231,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Size operator + (Xamarin.Forms.Size s1, Xamarin.Forms.Size s2);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Size op_Addition (Xamarin.Forms.Size s1, Xamarin.Forms.Size s2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Size op_Addition(valuetype Xamarin.Forms.Size s1, valuetype Xamarin.Forms.Size s2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Size.op_Addition(Xamarin.Forms.Size,Xamarin.Forms.Size)" />
       <MemberSignature Language="F#" Value="static member ( + ) : Xamarin.Forms.Size * Xamarin.Forms.Size -&gt; Xamarin.Forms.Size" Usage="s1 + s2" />
@@ -266,7 +263,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool operator == (Xamarin.Forms.Size s1, Xamarin.Forms.Size s2);" />
+      <MemberSignature Language="C#" Value="public static bool op_Equality (Xamarin.Forms.Size s1, Xamarin.Forms.Size s2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Xamarin.Forms.Size s1, valuetype Xamarin.Forms.Size s2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Size.op_Equality(Xamarin.Forms.Size,Xamarin.Forms.Size)" />
       <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.Size * Xamarin.Forms.Size -&gt; bool" Usage="s1 = s2" />
@@ -301,7 +298,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static explicit operator Xamarin.Forms.Point (Xamarin.Forms.Size size);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Point op_Explicit (Xamarin.Forms.Size size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Point op_Explicit(valuetype Xamarin.Forms.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Size.op_Explicit(Xamarin.Forms.Size)~Xamarin.Forms.Point" />
       <MemberSignature Language="F#" Value="static member op_Explicit : Xamarin.Forms.Size -&gt; Xamarin.Forms.Point" Usage="Xamarin.Forms.Size.op_Explicit size" />
@@ -331,7 +328,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool operator != (Xamarin.Forms.Size s1, Xamarin.Forms.Size s2);" />
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (Xamarin.Forms.Size s1, Xamarin.Forms.Size s2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Xamarin.Forms.Size s1, valuetype Xamarin.Forms.Size s2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Size.op_Inequality(Xamarin.Forms.Size,Xamarin.Forms.Size)" />
       <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.Size * Xamarin.Forms.Size -&gt; bool" Usage="Xamarin.Forms.Size.op_Inequality (s1, s2)" />
@@ -366,7 +363,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Size operator * (Xamarin.Forms.Size s1, double value);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Size op_Multiply (Xamarin.Forms.Size s1, double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Size op_Multiply(valuetype Xamarin.Forms.Size s1, float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Size.op_Multiply(Xamarin.Forms.Size,System.Double)" />
       <MemberSignature Language="F#" Value="static member ( * ) : Xamarin.Forms.Size * double -&gt; Xamarin.Forms.Size" Usage="s1 * value" />
@@ -398,7 +395,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Size operator - (Xamarin.Forms.Size s1, Xamarin.Forms.Size s2);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Size op_Subtraction (Xamarin.Forms.Size s1, Xamarin.Forms.Size s2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Size op_Subtraction(valuetype Xamarin.Forms.Size s1, valuetype Xamarin.Forms.Size s2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Size.op_Subtraction(Xamarin.Forms.Size,Xamarin.Forms.Size)" />
       <MemberSignature Language="F#" Value="static member ( - ) : Xamarin.Forms.Size * Xamarin.Forms.Size -&gt; Xamarin.Forms.Size" Usage="s1 - s2" />

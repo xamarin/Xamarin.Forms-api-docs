@@ -1,5 +1,5 @@
 <Type Name="LockableObservableListWrapper" FullName="Xamarin.Forms.Internals.LockableObservableListWrapper">
-  <TypeSignature Language="C#" Value="public class LockableObservableListWrapper : System.Collections.Generic.ICollection&lt;string&gt;, System.Collections.Generic.IEnumerable&lt;string&gt;, System.Collections.Generic.IList&lt;string&gt;, System.Collections.Generic.IReadOnlyCollection&lt;string&gt;, System.Collections.Generic.IReadOnlyList&lt;string&gt;, System.Collections.IEnumerable, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="C#" Value="public class LockableObservableListWrapper : System.Collections.Generic.ICollection&lt;string&gt;, System.Collections.Generic.IEnumerable&lt;string&gt;, System.Collections.Generic.IList&lt;string&gt;, System.Collections.Generic.IReadOnlyCollection&lt;string&gt;, System.Collections.Generic.IReadOnlyList&lt;string&gt;, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LockableObservableListWrapper extends System.Object implements class System.Collections.Generic.ICollection`1&lt;string&gt;, class System.Collections.Generic.IEnumerable`1&lt;string&gt;, class System.Collections.Generic.IList`1&lt;string&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;string&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;string&gt;, class System.Collections.IEnumerable, class System.Collections.Specialized.INotifyCollectionChanged, class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.LockableObservableListWrapper" />
   <TypeSignature Language="F#" Value="type LockableObservableListWrapper = class&#xA;    interface IList&lt;string&gt;&#xA;    interface ICollection&lt;string&gt;&#xA;    interface seq&lt;string&gt;&#xA;    interface IEnumerable&#xA;    interface INotifyCollectionChanged&#xA;    interface INotifyPropertyChanged&#xA;    interface IReadOnlyList&lt;string&gt;&#xA;    interface IReadOnlyCollection&lt;string&gt;" />
@@ -26,9 +26,6 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.Specialized.INotifyCollectionChanged</InterfaceName>
@@ -507,48 +504,6 @@
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>For internal use by the Xamarin.Forms platform.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged">
-      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />
-      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.LockableObservableListWrapper.System#Collections#Specialized#INotifyCollectionChanged#CollectionChanged" />
-      <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.ComponentModel.INotifyPropertyChanged.PropertyChanged">
-      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
-      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.LockableObservableListWrapper.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
-      <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

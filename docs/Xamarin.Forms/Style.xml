@@ -212,9 +212,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Style.TargetType" />
       <MemberSignature Language="F#" Value="member this.TargetType : Type" Usage="Xamarin.Forms.Style.TargetType" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IStyle.TargetType</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -233,6 +230,9 @@
           <p>Developers should be aware that implicit styles are only applied to the specific type that is described by <see cref="P:Xamarin.Forms.Style.TargetType" />, and not to types that inherit from it.</p>
         </remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IStyle.TargetType</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Triggers">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.TriggerBase&gt; Triggers { get; }" />

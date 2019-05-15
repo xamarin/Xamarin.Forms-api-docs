@@ -1,5 +1,5 @@
 <Type Name="TemplatedItemsList&lt;TView,TItem&gt;" FullName="Xamarin.Forms.Internals.TemplatedItemsList&lt;TView,TItem&gt;">
-  <TypeSignature Language="C#" Value="public sealed class TemplatedItemsList&lt;TView,TItem&gt; : Xamarin.Forms.BindableObject, IDisposable, System.Collections.ICollection, System.Collections.IList, System.Collections.Specialized.INotifyCollectionChanged, Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt; where TView : BindableObject, IItemsView&lt;TItem&gt; where TItem : BindableObject" />
+  <TypeSignature Language="C#" Value="public sealed class TemplatedItemsList&lt;TView,TItem&gt; : Xamarin.Forms.BindableObject, IDisposable, System.Collections.Generic.IEnumerable&lt;TItem&gt;, System.Collections.Generic.IReadOnlyCollection&lt;TItem&gt;, System.Collections.Generic.IReadOnlyList&lt;TItem&gt;, System.Collections.IList, System.Collections.Specialized.INotifyCollectionChanged, Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt; where TView : BindableObject, IItemsView&lt;TItem&gt; where TItem : BindableObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TemplatedItemsList`2&lt;(class Xamarin.Forms.BindableObject, class Xamarin.Forms.IItemsView`1&lt;!TItem&gt;) TView, (class Xamarin.Forms.BindableObject) TItem&gt; extends Xamarin.Forms.BindableObject implements class System.Collections.Generic.IEnumerable`1&lt;!TItem&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!TItem&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!TItem&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Collections.Specialized.INotifyCollectionChanged, class System.IDisposable, class Xamarin.Forms.ITemplatedItemsList`1&lt;!TItem&gt;" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.TemplatedItemsList`2" />
   <TypeSignature Language="F#" Value="type TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; BindableObject and 'View :&gt; IItemsView&lt;'Item&gt; and 'Item :&gt; BindableObject)&gt; = class&#xA;    inherit BindableObject&#xA;    interface ITemplatedItemsList&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IReadOnlyList&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface seq&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyCollection&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface INotifyCollectionChanged&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IDisposable" />
@@ -35,12 +35,6 @@
       <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;TItem&gt;</InterfaceName>
     </Interface>
     <Interface>
-      <InterfaceName>System.Collections.ICollection</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
     <Interface>
@@ -71,9 +65,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.ActivateContent(System.Int32,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member ActivateContent : int * obj -&gt; 'Item&#xA;override this.ActivateContent : int * obj -&gt; 'Item" Usage="templatedItemsList.ActivateContent (index, item)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.ActivateContent(System.Int32,System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -93,6 +84,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.ActivateContent(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="CollectionChanged">
       <MemberSignature Language="C#" Value="public event System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged;" />
@@ -100,9 +94,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.TemplatedItemsList`2.CollectionChanged" />
       <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -115,6 +106,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Count">
       <MemberSignature Language="C#" Value="public int Count { get; }" />
@@ -237,9 +231,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.GetGlobalIndexForGroup(Xamarin.Forms.ITemplatedItemsList{`1})" />
       <MemberSignature Language="F#" Value="abstract member GetGlobalIndexForGroup : Xamarin.Forms.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Xamarin.Forms.BindableObject)&gt; -&gt; int&#xA;override this.GetGlobalIndexForGroup : Xamarin.Forms.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Xamarin.Forms.BindableObject)&gt; -&gt; int" Usage="templatedItemsList.GetGlobalIndexForGroup group" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGlobalIndexForGroup(Xamarin.Forms.ITemplatedItemsList{`0})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -257,6 +248,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGlobalIndexForGroup(Xamarin.Forms.ITemplatedItemsList{`0})</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetGlobalIndexOfGroup">
       <MemberSignature Language="C#" Value="public int GetGlobalIndexOfGroup (object item);" />
@@ -288,9 +282,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.GetGlobalIndexOfItem(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member GetGlobalIndexOfItem : obj -&gt; int&#xA;override this.GetGlobalIndexOfItem : obj -&gt; int" Usage="templatedItemsList.GetGlobalIndexOfItem item" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGlobalIndexOfItem(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -308,6 +299,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGlobalIndexOfItem(System.Object)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetGlobalIndexOfItem">
       <MemberSignature Language="C#" Value="public int GetGlobalIndexOfItem (object group, object item);" />
@@ -341,9 +335,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.GetGroupAndIndexOfItem(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member GetGroupAndIndexOfItem : obj -&gt; int * int&#xA;override this.GetGroupAndIndexOfItem : obj -&gt; int * int" Usage="templatedItemsList.GetGroupAndIndexOfItem item" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupAndIndexOfItem(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -361,6 +352,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupAndIndexOfItem(System.Object)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetGroupAndIndexOfItem">
       <MemberSignature Language="C#" Value="public Tuple&lt;int,int&gt; GetGroupAndIndexOfItem (object group, object item);" />
@@ -368,9 +362,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.GetGroupAndIndexOfItem(System.Object,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member GetGroupAndIndexOfItem : obj * obj -&gt; int * int&#xA;override this.GetGroupAndIndexOfItem : obj * obj -&gt; int * int" Usage="templatedItemsList.GetGroupAndIndexOfItem (group, item)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupAndIndexOfItem(System.Object,System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -390,19 +381,16 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupAndIndexOfItem(System.Object,System.Object)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetGroupIndexFromGlobal">
       <MemberSignature Language="C#" Value="public int GetGroupIndexFromGlobal (int globalIndex, out int leftOver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetGroupIndexFromGlobal(int32 globalIndex, [out] int32&amp; leftOver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.GetGroupIndexFromGlobal(System.Int32,System.Int32@)" />
-      <MemberSignature Language="F#" Value="abstract member GetGroupIndexFromGlobal : int *  -&gt; int&#xA;override this.GetGroupIndexFromGlobal : int *  -&gt; int" Usage="templatedItemsList.GetGroupIndexFromGlobal (globalIndex, leftOver)" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetGroupIndexFromGlobal(int32 globalIndex, int32 leftOver) cil managed" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupIndexFromGlobal(System.Int32,System.Int32@)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -410,13 +398,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="globalIndex" Type="System.Int32" />
-        <Parameter Name="leftOver" Type="System.Int32" RefType="out" />
+        <Parameter Name="leftOver" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="globalIndex">For internal use by the Xamarin.Forms platform.</param>
+        <param name="globalIndex">To be added.</param>
         <param name="leftOver">To be added.</param>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>For internal use by the Xamarin.Forms platform.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,9 +434,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.TemplatedItemsList`2.GroupedCollectionChanged" />
       <MemberSignature Language="F#" Value="member this.GroupedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.GroupedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.ITemplatedItemsList`1.GroupedCollectionChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -461,6 +446,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.ITemplatedItemsList`1.GroupedCollectionChanged</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GroupHeaderTemplate">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate GroupHeaderTemplate { get; set; }" />
@@ -548,9 +536,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.IndexOf(`1)" />
       <MemberSignature Language="F#" Value="abstract member IndexOf : 'Item -&gt; int&#xA;override this.IndexOf : 'Item -&gt; int" Usage="templatedItemsList.IndexOf item" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.IndexOf(`0)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -568,6 +553,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.IndexOf(`0)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="IsGroupingEnabled">
       <MemberSignature Language="C#" Value="public bool IsGroupingEnabled { get; }" />
@@ -639,9 +627,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.ItemsSource" />
       <MemberSignature Language="F#" Value="member this.ItemsSource : System.Collections.IEnumerable" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.ItemsSource" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.ItemsSource</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -655,6 +640,9 @@
         <value>For internal use by the Xamarin.Forms platform.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.ItemsSource</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
@@ -662,9 +650,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.Name" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.Name" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.Name</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -678,6 +663,9 @@
         <value>For internal use by the Xamarin.Forms platform.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.Name</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="NameProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty NameProperty;" />
@@ -744,9 +732,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.SelectDataTemplate(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member SelectDataTemplate : obj -&gt; Xamarin.Forms.DataTemplate&#xA;override this.SelectDataTemplate : obj -&gt; Xamarin.Forms.DataTemplate" Usage="templatedItemsList.SelectDataTemplate item" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.SelectDataTemplate(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -769,6 +754,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.SelectDataTemplate(System.Object)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="ShortName">
       <MemberSignature Language="C#" Value="public string ShortName { get; set; }" />
@@ -815,9 +803,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.ShortNames" />
       <MemberSignature Language="F#" Value="member this.ShortNames : System.Collections.Generic.IReadOnlyList&lt;string&gt;" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.ShortNames" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.ShortNames</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -831,6 +816,9 @@
         <value>For internal use by the Xamarin.Forms platform.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.ShortNames</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int arrayIndex);" />
@@ -1142,9 +1130,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#BindingContext" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.BindingContext" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.BindingContext</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1158,15 +1143,15 @@
         <value>For internal use by the Xamarin.Forms platform.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.BindingContext</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GetGroup">
       <MemberSignature Language="C#" Value="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt; ITemplatedItemsList&lt;TItem&gt;.GetGroup (int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Xamarin.Forms.ITemplatedItemsList`1&lt;!TItem&gt; Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GetGroup(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#GetGroup(System.Int32)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroup(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1184,27 +1169,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-    </Member>
-    <Member MemberName="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GroupedCollectionChanged">
-      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GroupedCollectionChanged;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GroupedCollectionChanged" />
-      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#GroupedCollectionChanged" />
-      <MemberType>Event</MemberType>
       <Implements>
-        <InterfaceMember>E:Xamarin.Forms.ITemplatedItemsList`1.GroupedCollectionChanged</InterfaceMember>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroup(System.Int32)</InterfaceMember>
       </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
     </Member>
     <Member MemberName="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy">
       <MemberSignature Language="C#" Value="Xamarin.Forms.IListProxy Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy { get; }" />
@@ -1212,9 +1179,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#ListProxy" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.ListProxy</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1228,36 +1192,15 @@
         <value>For internal use by the Xamarin.Forms platform.</value>
         <remarks>To be added.</remarks>
       </Docs>
-    </Member>
-    <Member MemberName="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.PropertyChanged">
-      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.PropertyChanged;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.PropertyChanged" />
-      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#PropertyChanged" />
-      <MemberType>Event</MemberType>
       <Implements>
-        <InterfaceMember>E:Xamarin.Forms.ITemplatedItemsList`1.PropertyChanged</InterfaceMember>
+        <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.ListProxy</InterfaceMember>
       </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
     </Member>
     <Member MemberName="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateContent">
       <MemberSignature Language="C#" Value="TItem ITemplatedItemsList&lt;TItem&gt;.UpdateContent (TItem content, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !TItem Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateContent(!TItem content, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#UpdateContent(`1,System.Int32)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.UpdateContent(`0,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1277,15 +1220,15 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.UpdateContent(`0,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateHeader">
       <MemberSignature Language="C#" Value="TItem ITemplatedItemsList&lt;TItem&gt;.UpdateHeader (TItem content, int groupIndex);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !TItem Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateHeader(!TItem content, int32 groupIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#UpdateHeader(`1,System.Int32)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.UpdateHeader(`0,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1305,6 +1248,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.UpdateHeader(`0,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

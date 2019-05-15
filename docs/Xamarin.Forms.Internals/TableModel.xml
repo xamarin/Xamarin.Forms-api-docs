@@ -48,9 +48,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.GetCell(System.Int32,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetCell : int * int -&gt; Xamarin.Forms.Cell&#xA;override this.GetCell : int * int -&gt; Xamarin.Forms.Cell" Usage="tableModel.GetCell (section, row)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetCell(System.Int32,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -70,6 +67,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetCell(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetHeaderCell">
       <MemberSignature Language="C#" Value="public virtual Xamarin.Forms.Cell GetHeaderCell (int section);" />
@@ -77,9 +77,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.GetHeaderCell(System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetHeaderCell : int -&gt; Xamarin.Forms.Cell&#xA;override this.GetHeaderCell : int -&gt; Xamarin.Forms.Cell" Usage="tableModel.GetHeaderCell section" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetHeaderCell(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -97,6 +94,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetHeaderCell(System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetItem">
       <MemberSignature Language="C#" Value="public abstract object GetItem (int section, int row);" />
@@ -104,9 +104,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.GetItem(System.Int32,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetItem : int * int -&gt; obj" Usage="tableModel.GetItem (section, row)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetItem(System.Int32,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -126,6 +123,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetItem(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetRowCount">
       <MemberSignature Language="C#" Value="public abstract int GetRowCount (int section);" />
@@ -133,9 +133,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.GetRowCount(System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetRowCount : int -&gt; int" Usage="tableModel.GetRowCount section" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetRowCount(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -153,6 +150,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetRowCount(System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetSectionCount">
       <MemberSignature Language="C#" Value="public abstract int GetSectionCount ();" />
@@ -160,9 +160,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.GetSectionCount" />
       <MemberSignature Language="F#" Value="abstract member GetSectionCount : unit -&gt; int" Usage="tableModel.GetSectionCount " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetSectionCount</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -177,6 +174,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetSectionCount</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetSectionIndexTitles">
       <MemberSignature Language="C#" Value="public virtual string[] GetSectionIndexTitles ();" />
@@ -184,9 +184,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.GetSectionIndexTitles" />
       <MemberSignature Language="F#" Value="abstract member GetSectionIndexTitles : unit -&gt; string[]&#xA;override this.GetSectionIndexTitles : unit -&gt; string[]" Usage="tableModel.GetSectionIndexTitles " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetSectionIndexTitles</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -201,6 +198,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetSectionIndexTitles</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetSectionTextColor">
       <MemberSignature Language="C#" Value="public virtual Xamarin.Forms.Color GetSectionTextColor (int section);" />
@@ -208,9 +208,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.GetSectionTextColor(System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetSectionTextColor : int -&gt; Xamarin.Forms.Color&#xA;override this.GetSectionTextColor : int -&gt; Xamarin.Forms.Color" Usage="tableModel.GetSectionTextColor section" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetSectionTextColor(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -227,6 +224,9 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetSectionTextColor(System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="GetSectionTitle">
       <MemberSignature Language="C#" Value="public virtual string GetSectionTitle (int section);" />
@@ -234,9 +234,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.GetSectionTitle(System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetSectionTitle : int -&gt; string&#xA;override this.GetSectionTitle : int -&gt; string" Usage="tableModel.GetSectionTitle section" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetSectionTitle(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -254,6 +251,9 @@
         <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.GetSectionTitle(System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="ItemLongPressed">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.Internals.EventArg&lt;object&gt;&gt; ItemLongPressed;" />
@@ -368,9 +368,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.RowLongPressed(System.Int32,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member RowLongPressed : int * int -&gt; unit&#xA;override this.RowLongPressed : int * int -&gt; unit" Usage="tableModel.RowLongPressed (section, row)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.RowLongPressed(System.Int32,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -389,6 +386,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.RowLongPressed(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="RowSelected">
       <MemberSignature Language="C#" Value="public void RowSelected (object item);" />
@@ -396,9 +396,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.RowSelected(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member RowSelected : obj -&gt; unit&#xA;override this.RowSelected : obj -&gt; unit" Usage="tableModel.RowSelected item" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.RowSelected(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -415,6 +412,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.RowSelected(System.Object)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="RowSelected">
       <MemberSignature Language="C#" Value="public void RowSelected (int section, int row);" />
@@ -422,9 +422,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TableModel.RowSelected(System.Int32,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member RowSelected : int * int -&gt; unit&#xA;override this.RowSelected : int * int -&gt; unit" Usage="tableModel.RowSelected (section, row)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ITableModel.RowSelected(System.Int32,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -443,6 +440,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ITableModel.RowSelected(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

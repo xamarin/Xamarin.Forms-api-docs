@@ -66,9 +66,6 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object Xamarin.Forms.IExtendedTypeConverter.ConvertFrom(class System.Globalization.CultureInfo culture, object value, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ReferenceTypeConverter.Xamarin#Forms#IExtendedTypeConverter#ConvertFrom(System.Globalization.CultureInfo,System.Object,System.IServiceProvider)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IExtendedTypeConverter.ConvertFrom(System.Globalization.CultureInfo,System.Object,System.IServiceProvider)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -90,15 +87,15 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IExtendedTypeConverter.ConvertFrom(System.Globalization.CultureInfo,System.Object,System.IServiceProvider)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IExtendedTypeConverter.ConvertFromInvariantString">
       <MemberSignature Language="C#" Value="object IExtendedTypeConverter.ConvertFromInvariantString (string value, IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object Xamarin.Forms.IExtendedTypeConverter.ConvertFromInvariantString(string value, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ReferenceTypeConverter.Xamarin#Forms#IExtendedTypeConverter#ConvertFromInvariantString(System.String,System.IServiceProvider)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IExtendedTypeConverter.ConvertFromInvariantString(System.String,System.IServiceProvider)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -118,6 +115,9 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IExtendedTypeConverter.ConvertFromInvariantString(System.String,System.IServiceProvider)</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

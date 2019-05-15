@@ -117,10 +117,10 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Font is obsolete as of version 1.3.0. Please use the Font properties directly.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("Font is obsolete as of version 1.3.0. Please use the Font properties directly.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -319,10 +319,10 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Foreground is obsolete as of version 3.1.0. Please use the TextColor property instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("Foreground is obsolete as of version 3.1.0. Please use the TextColor property instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -499,9 +499,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Span.TextDecorations" />
       <MemberSignature Language="F#" Value="member this.TextDecorations : Xamarin.Forms.TextDecorations with get, set" Usage="Xamarin.Forms.Span.TextDecorations" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IDecorableTextElement.TextDecorations</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -514,6 +511,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IDecorableTextElement.TextDecorations</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="TextDecorationsProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TextDecorationsProperty;" />
@@ -557,9 +557,6 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Span.Xamarin#Forms#Internals#IFontElement#FontSizeDefaultValueCreator" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -574,15 +571,15 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged">
       <MemberSignature Language="C#" Value="void IFontElement.OnFontAttributesChanged (Xamarin.Forms.FontAttributes oldValue, Xamarin.Forms.FontAttributes newValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged(valuetype Xamarin.Forms.FontAttributes oldValue, valuetype Xamarin.Forms.FontAttributes newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Span.Xamarin#Forms#Internals#IFontElement#OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -601,15 +598,15 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.OnFontChanged">
       <MemberSignature Language="C#" Value="void IFontElement.OnFontChanged (Xamarin.Forms.Font oldValue, Xamarin.Forms.Font newValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.IFontElement.OnFontChanged(valuetype Xamarin.Forms.Font oldValue, valuetype Xamarin.Forms.Font newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Span.Xamarin#Forms#Internals#IFontElement#OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -628,15 +625,15 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged">
       <MemberSignature Language="C#" Value="void IFontElement.OnFontFamilyChanged (string oldValue, string newValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged(string oldValue, string newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Span.Xamarin#Forms#Internals#IFontElement#OnFontFamilyChanged(System.String,System.String)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged(System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -655,15 +652,15 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged(System.String,System.String)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged">
       <MemberSignature Language="C#" Value="void IFontElement.OnFontSizeChanged (double oldValue, double newValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged(float64 oldValue, float64 newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Span.Xamarin#Forms#Internals#IFontElement#OnFontSizeChanged(System.Double,System.Double)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged(System.Double,System.Double)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -682,6 +679,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged(System.Double,System.Double)</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

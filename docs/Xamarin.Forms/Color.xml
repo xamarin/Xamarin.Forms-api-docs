@@ -1506,10 +1506,10 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Fuschia is obsolete as of version 1.3.0. Please use Fuchsia instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("Fuschia is obsolete as of version 1.3.0. Please use Fuchsia instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2780,7 +2780,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool operator == (Xamarin.Forms.Color color1, Xamarin.Forms.Color color2);" />
+      <MemberSignature Language="C#" Value="public static bool op_Equality (Xamarin.Forms.Color color1, Xamarin.Forms.Color color2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Xamarin.Forms.Color color1, valuetype Xamarin.Forms.Color color2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Color.op_Equality(Xamarin.Forms.Color,Xamarin.Forms.Color)" />
       <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.Color * Xamarin.Forms.Color -&gt; bool" Usage="color1 = color2" />
@@ -2812,7 +2812,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.Color (System.Drawing.Color color);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color op_Implicit (System.Drawing.Color color);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Color op_Implicit(valuetype System.Drawing.Color color) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Color.op_Implicit(System.Drawing.Color)~Xamarin.Forms.Color" />
       <MemberSignature Language="F#" Value="static member op_Implicit : System.Drawing.Color -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Color.op_Implicit color" />
@@ -2836,7 +2836,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator System.Drawing.Color (Xamarin.Forms.Color color);" />
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color op_Implicit (Xamarin.Forms.Color color);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.Color op_Implicit(valuetype Xamarin.Forms.Color color) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Color.op_Implicit(Xamarin.Forms.Color)~System.Drawing.Color" />
       <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.Color -&gt; System.Drawing.Color" Usage="Xamarin.Forms.Color.op_Implicit color" />
@@ -2860,7 +2860,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool operator != (Xamarin.Forms.Color color1, Xamarin.Forms.Color color2);" />
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (Xamarin.Forms.Color color1, Xamarin.Forms.Color color2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Xamarin.Forms.Color color1, valuetype Xamarin.Forms.Color color2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Color.op_Inequality(Xamarin.Forms.Color,Xamarin.Forms.Color)" />
       <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.Color * Xamarin.Forms.Color -&gt; bool" Usage="Xamarin.Forms.Color.op_Inequality (color1, color2)" />

@@ -107,9 +107,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Layout.Children" />
       <MemberSignature Language="F#" Value="member this.Children : System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Element&gt;" Usage="Xamarin.Forms.Layout.Children" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ILayoutController.Children</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -128,6 +125,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ILayoutController.Children</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="ForceLayout">
       <MemberSignature Language="C#" Value="public void ForceLayout ();" />
@@ -176,10 +176,10 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -284,9 +284,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Layout.LayoutChanged" />
       <MemberSignature Language="F#" Value="member this.LayoutChanged : EventHandler " Usage="member this.LayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.ILayout.LayoutChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -307,6 +304,9 @@
           <para>Developers wishing to implement animations may wish to begin them at the end of a LayoutChanged event.</para>
         </remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.ILayout.LayoutChanged</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="LayoutChildIntoBoundingRegion">
       <MemberSignature Language="C#" Value="public static void LayoutChildIntoBoundingRegion (Xamarin.Forms.VisualElement child, Xamarin.Forms.Rectangle region);" />

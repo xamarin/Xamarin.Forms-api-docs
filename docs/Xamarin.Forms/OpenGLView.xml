@@ -22,16 +22,7 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.OpenGLView&gt;</InterfaceName>
     </Interface>
     <Interface>
-      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>Xamarin.Forms.IOpenGlViewController</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -158,9 +149,6 @@ namespace opengl
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.OpenGLView.DisplayRequested" />
       <MemberSignature Language="F#" Value="member this.DisplayRequested : EventHandler " Usage="member this.DisplayRequested : System.EventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IOpenGlViewController.DisplayRequested</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -178,6 +166,9 @@ namespace opengl
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IOpenGlViewController.DisplayRequested</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="HasRenderLoop">
       <MemberSignature Language="C#" Value="public bool HasRenderLoop { get; set; }" />
@@ -236,9 +227,6 @@ namespace opengl
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.OpenGLView.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.OpenGLView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.OpenGLView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="openGLView.On " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -261,6 +249,9 @@ namespace opengl
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="OnDisplay">
       <MemberSignature Language="C#" Value="public Action&lt;Xamarin.Forms.Rectangle&gt; OnDisplay { get; set; }" />

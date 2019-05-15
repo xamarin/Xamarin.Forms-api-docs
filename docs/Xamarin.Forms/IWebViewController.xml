@@ -10,13 +10,7 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
-      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -65,7 +59,7 @@
       </Docs>
     </Member>
     <Member MemberName="EvalRequested">
-      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.EvalRequested&gt; EvalRequested;" />
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.Internals.EvalRequested&gt; EvalRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.EvalRequested&gt; EvalRequested" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IWebViewController.EvalRequested" />
       <MemberSignature Language="F#" Value="member this.EvalRequested : EventHandler&lt;Xamarin.Forms.Internals.EvalRequested&gt; " Usage="member this.EvalRequested : System.EventHandler&lt;Xamarin.Forms.Internals.EvalRequested&gt; " />
@@ -84,7 +78,7 @@
       </Docs>
     </Member>
     <Member MemberName="EvaluateJavaScriptRequested">
-      <MemberSignature Language="C#" Value="event Xamarin.Forms.Internals.EvaluateJavaScriptDelegate EvaluateJavaScriptRequested;" />
+      <MemberSignature Language="C#" Value="public event Xamarin.Forms.Internals.EvaluateJavaScriptDelegate EvaluateJavaScriptRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class Xamarin.Forms.Internals.EvaluateJavaScriptDelegate EvaluateJavaScriptRequested" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IWebViewController.EvaluateJavaScriptRequested" />
       <MemberSignature Language="F#" Value="member this.EvaluateJavaScriptRequested : Xamarin.Forms.Internals.EvaluateJavaScriptDelegate " Usage="member this.EvaluateJavaScriptRequested : Xamarin.Forms.Internals.EvaluateJavaScriptDelegate " />
@@ -103,7 +97,7 @@
       </Docs>
     </Member>
     <Member MemberName="GoBackRequested">
-      <MemberSignature Language="C#" Value="event EventHandler GoBackRequested;" />
+      <MemberSignature Language="C#" Value="public event EventHandler GoBackRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler GoBackRequested" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IWebViewController.GoBackRequested" />
       <MemberSignature Language="F#" Value="member this.GoBackRequested : EventHandler " Usage="member this.GoBackRequested : System.EventHandler " />
@@ -122,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="GoForwardRequested">
-      <MemberSignature Language="C#" Value="event EventHandler GoForwardRequested;" />
+      <MemberSignature Language="C#" Value="public event EventHandler GoForwardRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler GoForwardRequested" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IWebViewController.GoForwardRequested" />
       <MemberSignature Language="F#" Value="member this.GoForwardRequested : EventHandler " Usage="member this.GoForwardRequested : System.EventHandler " />
@@ -141,7 +135,7 @@
       </Docs>
     </Member>
     <Member MemberName="ReloadRequested">
-      <MemberSignature Language="C#" Value="event EventHandler ReloadRequested;" />
+      <MemberSignature Language="C#" Value="public event EventHandler ReloadRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ReloadRequested" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IWebViewController.ReloadRequested" />
       <MemberSignature Language="F#" Value="member this.ReloadRequested : EventHandler " Usage="member this.ReloadRequested : System.EventHandler " />

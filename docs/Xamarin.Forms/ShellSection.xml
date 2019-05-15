@@ -12,18 +12,15 @@
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>Xamarin.Forms.IShellSectionController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>Xamarin.Forms.ContentProperty("Items")</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName>Xamarin.Forms.ContentProperty("Items")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -104,8 +101,8 @@
       </Docs>
     </Member>
     <Member MemberName="Items">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellContentCollection Items { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellContentCollection Items" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.ShellContent&gt; Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.ShellContent&gt; Items" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellSection.Items" />
       <MemberSignature Language="F#" Value="member this.Items : Xamarin.Forms.ShellContentCollection" Usage="Xamarin.Forms.ShellSection.Items" />
       <MemberType>Property</MemberType>
@@ -114,7 +111,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.ShellContentCollection</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.ShellContent&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>The collection of <see cref="T:Xamarin.Forms.ShellContent" /> objects managed by <c>this</c><see cref="T:Xamarin.Forms.ShellSection" />.</summary>
@@ -222,6 +219,11 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.ShellSection/&lt;OnPopAsync&gt;d__57))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
       </ReturnValue>
@@ -245,6 +247,11 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.ShellSection/&lt;OnPopToRootAsync&gt;d__58))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -306,7 +313,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.ShellSection (Xamarin.Forms.ShellContent shellContent);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ShellSection op_Implicit (Xamarin.Forms.ShellContent shellContent);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Xamarin.Forms.ShellSection op_Implicit(class Xamarin.Forms.ShellContent shellContent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.op_Implicit(Xamarin.Forms.ShellContent)~Xamarin.Forms.ShellSection" />
       <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.ShellContent -&gt; Xamarin.Forms.ShellSection" Usage="Xamarin.Forms.ShellSection.op_Implicit shellContent" />
@@ -329,7 +336,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.ShellSection (Xamarin.Forms.TemplatedPage page);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ShellSection op_Implicit (Xamarin.Forms.TemplatedPage page);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Xamarin.Forms.ShellSection op_Implicit(class Xamarin.Forms.TemplatedPage page) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.op_Implicit(Xamarin.Forms.TemplatedPage)~Xamarin.Forms.ShellSection" />
       <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.TemplatedPage -&gt; Xamarin.Forms.ShellSection" Usage="Xamarin.Forms.ShellSection.op_Implicit page" />
@@ -375,9 +382,6 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.AddContentInsetObserver(class Xamarin.Forms.IShellContentInsetObserver observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#AddContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.AddContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -393,15 +397,15 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.AddContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver">
       <MemberSignature Language="C#" Value="void IShellSectionController.AddDisplayedPageObserver (object observer, Action&lt;Xamarin.Forms.Page&gt; callback);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver(object observer, class System.Action`1&lt;class Xamarin.Forms.Page&gt; callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#AddDisplayedPageObserver(System.Object,System.Action{Xamarin.Forms.Page})" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver(System.Object,System.Action{Xamarin.Forms.Page})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -419,26 +423,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-    </Member>
-    <Member MemberName="Xamarin.Forms.IShellSectionController.NavigationRequested">
-      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; Xamarin.Forms.IShellSectionController.NavigationRequested;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; Xamarin.Forms.IShellSectionController.NavigationRequested" />
-      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#NavigationRequested" />
-      <MemberType>Event</MemberType>
       <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IShellSectionController.NavigationRequested</InterfaceMember>
+        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver(System.Object,System.Action{Xamarin.Forms.Page})</InterfaceMember>
       </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellSectionController.PresentedPage">
       <MemberSignature Language="C#" Value="Xamarin.Forms.Page Xamarin.Forms.IShellSectionController.PresentedPage { get; }" />
@@ -446,9 +433,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#PresentedPage" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellSectionController.PresentedPage" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IShellSectionController.PresentedPage</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -461,15 +445,15 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IShellSectionController.PresentedPage</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver">
       <MemberSignature Language="C#" Value="bool IShellSectionController.RemoveContentInsetObserver (Xamarin.Forms.IShellContentInsetObserver observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver(class Xamarin.Forms.IShellContentInsetObserver observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#RemoveContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -486,15 +470,15 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver">
       <MemberSignature Language="C#" Value="bool IShellSectionController.RemoveDisplayedPageObserver (object observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver(object observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#RemoveDisplayedPageObserver(System.Object)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -511,15 +495,15 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver(System.Object)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellSectionController.SendInsetChanged">
       <MemberSignature Language="C#" Value="void IShellSectionController.SendInsetChanged (Xamarin.Forms.Thickness inset, double tabThickness);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.SendInsetChanged(valuetype Xamarin.Forms.Thickness inset, float64 tabThickness) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#SendInsetChanged(Xamarin.Forms.Thickness,System.Double)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.SendInsetChanged(Xamarin.Forms.Thickness,System.Double)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -537,15 +521,15 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.SendInsetChanged(Xamarin.Forms.Thickness,System.Double)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellSectionController.SendPopped">
       <MemberSignature Language="C#" Value="void IShellSectionController.SendPopped ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.SendPopped() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#SendPopped" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.SendPopped</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -558,6 +542,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellSectionController.SendPopped</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

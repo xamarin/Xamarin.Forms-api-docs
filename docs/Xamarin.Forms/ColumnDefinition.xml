@@ -66,9 +66,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ColumnDefinition.SizeChanged" />
       <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IDefinition.SizeChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -87,6 +84,9 @@
         <summary>Event that is raised when the size of the column is changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IDefinition.SizeChanged</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Width">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.GridLength Width { get; set; }" />

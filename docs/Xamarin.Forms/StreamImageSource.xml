@@ -155,14 +155,16 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; Xamarin.Forms.IStreamImageSource.GetStreamAsync(valuetype System.Threading.CancellationToken userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.StreamImageSource.Xamarin#Forms#IStreamImageSource#GetStreamAsync(System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IStreamImageSource.GetStreamAsync(System.Threading.CancellationToken)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.StreamImageSource/&lt;Xamarin-Forms-IStreamImageSource-GetStreamAsync&gt;d__7))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
       </ReturnValue>
@@ -175,6 +177,9 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IStreamImageSource.GetStreamAsync(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

@@ -12,9 +12,6 @@
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>Xamarin.Forms.Xaml.IProvideValueTarget</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>Xamarin.Forms.Xaml.IReferenceProvider</InterfaceName>
     </Interface>
   </Interfaces>
@@ -35,10 +32,10 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("SimpleValueTargetProvider(object[] objectAndParents) is obsolete as of version 2.3.4. Please use SimpleValueTargetProvider(object[] objectAndParents, object targetProperty) instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("SimpleValueTargetProvider(object[] objectAndParents) is obsolete as of version 2.3.4. Please use SimpleValueTargetProvider(object[] objectAndParents, object targetProperty) instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -108,9 +105,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.FindByName(System.String)" />
       <MemberSignature Language="F#" Value="abstract member FindByName : string -&gt; obj&#xA;override this.FindByName : string -&gt; obj" Usage="simpleValueTargetProvider.FindByName name" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Xaml.IReferenceProvider.FindByName(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -127,6 +121,9 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Xaml.IReferenceProvider.FindByName(System.String)</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject">
       <MemberSignature Language="C#" Value="object Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject { get; }" />
@@ -134,9 +131,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin#Forms#Xaml#IProvideValueTarget#TargetObject" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -149,6 +143,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Xaml.IProvideValueTarget.TargetObject</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty">
       <MemberSignature Language="C#" Value="object Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty { get; }" />
@@ -156,9 +153,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin#Forms#Xaml#IProvideValueTarget#TargetProperty" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -171,6 +165,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Xaml.IProvideValueTarget.TargetProperty</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

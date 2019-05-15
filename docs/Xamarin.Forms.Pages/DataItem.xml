@@ -131,9 +131,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Pages.DataItem.Name" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Xamarin.Forms.Pages.DataItem.Name" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Pages.IDataItem.Name</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -146,6 +143,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Pages.IDataItem.Name</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="OnPropertyChanged">
       <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (string propertyName = null);" />
@@ -176,7 +176,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool operator == (Xamarin.Forms.Pages.DataItem left, Xamarin.Forms.Pages.DataItem right);" />
+      <MemberSignature Language="C#" Value="public static bool op_Equality (Xamarin.Forms.Pages.DataItem left, Xamarin.Forms.Pages.DataItem right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class Xamarin.Forms.Pages.DataItem left, class Xamarin.Forms.Pages.DataItem right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Pages.DataItem.op_Equality(Xamarin.Forms.Pages.DataItem,Xamarin.Forms.Pages.DataItem)" />
       <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.Pages.DataItem * Xamarin.Forms.Pages.DataItem -&gt; bool" Usage="left = right" />
@@ -201,7 +201,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool operator != (Xamarin.Forms.Pages.DataItem left, Xamarin.Forms.Pages.DataItem right);" />
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (Xamarin.Forms.Pages.DataItem left, Xamarin.Forms.Pages.DataItem right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class Xamarin.Forms.Pages.DataItem left, class Xamarin.Forms.Pages.DataItem right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Pages.DataItem.op_Inequality(Xamarin.Forms.Pages.DataItem,Xamarin.Forms.Pages.DataItem)" />
       <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.Pages.DataItem * Xamarin.Forms.Pages.DataItem -&gt; bool" Usage="Xamarin.Forms.Pages.DataItem.op_Inequality (left, right)" />
@@ -231,9 +231,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Pages.DataItem.PropertyChanged" />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -245,6 +242,9 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
@@ -252,9 +252,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Pages.DataItem.Value" />
       <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="Xamarin.Forms.Pages.DataItem.Value" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Pages.IDataItem.Value</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Pages</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -267,6 +264,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Pages.IDataItem.Value</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

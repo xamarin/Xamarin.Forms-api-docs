@@ -12,9 +12,6 @@
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>Xamarin.Forms.IShellContentController</InterfaceName>
     </Interface>
   </Interfaces>
@@ -155,7 +152,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.ShellContent (Xamarin.Forms.TemplatedPage page);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ShellContent op_Implicit (Xamarin.Forms.TemplatedPage page);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Xamarin.Forms.ShellContent op_Implicit(class Xamarin.Forms.TemplatedPage page) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellContent.op_Implicit(Xamarin.Forms.TemplatedPage)~Xamarin.Forms.ShellContent" />
       <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.TemplatedPage -&gt; Xamarin.Forms.ShellContent" Usage="Xamarin.Forms.ShellContent.op_Implicit page" />
@@ -182,9 +179,6 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Xamarin.Forms.Page Xamarin.Forms.IShellContentController.GetOrCreateContent() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellContent.Xamarin#Forms#IShellContentController#GetOrCreateContent" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellContentController.GetOrCreateContent</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -198,6 +192,9 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellContentController.GetOrCreateContent</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellContentController.Page">
       <MemberSignature Language="C#" Value="Xamarin.Forms.Page Xamarin.Forms.IShellContentController.Page { get; }" />
@@ -205,9 +202,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellContent.Xamarin#Forms#IShellContentController#Page" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellContentController.Page" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IShellContentController.Page</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -220,15 +214,15 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IShellContentController.Page</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellContentController.RecyclePage">
       <MemberSignature Language="C#" Value="void IShellContentController.RecyclePage (Xamarin.Forms.Page page);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellContentController.RecyclePage(class Xamarin.Forms.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellContent.Xamarin#Forms#IShellContentController#RecyclePage(Xamarin.Forms.Page)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellContentController.RecyclePage(Xamarin.Forms.Page)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -244,6 +238,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellContentController.RecyclePage(Xamarin.Forms.Page)</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

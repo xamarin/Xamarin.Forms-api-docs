@@ -168,7 +168,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool operator == (Xamarin.Forms.ShellAppearance appearance1, Xamarin.Forms.ShellAppearance appearance2);" />
+      <MemberSignature Language="C#" Value="public static bool op_Equality (Xamarin.Forms.ShellAppearance appearance1, Xamarin.Forms.ShellAppearance appearance2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class Xamarin.Forms.ShellAppearance appearance1, class Xamarin.Forms.ShellAppearance appearance2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellAppearance.op_Equality(Xamarin.Forms.ShellAppearance,Xamarin.Forms.ShellAppearance)" />
       <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.ShellAppearance * Xamarin.Forms.ShellAppearance -&gt; bool" Usage="appearance1 = appearance2" />
@@ -193,7 +193,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool operator != (Xamarin.Forms.ShellAppearance appearance1, Xamarin.Forms.ShellAppearance appearance2);" />
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (Xamarin.Forms.ShellAppearance appearance1, Xamarin.Forms.ShellAppearance appearance2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class Xamarin.Forms.ShellAppearance appearance1, class Xamarin.Forms.ShellAppearance appearance2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellAppearance.op_Inequality(Xamarin.Forms.ShellAppearance,Xamarin.Forms.ShellAppearance)" />
       <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.ShellAppearance * Xamarin.Forms.ShellAppearance -&gt; bool" Usage="Xamarin.Forms.ShellAppearance.op_Inequality (appearance1, appearance2)" />
@@ -356,9 +356,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellAppearance.Xamarin#Forms#IShellAppearanceElement#EffectiveTabBarBackgroundColor" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarBackgroundColor" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarBackgroundColor</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -371,6 +368,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarBackgroundColor</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarDisabledColor">
       <MemberSignature Language="C#" Value="Xamarin.Forms.Color Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarDisabledColor { get; }" />
@@ -378,9 +378,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellAppearance.Xamarin#Forms#IShellAppearanceElement#EffectiveTabBarDisabledColor" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarDisabledColor" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarDisabledColor</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -393,6 +390,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarDisabledColor</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarForegroundColor">
       <MemberSignature Language="C#" Value="Xamarin.Forms.Color Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarForegroundColor { get; }" />
@@ -400,9 +400,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellAppearance.Xamarin#Forms#IShellAppearanceElement#EffectiveTabBarForegroundColor" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarForegroundColor" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarForegroundColor</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -415,6 +412,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarForegroundColor</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarTitleColor">
       <MemberSignature Language="C#" Value="Xamarin.Forms.Color Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarTitleColor { get; }" />
@@ -422,9 +422,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellAppearance.Xamarin#Forms#IShellAppearanceElement#EffectiveTabBarTitleColor" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarTitleColor" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarTitleColor</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -437,6 +434,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarTitleColor</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarUnselectedColor">
       <MemberSignature Language="C#" Value="Xamarin.Forms.Color Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarUnselectedColor { get; }" />
@@ -444,9 +444,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellAppearance.Xamarin#Forms#IShellAppearanceElement#EffectiveTabBarUnselectedColor" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarUnselectedColor" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarUnselectedColor</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -459,6 +456,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IShellAppearanceElement.EffectiveTabBarUnselectedColor</InterfaceMember>
+      </Implements>
     </Member>
   </Members>
 </Type>

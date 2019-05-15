@@ -145,30 +145,27 @@
     </Member>
     <Member MemberName="Deconstruct">
       <MemberSignature Language="C#" Value="public void Deconstruct (out double left, out double top, out double right, out double bottom);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] float64&amp; left, [out] float64&amp; top, [out] float64&amp; right, [out] float64&amp; bottom) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Thickness.Deconstruct(System.Double@,System.Double@,System.Double@,System.Double@)" />
-      <MemberSignature Language="F#" Value="member this.Deconstruct :  *  *  *  -&gt; unit" Usage="thickness.Deconstruct (left, top, right, bottom)" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct(float64 left, float64 top, float64 right, float64 bottom) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Double" RefType="out" />
-        <Parameter Name="top" Type="System.Double" RefType="out" />
-        <Parameter Name="right" Type="System.Double" RefType="out" />
-        <Parameter Name="bottom" Type="System.Double" RefType="out" />
+        <Parameter Name="left" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="top" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="right" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="bottom" Type="System.Double&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="left">Variable in which to store the left thickness of thickness object.</param>
-        <param name="top">Variable in which to store the top thickness of thickness object.</param>
-        <param name="right">Variable in which to store the right thickness of thickness object.</param>
-        <param name="bottom">Variable in which to store the bottom thickness of thickness object.</param>
-        <summary>Stores the components of the thickness in the corresponding arguments.</summary>
+        <param name="left">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="right">To be added.</param>
+        <param name="bottom">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,7 +280,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool operator == (Xamarin.Forms.Thickness left, Xamarin.Forms.Thickness right);" />
+      <MemberSignature Language="C#" Value="public static bool op_Equality (Xamarin.Forms.Thickness left, Xamarin.Forms.Thickness right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Xamarin.Forms.Thickness left, valuetype Xamarin.Forms.Thickness right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Thickness.op_Equality(Xamarin.Forms.Thickness,Xamarin.Forms.Thickness)" />
       <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.Thickness * Xamarin.Forms.Thickness -&gt; bool" Usage="left = right" />
@@ -316,7 +313,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.Thickness (double uniformSize);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Thickness op_Implicit (double uniformSize);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Thickness op_Implicit(float64 uniformSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Thickness.op_Implicit(System.Double)~Xamarin.Forms.Thickness" />
       <MemberSignature Language="F#" Value="static member op_Implicit : double -&gt; Xamarin.Forms.Thickness" Usage="Xamarin.Forms.Thickness.op_Implicit uniformSize" />
@@ -348,7 +345,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.Thickness (Xamarin.Forms.Size size);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Thickness op_Implicit (Xamarin.Forms.Size size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Thickness op_Implicit(valuetype Xamarin.Forms.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Thickness.op_Implicit(Xamarin.Forms.Size)~Xamarin.Forms.Thickness" />
       <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.Size -&gt; Xamarin.Forms.Thickness" Usage="Xamarin.Forms.Thickness.op_Implicit size" />
@@ -380,7 +377,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool operator != (Xamarin.Forms.Thickness left, Xamarin.Forms.Thickness right);" />
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (Xamarin.Forms.Thickness left, Xamarin.Forms.Thickness right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Xamarin.Forms.Thickness left, valuetype Xamarin.Forms.Thickness right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Thickness.op_Inequality(Xamarin.Forms.Thickness,Xamarin.Forms.Thickness)" />
       <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.Thickness * Xamarin.Forms.Thickness -&gt; bool" Usage="Xamarin.Forms.Thickness.op_Inequality (left, right)" />

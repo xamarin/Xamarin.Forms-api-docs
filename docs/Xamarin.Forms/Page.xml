@@ -22,16 +22,10 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Page&gt;</InterfaceName>
     </Interface>
     <Interface>
-      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>Xamarin.Forms.ILayout</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IPageController</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -133,8 +127,8 @@
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.FileImageSource BackgroundImage { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.FileImageSource BackgroundImage" />
+      <MemberSignature Language="C#" Value="public string BackgroundImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Page.BackgroundImage" />
       <MemberSignature Language="F#" Value="member this.BackgroundImage : Xamarin.Forms.FileImageSource with get, set" Usage="Xamarin.Forms.Page.BackgroundImage" />
       <MemberType>Property</MemberType>
@@ -158,7 +152,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Identifies the image used as a background for the <see cref="T:Xamarin.Forms.Page" />.</summary>
@@ -261,9 +255,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Page.ContainerArea" />
       <MemberSignature Language="F#" Value="member this.ContainerArea : Xamarin.Forms.Rectangle with get, set" Usage="Xamarin.Forms.Page.ContainerArea" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IPageController.ContainerArea</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -282,6 +273,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IPageController.ContainerArea</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Disappearing">
       <MemberSignature Language="C#" Value="public event EventHandler Disappearing;" />
@@ -309,7 +303,7 @@
       </Docs>
     </Member>
     <Member MemberName="DisplayActionSheet">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; DisplayActionSheet (string title, string cancel, string destruction, params string[] buttons);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; DisplayActionSheet (string title, string cancel, string destruction, string[] buttons);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; DisplayActionSheet(string title, string cancel, string destruction, string[] buttons) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Page.DisplayActionSheet(System.String,System.String,System.String,System.String[])" />
       <MemberSignature Language="F#" Value="member this.DisplayActionSheet : string * string * string * string[] -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="page.DisplayActionSheet (title, cancel, destruction, buttons)" />
@@ -556,9 +550,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Page.IgnoresContainerArea" />
       <MemberSignature Language="F#" Value="member this.IgnoresContainerArea : bool with get, set" Usage="Xamarin.Forms.Page.IgnoresContainerArea" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IPageController.IgnoresContainerArea</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -577,6 +568,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IPageController.IgnoresContainerArea</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="InternalChildren">
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;Xamarin.Forms.Element&gt; InternalChildren { get; }" />
@@ -584,9 +578,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Page.InternalChildren" />
       <MemberSignature Language="F#" Value="member this.InternalChildren : System.Collections.ObjectModel.ObservableCollection&lt;Xamarin.Forms.Element&gt;" Usage="Xamarin.Forms.Page.InternalChildren" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IPageController.InternalChildren</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -605,6 +596,9 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IPageController.InternalChildren</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="IsBusy">
       <MemberSignature Language="C#" Value="public bool IsBusy { get; set; }" />
@@ -663,9 +657,6 @@
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Page.LayoutChanged" />
       <MemberSignature Language="F#" Value="member this.LayoutChanged : EventHandler " Usage="member this.LayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.ILayout.LayoutChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -684,6 +675,9 @@
         <summary>Raised when the layout of the <see cref="T:Xamarin.Forms.Page" /> has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.ILayout.LayoutChanged</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="LayoutChildren">
       <MemberSignature Language="C#" Value="protected virtual void LayoutChildren (double x, double y, double width, double height);" />
@@ -726,9 +720,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Page.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Page (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Page (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="page.On " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -751,6 +742,9 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="OnAppearing">
       <MemberSignature Language="C#" Value="protected virtual void OnAppearing ();" />
@@ -1003,9 +997,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Page.SendAppearing" />
       <MemberSignature Language="F#" Value="abstract member SendAppearing : unit -&gt; unit&#xA;override this.SendAppearing : unit -&gt; unit" Usage="page.SendAppearing " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IPageController.SendAppearing</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1024,6 +1015,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IPageController.SendAppearing</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="SendBackButtonPressed">
       <MemberSignature Language="C#" Value="public bool SendBackButtonPressed ();" />
@@ -1055,9 +1049,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Page.SendDisappearing" />
       <MemberSignature Language="F#" Value="abstract member SendDisappearing : unit -&gt; unit&#xA;override this.SendDisappearing : unit -&gt; unit" Usage="page.SendDisappearing " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IPageController.SendDisappearing</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1076,6 +1067,9 @@
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IPageController.SendDisappearing</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Title">
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />

@@ -262,9 +262,6 @@ Content = new TableView
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Cell.ForceUpdateSizeRequested" />
       <MemberSignature Language="F#" Value="member this.ForceUpdateSizeRequested : EventHandler " Usage="member this.ForceUpdateSizeRequested : System.EventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.ICellController.ForceUpdateSizeRequested</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -282,6 +279,9 @@ Content = new TableView
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.ICellController.ForceUpdateSizeRequested</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="HasContextActions">
       <MemberSignature Language="C#" Value="public bool HasContextActions { get; }" />
@@ -536,7 +536,7 @@ Content = new TableView
       </Docs>
     </Member>
     <Member MemberName="OnTapped">
-      <MemberSignature Language="C#" Value="protected internal virtual void OnTapped ();" />
+      <MemberSignature Language="C#" Value="protected virtual void OnTapped ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnTapped() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Cell.OnTapped" />
       <MemberSignature Language="F#" Value="abstract member OnTapped : unit -&gt; unit&#xA;override this.OnTapped : unit -&gt; unit" Usage="cell.OnTapped " />
@@ -596,9 +596,6 @@ Content = new TableView
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Cell.SendAppearing" />
       <MemberSignature Language="F#" Value="abstract member SendAppearing : unit -&gt; unit&#xA;override this.SendAppearing : unit -&gt; unit" Usage="cell.SendAppearing " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ICellController.SendAppearing</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -617,6 +614,9 @@ Content = new TableView
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ICellController.SendAppearing</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="SendDisappearing">
       <MemberSignature Language="C#" Value="public void SendDisappearing ();" />
@@ -624,9 +624,6 @@ Content = new TableView
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Cell.SendDisappearing" />
       <MemberSignature Language="F#" Value="abstract member SendDisappearing : unit -&gt; unit&#xA;override this.SendDisappearing : unit -&gt; unit" Usage="cell.SendDisappearing " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.ICellController.SendDisappearing</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -645,6 +642,9 @@ Content = new TableView
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ICellController.SendDisappearing</InterfaceMember>
+      </Implements>
     </Member>
     <Member MemberName="Tapped">
       <MemberSignature Language="C#" Value="public event EventHandler Tapped;" />
