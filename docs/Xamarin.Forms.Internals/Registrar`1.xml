@@ -79,7 +79,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetHandler&lt;TOut&gt;">
-      <MemberSignature Language="C#" Value="public TOut GetHandler&lt;TOut&gt; (Type type, object[] args) where TOut : class, TRegistrable;" />
+      <MemberSignature Language="C#" Value="public TOut GetHandler&lt;TOut&gt; (Type type, params object[] args) where TOut : class, TRegistrable;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TOut GetHandler&lt;class (!TRegistrable) TOut&gt;(class System.Type type, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar`1.GetHandler``1(System.Type,System.Object[])" />
       <MemberSignature Language="F#" Value="member this.GetHandler : Type * obj[] -&gt; 'Out" Usage="registrar.GetHandler (type, args)" />
@@ -151,7 +151,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetHandlerForObject&lt;TOut&gt;">
-      <MemberSignature Language="C#" Value="public TOut GetHandlerForObject&lt;TOut&gt; (object obj, object[] args) where TOut : class, TRegistrable;" />
+      <MemberSignature Language="C#" Value="public TOut GetHandlerForObject&lt;TOut&gt; (object obj, params object[] args) where TOut : class, TRegistrable;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TOut GetHandlerForObject&lt;class (!TRegistrable) TOut&gt;(object obj, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar`1.GetHandlerForObject``1(System.Object,System.Object[])" />
       <MemberSignature Language="F#" Value="member this.GetHandlerForObject : obj * obj[] -&gt; 'Out" Usage="registrar.GetHandlerForObject (obj, args)" />

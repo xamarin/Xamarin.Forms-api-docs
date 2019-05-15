@@ -244,6 +244,9 @@ public class App : Application
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.TableView.ModelChanged" />
       <MemberSignature Language="F#" Value="member this.ModelChanged : EventHandler " Usage="member this.ModelChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.ITableViewController.ModelChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -261,9 +264,6 @@ public class App : Application
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.ITableViewController.ModelChanged</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="On&lt;T&gt;">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.TableView&gt; On&lt;T&gt; () where T : Xamarin.Forms.IConfigPlatform;" />
@@ -271,6 +271,9 @@ public class App : Application
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableView.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.TableView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.TableView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="tableView.On " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -293,9 +296,6 @@ public class App : Application
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnBindingContextChanged">
       <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
@@ -469,6 +469,9 @@ public class App : Application
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TableView.Xamarin#Forms#ITableViewController#Model" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.ITableViewController.Model" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ITableViewController.Model</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -482,9 +485,6 @@ public class App : Application
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.ITableViewController.Model</InterfaceMember>
-      </Implements>
     </Member>
   </Members>
 </Type>

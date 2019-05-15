@@ -163,6 +163,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.MasterDetailPage.BackButtonPressed" />
       <MemberSignature Language="F#" Value="member this.BackButtonPressed : EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; " Usage="member this.BackButtonPressed : System.EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IMasterDetailPageController.BackButtonPressed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -180,9 +183,6 @@ namespace FormsGallery
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IMasterDetailPageController.BackButtonPressed</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="CanChangeIsPresented">
       <MemberSignature Language="C#" Value="public bool CanChangeIsPresented { get; set; }" />
@@ -190,6 +190,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MasterDetailPage.CanChangeIsPresented" />
       <MemberSignature Language="F#" Value="member this.CanChangeIsPresented : bool with get, set" Usage="Xamarin.Forms.MasterDetailPage.CanChangeIsPresented" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IMasterDetailPageController.CanChangeIsPresented</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -208,9 +211,6 @@ namespace FormsGallery
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IMasterDetailPageController.CanChangeIsPresented</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Detail">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Page Detail { get; set; }" />
@@ -244,6 +244,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MasterDetailPage.DetailBounds" />
       <MemberSignature Language="F#" Value="member this.DetailBounds : Xamarin.Forms.Rectangle with get, set" Usage="Xamarin.Forms.MasterDetailPage.DetailBounds" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IMasterDetailPageController.DetailBounds</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -262,9 +265,6 @@ namespace FormsGallery
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IMasterDetailPageController.DetailBounds</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="IsGestureEnabled">
       <MemberSignature Language="C#" Value="public bool IsGestureEnabled { get; set; }" />
@@ -506,6 +506,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MasterDetailPage.MasterBounds" />
       <MemberSignature Language="F#" Value="member this.MasterBounds : Xamarin.Forms.Rectangle with get, set" Usage="Xamarin.Forms.MasterDetailPage.MasterBounds" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IMasterDetailPageController.MasterBounds</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -524,9 +527,6 @@ namespace FormsGallery
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IMasterDetailPageController.MasterBounds</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="On&lt;T&gt;">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.MasterDetailPage&gt; On&lt;T&gt; () where T : Xamarin.Forms.IConfigPlatform;" />
@@ -534,6 +534,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MasterDetailPage.On``1" />
       <MemberSignature Language="F#" Value="override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.MasterDetailPage (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="masterDetailPage.On " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -556,9 +559,6 @@ namespace FormsGallery
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnAppearing">
       <MemberSignature Language="C#" Value="protected override void OnAppearing ();" />
@@ -639,6 +639,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MasterDetailPage.ShouldShowSplitMode" />
       <MemberSignature Language="F#" Value="member this.ShouldShowSplitMode : bool" Usage="Xamarin.Forms.MasterDetailPage.ShouldShowSplitMode" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IMasterDetailPageController.ShouldShowSplitMode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -657,9 +660,6 @@ namespace FormsGallery
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IMasterDetailPageController.ShouldShowSplitMode</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="ShouldShowToolbarButton">
       <MemberSignature Language="C#" Value="public virtual bool ShouldShowToolbarButton ();" />
@@ -691,6 +691,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MasterDetailPage.UpdateMasterBehavior" />
       <MemberSignature Language="F#" Value="abstract member UpdateMasterBehavior : unit -&gt; unit&#xA;override this.UpdateMasterBehavior : unit -&gt; unit" Usage="masterDetailPage.UpdateMasterBehavior " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IMasterDetailPageController.UpdateMasterBehavior</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -709,9 +712,6 @@ namespace FormsGallery
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IMasterDetailPageController.UpdateMasterBehavior</InterfaceMember>
-      </Implements>
     </Member>
   </Members>
 </Type>

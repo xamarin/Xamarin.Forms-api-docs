@@ -88,7 +88,9 @@
     </Member>
     <Member MemberName="Deconstruct">
       <MemberSignature Language="C#" Value="public void Deconstruct (out double x, out double y);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct(float64 x, float64 y) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] float64&amp; x, [out] float64&amp; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Point.Deconstruct(System.Double@,System.Double@)" />
+      <MemberSignature Language="F#" Value="member this.Deconstruct :  *  -&gt; unit" Usage="point.Deconstruct (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -98,8 +100,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="y" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="x" Type="System.Double" RefType="out" />
+        <Parameter Name="y" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -258,7 +260,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Point op_Addition (Xamarin.Forms.Point pt, Xamarin.Forms.Size sz);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Point operator + (Xamarin.Forms.Point pt, Xamarin.Forms.Size sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Point op_Addition(valuetype Xamarin.Forms.Point pt, valuetype Xamarin.Forms.Size sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Point.op_Addition(Xamarin.Forms.Point,Xamarin.Forms.Size)" />
       <MemberSignature Language="F#" Value="static member ( + ) : Xamarin.Forms.Point * Xamarin.Forms.Size -&gt; Xamarin.Forms.Point" Usage="pt + sz" />
@@ -290,7 +292,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (Xamarin.Forms.Point ptA, Xamarin.Forms.Point ptB);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Xamarin.Forms.Point ptA, Xamarin.Forms.Point ptB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Xamarin.Forms.Point ptA, valuetype Xamarin.Forms.Point ptB) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Point.op_Equality(Xamarin.Forms.Point,Xamarin.Forms.Point)" />
       <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.Point * Xamarin.Forms.Point -&gt; bool" Usage="ptA = ptB" />
@@ -323,7 +325,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Size op_Explicit (Xamarin.Forms.Point pt);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Xamarin.Forms.Size (Xamarin.Forms.Point pt);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Size op_Explicit(valuetype Xamarin.Forms.Point pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Point.op_Explicit(Xamarin.Forms.Point)~Xamarin.Forms.Size" />
       <MemberSignature Language="F#" Value="static member op_Explicit : Xamarin.Forms.Point -&gt; Xamarin.Forms.Size" Usage="Xamarin.Forms.Point.op_Explicit pt" />
@@ -353,7 +355,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (Xamarin.Forms.Point ptA, Xamarin.Forms.Point ptB);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Xamarin.Forms.Point ptA, Xamarin.Forms.Point ptB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Xamarin.Forms.Point ptA, valuetype Xamarin.Forms.Point ptB) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Point.op_Inequality(Xamarin.Forms.Point,Xamarin.Forms.Point)" />
       <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.Point * Xamarin.Forms.Point -&gt; bool" Usage="Xamarin.Forms.Point.op_Inequality (ptA, ptB)" />
@@ -386,7 +388,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Point op_Subtraction (Xamarin.Forms.Point pt, Xamarin.Forms.Size sz);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Point operator - (Xamarin.Forms.Point pt, Xamarin.Forms.Size sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Point op_Subtraction(valuetype Xamarin.Forms.Point pt, valuetype Xamarin.Forms.Size sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Point.op_Subtraction(Xamarin.Forms.Point,Xamarin.Forms.Size)" />
       <MemberSignature Language="F#" Value="static member ( - ) : Xamarin.Forms.Point * Xamarin.Forms.Size -&gt; Xamarin.Forms.Point" Usage="pt - sz" />

@@ -1,5 +1,5 @@
 <Type Name="Menu" FullName="Xamarin.Forms.Menu">
-  <TypeSignature Language="C#" Value="public class Menu : Xamarin.Forms.BaseMenuItem, System.Collections.Generic.ICollection&lt;Xamarin.Forms.Menu&gt;, System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.Menu&gt;, System.Collections.Generic.IList&lt;Xamarin.Forms.Menu&gt;" />
+  <TypeSignature Language="C#" Value="public class Menu : Xamarin.Forms.BaseMenuItem, System.Collections.Generic.ICollection&lt;Xamarin.Forms.Menu&gt;, System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.Menu&gt;, System.Collections.Generic.IList&lt;Xamarin.Forms.Menu&gt;, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Menu extends Xamarin.Forms.BaseMenuItem implements class System.Collections.Generic.ICollection`1&lt;class Xamarin.Forms.Menu&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Xamarin.Forms.Menu&gt;, class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.Menu&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Menu" />
   <TypeSignature Language="F#" Value="type Menu = class&#xA;    inherit BaseMenuItem&#xA;    interface IList&lt;Menu&gt;&#xA;    interface ICollection&lt;Menu&gt;&#xA;    interface seq&lt;Menu&gt;&#xA;    interface IEnumerable" />
@@ -20,6 +20,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.Generic.IList&lt;Xamarin.Forms.Menu&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>

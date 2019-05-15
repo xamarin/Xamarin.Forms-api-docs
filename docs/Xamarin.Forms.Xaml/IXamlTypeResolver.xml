@@ -51,7 +51,9 @@
     </Member>
     <Member MemberName="TryResolve">
       <MemberSignature Language="C#" Value="public bool TryResolve (string qualifiedTypeName, out Type type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolve(string qualifiedTypeName, class System.Type type) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolve(string qualifiedTypeName, [out] class System.Type&amp; type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.IXamlTypeResolver.TryResolve(System.String,System.Type@)" />
+      <MemberSignature Language="F#" Value="abstract member TryResolve : string *  -&gt; bool" Usage="iXamlTypeResolver.TryResolve (qualifiedTypeName, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -62,7 +64,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="qualifiedTypeName" Type="System.String" />
-        <Parameter Name="type" Type="System.Type&amp;" RefType="out" />
+        <Parameter Name="type" Type="System.Type" RefType="out" />
       </Parameters>
       <Docs>
         <param name="qualifiedTypeName">To be added.</param>

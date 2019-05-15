@@ -540,6 +540,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Grid.InvalidateMeasureInernalNonVirtual(Xamarin.Forms.Internals.InvalidationTrigger)" />
       <MemberSignature Language="F#" Value="abstract member InvalidateMeasureInernalNonVirtual : Xamarin.Forms.Internals.InvalidationTrigger -&gt; unit&#xA;override this.InvalidateMeasureInernalNonVirtual : Xamarin.Forms.Internals.InvalidationTrigger -&gt; unit" Usage="grid.InvalidateMeasureInernalNonVirtual trigger" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IGridController.InvalidateMeasureInernalNonVirtual(Xamarin.Forms.Internals.InvalidationTrigger)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -561,9 +564,6 @@ namespace FormsGallery
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IGridController.InvalidateMeasureInernalNonVirtual(Xamarin.Forms.Internals.InvalidationTrigger)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="LayoutChildren">
       <MemberSignature Language="C#" Value="protected override void LayoutChildren (double x, double y, double width, double height);" />
@@ -608,6 +608,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Grid.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Grid (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Grid (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="grid.On " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -630,9 +633,6 @@ namespace FormsGallery
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnAdded">
       <MemberSignature Language="C#" Value="protected override void OnAdded (Xamarin.Forms.View view);" />

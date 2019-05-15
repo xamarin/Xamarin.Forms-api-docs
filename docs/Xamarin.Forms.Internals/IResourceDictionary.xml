@@ -1,5 +1,5 @@
 <Type Name="IResourceDictionary" FullName="Xamarin.Forms.Internals.IResourceDictionary">
-  <TypeSignature Language="C#" Value="public interface IResourceDictionary : System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;" />
+  <TypeSignature Language="C#" Value="public interface IResourceDictionary : System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResourceDictionary implements class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.IResourceDictionary" />
   <TypeSignature Language="F#" Value="type IResourceDictionary = interface&#xA;    interface seq&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface IEnumerable" />
@@ -11,6 +11,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -25,7 +28,9 @@
   <Members>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (string key, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, [out] object&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IResourceDictionary.TryGetValue(System.String,System.Object@)" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : string *  -&gt; bool" Usage="iResourceDictionary.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -36,7 +41,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">To be added.</param>
@@ -47,7 +52,7 @@
       </Docs>
     </Member>
     <Member MemberName="ValuesChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.Internals.ResourcesChangedEventArgs&gt; ValuesChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.ResourcesChangedEventArgs&gt; ValuesChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.ResourcesChangedEventArgs&gt; ValuesChanged" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.IResourceDictionary.ValuesChanged" />
       <MemberSignature Language="F#" Value="member this.ValuesChanged : EventHandler&lt;Xamarin.Forms.Internals.ResourcesChangedEventArgs&gt; " Usage="member this.ValuesChanged : System.EventHandler&lt;Xamarin.Forms.Internals.ResourcesChangedEventArgs&gt; " />

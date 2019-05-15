@@ -11,7 +11,13 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -20,7 +26,7 @@
   </Docs>
   <Members>
     <Member MemberName="DisplayRequested">
-      <MemberSignature Language="C#" Value="public event EventHandler DisplayRequested;" />
+      <MemberSignature Language="C#" Value="event EventHandler DisplayRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DisplayRequested" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IOpenGlViewController.DisplayRequested" />
       <MemberSignature Language="F#" Value="member this.DisplayRequested : EventHandler " Usage="member this.DisplayRequested : System.EventHandler " />

@@ -13,10 +13,10 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{XmlNamespace}, {ClrNamespace}, {AssemblyName}")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("{XmlNamespace}, {ClrNamespace}, {AssemblyName}")</AttributeName>
+      <AttributeName>System.AttributeUsage</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

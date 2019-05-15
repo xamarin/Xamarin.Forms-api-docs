@@ -86,6 +86,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Layout`1.Children" />
       <MemberSignature Language="F#" Value="member this.Children : System.Collections.Generic.IList&lt;'T (requires 'T :&gt; Xamarin.Forms.View)&gt;" Usage="Xamarin.Forms.Layout&lt;'T (requires 'T :&gt; Xamarin.Forms.View)&gt;.Children" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IViewContainer`1.Children</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -123,9 +126,6 @@
           </example>
         </remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IViewContainer`1.Children</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnAdded">
       <MemberSignature Language="C#" Value="protected virtual void OnAdded (T view);" />

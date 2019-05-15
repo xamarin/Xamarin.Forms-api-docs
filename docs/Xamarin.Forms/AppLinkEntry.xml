@@ -46,6 +46,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.AppLinkEntry.AppLinkUri" />
       <MemberSignature Language="F#" Value="member this.AppLinkUri : Uri with get, set" Usage="Xamarin.Forms.AppLinkEntry.AppLinkUri" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.AppLinkUri</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -60,9 +63,6 @@
         <remarks>To be added.</remarks>
         <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.AppLinkUri</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="AppLinkUriProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty AppLinkUriProperty;" />
@@ -89,6 +89,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.AppLinkEntry.Description" />
       <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Xamarin.Forms.AppLinkEntry.Description" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.Description</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -103,9 +106,6 @@
         <remarks>To be added.</remarks>
         <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.Description</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="DescriptionProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DescriptionProperty;" />
@@ -156,6 +156,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.AppLinkEntry.IsLinkActive" />
       <MemberSignature Language="F#" Value="member this.IsLinkActive : bool with get, set" Usage="Xamarin.Forms.AppLinkEntry.IsLinkActive" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.IsLinkActive</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -170,9 +173,6 @@
         <remarks>Application developers can set this value in <see cref="E:Xamarin.Forms.Application.PageAppearing" /> and <see cref="E:Xamarin.Forms.Application.PageDisappearing" /> methods to control whether the app link is shown for indexing or Handoff.</remarks>
         <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.IsLinkActive</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="IsLinkActiveProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsLinkActiveProperty;" />
@@ -200,6 +200,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.AppLinkEntry.KeyValues" />
       <MemberSignature Language="F#" Value="member this.KeyValues : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Xamarin.Forms.AppLinkEntry.KeyValues" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.KeyValues</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -214,9 +217,6 @@
         <remarks>The standard keys are <c>contentType</c>, <c>associatedWebPage</c>, and <c>shouldAddToPublicIndex</c>.</remarks>
         <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.KeyValues</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Thumbnail">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource Thumbnail { get; set; }" />
@@ -224,6 +224,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.AppLinkEntry.Thumbnail" />
       <MemberSignature Language="F#" Value="member this.Thumbnail : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.AppLinkEntry.Thumbnail" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.Thumbnail</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -238,9 +241,6 @@
         <remarks>To be added.</remarks>
         <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.Thumbnail</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="ThumbnailProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ThumbnailProperty;" />
@@ -267,6 +267,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.AppLinkEntry.Title" />
       <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Xamarin.Forms.AppLinkEntry.Title" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.Title</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -281,9 +284,6 @@
         <remarks>To be added.</remarks>
         <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/working-with/deep-linking/">Application Indexing and Deep Linking</related>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IAppLinkEntry.Title</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="TitleProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TitleProperty;" />

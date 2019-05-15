@@ -21,10 +21,19 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.ImageButton&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.IImageController</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IImageElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -164,7 +173,7 @@
       </Docs>
     </Member>
     <Member MemberName="ChangeVisualState">
-      <MemberSignature Language="C#" Value="protected override void ChangeVisualState ();" />
+      <MemberSignature Language="C#" Value="protected internal override void ChangeVisualState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ChangeVisualState() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.ChangeVisualState" />
       <MemberSignature Language="F#" Value="override this.ChangeVisualState : unit -&gt; unit" Usage="imageButton.ChangeVisualState " />
@@ -206,6 +215,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.Command" />
       <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.ImageButton.Command" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.Command</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -218,9 +230,6 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.Command</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="CommandParameter">
       <MemberSignature Language="C#" Value="public object CommandParameter { get; set; }" />
@@ -228,6 +237,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.CommandParameter" />
       <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="Xamarin.Forms.ImageButton.CommandParameter" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.CommandParameter</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -240,9 +252,6 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.CommandParameter</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="CommandParameterProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CommandParameterProperty;" />
@@ -397,6 +406,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.IsPressed" />
       <MemberSignature Language="F#" Value="member this.IsPressed : bool" Usage="Xamarin.Forms.ImageButton.IsPressed" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.IsPressed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -409,9 +421,6 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.IsPressed</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="IsPressedProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsPressedProperty;" />
@@ -437,6 +446,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.ImageButton (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.ImageButton (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="imageButton.On " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -458,9 +470,6 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnBindingContextChanged">
       <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
@@ -567,6 +576,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.PropagateUpClicked" />
       <MemberSignature Language="F#" Value="abstract member PropagateUpClicked : unit -&gt; unit&#xA;override this.PropagateUpClicked : unit -&gt; unit" Usage="imageButton.PropagateUpClicked " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.PropagateUpClicked</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -579,9 +591,6 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.PropagateUpClicked</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="PropagateUpPressed">
       <MemberSignature Language="C#" Value="public void PropagateUpPressed ();" />
@@ -589,6 +598,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.PropagateUpPressed" />
       <MemberSignature Language="F#" Value="abstract member PropagateUpPressed : unit -&gt; unit&#xA;override this.PropagateUpPressed : unit -&gt; unit" Usage="imageButton.PropagateUpPressed " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.PropagateUpPressed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -601,9 +613,6 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.PropagateUpPressed</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="PropagateUpReleased">
       <MemberSignature Language="C#" Value="public void PropagateUpReleased ();" />
@@ -611,6 +620,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.PropagateUpReleased" />
       <MemberSignature Language="F#" Value="abstract member PropagateUpReleased : unit -&gt; unit&#xA;override this.PropagateUpReleased : unit -&gt; unit" Usage="imageButton.PropagateUpReleased " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.PropagateUpReleased</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -623,9 +635,6 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.PropagateUpReleased</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="RaiseImageSourcePropertyChanged">
       <MemberSignature Language="C#" Value="public void RaiseImageSourcePropertyChanged ();" />
@@ -633,6 +642,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.RaiseImageSourcePropertyChanged" />
       <MemberSignature Language="F#" Value="abstract member RaiseImageSourcePropertyChanged : unit -&gt; unit&#xA;override this.RaiseImageSourcePropertyChanged : unit -&gt; unit" Usage="imageButton.RaiseImageSourcePropertyChanged " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -645,9 +657,6 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Released">
       <MemberSignature Language="C#" Value="public event EventHandler Released;" />
@@ -673,6 +682,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.SendClicked" />
       <MemberSignature Language="F#" Value="abstract member SendClicked : unit -&gt; unit&#xA;override this.SendClicked : unit -&gt; unit" Usage="imageButton.SendClicked " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendClicked</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -690,9 +702,6 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendClicked</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SendPressed">
       <MemberSignature Language="C#" Value="public void SendPressed ();" />
@@ -700,6 +709,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.SendPressed" />
       <MemberSignature Language="F#" Value="abstract member SendPressed : unit -&gt; unit&#xA;override this.SendPressed : unit -&gt; unit" Usage="imageButton.SendPressed " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendPressed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -717,9 +729,6 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendPressed</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SendReleased">
       <MemberSignature Language="C#" Value="public void SendReleased ();" />
@@ -727,6 +736,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.SendReleased" />
       <MemberSignature Language="F#" Value="abstract member SendReleased : unit -&gt; unit&#xA;override this.SendReleased : unit -&gt; unit" Usage="imageButton.SendReleased " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendReleased</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -744,9 +756,6 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendReleased</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SetIsLoading">
       <MemberSignature Language="C#" Value="public void SetIsLoading (bool isLoading);" />
@@ -754,6 +763,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.SetIsLoading(System.Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SetIsLoading : bool -&gt; unit&#xA;override this.SetIsLoading : bool -&gt; unit" Usage="imageButton.SetIsLoading isLoading" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageController.SetIsLoading(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -774,9 +786,6 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IImageController.SetIsLoading(System.Boolean)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SetIsPressed">
       <MemberSignature Language="C#" Value="public void SetIsPressed (bool isPressed);" />
@@ -784,6 +793,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.SetIsPressed(System.Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SetIsPressed : bool -&gt; unit&#xA;override this.SetIsPressed : bool -&gt; unit" Usage="imageButton.SetIsPressed isPressed" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.SetIsPressed(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -804,9 +816,6 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.SetIsPressed(System.Boolean)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Source">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource Source { get; set; }" />
@@ -856,6 +865,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#BorderColorDefaultValue" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderColorDefaultValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderColorDefaultValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -868,9 +880,6 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderColorDefaultValue</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.BorderWidthDefaultValue">
       <MemberSignature Language="C#" Value="double Xamarin.Forms.IBorderElement.BorderWidthDefaultValue { get; }" />
@@ -878,6 +887,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#BorderWidthDefaultValue" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderWidthDefaultValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderWidthDefaultValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -890,9 +902,6 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderWidthDefaultValue</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue">
       <MemberSignature Language="C#" Value="int Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue { get; }" />
@@ -900,6 +909,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#CornerRadiusDefaultValue" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -912,15 +924,15 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.IsBackgroundColorSet">
       <MemberSignature Language="C#" Value="bool IBorderElement.IsBackgroundColorSet ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBackgroundColorSet() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#IsBackgroundColorSet" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBackgroundColorSet</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -934,15 +946,15 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBackgroundColorSet</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.IsBorderColorSet">
       <MemberSignature Language="C#" Value="bool IBorderElement.IsBorderColorSet ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBorderColorSet() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#IsBorderColorSet" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderColorSet</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -956,15 +968,15 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderColorSet</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.IsBorderWidthSet">
       <MemberSignature Language="C#" Value="bool IBorderElement.IsBorderWidthSet ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBorderWidthSet() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#IsBorderWidthSet" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderWidthSet</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -978,15 +990,15 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderWidthSet</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.IsCornerRadiusSet">
       <MemberSignature Language="C#" Value="bool IBorderElement.IsCornerRadiusSet ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsCornerRadiusSet() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#IsCornerRadiusSet" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsCornerRadiusSet</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1000,15 +1012,15 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsCornerRadiusSet</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged">
       <MemberSignature Language="C#" Value="void IBorderElement.OnBorderColorPropertyChanged (Xamarin.Forms.Color oldValue, Xamarin.Forms.Color newValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(valuetype Xamarin.Forms.Color oldValue, valuetype Xamarin.Forms.Color newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1026,15 +1038,15 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged">
       <MemberSignature Language="C#" Value="void IImageElement.OnImageSourcesSourceChanged (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IImageElement#OnImageSourcesSourceChanged(System.Object,System.EventArgs)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(System.Object,System.EventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1052,9 +1064,6 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(System.Object,System.EventArgs)</InterfaceMember>
-      </Implements>
     </Member>
   </Members>
 </Type>

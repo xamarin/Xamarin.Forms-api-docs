@@ -12,7 +12,16 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IPageController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.IShellController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -61,6 +70,8 @@
     <Member MemberName="BackgroundColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty BackgroundColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty BackgroundColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.BackgroundColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.BackgroundColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -172,6 +183,8 @@
     <Member MemberName="DisabledColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DisabledColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DisabledColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.DisabledColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DisabledColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.DisabledColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -447,6 +460,8 @@
     <Member MemberName="ForegroundColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ForegroundColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ForegroundColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ForegroundColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ForegroundColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -486,6 +501,8 @@
     <Member MemberName="GetBackgroundColor">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetBackgroundColor (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetBackgroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetBackgroundColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetBackgroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetBackgroundColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -507,6 +524,8 @@
     <Member MemberName="GetDisabledColor">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetDisabledColor (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetDisabledColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetDisabledColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetDisabledColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetDisabledColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -551,6 +570,8 @@
     <Member MemberName="GetForegroundColor">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetForegroundColor (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetForegroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetForegroundColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetForegroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetForegroundColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -572,6 +593,8 @@
     <Member MemberName="GetItemTemplate">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.DataTemplate GetItemTemplate (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.DataTemplate GetItemTemplate(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetItemTemplate(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetItemTemplate : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.DataTemplate" Usage="Xamarin.Forms.Shell.GetItemTemplate obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -593,6 +616,8 @@
     <Member MemberName="GetMenuItemTemplate">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.DataTemplate GetMenuItemTemplate (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.DataTemplate GetMenuItemTemplate(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetMenuItemTemplate(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetMenuItemTemplate : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.DataTemplate" Usage="Xamarin.Forms.Shell.GetMenuItemTemplate obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -661,6 +686,8 @@
     <Member MemberName="GetTabBarBackgroundColor">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTabBarBackgroundColor (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTabBarBackgroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTabBarBackgroundColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTabBarBackgroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTabBarBackgroundColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -682,6 +709,8 @@
     <Member MemberName="GetTabBarDisabledColor">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTabBarDisabledColor (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTabBarDisabledColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTabBarDisabledColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTabBarDisabledColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTabBarDisabledColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -703,6 +732,8 @@
     <Member MemberName="GetTabBarForegroundColor">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTabBarForegroundColor (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTabBarForegroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTabBarForegroundColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTabBarForegroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTabBarForegroundColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -747,6 +778,8 @@
     <Member MemberName="GetTabBarTitleColor">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTabBarTitleColor (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTabBarTitleColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTabBarTitleColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTabBarTitleColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTabBarTitleColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -768,6 +801,8 @@
     <Member MemberName="GetTabBarUnselectedColor">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTabBarUnselectedColor (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTabBarUnselectedColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTabBarUnselectedColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTabBarUnselectedColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTabBarUnselectedColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -789,6 +824,8 @@
     <Member MemberName="GetTitleColor">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTitleColor (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTitleColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTitleColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTitleColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTitleColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -833,6 +870,8 @@
     <Member MemberName="GetUnselectedColor">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetUnselectedColor (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetUnselectedColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetUnselectedColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetUnselectedColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetUnselectedColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -887,7 +926,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.ShellItem&gt; Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.ShellItem&gt; Items" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.Items" />
-      <MemberSignature Language="F#" Value="member this.Items : Xamarin.Forms.ShellItemCollection" Usage="Xamarin.Forms.Shell.Items" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.IList&lt;Xamarin.Forms.ShellItem&gt;" Usage="Xamarin.Forms.Shell.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1233,6 +1272,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetBackgroundColor">
       <MemberSignature Language="C#" Value="public static void SetBackgroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBackgroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetBackgroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetBackgroundColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1255,6 +1296,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetDisabledColor">
       <MemberSignature Language="C#" Value="public static void SetDisabledColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDisabledColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetDisabledColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetDisabledColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetDisabledColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1301,6 +1344,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetForegroundColor">
       <MemberSignature Language="C#" Value="public static void SetForegroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetForegroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetForegroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetForegroundColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1323,6 +1368,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetItemTemplate">
       <MemberSignature Language="C#" Value="public static void SetItemTemplate (Xamarin.Forms.BindableObject obj, Xamarin.Forms.DataTemplate itemTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetItemTemplate(class Xamarin.Forms.BindableObject obj, class Xamarin.Forms.DataTemplate itemTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetItemTemplate(Xamarin.Forms.BindableObject,Xamarin.Forms.DataTemplate)" />
+      <MemberSignature Language="F#" Value="static member SetItemTemplate : Xamarin.Forms.BindableObject * Xamarin.Forms.DataTemplate -&gt; unit" Usage="Xamarin.Forms.Shell.SetItemTemplate (obj, itemTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1345,6 +1392,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetMenuItemTemplate">
       <MemberSignature Language="C#" Value="public static void SetMenuItemTemplate (Xamarin.Forms.BindableObject obj, Xamarin.Forms.DataTemplate menuItemTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetMenuItemTemplate(class Xamarin.Forms.BindableObject obj, class Xamarin.Forms.DataTemplate menuItemTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetMenuItemTemplate(Xamarin.Forms.BindableObject,Xamarin.Forms.DataTemplate)" />
+      <MemberSignature Language="F#" Value="static member SetMenuItemTemplate : Xamarin.Forms.BindableObject * Xamarin.Forms.DataTemplate -&gt; unit" Usage="Xamarin.Forms.Shell.SetMenuItemTemplate (obj, menuItemTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1415,6 +1464,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetTabBarBackgroundColor">
       <MemberSignature Language="C#" Value="public static void SetTabBarBackgroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabBarBackgroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTabBarBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTabBarBackgroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTabBarBackgroundColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1437,6 +1488,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetTabBarDisabledColor">
       <MemberSignature Language="C#" Value="public static void SetTabBarDisabledColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabBarDisabledColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTabBarDisabledColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTabBarDisabledColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTabBarDisabledColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1459,6 +1512,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetTabBarForegroundColor">
       <MemberSignature Language="C#" Value="public static void SetTabBarForegroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabBarForegroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTabBarForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTabBarForegroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTabBarForegroundColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1505,6 +1560,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetTabBarTitleColor">
       <MemberSignature Language="C#" Value="public static void SetTabBarTitleColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabBarTitleColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTabBarTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTabBarTitleColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTabBarTitleColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1527,6 +1584,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetTabBarUnselectedColor">
       <MemberSignature Language="C#" Value="public static void SetTabBarUnselectedColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabBarUnselectedColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTabBarUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTabBarUnselectedColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTabBarUnselectedColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1549,6 +1608,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetTitleColor">
       <MemberSignature Language="C#" Value="public static void SetTitleColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTitleColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTitleColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1595,6 +1656,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="SetUnselectedColor">
       <MemberSignature Language="C#" Value="public static void SetUnselectedColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetUnselectedColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetUnselectedColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetUnselectedColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1617,6 +1680,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="TabBarBackgroundColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabBarBackgroundColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabBarBackgroundColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TabBarBackgroundColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabBarBackgroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TabBarBackgroundColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1633,6 +1698,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="TabBarDisabledColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabBarDisabledColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabBarDisabledColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TabBarDisabledColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabBarDisabledColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TabBarDisabledColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1649,6 +1716,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="TabBarForegroundColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabBarForegroundColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabBarForegroundColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TabBarForegroundColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabBarForegroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TabBarForegroundColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1683,6 +1752,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="TabBarTitleColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabBarTitleColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabBarTitleColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TabBarTitleColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabBarTitleColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TabBarTitleColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1699,6 +1770,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="TabBarUnselectedColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabBarUnselectedColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabBarUnselectedColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TabBarUnselectedColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabBarUnselectedColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TabBarUnselectedColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1715,6 +1788,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="TitleColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TitleColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TitleColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TitleColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TitleColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TitleColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1749,6 +1824,8 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
     <Member MemberName="UnselectedColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty UnselectedColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty UnselectedColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.UnselectedColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnselectedColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.UnselectedColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1767,6 +1844,9 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.AddAppearanceObserver(class Xamarin.Forms.IAppearanceObserver observer, class Xamarin.Forms.Element pivot) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#AddAppearanceObserver(Xamarin.Forms.IAppearanceObserver,Xamarin.Forms.Element)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.AddAppearanceObserver(Xamarin.Forms.IAppearanceObserver,Xamarin.Forms.Element)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1784,15 +1864,15 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.AddAppearanceObserver(Xamarin.Forms.IAppearanceObserver,Xamarin.Forms.Element)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver">
       <MemberSignature Language="C#" Value="void IShellController.AddFlyoutBehaviorObserver (Xamarin.Forms.IFlyoutBehaviorObserver observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver(class Xamarin.Forms.IFlyoutBehaviorObserver observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#AddFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1808,15 +1888,15 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.AppearanceChanged">
       <MemberSignature Language="C#" Value="void IShellController.AppearanceChanged (Xamarin.Forms.Element source, bool appearanceSet);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.AppearanceChanged(class Xamarin.Forms.Element source, bool appearanceSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#AppearanceChanged(Xamarin.Forms.Element,System.Boolean)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.AppearanceChanged(Xamarin.Forms.Element,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1834,9 +1914,6 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.AppearanceChanged(Xamarin.Forms.Element,System.Boolean)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.FlyoutHeader">
       <MemberSignature Language="C#" Value="Xamarin.Forms.View Xamarin.Forms.IShellController.FlyoutHeader { get; }" />
@@ -1844,6 +1921,9 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#FlyoutHeader" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellController.FlyoutHeader" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IShellController.FlyoutHeader</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1856,15 +1936,15 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IShellController.FlyoutHeader</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.GenerateFlyoutGrouping">
       <MemberSignature Language="C#" Value="System.Collections.Generic.List&lt;System.Collections.Generic.List&lt;Xamarin.Forms.Element&gt;&gt; IShellController.GenerateFlyoutGrouping ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class System.Collections.Generic.List`1&lt;class Xamarin.Forms.Element&gt;&gt; Xamarin.Forms.IShellController.GenerateFlyoutGrouping() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#GenerateFlyoutGrouping" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.GenerateFlyoutGrouping</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1878,15 +1958,15 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.GenerateFlyoutGrouping</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.GetNavigationState">
       <MemberSignature Language="C#" Value="Xamarin.Forms.ShellNavigationState IShellController.GetNavigationState (Xamarin.Forms.ShellItem shellItem, Xamarin.Forms.ShellSection shellSection, Xamarin.Forms.ShellContent shellContent, bool includeStack);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Xamarin.Forms.ShellNavigationState Xamarin.Forms.IShellController.GetNavigationState(class Xamarin.Forms.ShellItem shellItem, class Xamarin.Forms.ShellSection shellSection, class Xamarin.Forms.ShellContent shellContent, bool includeStack) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#GetNavigationState(Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Boolean)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.GetNavigationState(Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1909,24 +1989,19 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.GetNavigationState(Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Boolean)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.OnFlyoutItemSelected">
       <MemberSignature Language="C#" Value="void IShellController.OnFlyoutItemSelected (Xamarin.Forms.Element element);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.OnFlyoutItemSelected(class Xamarin.Forms.Element element) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#OnFlyoutItemSelected(Xamarin.Forms.Element)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.OnFlyoutItemSelected(Xamarin.Forms.Element)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.Shell/&lt;Xamarin-Forms-IShellController-OnFlyoutItemSelected&gt;d__74))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1938,24 +2013,19 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.OnFlyoutItemSelected(Xamarin.Forms.Element)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync">
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IShellController.OnFlyoutItemSelectedAsync (Xamarin.Forms.Element element);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync(class Xamarin.Forms.Element element) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.Shell/&lt;Xamarin-Forms-IShellController-OnFlyoutItemSelectedAsync&gt;d__75))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1968,15 +2038,15 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.ProposeNavigation">
       <MemberSignature Language="C#" Value="bool IShellController.ProposeNavigation (Xamarin.Forms.ShellNavigationSource source, Xamarin.Forms.ShellItem shellItem, Xamarin.Forms.ShellSection shellSection, Xamarin.Forms.ShellContent shellContent, System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt; stack, bool canCancel);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellController.ProposeNavigation(valuetype Xamarin.Forms.ShellNavigationSource source, class Xamarin.Forms.ShellItem shellItem, class Xamarin.Forms.ShellSection shellSection, class Xamarin.Forms.ShellContent shellContent, class System.Collections.Generic.IReadOnlyList`1&lt;class Xamarin.Forms.Page&gt; stack, bool canCancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#ProposeNavigation(Xamarin.Forms.ShellNavigationSource,Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Collections.Generic.IReadOnlyList{Xamarin.Forms.Page},System.Boolean)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.ProposeNavigation(Xamarin.Forms.ShellNavigationSource,Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Collections.Generic.IReadOnlyList{Xamarin.Forms.Page},System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2003,15 +2073,15 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.ProposeNavigation(Xamarin.Forms.ShellNavigationSource,Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Collections.Generic.IReadOnlyList{Xamarin.Forms.Page},System.Boolean)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.RemoveAppearanceObserver">
       <MemberSignature Language="C#" Value="bool IShellController.RemoveAppearanceObserver (Xamarin.Forms.IAppearanceObserver observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellController.RemoveAppearanceObserver(class Xamarin.Forms.IAppearanceObserver observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#RemoveAppearanceObserver(Xamarin.Forms.IAppearanceObserver)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.RemoveAppearanceObserver(Xamarin.Forms.IAppearanceObserver)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2028,15 +2098,15 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.RemoveAppearanceObserver(Xamarin.Forms.IAppearanceObserver)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver">
       <MemberSignature Language="C#" Value="bool IShellController.RemoveFlyoutBehaviorObserver (Xamarin.Forms.IFlyoutBehaviorObserver observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver(class Xamarin.Forms.IFlyoutBehaviorObserver observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#RemoveFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2053,15 +2123,35 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IShellController.StructureChanged">
+      <MemberSignature Language="C#" Value="event EventHandler Xamarin.Forms.IShellController.StructureChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Xamarin.Forms.IShellController.StructureChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#StructureChanged" />
+      <MemberType>Event</MemberType>
       <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)</InterfaceMember>
+        <InterfaceMember>E:Xamarin.Forms.IShellController.StructureChanged</InterfaceMember>
       </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
     </Member>
     <Member MemberName="Xamarin.Forms.IShellController.UpdateCurrentState">
       <MemberSignature Language="C#" Value="void IShellController.UpdateCurrentState (Xamarin.Forms.ShellNavigationSource source);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.UpdateCurrentState(valuetype Xamarin.Forms.ShellNavigationSource source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#UpdateCurrentState(Xamarin.Forms.ShellNavigationSource)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.UpdateCurrentState(Xamarin.Forms.ShellNavigationSource)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2077,9 +2167,6 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellController.UpdateCurrentState(Xamarin.Forms.ShellNavigationSource)</InterfaceMember>
-      </Implements>
     </Member>
   </Members>
 </Type>

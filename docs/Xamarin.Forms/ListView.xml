@@ -26,7 +26,16 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.ListView&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.IListViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -295,6 +304,9 @@ class ListViewDemoPage : ContentPage
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.CreateDefaultCell(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member CreateDefaultCell : obj -&gt; Xamarin.Forms.Cell&#xA;override this.CreateDefaultCell : obj -&gt; Xamarin.Forms.Cell" Usage="listView.CreateDefaultCell item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.CreateDefaultCell(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -317,9 +329,6 @@ class ListViewDemoPage : ContentPage
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IListViewController.CreateDefaultCell(System.Object)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="EndRefresh">
       <MemberSignature Language="C#" Value="public void EndRefresh ();" />
@@ -373,6 +382,9 @@ class ListViewDemoPage : ContentPage
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.FooterElement" />
       <MemberSignature Language="F#" Value="member this.FooterElement : Xamarin.Forms.Element" Usage="Xamarin.Forms.ListView.FooterElement" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IListViewController.FooterElement</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -391,9 +403,6 @@ class ListViewDemoPage : ContentPage
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IListViewController.FooterElement</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="FooterProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FooterProperty;" />
@@ -468,6 +477,9 @@ class ListViewDemoPage : ContentPage
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.GetDisplayTextFromGroup(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member GetDisplayTextFromGroup : obj -&gt; string&#xA;override this.GetDisplayTextFromGroup : obj -&gt; string" Usage="listView.GetDisplayTextFromGroup cell" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.GetDisplayTextFromGroup(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -490,9 +502,6 @@ class ListViewDemoPage : ContentPage
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IListViewController.GetDisplayTextFromGroup(System.Object)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="GroupDisplayBinding">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.BindingBase GroupDisplayBinding { get; set; }" />
@@ -844,6 +853,9 @@ ListView CreateListView()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ListView.HeaderElement" />
       <MemberSignature Language="F#" Value="member this.HeaderElement : Xamarin.Forms.Element" Usage="Xamarin.Forms.ListView.HeaderElement" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IListViewController.HeaderElement</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -862,9 +874,6 @@ ListView CreateListView()
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IListViewController.HeaderElement</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="HeaderProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty HeaderProperty;" />
@@ -1227,6 +1236,9 @@ ListView CreateListView()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell)" />
       <MemberSignature Language="F#" Value="abstract member NotifyRowTapped : int * Xamarin.Forms.Cell -&gt; unit&#xA;override this.NotifyRowTapped : int * Xamarin.Forms.Cell -&gt; unit" Usage="listView.NotifyRowTapped (index, cell)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1250,9 +1262,6 @@ ListView CreateListView()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="NotifyRowTapped">
       <MemberSignature Language="C#" Value="public void NotifyRowTapped (int groupIndex, int inGroupIndex, Xamarin.Forms.Cell cell = null);" />
@@ -1260,6 +1269,9 @@ ListView CreateListView()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell)" />
       <MemberSignature Language="F#" Value="abstract member NotifyRowTapped : int * int * Xamarin.Forms.Cell -&gt; unit&#xA;override this.NotifyRowTapped : int * int * Xamarin.Forms.Cell -&gt; unit" Usage="listView.NotifyRowTapped (groupIndex, inGroupIndex, cell)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1285,9 +1297,6 @@ ListView CreateListView()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="On&lt;T&gt;">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.ListView&gt; On&lt;T&gt; () where T : Xamarin.Forms.IConfigPlatform;" />
@@ -1295,6 +1304,9 @@ ListView CreateListView()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.ListView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.ListView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="listView.On " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1317,9 +1329,6 @@ ListView CreateListView()
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnBindingContextChanged">
       <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
@@ -1642,6 +1651,9 @@ ListView CreateListView()
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ListView.ScrollToRequested" />
       <MemberSignature Language="F#" Value="member this.ScrollToRequested : EventHandler&lt;Xamarin.Forms.ScrollToRequestedEventArgs&gt; " Usage="member this.ScrollToRequested : System.EventHandler&lt;Xamarin.Forms.ScrollToRequestedEventArgs&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IListViewController.ScrollToRequested</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1659,9 +1671,6 @@ ListView CreateListView()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IListViewController.ScrollToRequested</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SelectedItem">
       <MemberSignature Language="C#" Value="public object SelectedItem { get; set; }" />
@@ -1762,6 +1771,9 @@ ListView CreateListView()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.SendCellAppearing(Xamarin.Forms.Cell)" />
       <MemberSignature Language="F#" Value="abstract member SendCellAppearing : Xamarin.Forms.Cell -&gt; unit&#xA;override this.SendCellAppearing : Xamarin.Forms.Cell -&gt; unit" Usage="listView.SendCellAppearing cell" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.SendCellAppearing(Xamarin.Forms.Cell)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1783,9 +1795,6 @@ ListView CreateListView()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IListViewController.SendCellAppearing(Xamarin.Forms.Cell)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SendCellDisappearing">
       <MemberSignature Language="C#" Value="public void SendCellDisappearing (Xamarin.Forms.Cell cell);" />
@@ -1793,6 +1802,9 @@ ListView CreateListView()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.SendCellDisappearing(Xamarin.Forms.Cell)" />
       <MemberSignature Language="F#" Value="abstract member SendCellDisappearing : Xamarin.Forms.Cell -&gt; unit&#xA;override this.SendCellDisappearing : Xamarin.Forms.Cell -&gt; unit" Usage="listView.SendCellDisappearing cell" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.SendCellDisappearing(Xamarin.Forms.Cell)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1814,9 +1826,6 @@ ListView CreateListView()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IListViewController.SendCellDisappearing(Xamarin.Forms.Cell)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SendRefreshing">
       <MemberSignature Language="C#" Value="public void SendRefreshing ();" />
@@ -1824,6 +1833,9 @@ ListView CreateListView()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.SendRefreshing" />
       <MemberSignature Language="F#" Value="abstract member SendRefreshing : unit -&gt; unit&#xA;override this.SendRefreshing : unit -&gt; unit" Usage="listView.SendRefreshing " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IListViewController.SendRefreshing</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1842,9 +1854,6 @@ ListView CreateListView()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IListViewController.SendRefreshing</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SeparatorColor">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Color SeparatorColor { get; set; }" />

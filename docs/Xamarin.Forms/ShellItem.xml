@@ -15,6 +15,9 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.ShellItem&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.IShellItemController</InterfaceName>
     </Interface>
   </Interfaces>
@@ -87,7 +90,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.ShellSection&gt; Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.ShellSection&gt; Items" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellItem.Items" />
-      <MemberSignature Language="F#" Value="member this.Items : Xamarin.Forms.ShellSectionCollection" Usage="Xamarin.Forms.ShellItem.Items" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.IList&lt;Xamarin.Forms.ShellSection&gt;" Usage="Xamarin.Forms.ShellItem.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -126,6 +129,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellItem.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.ShellItem (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.ShellItem (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="shellItem.On " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -147,9 +153,6 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnChildAdded">
       <MemberSignature Language="C#" Value="protected override void OnChildAdded (Xamarin.Forms.Element child);" />
@@ -200,7 +203,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ShellItem op_Implicit (Xamarin.Forms.MenuItem menuItem);" />
+      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.ShellItem (Xamarin.Forms.MenuItem menuItem);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Xamarin.Forms.ShellItem op_Implicit(class Xamarin.Forms.MenuItem menuItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellItem.op_Implicit(Xamarin.Forms.MenuItem)~Xamarin.Forms.ShellItem" />
       <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.MenuItem -&gt; Xamarin.Forms.ShellItem" Usage="Xamarin.Forms.ShellItem.op_Implicit menuItem" />
@@ -223,7 +226,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ShellItem op_Implicit (Xamarin.Forms.ShellContent shellContent);" />
+      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.ShellItem (Xamarin.Forms.ShellContent shellContent);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Xamarin.Forms.ShellItem op_Implicit(class Xamarin.Forms.ShellContent shellContent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellItem.op_Implicit(Xamarin.Forms.ShellContent)~Xamarin.Forms.ShellItem" />
       <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.ShellContent -&gt; Xamarin.Forms.ShellItem" Usage="Xamarin.Forms.ShellItem.op_Implicit shellContent" />
@@ -246,7 +249,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ShellItem op_Implicit (Xamarin.Forms.ShellSection shellSection);" />
+      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.ShellItem (Xamarin.Forms.ShellSection shellSection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Xamarin.Forms.ShellItem op_Implicit(class Xamarin.Forms.ShellSection shellSection) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellItem.op_Implicit(Xamarin.Forms.ShellSection)~Xamarin.Forms.ShellItem" />
       <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.ShellSection -&gt; Xamarin.Forms.ShellItem" Usage="Xamarin.Forms.ShellItem.op_Implicit shellSection" />
@@ -269,7 +272,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ShellItem op_Implicit (Xamarin.Forms.TemplatedPage page);" />
+      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.ShellItem (Xamarin.Forms.TemplatedPage page);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Xamarin.Forms.ShellItem op_Implicit(class Xamarin.Forms.TemplatedPage page) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellItem.op_Implicit(Xamarin.Forms.TemplatedPage)~Xamarin.Forms.ShellItem" />
       <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.TemplatedPage -&gt; Xamarin.Forms.ShellItem" Usage="Xamarin.Forms.ShellItem.op_Implicit page" />
@@ -296,6 +299,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellItemController.ProposeSection(class Xamarin.Forms.ShellSection shellSection, bool setValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#ProposeSection(Xamarin.Forms.ShellSection,System.Boolean)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellItemController.ProposeSection(Xamarin.Forms.ShellSection,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -314,9 +320,6 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IShellItemController.ProposeSection(Xamarin.Forms.ShellSection,System.Boolean)</InterfaceMember>
-      </Implements>
     </Member>
   </Members>
 </Type>

@@ -389,6 +389,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.EntryCell.SendCompleted" />
       <MemberSignature Language="F#" Value="abstract member SendCompleted : unit -&gt; unit&#xA;override this.SendCompleted : unit -&gt; unit" Usage="entryCell.SendCompleted " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IEntryCellController.SendCompleted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -407,9 +410,6 @@ namespace FormsGallery
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IEntryCellController.SendCompleted</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Text">
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />

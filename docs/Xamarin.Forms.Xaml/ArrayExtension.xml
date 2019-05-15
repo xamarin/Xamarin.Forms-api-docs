@@ -12,6 +12,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Xamarin.Forms.Xaml.IMarkupExtension</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.Xaml.IMarkupExtension&lt;System.Array&gt;</InterfaceName>
     </Interface>
   </Interfaces>
@@ -68,6 +71,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.ArrayExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="F#" Value="abstract member ProvideValue : IServiceProvider -&gt; Array&#xA;override this.ProvideValue : IServiceProvider -&gt; Array" Usage="arrayExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Xaml.IMarkupExtension`1.ProvideValue(System.IServiceProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -84,9 +90,6 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Xaml.IMarkupExtension`1.ProvideValue(System.IServiceProvider)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Type">
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
@@ -112,6 +115,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object Xamarin.Forms.Xaml.IMarkupExtension.ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.ArrayExtension.Xamarin#Forms#Xaml#IMarkupExtension#ProvideValue(System.IServiceProvider)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Xaml.IMarkupExtension.ProvideValue(System.IServiceProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -128,9 +134,6 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Xaml.IMarkupExtension.ProvideValue(System.IServiceProvider)</InterfaceMember>
-      </Implements>
     </Member>
   </Members>
 </Type>

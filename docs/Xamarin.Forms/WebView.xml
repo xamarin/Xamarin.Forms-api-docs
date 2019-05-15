@@ -22,6 +22,15 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.WebView&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.IWebViewController</InterfaceName>
     </Interface>
   </Interfaces>
@@ -226,6 +235,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.WebView.EvalRequested" />
       <MemberSignature Language="F#" Value="member this.EvalRequested : EventHandler&lt;Xamarin.Forms.Internals.EvalRequested&gt; " Usage="member this.EvalRequested : System.EventHandler&lt;Xamarin.Forms.Internals.EvalRequested&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IWebViewController.EvalRequested</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -243,9 +255,6 @@ namespace FormsGallery
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IWebViewController.EvalRequested</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="EvaluateJavaScriptAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; EvaluateJavaScriptAsync (string script);" />
@@ -258,11 +267,6 @@ namespace FormsGallery
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Xamarin.Forms.WebView/&lt;EvaluateJavaScriptAsync&gt;d__21))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
       </ReturnValue>
@@ -282,6 +286,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.WebView.EvaluateJavaScriptRequested" />
       <MemberSignature Language="F#" Value="member this.EvaluateJavaScriptRequested : Xamarin.Forms.Internals.EvaluateJavaScriptDelegate " Usage="member this.EvaluateJavaScriptRequested : Xamarin.Forms.Internals.EvaluateJavaScriptDelegate " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IWebViewController.EvaluateJavaScriptRequested</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -299,9 +306,6 @@ namespace FormsGallery
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IWebViewController.EvaluateJavaScriptRequested</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="GoBack">
       <MemberSignature Language="C#" Value="public void GoBack ();" />
@@ -332,6 +336,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.WebView.GoBackRequested" />
       <MemberSignature Language="F#" Value="member this.GoBackRequested : EventHandler " Usage="member this.GoBackRequested : System.EventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IWebViewController.GoBackRequested</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -349,9 +356,6 @@ namespace FormsGallery
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IWebViewController.GoBackRequested</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="GoForward">
       <MemberSignature Language="C#" Value="public void GoForward ();" />
@@ -382,6 +386,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.WebView.GoForwardRequested" />
       <MemberSignature Language="F#" Value="member this.GoForwardRequested : EventHandler " Usage="member this.GoForwardRequested : System.EventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IWebViewController.GoForwardRequested</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -399,9 +406,6 @@ namespace FormsGallery
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IWebViewController.GoForwardRequested</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Navigated">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.WebNavigatedEventArgs&gt; Navigated;" />
@@ -453,6 +457,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.WebView.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.WebView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.WebView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="webView.On " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -475,9 +482,6 @@ namespace FormsGallery
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnBindingContextChanged">
       <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
@@ -584,6 +588,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.WebView.ReloadRequested" />
       <MemberSignature Language="F#" Value="member this.ReloadRequested : EventHandler " Usage="member this.ReloadRequested : System.EventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IWebViewController.ReloadRequested</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -600,9 +607,6 @@ namespace FormsGallery
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IWebViewController.ReloadRequested</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SendNavigated">
       <MemberSignature Language="C#" Value="public void SendNavigated (Xamarin.Forms.WebNavigatedEventArgs args);" />
@@ -610,6 +614,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.WebView.SendNavigated(Xamarin.Forms.WebNavigatedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member SendNavigated : Xamarin.Forms.WebNavigatedEventArgs -&gt; unit&#xA;override this.SendNavigated : Xamarin.Forms.WebNavigatedEventArgs -&gt; unit" Usage="webView.SendNavigated args" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IWebViewController.SendNavigated(Xamarin.Forms.WebNavigatedEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -631,9 +638,6 @@ namespace FormsGallery
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IWebViewController.SendNavigated(Xamarin.Forms.WebNavigatedEventArgs)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SendNavigating">
       <MemberSignature Language="C#" Value="public void SendNavigating (Xamarin.Forms.WebNavigatingEventArgs args);" />
@@ -641,6 +645,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.WebView.SendNavigating(Xamarin.Forms.WebNavigatingEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member SendNavigating : Xamarin.Forms.WebNavigatingEventArgs -&gt; unit&#xA;override this.SendNavigating : Xamarin.Forms.WebNavigatingEventArgs -&gt; unit" Usage="webView.SendNavigating args" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IWebViewController.SendNavigating(Xamarin.Forms.WebNavigatingEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -662,9 +669,6 @@ namespace FormsGallery
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IWebViewController.SendNavigating(Xamarin.Forms.WebNavigatingEventArgs)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Source">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.WebViewSource Source { get; set; }" />
@@ -728,6 +732,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.WebView.Xamarin#Forms#IWebViewController#CanGoBack" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IWebViewController.CanGoBack" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IWebViewController.CanGoBack</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -746,9 +753,6 @@ namespace FormsGallery
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IWebViewController.CanGoBack</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IWebViewController.CanGoForward">
       <MemberSignature Language="C#" Value="bool Xamarin.Forms.IWebViewController.CanGoForward { get; set; }" />
@@ -756,6 +760,9 @@ namespace FormsGallery
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.WebView.Xamarin#Forms#IWebViewController#CanGoForward" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IWebViewController.CanGoForward" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IWebViewController.CanGoForward</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -774,9 +781,26 @@ namespace FormsGallery
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IWebViewController.EvalRequested">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.EvalRequested&gt; Xamarin.Forms.IWebViewController.EvalRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.EvalRequested&gt; Xamarin.Forms.IWebViewController.EvalRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.WebView.Xamarin#Forms#IWebViewController#EvalRequested" />
+      <MemberType>Event</MemberType>
       <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IWebViewController.CanGoForward</InterfaceMember>
+        <InterfaceMember>E:Xamarin.Forms.IWebViewController.EvalRequested</InterfaceMember>
       </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.EvalRequested&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
     </Member>
   </Members>
 </Type>

@@ -28,6 +28,9 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.Button&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.IImageController</InterfaceName>
     </Interface>
     <Interface>
@@ -35,6 +38,12 @@
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.Internals.IFontElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -311,7 +320,7 @@ void IncrementLabel()
       </Docs>
     </Member>
     <Member MemberName="ChangeVisualState">
-      <MemberSignature Language="C#" Value="protected override void ChangeVisualState ();" />
+      <MemberSignature Language="C#" Value="protected internal override void ChangeVisualState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ChangeVisualState() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.ChangeVisualState" />
       <MemberSignature Language="F#" Value="override this.ChangeVisualState : unit -&gt; unit" Usage="button.ChangeVisualState " />
@@ -360,6 +369,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.Command" />
       <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.Button.Command" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.Command</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -379,9 +391,6 @@ void IncrementLabel()
         <value>A command to invoke when the button is activated. The default value is <see langword="null" />.</value>
         <remarks>This property is used to associate a command with an instance of a button. This property is most often set in the MVVM pattern to bind callbacks back into the ViewModel. <see cref="P:Xamarin.Forms.VisualElement.IsEnabled" /> is controlled by the Command if set.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.Command</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="CommandParameter">
       <MemberSignature Language="C#" Value="public object CommandParameter { get; set; }" />
@@ -389,6 +398,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.CommandParameter" />
       <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="Xamarin.Forms.Button.CommandParameter" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.CommandParameter</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -408,9 +420,6 @@ void IncrementLabel()
         <value>A object to pass to the command property. The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.CommandParameter</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="CommandParameterProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CommandParameterProperty;" />
@@ -735,7 +744,7 @@ void IncrementLabel()
       <MemberSignature Language="C#" Value="public Xamarin.Forms.FileImageSource Image { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.FileImageSource Image" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.Image" />
-      <MemberSignature Language="F#" Value="member this.Image : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Button.Image" />
+      <MemberSignature Language="F#" Value="member this.Image : Xamarin.Forms.FileImageSource with get, set" Usage="Xamarin.Forms.Button.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -838,6 +847,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.IsPressed" />
       <MemberSignature Language="F#" Value="member this.IsPressed : bool" Usage="Xamarin.Forms.Button.IsPressed" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.IsPressed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -850,9 +862,6 @@ void IncrementLabel()
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.IsPressed</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="IsPressedProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsPressedProperty;" />
@@ -878,6 +887,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Button (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.Button (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="button.On " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -900,9 +912,6 @@ void IncrementLabel()
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnBindingContextChanged">
       <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
@@ -1013,6 +1022,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.SendClicked" />
       <MemberSignature Language="F#" Value="abstract member SendClicked : unit -&gt; unit&#xA;override this.SendClicked : unit -&gt; unit" Usage="button.SendClicked " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendClicked</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1031,9 +1043,6 @@ void IncrementLabel()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendClicked</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SendPressed">
       <MemberSignature Language="C#" Value="public void SendPressed ();" />
@@ -1041,6 +1050,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.SendPressed" />
       <MemberSignature Language="F#" Value="abstract member SendPressed : unit -&gt; unit&#xA;override this.SendPressed : unit -&gt; unit" Usage="button.SendPressed " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendPressed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1059,9 +1071,6 @@ void IncrementLabel()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendPressed</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SendReleased">
       <MemberSignature Language="C#" Value="public void SendReleased ();" />
@@ -1069,6 +1078,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.SendReleased" />
       <MemberSignature Language="F#" Value="abstract member SendReleased : unit -&gt; unit&#xA;override this.SendReleased : unit -&gt; unit" Usage="button.SendReleased " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendReleased</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1087,9 +1099,6 @@ void IncrementLabel()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IButtonController.SendReleased</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Text">
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
@@ -1199,6 +1208,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#BorderColorDefaultValue" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderColorDefaultValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderColorDefaultValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1211,9 +1223,6 @@ void IncrementLabel()
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderColorDefaultValue</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.BorderWidthDefaultValue">
       <MemberSignature Language="C#" Value="double Xamarin.Forms.IBorderElement.BorderWidthDefaultValue { get; }" />
@@ -1221,6 +1230,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#BorderWidthDefaultValue" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderWidthDefaultValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderWidthDefaultValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1233,9 +1245,6 @@ void IncrementLabel()
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderWidthDefaultValue</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue">
       <MemberSignature Language="C#" Value="int Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue { get; }" />
@@ -1243,6 +1252,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#CornerRadiusDefaultValue" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1255,15 +1267,15 @@ void IncrementLabel()
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.IsBackgroundColorSet">
       <MemberSignature Language="C#" Value="bool IBorderElement.IsBackgroundColorSet ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBackgroundColorSet() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#IsBackgroundColorSet" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBackgroundColorSet</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1277,15 +1289,15 @@ void IncrementLabel()
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBackgroundColorSet</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.IsBorderColorSet">
       <MemberSignature Language="C#" Value="bool IBorderElement.IsBorderColorSet ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBorderColorSet() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#IsBorderColorSet" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderColorSet</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1299,15 +1311,15 @@ void IncrementLabel()
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderColorSet</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.IsBorderWidthSet">
       <MemberSignature Language="C#" Value="bool IBorderElement.IsBorderWidthSet ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBorderWidthSet() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#IsBorderWidthSet" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderWidthSet</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1321,15 +1333,15 @@ void IncrementLabel()
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderWidthSet</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.IsCornerRadiusSet">
       <MemberSignature Language="C#" Value="bool IBorderElement.IsCornerRadiusSet ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsCornerRadiusSet() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#IsCornerRadiusSet" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsCornerRadiusSet</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1343,15 +1355,15 @@ void IncrementLabel()
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsCornerRadiusSet</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged">
       <MemberSignature Language="C#" Value="void IBorderElement.OnBorderColorPropertyChanged (Xamarin.Forms.Color oldValue, Xamarin.Forms.Color newValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(valuetype Xamarin.Forms.Color oldValue, valuetype Xamarin.Forms.Color newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1369,15 +1381,15 @@ void IncrementLabel()
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IImageController.SetIsLoading">
       <MemberSignature Language="C#" Value="void IImageController.SetIsLoading (bool isLoading);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageController.SetIsLoading(bool isLoading) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#IImageController#SetIsLoading(System.Boolean)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageController.SetIsLoading(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1393,9 +1405,6 @@ void IncrementLabel()
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IImageController.SetIsLoading(System.Boolean)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IImageElement.Aspect">
       <MemberSignature Language="C#" Value="Xamarin.Forms.Aspect Xamarin.Forms.IImageElement.Aspect { get; }" />
@@ -1403,6 +1412,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.Xamarin#Forms#IImageElement#Aspect" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IImageElement.Aspect" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IImageElement.Aspect</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1415,9 +1427,6 @@ void IncrementLabel()
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IImageElement.Aspect</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IImageElement.IsOpaque">
       <MemberSignature Language="C#" Value="bool Xamarin.Forms.IImageElement.IsOpaque { get; }" />
@@ -1425,6 +1434,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.Xamarin#Forms#IImageElement#IsOpaque" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IImageElement.IsOpaque" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IImageElement.IsOpaque</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1437,15 +1449,15 @@ void IncrementLabel()
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IImageElement.IsOpaque</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged">
       <MemberSignature Language="C#" Value="void IImageElement.OnImageSourcesSourceChanged (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#IImageElement#OnImageSourcesSourceChanged(System.Object,System.EventArgs)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(System.Object,System.EventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1463,15 +1475,15 @@ void IncrementLabel()
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(System.Object,System.EventArgs)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged">
       <MemberSignature Language="C#" Value="void IImageElement.RaiseImageSourcePropertyChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#IImageElement#RaiseImageSourcePropertyChanged" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1484,9 +1496,6 @@ void IncrementLabel()
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IImageElement.Source">
       <MemberSignature Language="C#" Value="Xamarin.Forms.ImageSource Xamarin.Forms.IImageElement.Source { get; }" />
@@ -1494,6 +1503,9 @@ void IncrementLabel()
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.Xamarin#Forms#IImageElement#Source" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.IImageElement.Source" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IImageElement.Source</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1506,15 +1518,15 @@ void IncrementLabel()
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IImageElement.Source</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator">
       <MemberSignature Language="C#" Value="double IFontElement.FontSizeDefaultValueCreator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#Internals#IFontElement#FontSizeDefaultValueCreator" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1529,15 +1541,15 @@ void IncrementLabel()
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged">
       <MemberSignature Language="C#" Value="void IFontElement.OnFontAttributesChanged (Xamarin.Forms.FontAttributes oldValue, Xamarin.Forms.FontAttributes newValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged(valuetype Xamarin.Forms.FontAttributes oldValue, valuetype Xamarin.Forms.FontAttributes newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#Internals#IFontElement#OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1556,15 +1568,15 @@ void IncrementLabel()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.OnFontChanged">
       <MemberSignature Language="C#" Value="void IFontElement.OnFontChanged (Xamarin.Forms.Font oldValue, Xamarin.Forms.Font newValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.IFontElement.OnFontChanged(valuetype Xamarin.Forms.Font oldValue, valuetype Xamarin.Forms.Font newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#Internals#IFontElement#OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1583,15 +1595,15 @@ void IncrementLabel()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged">
       <MemberSignature Language="C#" Value="void IFontElement.OnFontFamilyChanged (string oldValue, string newValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged(string oldValue, string newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#Internals#IFontElement#OnFontFamilyChanged(System.String,System.String)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1610,15 +1622,15 @@ void IncrementLabel()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontFamilyChanged(System.String,System.String)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged">
       <MemberSignature Language="C#" Value="void IFontElement.OnFontSizeChanged (double oldValue, double newValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged(float64 oldValue, float64 newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Button.Xamarin#Forms#Internals#IFontElement#OnFontSizeChanged(System.Double,System.Double)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged(System.Double,System.Double)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1637,9 +1649,6 @@ void IncrementLabel()
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IFontElement.OnFontSizeChanged(System.Double,System.Double)</InterfaceMember>
-      </Implements>
     </Member>
   </Members>
 </Type>

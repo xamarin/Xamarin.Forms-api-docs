@@ -87,6 +87,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.NavigableElement.NavigationProxy" />
       <MemberSignature Language="F#" Value="member this.NavigationProxy : Xamarin.Forms.Internals.NavigationProxy" Usage="Xamarin.Forms.NavigableElement.NavigationProxy" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.INavigationProxy.NavigationProxy</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -104,9 +107,6 @@
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.INavigationProxy.NavigationProxy</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnParentSet">
       <MemberSignature Language="C#" Value="protected override void OnParentSet ();" />

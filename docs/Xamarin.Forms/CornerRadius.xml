@@ -113,7 +113,9 @@
     </Member>
     <Member MemberName="Deconstruct">
       <MemberSignature Language="C#" Value="public void Deconstruct (out double topLeft, out double topRight, out double bottomLeft, out double bottomRight);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct(float64 topLeft, float64 topRight, float64 bottomLeft, float64 bottomRight) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] float64&amp; topLeft, [out] float64&amp; topRight, [out] float64&amp; bottomLeft, [out] float64&amp; bottomRight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CornerRadius.Deconstruct(System.Double@,System.Double@,System.Double@,System.Double@)" />
+      <MemberSignature Language="F#" Value="member this.Deconstruct :  *  *  *  -&gt; unit" Usage="cornerRadius.Deconstruct (topLeft, topRight, bottomLeft, bottomRight)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -123,10 +125,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="topLeft" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="topRight" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="bottomLeft" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="bottomRight" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="topLeft" Type="System.Double" RefType="out" />
+        <Parameter Name="topRight" Type="System.Double" RefType="out" />
+        <Parameter Name="bottomLeft" Type="System.Double" RefType="out" />
+        <Parameter Name="bottomRight" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
         <param name="topLeft">To be added.</param>
@@ -184,7 +186,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (Xamarin.Forms.CornerRadius left, Xamarin.Forms.CornerRadius right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Xamarin.Forms.CornerRadius left, Xamarin.Forms.CornerRadius right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Xamarin.Forms.CornerRadius left, valuetype Xamarin.Forms.CornerRadius right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CornerRadius.op_Equality(Xamarin.Forms.CornerRadius,Xamarin.Forms.CornerRadius)" />
       <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.CornerRadius * Xamarin.Forms.CornerRadius -&gt; bool" Usage="left = right" />
@@ -211,7 +213,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.CornerRadius op_Implicit (double uniformRadius);" />
+      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.CornerRadius (double uniformRadius);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.CornerRadius op_Implicit(float64 uniformRadius) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CornerRadius.op_Implicit(System.Double)~Xamarin.Forms.CornerRadius" />
       <MemberSignature Language="F#" Value="static member op_Implicit : double -&gt; Xamarin.Forms.CornerRadius" Usage="Xamarin.Forms.CornerRadius.op_Implicit uniformRadius" />
@@ -235,7 +237,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (Xamarin.Forms.CornerRadius left, Xamarin.Forms.CornerRadius right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Xamarin.Forms.CornerRadius left, Xamarin.Forms.CornerRadius right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Xamarin.Forms.CornerRadius left, valuetype Xamarin.Forms.CornerRadius right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CornerRadius.op_Inequality(Xamarin.Forms.CornerRadius,Xamarin.Forms.CornerRadius)" />
       <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.CornerRadius * Xamarin.Forms.CornerRadius -&gt; bool" Usage="Xamarin.Forms.CornerRadius.op_Inequality (left, right)" />

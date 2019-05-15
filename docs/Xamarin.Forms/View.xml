@@ -19,10 +19,16 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.Internals.IGestureController</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IVisualElementController</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -33,7 +39,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected View ();" />
+      <MemberSignature Language="C#" Value="protected internal View ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.View.#ctor" />
       <MemberType>Constructor</MemberType>
@@ -55,7 +61,7 @@
       </Docs>
     </Member>
     <Member MemberName="GestureController">
-      <MemberSignature Language="C#" Value="protected Xamarin.Forms.Internals.IGestureController GestureController { get; }" />
+      <MemberSignature Language="C#" Value="protected internal Xamarin.Forms.Internals.IGestureController GestureController { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Internals.IGestureController GestureController" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.View.GestureController" />
       <MemberSignature Language="F#" Value="member this.GestureController : Xamarin.Forms.Internals.IGestureController" Usage="Xamarin.Forms.View.GestureController" />
@@ -123,6 +129,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.View.GetChildElements(Xamarin.Forms.Point)" />
       <MemberSignature Language="F#" Value="abstract member GetChildElements : Xamarin.Forms.Point -&gt; System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;&#xA;override this.GetChildElements : Xamarin.Forms.Point -&gt; System.Collections.Generic.IList&lt;Xamarin.Forms.GestureElement&gt;" Usage="view.GetChildElements point" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IGestureController.GetChildElements(Xamarin.Forms.Point)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -140,9 +149,6 @@
         <returns>The child elements that are visually beneath the specified <paramref name="point" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IGestureController.GetChildElements(Xamarin.Forms.Point)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="HorizontalOptions">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.LayoutOptions HorizontalOptions { get; set; }" />
@@ -378,6 +384,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.View.Xamarin#Forms#Internals#IGestureController#CompositeGestureRecognizers" />
       <MemberSignature Language="F#" Usage="Xamarin.Forms.Internals.IGestureController.CompositeGestureRecognizers" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.Internals.IGestureController.CompositeGestureRecognizers</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -391,9 +400,6 @@
         <value>For internal use by the Xamarin.Forms platform.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.IGestureController.CompositeGestureRecognizers</InterfaceMember>
-      </Implements>
     </Member>
   </Members>
 </Type>

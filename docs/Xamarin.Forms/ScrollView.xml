@@ -23,6 +23,9 @@
       <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.ScrollView&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Xamarin.Forms.ILayoutController</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Xamarin.Forms.IScrollViewController</InterfaceName>
     </Interface>
   </Interfaces>
@@ -171,6 +174,9 @@ MainPage = new ContentPage
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ScrollView.GetScrollPositionForElement(Xamarin.Forms.VisualElement,Xamarin.Forms.ScrollToPosition)" />
       <MemberSignature Language="F#" Value="abstract member GetScrollPositionForElement : Xamarin.Forms.VisualElement * Xamarin.Forms.ScrollToPosition -&gt; Xamarin.Forms.Point&#xA;override this.GetScrollPositionForElement : Xamarin.Forms.VisualElement * Xamarin.Forms.ScrollToPosition -&gt; Xamarin.Forms.Point" Usage="scrollView.GetScrollPositionForElement (item, pos)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IScrollViewController.GetScrollPositionForElement(Xamarin.Forms.VisualElement,Xamarin.Forms.ScrollToPosition)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -195,9 +201,6 @@ MainPage = new ContentPage
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IScrollViewController.GetScrollPositionForElement(Xamarin.Forms.VisualElement,Xamarin.Forms.ScrollToPosition)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="HorizontalScrollBarVisibility">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ScrollBarVisibility HorizontalScrollBarVisibility { get; set; }" />
@@ -244,6 +247,9 @@ MainPage = new ContentPage
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ScrollView.LayoutAreaOverride" />
       <MemberSignature Language="F#" Value="member this.LayoutAreaOverride : Xamarin.Forms.Rectangle with get, set" Usage="Xamarin.Forms.ScrollView.LayoutAreaOverride" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IScrollViewController.LayoutAreaOverride</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -261,9 +267,6 @@ MainPage = new ContentPage
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IScrollViewController.LayoutAreaOverride</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="LayoutChildren">
       <MemberSignature Language="C#" Value="protected override void LayoutChildren (double x, double y, double width, double height);" />
@@ -308,6 +311,9 @@ MainPage = new ContentPage
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ScrollView.On``1" />
       <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.ScrollView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.ScrollView (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="scrollView.On " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -330,9 +336,6 @@ MainPage = new ContentPage
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="OnSizeRequest">
       <MemberSignature Language="C#" Value="protected override Xamarin.Forms.SizeRequest OnSizeRequest (double widthConstraint, double heightConstraint);" />
@@ -517,6 +520,9 @@ MainPage = new ContentPage
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ScrollView.ScrollToRequested" />
       <MemberSignature Language="F#" Value="member this.ScrollToRequested : EventHandler&lt;Xamarin.Forms.ScrollToRequestedEventArgs&gt; " Usage="member this.ScrollToRequested : System.EventHandler&lt;Xamarin.Forms.ScrollToRequestedEventArgs&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IScrollViewController.ScrollToRequested</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -534,9 +540,6 @@ MainPage = new ContentPage
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>E:Xamarin.Forms.IScrollViewController.ScrollToRequested</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="ScrollX">
       <MemberSignature Language="C#" Value="public double ScrollX { get; }" />
@@ -630,6 +633,9 @@ MainPage = new ContentPage
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ScrollView.SendScrollFinished" />
       <MemberSignature Language="F#" Value="abstract member SendScrollFinished : unit -&gt; unit&#xA;override this.SendScrollFinished : unit -&gt; unit" Usage="scrollView.SendScrollFinished " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IScrollViewController.SendScrollFinished</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -648,9 +654,6 @@ MainPage = new ContentPage
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IScrollViewController.SendScrollFinished</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="SetScrolledPosition">
       <MemberSignature Language="C#" Value="public void SetScrolledPosition (double x, double y);" />
@@ -658,6 +661,9 @@ MainPage = new ContentPage
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ScrollView.SetScrolledPosition(System.Double,System.Double)" />
       <MemberSignature Language="F#" Value="abstract member SetScrolledPosition : double * double -&gt; unit&#xA;override this.SetScrolledPosition : double * double -&gt; unit" Usage="scrollView.SetScrolledPosition (x, y)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IScrollViewController.SetScrolledPosition(System.Double,System.Double)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -681,9 +687,6 @@ MainPage = new ContentPage
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IScrollViewController.SetScrolledPosition(System.Double,System.Double)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="VerticalScrollBarVisibility">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ScrollBarVisibility VerticalScrollBarVisibility { get; set; }" />

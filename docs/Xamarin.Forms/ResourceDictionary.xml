@@ -1,5 +1,5 @@
 <Type Name="ResourceDictionary" FullName="Xamarin.Forms.ResourceDictionary">
-  <TypeSignature Language="C#" Value="public class ResourceDictionary : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,object&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, Xamarin.Forms.Internals.IResourceDictionary" />
+  <TypeSignature Language="C#" Value="public class ResourceDictionary : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,object&gt;, Xamarin.Forms.Internals.IResourceDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceDictionary extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;string, object&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable, class Xamarin.Forms.Internals.IResourceDictionary" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ResourceDictionary" />
   <TypeSignature Language="F#" Value="type ResourceDictionary = class&#xA;    interface IResourceDictionary&#xA;    interface seq&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface IEnumerable&#xA;    interface IDictionary&lt;string, obj&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;string, obj&gt;&gt;" />
@@ -26,6 +26,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.Internals.IResourceDictionary</InterfaceName>
@@ -640,8 +643,13 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (string key, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, [out] object&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ResourceDictionary.TryGetValue(System.String,System.Object@)" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : string *  -&gt; bool&#xA;override this.TryGetValue : string *  -&gt; bool" Usage="resourceDictionary.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Internals.IResourceDictionary.TryGetValue(System.String,System.Object@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -651,7 +659,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">To be added.</param>
@@ -684,6 +692,26 @@
       <Docs>
         <summary>Retrieves the values of the <see cref="T:Xamarin.Forms.ResourceDictionary" />.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.Internals.IResourceDictionary.ValuesChanged">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.ResourcesChangedEventArgs&gt; Xamarin.Forms.Internals.IResourceDictionary.ValuesChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.ResourcesChangedEventArgs&gt; Xamarin.Forms.Internals.IResourceDictionary.ValuesChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ResourceDictionary.Xamarin#Forms#Internals#IResourceDictionary#ValuesChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.Internals.IResourceDictionary.ValuesChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.ResourcesChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

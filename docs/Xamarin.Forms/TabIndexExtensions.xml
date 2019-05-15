@@ -18,7 +18,9 @@
   <Members>
     <Member MemberName="FindNextElement">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.ITabStopElement FindNextElement (this Xamarin.Forms.ITabStopElement element, bool forwardDirection, System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; tabIndexes, ref int tabIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ITabStopElement FindNextElement(class Xamarin.Forms.ITabStopElement element, bool forwardDirection, class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; tabIndexes, int32 tabIndex) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ITabStopElement FindNextElement(class Xamarin.Forms.ITabStopElement element, bool forwardDirection, class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; tabIndexes, int32&amp; tabIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.FindNextElement(Xamarin.Forms.ITabStopElement,System.Boolean,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.List{Xamarin.Forms.ITabStopElement}},System.Int32@)" />
+      <MemberSignature Language="F#" Value="static member FindNextElement : Xamarin.Forms.ITabStopElement * bool * System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; *  -&gt; Xamarin.Forms.ITabStopElement" Usage="Xamarin.Forms.TabIndexExtensions.FindNextElement (element, forwardDirection, tabIndexes, tabIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -31,7 +33,7 @@
         <Parameter Name="element" Type="Xamarin.Forms.ITabStopElement" RefType="this" />
         <Parameter Name="forwardDirection" Type="System.Boolean" />
         <Parameter Name="tabIndexes" Type="System.Collections.Generic.IDictionary&lt;System.Int32,System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt;" />
-        <Parameter Name="tabIndex" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="tabIndex" Type="System.Int32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="element">To be added.</param>
@@ -45,7 +47,9 @@
     </Member>
     <Member MemberName="GetSortedTabIndexesOnParentPage">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.SortedDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; GetSortedTabIndexesOnParentPage (this Xamarin.Forms.VisualElement element, out int countChildrensWithTabStopWithoutThis);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.SortedDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; GetSortedTabIndexesOnParentPage(class Xamarin.Forms.VisualElement element, int32 countChildrensWithTabStopWithoutThis) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.SortedDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; GetSortedTabIndexesOnParentPage(class Xamarin.Forms.VisualElement element, [out] int32&amp; countChildrensWithTabStopWithoutThis) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.GetSortedTabIndexesOnParentPage(Xamarin.Forms.VisualElement,System.Int32@)" />
+      <MemberSignature Language="F#" Value="static member GetSortedTabIndexesOnParentPage : Xamarin.Forms.VisualElement *  -&gt; System.Collections.Generic.SortedDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetSortedTabIndexesOnParentPage (element, countChildrensWithTabStopWithoutThis)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -56,7 +60,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="element" Type="Xamarin.Forms.VisualElement" RefType="this" />
-        <Parameter Name="countChildrensWithTabStopWithoutThis" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="countChildrensWithTabStopWithoutThis" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="element">To be added.</param>
@@ -68,7 +72,9 @@
     </Member>
     <Member MemberName="GetTabIndexesOnParentPage">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; GetTabIndexesOnParentPage (this Xamarin.Forms.ITabStopElement element, out int countChildrensWithTabStopWithoutThis, bool checkContainsElement = true);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; GetTabIndexesOnParentPage(class Xamarin.Forms.ITabStopElement element, int32 countChildrensWithTabStopWithoutThis, bool checkContainsElement) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; GetTabIndexesOnParentPage(class Xamarin.Forms.ITabStopElement element, [out] int32&amp; countChildrensWithTabStopWithoutThis, bool checkContainsElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage(Xamarin.Forms.ITabStopElement,System.Int32@,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member GetTabIndexesOnParentPage : Xamarin.Forms.ITabStopElement *  * bool -&gt; System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage (element, countChildrensWithTabStopWithoutThis, checkContainsElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -79,7 +85,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="element" Type="Xamarin.Forms.ITabStopElement" RefType="this" />
-        <Parameter Name="countChildrensWithTabStopWithoutThis" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="countChildrensWithTabStopWithoutThis" Type="System.Int32" RefType="out" />
         <Parameter Name="checkContainsElement" Type="System.Boolean" />
       </Parameters>
       <Docs>

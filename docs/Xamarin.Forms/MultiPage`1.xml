@@ -81,6 +81,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MultiPage`1.Children" />
       <MemberSignature Language="F#" Value="member this.Children : System.Collections.Generic.IList&lt;'T (requires 'T :&gt; Xamarin.Forms.Page)&gt;" Usage="Xamarin.Forms.MultiPage&lt;'T (requires 'T :&gt; Xamarin.Forms.Page)&gt;.Children" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IViewContainer`1.Children</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -121,9 +124,6 @@ Children = {
           </example>
         </remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IViewContainer`1.Children</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="CreateDefault">
       <MemberSignature Language="C#" Value="protected abstract T CreateDefault (object item);" />
@@ -131,6 +131,9 @@ Children = {
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.CreateDefault(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member CreateDefault : obj -&gt; 'T" Usage="multiPage.CreateDefault item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -154,9 +157,6 @@ Children = {
         <returns>The newly created page.</returns>
         <remarks>Most implementors will not need to use or override CreateDefault.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="CurrentPage">
       <MemberSignature Language="C#" Value="public T CurrentPage { get; set; }" />
@@ -242,6 +242,9 @@ Children = {
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.GetPageByIndex(System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetPageByIndex : int -&gt; 'T&#xA;override this.GetPageByIndex : int -&gt; 'T" Usage="multiPage.GetPageByIndex index" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IMultiPageController`1.GetPageByIndex(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -264,9 +267,6 @@ Children = {
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IMultiPageController`1.GetPageByIndex(System.Int32)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="ItemsSource">
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ItemsSource { get; set; }" />
@@ -623,6 +623,9 @@ Children = {
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.SetupContent(`0,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member SetupContent : 'T * int -&gt; unit&#xA;override this.SetupContent : 'T * int -&gt; unit" Usage="multiPage.SetupContent (content, index)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -647,9 +650,6 @@ Children = {
         <summary>When overriden in a derived class, performs initialization of <paramref name="content" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="UnhookContent">
       <MemberSignature Language="C#" Value="protected virtual void UnhookContent (T content);" />
@@ -657,6 +657,9 @@ Children = {
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.UnhookContent(`0)" />
       <MemberSignature Language="F#" Value="abstract member UnhookContent : 'T -&gt; unit&#xA;override this.UnhookContent : 'T -&gt; unit" Usage="multiPage.UnhookContent content" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -678,15 +681,15 @@ Children = {
           <block type="note">Application developers who override <see cref="M:Xamarin.Forms.MultiPage`1.SetupContent(`0,System.Int32)" /> to allocate resources must override this method in order to deallocate them.</block>
         </remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IItemsView&lt;T&gt;.CreateDefault">
       <MemberSignature Language="C#" Value="T IItemsView&lt;T&gt;.CreateDefault (object item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !T Xamarin.Forms.IItemsView&lt;T&gt;.CreateDefault(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.Xamarin#Forms#IItemsView&lt;T&gt;#CreateDefault(System.Object)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -710,15 +713,15 @@ Children = {
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IItemsView&lt;T&gt;.SetupContent">
       <MemberSignature Language="C#" Value="void IItemsView&lt;T&gt;.SetupContent (T content, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IItemsView&lt;T&gt;.SetupContent(!T content, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.Xamarin#Forms#IItemsView&lt;T&gt;#SetupContent(`0,System.Int32)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -743,15 +746,15 @@ Children = {
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
-      </Implements>
     </Member>
     <Member MemberName="Xamarin.Forms.IItemsView&lt;T&gt;.UnhookContent">
       <MemberSignature Language="C#" Value="void IItemsView&lt;T&gt;.UnhookContent (T content);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IItemsView&lt;T&gt;.UnhookContent(!T content) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.Xamarin#Forms#IItemsView&lt;T&gt;#UnhookContent(`0)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
@@ -770,9 +773,6 @@ Children = {
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
-      </Implements>
     </Member>
   </Members>
 </Type>
