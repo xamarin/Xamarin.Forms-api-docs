@@ -65,6 +65,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RegisterAll">
+      <MemberSignature Language="C#" Value="public static void RegisterAll (Type[] attrTypes, Xamarin.Forms.ActivationFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAll(class System.Type[] attrTypes, valuetype Xamarin.Forms.ActivationFlags flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar.RegisterAll(System.Type[],Xamarin.Forms.ActivationFlags)" />
+      <MemberSignature Language="F#" Value="static member RegisterAll : Type[] * Xamarin.Forms.ActivationFlags -&gt; unit" Usage="Xamarin.Forms.Internals.Registrar.RegisterAll (attrTypes, flags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attrTypes" Type="System.Type[]" />
+        <Parameter Name="flags" Type="Xamarin.Forms.ActivationFlags" />
+      </Parameters>
+      <Docs>
+        <param name="attrTypes">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Registered">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Internals.Registrar&lt;Xamarin.Forms.IRegisterable&gt; Registered { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.Internals.Registrar`1&lt;class Xamarin.Forms.IRegisterable&gt; Registered" />
@@ -82,6 +106,71 @@
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <value>For internal use by the Xamarin.Forms platform.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterEffects">
+      <MemberSignature Language="C#" Value="public static void RegisterEffects (string resolutionName, Xamarin.Forms.ExportEffectAttribute[] effectAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterEffects(string resolutionName, class Xamarin.Forms.ExportEffectAttribute[] effectAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar.RegisterEffects(System.String,Xamarin.Forms.ExportEffectAttribute[])" />
+      <MemberSignature Language="F#" Value="static member RegisterEffects : string * Xamarin.Forms.ExportEffectAttribute[] -&gt; unit" Usage="Xamarin.Forms.Internals.Registrar.RegisterEffects (resolutionName, effectAttributes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolutionName" Type="System.String" />
+        <Parameter Name="effectAttributes" Type="Xamarin.Forms.ExportEffectAttribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="resolutionName">To be added.</param>
+        <param name="effectAttributes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterRenderers">
+      <MemberSignature Language="C#" Value="public static void RegisterRenderers (Xamarin.Forms.HandlerAttribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterRenderers(class Xamarin.Forms.HandlerAttribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar.RegisterRenderers(Xamarin.Forms.HandlerAttribute[])" />
+      <MemberSignature Language="F#" Value="static member RegisterRenderers : Xamarin.Forms.HandlerAttribute[] -&gt; unit" Usage="Xamarin.Forms.Internals.Registrar.RegisterRenderers attributes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="Xamarin.Forms.HandlerAttribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterStylesheets">
+      <MemberSignature Language="C#" Value="public static void RegisterStylesheets ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterStylesheets() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar.RegisterStylesheets" />
+      <MemberSignature Language="F#" Value="static member RegisterStylesheets : unit -&gt; unit" Usage="Xamarin.Forms.Internals.Registrar.RegisterStylesheets " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

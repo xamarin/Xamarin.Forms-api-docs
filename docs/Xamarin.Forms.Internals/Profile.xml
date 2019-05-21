@@ -1,0 +1,191 @@
+<Type Name="Profile" FullName="Xamarin.Forms.Internals.Profile">
+  <TypeSignature Language="C#" Value="public struct Profile : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Profile extends System.ValueType implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.Profile" />
+  <TypeSignature Language="F#" Value="type Profile = struct&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Xamarin.Forms.Internals.Profile.Datum&gt; Data;" />
+      <MemberSignature Language="ILAsm" Value=".field public static class System.Collections.Generic.List`1&lt;valuetype Xamarin.Forms.Internals.Profile/Datum&gt; Data" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Internals.Profile.Data" />
+      <MemberSignature Language="F#" Value=" staticval mutable Data : System.Collections.Generic.List&lt;Xamarin.Forms.Internals.Profile.Datum&gt;" Usage="Xamarin.Forms.Internals.Profile.Data" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Xamarin.Forms.Internals.Profile+Datum&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Profile.Dispose" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="profile.Dispose " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameBegin">
+      <MemberSignature Language="C#" Value="public static void FrameBegin (string name = &quot;&quot;, string id = null, int line = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FrameBegin(string name, string id, int32 line) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Profile.FrameBegin(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member FrameBegin : string * string * int -&gt; unit" Usage="Xamarin.Forms.Internals.Profile.FrameBegin (name, id, line)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="line" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="id">To be added.</param>
+        <param name="line">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameEnd">
+      <MemberSignature Language="C#" Value="public static void FrameEnd ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FrameEnd() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Profile.FrameEnd" />
+      <MemberSignature Language="F#" Value="static member FrameEnd : unit -&gt; unit" Usage="Xamarin.Forms.Internals.Profile.FrameEnd " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FramePartition">
+      <MemberSignature Language="C#" Value="public static void FramePartition (string id, int line = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FramePartition(string id, int32 line) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Profile.FramePartition(System.String,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member FramePartition : string * int -&gt; unit" Usage="Xamarin.Forms.Internals.Profile.FramePartition (id, line)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="line" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <param name="line">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public static void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Profile.Start" />
+      <MemberSignature Language="F#" Value="static member Start : unit -&gt; unit" Usage="Xamarin.Forms.Internals.Profile.Start " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public static void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Profile.Stop" />
+      <MemberSignature Language="F#" Value="static member Stop : unit -&gt; unit" Usage="Xamarin.Forms.Internals.Profile.Stop " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -741,10 +741,10 @@ void IncrementLabel()
       </Docs>
     </Member>
     <Member MemberName="Image">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource Image { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource Image" />
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.FileImageSource Image { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.FileImageSource Image" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Button.Image" />
-      <MemberSignature Language="F#" Value="member this.Image : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Button.Image" />
+      <MemberSignature Language="F#" Value="member this.Image : Xamarin.Forms.FileImageSource with get, set" Usage="Xamarin.Forms.Button.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -764,7 +764,7 @@ void IncrementLabel()
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+        <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the optional image source to display next to the text in the Button. This is a bindable property.</summary>
