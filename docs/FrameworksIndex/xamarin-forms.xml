@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="xamarin-forms">
   <Assemblies>
-    <Assembly Name="Xamarin.Forms.Core" Version="4.2.0.0" />
-    <Assembly Name="Xamarin.Forms.Maps" Version="4.2.0.0" />
-    <Assembly Name="Xamarin.Forms.Pages" Version="4.2.0.0" />
-    <Assembly Name="Xamarin.Forms.Platform" Version="4.2.0.0" />
-    <Assembly Name="Xamarin.Forms.Xaml" Version="4.2.0.0" />
+    <Assembly Name="Xamarin.Forms.Core" Version="2.0.0.0" />
+    <Assembly Name="Xamarin.Forms.Maps" Version="2.0.0.0" />
+    <Assembly Name="Xamarin.Forms.Pages" Version="2.0.0.0" />
+    <Assembly Name="Xamarin.Forms.Platform" Version="2.0.0.0" />
+    <Assembly Name="Xamarin.Forms.Xaml" Version="2.0.0.0" />
   </Assemblies>
   <Namespace Name="Xamarin.Forms">
     <Type Name="Xamarin.Forms.AbsoluteLayout" Id="T:Xamarin.Forms.AbsoluteLayout">
@@ -463,6 +463,32 @@
       <Member Id="P:Xamarin.Forms.Cell.Height" />
       <Member Id="P:Xamarin.Forms.Cell.IsEnabled" />
       <Member Id="P:Xamarin.Forms.Cell.RenderHeight" />
+    </Type>
+    <Type Name="Xamarin.Forms.CheckBox" Id="T:Xamarin.Forms.CheckBox">
+      <Member Id="E:Xamarin.Forms.CheckBox.CheckedChanged" />
+      <Member Id="F:Xamarin.Forms.CheckBox.ColorProperty" />
+      <Member Id="F:Xamarin.Forms.CheckBox.IsCheckedProperty" />
+      <Member Id="F:Xamarin.Forms.CheckBox.IsCheckedVisualState" />
+      <Member Id="M:Xamarin.Forms.CheckBox.#ctor" />
+      <Member Id="M:Xamarin.Forms.CheckBox.ChangeVisualState" />
+      <Member Id="M:Xamarin.Forms.CheckBox.On``1" />
+      <Member Id="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsBackgroundColorSet" />
+      <Member Id="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsBorderColorSet" />
+      <Member Id="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsBorderWidthSet" />
+      <Member Id="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsCornerRadiusSet" />
+      <Member Id="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)" />
+      <Member Id="P:Xamarin.Forms.CheckBox.Color" />
+      <Member Id="P:Xamarin.Forms.CheckBox.IsChecked" />
+      <Member Id="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#BorderColor" />
+      <Member Id="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#BorderColorDefaultValue" />
+      <Member Id="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#BorderWidth" />
+      <Member Id="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#BorderWidthDefaultValue" />
+      <Member Id="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#CornerRadius" />
+      <Member Id="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#CornerRadiusDefaultValue" />
+    </Type>
+    <Type Name="Xamarin.Forms.CheckedChangedEventArgs" Id="T:Xamarin.Forms.CheckedChangedEventArgs">
+      <Member Id="M:Xamarin.Forms.CheckedChangedEventArgs.#ctor(System.Boolean)" />
+      <Member Id="P:Xamarin.Forms.CheckedChangedEventArgs.Value" />
     </Type>
     <Type Name="Xamarin.Forms.ChildGestureRecognizer" Id="T:Xamarin.Forms.ChildGestureRecognizer">
       <Member Id="E:Xamarin.Forms.ChildGestureRecognizer.PropertyChanged" />

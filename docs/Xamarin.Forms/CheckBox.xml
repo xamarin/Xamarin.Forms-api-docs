@@ -1,0 +1,453 @@
+<Type Name="CheckBox" FullName="Xamarin.Forms.CheckBox">
+  <TypeSignature Language="C#" Value="public class CheckBox : Xamarin.Forms.View, Xamarin.Forms.IBorderElement, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.CheckBox&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CheckBox extends Xamarin.Forms.View implements class Xamarin.Forms.IBorderElement, class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.CheckBox&gt;" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.CheckBox" />
+  <TypeSignature Language="F#" Value="type CheckBox = class&#xA;    inherit View&#xA;    interface IElementConfiguration&lt;CheckBox&gt;&#xA;    interface IBorderElement" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IBorderElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.CheckBox&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.RenderWith(typeof(Xamarin.Forms.Platform._CheckBoxRenderer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CheckBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CheckBox.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeVisualState">
+      <MemberSignature Language="C#" Value="protected internal override void ChangeVisualState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ChangeVisualState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CheckBox.ChangeVisualState" />
+      <MemberSignature Language="F#" Value="override this.ChangeVisualState : unit -&gt; unit" Usage="checkBox.ChangeVisualState " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.CheckedChangedEventArgs&gt; CheckedChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.CheckedChangedEventArgs&gt; CheckedChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.CheckBox.CheckedChanged" />
+      <MemberSignature Language="F#" Value="member this.CheckedChanged : EventHandler&lt;Xamarin.Forms.CheckedChangedEventArgs&gt; " Usage="member this.CheckedChanged : System.EventHandler&lt;Xamarin.Forms.CheckedChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.CheckedChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color Color { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color Color" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CheckBox.Color" />
+      <MemberSignature Language="F#" Value="member this.Color : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.CheckBox.Color" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.CheckBox.ColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.CheckBox.ColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsChecked">
+      <MemberSignature Language="C#" Value="public bool IsChecked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsChecked" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CheckBox.IsChecked" />
+      <MemberSignature Language="F#" Value="member this.IsChecked : bool with get, set" Usage="Xamarin.Forms.CheckBox.IsChecked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCheckedProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsCheckedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsCheckedProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.CheckBox.IsCheckedProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsCheckedProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.CheckBox.IsCheckedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCheckedVisualState">
+      <MemberSignature Language="C#" Value="public const string IsCheckedVisualState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsCheckedVisualState" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.CheckBox.IsCheckedVisualState" />
+      <MemberSignature Language="F#" Value="val mutable IsCheckedVisualState : string" Usage="Xamarin.Forms.CheckBox.IsCheckedVisualState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.CheckBox&gt; On&lt;T&gt; () where T : Xamarin.Forms.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.IPlatformElementConfiguration`2&lt;!!T, class Xamarin.Forms.CheckBox&gt; On&lt;(class Xamarin.Forms.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CheckBox.On``1" />
+      <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.CheckBox (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&#xA;override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.CheckBox (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="checkBox.On " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.CheckBox&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Xamarin.Forms.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.BorderColor">
+      <MemberSignature Language="C#" Value="Xamarin.Forms.Color Xamarin.Forms.IBorderElement.BorderColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color Xamarin.Forms.IBorderElement.BorderColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#BorderColor" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.BorderColorDefaultValue">
+      <MemberSignature Language="C#" Value="Xamarin.Forms.Color Xamarin.Forms.IBorderElement.BorderColorDefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color Xamarin.Forms.IBorderElement.BorderColorDefaultValue" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#BorderColorDefaultValue" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderColorDefaultValue" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderColorDefaultValue</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.BorderWidth">
+      <MemberSignature Language="C#" Value="double Xamarin.Forms.IBorderElement.BorderWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Xamarin.Forms.IBorderElement.BorderWidth" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#BorderWidth" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderWidth" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderWidth</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.BorderWidthDefaultValue">
+      <MemberSignature Language="C#" Value="double Xamarin.Forms.IBorderElement.BorderWidthDefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Xamarin.Forms.IBorderElement.BorderWidthDefaultValue" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#BorderWidthDefaultValue" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.BorderWidthDefaultValue" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.BorderWidthDefaultValue</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.CornerRadius">
+      <MemberSignature Language="C#" Value="int Xamarin.Forms.IBorderElement.CornerRadius { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Xamarin.Forms.IBorderElement.CornerRadius" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#CornerRadius" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.CornerRadius" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.CornerRadius</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue">
+      <MemberSignature Language="C#" Value="int Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#CornerRadiusDefaultValue" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IBorderElement.CornerRadiusDefaultValue</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.IsBackgroundColorSet">
+      <MemberSignature Language="C#" Value="bool IBorderElement.IsBackgroundColorSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBackgroundColorSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsBackgroundColorSet" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBackgroundColorSet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.IsBorderColorSet">
+      <MemberSignature Language="C#" Value="bool IBorderElement.IsBorderColorSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBorderColorSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsBorderColorSet" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderColorSet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.IsBorderWidthSet">
+      <MemberSignature Language="C#" Value="bool IBorderElement.IsBorderWidthSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsBorderWidthSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsBorderWidthSet" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsBorderWidthSet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.IsCornerRadiusSet">
+      <MemberSignature Language="C#" Value="bool IBorderElement.IsCornerRadiusSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IBorderElement.IsCornerRadiusSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsCornerRadiusSet" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.IsCornerRadiusSet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged">
+      <MemberSignature Language="C#" Value="void IBorderElement.OnBorderColorPropertyChanged (Xamarin.Forms.Color oldValue, Xamarin.Forms.Color newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(valuetype Xamarin.Forms.Color oldValue, valuetype Xamarin.Forms.Color newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Xamarin.Forms.Color" />
+        <Parameter Name="newValue" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
