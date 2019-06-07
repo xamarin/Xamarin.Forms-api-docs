@@ -928,7 +928,8 @@
         <param name="page">The <see cref="T:Xamarin.Forms.Page" /> to present modally.</param>
         <summary>Presents a <see cref="T:Xamarin.Forms.Page" /> modally.</summary>
         <returns>An awaitable Task, indicating the PushModal completion.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+        <para>The default animation varies by platform.</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PushAsync">
@@ -958,7 +959,7 @@
         <param name="animated">To be added.</param>
         <summary>A task for asynchronously pushing a page onto the navigation stack, with optional animation.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks><para>The default animation varies by platform.</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pushed">
