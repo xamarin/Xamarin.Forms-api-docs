@@ -71,7 +71,7 @@
       </Parameters>
       <Docs>
         <param name="action">The Action to invoke </param>
-        <summary>Invokes an Action on the device main (UI) thread.</summary>
+        <summary>Asynchronously invokes an Action on the device main (UI) thread.</summary>
         <remarks>
           <para>This example shows how to set the Text of Label on the main thread, e.g. in response to an async event.
           </para>
@@ -395,7 +395,7 @@ Device.BeginInvokeOnMainThread (() => {
       </Parameters>
       <Docs>
         <param name="action">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Asynchronously invokes an Action on the device main (UI) thread.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -419,7 +419,7 @@ Device.BeginInvokeOnMainThread (() => {
       </Parameters>
       <Docs>
         <param name="funcTask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Asynchronously invokes <paramref name="funcTask" /> on the device main (UI) thread.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -447,7 +447,7 @@ Device.BeginInvokeOnMainThread (() => {
       <Docs>
         <typeparam name="T">To be added.</typeparam>
         <param name="funcTask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Asynchronously invokes <paramref name="funcTask"/> on the device main (UI) thread.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -475,7 +475,7 @@ Device.BeginInvokeOnMainThread (() => {
       <Docs>
         <typeparam name="T">To be added.</typeparam>
         <param name="func">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Asynchronously invokes <paramref name="func"/> on the device main (UI) thread.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
