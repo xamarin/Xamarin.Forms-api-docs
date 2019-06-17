@@ -83,7 +83,7 @@ public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsAppli
       <format type="text/html">
         <h3>UWP Code</h3>
       </format>
-      <para>The entry point for a Xamarin.Forms app on UWP is just the constructor for a <see cref="T:Windows.UI.Xaml.Application" /> in <c>App.xaml.cs</c> in the UWP platform project. However, the application lifecycle on UWP is such that the call to <c>Forms.Init</c> must take place inside the <c>OnLaunched</c> method, and is guarded against being run more than once. The necessary code is beyond the scope of this documentation, but the curious developer is encouraged to create a test Xamarin.Forms solution and study the code in the <c>App.xaml.cs</c> file for more details</para>
+      <para>The entry point for a Xamarin.Forms app on UWP is just the constructor for a <c>Windows.UI.Xaml.Application</c> in <c>App.xaml.cs</c> in the UWP platform project. However, the application lifecycle on UWP is such that the call to <c>Forms.Init</c> must take place inside the <c>OnLaunched</c> method, and is guarded against being run more than once. The necessary code is beyond the scope of this documentation, but the curious developer is encouraged to create a test Xamarin.Forms solution and study the code in the <c>App.xaml.cs</c> file for more details</para>
       <format type="text/html">
         <h2>Elements in Xamarin.Forms</h2>
       </format>
