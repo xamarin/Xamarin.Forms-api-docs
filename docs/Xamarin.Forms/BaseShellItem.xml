@@ -40,6 +40,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Appearing">
+      <MemberSignature Language="C#" Value="public event EventHandler Appearing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Appearing" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.BaseShellItem.Appearing" />
+      <MemberSignature Language="F#" Value="member this.Appearing : EventHandler " Usage="member this.Appearing : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disappearing">
+      <MemberSignature Language="C#" Value="public event EventHandler Disappearing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disappearing" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.BaseShellItem.Disappearing" />
+      <MemberSignature Language="F#" Value="member this.Disappearing : EventHandler " Usage="member this.Disappearing : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FlyoutIcon">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource FlyoutIcon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource FlyoutIcon" />
@@ -223,6 +259,44 @@
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAppearing">
+      <MemberSignature Language="C#" Value="protected virtual void OnAppearing ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAppearing() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BaseShellItem.OnAppearing" />
+      <MemberSignature Language="F#" Value="abstract member OnAppearing : unit -&gt; unit&#xA;override this.OnAppearing : unit -&gt; unit" Usage="baseShellItem.OnAppearing " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDisappearing">
+      <MemberSignature Language="C#" Value="protected virtual void OnDisappearing ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDisappearing() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BaseShellItem.OnDisappearing" />
+      <MemberSignature Language="F#" Value="abstract member OnDisappearing : unit -&gt; unit&#xA;override this.OnDisappearing : unit -&gt; unit" Usage="baseShellItem.OnDisappearing " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>

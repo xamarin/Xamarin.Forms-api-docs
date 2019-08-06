@@ -1,14 +1,15 @@
 <Type Name="CollectionView" FullName="Xamarin.Forms.CollectionView">
-  <TypeSignature Language="C#" Value="public class CollectionView : Xamarin.Forms.SelectableItemsView" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionView extends Xamarin.Forms.SelectableItemsView" />
+  <TypeSignature Language="C#" Value="public class CollectionView : Xamarin.Forms.GroupableItemsView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionView extends Xamarin.Forms.GroupableItemsView" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.CollectionView" />
-  <TypeSignature Language="F#" Value="type CollectionView = class&#xA;    inherit SelectableItemsView" />
+  <TypeSignature Language="F#" Value="type CollectionView = class&#xA;    inherit GroupableItemsView" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Xamarin.Forms.SelectableItemsView</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="xamarin-forms">Xamarin.Forms.GroupableItemsView</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
