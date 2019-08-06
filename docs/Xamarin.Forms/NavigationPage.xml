@@ -353,10 +353,41 @@
       </Docs>
     </Member>
     <Member MemberName="GetTitleIcon">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ImageSource GetTitleIcon (Xamarin.Forms.BindableObject bindable);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ImageSource GetTitleIcon(class Xamarin.Forms.BindableObject bindable) cil managed" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.FileImageSource GetTitleIcon (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.FileImageSource GetTitleIcon(class Xamarin.Forms.BindableObject bindable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.GetTitleIcon(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetTitleIcon : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.ImageSource" Usage="Xamarin.Forms.NavigationPage.GetTitleIcon bindable" />
+      <MemberSignature Language="F#" Value="static member GetTitleIcon : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.FileImageSource" Usage="Xamarin.Forms.NavigationPage.GetTitleIcon bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("GetTitleIcon is obsolete as of 4.0.0. Please use GetTitleIconImageSource instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTitleIconImageSource">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ImageSource GetTitleIconImageSource (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ImageSource GetTitleIconImageSource(class Xamarin.Forms.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.GetTitleIconImageSource(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTitleIconImageSource : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.ImageSource" Usage="Xamarin.Forms.NavigationPage.GetTitleIconImageSource bindable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1110,10 +1141,42 @@
       </Docs>
     </Member>
     <Member MemberName="SetTitleIcon">
-      <MemberSignature Language="C#" Value="public static void SetTitleIcon (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.ImageSource value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleIcon(class Xamarin.Forms.BindableObject bindable, class Xamarin.Forms.ImageSource value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.SetTitleIcon(Xamarin.Forms.BindableObject,Xamarin.Forms.ImageSource)" />
-      <MemberSignature Language="F#" Value="static member SetTitleIcon : Xamarin.Forms.BindableObject * Xamarin.Forms.ImageSource -&gt; unit" Usage="Xamarin.Forms.NavigationPage.SetTitleIcon (bindable, value)" />
+      <MemberSignature Language="C#" Value="public static void SetTitleIcon (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.FileImageSource value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleIcon(class Xamarin.Forms.BindableObject bindable, class Xamarin.Forms.FileImageSource value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.SetTitleIcon(Xamarin.Forms.BindableObject,Xamarin.Forms.FileImageSource)" />
+      <MemberSignature Language="F#" Value="static member SetTitleIcon : Xamarin.Forms.BindableObject * Xamarin.Forms.FileImageSource -&gt; unit" Usage="Xamarin.Forms.NavigationPage.SetTitleIcon (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("SetTitleIcon is obsolete as of 4.0.0. Please use SetTitleIconImageSource instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.FileImageSource" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTitleIconImageSource">
+      <MemberSignature Language="C#" Value="public static void SetTitleIconImageSource (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.ImageSource value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleIconImageSource(class Xamarin.Forms.BindableObject bindable, class Xamarin.Forms.ImageSource value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.SetTitleIconImageSource(Xamarin.Forms.BindableObject,Xamarin.Forms.ImageSource)" />
+      <MemberSignature Language="F#" Value="static member SetTitleIconImageSource : Xamarin.Forms.BindableObject * Xamarin.Forms.ImageSource -&gt; unit" Usage="Xamarin.Forms.NavigationPage.SetTitleIconImageSource (bindable, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1255,6 +1318,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TitleIconImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TitleIconImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TitleIconImageSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.NavigationPage.TitleIconImageSourceProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TitleIconImageSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.NavigationPage.TitleIconImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TitleIconProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TitleIconProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TitleIconProperty" />
@@ -1272,6 +1353,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("TitleIconProperty is obsolete as of 4.0.0. Please use TitleIconImageSourceProperty instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>

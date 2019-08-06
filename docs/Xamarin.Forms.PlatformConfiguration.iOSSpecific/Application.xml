@@ -17,6 +17,70 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="EnableAccessibilityScalingForNamedFontSizesProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty EnableAccessibilityScalingForNamedFontSizesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty EnableAccessibilityScalingForNamedFontSizesProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Application.EnableAccessibilityScalingForNamedFontSizesProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable EnableAccessibilityScalingForNamedFontSizesProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Application.EnableAccessibilityScalingForNamedFontSizesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnableAccessibilityScalingForNamedFontSizes">
+      <MemberSignature Language="C#" Value="public static bool GetEnableAccessibilityScalingForNamedFontSizes (Xamarin.Forms.BindableObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetEnableAccessibilityScalingForNamedFontSizes(class Xamarin.Forms.BindableObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Application.GetEnableAccessibilityScalingForNamedFontSizes(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetEnableAccessibilityScalingForNamedFontSizes : Xamarin.Forms.BindableObject -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Application.GetEnableAccessibilityScalingForNamedFontSizes element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnableAccessibilityScalingForNamedFontSizes">
+      <MemberSignature Language="C#" Value="public static bool GetEnableAccessibilityScalingForNamedFontSizes (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Application&gt; config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetEnableAccessibilityScalingForNamedFontSizes(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Application&gt; config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Application.GetEnableAccessibilityScalingForNamedFontSizes(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Application})" />
+      <MemberSignature Language="F#" Value="static member GetEnableAccessibilityScalingForNamedFontSizes : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Application&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Application.GetEnableAccessibilityScalingForNamedFontSizes config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Application&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetHandleControlUpdatesOnMainThread">
       <MemberSignature Language="C#" Value="public static bool GetHandleControlUpdatesOnMainThread (Xamarin.Forms.BindableObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetHandleControlUpdatesOnMainThread(class Xamarin.Forms.BindableObject element) cil managed" />
@@ -147,6 +211,55 @@
       </ReturnValue>
       <Docs>
         <summary>Backing store for the attached property that controls whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEnableAccessibilityScalingForNamedFontSizes">
+      <MemberSignature Language="C#" Value="public static void SetEnableAccessibilityScalingForNamedFontSizes (Xamarin.Forms.BindableObject element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEnableAccessibilityScalingForNamedFontSizes(class Xamarin.Forms.BindableObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Application.SetEnableAccessibilityScalingForNamedFontSizes(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetEnableAccessibilityScalingForNamedFontSizes : Xamarin.Forms.BindableObject * bool -&gt; unit" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Application.SetEnableAccessibilityScalingForNamedFontSizes (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEnableAccessibilityScalingForNamedFontSizes">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Application&gt; SetEnableAccessibilityScalingForNamedFontSizes (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Application&gt; config, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Application&gt; SetEnableAccessibilityScalingForNamedFontSizes(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.iOS, class Xamarin.Forms.Application&gt; config, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Application.SetEnableAccessibilityScalingForNamedFontSizes(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Application},System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetEnableAccessibilityScalingForNamedFontSizes : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Application&gt; * bool -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS, Xamarin.Forms.Application&gt;" Usage="Xamarin.Forms.PlatformConfiguration.iOSSpecific.Application.SetEnableAccessibilityScalingForNamedFontSizes (config, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Application&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Application&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

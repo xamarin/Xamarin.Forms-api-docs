@@ -75,6 +75,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetTemplateChild">
+      <MemberSignature Language="C#" Value="protected object GetTemplateChild (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetTemplateChild(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TemplatedView.GetTemplateChild(System.String)" />
+      <MemberSignature Language="F#" Value="member this.GetTemplateChild : string -&gt; obj" Usage="templatedView.GetTemplateChild name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="LayoutChildren">
       <MemberSignature Language="C#" Value="protected override void LayoutChildren (double x, double y, double width, double height);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LayoutChildren(float64 x, float64 y, float64 width, float64 height) cil managed" />
@@ -101,6 +124,50 @@
         <param name="width">The width of the bounding rectangle.</param>
         <param name="height">The height of the bounding rectangle.</param>
         <summary>Positions and sizes the children of the templated view within the rectangle defined by <paramref name="x" />, <paramref name="y" />, <paramref name="width" />, and <paramref name="height" />T.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected virtual void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TemplatedView.OnApplyTemplate" />
+      <MemberSignature Language="F#" Value="abstract member OnApplyTemplate : unit -&gt; unit&#xA;override this.OnApplyTemplate : unit -&gt; unit" Usage="templatedView.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IControlTemplated.OnApplyTemplate</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChildRemoved">
+      <MemberSignature Language="C#" Value="protected override void OnChildRemoved (Xamarin.Forms.Element child);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildRemoved(class Xamarin.Forms.Element child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="override this.OnChildRemoved : Xamarin.Forms.Element -&gt; unit" Usage="templatedView.OnChildRemoved child" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
