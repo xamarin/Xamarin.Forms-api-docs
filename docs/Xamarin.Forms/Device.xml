@@ -153,7 +153,7 @@ Device.BeginInvokeOnMainThread (() => {
       <Parameters />
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +172,8 @@ Device.BeginInvokeOnMainThread (() => {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the current <see cref="T:System.Threading.SynchronizationContext"/> from the main thread.</summary>
+        <returns>The current <see cref="T:System.Threading.SynchronizationContext"/> from the main thread.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,7 +202,7 @@ Device.BeginInvokeOnMainThread (() => {
         <param name="size">The named size for which to get the numeric size.</param>
         <param name="targetElementType">The element type for which to calculate the numeric size.</param>
         <summary>Returns a double that represents the named size for the font that is used on the element on the native platform.</summary>
-        <returns>To be added.</returns>
+        <returns>The named size for the font that is used on the element on the native platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,7 +231,7 @@ Device.BeginInvokeOnMainThread (() => {
         <param name="size">The named size for which to get the numeric size.</param>
         <param name="targetElement">The element for which to calculate the numeric size.</param>
         <summary>Returns a double that represents a font size that corresponds to <paramref name="size" /> on <paramref name="targetElement" />.</summary>
-        <returns>To be added.</returns>
+        <returns>A double that represents a font size that corresponds to <paramref name="size" /> on <paramref name="targetElement" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,7 +264,7 @@ Device.BeginInvokeOnMainThread (() => {
         <param name="targetElementType">For internal use by the Xamarin.Forms platform.</param>
         <param name="useOldSizes">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,8 +379,8 @@ Device.BeginInvokeOnMainThread (() => {
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The Action to invoke</param>
+        <summary>Invokes an Action on the device main (UI) thread.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -402,8 +402,8 @@ Device.BeginInvokeOnMainThread (() => {
         <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
       </Parameters>
       <Docs>
-        <param name="funcTask">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="funcTask">The Func to invoke.</param>
+        <summary>Invokes a Func on the device main (UI) thread.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -428,9 +428,9 @@ Device.BeginInvokeOnMainThread (() => {
         <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="funcTask">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The return type of the Func.</typeparam>
+        <param name="funcTask">The Func to invoke.</param>
+        <summary>Invokes a Func on the device main (UI) thread.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -455,9 +455,9 @@ Device.BeginInvokeOnMainThread (() => {
         <Parameter Name="func" Type="System.Func&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="func">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The return type of the Func.</typeparam>
+        <param name="func">The Func to invoke.</param>
+        <summary>Invokes a Func on the device main (UI) thread./summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
