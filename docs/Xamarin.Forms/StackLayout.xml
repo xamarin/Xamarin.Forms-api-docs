@@ -241,10 +241,10 @@ var stackLayout = new StackLayout {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("OnSizeRequest is obsolete as of version 2.2.0. Please use OnMeasure instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
