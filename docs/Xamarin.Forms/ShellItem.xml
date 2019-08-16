@@ -23,10 +23,10 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>Xamarin.Forms.ContentProperty("Items")</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName>Xamarin.Forms.ContentProperty("Items")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -220,7 +220,7 @@
       </Parameters>
       <Docs>
         <param name="menuItem">To be added.</param>
-        <summary>Used primarily by XAML to implicitly create a MenuShellItem from a <see cref="T:Xamarin.Forms.ShellSection" /> .</summary>
+        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.MenuItem" /> from a <see cref="T:Xamarin.Forms.ShellSection" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
