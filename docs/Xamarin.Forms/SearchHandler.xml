@@ -570,7 +570,7 @@
         <summary>The <see cref="T:Xamarin.Forms.DataTemplate" /> to apply to each item in <see cref="P:Xamarin.Forms.SearchHandler.ItemsSource" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>For example, to create the style shown here: <img src="search-results-template.png" />, developers could use either the following XAML or C#:</para>
+          <para>For example, to create the style shown here: <img src="~/Xamarin.Forms/_images/search-results-template.png" />, developers could use either the following XAML or C#:</para>
           <example>
             <code lang="XAML"><![CDATA[<ContentPage ...
              xmlns:controls="clr-namespace:Xaminals.Controls">    
@@ -600,7 +600,7 @@
 </ContentPage>]]></code>
           </example>
           <example>
-            <code lang="csharp lang-csharp"><![CDATA[[Shell.SetSearchHandler(this, new MonkeySearchHandler
+            <code lang="csharp lang-csharp"><![CDATA[Shell.SetSearchHandler(this, new MonkeySearchHandler
 {
     Placeholder = "Enter search term",
     ShowsResults = true,
@@ -610,12 +610,12 @@
         Grid grid = new Grid { Padding = 10 };
         grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(0.15, GridUnitType.Star) });
         grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(0.85, GridUnitType.Star) });
-
+        
         Image image = new Image { Aspect = Aspect.AspectFill, HeightRequest = 40, WidthRequest = 40 };
         image.SetBinding(Image.SourceProperty, "ImageUrl");
         Label nameLabel = new Label { FontAttributes = FontAttributes.Bold };
         nameLabel.SetBinding(Label.TextProperty, "Name");
-
+        
         grid.Children.Add(image);
         grid.Children.Add(nameLabel, 1, 0);
         return grid;
@@ -687,7 +687,6 @@
             <code lang="csharp csharp-lang"><![CDATA[protected override async void OnItemSelected(object item)
 {
     base.OnItemSelected(item);
-
     // Note: strings will be URL encoded for navigation (e.g. "Blue Monkey" becomes "Blue%20Monkey"). Therefore, decode at the receiver.
     await (App.Current.MainPage as Xamarin.Forms.Shell).GoToAsync($"app://xamarin.com/xaminals/animals/monkeys/monkeydetails?name={((Animal)item).Name}");
 }]]></code>
@@ -719,11 +718,9 @@
         <remarks>
           <para>A common use-case is modifying the set of suggestions as the user enters data:</para>
           <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-%|protected override void OnQueryChanged(string oldValue, string newValue)
+            <code lang="csharp lang-csharp"><![CDATA[protected override void OnQueryChanged(string oldValue, string newValue)
 {
     base.OnQueryChanged(oldValue, newValue);
-
     if (string.IsNullOrWhiteSpace(newValue))
     {
         ItemsSource = null;
