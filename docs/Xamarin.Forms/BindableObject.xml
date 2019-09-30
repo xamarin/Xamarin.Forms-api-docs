@@ -894,7 +894,7 @@ class MyBindable : BindableObject
         <summary>Unapplies all previously set bindings.</summary>
         <remarks>
           <para>This method removes all current bindings from the current context.</para>
-          <block subset="none" type="note">Changing a bound property requires that the binding count for a bound property must be 0. The <see cref="M:Xamarin.Forms.BindableObject.UnapplyBindings" /> method merely decrements the cound, and does not remove all bindings everywhere.</block>
+          <block subset="none" type="note">Changing a bound property requires that the binding count for a bound property must be 0. The <see cref="M:Xamarin.Forms.BindableObject.UnapplyBindings" /> method merely decrements the count, and does not remove all bindings everywhere.</block>
         </remarks>
       </Docs>
     </Member>
