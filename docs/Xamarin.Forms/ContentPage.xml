@@ -35,7 +35,7 @@ using Xamarin.Forms;
     
 namespace ContentPageExample
 {
-    public class App
+    public class App : Application
     {
         public static Page GetMainPage ()
         {    
@@ -46,6 +46,11 @@ namespace ContentPageExample
                     HorizontalOptions = LayoutOptions.CenterAndExpand,
                 },
             };
+        }
+
+        public App ()
+        {
+            MainPage = GetMainPage();
         }
     }
 }

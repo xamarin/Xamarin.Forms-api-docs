@@ -364,8 +364,8 @@ stack.BindingContext = new {Jane = new {Name = "Jane Doe"}, John = new {Name = "
       </Parameters>
       <Docs>
         <param name="property">The BindableProperty for which to get the value.</param>
-        <summary>Returns the value that is contained the BindableProperty.</summary>
-        <returns>The value that is contained the <see cref="T:Xamarin.Forms.BindableProperty" />.</returns>
+        <summary>Returns the value that is contained in the BindableProperty.</summary>
+        <returns>The value that is contained in the <see cref="T:Xamarin.Forms.BindableProperty" />.</returns>
         <remarks>
           <para>
             <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> and <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> are used to access the values of properties that are implemented by a <see cref="T:Xamarin.Forms.BindableProperty" />. That is, application developers typically provide an interface for a bound property by defining <see langword="public" /> property whose <see langword="get" /> accessor casts  the result of <see cref="M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)" /> to the appropriate type and returns it, and whose <see langword="set" /> accessor uses <see cref="M:Xamarin.Forms.BindableObject.SetValue*" /> to set the value on the correct property. Application developers should perform no other steps in the public property that defines the interface of the bound property.</para>
@@ -894,7 +894,7 @@ class MyBindable : BindableObject
         <summary>Unapplies all previously set bindings.</summary>
         <remarks>
           <para>This method removes all current bindings from the current context.</para>
-          <block subset="none" type="note">Changing a bound property requires that the binding count for a bound property must be 0. The <see cref="M:Xamarin.Forms.BindableObject.UnapplyBindings" /> method merely decrements the cound, and does not remove all bindings everywhere.</block>
+          <block subset="none" type="note">Changing a bound property requires that the binding count for a bound property must be 0. The <see cref="M:Xamarin.Forms.BindableObject.UnapplyBindings" /> method merely decrements the count, and does not remove all bindings everywhere.</block>
         </remarks>
       </Docs>
     </Member>
