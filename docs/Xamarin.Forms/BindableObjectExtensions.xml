@@ -24,6 +24,37 @@
     </remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetPropertyIfSet&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T GetPropertyIfSet&lt;T&gt; (this Xamarin.Forms.BindableObject bindableObject, Xamarin.Forms.BindableProperty bindableProperty, T returnIfNotSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetPropertyIfSet&lt;T&gt;(class Xamarin.Forms.BindableObject bindableObject, class Xamarin.Forms.BindableProperty bindableProperty, !!T returnIfNotSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObjectExtensions.GetPropertyIfSet``1(Xamarin.Forms.BindableObject,Xamarin.Forms.BindableProperty,``0)" />
+      <MemberSignature Language="F#" Value="static member GetPropertyIfSet : Xamarin.Forms.BindableObject * Xamarin.Forms.BindableProperty * 'T -&gt; 'T" Usage="Xamarin.Forms.BindableObjectExtensions.GetPropertyIfSet (bindableObject, bindableProperty, returnIfNotSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="bindableObject" Type="Xamarin.Forms.BindableObject" RefType="this" />
+        <Parameter Name="bindableProperty" Type="Xamarin.Forms.BindableProperty" />
+        <Parameter Name="returnIfNotSet" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="bindableObject">To be added.</param>
+        <param name="bindableProperty">To be added.</param>
+        <param name="returnIfNotSet">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetBinding">
       <MemberSignature Language="C#" Value="public static void SetBinding (this Xamarin.Forms.BindableObject self, Xamarin.Forms.BindableProperty targetProperty, string path, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = null, string stringFormat = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBinding(class Xamarin.Forms.BindableObject self, class Xamarin.Forms.BindableProperty targetProperty, string path, valuetype Xamarin.Forms.BindingMode mode, class Xamarin.Forms.IValueConverter converter, string stringFormat) cil managed" />
