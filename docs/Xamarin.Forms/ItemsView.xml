@@ -1,6 +1,6 @@
 <Type Name="ItemsView" FullName="Xamarin.Forms.ItemsView">
-  <TypeSignature Language="C#" Value="public class ItemsView : Xamarin.Forms.View" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemsView extends Xamarin.Forms.View" />
+  <TypeSignature Language="C#" Value="public abstract class ItemsView : Xamarin.Forms.View" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ItemsView extends Xamarin.Forms.View" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.ItemsView" />
   <TypeSignature Language="F#" Value="type ItemsView = class&#xA;    inherit View" />
   <AssemblyInfo>
@@ -17,8 +17,8 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected internal ItemsView ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="C#" Value="protected ItemsView ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -127,154 +127,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Footer">
-      <MemberSignature Language="C#" Value="public object Footer { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object Footer" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.Footer" />
-      <MemberSignature Language="F#" Value="member this.Footer : obj with get, set" Usage="Xamarin.Forms.ItemsView.Footer" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FooterProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FooterProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FooterProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.FooterProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable FooterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.FooterProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FooterTemplate">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate FooterTemplate { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate FooterTemplate" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.FooterTemplate" />
-      <MemberSignature Language="F#" Value="member this.FooterTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.ItemsView.FooterTemplate" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FooterTemplateProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FooterTemplateProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FooterTemplateProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.FooterTemplateProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable FooterTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.FooterTemplateProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Header">
-      <MemberSignature Language="C#" Value="public object Header { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object Header" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.Header" />
-      <MemberSignature Language="F#" Value="member this.Header : obj with get, set" Usage="Xamarin.Forms.ItemsView.Header" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeaderProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty HeaderProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty HeaderProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.HeaderProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable HeaderProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.HeaderProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeaderTemplate">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate HeaderTemplate { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate HeaderTemplate" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.HeaderTemplate" />
-      <MemberSignature Language="F#" Value="member this.HeaderTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.ItemsView.HeaderTemplate" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeaderTemplateProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty HeaderTemplateProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty HeaderTemplateProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.HeaderTemplateProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.HeaderTemplateProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="HorizontalScrollBarVisibility">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ScrollBarVisibility HorizontalScrollBarVisibility { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ScrollBarVisibility HorizontalScrollBarVisibility" />
@@ -312,6 +164,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InternalItemsLayout">
+      <MemberSignature Language="C#" Value="protected Xamarin.Forms.IItemsLayout InternalItemsLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IItemsLayout InternalItemsLayout" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.InternalItemsLayout" />
+      <MemberSignature Language="F#" Value="member this.InternalItemsLayout : Xamarin.Forms.IItemsLayout with get, set" Usage="Xamarin.Forms.ItemsView.InternalItemsLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IItemsLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ItemSizingStrategy">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ItemSizingStrategy ItemSizingStrategy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ItemSizingStrategy ItemSizingStrategy" />
@@ -346,43 +217,6 @@
       </ReturnValue>
       <Docs>
         <summary>The backing store for the <see cref="P:Xamarin.Forms.ItemsView.ItemSizingStrategy" /> field.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ItemsLayout">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.IItemsLayout ItemsLayout { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IItemsLayout ItemsLayout" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView.ItemsLayout" />
-      <MemberSignature Language="F#" Value="member this.ItemsLayout : Xamarin.Forms.IItemsLayout with get, set" Usage="Xamarin.Forms.ItemsView.ItemsLayout" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.IItemsLayout</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ItemsLayoutProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemsLayoutProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemsLayoutProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.ItemsView.ItemsLayoutProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ItemsLayoutProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.ItemsView.ItemsLayoutProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The backing store for the <see cref="P:Xamarin.Forms.ItemsView.ItemsLayout" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,138 @@
+<Type Name="RelativeBindingSource" FullName="Xamarin.Forms.RelativeBindingSource">
+  <TypeSignature Language="C#" Value="public sealed class RelativeBindingSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RelativeBindingSource extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.RelativeBindingSource" />
+  <TypeSignature Language="F#" Value="type RelativeBindingSource = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RelativeBindingSource (Xamarin.Forms.RelativeBindingSourceMode mode, Type ancestorType = null, int ancestorLevel = 1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.RelativeBindingSourceMode mode, class System.Type ancestorType, int32 ancestorLevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.RelativeBindingSource.#ctor(Xamarin.Forms.RelativeBindingSourceMode,System.Type,System.Int32)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.RelativeBindingSource : Xamarin.Forms.RelativeBindingSourceMode * Type * int -&gt; Xamarin.Forms.RelativeBindingSource" Usage="new Xamarin.Forms.RelativeBindingSource (mode, ancestorType, ancestorLevel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="mode" Type="Xamarin.Forms.RelativeBindingSourceMode" />
+        <Parameter Name="ancestorType" Type="System.Type" />
+        <Parameter Name="ancestorLevel" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="mode">To be added.</param>
+        <param name="ancestorType">To be added.</param>
+        <param name="ancestorLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AncestorLevel">
+      <MemberSignature Language="C#" Value="public int AncestorLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AncestorLevel" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.RelativeBindingSource.AncestorLevel" />
+      <MemberSignature Language="F#" Value="member this.AncestorLevel : int" Usage="Xamarin.Forms.RelativeBindingSource.AncestorLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AncestorType">
+      <MemberSignature Language="C#" Value="public Type AncestorType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type AncestorType" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.RelativeBindingSource.AncestorType" />
+      <MemberSignature Language="F#" Value="member this.AncestorType : Type" Usage="Xamarin.Forms.RelativeBindingSource.AncestorType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.RelativeBindingSourceMode Mode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.RelativeBindingSourceMode Mode" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.RelativeBindingSource.Mode" />
+      <MemberSignature Language="F#" Value="member this.Mode : Xamarin.Forms.RelativeBindingSourceMode" Usage="Xamarin.Forms.RelativeBindingSource.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.RelativeBindingSourceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Self">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.RelativeBindingSource Self { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.RelativeBindingSource Self" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.RelativeBindingSource.Self" />
+      <MemberSignature Language="F#" Value="member this.Self : Xamarin.Forms.RelativeBindingSource" Usage="Xamarin.Forms.RelativeBindingSource.Self" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.RelativeBindingSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplatedParent">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.RelativeBindingSource TemplatedParent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.RelativeBindingSource TemplatedParent" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.RelativeBindingSource.TemplatedParent" />
+      <MemberSignature Language="F#" Value="member this.TemplatedParent : Xamarin.Forms.RelativeBindingSource" Usage="Xamarin.Forms.RelativeBindingSource.TemplatedParent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.RelativeBindingSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

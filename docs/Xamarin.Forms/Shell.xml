@@ -1918,6 +1918,41 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="VerifyShellUWPFlagEnabled">
+      <MemberSignature Language="C#" Value="public static void VerifyShellUWPFlagEnabled (string constructorHint = null, string memberName = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VerifyShellUWPFlagEnabled(string constructorHint, string memberName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.VerifyShellUWPFlagEnabled(System.String,System.String)" />
+      <MemberSignature Language="F#" Value="static member VerifyShellUWPFlagEnabled : string * string -&gt; unit" Usage="Xamarin.Forms.Shell.VerifyShellUWPFlagEnabled (constructorHint, memberName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constructorHint" Type="System.String" />
+        <Parameter Name="memberName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="constructorHint">To be added.</param>
+        <param name="memberName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Xamarin.Forms.IShellController.AddAppearanceObserver">
       <MemberSignature Language="C#" Value="void IShellController.AddAppearanceObserver (Xamarin.Forms.IAppearanceObserver observer, Xamarin.Forms.Element pivot);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.AddAppearanceObserver(class Xamarin.Forms.IAppearanceObserver observer, class Xamarin.Forms.Element pivot) cil managed" />

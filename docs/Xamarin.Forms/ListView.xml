@@ -1570,6 +1570,24 @@ ListView CreateListView()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Scrolled">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.ScrolledEventArgs&gt; Scrolled;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.ScrolledEventArgs&gt; Scrolled" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ListView.Scrolled" />
+      <MemberSignature Language="F#" Value="member this.Scrolled : EventHandler&lt;Xamarin.Forms.ScrolledEventArgs&gt; " Usage="member this.Scrolled : System.EventHandler&lt;Xamarin.Forms.ScrolledEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.ScrolledEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ScrollTo">
       <MemberSignature Language="C#" Value="public void ScrollTo (object item, Xamarin.Forms.ScrollToPosition position, bool animated);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollTo(object item, valuetype Xamarin.Forms.ScrollToPosition position, bool animated) cil managed" />
@@ -1852,6 +1870,33 @@ ListView CreateListView()
       <Parameters />
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendScrolled">
+      <MemberSignature Language="C#" Value="public void SendScrolled (Xamarin.Forms.ScrolledEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendScrolled(class Xamarin.Forms.ScrolledEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.SendScrolled(Xamarin.Forms.ScrolledEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.SendScrolled : Xamarin.Forms.ScrolledEventArgs -&gt; unit" Usage="listView.SendScrolled args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Xamarin.Forms.ScrolledEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
