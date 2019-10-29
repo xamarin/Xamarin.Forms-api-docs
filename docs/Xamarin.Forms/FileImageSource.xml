@@ -74,7 +74,7 @@
       <Docs>
         <summary>Request a cancel of the ImageSource loading.</summary>
         <returns>An awaitable Task.</returns>
-        <remarks>Overriden for FileImageSource. FileImageSource are not cancellable, so this will always returns a completed Task with <see langword="false" /> as Result.</remarks>
+        <remarks>overridden for FileImageSource. FileImageSource are not cancellable, so this will always returns a completed Task with <see langword="false" /> as Result.</remarks>
       </Docs>
     </Member>
     <Member MemberName="File">
