@@ -763,8 +763,24 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
       <Docs>
         <param name="interval">The interval between invocations of the callback.</param>
         <param name="callback">The action to run when the timer elapses.</param>
-        <summary>Starts a recurring timer on the UI thread using the device clock capabilities.</summary>
-        <remarks>While the callback returns <see langword="true" />, the timer will keep recurring.</remarks>
+        <summary>Starts a recurring timer using the device clock capabilities.</summary>
+        <remarks>
+          <para>While the callback returns <see langword="true" />, the timer will keep recurring.</para>
+          <para>If you want the code inside the timer to interact on the UI thread (e.g. setting text of a Label or showing an alert), it should be done within a <see langword="BeginInvokeOnMainThread" /> expression, which will be nested inside the timer (see below).</para>
+          <example>
+            <code lang="csharp lang-csharp"><![CDATA[
+Device.StartTimer (new TimeSpan (0, 0, 60), () =>
+{
+    // do something every 60 seconds
+    Device.BeginInvokeOnMainThread (() => 
+    {
+      // interact with UI elements
+    });
+    return true; // runs again, or false to stop
+});
+          ]]></code>
+          </example>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tizen">
