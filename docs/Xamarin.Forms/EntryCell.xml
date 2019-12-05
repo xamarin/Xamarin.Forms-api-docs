@@ -465,6 +465,43 @@ namespace FormsGallery
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="VerticalTextAlignment">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.TextAlignment VerticalTextAlignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.TextAlignment VerticalTextAlignment" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.EntryCell.VerticalTextAlignment" />
+      <MemberSignature Language="F#" Value="member this.VerticalTextAlignment : Xamarin.Forms.TextAlignment with get, set" Usage="Xamarin.Forms.EntryCell.VerticalTextAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.TextAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalTextAlignmentProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty VerticalTextAlignmentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty VerticalTextAlignmentProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.EntryCell.VerticalTextAlignmentProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalTextAlignmentProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.EntryCell.VerticalTextAlignmentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="XAlign">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.TextAlignment XAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.TextAlignment XAlign" />
@@ -484,10 +521,10 @@ namespace FormsGallery
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("XAlign is obsolete as of version 2.0.0. Please use HorizontalTextAlignment instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("XAlign is obsolete as of version 2.0.0. Please use HorizontalTextAlignment instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -519,10 +556,10 @@ namespace FormsGallery
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("XAlignProperty is obsolete as of version 2.0.0. Please use HorizontalTextAlignmentProperty instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("XAlignProperty is obsolete as of version 2.0.0. Please use HorizontalTextAlignmentProperty instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

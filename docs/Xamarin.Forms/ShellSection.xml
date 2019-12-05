@@ -20,10 +20,10 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>Xamarin.Forms.ContentProperty("Items")</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName>Xamarin.Forms.ContentProperty("Items")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -104,17 +104,17 @@
       </Docs>
     </Member>
     <Member MemberName="Items">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellContentCollection Items { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellContentCollection Items" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.ShellContent&gt; Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.ShellContent&gt; Items" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellSection.Items" />
-      <MemberSignature Language="F#" Value="member this.Items : Xamarin.Forms.ShellContentCollection" Usage="Xamarin.Forms.ShellSection.Items" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.IList&lt;Xamarin.Forms.ShellContent&gt;" Usage="Xamarin.Forms.ShellSection.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.ShellContentCollection</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.ShellContent&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>The collection of <see cref="T:Xamarin.Forms.ShellContent" /> objects managed by <c>this</c><see cref="T:Xamarin.Forms.ShellSection" />.</summary>
@@ -137,6 +137,25 @@
       </ReturnValue>
       <Docs>
         <summary>The backing store for the <see cref="P:Xamarin.Forms.ShellSection.Items" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingContextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingContextChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.OnBindingContextChanged" />
+      <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="shellSection.OnBindingContextChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,7 +455,7 @@
         <ReturnType>System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

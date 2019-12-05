@@ -23,10 +23,10 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>Xamarin.Forms.ContentProperty("Items")</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName>Xamarin.Forms.ContentProperty("Items")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -87,17 +87,17 @@
       </Docs>
     </Member>
     <Member MemberName="Items">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellSectionCollection Items { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellSectionCollection Items" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.ShellSection&gt; Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.ShellSection&gt; Items" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellItem.Items" />
-      <MemberSignature Language="F#" Value="member this.Items : Xamarin.Forms.ShellSectionCollection" Usage="Xamarin.Forms.ShellItem.Items" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.IList&lt;Xamarin.Forms.ShellSection&gt;" Usage="Xamarin.Forms.ShellItem.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.ShellSectionCollection</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.ShellSection&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>The collection of <see cref="T:Xamarin.Forms.ShellSection" /> objects managed by <c>this</c><see cref="T:Xamarin.Forms.ShellItem" />.</summary>
@@ -220,7 +220,7 @@
       </Parameters>
       <Docs>
         <param name="menuItem">To be added.</param>
-        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.MenuShellItem" /> from a <see cref="T:Xamarin.Forms.ShellSection" /> .</summary>
+        <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.MenuItem" /> from a <see cref="T:Xamarin.Forms.ShellSection" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

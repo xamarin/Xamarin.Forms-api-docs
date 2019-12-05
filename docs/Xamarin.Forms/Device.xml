@@ -153,7 +153,27 @@ Device.BeginInvokeOnMainThread (() => {
       <Parameters />
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMainThreadSynchronizationContextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.SynchronizationContext&gt; GetMainThreadSynchronizationContextAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Threading.SynchronizationContext&gt; GetMainThreadSynchronizationContextAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Device.GetMainThreadSynchronizationContextAsync" />
+      <MemberSignature Language="F#" Value="static member GetMainThreadSynchronizationContextAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Threading.SynchronizationContext&gt;" Usage="Xamarin.Forms.Device.GetMainThreadSynchronizationContextAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Threading.SynchronizationContext&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the current <see cref="T:System.Threading.SynchronizationContext" /> from the main thread.</summary>
+        <returns>The current <see cref="T:System.Threading.SynchronizationContext" /> from the main thread.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,7 +202,7 @@ Device.BeginInvokeOnMainThread (() => {
         <param name="size">The named size for which to get the numeric size.</param>
         <param name="targetElementType">The element type for which to calculate the numeric size.</param>
         <summary>Returns a double that represents the named size for the font that is used on the element on the native platform.</summary>
-        <returns>To be added.</returns>
+        <returns>The named size for the font that is used on the element on the native platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +231,7 @@ Device.BeginInvokeOnMainThread (() => {
         <param name="size">The named size for which to get the numeric size.</param>
         <param name="targetElement">The element for which to calculate the numeric size.</param>
         <summary>Returns a double that represents a font size that corresponds to <paramref name="size" /> on <paramref name="targetElement" />.</summary>
-        <returns>To be added.</returns>
+        <returns>A double that represents a font size that corresponds to <paramref name="size" /> on <paramref name="targetElement" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,7 +264,7 @@ Device.BeginInvokeOnMainThread (() => {
         <param name="targetElementType">For internal use by the Xamarin.Forms platform.</param>
         <param name="useOldSizes">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,6 +362,106 @@ Device.BeginInvokeOnMainThread (() => {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InvokeOnMainThreadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task InvokeOnMainThreadAsync (Action action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task InvokeOnMainThreadAsync(class System.Action action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync(System.Action)" />
+      <MemberSignature Language="F#" Value="static member InvokeOnMainThreadAsync : Action -&gt; System.Threading.Tasks.Task" Usage="Xamarin.Forms.Device.InvokeOnMainThreadAsync action" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.Action" />
+      </Parameters>
+      <Docs>
+        <param name="action">The Action to invoke</param>
+        <summary>Invokes an Action on the device main (UI) thread.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeOnMainThreadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task InvokeOnMainThreadAsync (Func&lt;System.Threading.Tasks.Task&gt; funcTask);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task InvokeOnMainThreadAsync(class System.Func`1&lt;class System.Threading.Tasks.Task&gt; funcTask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync(System.Func{System.Threading.Tasks.Task})" />
+      <MemberSignature Language="F#" Value="static member InvokeOnMainThreadAsync : Func&lt;System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Task" Usage="Xamarin.Forms.Device.InvokeOnMainThreadAsync funcTask" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="funcTask">The Func to invoke.</param>
+        <summary>Invokes a Func on the device main (UI) thread.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeOnMainThreadAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; InvokeOnMainThreadAsync&lt;T&gt; (Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt; funcTask);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; InvokeOnMainThreadAsync&lt;T&gt;(class System.Func`1&lt;class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; funcTask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync``1(System.Func{System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="F#" Value="static member InvokeOnMainThreadAsync : Func&lt;System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Xamarin.Forms.Device.InvokeOnMainThreadAsync funcTask" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The return type of the Func.</typeparam>
+        <param name="funcTask">The Func to invoke.</param>
+        <summary>Invokes a Func on the device main (UI) thread.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeOnMainThreadAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; InvokeOnMainThreadAsync&lt;T&gt; (Func&lt;T&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; InvokeOnMainThreadAsync&lt;T&gt;(class System.Func`1&lt;!!T&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync``1(System.Func{``0})" />
+      <MemberSignature Language="F#" Value="static member InvokeOnMainThreadAsync : Func&lt;'T&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Xamarin.Forms.Device.InvokeOnMainThreadAsync func" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="func" Type="System.Func&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The return type of the Func.</typeparam>
+        <param name="func">The Func to invoke.</param>
+        <summary>Invokes a Func on the device main (UI) thread.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="iOS">
       <MemberSignature Language="C#" Value="public const string iOS;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string iOS" />
@@ -424,10 +544,10 @@ Device.BeginInvokeOnMainThread (() => {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("OnPlatform is obsolete as of version 2.3.4. Please use 'switch (Device.RuntimePlatform)' instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("OnPlatform is obsolete as of version 2.3.4. Please use 'switch (Device.RuntimePlatform)' instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -475,10 +595,10 @@ Device.OnPlatform (iOS: () => label.Font = Font.OfSize ("HelveticaNeue-UltraLigh
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("OnPlatform&lt;&gt; (generic) is obsolete as of version 2.3.4. Please use 'switch (Device.RuntimePlatform)' instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("OnPlatform&lt;&gt; (generic) is obsolete as of version 2.3.4. Please use 'switch (Device.RuntimePlatform)' instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -527,6 +647,11 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("OpenUri is obsolete as of version 4.3.0. Use Launcher.OpenUri (or CanOpen, or TryOpen) from Xamarin.Essentials")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -558,10 +683,10 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("TargetPlatform is obsolete as of version 2.3.4. Please use RuntimePlatform instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("TargetPlatform is obsolete as of version 2.3.4. Please use RuntimePlatform instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

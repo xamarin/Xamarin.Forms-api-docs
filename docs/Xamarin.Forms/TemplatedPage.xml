@@ -39,9 +39,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TemplatedPage.ControlTemplate" />
       <MemberSignature Language="F#" Value="member this.ControlTemplate : Xamarin.Forms.ControlTemplate with get, set" Usage="Xamarin.Forms.TemplatedPage.ControlTemplate" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IControlTemplated.ControlTemplate</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -72,6 +69,70 @@
       </ReturnValue>
       <Docs>
         <summary>Backing store for the <see cref="P:Xamarin.Forms.TemplatedPage.ControlTemplate" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTemplateChild">
+      <MemberSignature Language="C#" Value="protected object GetTemplateChild (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetTemplateChild(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TemplatedPage.GetTemplateChild(System.String)" />
+      <MemberSignature Language="F#" Value="member this.GetTemplateChild : string -&gt; obj" Usage="templatedPage.GetTemplateChild name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected virtual void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TemplatedPage.OnApplyTemplate" />
+      <MemberSignature Language="F#" Value="abstract member OnApplyTemplate : unit -&gt; unit&#xA;override this.OnApplyTemplate : unit -&gt; unit" Usage="templatedPage.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChildRemoved">
+      <MemberSignature Language="C#" Value="protected override void OnChildRemoved (Xamarin.Forms.Element child);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildRemoved(class Xamarin.Forms.Element child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TemplatedPage.OnChildRemoved(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="override this.OnChildRemoved : Xamarin.Forms.Element -&gt; unit" Usage="templatedPage.OnChildRemoved child" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

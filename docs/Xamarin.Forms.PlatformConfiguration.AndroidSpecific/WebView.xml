@@ -18,25 +18,26 @@
   </Docs>
   <Members>
     <Member MemberName="DisplayZoomControls">
-      <MemberSignature Language="C#" Value="public static bool DisplayZoomControls (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DisplayZoomControls(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.DisplayZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
-      <MemberSignature Language="F#" Value="static member DisplayZoomControls : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.DisplayZoomControls config" />
+      <MemberSignature Language="C#" Value="public static void DisplayZoomControls (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DisplayZoomControls(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.DisplayZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView},System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member DisplayZoomControls : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt; * bool -&gt; unit" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.DisplayZoomControls (config, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <param name="value">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,15 +55,39 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.DisplayZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" /> field.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EnableZoomControlProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty EnableZoomControlProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty EnableZoomControlProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControlProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable EnableZoomControlProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControlProperty" />
+    <Member MemberName="EnableZoomControls">
+      <MemberSignature Language="C#" Value="public static void EnableZoomControls (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableZoomControls(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView},System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member EnableZoomControls : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt; * bool -&gt; unit" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControls (config, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableZoomControlsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty EnableZoomControlsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty EnableZoomControlsProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControlsProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable EnableZoomControlsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControlsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -73,29 +98,6 @@
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EnableZoomControls">
-      <MemberSignature Language="C#" Value="public static bool EnableZoomControls (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool EnableZoomControls(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControls(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
-      <MemberSignature Language="F#" Value="static member EnableZoomControls : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.EnableZoomControls config" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;" RefType="this" />
-      </Parameters>
-      <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +118,7 @@
         <Parameter Name="element" Type="Xamarin.Forms.WebView" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
+        <param name="element">The element on which to perform the operation.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -139,7 +141,7 @@
         <Parameter Name="element" Type="Xamarin.Forms.WebView" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
+        <param name="element">The element on which to perform the operation.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -230,7 +232,7 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -255,7 +257,7 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
+        <param name="element">The element on which to perform the operation.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -279,7 +281,7 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -304,7 +306,7 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
+        <param name="element">The element on which to perform the operation.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -357,6 +359,52 @@
         <param name="config">The platform configuration for the Android web view for which to set the loading behavior for content that is a mix of secure and insecure content.</param>
         <param name="value">The new mixed content mode.</param>
         <summary>Sets the mixed content mode for the web view.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZoomControlsDisplayed">
+      <MemberSignature Language="C#" Value="public static bool ZoomControlsDisplayed (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ZoomControlsDisplayed(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.ZoomControlsDisplayed(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
+      <MemberSignature Language="F#" Value="static member ZoomControlsDisplayed : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.ZoomControlsDisplayed config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZoomControlsEnabled">
+      <MemberSignature Language="C#" Value="public static bool ZoomControlsEnabled (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt; config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ZoomControlsEnabled(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Android, class Xamarin.Forms.WebView&gt; config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.ZoomControlsEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView})" />
+      <MemberSignature Language="F#" Value="static member ZoomControlsEnabled : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android, Xamarin.Forms.WebView&gt; -&gt; bool" Usage="Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.ZoomControlsEnabled config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

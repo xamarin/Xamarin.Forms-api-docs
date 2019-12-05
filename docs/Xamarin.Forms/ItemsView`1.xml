@@ -168,7 +168,7 @@
           <para>The ItemTemplate is used to define the visual appearance of objects from the <see cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" />. Through
           the item template you can set up data bindings to the user objects supplied to automatically fill in the visual and respond to any changes in the user
           object.</para>
-          <para>If the item template is <see langword="null" />, <see cref="M:Xamarin.Forms.ItemsView`1.CreateDefault(System.Object)" /> is called and the result is used as the visual.</para>
+          <para>If the item template is <see langword="null" />, Xamarin.Forms.ItemsView`1.CreateDefault(System.Object) is called and the result is used as the visual.</para>
           <example>
             <para>In this example, a template for a <see cref="T:Xamarin.Forms.TextCell" /> is created for a simple user object.</para>
             <code lang="csharp lang-csharp"><![CDATA[
@@ -209,7 +209,6 @@ void SetupView()
         </remarks>
         <altmember cref="T:Xamarin.Forms.DataTemplate" />
         <altmember cref="P:Xamarin.Forms.ItemsView`1.ItemsSource" />
-        <altmember cref="M:Xamarin.Forms.ItemsView`1.CreateDefault" />
       </Docs>
     </Member>
     <Member MemberName="ItemTemplateProperty">

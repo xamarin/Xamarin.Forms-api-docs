@@ -28,6 +28,14 @@
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("use FromResource()")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.StyleSheets.StyleSheet</ReturnType>
       </ReturnValue>
@@ -66,6 +74,38 @@
         <param name="reader">The text reader from which to read the style sheet data.</param>
         <summary>Returns a style sheet by reading style data from the <paramref name="reader" />.</summary>
         <returns>A style sheet created from the data in the reader.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromResource">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.StyleSheets.StyleSheet FromResource (string resourcePath, System.Reflection.Assembly assembly, System.Xml.IXmlLineInfo lineInfo = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.StyleSheets.StyleSheet FromResource(string resourcePath, class System.Reflection.Assembly assembly, class System.Xml.IXmlLineInfo lineInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.StyleSheets.StyleSheet.FromResource(System.String,System.Reflection.Assembly,System.Xml.IXmlLineInfo)" />
+      <MemberSignature Language="F#" Value="static member FromResource : string * System.Reflection.Assembly * System.Xml.IXmlLineInfo -&gt; Xamarin.Forms.StyleSheets.StyleSheet" Usage="Xamarin.Forms.StyleSheets.StyleSheet.FromResource (resourcePath, assembly, lineInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.StyleSheets.StyleSheet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourcePath" Type="System.String" />
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="lineInfo" Type="System.Xml.IXmlLineInfo" />
+      </Parameters>
+      <Docs>
+        <param name="resourcePath">For internal use by the Xamarin.Forms platform.</param>
+        <param name="assembly">For internal use by the Xamarin.Forms platform.</param>
+        <param name="lineInfo">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

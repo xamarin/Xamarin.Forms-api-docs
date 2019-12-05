@@ -36,6 +36,42 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
+        <summary>Creates a new <see cref="T:Xamarin.Forms.BaseShellItem" /> with default values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Appearing">
+      <MemberSignature Language="C#" Value="public event EventHandler Appearing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Appearing" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.BaseShellItem.Appearing" />
+      <MemberSignature Language="F#" Value="member this.Appearing : EventHandler " Usage="member this.Appearing : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disappearing">
+      <MemberSignature Language="C#" Value="public event EventHandler Disappearing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disappearing" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.BaseShellItem.Disappearing" />
+      <MemberSignature Language="F#" Value="member this.Disappearing : EventHandler " Usage="member this.Disappearing : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -54,8 +90,8 @@
         <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The icon to use for the item. If this property is unset, it will fallback to using the <see cref="P:Xamarin.Forms.BaseShellItem.Icon" /> property value.</summary>
+        <value>A <see cref="T:Xamarin.Forms.ImageSource" /> that represents an icon.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +127,8 @@
         <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Defines the icon to display in parts of the chrome that are not the flyout.</summary>
+        <value>A <see cref="T:Xamarin.Forms.ImageSource" /> that represents an icon.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +164,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Defines if the item is currently highlighted in the flyout.</summary>
+        <value>
+          <see langword="true" /> if the item is currently highlighted.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,8 +202,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Defines if the item is selectable in the chrome.</summary>
+        <value>
+          <see langword="true" /> if the item is selectable in the chrome.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +243,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether a FlyoutItem is included in tab navigation.</summary>
+        <value>Default value is <see langword="true" />; when <see langword="false" />, the FlyoutItem is ignored by the tab-navigation infrastructure, irrespective if a TabIndex is set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,7 +262,73 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.BaseShellItem.IsTabStopProperty" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAppearing">
+      <MemberSignature Language="C#" Value="protected virtual void OnAppearing ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAppearing() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BaseShellItem.OnAppearing" />
+      <MemberSignature Language="F#" Value="abstract member OnAppearing : unit -&gt; unit&#xA;override this.OnAppearing : unit -&gt; unit" Usage="baseShellItem.OnAppearing " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDisappearing">
+      <MemberSignature Language="C#" Value="protected virtual void OnDisappearing ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDisappearing() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BaseShellItem.OnDisappearing" />
+      <MemberSignature Language="F#" Value="abstract member OnDisappearing : unit -&gt; unit&#xA;override this.OnDisappearing : unit -&gt; unit" Usage="baseShellItem.OnDisappearing " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BaseShellItem.OnPropertyChanged(System.String)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : string -&gt; unit" Usage="baseShellItem.OnPropertyChanged propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the changed property.</param>
+        <summary>Called whenever a property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,9 +350,9 @@
         <Parameter Name="newValue" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldValue">Old TabIndex.</param>
+        <param name="newValue">New TabIndex.</param>
+        <summary>Called whenever the TabIndex property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,9 +374,9 @@
         <Parameter Name="newValue" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldValue">Old IsTabStop value.</param>
+        <param name="newValue">New IsTabStop value.</param>
+        <summary>Called whenever the IsTabStop property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,8 +394,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The string used to address the item.</summary>
+        <value>A unique string that identifies the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,8 +416,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates the order in which FlyoutItem objects receive focus when the user navigates through items by pressing the Tab key.</summary>
+        <value>Defaults to 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,8 +436,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Called to set the default value of the TabIndex property..</summary>
+        <returns>Defaults to 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,7 +455,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.BaseShellItem.TabIndexProperty" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,8 +474,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Called to set the default value of the TabStop property.</summary>
+        <returns>
+          <see langword="true" /> if TabStop.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -389,8 +494,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Title to display in the UI.</summary>
+        <value>Title to display in the UI.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

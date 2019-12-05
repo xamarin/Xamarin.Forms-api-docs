@@ -133,10 +133,10 @@
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.FileImageSource BackgroundImage { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.FileImageSource BackgroundImage" />
+      <MemberSignature Language="C#" Value="public string BackgroundImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Page.BackgroundImage" />
-      <MemberSignature Language="F#" Value="member this.BackgroundImage : Xamarin.Forms.FileImageSource with get, set" Usage="Xamarin.Forms.Page.BackgroundImage" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : string with get, set" Usage="Xamarin.Forms.Page.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -158,7 +158,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.FileImageSource</ReturnType>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Identifies the image used as a background for the <see cref="T:Xamarin.Forms.Page" />.</summary>
@@ -417,6 +417,41 @@
         <param name="cancel">Text to be displayed on the 'Cancel' button.</param>
         <summary>Presents an alert dialog to the application user with an accept and a cancel button.</summary>
         <returns>A task that contains the user's choice as a Boolean value. <see langword="true" /> indicates that the user accepted the alert. <see langword="false" /> indicates that the user cancelled the alert.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayPromptAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; DisplayPromptAsync (string title, string message, string accept = &quot;OK&quot;, string cancel = &quot;Cancel&quot;, string placeholder = null, int maxLength = -1, Xamarin.Forms.Keyboard keyboard = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; DisplayPromptAsync(string title, string message, string accept, string cancel, string placeholder, int32 maxLength, class Xamarin.Forms.Keyboard keyboard) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Page.DisplayPromptAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,Xamarin.Forms.Keyboard)" />
+      <MemberSignature Language="F#" Value="member this.DisplayPromptAsync : string * string * string * string * string * int * Xamarin.Forms.Keyboard -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="page.DisplayPromptAsync (title, message, accept, cancel, placeholder, maxLength, keyboard)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="accept" Type="System.String" />
+        <Parameter Name="cancel" Type="System.String" />
+        <Parameter Name="placeholder" Type="System.String" />
+        <Parameter Name="maxLength" Type="System.Int32" />
+        <Parameter Name="keyboard" Type="Xamarin.Forms.Keyboard" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="accept">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <param name="placeholder">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="keyboard">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -994,6 +1029,24 @@
       </ReturnValue>
       <Docs>
         <summary>Identifies the <see cref="P:Xamarin.Forms.Page.Padding" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PromptSignalName">
+      <MemberSignature Language="C#" Value="public const string PromptSignalName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PromptSignalName" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Page.PromptSignalName" />
+      <MemberSignature Language="F#" Value="val mutable PromptSignalName : string" Usage="Xamarin.Forms.Page.PromptSignalName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
