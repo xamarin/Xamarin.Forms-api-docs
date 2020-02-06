@@ -63,10 +63,10 @@
       </Docs>
     </Member>
     <Member MemberName="FrameBegin">
-      <MemberSignature Language="C#" Value="public static void FrameBegin (string name = &quot;&quot;, string id = null, int line = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FrameBegin(string name, string id, int32 line) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Profile.FrameBegin(System.String,System.String,System.Int32)" />
-      <MemberSignature Language="F#" Value="static member FrameBegin : string * string * int -&gt; unit" Usage="Xamarin.Forms.Internals.Profile.FrameBegin (name, id, line)" />
+      <MemberSignature Language="C#" Value="public static void FrameBegin (string name = &quot;&quot;, int line = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FrameBegin(string name, int32 line) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Profile.FrameBegin(System.String,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member FrameBegin : string * int -&gt; unit" Usage="Xamarin.Forms.Internals.Profile.FrameBegin (name, line)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -83,7 +83,6 @@
             </Attribute>
           </Attributes>
         </Parameter>
-        <Parameter Name="id" Type="System.String" />
         <Parameter Name="line" Type="System.Int32">
           <Attributes>
             <Attribute>
@@ -93,18 +92,17 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="name">For internal use by the Xamarin.Forms platform.</param>
-        <param name="id">For internal use by the Xamarin.Forms platform.</param>
-        <param name="line">For internal use by the Xamarin.Forms platform.</param>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <param name="name">To be added.</param>
+        <param name="line">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FrameEnd">
-      <MemberSignature Language="C#" Value="public static void FrameEnd ();" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FrameEnd() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Profile.FrameEnd" />
-      <MemberSignature Language="F#" Value="static member FrameEnd : unit -&gt; unit" Usage="Xamarin.Forms.Internals.Profile.FrameEnd " />
+      <MemberSignature Language="C#" Value="public static void FrameEnd (string name = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FrameEnd(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Profile.FrameEnd(System.String)" />
+      <MemberSignature Language="F#" Value="static member FrameEnd : string -&gt; unit" Usage="Xamarin.Forms.Internals.Profile.FrameEnd name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -113,9 +111,18 @@
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="name" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
       <Docs>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

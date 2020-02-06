@@ -1,0 +1,216 @@
+<Type Name="GIFHeader" FullName="Xamarin.Forms.Internals.GIFHeader">
+  <TypeSignature Language="C#" Value="public class GIFHeader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GIFHeader extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.GIFHeader" />
+  <TypeSignature Language="F#" Value="type GIFHeader = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BackgroundColor">
+      <MemberSignature Language="C#" Value="public int BackgroundColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BackgroundColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.GIFHeader.BackgroundColor" />
+      <MemberSignature Language="F#" Value="member this.BackgroundColor : int" Usage="Xamarin.Forms.Internals.GIFHeader.BackgroundColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundColorIndex">
+      <MemberSignature Language="C#" Value="public int BackgroundColorIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BackgroundColorIndex" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.GIFHeader.BackgroundColorIndex" />
+      <MemberSignature Language="F#" Value="member this.BackgroundColorIndex : int" Usage="Xamarin.Forms.Internals.GIFHeader.BackgroundColorIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHeaderAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Xamarin.Forms.Internals.GIFHeader&gt; CreateHeaderAsync (Xamarin.Forms.Internals.GIFDecoderStreamReader stream, bool skipTypeIdentifier = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Xamarin.Forms.Internals.GIFHeader&gt; CreateHeaderAsync(class Xamarin.Forms.Internals.GIFDecoderStreamReader stream, bool skipTypeIdentifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.GIFHeader.CreateHeaderAsync(Xamarin.Forms.Internals.GIFDecoderStreamReader,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member CreateHeaderAsync : Xamarin.Forms.Internals.GIFDecoderStreamReader * bool -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Internals.GIFHeader&gt;" Usage="Xamarin.Forms.Internals.GIFHeader.CreateHeaderAsync (stream, skipTypeIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Internals.GIFHeader&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="Xamarin.Forms.Internals.GIFDecoderStreamReader" />
+        <Parameter Name="skipTypeIdentifier" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="skipTypeIdentifier">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalColorTable">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Internals.GIFColorTable GlobalColorTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Internals.GIFColorTable GlobalColorTable" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.GIFHeader.GlobalColorTable" />
+      <MemberSignature Language="F#" Value="member this.GlobalColorTable : Xamarin.Forms.Internals.GIFColorTable" Usage="Xamarin.Forms.Internals.GIFHeader.GlobalColorTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Internals.GIFColorTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public int Height { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.GIFHeader.Height" />
+      <MemberSignature Language="F#" Value="member this.Height : int" Usage="Xamarin.Forms.Internals.GIFHeader.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGIFHeader">
+      <MemberSignature Language="C#" Value="public bool IsGIFHeader { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsGIFHeader" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.GIFHeader.IsGIFHeader" />
+      <MemberSignature Language="F#" Value="member this.IsGIFHeader : bool" Usage="Xamarin.Forms.Internals.GIFHeader.IsGIFHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelAspectRatio">
+      <MemberSignature Language="C#" Value="public int PixelAspectRatio { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PixelAspectRatio" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.GIFHeader.PixelAspectRatio" />
+      <MemberSignature Language="F#" Value="member this.PixelAspectRatio : int" Usage="Xamarin.Forms.Internals.GIFHeader.PixelAspectRatio" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeIdentifier">
+      <MemberSignature Language="C#" Value="public string TypeIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TypeIdentifier" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.GIFHeader.TypeIdentifier" />
+      <MemberSignature Language="F#" Value="member this.TypeIdentifier : string" Usage="Xamarin.Forms.Internals.GIFHeader.TypeIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.GIFHeader.Version" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="Xamarin.Forms.Internals.GIFHeader.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.GIFHeader.Width" />
+      <MemberSignature Language="F#" Value="member this.Width : int" Usage="Xamarin.Forms.Internals.GIFHeader.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

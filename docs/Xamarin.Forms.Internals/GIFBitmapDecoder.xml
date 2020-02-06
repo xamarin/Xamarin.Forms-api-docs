@@ -1,0 +1,88 @@
+<Type Name="GIFBitmapDecoder" FullName="Xamarin.Forms.Internals.GIFBitmapDecoder">
+  <TypeSignature Language="C#" Value="public class GIFBitmapDecoder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GIFBitmapDecoder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.GIFBitmapDecoder" />
+  <TypeSignature Language="F#" Value="type GIFBitmapDecoder = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GIFBitmapDecoder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.GIFBitmapDecoder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compose">
+      <MemberSignature Language="C#" Value="public void Compose (Xamarin.Forms.Internals.GIFHeader header, Xamarin.Forms.Internals.GIFBitmap currentBitmap, Xamarin.Forms.Internals.GIFBitmap previousBitmap);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Compose(class Xamarin.Forms.Internals.GIFHeader header, class Xamarin.Forms.Internals.GIFBitmap currentBitmap, class Xamarin.Forms.Internals.GIFBitmap previousBitmap) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.GIFBitmapDecoder.Compose(Xamarin.Forms.Internals.GIFHeader,Xamarin.Forms.Internals.GIFBitmap,Xamarin.Forms.Internals.GIFBitmap)" />
+      <MemberSignature Language="F#" Value="member this.Compose : Xamarin.Forms.Internals.GIFHeader * Xamarin.Forms.Internals.GIFBitmap * Xamarin.Forms.Internals.GIFBitmap -&gt; unit" Usage="gIFBitmapDecoder.Compose (header, currentBitmap, previousBitmap)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="header" Type="Xamarin.Forms.Internals.GIFHeader" />
+        <Parameter Name="currentBitmap" Type="Xamarin.Forms.Internals.GIFBitmap" />
+        <Parameter Name="previousBitmap" Type="Xamarin.Forms.Internals.GIFBitmap" />
+      </Parameters>
+      <Docs>
+        <param name="header">To be added.</param>
+        <param name="currentBitmap">To be added.</param>
+        <param name="previousBitmap">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DecodeAsync (Xamarin.Forms.Internals.GIFDecoderStreamReader stream, int width, int height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DecodeAsync(class Xamarin.Forms.Internals.GIFDecoderStreamReader stream, int32 width, int32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.GIFBitmapDecoder.DecodeAsync(Xamarin.Forms.Internals.GIFDecoderStreamReader,System.Int32,System.Int32)" />
+      <MemberSignature Language="F#" Value="member this.DecodeAsync : Xamarin.Forms.Internals.GIFDecoderStreamReader * int * int -&gt; System.Threading.Tasks.Task" Usage="gIFBitmapDecoder.DecodeAsync (stream, width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="Xamarin.Forms.Internals.GIFDecoderStreamReader" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

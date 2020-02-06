@@ -383,6 +383,11 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.CarouselLayoutTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.LinearItemsLayout</ReturnType>
       </ReturnValue>
@@ -422,43 +427,6 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NumberOfSideItems">
-      <MemberSignature Language="C#" Value="public int NumberOfSideItems { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfSideItems" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CarouselView.NumberOfSideItems" />
-      <MemberSignature Language="F#" Value="member this.NumberOfSideItems : int with get, set" Usage="Xamarin.Forms.CarouselView.NumberOfSideItems" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NumberOfSideItemsProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty NumberOfSideItemsProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty NumberOfSideItemsProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.CarouselView.NumberOfSideItemsProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable NumberOfSideItemsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.CarouselView.NumberOfSideItemsProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -563,6 +531,30 @@
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformInitialized">
+      <MemberSignature Language="C#" Value="public void PlatformInitialized ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PlatformInitialized() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CarouselView.PlatformInitialized" />
+      <MemberSignature Language="F#" Value="member this.PlatformInitialized : unit -&gt; unit" Usage="carouselView.PlatformInitialized " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -715,6 +707,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ScrollToActions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Queue&lt;Action&gt; ScrollToActions;" />
+      <MemberSignature Language="ILAsm" Value=".field public class System.Collections.Generic.Queue`1&lt;class System.Action&gt; ScrollToActions" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.CarouselView.ScrollToActions" />
+      <MemberSignature Language="F#" Value="val mutable ScrollToActions : System.Collections.Generic.Queue&lt;Action&gt;" Usage="Xamarin.Forms.CarouselView.ScrollToActions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Queue&lt;System.Action&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetCurrentItem">
       <MemberSignature Language="C#" Value="public void SetCurrentItem (object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCurrentItem(object item) cil managed" />
@@ -804,36 +819,18 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="VisibleItemVisualState">
-      <MemberSignature Language="C#" Value="public const string VisibleItemVisualState;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string VisibleItemVisualState" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.CarouselView.VisibleItemVisualState" />
-      <MemberSignature Language="F#" Value="val mutable VisibleItemVisualState : string" Usage="Xamarin.Forms.CarouselView.VisibleItemVisualState" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="VisibleViews">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Xamarin.Forms.View&gt; VisibleViews { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Xamarin.Forms.View&gt; VisibleViews" />
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;Xamarin.Forms.View&gt; VisibleViews { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;class Xamarin.Forms.View&gt; VisibleViews" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CarouselView.VisibleViews" />
-      <MemberSignature Language="F#" Value="member this.VisibleViews : System.Collections.Generic.List&lt;Xamarin.Forms.View&gt;" Usage="Xamarin.Forms.CarouselView.VisibleViews" />
+      <MemberSignature Language="F#" Value="member this.VisibleViews : System.Collections.ObjectModel.ObservableCollection&lt;Xamarin.Forms.View&gt;" Usage="Xamarin.Forms.CarouselView.VisibleViews" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.List&lt;Xamarin.Forms.View&gt;</ReturnType>
+        <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;Xamarin.Forms.View&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

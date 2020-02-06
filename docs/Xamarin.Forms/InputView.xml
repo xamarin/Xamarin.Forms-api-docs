@@ -23,6 +23,43 @@
     <remarks>The constructor of this class is internal. Xamarin.Forms does not provide any renderer for InputView base class.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="CharacterSpacing">
+      <MemberSignature Language="C#" Value="public double CharacterSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CharacterSpacing" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.InputView.CharacterSpacing" />
+      <MemberSignature Language="F#" Value="member this.CharacterSpacing : double with get, set" Usage="Xamarin.Forms.InputView.CharacterSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharacterSpacingProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CharacterSpacingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CharacterSpacingProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.InputView.CharacterSpacingProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CharacterSpacingProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.InputView.CharacterSpacingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsReadOnly">
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
@@ -187,6 +224,196 @@
       </ReturnValue>
       <Docs>
         <summary>Backing store for the <see cref="P:Xamarin.Forms.InputView.MaxLength" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTextChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTextChanged (string oldValue, string newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTextChanged(string oldValue, string newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.InputView.OnTextChanged(System.String,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member OnTextChanged : string * string -&gt; unit&#xA;override this.OnTextChanged : string * string -&gt; unit" Usage="inputView.OnTextChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.String" />
+        <Parameter Name="newValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Placeholder">
+      <MemberSignature Language="C#" Value="public string Placeholder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Placeholder" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.InputView.Placeholder" />
+      <MemberSignature Language="F#" Value="member this.Placeholder : string with get, set" Usage="Xamarin.Forms.InputView.Placeholder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceholderColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color PlaceholderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color PlaceholderColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.InputView.PlaceholderColor" />
+      <MemberSignature Language="F#" Value="member this.PlaceholderColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.InputView.PlaceholderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceholderColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty PlaceholderColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty PlaceholderColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.InputView.PlaceholderColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlaceholderColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.InputView.PlaceholderColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceholderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty PlaceholderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty PlaceholderProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.InputView.PlaceholderProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlaceholderProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.InputView.PlaceholderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.InputView.Text" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Xamarin.Forms.InputView.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt; TextChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.TextChangedEventArgs&gt; TextChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.InputView.TextChanged" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt; " Usage="member this.TextChanged : System.EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color TextColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color TextColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.InputView.TextColor" />
+      <MemberSignature Language="F#" Value="member this.TextColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.InputView.TextColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TextColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TextColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.InputView.TextColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.InputView.TextColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TextProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.InputView.TextProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.InputView.TextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

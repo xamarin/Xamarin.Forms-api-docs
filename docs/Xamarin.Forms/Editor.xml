@@ -125,25 +125,6 @@ var editor = new Editor {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CharacterSpacing">
-      <MemberSignature Language="C#" Value="public double CharacterSpacing { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance float64 CharacterSpacing" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Editor.CharacterSpacing" />
-      <MemberSignature Language="F#" Value="member this.CharacterSpacing : double with get, set" Usage="Xamarin.Forms.Editor.CharacterSpacing" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CharacterSpacingProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CharacterSpacingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CharacterSpacingProperty" />
@@ -382,43 +363,27 @@ var editor = new Editor {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Placeholder">
-      <MemberSignature Language="C#" Value="public string Placeholder { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Placeholder" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Editor.Placeholder" />
-      <MemberSignature Language="F#" Value="member this.Placeholder : string with get, set" Usage="Xamarin.Forms.Editor.Placeholder" />
-      <MemberType>Property</MemberType>
+    <Member MemberName="OnTextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnTextChanged (string oldValue, string newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnTextChanged(string oldValue, string newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Editor.OnTextChanged(System.String,System.String)" />
+      <MemberSignature Language="F#" Value="override this.OnTextChanged : string * string -&gt; unit" Usage="editor.OnTextChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.String" />
+        <Parameter Name="newValue" Type="System.String" />
+      </Parameters>
       <Docs>
-        <summary>Gets or sets the text that is displayed when the control is empty.</summary>
-        <value>The text that is displayed when the control is empty.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PlaceholderColor">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color PlaceholderColor { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color PlaceholderColor" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Editor.PlaceholderColor" />
-      <MemberSignature Language="F#" Value="member this.PlaceholderColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Editor.PlaceholderColor" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Color</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the color of the placeholder text.</summary>
-        <value>The color of the placeholder text.</value>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,79 +450,6 @@ var editor = new Editor {
       <Parameters />
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Text">
-      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Editor.Text" />
-      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Xamarin.Forms.Editor.Text" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the text of the entry. This is a bindable property.</summary>
-        <value>A string containing the text of the entry. The default value is null.</value>
-        <remarks>Setting this property will cause the <see cref="E:Xamarin.Forms.Editor.TextChanged" /> event to be emitted.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TextChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt; TextChanged;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.TextChangedEventArgs&gt; TextChanged" />
-      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Editor.TextChanged" />
-      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt; " Usage="member this.TextChanged : System.EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt; " />
-      <MemberType>Event</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.4.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Occurs when the text of the Editor changes.</summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TextColor">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color TextColor { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color TextColor" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Editor.TextColor" />
-      <MemberSignature Language="F#" Value="member this.TextColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.Editor.TextColor" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Color</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the text color.</summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

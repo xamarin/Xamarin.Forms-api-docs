@@ -39,6 +39,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TemplatedPage.ControlTemplate" />
       <MemberSignature Language="F#" Value="member this.ControlTemplate : Xamarin.Forms.ControlTemplate with get, set" Usage="Xamarin.Forms.TemplatedPage.ControlTemplate" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IControlTemplated.ControlTemplate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -101,6 +104,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TemplatedPage.OnApplyTemplate" />
       <MemberSignature Language="F#" Value="abstract member OnApplyTemplate : unit -&gt; unit&#xA;override this.OnApplyTemplate : unit -&gt; unit" Usage="templatedPage.OnApplyTemplate " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IControlTemplated.OnApplyTemplate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>

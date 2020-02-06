@@ -151,6 +151,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetItems">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellItem&gt; GetItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Xamarin.Forms.ShellItem&gt; GetItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellController.GetItems" />
+      <MemberSignature Language="F#" Value="abstract member GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellItem&gt;" Usage="iShellController.GetItems " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetNavigationState">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellNavigationState GetNavigationState (Xamarin.Forms.ShellItem shellItem, Xamarin.Forms.ShellSection shellSection, Xamarin.Forms.ShellContent shellContent, bool includeStack = true);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.ShellNavigationState GetNavigationState(class Xamarin.Forms.ShellItem shellItem, class Xamarin.Forms.ShellSection shellSection, class Xamarin.Forms.ShellContent shellContent, bool includeStack) cil managed" />
@@ -177,6 +197,24 @@
         <param name="includeStack">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsCollectionChanged">
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler ItemsCollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler ItemsCollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IShellController.ItemsCollectionChanged" />
+      <MemberSignature Language="F#" Value="member this.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
