@@ -56,11 +56,13 @@
         <Parameter Name="height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">X-coordinate of the top left corner of the bounding rectangle.</param>
+        <param name="y">Y-coordinate of the top left corner of the bounding rectangle.</param>
+        <param name="width">Width of the bounding rectangle.</param>
+        <param name="height">Height of the bounding rectangle.</param>
+        <summary>
+          <para>Lays out the child elements when the layout is invalidated.</para>
+        </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +80,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the minimum height at which panes are shown in tall mode.</summary>
+        <value>The minimum height at which panes are shown in tall mode. The default is 641.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +99,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.MinTallModeHeight" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +117,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the minimum width at which panes are shown in wide mode.</summary>
+        <value>The minimum width at which panes are shown in wide mode. The default is 641.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +136,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.MinWideModeWidth" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +154,8 @@
         <ReturnType>Xamarin.Forms.DualScreen.TwoPaneViewMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates how panes are shown.</summary>
+        <value>An enumeration value that indicates how panes are shown.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +173,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the Mode of the TwoPaneView has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,7 +191,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.Mode" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +227,8 @@
         <ReturnType>Xamarin.Forms.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the content of pane 1.</summary>
+        <value>The content of pane 1.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,8 +246,8 @@
         <ReturnType>Xamarin.Forms.GridLength</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the calculated width (in wide mode) or height (in tall mode) of pane 1, or sets the GridLength value of pane 1.</summary>
+        <value>The GridLength that represents the width or height of the pane.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,7 +265,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane1Length" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,7 +283,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane1" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,8 +301,8 @@
         <ReturnType>Xamarin.Forms.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the content of pane 2.</summary>
+        <value>The content of pane 2.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,8 +320,8 @@
         <ReturnType>Xamarin.Forms.GridLength</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the calculated width (in wide mode) or height (in tall mode) of pane 2, or sets the GridLength value of pane 2.</summary>
+        <value>The GridLength that represents the width or height of the pane.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,7 +339,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane2Length" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,7 +357,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane2" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,8 +375,8 @@
         <ReturnType>Xamarin.Forms.DualScreen.TwoPaneViewPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates which pane has priority.</summary>
+        <value>An enumeration value that indicates which pane has priority.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,7 +394,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.PanePriority" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,8 +412,8 @@
         <ReturnType>Xamarin.Forms.DualScreen.TwoPaneViewTallModeConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates how panes are shown in tall mode.</summary>
+        <value>An enumeration value that indicates how panes are shown in tall mode.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,7 +431,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.TallModeConfiguration" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -447,8 +449,8 @@
         <ReturnType>Xamarin.Forms.DualScreen.TwoPaneViewWideModeConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates how panes are shown in wide mode.</summary>
+        <value>An enumeration value that indicates how panes are shown in wide mode.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,7 +468,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.WideModeConfiguration" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

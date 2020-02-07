@@ -16,7 +16,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides details about the visible areas a layout occupies so the content can be positioned around where the screens split.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Xamarin.Forms.DualScreen.DualScreenInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Singleton that provides information about how the app window is positioned across both screens.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,7 +68,7 @@
         <ReturnType>Xamarin.Forms.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="P:Xamarin.Forms.Rectangle" /> representing the absolute screen positioning of the devices hinge.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +87,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates if the device is Landscape.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,46 +109,7 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetProperty&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (ref T backingStore, T value, string propertyName = &quot;&quot;, Action onChanged = null);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T&amp; backingStore, !!T value, string propertyName, class System.Action onChanged) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DualScreen.DualScreenInfo.SetProperty``1(``0@,``0,System.String,System.Action)" />
-      <MemberSignature Language="F#" Value="member this.SetProperty :  * 'T * string * Action -&gt; bool" Usage="dualScreenInfo.SetProperty (backingStore, value, propertyName, onChanged)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="T" />
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="backingStore" Type="T" RefType="ref" />
-        <Parameter Name="value" Type="T" />
-        <Parameter Name="propertyName" Type="System.String">
-          <Attributes>
-            <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-        <Parameter Name="onChanged" Type="System.Action" />
-      </Parameters>
-      <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="backingStore">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <param name="onChanged">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Used to watch for changes of any properties.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,7 +127,7 @@
         <ReturnType>Xamarin.Forms.DualScreen.TwoPaneViewMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.TwoPaneViewMode" /> of the area being watched by this class.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,7 +146,7 @@
         <ReturnType>Xamarin.Forms.Rectangle[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When spanned across two regions this will return a <see cref="P:Xamarin.Forms.Rectangle" /> for each region. If not spanned this will return an empty array.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
