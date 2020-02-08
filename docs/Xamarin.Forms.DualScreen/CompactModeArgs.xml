@@ -1,0 +1,79 @@
+<Type Name="CompactModeArgs" FullName="Xamarin.Forms.DualScreen.CompactModeArgs">
+  <TypeSignature Language="C#" Value="public class CompactModeArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompactModeArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.DualScreen.CompactModeArgs" />
+  <TypeSignature Language="F#" Value="type CompactModeArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompactModeArgs (Func&lt;System.Threading.Tasks.Task&gt; close, bool success);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;class System.Threading.Tasks.Task&gt; close, bool success) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DualScreen.CompactModeArgs.#ctor(System.Func{System.Threading.Tasks.Task},System.Boolean)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.DualScreen.CompactModeArgs : Func&lt;System.Threading.Tasks.Task&gt; * bool -&gt; Xamarin.Forms.DualScreen.CompactModeArgs" Usage="new Xamarin.Forms.DualScreen.CompactModeArgs (close, success)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="close" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="success" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="close">To be added.</param>
+        <param name="success">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public Func&lt;System.Threading.Tasks.Task&gt; Close { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`1&lt;class System.Threading.Tasks.Task&gt; Close" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.CompactModeArgs.Close" />
+      <MemberSignature Language="F#" Value="member this.Close : Func&lt;System.Threading.Tasks.Task&gt;" Usage="Xamarin.Forms.DualScreen.CompactModeArgs.Close" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Threading.Tasks.Task&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="public bool Success { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Success" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.CompactModeArgs.Success" />
+      <MemberSignature Language="F#" Value="member this.Success : bool" Usage="Xamarin.Forms.DualScreen.CompactModeArgs.Success" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
