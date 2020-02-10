@@ -161,28 +161,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnPropertyChanged">
-      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = null);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(string propertyName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FontImageSource.OnPropertyChanged(System.String)" />
-      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : string -&gt; unit" Usage="fontImageSource.OnPropertyChanged propertyName" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Size">
       <MemberSignature Language="C#" Value="public double Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Size" />
@@ -193,6 +171,11 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.FontSizeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>

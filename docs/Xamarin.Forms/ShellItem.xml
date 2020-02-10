@@ -212,6 +212,11 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Please dont use this in core code... its SUPER hard to debug when this happens", true)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
@@ -235,6 +240,11 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Please dont use this in core code... its SUPER hard to debug when this happens", true)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
@@ -258,6 +268,11 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Please dont use this in core code... its SUPER hard to debug when this happens", true)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
@@ -281,6 +296,11 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Please dont use this in core code... its SUPER hard to debug when this happens", true)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.ShellItem</ReturnType>
       </ReturnValue>
@@ -291,6 +311,48 @@
         <param name="page">To be added.</param>
         <summary>Used primarily by XAML to implicitly create a <see cref="T:Xamarin.Forms.ShellItem" /> from a <see cref="T:Xamarin.Forms.TemplatedPage" /> .</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IShellItemController.GetItems">
+      <MemberSignature Language="C#" Value="System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellSection&gt; IShellItemController.GetItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Xamarin.Forms.ShellSection&gt; Xamarin.Forms.IShellItemController.GetItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#GetItems" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellItemController.GetItems</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellSection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IShellItemController.ItemsCollectionChanged">
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellItemController.ItemsCollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellItemController.ItemsCollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#ItemsCollectionChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IShellItemController.ItemsCollectionChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

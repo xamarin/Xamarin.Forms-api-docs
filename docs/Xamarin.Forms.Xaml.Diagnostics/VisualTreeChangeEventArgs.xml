@@ -1,0 +1,139 @@
+<Type Name="VisualTreeChangeEventArgs" FullName="Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs">
+  <TypeSignature Language="C#" Value="public class VisualTreeChangeEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualTreeChangeEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs" />
+  <TypeSignature Language="F#" Value="type VisualTreeChangeEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VisualTreeChangeEventArgs (object parent, object child, int childIndex, Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeType changeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object parent, object child, int32 childIndex, valuetype Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeType changeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs.#ctor(System.Object,System.Object,System.Int32,Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeType)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs : obj * obj * int * Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeType -&gt; Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs" Usage="new Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs (parent, child, childIndex, changeType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Object" />
+        <Parameter Name="child" Type="System.Object" />
+        <Parameter Name="childIndex" Type="System.Int32" />
+        <Parameter Name="changeType" Type="Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeType" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="child">To be added.</param>
+        <param name="childIndex">To be added.</param>
+        <param name="changeType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeType">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeType ChangeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeType ChangeType" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs.ChangeType" />
+      <MemberSignature Language="F#" Value="member this.ChangeType : Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeType" Usage="Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs.ChangeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Child">
+      <MemberSignature Language="C#" Value="public object Child { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Child" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs.Child" />
+      <MemberSignature Language="F#" Value="member this.Child : obj" Usage="Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs.Child" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildIndex">
+      <MemberSignature Language="C#" Value="public int ChildIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ChildIndex" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs.ChildIndex" />
+      <MemberSignature Language="F#" Value="member this.ChildIndex : int" Usage="Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs.ChildIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs.Parent" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Xamarin.Forms.Xaml.Diagnostics.VisualTreeChangeEventArgs.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

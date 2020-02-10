@@ -1,0 +1,226 @@
+<Type Name="IMediaElementController" FullName="Xamarin.Forms.IMediaElementController">
+  <TypeSignature Language="C#" Value="public interface IMediaElementController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMediaElementController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IMediaElementController" />
+  <TypeSignature Language="F#" Value="type IMediaElementController = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BufferingProgress">
+      <MemberSignature Language="C#" Value="public double BufferingProgress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 BufferingProgress" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IMediaElementController.BufferingProgress" />
+      <MemberSignature Language="F#" Value="member this.BufferingProgress : double with get, set" Usage="Xamarin.Forms.IMediaElementController.BufferingProgress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentState">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.MediaElementState CurrentState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.MediaElementState CurrentState" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IMediaElementController.CurrentState" />
+      <MemberSignature Language="F#" Value="member this.CurrentState : Xamarin.Forms.MediaElementState with get, set" Usage="Xamarin.Forms.IMediaElementController.CurrentState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.MediaElementState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Duration">
+      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; Duration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Duration" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IMediaElementController.Duration" />
+      <MemberSignature Language="F#" Value="member this.Duration : Nullable&lt;TimeSpan&gt; with get, set" Usage="Xamarin.Forms.IMediaElementController.Duration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMediaEnded">
+      <MemberSignature Language="C#" Value="public void OnMediaEnded ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnMediaEnded() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IMediaElementController.OnMediaEnded" />
+      <MemberSignature Language="F#" Value="abstract member OnMediaEnded : unit -&gt; unit" Usage="iMediaElementController.OnMediaEnded " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMediaFailed">
+      <MemberSignature Language="C#" Value="public void OnMediaFailed ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnMediaFailed() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IMediaElementController.OnMediaFailed" />
+      <MemberSignature Language="F#" Value="abstract member OnMediaFailed : unit -&gt; unit" Usage="iMediaElementController.OnMediaFailed " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMediaOpened">
+      <MemberSignature Language="C#" Value="public void OnMediaOpened ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnMediaOpened() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IMediaElementController.OnMediaOpened" />
+      <MemberSignature Language="F#" Value="abstract member OnMediaOpened : unit -&gt; unit" Usage="iMediaElementController.OnMediaOpened " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSeekCompleted">
+      <MemberSignature Language="C#" Value="public void OnSeekCompleted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnSeekCompleted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IMediaElementController.OnSeekCompleted" />
+      <MemberSignature Language="F#" Value="abstract member OnSeekCompleted : unit -&gt; unit" Usage="iMediaElementController.OnSeekCompleted " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public TimeSpan Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Position" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IMediaElementController.Position" />
+      <MemberSignature Language="F#" Value="member this.Position : TimeSpan with get, set" Usage="Xamarin.Forms.IMediaElementController.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VideoHeight">
+      <MemberSignature Language="C#" Value="public int VideoHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VideoHeight" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IMediaElementController.VideoHeight" />
+      <MemberSignature Language="F#" Value="member this.VideoHeight : int with get, set" Usage="Xamarin.Forms.IMediaElementController.VideoHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VideoWidth">
+      <MemberSignature Language="C#" Value="public int VideoWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VideoWidth" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IMediaElementController.VideoWidth" />
+      <MemberSignature Language="F#" Value="member this.VideoWidth : int with get, set" Usage="Xamarin.Forms.IMediaElementController.VideoWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Volume">
+      <MemberSignature Language="C#" Value="public double Volume { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Volume" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IMediaElementController.Volume" />
+      <MemberSignature Language="F#" Value="member this.Volume : double with get, set" Usage="Xamarin.Forms.IMediaElementController.Volume" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -63,6 +63,44 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetItems">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellContent&gt; GetItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Xamarin.Forms.ShellContent&gt; GetItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.GetItems" />
+      <MemberSignature Language="F#" Value="abstract member GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellContent&gt;" Usage="iShellSectionController.GetItems " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellContent&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsCollectionChanged">
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler ItemsCollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler ItemsCollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IShellSectionController.ItemsCollectionChanged" />
+      <MemberSignature Language="F#" Value="member this.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NavigationRequested">
       <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; NavigationRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; NavigationRequested" />
@@ -180,11 +218,123 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPopped">
+      <MemberSignature Language="C#" Value="public void SendPopped (Xamarin.Forms.Page page);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPopped(class Xamarin.Forms.Page page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.SendPopped(Xamarin.Forms.Page)" />
+      <MemberSignature Language="F#" Value="abstract member SendPopped : Xamarin.Forms.Page -&gt; unit" Usage="iShellSectionController.SendPopped page" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Xamarin.Forms.Page" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPopping">
+      <MemberSignature Language="C#" Value="public void SendPopping (System.Threading.Tasks.Task poppingCompleted);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPopping(class System.Threading.Tasks.Task poppingCompleted) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.SendPopping(System.Threading.Tasks.Task)" />
+      <MemberSignature Language="F#" Value="abstract member SendPopping : System.Threading.Tasks.Task -&gt; unit" Usage="iShellSectionController.SendPopping poppingCompleted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="poppingCompleted" Type="System.Threading.Tasks.Task" />
+      </Parameters>
+      <Docs>
+        <param name="poppingCompleted">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPopping">
+      <MemberSignature Language="C#" Value="public void SendPopping (Xamarin.Forms.Page page);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPopping(class Xamarin.Forms.Page page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.SendPopping(Xamarin.Forms.Page)" />
+      <MemberSignature Language="F#" Value="abstract member SendPopping : Xamarin.Forms.Page -&gt; unit" Usage="iShellSectionController.SendPopping page" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Xamarin.Forms.Page" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPoppingToRoot">
+      <MemberSignature Language="C#" Value="public void SendPoppingToRoot (System.Threading.Tasks.Task finishedPopping);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendPoppingToRoot(class System.Threading.Tasks.Task finishedPopping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellSectionController.SendPoppingToRoot(System.Threading.Tasks.Task)" />
+      <MemberSignature Language="F#" Value="abstract member SendPoppingToRoot : System.Threading.Tasks.Task -&gt; unit" Usage="iShellSectionController.SendPoppingToRoot finishedPopping" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="finishedPopping" Type="System.Threading.Tasks.Task" />
+      </Parameters>
+      <Docs>
+        <param name="finishedPopping">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

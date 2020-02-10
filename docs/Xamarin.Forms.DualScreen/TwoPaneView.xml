@@ -1,0 +1,482 @@
+<Type Name="TwoPaneView" FullName="Xamarin.Forms.DualScreen.TwoPaneView">
+  <TypeSignature Language="C#" Value="public class TwoPaneView : Xamarin.Forms.Grid" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi TwoPaneView extends Xamarin.Forms.Grid" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.DualScreen.TwoPaneView" />
+  <TypeSignature Language="F#" Value="type TwoPaneView = class&#xA;    inherit Grid" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.Grid</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.ContentProperty("")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TwoPaneView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DualScreen.TwoPaneView.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutChildren">
+      <MemberSignature Language="C#" Value="protected override void LayoutChildren (double x, double y, double width, double height);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LayoutChildren(float64 x, float64 y, float64 width, float64 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DualScreen.TwoPaneView.LayoutChildren(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="override this.LayoutChildren : double * double * double * double -&gt; unit" Usage="twoPaneView.LayoutChildren (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">X-coordinate of the top left corner of the bounding rectangle.</param>
+        <param name="y">Y-coordinate of the top left corner of the bounding rectangle.</param>
+        <param name="width">Width of the bounding rectangle.</param>
+        <param name="height">Height of the bounding rectangle.</param>
+        <summary>
+          <para>Lays out the child elements when the layout is invalidated.</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinTallModeHeight">
+      <MemberSignature Language="C#" Value="public double MinTallModeHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MinTallModeHeight" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.TwoPaneView.MinTallModeHeight" />
+      <MemberSignature Language="F#" Value="member this.MinTallModeHeight : double with get, set" Usage="Xamarin.Forms.DualScreen.TwoPaneView.MinTallModeHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum height at which panes are shown in tall mode.</summary>
+        <value>The minimum height at which panes are shown in tall mode. The default is 641.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinTallModeHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty MinTallModeHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty MinTallModeHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DualScreen.TwoPaneView.MinTallModeHeightProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinTallModeHeightProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DualScreen.TwoPaneView.MinTallModeHeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.MinTallModeHeight" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinWideModeWidth">
+      <MemberSignature Language="C#" Value="public double MinWideModeWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MinWideModeWidth" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.TwoPaneView.MinWideModeWidth" />
+      <MemberSignature Language="F#" Value="member this.MinWideModeWidth : double with get, set" Usage="Xamarin.Forms.DualScreen.TwoPaneView.MinWideModeWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum width at which panes are shown in wide mode.</summary>
+        <value>The minimum width at which panes are shown in wide mode. The default is 641.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinWideModeWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty MinWideModeWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty MinWideModeWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DualScreen.TwoPaneView.MinWideModeWidthProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinWideModeWidthProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DualScreen.TwoPaneView.MinWideModeWidthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.MinWideModeWidth" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DualScreen.TwoPaneViewMode Mode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.DualScreen.TwoPaneViewMode Mode" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.TwoPaneView.Mode" />
+      <MemberSignature Language="F#" Value="member this.Mode : Xamarin.Forms.DualScreen.TwoPaneViewMode" Usage="Xamarin.Forms.DualScreen.TwoPaneView.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DualScreen.TwoPaneViewMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates how panes are shown.</summary>
+        <value>An enumeration value that indicates how panes are shown.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModeChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ModeChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ModeChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.DualScreen.TwoPaneView.ModeChanged" />
+      <MemberSignature Language="F#" Value="member this.ModeChanged : EventHandler " Usage="member this.ModeChanged : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the Mode of the TwoPaneView has changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ModeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DualScreen.TwoPaneView.ModeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ModeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DualScreen.TwoPaneView.ModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.Mode" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSizeAllocated">
+      <MemberSignature Language="C#" Value="protected override void OnSizeAllocated (double width, double height);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSizeAllocated(float64 width, float64 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DualScreen.TwoPaneView.OnSizeAllocated(System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="override this.OnSizeAllocated : double * double -&gt; unit" Usage="twoPaneView.OnSizeAllocated (width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pane1">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.View Pane1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.View Pane1" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane1" />
+      <MemberSignature Language="F#" Value="member this.Pane1 : Xamarin.Forms.View with get, set" Usage="Xamarin.Forms.DualScreen.TwoPaneView.Pane1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.View</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content of pane 1.</summary>
+        <value>The content of pane 1.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pane1Length">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.GridLength Pane1Length { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.GridLength Pane1Length" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane1Length" />
+      <MemberSignature Language="F#" Value="member this.Pane1Length : Xamarin.Forms.GridLength with get, set" Usage="Xamarin.Forms.DualScreen.TwoPaneView.Pane1Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.GridLength</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the calculated width (in wide mode) or height (in tall mode) of pane 1, or sets the GridLength value of pane 1.</summary>
+        <value>The GridLength that represents the width or height of the pane.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pane1LengthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty Pane1LengthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty Pane1LengthProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DualScreen.TwoPaneView.Pane1LengthProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pane1LengthProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DualScreen.TwoPaneView.Pane1LengthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane1Length" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pane1Property">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty Pane1Property;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty Pane1Property" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DualScreen.TwoPaneView.Pane1Property" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pane1Property : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DualScreen.TwoPaneView.Pane1Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane1" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pane2">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.View Pane2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.View Pane2" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane2" />
+      <MemberSignature Language="F#" Value="member this.Pane2 : Xamarin.Forms.View with get, set" Usage="Xamarin.Forms.DualScreen.TwoPaneView.Pane2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.View</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content of pane 2.</summary>
+        <value>The content of pane 2.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pane2Length">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.GridLength Pane2Length { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.GridLength Pane2Length" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane2Length" />
+      <MemberSignature Language="F#" Value="member this.Pane2Length : Xamarin.Forms.GridLength with get, set" Usage="Xamarin.Forms.DualScreen.TwoPaneView.Pane2Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.GridLength</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the calculated width (in wide mode) or height (in tall mode) of pane 2, or sets the GridLength value of pane 2.</summary>
+        <value>The GridLength that represents the width or height of the pane.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pane2LengthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty Pane2LengthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty Pane2LengthProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DualScreen.TwoPaneView.Pane2LengthProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pane2LengthProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DualScreen.TwoPaneView.Pane2LengthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane2Length" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pane2Property">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty Pane2Property;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty Pane2Property" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DualScreen.TwoPaneView.Pane2Property" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pane2Property : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DualScreen.TwoPaneView.Pane2Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.Pane2" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanePriority">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DualScreen.TwoPaneViewPriority PanePriority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.DualScreen.TwoPaneViewPriority PanePriority" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.TwoPaneView.PanePriority" />
+      <MemberSignature Language="F#" Value="member this.PanePriority : Xamarin.Forms.DualScreen.TwoPaneViewPriority with get, set" Usage="Xamarin.Forms.DualScreen.TwoPaneView.PanePriority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DualScreen.TwoPaneViewPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates which pane has priority.</summary>
+        <value>An enumeration value that indicates which pane has priority.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanePriorityProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty PanePriorityProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty PanePriorityProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DualScreen.TwoPaneView.PanePriorityProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable PanePriorityProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DualScreen.TwoPaneView.PanePriorityProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.PanePriority" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TallModeConfiguration">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DualScreen.TwoPaneViewTallModeConfiguration TallModeConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.DualScreen.TwoPaneViewTallModeConfiguration TallModeConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.TwoPaneView.TallModeConfiguration" />
+      <MemberSignature Language="F#" Value="member this.TallModeConfiguration : Xamarin.Forms.DualScreen.TwoPaneViewTallModeConfiguration with get, set" Usage="Xamarin.Forms.DualScreen.TwoPaneView.TallModeConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DualScreen.TwoPaneViewTallModeConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates how panes are shown in tall mode.</summary>
+        <value>An enumeration value that indicates how panes are shown in tall mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TallModeConfigurationProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TallModeConfigurationProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TallModeConfigurationProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DualScreen.TwoPaneView.TallModeConfigurationProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TallModeConfigurationProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DualScreen.TwoPaneView.TallModeConfigurationProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.TallModeConfiguration" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WideModeConfiguration">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DualScreen.TwoPaneViewWideModeConfiguration WideModeConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.DualScreen.TwoPaneViewWideModeConfiguration WideModeConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DualScreen.TwoPaneView.WideModeConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WideModeConfiguration : Xamarin.Forms.DualScreen.TwoPaneViewWideModeConfiguration with get, set" Usage="Xamarin.Forms.DualScreen.TwoPaneView.WideModeConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DualScreen.TwoPaneViewWideModeConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates how panes are shown in wide mode.</summary>
+        <value>An enumeration value that indicates how panes are shown in wide mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WideModeConfigurationProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty WideModeConfigurationProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty WideModeConfigurationProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DualScreen.TwoPaneView.WideModeConfigurationProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable WideModeConfigurationProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DualScreen.TwoPaneView.WideModeConfigurationProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier for the <see cref="P:Xamarin.Forms.DualScreen.TwoPaneView.WideModeConfiguration" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

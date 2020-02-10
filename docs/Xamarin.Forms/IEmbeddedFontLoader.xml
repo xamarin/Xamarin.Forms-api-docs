@@ -1,0 +1,45 @@
+<Type Name="IEmbeddedFontLoader" FullName="Xamarin.Forms.IEmbeddedFontLoader">
+  <TypeSignature Language="C#" Value="public interface IEmbeddedFontLoader" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEmbeddedFontLoader" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IEmbeddedFontLoader" />
+  <TypeSignature Language="F#" Value="type IEmbeddedFontLoader = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LoadFont">
+      <MemberSignature Language="C#" Value="public ValueTuple&lt;bool,string&gt; LoadFont (Xamarin.Forms.EmbeddedFont font);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.ValueTuple`2&lt;bool, string&gt; LoadFont(class Xamarin.Forms.EmbeddedFont font) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IEmbeddedFontLoader.LoadFont(Xamarin.Forms.EmbeddedFont)" />
+      <MemberSignature Language="F#" Value="abstract member LoadFont : Xamarin.Forms.EmbeddedFont -&gt; ValueTuple&lt;bool, string&gt;" Usage="iEmbeddedFontLoader.LoadFont font" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;System.Boolean,System.String&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "success", "filePath" })</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="font" Type="Xamarin.Forms.EmbeddedFont" />
+      </Parameters>
+      <Docs>
+        <param name="font">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

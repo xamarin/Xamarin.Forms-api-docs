@@ -536,6 +536,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FlyoutVerticalScrollMode">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ScrollMode FlyoutVerticalScrollMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ScrollMode FlyoutVerticalScrollMode" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.FlyoutVerticalScrollMode" />
+      <MemberSignature Language="F#" Value="member this.FlyoutVerticalScrollMode : Xamarin.Forms.ScrollMode with get, set" Usage="Xamarin.Forms.Shell.FlyoutVerticalScrollMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ScrollMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutVerticalScrollModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FlyoutVerticalScrollModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FlyoutVerticalScrollModeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.FlyoutVerticalScrollModeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlyoutVerticalScrollModeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.FlyoutVerticalScrollModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ForegroundColorProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ForegroundColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ForegroundColorProperty" />
@@ -715,6 +752,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetNavBarHasShadow">
+      <MemberSignature Language="C#" Value="public static bool GetNavBarHasShadow (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetNavBarHasShadow(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetNavBarHasShadow(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetNavBarHasShadow : Xamarin.Forms.BindableObject -&gt; bool" Usage="Xamarin.Forms.Shell.GetNavBarHasShadow obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetNavBarIsVisible">
       <MemberSignature Language="C#" Value="public static bool GetNavBarIsVisible (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetNavBarIsVisible(class Xamarin.Forms.BindableObject obj) cil managed" />
@@ -736,6 +796,29 @@
         <summary>Gets the visibility of the navigation bar of the <paramref name="obj" />  in a Shell application.</summary>
         <returns>
           <see langword="true" /> if the navigation bar is visible.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPresentationMode">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.PresentationMode GetPresentationMode (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PresentationMode GetPresentationMode(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetPresentationMode(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetPresentationMode : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.PresentationMode" Usage="Xamarin.Forms.Shell.GetPresentationMode obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.PresentationMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -970,7 +1053,30 @@
       </Docs>
     </Member>
     <Member MemberName="GoToAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToAsync (Xamarin.Forms.ShellNavigationState state, bool animate = true);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToAsync (Xamarin.Forms.ShellNavigationState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task GoToAsync(class Xamarin.Forms.ShellNavigationState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GoToAsync(Xamarin.Forms.ShellNavigationState)" />
+      <MemberSignature Language="F#" Value="member this.GoToAsync : Xamarin.Forms.ShellNavigationState -&gt; System.Threading.Tasks.Task" Usage="shell.GoToAsync state" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="Xamarin.Forms.ShellNavigationState" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoToAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToAsync (Xamarin.Forms.ShellNavigationState state, bool animate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task GoToAsync(class Xamarin.Forms.ShellNavigationState state, bool animate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GoToAsync(Xamarin.Forms.ShellNavigationState,System.Boolean)" />
       <MemberSignature Language="F#" Value="member this.GoToAsync : Xamarin.Forms.ShellNavigationState * bool -&gt; System.Threading.Tasks.Task" Usage="shell.GoToAsync (state, animate)" />
@@ -1112,6 +1218,24 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NavBarHasShadowProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty NavBarHasShadowProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty NavBarHasShadowProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.NavBarHasShadowProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable NavBarHasShadowProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.NavBarHasShadowProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NavBarIsVisibleProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty NavBarIsVisibleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty NavBarIsVisibleProperty" />
@@ -1210,54 +1334,6 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnChildAdded">
-      <MemberSignature Language="C#" Value="protected override void OnChildAdded (Xamarin.Forms.Element child);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildAdded(class Xamarin.Forms.Element child) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.OnChildAdded(Xamarin.Forms.Element)" />
-      <MemberSignature Language="F#" Value="override this.OnChildAdded : Xamarin.Forms.Element -&gt; unit" Usage="shell.OnChildAdded child" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="child" Type="Xamarin.Forms.Element" />
-      </Parameters>
-      <Docs>
-        <param name="child">To be added.</param>
-        <summary>Developers may override this method to customize behavior when a new <see cref="T:Xamarin.Forms.Element" /> is added.</summary>
-        <remarks>
-          <para>Developers should call <c>base.OnChildAdded()</c> at the beginning of their overriding method.</para>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnChildRemoved">
-      <MemberSignature Language="C#" Value="protected override void OnChildRemoved (Xamarin.Forms.Element child);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildRemoved(class Xamarin.Forms.Element child) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.OnChildRemoved(Xamarin.Forms.Element)" />
-      <MemberSignature Language="F#" Value="override this.OnChildRemoved : Xamarin.Forms.Element -&gt; unit" Usage="shell.OnChildRemoved child" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="child" Type="Xamarin.Forms.Element" />
-      </Parameters>
-      <Docs>
-        <param name="child">To be added.</param>
-        <summary>Developers may override this method to customize behavior when a child <see cref="T:Xamarin.Forms.Element" /> is removed.</summary>
-        <remarks>
-          <para>Developers should call <c>base.OnChildRemoved()</c> at the beginning of their overriding method.</para>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="OnNavigated">
       <MemberSignature Language="C#" Value="protected virtual void OnNavigated (Xamarin.Forms.ShellNavigatedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNavigated(class Xamarin.Forms.ShellNavigatedEventArgs args) cil managed" />
@@ -1304,6 +1380,24 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <remarks>
           <para>Developers should call <c>base.OnNavigating()</c> at the end of their overriding method or must raise the <see cref="E:Xamarin.Forms.Shell.Navigating" /> event themselves.</para>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PresentationModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty PresentationModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty PresentationModeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.PresentationModeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable PresentationModeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.PresentationModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SearchHandlerProperty">
@@ -1492,6 +1586,30 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetNavBarHasShadow">
+      <MemberSignature Language="C#" Value="public static void SetNavBarHasShadow (Xamarin.Forms.BindableObject obj, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNavBarHasShadow(class Xamarin.Forms.BindableObject obj, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetNavBarHasShadow(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetNavBarHasShadow : Xamarin.Forms.BindableObject * bool -&gt; unit" Usage="Xamarin.Forms.Shell.SetNavBarHasShadow (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetNavBarIsVisible">
       <MemberSignature Language="C#" Value="public static void SetNavBarIsVisible (Xamarin.Forms.BindableObject obj, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNavBarIsVisible(class Xamarin.Forms.BindableObject obj, bool value) cil managed" />
@@ -1513,6 +1631,30 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
         <summary>Sets the navigation bar visibility of <param name="obj" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPresentationMode">
+      <MemberSignature Language="C#" Value="public static void SetPresentationMode (Xamarin.Forms.BindableObject obj, Xamarin.Forms.PresentationMode presentationMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPresentationMode(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.PresentationMode presentationMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetPresentationMode(Xamarin.Forms.BindableObject,Xamarin.Forms.PresentationMode)" />
+      <MemberSignature Language="F#" Value="static member SetPresentationMode : Xamarin.Forms.BindableObject * Xamarin.Forms.PresentationMode -&gt; unit" Usage="Xamarin.Forms.Shell.SetPresentationMode (obj, presentationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="presentationMode" Type="Xamarin.Forms.PresentationMode" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="presentationMode">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2073,6 +2215,28 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Xamarin.Forms.IShellController.GetItems">
+      <MemberSignature Language="C#" Value="System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellItem&gt; IShellController.GetItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Xamarin.Forms.ShellItem&gt; Xamarin.Forms.IShellController.GetItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#GetItems" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.GetItems</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Xamarin.Forms.IShellController.GetNavigationState">
       <MemberSignature Language="C#" Value="Xamarin.Forms.ShellNavigationState IShellController.GetNavigationState (Xamarin.Forms.ShellItem shellItem, Xamarin.Forms.ShellSection shellSection, Xamarin.Forms.ShellContent shellContent, bool includeStack);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Xamarin.Forms.ShellNavigationState Xamarin.Forms.IShellController.GetNavigationState(class Xamarin.Forms.ShellItem shellItem, class Xamarin.Forms.ShellSection shellSection, class Xamarin.Forms.ShellContent shellContent, bool includeStack) cil managed" />
@@ -2104,6 +2268,26 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Xamarin.Forms.IShellController.ItemsCollectionChanged">
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellController.ItemsCollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellController.ItemsCollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#ItemsCollectionChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IShellController.ItemsCollectionChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Xamarin.Forms.IShellController.OnFlyoutItemSelected">
       <MemberSignature Language="C#" Value="void IShellController.OnFlyoutItemSelected (Xamarin.Forms.Element element);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.OnFlyoutItemSelected(class Xamarin.Forms.Element element) cil managed" />
@@ -2116,6 +2300,11 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2140,6 +2329,11 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>

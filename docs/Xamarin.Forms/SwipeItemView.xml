@@ -1,0 +1,167 @@
+<Type Name="SwipeItemView" FullName="Xamarin.Forms.SwipeItemView">
+  <TypeSignature Language="C#" Value="public class SwipeItemView : Xamarin.Forms.ContentView, Xamarin.Forms.ISwipeItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SwipeItemView extends Xamarin.Forms.ContentView implements class Xamarin.Forms.ISwipeItem" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.SwipeItemView" />
+  <TypeSignature Language="F#" Value="type SwipeItemView = class&#xA;    inherit ContentView&#xA;    interface ISwipeItem" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.ContentView</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.ISwipeItem</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SwipeItemView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeItemView.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand Command { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand Command" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SwipeItemView.Command" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.SwipeItemView.Command" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ISwipeItem.Command</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandParameter">
+      <MemberSignature Language="C#" Value="public object CommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandParameter" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SwipeItemView.CommandParameter" />
+      <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="Xamarin.Forms.SwipeItemView.CommandParameter" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ISwipeItem.CommandParameter</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SwipeItemView.CommandParameterProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandParameterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SwipeItemView.CommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SwipeItemView.CommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SwipeItemView.CommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoked">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;EventArgs&gt; Invoked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.EventArgs&gt; Invoked" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.SwipeItemView.Invoked" />
+      <MemberSignature Language="F#" Value="member this.Invoked : EventHandler&lt;EventArgs&gt; " Usage="member this.Invoked : System.EventHandler&lt;System.EventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.ISwipeItem.Invoked</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.EventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInvoked">
+      <MemberSignature Language="C#" Value="public void OnInvoked ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnInvoked() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeItemView.OnInvoked" />
+      <MemberSignature Language="F#" Value="abstract member OnInvoked : unit -&gt; unit&#xA;override this.OnInvoked : unit -&gt; unit" Usage="swipeItemView.OnInvoked " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ISwipeItem.OnInvoked</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
