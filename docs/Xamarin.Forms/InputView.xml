@@ -37,8 +37,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates the number of device-independent units that should be in between characters in the text displayed by the Entry. Applies to Text and Placeholder.</summary>
+        <value>The number of device-independent units that should be in between characters in the text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +56,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.InputView.CharacterSpacing" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +74,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether user should be prevented from modifying the text. Default is <see langword="false" />.</summary>
+        <value>If <see langword="true" />, user cannot modify text. Else, <see langword="false" />.</value>
+        <remarks>The IsReadonly property does not alter the visual appearance of the control, unlike the IsEnabled property that also changes the visual appearance of the control to gray.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnlyProperty">
@@ -93,7 +93,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Xamarin.Forms.InputView.IsReadOnly" /> field.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.InputView.IsReadOnly" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +112,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that controls whether spellchecking is enabled.</summary>
+        <summary>Gets or sets a value that controls whether spell checking is enabled.</summary>
         <value>
-          <see langword="true" /> if spellchecking is enabled. Otherwise <see langword="false" />.</value>
+          <see langword="true" /> if spell checking is enabled. Otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +184,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Keyboard bindable property.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.InputView.Keyboard" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,8 +265,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the text that is displayed when the control is empty.</summary>
+        <value>The text that is displayed when the control is empty.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,8 +284,8 @@
         <ReturnType>Xamarin.Forms.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the placeholder text.</summary>
+        <value>The color of the placeholder text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +303,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.InputView.PlaceholderColor" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,7 +321,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.InputView.Placeholder" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,9 +339,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text of the input view. This is a bindable property.</summary>
+        <value>A string containing the text of the input view. The default value is null.</value>
+        <remarks>Setting this property will cause the <see cref="E:Xamarin.Forms.InputView.TextChanged" /> event to be emitted.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -358,7 +358,7 @@
         <ReturnType>System.EventHandler&lt;Xamarin.Forms.TextChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Event that is raised when the text of the Editor changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,7 +376,7 @@
         <ReturnType>Xamarin.Forms.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the text color.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -395,7 +395,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.InputView.TextColor" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,7 +413,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backing store for the <see cref="P:Xamarin.Forms.InputView.Text" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
