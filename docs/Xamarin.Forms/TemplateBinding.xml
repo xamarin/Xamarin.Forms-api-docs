@@ -1,6 +1,6 @@
 <Type Name="TemplateBinding" FullName="Xamarin.Forms.TemplateBinding">
-  <TypeSignature Language="C#" Value="public class TemplateBinding : Xamarin.Forms.BindingBase" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateBinding extends Xamarin.Forms.BindingBase" />
+  <TypeSignature Language="C#" Value="public sealed class TemplateBinding : Xamarin.Forms.BindingBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TemplateBinding extends Xamarin.Forms.BindingBase" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.TemplateBinding" />
   <TypeSignature Language="F#" Value="type TemplateBinding = class&#xA;    inherit BindingBase" />
   <AssemblyInfo>
@@ -12,6 +12,11 @@
     <BaseTypeName>Xamarin.Forms.BindingBase</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use Binding.Source=RelativeBindingSource.TemplatedParent")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Binds a template property to the parent of the view that owns a <see cref="T:Xamarin.Forms.ControlTemplate" />.</summary>
     <remarks>

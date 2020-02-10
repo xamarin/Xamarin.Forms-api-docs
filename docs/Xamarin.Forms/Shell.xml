@@ -67,6 +67,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BackgroundColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty BackgroundColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty BackgroundColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.BackgroundColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.BackgroundColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Current">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shell Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.Shell Current" />
@@ -162,22 +180,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Flyout">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellItemCollection Flyout { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellItemCollection Flyout" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.Flyout" />
-      <MemberSignature Language="F#" Value="member this.Flyout : Xamarin.Forms.ShellItemCollection" Usage="Xamarin.Forms.Shell.Flyout" />
-      <MemberType>Property</MemberType>
+    <Member MemberName="DisabledColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DisabledColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DisabledColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.DisabledColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DisabledColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.DisabledColorProperty" />
+      <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.ShellItemCollection</ReturnType>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The root menu for a Shell application.</summary>
-        <value>To be added.</value>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +212,7 @@
         <ReturnType>Xamarin.Forms.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color of the <see cref="P:Xamarin.Forms.Shell.Flyout" />.</summary>
+        <summary>Gets or sets the background color of the <see cref="P:Xamarin.Forms.Shell" /> Flyout.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,6 +232,85 @@
       </ReturnValue>
       <Docs>
         <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutBackgroundColor" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutBackgroundImage">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource FlyoutBackgroundImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource FlyoutBackgroundImage" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.FlyoutBackgroundImage" />
+      <MemberSignature Language="F#" Value="member this.FlyoutBackgroundImage : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Shell.FlyoutBackgroundImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.ImageSourceConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutBackgroundImageAspect">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Aspect FlyoutBackgroundImageAspect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Aspect FlyoutBackgroundImageAspect" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.FlyoutBackgroundImageAspect" />
+      <MemberSignature Language="F#" Value="member this.FlyoutBackgroundImageAspect : Xamarin.Forms.Aspect with get, set" Usage="Xamarin.Forms.Shell.FlyoutBackgroundImageAspect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Aspect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutBackgroundImageAspectProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FlyoutBackgroundImageAspectProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FlyoutBackgroundImageAspectProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.FlyoutBackgroundImageAspectProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlyoutBackgroundImageAspectProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.FlyoutBackgroundImageAspectProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutBackgroundImageProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FlyoutBackgroundImageProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FlyoutBackgroundImageProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.FlyoutBackgroundImageProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlyoutBackgroundImageProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.FlyoutBackgroundImageProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,7 +476,7 @@
         <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the icon that, when pressed, opens the <see cref="P:Xamarin.Forms.Shell.Flyout" />.</summary>
+        <summary>Gets or sets the icon that, when pressed, opens the <see cref="P:Xamarin.Forms.Shell" /> Flyout.</summary>
         <value>The default icon is a "hamburger" icon.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -417,7 +513,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the visible status of the <see cref="P:Xamarin.Forms.Shell.Flyout" />.</summary>
+        <summary>Gets or sets the visible status of the <see cref="P:Xamarin.Forms.Shell" /> Flyout.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -437,6 +533,61 @@
       </ReturnValue>
       <Docs>
         <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutIsPresented" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutVerticalScrollMode">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ScrollMode FlyoutVerticalScrollMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.ScrollMode FlyoutVerticalScrollMode" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.FlyoutVerticalScrollMode" />
+      <MemberSignature Language="F#" Value="member this.FlyoutVerticalScrollMode : Xamarin.Forms.ScrollMode with get, set" Usage="Xamarin.Forms.Shell.FlyoutVerticalScrollMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ScrollMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutVerticalScrollModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FlyoutVerticalScrollModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FlyoutVerticalScrollModeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.FlyoutVerticalScrollModeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlyoutVerticalScrollModeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.FlyoutVerticalScrollModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForegroundColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ForegroundColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ForegroundColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ForegroundColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ForegroundColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -463,6 +614,52 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetBackgroundColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetBackgroundColor (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetBackgroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetBackgroundColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetBackgroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetBackgroundColor obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisabledColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetDisabledColor (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetDisabledColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetDisabledColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetDisabledColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetDisabledColor obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetFlyoutBehavior">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.FlyoutBehavior GetFlyoutBehavior (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.FlyoutBehavior GetFlyoutBehavior(class Xamarin.Forms.BindableObject obj) cil managed" />
@@ -482,6 +679,98 @@
       <Docs>
         <param name="obj">To be added.</param>
         <summary>Gets the <see cref="P:Xamarin.Forms.Shell.FlyoutBehavior" /> of the <paramref name="obj" />.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetForegroundColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetForegroundColor (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetForegroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetForegroundColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetForegroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetForegroundColor obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemTemplate">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.DataTemplate GetItemTemplate (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.DataTemplate GetItemTemplate(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetItemTemplate(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetItemTemplate : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.DataTemplate" Usage="Xamarin.Forms.Shell.GetItemTemplate obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMenuItemTemplate">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.DataTemplate GetMenuItemTemplate (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.DataTemplate GetMenuItemTemplate(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetMenuItemTemplate(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetMenuItemTemplate : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.DataTemplate" Usage="Xamarin.Forms.Shell.GetMenuItemTemplate obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNavBarHasShadow">
+      <MemberSignature Language="C#" Value="public static bool GetNavBarHasShadow (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetNavBarHasShadow(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetNavBarHasShadow(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetNavBarHasShadow : Xamarin.Forms.BindableObject -&gt; bool" Usage="Xamarin.Forms.Shell.GetNavBarHasShadow obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -510,6 +799,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetPresentationMode">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.PresentationMode GetPresentationMode (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.PresentationMode GetPresentationMode(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetPresentationMode(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetPresentationMode : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.PresentationMode" Usage="Xamarin.Forms.Shell.GetPresentationMode obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.PresentationMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetSearchHandler">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.SearchHandler GetSearchHandler (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.SearchHandler GetSearchHandler(class Xamarin.Forms.BindableObject obj) cil managed" />
@@ -533,11 +845,11 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetShellBackgroundColor">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetShellBackgroundColor (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetShellBackgroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetShellBackgroundColor(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetShellBackgroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetShellBackgroundColor obj" />
+    <Member MemberName="GetTabBarBackgroundColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTabBarBackgroundColor (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTabBarBackgroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTabBarBackgroundColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTabBarBackgroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTabBarBackgroundColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -551,16 +863,16 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>Gets the Shell background color for the <paramref name="obj" />.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetShellDisabledColor">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetShellDisabledColor (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetShellDisabledColor(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetShellDisabledColor(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetShellDisabledColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetShellDisabledColor obj" />
+    <Member MemberName="GetTabBarDisabledColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTabBarDisabledColor (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTabBarDisabledColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTabBarDisabledColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTabBarDisabledColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTabBarDisabledColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -574,108 +886,16 @@
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>Gets the Shell disabled color for the <paramref name="obj" />.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetShellForegroundColor">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetShellForegroundColor (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetShellForegroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetShellForegroundColor(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetShellForegroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetShellForegroundColor obj" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Color</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <summary>Gets the foreground color for the <paramref name="obj" />.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetShellTabBarBackgroundColor">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetShellTabBarBackgroundColor (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetShellTabBarBackgroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetShellTabBarBackgroundColor(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetShellTabBarBackgroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetShellTabBarBackgroundColor obj" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Color</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <summary>Gets the background color for the tab bar for the <paramref name="obj" />.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetShellTabBarDisabledColor">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetShellTabBarDisabledColor (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetShellTabBarDisabledColor(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetShellTabBarDisabledColor(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetShellTabBarDisabledColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetShellTabBarDisabledColor obj" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Color</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <summary>Gets the disabled color for the tab bar for the <paramref name="obj" />.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetShellTabBarForegroundColor">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetShellTabBarForegroundColor (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetShellTabBarForegroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetShellTabBarForegroundColor(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetShellTabBarForegroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetShellTabBarForegroundColor obj" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Color</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <summary>Gets the foreground color for the tab bar for the <paramref name="obj" />.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetShellTabBarTitleColor">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetShellTabBarTitleColor (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetShellTabBarTitleColor(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetShellTabBarTitleColor(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetShellTabBarTitleColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetShellTabBarTitleColor obj" />
+    <Member MemberName="GetTabBarForegroundColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTabBarForegroundColor (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTabBarForegroundColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTabBarForegroundColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTabBarForegroundColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTabBarForegroundColor obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -690,75 +910,6 @@
       <Docs>
         <param name="obj">To be added.</param>
         <summary>Gets the title color for tab bar for the <paramref name="obj" />.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetShellTabBarUnselectedColor">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetShellTabBarUnselectedColor (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetShellTabBarUnselectedColor(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetShellTabBarUnselectedColor(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetShellTabBarUnselectedColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetShellTabBarUnselectedColor obj" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Color</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <summary>Gets the color for unselected values in the tab bar for <paramref name="obj" />.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetShellTitleColor">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetShellTitleColor (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetShellTitleColor(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetShellTitleColor(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetShellTitleColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetShellTitleColor obj" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Color</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <summary>Gets the color of the title for <paramref name="obj" />.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetShellUnselectedColor">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetShellUnselectedColor (Xamarin.Forms.BindableObject obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetShellUnselectedColor(class Xamarin.Forms.BindableObject obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetShellUnselectedColor(Xamarin.Forms.BindableObject)" />
-      <MemberSignature Language="F#" Value="static member GetShellUnselectedColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetShellUnselectedColor obj" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Color</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <summary>Gets the color for unselected items in <paramref name="obj" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -786,6 +937,75 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetTabBarTitleColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTabBarTitleColor (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTabBarTitleColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTabBarTitleColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTabBarTitleColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTabBarTitleColor obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTabBarUnselectedColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTabBarUnselectedColor (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTabBarUnselectedColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTabBarUnselectedColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTabBarUnselectedColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTabBarUnselectedColor obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTitleColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetTitleColor (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetTitleColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetTitleColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetTitleColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetTitleColor obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetTitleView">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.View GetTitleView (Xamarin.Forms.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.View GetTitleView(class Xamarin.Forms.BindableObject obj) cil managed" />
@@ -809,8 +1029,54 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetUnselectedColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetUnselectedColor (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetUnselectedColor(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetUnselectedColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetUnselectedColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Shell.GetUnselectedColor obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GoToAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToAsync (Xamarin.Forms.ShellNavigationState state, bool animate = true);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToAsync (Xamarin.Forms.ShellNavigationState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task GoToAsync(class Xamarin.Forms.ShellNavigationState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GoToAsync(Xamarin.Forms.ShellNavigationState)" />
+      <MemberSignature Language="F#" Value="member this.GoToAsync : Xamarin.Forms.ShellNavigationState -&gt; System.Threading.Tasks.Task" Usage="shell.GoToAsync state" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="Xamarin.Forms.ShellNavigationState" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoToAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToAsync (Xamarin.Forms.ShellNavigationState state, bool animate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task GoToAsync(class Xamarin.Forms.ShellNavigationState state, bool animate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GoToAsync(Xamarin.Forms.ShellNavigationState,System.Boolean)" />
       <MemberSignature Language="F#" Value="member this.GoToAsync : Xamarin.Forms.ShellNavigationState * bool -&gt; System.Threading.Tasks.Task" Usage="shell.GoToAsync (state, animate)" />
@@ -842,17 +1108,17 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </Docs>
     </Member>
     <Member MemberName="Items">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.ShellItemCollection Items { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ShellItemCollection Items" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.ShellItem&gt; Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.ShellItem&gt; Items" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.Items" />
-      <MemberSignature Language="F#" Value="member this.Items : Xamarin.Forms.ShellItemCollection" Usage="Xamarin.Forms.Shell.Items" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.IList&lt;Xamarin.Forms.ShellItem&gt;" Usage="Xamarin.Forms.Shell.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.ShellItemCollection</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.ShellItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>The collection of <see cref="T:Xamarin.Forms.ShellItem" /> objects managed by <c>this</c><see cref="T:Xamarin.Forms.Shell" />.</summary>
@@ -915,43 +1181,6 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MenuItems">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.MenuItemCollection MenuItems { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.MenuItemCollection MenuItems" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.MenuItems" />
-      <MemberSignature Language="F#" Value="member this.MenuItems : Xamarin.Forms.MenuItemCollection" Usage="Xamarin.Forms.Shell.MenuItems" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.MenuItemCollection</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the menu of the Shell application.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MenuItemsProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty MenuItemsProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty MenuItemsProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.MenuItemsProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable MenuItemsProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.MenuItemsProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.MenuItems" /> field.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="MenuItemTemplate">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate MenuItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate MenuItemTemplate" />
@@ -966,7 +1195,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:Xamarin.Forms.DataTemplate" /> applied to <see cref="T:Xamarin.Forms.MenuItem" /> objects in the <see cref="P:Xamarin.Forms.Shell.MenuItems" /> collection.</summary>
+        <summary>Gets or sets the <see cref="T:Xamarin.Forms.DataTemplate" /> applied to <see cref="T:Xamarin.Forms.MenuItem" /> objects in the <see cref="P:Xamarin.Forms.ShellContent.MenuItems" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -986,6 +1215,24 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </ReturnValue>
       <Docs>
         <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.MenuItemTemplate" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavBarHasShadowProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty NavBarHasShadowProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty NavBarHasShadowProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.NavBarHasShadowProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable NavBarHasShadowProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.NavBarHasShadowProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1087,54 +1334,6 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnChildAdded">
-      <MemberSignature Language="C#" Value="protected override void OnChildAdded (Xamarin.Forms.Element child);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildAdded(class Xamarin.Forms.Element child) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.OnChildAdded(Xamarin.Forms.Element)" />
-      <MemberSignature Language="F#" Value="override this.OnChildAdded : Xamarin.Forms.Element -&gt; unit" Usage="shell.OnChildAdded child" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="child" Type="Xamarin.Forms.Element" />
-      </Parameters>
-      <Docs>
-        <param name="child">To be added.</param>
-        <summary>Developers may override this method to customize behavior when a new <see cref="T:Xamarin.Forms.Element" /> is added.</summary>
-        <remarks>
-          <para>Developers should call <c>base.OnChildAdded()</c> at the beginning of their overriding method.</para>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnChildRemoved">
-      <MemberSignature Language="C#" Value="protected override void OnChildRemoved (Xamarin.Forms.Element child);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildRemoved(class Xamarin.Forms.Element child) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.OnChildRemoved(Xamarin.Forms.Element)" />
-      <MemberSignature Language="F#" Value="override this.OnChildRemoved : Xamarin.Forms.Element -&gt; unit" Usage="shell.OnChildRemoved child" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="child" Type="Xamarin.Forms.Element" />
-      </Parameters>
-      <Docs>
-        <param name="child">To be added.</param>
-        <summary>Developers may override this method to customize behavior when a child <see cref="T:Xamarin.Forms.Element" /> is removed.</summary>
-        <remarks>
-          <para>Developers should call <c>base.OnChildRemoved()</c> at the beginning of their overriding method.</para>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="OnNavigated">
       <MemberSignature Language="C#" Value="protected virtual void OnNavigated (Xamarin.Forms.ShellNavigatedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNavigated(class Xamarin.Forms.ShellNavigatedEventArgs args) cil managed" />
@@ -1183,81 +1382,21 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="Route">
-      <MemberSignature Language="C#" Value="public string Route { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Route" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.Route" />
-      <MemberSignature Language="F#" Value="member this.Route : string with get, set" Usage="Xamarin.Forms.Shell.Route" />
-      <MemberType>Property</MemberType>
+    <Member MemberName="PresentationModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty PresentationModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty PresentationModeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.PresentationModeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable PresentationModeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.PresentationModeProperty" />
+      <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the string used to address the <see cref="T:Xamarin.Forms.Shell" />.</summary>
-        <value>To be added.</value>
-        <remarks>
-          <para><![CDATA[URI-based navigation is accomplished with routes, which are the URI segments that are used to navigate within a Shell application. Navigation URI’s are formatted as follows (items in bold are required, items in italics are optional):
-
-**RouteScheme**://**RouteHost**/**Route**/*page*?*QueryParameters*
-
-Query parameters are parameters that can be passed to the destination page while navigating.
-The RouteScheme, RouteHost, and primary route must be defined in your Shell subclass with the RouteScheme, RouteHost, and Route properties:
-]]></para>
-          <example>
-            <code lang="XAML"><![CDATA[
-<Shell ..
-       RouteScheme="app"
-       RouteHost="xamarin.com"
-       Route="xaminals">
-    ..
-</Shell>
-
-    ]]></code>
-          </example>
-          <para>
-Combined, the RouteScheme, RouteHost, and Route property values form the app://xamarin.com/xaminals root URI.</para>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RouteHost">
-      <MemberSignature Language="C#" Value="public string RouteHost { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string RouteHost" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.RouteHost" />
-      <MemberSignature Language="F#" Value="member this.RouteHost : string with get, set" Usage="Xamarin.Forms.Shell.RouteHost" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RouteScheme">
-      <MemberSignature Language="C#" Value="public string RouteScheme { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string RouteScheme" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.RouteScheme" />
-      <MemberSignature Language="F#" Value="member this.RouteScheme : string with get, set" Usage="Xamarin.Forms.Shell.RouteScheme" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1303,6 +1442,54 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetBackgroundColor">
+      <MemberSignature Language="C#" Value="public static void SetBackgroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBackgroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetBackgroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetBackgroundColor (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDisabledColor">
+      <MemberSignature Language="C#" Value="public static void SetDisabledColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDisabledColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetDisabledColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetDisabledColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetDisabledColor (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetFlyoutBehavior">
       <MemberSignature Language="C#" Value="public static void SetFlyoutBehavior (Xamarin.Forms.BindableObject obj, Xamarin.Forms.FlyoutBehavior value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFlyoutBehavior(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.FlyoutBehavior value) cil managed" />
@@ -1324,6 +1511,102 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
         <summary>Sets the flyout behavior of <param name="obj" /> to <param name="value" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetForegroundColor">
+      <MemberSignature Language="C#" Value="public static void SetForegroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetForegroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetForegroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetForegroundColor (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemTemplate">
+      <MemberSignature Language="C#" Value="public static void SetItemTemplate (Xamarin.Forms.BindableObject obj, Xamarin.Forms.DataTemplate itemTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetItemTemplate(class Xamarin.Forms.BindableObject obj, class Xamarin.Forms.DataTemplate itemTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetItemTemplate(Xamarin.Forms.BindableObject,Xamarin.Forms.DataTemplate)" />
+      <MemberSignature Language="F#" Value="static member SetItemTemplate : Xamarin.Forms.BindableObject * Xamarin.Forms.DataTemplate -&gt; unit" Usage="Xamarin.Forms.Shell.SetItemTemplate (obj, itemTemplate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="itemTemplate" Type="Xamarin.Forms.DataTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="itemTemplate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMenuItemTemplate">
+      <MemberSignature Language="C#" Value="public static void SetMenuItemTemplate (Xamarin.Forms.BindableObject obj, Xamarin.Forms.DataTemplate menuItemTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetMenuItemTemplate(class Xamarin.Forms.BindableObject obj, class Xamarin.Forms.DataTemplate menuItemTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetMenuItemTemplate(Xamarin.Forms.BindableObject,Xamarin.Forms.DataTemplate)" />
+      <MemberSignature Language="F#" Value="static member SetMenuItemTemplate : Xamarin.Forms.BindableObject * Xamarin.Forms.DataTemplate -&gt; unit" Usage="Xamarin.Forms.Shell.SetMenuItemTemplate (obj, menuItemTemplate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="menuItemTemplate" Type="Xamarin.Forms.DataTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="menuItemTemplate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNavBarHasShadow">
+      <MemberSignature Language="C#" Value="public static void SetNavBarHasShadow (Xamarin.Forms.BindableObject obj, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNavBarHasShadow(class Xamarin.Forms.BindableObject obj, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetNavBarHasShadow(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetNavBarHasShadow : Xamarin.Forms.BindableObject * bool -&gt; unit" Usage="Xamarin.Forms.Shell.SetNavBarHasShadow (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1351,6 +1634,30 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetPresentationMode">
+      <MemberSignature Language="C#" Value="public static void SetPresentationMode (Xamarin.Forms.BindableObject obj, Xamarin.Forms.PresentationMode presentationMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPresentationMode(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.PresentationMode presentationMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetPresentationMode(Xamarin.Forms.BindableObject,Xamarin.Forms.PresentationMode)" />
+      <MemberSignature Language="F#" Value="static member SetPresentationMode : Xamarin.Forms.BindableObject * Xamarin.Forms.PresentationMode -&gt; unit" Usage="Xamarin.Forms.Shell.SetPresentationMode (obj, presentationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="presentationMode" Type="Xamarin.Forms.PresentationMode" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="presentationMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetSearchHandler">
       <MemberSignature Language="C#" Value="public static void SetSearchHandler (Xamarin.Forms.BindableObject obj, Xamarin.Forms.SearchHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSearchHandler(class Xamarin.Forms.BindableObject obj, class Xamarin.Forms.SearchHandler handler) cil managed" />
@@ -1375,11 +1682,11 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetShellBackgroundColor">
-      <MemberSignature Language="C#" Value="public static void SetShellBackgroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShellBackgroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetShellBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
-      <MemberSignature Language="F#" Value="static member SetShellBackgroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetShellBackgroundColor (obj, value)" />
+    <Member MemberName="SetTabBarBackgroundColor">
+      <MemberSignature Language="C#" Value="public static void SetTabBarBackgroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabBarBackgroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTabBarBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTabBarBackgroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTabBarBackgroundColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1395,15 +1702,15 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>Sets the background color of <param name="obj" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetShellDisabledColor">
-      <MemberSignature Language="C#" Value="public static void SetShellDisabledColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShellDisabledColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetShellDisabledColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
-      <MemberSignature Language="F#" Value="static member SetShellDisabledColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetShellDisabledColor (obj, value)" />
+    <Member MemberName="SetTabBarDisabledColor">
+      <MemberSignature Language="C#" Value="public static void SetTabBarDisabledColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabBarDisabledColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTabBarDisabledColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTabBarDisabledColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTabBarDisabledColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1419,15 +1726,15 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>Sets the disabled color of <param name="obj" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetShellForegroundColor">
-      <MemberSignature Language="C#" Value="public static void SetShellForegroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShellForegroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetShellForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
-      <MemberSignature Language="F#" Value="static member SetShellForegroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetShellForegroundColor (obj, value)" />
+    <Member MemberName="SetTabBarForegroundColor">
+      <MemberSignature Language="C#" Value="public static void SetTabBarForegroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabBarForegroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTabBarForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTabBarForegroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTabBarForegroundColor (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1443,175 +1750,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
       <Docs>
         <param name="obj">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>Sets the foreground color of <paramref name="obj"/>.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetShellTabBarBackgroundColor">
-      <MemberSignature Language="C#" Value="public static void SetShellTabBarBackgroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShellTabBarBackgroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetShellTabBarBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
-      <MemberSignature Language="F#" Value="static member SetShellTabBarBackgroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetShellTabBarBackgroundColor (obj, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-        <Parameter Name="value" Type="Xamarin.Forms.Color" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>Sets the background color of the tab bar of <param name="obj" />.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetShellTabBarDisabledColor">
-      <MemberSignature Language="C#" Value="public static void SetShellTabBarDisabledColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShellTabBarDisabledColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetShellTabBarDisabledColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
-      <MemberSignature Language="F#" Value="static member SetShellTabBarDisabledColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetShellTabBarDisabledColor (obj, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-        <Parameter Name="value" Type="Xamarin.Forms.Color" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>Sets the disabled color of the tab bar of <param name="obj" />.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetShellTabBarForegroundColor">
-      <MemberSignature Language="C#" Value="public static void SetShellTabBarForegroundColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShellTabBarForegroundColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetShellTabBarForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
-      <MemberSignature Language="F#" Value="static member SetShellTabBarForegroundColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetShellTabBarForegroundColor (obj, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-        <Parameter Name="value" Type="Xamarin.Forms.Color" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>Sets the foreground color of the tab bar of <param name="obj" />.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetShellTabBarTitleColor">
-      <MemberSignature Language="C#" Value="public static void SetShellTabBarTitleColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShellTabBarTitleColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetShellTabBarTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
-      <MemberSignature Language="F#" Value="static member SetShellTabBarTitleColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetShellTabBarTitleColor (obj, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-        <Parameter Name="value" Type="Xamarin.Forms.Color" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>Sets the color of the title of the tab bar of <param name="obj" />.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetShellTabBarUnselectedColor">
-      <MemberSignature Language="C#" Value="public static void SetShellTabBarUnselectedColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShellTabBarUnselectedColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetShellTabBarUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
-      <MemberSignature Language="F#" Value="static member SetShellTabBarUnselectedColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetShellTabBarUnselectedColor (obj, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-        <Parameter Name="value" Type="Xamarin.Forms.Color" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>Sets the color of unselected items in the tab bar of <param name="obj" />.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetShellTitleColor">
-      <MemberSignature Language="C#" Value="public static void SetShellTitleColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShellTitleColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetShellTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
-      <MemberSignature Language="F#" Value="static member SetShellTitleColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetShellTitleColor (obj, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-        <Parameter Name="value" Type="Xamarin.Forms.Color" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>Sets the title color of <param name="obj" />.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetShellUnselectedColor">
-      <MemberSignature Language="C#" Value="public static void SetShellUnselectedColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShellUnselectedColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetShellUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
-      <MemberSignature Language="F#" Value="static member SetShellUnselectedColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetShellUnselectedColor (obj, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
-        <Parameter Name="value" Type="Xamarin.Forms.Color" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>Sets the color of unselected items in <param name="obj" /></summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1639,6 +1778,78 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetTabBarTitleColor">
+      <MemberSignature Language="C#" Value="public static void SetTabBarTitleColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabBarTitleColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTabBarTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTabBarTitleColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTabBarTitleColor (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTabBarUnselectedColor">
+      <MemberSignature Language="C#" Value="public static void SetTabBarUnselectedColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTabBarUnselectedColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTabBarUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTabBarUnselectedColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTabBarUnselectedColor (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTitleColor">
+      <MemberSignature Language="C#" Value="public static void SetTitleColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetTitleColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetTitleColor (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetTitleView">
       <MemberSignature Language="C#" Value="public static void SetTitleView (Xamarin.Forms.BindableObject obj, Xamarin.Forms.View value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTitleView(class Xamarin.Forms.BindableObject obj, class Xamarin.Forms.View value) cil managed" />
@@ -1663,29 +1874,35 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ShellBackgroundColorProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShellBackgroundColorProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShellBackgroundColorProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ShellBackgroundColorProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ShellBackgroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ShellBackgroundColorProperty" />
-      <MemberType>Field</MemberType>
+    <Member MemberName="SetUnselectedColor">
+      <MemberSignature Language="C#" Value="public static void SetUnselectedColor (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetUnselectedColor(class Xamarin.Forms.BindableObject obj, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetUnselectedColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.Shell.SetUnselectedColor (obj, value)" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.Color" />
+      </Parameters>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellBackgroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ShellDisabledColorProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShellDisabledColorProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShellDisabledColorProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ShellDisabledColorProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ShellDisabledColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ShellDisabledColorProperty" />
+    <Member MemberName="TabBarBackgroundColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabBarBackgroundColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabBarBackgroundColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TabBarBackgroundColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabBarBackgroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TabBarBackgroundColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1695,15 +1912,15 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetNavBarIsVisible(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetNavBarIsVisible(Xamarin.Forms.BindableObject,System.Boolean)" /> methods.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ShellForegroundColorProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShellForegroundColorProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShellForegroundColorProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ShellForegroundColorProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ShellForegroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ShellForegroundColorProperty" />
+    <Member MemberName="TabBarDisabledColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabBarDisabledColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabBarDisabledColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TabBarDisabledColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabBarDisabledColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TabBarDisabledColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1713,15 +1930,15 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellForegroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ShellTabBarBackgroundColorProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShellTabBarBackgroundColorProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShellTabBarBackgroundColorProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ShellTabBarBackgroundColorProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ShellTabBarBackgroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ShellTabBarBackgroundColorProperty" />
+    <Member MemberName="TabBarForegroundColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabBarForegroundColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabBarForegroundColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TabBarForegroundColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabBarForegroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TabBarForegroundColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -1731,115 +1948,7 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarBackgroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShellTabBarDisabledColorProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShellTabBarDisabledColorProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShellTabBarDisabledColorProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ShellTabBarDisabledColorProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ShellTabBarDisabledColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ShellTabBarDisabledColorProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarDisabledColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarDisabledColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShellTabBarForegroundColorProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShellTabBarForegroundColorProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShellTabBarForegroundColorProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ShellTabBarForegroundColorProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ShellTabBarForegroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ShellTabBarForegroundColorProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarForegroundColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShellTabBarTitleColorProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShellTabBarTitleColorProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShellTabBarTitleColorProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ShellTabBarTitleColorProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ShellTabBarTitleColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ShellTabBarTitleColorProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarTitleColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShellTabBarUnselectedColorProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShellTabBarUnselectedColorProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShellTabBarUnselectedColorProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ShellTabBarUnselectedColorProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ShellTabBarUnselectedColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ShellTabBarUnselectedColorProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTabBarUnselectedColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTabBarUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShellTitleColorProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShellTitleColorProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShellTitleColorProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ShellTitleColorProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ShellTitleColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ShellTitleColorProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellTitleColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellTitleColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShellUnselectedColorProperty">
-      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ShellUnselectedColorProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ShellUnselectedColorProperty" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.ShellUnselectedColorProperty" />
-      <MemberSignature Language="F#" Value=" staticval mutable ShellUnselectedColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.ShellUnselectedColorProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetShellUnselectedColor(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetShellUnselectedColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" /> methods.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1861,6 +1970,60 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TabBarTitleColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabBarTitleColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabBarTitleColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TabBarTitleColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabBarTitleColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TabBarTitleColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabBarUnselectedColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TabBarUnselectedColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TabBarUnselectedColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TabBarUnselectedColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabBarUnselectedColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TabBarUnselectedColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TitleColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TitleColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.TitleColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TitleColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.TitleColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TitleViewProperty">
       <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TitleViewProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TitleViewProperty" />
@@ -1876,6 +2039,59 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
       </ReturnValue>
       <Docs>
         <summary>xThe backing store for the <see cref="M:Xamarin.Forms.Shell.GetTitleView(Xamarin.Forms.BindableObject)" /> and <see cref="M:Xamarin.Forms.Shell.SetTitleView(Xamarin.Forms.BindableObject,Xamarin.Forms.View)" /> methods.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnselectedColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty UnselectedColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty UnselectedColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.UnselectedColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnselectedColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.UnselectedColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyShellUWPFlagEnabled">
+      <MemberSignature Language="C#" Value="public static void VerifyShellUWPFlagEnabled (string constructorHint = null, string memberName = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VerifyShellUWPFlagEnabled(string constructorHint, string memberName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.VerifyShellUWPFlagEnabled(System.String,System.String)" />
+      <MemberSignature Language="F#" Value="static member VerifyShellUWPFlagEnabled : string * string -&gt; unit" Usage="Xamarin.Forms.Shell.VerifyShellUWPFlagEnabled (constructorHint, memberName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constructorHint" Type="System.String" />
+        <Parameter Name="memberName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="constructorHint">To be added.</param>
+        <param name="memberName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1999,6 +2215,28 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Xamarin.Forms.IShellController.GetItems">
+      <MemberSignature Language="C#" Value="System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellItem&gt; IShellController.GetItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Xamarin.Forms.ShellItem&gt; Xamarin.Forms.IShellController.GetItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#GetItems" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IShellController.GetItems</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Xamarin.Forms.IShellController.GetNavigationState">
       <MemberSignature Language="C#" Value="Xamarin.Forms.ShellNavigationState IShellController.GetNavigationState (Xamarin.Forms.ShellItem shellItem, Xamarin.Forms.ShellSection shellSection, Xamarin.Forms.ShellContent shellContent, bool includeStack);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Xamarin.Forms.ShellNavigationState Xamarin.Forms.IShellController.GetNavigationState(class Xamarin.Forms.ShellItem shellItem, class Xamarin.Forms.ShellSection shellSection, class Xamarin.Forms.ShellContent shellContent, bool includeStack) cil managed" />
@@ -2030,6 +2268,26 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Xamarin.Forms.IShellController.ItemsCollectionChanged">
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellController.ItemsCollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellController.ItemsCollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#ItemsCollectionChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IShellController.ItemsCollectionChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Xamarin.Forms.IShellController.OnFlyoutItemSelected">
       <MemberSignature Language="C#" Value="void IShellController.OnFlyoutItemSelected (Xamarin.Forms.Element element);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.OnFlyoutItemSelected(class Xamarin.Forms.Element element) cil managed" />
@@ -2042,6 +2300,11 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2066,6 +2329,11 @@ Combined, the RouteScheme, RouteHost, and Route property values form the app://x
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>

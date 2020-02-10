@@ -1,0 +1,124 @@
+<Type Name="SwipeItem" FullName="Xamarin.Forms.SwipeItem">
+  <TypeSignature Language="C#" Value="public class SwipeItem : Xamarin.Forms.MenuItem, Xamarin.Forms.ISwipeItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SwipeItem extends Xamarin.Forms.MenuItem implements class Xamarin.Forms.ISwipeItem" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.SwipeItem" />
+  <TypeSignature Language="F#" Value="type SwipeItem = class&#xA;    inherit MenuItem&#xA;    interface ISwipeItem" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.MenuItem</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.ISwipeItem</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SwipeItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeItem.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color BackgroundColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color BackgroundColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SwipeItem.BackgroundColor" />
+      <MemberSignature Language="F#" Value="member this.BackgroundColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.SwipeItem.BackgroundColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty BackgroundColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty BackgroundColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SwipeItem.BackgroundColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SwipeItem.BackgroundColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoked">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;EventArgs&gt; Invoked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.EventArgs&gt; Invoked" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.SwipeItem.Invoked" />
+      <MemberSignature Language="F#" Value="member this.Invoked : EventHandler&lt;EventArgs&gt; " Usage="member this.Invoked : System.EventHandler&lt;System.EventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.ISwipeItem.Invoked</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.EventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInvoked">
+      <MemberSignature Language="C#" Value="public void OnInvoked ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnInvoked() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeItem.OnInvoked" />
+      <MemberSignature Language="F#" Value="abstract member OnInvoked : unit -&gt; unit&#xA;override this.OnInvoked : unit -&gt; unit" Usage="swipeItem.OnInvoked " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.ISwipeItem.OnInvoked</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

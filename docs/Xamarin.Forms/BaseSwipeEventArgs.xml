@@ -1,0 +1,58 @@
+<Type Name="BaseSwipeEventArgs" FullName="Xamarin.Forms.BaseSwipeEventArgs">
+  <TypeSignature Language="C#" Value="public abstract class BaseSwipeEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseSwipeEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.BaseSwipeEventArgs" />
+  <TypeSignature Language="F#" Value="type BaseSwipeEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BaseSwipeEventArgs (Xamarin.Forms.SwipeDirection swipeDirection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.SwipeDirection swipeDirection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BaseSwipeEventArgs.#ctor(Xamarin.Forms.SwipeDirection)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.BaseSwipeEventArgs : Xamarin.Forms.SwipeDirection -&gt; Xamarin.Forms.BaseSwipeEventArgs" Usage="new Xamarin.Forms.BaseSwipeEventArgs swipeDirection" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="swipeDirection" Type="Xamarin.Forms.SwipeDirection" />
+      </Parameters>
+      <Docs>
+        <param name="swipeDirection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwipeDirection">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.SwipeDirection SwipeDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.SwipeDirection SwipeDirection" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.BaseSwipeEventArgs.SwipeDirection" />
+      <MemberSignature Language="F#" Value="member this.SwipeDirection : Xamarin.Forms.SwipeDirection with get, set" Usage="Xamarin.Forms.BaseSwipeEventArgs.SwipeDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.SwipeDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

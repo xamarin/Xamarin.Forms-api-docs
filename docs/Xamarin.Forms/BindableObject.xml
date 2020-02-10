@@ -339,6 +339,69 @@ stack.BindingContext = new {Jane = new {Name = "Jane Doe"}, John = new {Name = "
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="CoerceValue">
+      <MemberSignature Language="C#" Value="public void CoerceValue (Xamarin.Forms.BindableProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CoerceValue(class Xamarin.Forms.BindableProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindableProperty)" />
+      <MemberSignature Language="F#" Value="member this.CoerceValue : Xamarin.Forms.BindableProperty -&gt; unit" Usage="bindableObject.CoerceValue property" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="Xamarin.Forms.BindableProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CoerceValue">
+      <MemberSignature Language="C#" Value="public void CoerceValue (Xamarin.Forms.BindablePropertyKey propertyKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CoerceValue(class Xamarin.Forms.BindablePropertyKey propertyKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindablePropertyKey)" />
+      <MemberSignature Language="F#" Value="member this.CoerceValue : Xamarin.Forms.BindablePropertyKey -&gt; unit" Usage="bindableObject.CoerceValue propertyKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyKey" Type="Xamarin.Forms.BindablePropertyKey" />
+      </Parameters>
+      <Docs>
+        <param name="propertyKey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispatcher">
+      <MemberSignature Language="C#" Value="public virtual Xamarin.Forms.IDispatcher Dispatcher { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IDispatcher Dispatcher" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.BindableObject.Dispatcher" />
+      <MemberSignature Language="F#" Value="member this.Dispatcher : Xamarin.Forms.IDispatcher" Usage="Xamarin.Forms.BindableObject.Dispatcher" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IDispatcher</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetValue">
       <MemberSignature Language="C#" Value="public object GetValue (Xamarin.Forms.BindableProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class Xamarin.Forms.BindableProperty property) cil managed" />
@@ -417,7 +480,7 @@ class MyBindable : BindableObject
         <param name="property0">For internal use by the Xamarin.Forms platform.</param>
         <param name="property1">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -453,7 +516,7 @@ class MyBindable : BindableObject
         <param name="property1">For internal use by the Xamarin.Forms platform.</param>
         <param name="property2">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Xamarin.Forms platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

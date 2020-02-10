@@ -1,0 +1,527 @@
+<Type Name="IndicatorView" FullName="Xamarin.Forms.IndicatorView">
+  <TypeSignature Language="C#" Value="public class IndicatorView : Xamarin.Forms.TemplatedView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IndicatorView extends Xamarin.Forms.TemplatedView" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IndicatorView" />
+  <TypeSignature Language="F#" Value="type IndicatorView = class&#xA;    inherit TemplatedView" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.TemplatedView</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.ContentProperty("IndicatorLayout")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.RenderWith(typeof(Xamarin.Forms.Platform._IndicatorViewRenderer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IndicatorView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IndicatorView.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.Count" />
+      <MemberSignature Language="F#" Value="member this.Count : int with get, set" Usage="Xamarin.Forms.IndicatorView.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CountProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CountProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CountProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.CountProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CountProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.CountProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemsSourceBy">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.VisualElement GetItemsSourceBy (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.VisualElement GetItemsSourceBy(class Xamarin.Forms.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IndicatorView.GetItemsSourceBy(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetItemsSourceBy : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.VisualElement" Usage="Xamarin.Forms.IndicatorView.GetItemsSourceBy bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.ReferenceTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.VisualElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HideSingle">
+      <MemberSignature Language="C#" Value="public bool HideSingle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HideSingle" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.HideSingle" />
+      <MemberSignature Language="F#" Value="member this.HideSingle : bool with get, set" Usage="Xamarin.Forms.IndicatorView.HideSingle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HideSingleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty HideSingleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty HideSingleProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.HideSingleProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable HideSingleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.HideSingleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicatorColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color IndicatorColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color IndicatorColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.IndicatorColor" />
+      <MemberSignature Language="F#" Value="member this.IndicatorColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.IndicatorView.IndicatorColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicatorColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IndicatorColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IndicatorColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.IndicatorColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IndicatorColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.IndicatorColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicatorLayout">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Layout&lt;Xamarin.Forms.View&gt; IndicatorLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Layout`1&lt;class Xamarin.Forms.View&gt; IndicatorLayout" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.IndicatorLayout" />
+      <MemberSignature Language="F#" Value="member this.IndicatorLayout : Xamarin.Forms.Layout&lt;Xamarin.Forms.View&gt; with get, set" Usage="Xamarin.Forms.IndicatorView.IndicatorLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Layout&lt;Xamarin.Forms.View&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicatorSize">
+      <MemberSignature Language="C#" Value="public double IndicatorSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 IndicatorSize" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.IndicatorSize" />
+      <MemberSignature Language="F#" Value="member this.IndicatorSize : double with get, set" Usage="Xamarin.Forms.IndicatorView.IndicatorSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicatorSizeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IndicatorSizeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IndicatorSizeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.IndicatorSizeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IndicatorSizeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.IndicatorSizeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicatorsShape">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.IndicatorShape IndicatorsShape { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.IndicatorShape IndicatorsShape" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.IndicatorsShape" />
+      <MemberSignature Language="F#" Value="member this.IndicatorsShape : Xamarin.Forms.IndicatorShape with get, set" Usage="Xamarin.Forms.IndicatorView.IndicatorsShape" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IndicatorShape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicatorsShapeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IndicatorsShapeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IndicatorsShapeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.IndicatorsShapeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IndicatorsShapeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.IndicatorsShapeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicatorTemplate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplate IndicatorTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplate IndicatorTemplate" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.IndicatorTemplate" />
+      <MemberSignature Language="F#" Value="member this.IndicatorTemplate : Xamarin.Forms.DataTemplate with get, set" Usage="Xamarin.Forms.IndicatorView.IndicatorTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicatorTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IndicatorTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IndicatorTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.IndicatorTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IndicatorTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.IndicatorTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSource">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ItemsSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable ItemsSource" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.ItemsSource" />
+      <MemberSignature Language="F#" Value="member this.ItemsSource : System.Collections.IEnumerable with get, set" Usage="Xamarin.Forms.IndicatorView.ItemsSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSourceByProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemsSourceByProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemsSourceByProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.ItemsSourceByProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsSourceByProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.ItemsSourceByProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemsSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemsSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.ItemsSourceProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsSourceProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.ItemsSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumVisible">
+      <MemberSignature Language="C#" Value="public int MaximumVisible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumVisible" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.MaximumVisible" />
+      <MemberSignature Language="F#" Value="member this.MaximumVisible : int with get, set" Usage="Xamarin.Forms.IndicatorView.MaximumVisible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumVisibleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty MaximumVisibleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty MaximumVisibleProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.MaximumVisibleProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaximumVisibleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.MaximumVisibleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMeasure">
+      <MemberSignature Language="C#" Value="protected override Xamarin.Forms.SizeRequest OnMeasure (double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Xamarin.Forms.SizeRequest OnMeasure(float64 widthConstraint, float64 heightConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IndicatorView.OnMeasure(System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="override this.OnMeasure : double * double -&gt; Xamarin.Forms.SizeRequest" Usage="indicatorView.OnMeasure (widthConstraint, heightConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.SizeRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widthConstraint" Type="System.Double" />
+        <Parameter Name="heightConstraint" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="widthConstraint">To be added.</param>
+        <param name="heightConstraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public int Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.Position" />
+      <MemberSignature Language="F#" Value="member this.Position : int with get, set" Usage="Xamarin.Forms.IndicatorView.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PositionProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty PositionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty PositionProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.PositionProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable PositionProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.PositionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndicatorColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color SelectedIndicatorColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color SelectedIndicatorColor" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IndicatorView.SelectedIndicatorColor" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndicatorColor : Xamarin.Forms.Color with get, set" Usage="Xamarin.Forms.IndicatorView.SelectedIndicatorColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndicatorColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty SelectedIndicatorColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty SelectedIndicatorColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.IndicatorView.SelectedIndicatorColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedIndicatorColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.IndicatorView.SelectedIndicatorColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemsSourceBy">
+      <MemberSignature Language="C#" Value="public static void SetItemsSourceBy (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.VisualElement value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetItemsSourceBy(class Xamarin.Forms.BindableObject bindable, class Xamarin.Forms.VisualElement value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IndicatorView.SetItemsSourceBy(Xamarin.Forms.BindableObject,Xamarin.Forms.VisualElement)" />
+      <MemberSignature Language="F#" Value="static member SetItemsSourceBy : Xamarin.Forms.BindableObject * Xamarin.Forms.VisualElement -&gt; unit" Usage="Xamarin.Forms.IndicatorView.SetItemsSourceBy (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.VisualElement" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

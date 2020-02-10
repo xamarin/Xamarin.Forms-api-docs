@@ -275,7 +275,7 @@ var cp = new ContentPage {
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The collection of <see cref="T:System.Collections.IEnumerable" /> items to be displayed.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -312,7 +312,7 @@ var cp = new ContentPage {
         <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:Xamarin.Forms.DataTemplate" /> to apply to each item in the collection of displayed items.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,6 +332,43 @@ var cp = new ContentPage {
       </ReturnValue>
       <Docs>
         <summary>The backing store for the <see cref="P:Xamarin.Forms.Maps.Map.ItemTemplate" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateSelector">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataTemplateSelector ItemTemplateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataTemplateSelector ItemTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Maps.Map.ItemTemplateSelector" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplateSelector : Xamarin.Forms.DataTemplateSelector with get, set" Usage="Xamarin.Forms.Maps.Map.ItemTemplateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:Xamarin.Forms.DataTemplateSelector" /> that will be used to choose a <see cref="T:Xamarin.Forms.DataTemplate" /> for an item at runtime.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ItemTemplateSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ItemTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Maps.Map.ItemTemplateSelectorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateSelectorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Maps.Map.ItemTemplateSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Maps.Map.ItemTemplateSelector" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,6 +392,43 @@ var cp = new ContentPage {
       </ReturnValue>
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <value>For internal use by the Xamarin.Forms platform.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapClicked">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.Maps.MapClickedEventArgs&gt; MapClicked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Maps.MapClickedEventArgs&gt; MapClicked" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Maps.Map.MapClicked" />
+      <MemberSignature Language="F#" Value="member this.MapClicked : EventHandler&lt;Xamarin.Forms.Maps.MapClickedEventArgs&gt; " Usage="member this.MapClicked : System.EventHandler&lt;Xamarin.Forms.Maps.MapClickedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Maps.MapClickedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the Map is clicked</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapElements">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Xamarin.Forms.Maps.MapElement&gt; MapElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Xamarin.Forms.Maps.MapElement&gt; MapElements" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Maps.Map.MapElements" />
+      <MemberSignature Language="F#" Value="member this.MapElements : System.Collections.Generic.IList&lt;Xamarin.Forms.Maps.MapElement&gt;" Usage="Xamarin.Forms.Maps.Map.MapElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.Maps.MapElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -406,6 +480,43 @@ var cp = new ContentPage {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MoveToLastRegionOnLayoutChange">
+      <MemberSignature Language="C#" Value="public bool MoveToLastRegionOnLayoutChange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MoveToLastRegionOnLayoutChange" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Maps.Map.MoveToLastRegionOnLayoutChange" />
+      <MemberSignature Language="F#" Value="member this.MoveToLastRegionOnLayoutChange : bool with get, set" Usage="Xamarin.Forms.Maps.Map.MoveToLastRegionOnLayoutChange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveToLastRegionOnLayoutChangeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty MoveToLastRegionOnLayoutChangeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty MoveToLastRegionOnLayoutChangeProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Maps.Map.MoveToLastRegionOnLayoutChangeProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable MoveToLastRegionOnLayoutChangeProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Maps.Map.MoveToLastRegionOnLayoutChangeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MoveToRegion">
       <MemberSignature Language="C#" Value="public void MoveToRegion (Xamarin.Forms.Maps.MapSpan mapSpan);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveToRegion(class Xamarin.Forms.Maps.MapSpan mapSpan) cil managed" />
@@ -454,6 +565,33 @@ var cp = new ContentPage {
       <Docs>
         <summary>An <see cref="T:System.Collections.Generic.IList`1" /> of the <see cref="T:Xamarin.Forms.Maps.Pin" />s on this <see cref="T:Xamarin.Forms.Maps.Map" />.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMapClicked">
+      <MemberSignature Language="C#" Value="public void SendMapClicked (Xamarin.Forms.Maps.Position position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendMapClicked(valuetype Xamarin.Forms.Maps.Position position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Maps.Map.SendMapClicked(Xamarin.Forms.Maps.Position)" />
+      <MemberSignature Language="F#" Value="member this.SendMapClicked : Xamarin.Forms.Maps.Position -&gt; unit" Usage="map.SendMapClicked position" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="Xamarin.Forms.Maps.Position" />
+      </Parameters>
+      <Docs>
+        <param name="position">For internal use by the Xamarin.Forms platform.</param>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

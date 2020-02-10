@@ -1506,10 +1506,10 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Fuschia is obsolete as of version 1.3.0. Please use Fuchsia instead.")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.Obsolete("Fuschia is obsolete as of version 1.3.0. Please use Fuchsia instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3659,6 +3659,26 @@
         <summary>Thistle, the color that is represented by the RGB value #FFD8BFD8.</summary>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToHex">
+      <MemberSignature Language="C#" Value="public string ToHex ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToHex() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Color.ToHex" />
+      <MemberSignature Language="F#" Value="member this.ToHex : unit -&gt; string" Usage="color.ToHex " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tomato">

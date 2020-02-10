@@ -126,6 +126,11 @@ public static Page GetMapPage ()
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This event is obsolete as of 4.3.0. Please use MarkerClicked and/or InfoWindowClicked instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
@@ -217,6 +222,24 @@ public static Page GetMapPage ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InfoWindowClicked">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.Maps.PinClickedEventArgs&gt; InfoWindowClicked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Maps.PinClickedEventArgs&gt; InfoWindowClicked" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Maps.Pin.InfoWindowClicked" />
+      <MemberSignature Language="F#" Value="member this.InfoWindowClicked : EventHandler&lt;Xamarin.Forms.Maps.PinClickedEventArgs&gt; " Usage="member this.InfoWindowClicked : System.EventHandler&lt;Xamarin.Forms.Maps.PinClickedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Maps.PinClickedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Label">
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
@@ -259,6 +282,24 @@ public static Page GetMapPage ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MarkerClicked">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.Maps.PinClickedEventArgs&gt; MarkerClicked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Maps.PinClickedEventArgs&gt; MarkerClicked" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Maps.Pin.MarkerClicked" />
+      <MemberSignature Language="F#" Value="member this.MarkerClicked : EventHandler&lt;Xamarin.Forms.Maps.PinClickedEventArgs&gt; " Usage="member this.MarkerClicked : System.EventHandler&lt;Xamarin.Forms.Maps.PinClickedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.Maps.PinClickedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MarkerId">
       <MemberSignature Language="C#" Value="public object MarkerId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object MarkerId" />
@@ -278,7 +319,7 @@ public static Page GetMapPage ()
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For internal use by the Xamarin.Forms platform.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -392,6 +433,56 @@ public static Page GetMapPage ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendInfoWindowClick">
+      <MemberSignature Language="C#" Value="public bool SendInfoWindowClick ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SendInfoWindowClick() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Maps.Pin.SendInfoWindowClick" />
+      <MemberSignature Language="F#" Value="member this.SendInfoWindowClick : unit -&gt; bool" Usage="pin.SendInfoWindowClick " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMarkerClick">
+      <MemberSignature Language="C#" Value="public bool SendMarkerClick ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SendMarkerClick() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Maps.Pin.SendMarkerClick" />
+      <MemberSignature Language="F#" Value="member this.SendMarkerClick : unit -&gt; bool" Usage="pin.SendMarkerClick " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SendTap">
       <MemberSignature Language="C#" Value="public bool SendTap ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SendTap() cil managed" />
@@ -405,6 +496,9 @@ public static Page GetMapPage ()
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method is obsolete as of 4.3.0.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

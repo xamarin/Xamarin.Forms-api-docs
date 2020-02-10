@@ -17,6 +17,44 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetItems">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellSection&gt; GetItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Xamarin.Forms.ShellSection&gt; GetItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IShellItemController.GetItems" />
+      <MemberSignature Language="F#" Value="abstract member GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellSection&gt;" Usage="iShellItemController.GetItems " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellSection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsCollectionChanged">
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler ItemsCollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler ItemsCollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IShellItemController.ItemsCollectionChanged" />
+      <MemberSignature Language="F#" Value="member this.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ProposeSection">
       <MemberSignature Language="C#" Value="public bool ProposeSection (Xamarin.Forms.ShellSection shellSection, bool setValue = true);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ProposeSection(class Xamarin.Forms.ShellSection shellSection, bool setValue) cil managed" />

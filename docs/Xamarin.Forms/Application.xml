@@ -108,6 +108,25 @@ public partial class App : Application
         <related type="article" href="https://developer.xamarin.com/guides/xamarin-forms/platform-features/deep-linking/">Application Indexing and Deep Linking</related>
       </Docs>
     </Member>
+    <Member MemberName="CleanUp">
+      <MemberSignature Language="C#" Value="protected internal virtual void CleanUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void CleanUp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Application.CleanUp" />
+      <MemberSignature Language="F#" Value="abstract member CleanUp : unit -&gt; unit&#xA;override this.CleanUp : unit -&gt; unit" Usage="application.CleanUp " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ClearCurrent">
       <MemberSignature Language="C#" Value="public static void ClearCurrent ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearCurrent() cil managed" />
@@ -153,6 +172,25 @@ public partial class App : Application
       </ReturnValue>
       <Docs>
         <summary>Gets the current application.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispatcher">
+      <MemberSignature Language="C#" Value="public override Xamarin.Forms.IDispatcher Dispatcher { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IDispatcher Dispatcher" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Application.Dispatcher" />
+      <MemberSignature Language="F#" Value="member this.Dispatcher : Xamarin.Forms.IDispatcher" Usage="Xamarin.Forms.Application.Dispatcher" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IDispatcher</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -617,9 +655,6 @@ public partial class App : Application
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Application.Resources" />
       <MemberSignature Language="F#" Value="member this.Resources : Xamarin.Forms.ResourceDictionary with get, set" Usage="Xamarin.Forms.Application.Resources" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.IResourcesProvider.Resources</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -652,6 +687,11 @@ public partial class App : Application
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>

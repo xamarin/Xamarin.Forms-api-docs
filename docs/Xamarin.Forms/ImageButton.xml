@@ -215,9 +215,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.Command" />
       <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.ImageButton.Command" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.Command</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -237,9 +234,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.CommandParameter" />
       <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="Xamarin.Forms.ImageButton.CommandParameter" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.CommandParameter</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -332,6 +326,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.IsLoading" />
       <MemberSignature Language="F#" Value="member this.IsLoading : bool" Usage="Xamarin.Forms.ImageButton.IsLoading" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IImageElement.IsLoading</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -406,9 +403,6 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.IsPressed" />
       <MemberSignature Language="F#" Value="member this.IsPressed : bool" Usage="Xamarin.Forms.ImageButton.IsPressed" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Xamarin.Forms.Internals.IButtonElement.IsPressed</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -576,9 +570,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.PropagateUpClicked" />
       <MemberSignature Language="F#" Value="abstract member PropagateUpClicked : unit -&gt; unit&#xA;override this.PropagateUpClicked : unit -&gt; unit" Usage="imageButton.PropagateUpClicked " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.PropagateUpClicked</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -598,9 +589,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.PropagateUpPressed" />
       <MemberSignature Language="F#" Value="abstract member PropagateUpPressed : unit -&gt; unit&#xA;override this.PropagateUpPressed : unit -&gt; unit" Usage="imageButton.PropagateUpPressed " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.PropagateUpPressed</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -620,9 +608,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.PropagateUpReleased" />
       <MemberSignature Language="F#" Value="abstract member PropagateUpReleased : unit -&gt; unit&#xA;override this.PropagateUpReleased : unit -&gt; unit" Usage="imageButton.PropagateUpReleased " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.PropagateUpReleased</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -793,9 +778,6 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.SetIsPressed(System.Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SetIsPressed : bool -&gt; unit&#xA;override this.SetIsPressed : bool -&gt; unit" Usage="imageButton.SetIsPressed isPressed" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Xamarin.Forms.Internals.IButtonElement.SetIsPressed(System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1039,13 +1021,57 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged">
-      <MemberSignature Language="C#" Value="void IImageElement.OnImageSourcesSourceChanged (object sender, EventArgs e);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(object sender, class System.EventArgs e) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IImageElement#OnImageSourcesSourceChanged(System.Object,System.EventArgs)" />
+    <Member MemberName="Xamarin.Forms.IImageController.GetLoadAsAnimation">
+      <MemberSignature Language="C#" Value="bool IImageController.GetLoadAsAnimation ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IImageController.GetLoadAsAnimation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IImageController#GetLoadAsAnimation" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Xamarin.Forms.IImageElement.OnImageSourcesSourceChanged(System.Object,System.EventArgs)</InterfaceMember>
+        <InterfaceMember>M:Xamarin.Forms.IImageController.GetLoadAsAnimation</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IImageElement.IsAnimationPlaying">
+      <MemberSignature Language="C#" Value="bool Xamarin.Forms.IImageElement.IsAnimationPlaying { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Xamarin.Forms.IImageElement.IsAnimationPlaying" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ImageButton.Xamarin#Forms#IImageElement#IsAnimationPlaying" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.IImageElement.IsAnimationPlaying" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IImageElement.IsAnimationPlaying</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IImageElement.OnImageSourceSourceChanged">
+      <MemberSignature Language="C#" Value="void IImageElement.OnImageSourceSourceChanged (object sender, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.OnImageSourceSourceChanged(object sender, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IImageElement#OnImageSourceSourceChanged(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IImageElement.OnImageSourceSourceChanged(System.Object,System.EventArgs)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>

@@ -1,0 +1,60 @@
+<Type Name="SwipeChangingEventArgs" FullName="Xamarin.Forms.SwipeChangingEventArgs">
+  <TypeSignature Language="C#" Value="public class SwipeChangingEventArgs : Xamarin.Forms.BaseSwipeEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SwipeChangingEventArgs extends Xamarin.Forms.BaseSwipeEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.SwipeChangingEventArgs" />
+  <TypeSignature Language="F#" Value="type SwipeChangingEventArgs = class&#xA;    inherit BaseSwipeEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.BaseSwipeEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SwipeChangingEventArgs (Xamarin.Forms.SwipeDirection swipeDirection, double offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.SwipeDirection swipeDirection, float64 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeChangingEventArgs.#ctor(Xamarin.Forms.SwipeDirection,System.Double)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.SwipeChangingEventArgs : Xamarin.Forms.SwipeDirection * double -&gt; Xamarin.Forms.SwipeChangingEventArgs" Usage="new Xamarin.Forms.SwipeChangingEventArgs (swipeDirection, offset)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="swipeDirection" Type="Xamarin.Forms.SwipeDirection" />
+        <Parameter Name="offset" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="swipeDirection">To be added.</param>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public double Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Offset" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SwipeChangingEventArgs.Offset" />
+      <MemberSignature Language="F#" Value="member this.Offset : double with get, set" Usage="Xamarin.Forms.SwipeChangingEventArgs.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
