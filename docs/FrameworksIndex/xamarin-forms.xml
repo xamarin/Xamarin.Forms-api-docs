@@ -4751,7 +4751,7 @@
   <Namespace Name="Xamarin.Forms.DualScreen">
     <Type Name="Xamarin.Forms.DualScreen.CompactModeArgs" Id="T:Xamarin.Forms.DualScreen.CompactModeArgs">
       <Member Id="M:Xamarin.Forms.DualScreen.CompactModeArgs.#ctor(System.Func{System.Threading.Tasks.Task},System.Boolean)" />
-      <Member Id="P:Xamarin.Forms.DualScreen.CompactModeArgs.Close" />
+      <Member Id="M:Xamarin.Forms.DualScreen.CompactModeArgs.CloseAsync" />
       <Member Id="P:Xamarin.Forms.DualScreen.CompactModeArgs.Success" />
     </Type>
     <Type Name="Xamarin.Forms.DualScreen.DualScreenHelper" Id="T:Xamarin.Forms.DualScreen.DualScreenHelper">
@@ -4786,6 +4786,7 @@
       <Member Id="F:Xamarin.Forms.DualScreen.TwoPaneView.WideModeConfigurationProperty" />
       <Member Id="M:Xamarin.Forms.DualScreen.TwoPaneView.#ctor" />
       <Member Id="M:Xamarin.Forms.DualScreen.TwoPaneView.LayoutChildren(System.Double,System.Double,System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.DualScreen.TwoPaneView.OnSizeAllocated(System.Double,System.Double)" />
       <Member Id="P:Xamarin.Forms.DualScreen.TwoPaneView.MinTallModeHeight" />
       <Member Id="P:Xamarin.Forms.DualScreen.TwoPaneView.MinWideModeWidth" />
       <Member Id="P:Xamarin.Forms.DualScreen.TwoPaneView.Mode" />
