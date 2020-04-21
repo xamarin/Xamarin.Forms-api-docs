@@ -1,0 +1,204 @@
+<Type Name="RadioButton" FullName="Xamarin.Forms.RadioButton">
+  <TypeSignature Language="C#" Value="public class RadioButton : Xamarin.Forms.Button, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.RadioButton&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RadioButton extends Xamarin.Forms.Button implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.RadioButton&gt;" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.RadioButton" />
+  <TypeSignature Language="F#" Value="type RadioButton = class&#xA;    inherit Button&#xA;    interface IElementConfiguration&lt;RadioButton&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.Button</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.RadioButton&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.RenderWith(typeof(Xamarin.Forms.Platform._RadioButtonRenderer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RadioButton ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.RadioButton.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeVisualState">
+      <MemberSignature Language="C#" Value="protected internal override void ChangeVisualState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ChangeVisualState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.RadioButton.ChangeVisualState" />
+      <MemberSignature Language="F#" Value="override this.ChangeVisualState : unit -&gt; unit" Usage="radioButton.ChangeVisualState " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.CheckedChangedEventArgs&gt; CheckedChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.CheckedChangedEventArgs&gt; CheckedChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.RadioButton.CheckedChanged" />
+      <MemberSignature Language="F#" Value="member this.CheckedChanged : EventHandler&lt;Xamarin.Forms.CheckedChangedEventArgs&gt; " Usage="member this.CheckedChanged : System.EventHandler&lt;Xamarin.Forms.CheckedChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.CheckedChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupName">
+      <MemberSignature Language="C#" Value="public string GroupName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GroupName" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.RadioButton.GroupName" />
+      <MemberSignature Language="F#" Value="member this.GroupName : string with get, set" Usage="Xamarin.Forms.RadioButton.GroupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty GroupNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty GroupNameProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.RadioButton.GroupNameProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable GroupNameProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.RadioButton.GroupNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsChecked">
+      <MemberSignature Language="C#" Value="public bool IsChecked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsChecked" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.RadioButton.IsChecked" />
+      <MemberSignature Language="F#" Value="member this.IsChecked : bool with get, set" Usage="Xamarin.Forms.RadioButton.IsChecked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCheckedProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsCheckedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsCheckedProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.RadioButton.IsCheckedProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsCheckedProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.RadioButton.IsCheckedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCheckedVisualState">
+      <MemberSignature Language="C#" Value="public const string IsCheckedVisualState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsCheckedVisualState" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.RadioButton.IsCheckedVisualState" />
+      <MemberSignature Language="F#" Value="val mutable IsCheckedVisualState : string" Usage="Xamarin.Forms.RadioButton.IsCheckedVisualState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.RadioButton&gt; On&lt;T&gt; () where T : Xamarin.Forms.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.IPlatformElementConfiguration`2&lt;!!T, class Xamarin.Forms.RadioButton&gt; On&lt;(class Xamarin.Forms.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.RadioButton.On``1" />
+      <MemberSignature Language="F#" Value="override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.RadioButton (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="radioButton.On " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.RadioButton&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Xamarin.Forms.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

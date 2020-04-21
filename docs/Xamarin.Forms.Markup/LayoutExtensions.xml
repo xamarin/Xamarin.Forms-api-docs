@@ -1,0 +1,127 @@
+<Type Name="LayoutExtensions" FullName="Xamarin.Forms.Markup.LayoutExtensions">
+  <TypeSignature Language="C#" Value="public static class LayoutExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LayoutExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Markup.LayoutExtensions" />
+  <TypeSignature Language="F#" Value="type LayoutExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Padding&lt;TLayout&gt;">
+      <MemberSignature Language="C#" Value="public static TLayout Padding&lt;TLayout&gt; (this TLayout layout, Xamarin.Forms.Thickness padding) where TLayout : Xamarin.Forms.Layout;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLayout Padding&lt;(class Xamarin.Forms.Layout) TLayout&gt;(!!TLayout layout, valuetype Xamarin.Forms.Thickness padding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LayoutExtensions.Padding``1(``0,Xamarin.Forms.Thickness)" />
+      <MemberSignature Language="F#" Value="static member Padding : 'Layout * Xamarin.Forms.Thickness -&gt; 'Layout (requires 'Layout :&gt; Xamarin.Forms.Layout)" Usage="Xamarin.Forms.Markup.LayoutExtensions.Padding (layout, padding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLayout</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLayout">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Layout</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="layout" Type="TLayout" RefType="this" />
+        <Parameter Name="padding" Type="Xamarin.Forms.Thickness" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TLayout">To be added.</typeparam>
+        <param name="layout">To be added.</param>
+        <param name="padding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Padding&lt;TLayout&gt;">
+      <MemberSignature Language="C#" Value="public static TLayout Padding&lt;TLayout&gt; (this TLayout layout, double horizontalSize, double verticalSize) where TLayout : Xamarin.Forms.Layout;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLayout Padding&lt;(class Xamarin.Forms.Layout) TLayout&gt;(!!TLayout layout, float64 horizontalSize, float64 verticalSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LayoutExtensions.Padding``1(``0,System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="static member Padding : 'Layout * double * double -&gt; 'Layout (requires 'Layout :&gt; Xamarin.Forms.Layout)" Usage="Xamarin.Forms.Markup.LayoutExtensions.Padding (layout, horizontalSize, verticalSize)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLayout</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLayout">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Layout</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="layout" Type="TLayout" RefType="this" />
+        <Parameter Name="horizontalSize" Type="System.Double" />
+        <Parameter Name="verticalSize" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TLayout">To be added.</typeparam>
+        <param name="layout">To be added.</param>
+        <param name="horizontalSize">To be added.</param>
+        <param name="verticalSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paddings&lt;TLayout&gt;">
+      <MemberSignature Language="C#" Value="public static TLayout Paddings&lt;TLayout&gt; (this TLayout layout, double left = 0, double top = 0, double right = 0, double bottom = 0) where TLayout : Xamarin.Forms.Layout;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLayout Paddings&lt;(class Xamarin.Forms.Layout) TLayout&gt;(!!TLayout layout, float64 left, float64 top, float64 right, float64 bottom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LayoutExtensions.Paddings``1(``0,System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="static member Paddings : 'Layout * double * double * double * double -&gt; 'Layout (requires 'Layout :&gt; Xamarin.Forms.Layout)" Usage="Xamarin.Forms.Markup.LayoutExtensions.Paddings (layout, left, top, right, bottom)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLayout</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLayout">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Layout</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="layout" Type="TLayout" RefType="this" />
+        <Parameter Name="left" Type="System.Double" />
+        <Parameter Name="top" Type="System.Double" />
+        <Parameter Name="right" Type="System.Double" />
+        <Parameter Name="bottom" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TLayout">To be added.</typeparam>
+        <param name="layout">To be added.</param>
+        <param name="left">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="right">To be added.</param>
+        <param name="bottom">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,276 @@
+<Type Name="LabelExtensions" FullName="Xamarin.Forms.Markup.LabelExtensions">
+  <TypeSignature Language="C#" Value="public static class LabelExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LabelExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Markup.LabelExtensions" />
+  <TypeSignature Language="F#" Value="type LabelExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FormattedText&lt;TLabel&gt;">
+      <MemberSignature Language="C#" Value="public static TLabel FormattedText&lt;TLabel&gt; (this TLabel label, params Xamarin.Forms.Span[] spans) where TLabel : Xamarin.Forms.Label;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLabel FormattedText&lt;(class Xamarin.Forms.Label) TLabel&gt;(!!TLabel label, class Xamarin.Forms.Span[] spans) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LabelExtensions.FormattedText``1(``0,Xamarin.Forms.Span[])" />
+      <MemberSignature Language="F#" Value="static member FormattedText : 'Label * Xamarin.Forms.Span[] -&gt; 'Label (requires 'Label :&gt; Xamarin.Forms.Label)" Usage="Xamarin.Forms.Markup.LabelExtensions.FormattedText (label, spans)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLabel</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLabel">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Label</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="label" Type="TLabel" RefType="this" />
+        <Parameter Name="spans" Type="Xamarin.Forms.Span[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TLabel">To be added.</typeparam>
+        <param name="label">To be added.</param>
+        <param name="spans">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextBottom&lt;TLabel&gt;">
+      <MemberSignature Language="C#" Value="public static TLabel TextBottom&lt;TLabel&gt; (this TLabel label) where TLabel : Xamarin.Forms.Label;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLabel TextBottom&lt;(class Xamarin.Forms.Label) TLabel&gt;(!!TLabel label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LabelExtensions.TextBottom``1(``0)" />
+      <MemberSignature Language="F#" Value="static member TextBottom : 'Label -&gt; 'Label (requires 'Label :&gt; Xamarin.Forms.Label)" Usage="Xamarin.Forms.Markup.LabelExtensions.TextBottom label" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLabel</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLabel">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Label</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="label" Type="TLabel" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TLabel">To be added.</typeparam>
+        <param name="label">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextCenter&lt;TLabel&gt;">
+      <MemberSignature Language="C#" Value="public static TLabel TextCenter&lt;TLabel&gt; (this TLabel label) where TLabel : Xamarin.Forms.Label;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLabel TextCenter&lt;(class Xamarin.Forms.Label) TLabel&gt;(!!TLabel label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LabelExtensions.TextCenter``1(``0)" />
+      <MemberSignature Language="F#" Value="static member TextCenter : 'Label -&gt; 'Label (requires 'Label :&gt; Xamarin.Forms.Label)" Usage="Xamarin.Forms.Markup.LabelExtensions.TextCenter label" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLabel</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLabel">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Label</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="label" Type="TLabel" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TLabel">To be added.</typeparam>
+        <param name="label">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextCenterHorizontal&lt;TLabel&gt;">
+      <MemberSignature Language="C#" Value="public static TLabel TextCenterHorizontal&lt;TLabel&gt; (this TLabel label) where TLabel : Xamarin.Forms.Label;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLabel TextCenterHorizontal&lt;(class Xamarin.Forms.Label) TLabel&gt;(!!TLabel label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LabelExtensions.TextCenterHorizontal``1(``0)" />
+      <MemberSignature Language="F#" Value="static member TextCenterHorizontal : 'Label -&gt; 'Label (requires 'Label :&gt; Xamarin.Forms.Label)" Usage="Xamarin.Forms.Markup.LabelExtensions.TextCenterHorizontal label" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLabel</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLabel">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Label</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="label" Type="TLabel" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TLabel">To be added.</typeparam>
+        <param name="label">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextCenterVertical&lt;TLabel&gt;">
+      <MemberSignature Language="C#" Value="public static TLabel TextCenterVertical&lt;TLabel&gt; (this TLabel label) where TLabel : Xamarin.Forms.Label;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLabel TextCenterVertical&lt;(class Xamarin.Forms.Label) TLabel&gt;(!!TLabel label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LabelExtensions.TextCenterVertical``1(``0)" />
+      <MemberSignature Language="F#" Value="static member TextCenterVertical : 'Label -&gt; 'Label (requires 'Label :&gt; Xamarin.Forms.Label)" Usage="Xamarin.Forms.Markup.LabelExtensions.TextCenterVertical label" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLabel</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLabel">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Label</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="label" Type="TLabel" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TLabel">To be added.</typeparam>
+        <param name="label">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextEnd&lt;TLabel&gt;">
+      <MemberSignature Language="C#" Value="public static TLabel TextEnd&lt;TLabel&gt; (this TLabel label) where TLabel : Xamarin.Forms.Label;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLabel TextEnd&lt;(class Xamarin.Forms.Label) TLabel&gt;(!!TLabel label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LabelExtensions.TextEnd``1(``0)" />
+      <MemberSignature Language="F#" Value="static member TextEnd : 'Label -&gt; 'Label (requires 'Label :&gt; Xamarin.Forms.Label)" Usage="Xamarin.Forms.Markup.LabelExtensions.TextEnd label" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLabel</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLabel">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Label</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="label" Type="TLabel" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TLabel">To be added.</typeparam>
+        <param name="label">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextStart&lt;TLabel&gt;">
+      <MemberSignature Language="C#" Value="public static TLabel TextStart&lt;TLabel&gt; (this TLabel label) where TLabel : Xamarin.Forms.Label;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLabel TextStart&lt;(class Xamarin.Forms.Label) TLabel&gt;(!!TLabel label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LabelExtensions.TextStart``1(``0)" />
+      <MemberSignature Language="F#" Value="static member TextStart : 'Label -&gt; 'Label (requires 'Label :&gt; Xamarin.Forms.Label)" Usage="Xamarin.Forms.Markup.LabelExtensions.TextStart label" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLabel</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLabel">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Label</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="label" Type="TLabel" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TLabel">To be added.</typeparam>
+        <param name="label">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextTop&lt;TLabel&gt;">
+      <MemberSignature Language="C#" Value="public static TLabel TextTop&lt;TLabel&gt; (this TLabel label) where TLabel : Xamarin.Forms.Label;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TLabel TextTop&lt;(class Xamarin.Forms.Label) TLabel&gt;(!!TLabel label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.LabelExtensions.TextTop``1(``0)" />
+      <MemberSignature Language="F#" Value="static member TextTop : 'Label -&gt; 'Label (requires 'Label :&gt; Xamarin.Forms.Label)" Usage="Xamarin.Forms.Markup.LabelExtensions.TextTop label" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TLabel</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLabel">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Label</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="label" Type="TLabel" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TLabel">To be added.</typeparam>
+        <param name="label">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

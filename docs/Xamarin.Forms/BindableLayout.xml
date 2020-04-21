@@ -16,6 +16,88 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="EmptyViewProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty EmptyViewProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty EmptyViewProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.BindableLayout.EmptyViewProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable EmptyViewProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.BindableLayout.EmptyViewProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyViewTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty EmptyViewTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty EmptyViewTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.BindableLayout.EmptyViewTemplateProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable EmptyViewTemplateProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.BindableLayout.EmptyViewTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEmptyView">
+      <MemberSignature Language="C#" Value="public static object GetEmptyView (Xamarin.Forms.BindableObject b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetEmptyView(class Xamarin.Forms.BindableObject b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableLayout.GetEmptyView(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetEmptyView : Xamarin.Forms.BindableObject -&gt; obj" Usage="Xamarin.Forms.BindableLayout.GetEmptyView b" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEmptyViewTemplate">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.DataTemplate GetEmptyViewTemplate (Xamarin.Forms.BindableObject b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.DataTemplate GetEmptyViewTemplate(class Xamarin.Forms.BindableObject b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableLayout.GetEmptyViewTemplate(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetEmptyViewTemplate : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.DataTemplate" Usage="Xamarin.Forms.BindableLayout.GetEmptyViewTemplate b" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetItemsSource">
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetItemsSource (Xamarin.Forms.BindableObject b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetItemsSource(class Xamarin.Forms.BindableObject b) cil managed" />
@@ -135,6 +217,54 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEmptyView">
+      <MemberSignature Language="C#" Value="public static void SetEmptyView (Xamarin.Forms.BindableObject b, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEmptyView(class Xamarin.Forms.BindableObject b, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableLayout.SetEmptyView(Xamarin.Forms.BindableObject,System.Object)" />
+      <MemberSignature Language="F#" Value="static member SetEmptyView : Xamarin.Forms.BindableObject * obj -&gt; unit" Usage="Xamarin.Forms.BindableLayout.SetEmptyView (b, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEmptyViewTemplate">
+      <MemberSignature Language="C#" Value="public static void SetEmptyViewTemplate (Xamarin.Forms.BindableObject b, Xamarin.Forms.DataTemplate value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEmptyViewTemplate(class Xamarin.Forms.BindableObject b, class Xamarin.Forms.DataTemplate value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableLayout.SetEmptyViewTemplate(Xamarin.Forms.BindableObject,Xamarin.Forms.DataTemplate)" />
+      <MemberSignature Language="F#" Value="static member SetEmptyViewTemplate : Xamarin.Forms.BindableObject * Xamarin.Forms.DataTemplate -&gt; unit" Usage="Xamarin.Forms.BindableLayout.SetEmptyViewTemplate (b, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.DataTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="b">To be added.</param>
+        <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

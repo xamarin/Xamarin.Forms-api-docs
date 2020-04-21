@@ -1,0 +1,89 @@
+<Type Name="GridRowsColumns+Rows" FullName="Xamarin.Forms.Markup.GridRowsColumns+Rows">
+  <TypeSignature Language="C#" Value="public static class GridRowsColumns.Rows" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit GridRowsColumns/Rows extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Markup.GridRowsColumns.Rows" />
+  <TypeSignature Language="F#" Value="type GridRowsColumns.Rows = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Define">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.RowDefinitionCollection Define (params Xamarin.Forms.GridLength[] heights);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.RowDefinitionCollection Define(valuetype Xamarin.Forms.GridLength[] heights) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.GridRowsColumns.Rows.Define(Xamarin.Forms.GridLength[])" />
+      <MemberSignature Language="F#" Value="static member Define : Xamarin.Forms.GridLength[] -&gt; Xamarin.Forms.RowDefinitionCollection" Usage="Xamarin.Forms.Markup.GridRowsColumns.Rows.Define heights" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.RowDefinitionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="heights" Type="Xamarin.Forms.GridLength[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="heights">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Define&lt;TEnum&gt;">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.RowDefinitionCollection Define&lt;TEnum&gt; (params ValueTuple&lt;TEnum,Xamarin.Forms.GridLength&gt;[] rows) where TEnum : Enum;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.RowDefinitionCollection Define&lt;(class System.Enum) TEnum&gt;(valuetype System.ValueTuple`2&lt;!!TEnum, valuetype Xamarin.Forms.GridLength&gt;[] rows) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.GridRowsColumns.Rows.Define``1(System.ValueTuple{``0,Xamarin.Forms.GridLength}[])" />
+      <MemberSignature Language="F#" Value="static member Define : ValueTuple&lt;'Enum, Xamarin.Forms.GridLength (requires 'Enum :&gt; Enum)&gt;[] -&gt; Xamarin.Forms.RowDefinitionCollection (requires 'Enum :&gt; Enum)" Usage="Xamarin.Forms.Markup.GridRowsColumns.Rows.Define rows" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.RowDefinitionCollection</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TEnum">
+          <Constraints>
+            <BaseTypeName>System.Enum</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="rows" Type="System.ValueTuple&lt;TEnum,Xamarin.Forms.GridLength&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "name", "height" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TEnum">To be added.</typeparam>
+        <param name="rows">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

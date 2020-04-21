@@ -108,6 +108,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetNamedColor">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Color GetNamedColor (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Xamarin.Forms.Color GetNamedColor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.GetNamedColor(System.String)" />
+      <MemberSignature Language="F#" Value="abstract member GetNamedColor : string -&gt; Xamarin.Forms.Color" Usage="iPlatformServices.GetNamedColor name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetNamedSize">
       <MemberSignature Language="C#" Value="public double GetNamedSize (Xamarin.Forms.NamedSize size, Type targetElementType, bool useOldSizes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 GetNamedSize(valuetype Xamarin.Forms.NamedSize size, class System.Type targetElementType, bool useOldSizes) cil managed" />
@@ -270,6 +293,25 @@
       <Parameters />
       <Docs>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestedTheme">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.OSAppTheme RequestedTheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.OSAppTheme RequestedTheme" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.IPlatformServices.RequestedTheme" />
+      <MemberSignature Language="F#" Value="member this.RequestedTheme : Xamarin.Forms.OSAppTheme" Usage="Xamarin.Forms.Internals.IPlatformServices.RequestedTheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.OSAppTheme</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

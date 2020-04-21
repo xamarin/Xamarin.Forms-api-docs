@@ -1,0 +1,257 @@
+<Type Name="Style&lt;T&gt;" FullName="Xamarin.Forms.Markup.Style&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class Style&lt;T&gt; where T : BindableObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Style`1&lt;(class Xamarin.Forms.BindableObject) T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Markup.Style`1" />
+  <TypeSignature Language="F#" Value="type Style&lt;'T (requires 'T :&gt; BindableObject)&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Style (params ValueTuple&lt;Xamarin.Forms.BindableProperty,object&gt;[] setters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ValueTuple`2&lt;class Xamarin.Forms.BindableProperty, object&gt;[] setters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.Style`1.#ctor(System.ValueTuple{Xamarin.Forms.BindableProperty,System.Object}[])" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt; : ValueTuple&lt;Xamarin.Forms.BindableProperty, obj&gt;[] -&gt; Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="new Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt; setters" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="setters" Type="System.ValueTuple&lt;Xamarin.Forms.BindableProperty,System.Object&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Property", "Value" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="setters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Markup.Style&lt;T&gt; Add (params ValueTuple&lt;Xamarin.Forms.BindableProperty,object&gt;[] setters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Xamarin.Forms.Markup.Style`1&lt;!T&gt; Add(valuetype System.ValueTuple`2&lt;class Xamarin.Forms.BindableProperty, object&gt;[] setters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.Style`1.Add(System.ValueTuple{Xamarin.Forms.BindableProperty,System.Object}[])" />
+      <MemberSignature Language="F#" Value="member this.Add : ValueTuple&lt;Xamarin.Forms.BindableProperty, obj&gt;[] -&gt; Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="style.Add setters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Markup.Style&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="setters" Type="System.ValueTuple&lt;Xamarin.Forms.BindableProperty,System.Object&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Property", "Value" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="setters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Markup.Style&lt;T&gt; Add (params Xamarin.Forms.Behavior[] behaviors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Xamarin.Forms.Markup.Style`1&lt;!T&gt; Add(class Xamarin.Forms.Behavior[] behaviors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.Style`1.Add(Xamarin.Forms.Behavior[])" />
+      <MemberSignature Language="F#" Value="member this.Add : Xamarin.Forms.Behavior[] -&gt; Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="style.Add behaviors" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Markup.Style&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="behaviors" Type="Xamarin.Forms.Behavior[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="behaviors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Markup.Style&lt;T&gt; Add (params Xamarin.Forms.TriggerBase[] triggers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Xamarin.Forms.Markup.Style`1&lt;!T&gt; Add(class Xamarin.Forms.TriggerBase[] triggers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.Style`1.Add(Xamarin.Forms.TriggerBase[])" />
+      <MemberSignature Language="F#" Value="member this.Add : Xamarin.Forms.TriggerBase[] -&gt; Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="style.Add triggers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Markup.Style&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="triggers" Type="Xamarin.Forms.TriggerBase[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="triggers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyToDerivedTypes">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Markup.Style&lt;T&gt; ApplyToDerivedTypes (bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Xamarin.Forms.Markup.Style`1&lt;!T&gt; ApplyToDerivedTypes(bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.Style`1.ApplyToDerivedTypes(System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ApplyToDerivedTypes : bool -&gt; Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="style.ApplyToDerivedTypes value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Markup.Style&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BasedOn">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Markup.Style&lt;T&gt; BasedOn (Xamarin.Forms.Style value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Xamarin.Forms.Markup.Style`1&lt;!T&gt; BasedOn(class Xamarin.Forms.Style value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.Style`1.BasedOn(Xamarin.Forms.Style)" />
+      <MemberSignature Language="F#" Value="member this.BasedOn : Xamarin.Forms.Style -&gt; Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="style.BasedOn value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Markup.Style&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Xamarin.Forms.Style" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCascade">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Markup.Style&lt;T&gt; CanCascade (bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Xamarin.Forms.Markup.Style`1&lt;!T&gt; CanCascade(bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.Style`1.CanCascade(System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.CanCascade : bool -&gt; Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="style.CanCascade value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Markup.Style&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormsStyle">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Style FormsStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Style FormsStyle" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Markup.Style`1.FormsStyle" />
+      <MemberSignature Language="F#" Value="member this.FormsStyle : Xamarin.Forms.Style" Usage="Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;.FormsStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.Style (Xamarin.Forms.Markup.Style&lt;T&gt; style);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Xamarin.Forms.Style op_Implicit(class Xamarin.Forms.Markup.Style`1&lt;!T&gt; style) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.Style`1.op_Implicit(Xamarin.Forms.Markup.Style{`0})~Xamarin.Forms.Style" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt; -&gt; Xamarin.Forms.Style" Usage="Xamarin.Forms.Markup.Style&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;.op_Implicit style" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Style</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="style" Type="Xamarin.Forms.Markup.Style&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

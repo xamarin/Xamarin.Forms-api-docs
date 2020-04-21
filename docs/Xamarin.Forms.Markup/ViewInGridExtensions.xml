@@ -1,0 +1,382 @@
+<Type Name="ViewInGridExtensions" FullName="Xamarin.Forms.Markup.ViewInGridExtensions">
+  <TypeSignature Language="C#" Value="public static class ViewInGridExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ViewInGridExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Markup.ViewInGridExtensions" />
+  <TypeSignature Language="F#" Value="type ViewInGridExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Column&lt;TView&gt;">
+      <MemberSignature Language="C#" Value="public static TView Column&lt;TView&gt; (this TView view, int column) where TView : Xamarin.Forms.View;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView Column&lt;(class Xamarin.Forms.View) TView&gt;(!!TView view, int32 column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ViewInGridExtensions.Column``1(``0,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member Column : 'View * int -&gt; 'View (requires 'View :&gt; Xamarin.Forms.View)" Usage="Xamarin.Forms.Markup.ViewInGridExtensions.Column (view, column)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TView" RefType="this" />
+        <Parameter Name="column" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="column">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column&lt;TView&gt;">
+      <MemberSignature Language="C#" Value="public static TView Column&lt;TView&gt; (this TView view, int column, int span) where TView : Xamarin.Forms.View;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView Column&lt;(class Xamarin.Forms.View) TView&gt;(!!TView view, int32 column, int32 span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ViewInGridExtensions.Column``1(``0,System.Int32,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member Column : 'View * int * int -&gt; 'View (requires 'View :&gt; Xamarin.Forms.View)" Usage="Xamarin.Forms.Markup.ViewInGridExtensions.Column (view, column, span)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TView" RefType="this" />
+        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="span" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column&lt;TView,TColumn&gt;">
+      <MemberSignature Language="C#" Value="public static TView Column&lt;TView,TColumn&gt; (this TView view, TColumn column) where TView : Xamarin.Forms.View where TColumn : Enum;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView Column&lt;(class Xamarin.Forms.View) TView, (class System.Enum) TColumn&gt;(!!TView view, !!TColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ViewInGridExtensions.Column``2(``0,``1)" />
+      <MemberSignature Language="F#" Value="static member Column : 'View * 'Column -&gt; 'View (requires 'View :&gt; Xamarin.Forms.View and 'Column :&gt; Enum)" Usage="Xamarin.Forms.Markup.ViewInGridExtensions.Column (view, column)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TColumn">
+          <Constraints>
+            <BaseTypeName>System.Enum</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TView" RefType="this" />
+        <Parameter Name="column" Type="TColumn" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">To be added.</typeparam>
+        <typeparam name="TColumn">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="column">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column&lt;TView,TColumn&gt;">
+      <MemberSignature Language="C#" Value="public static TView Column&lt;TView,TColumn&gt; (this TView view, TColumn first, TColumn last) where TView : Xamarin.Forms.View where TColumn : Enum;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView Column&lt;(class Xamarin.Forms.View) TView, (class System.Enum) TColumn&gt;(!!TView view, !!TColumn first, !!TColumn last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ViewInGridExtensions.Column``2(``0,``1,``1)" />
+      <MemberSignature Language="F#" Value="static member Column : 'View * 'Column * 'Column -&gt; 'View (requires 'View :&gt; Xamarin.Forms.View and 'Column :&gt; Enum)" Usage="Xamarin.Forms.Markup.ViewInGridExtensions.Column (view, first, last)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TColumn">
+          <Constraints>
+            <BaseTypeName>System.Enum</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TView" RefType="this" />
+        <Parameter Name="first" Type="TColumn" />
+        <Parameter Name="last" Type="TColumn" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">To be added.</typeparam>
+        <typeparam name="TColumn">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="first">To be added.</param>
+        <param name="last">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnSpan&lt;TView&gt;">
+      <MemberSignature Language="C#" Value="public static TView ColumnSpan&lt;TView&gt; (this TView view, int span) where TView : Xamarin.Forms.View;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView ColumnSpan&lt;(class Xamarin.Forms.View) TView&gt;(!!TView view, int32 span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ViewInGridExtensions.ColumnSpan``1(``0,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member ColumnSpan : 'View * int -&gt; 'View (requires 'View :&gt; Xamarin.Forms.View)" Usage="Xamarin.Forms.Markup.ViewInGridExtensions.ColumnSpan (view, span)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TView" RefType="this" />
+        <Parameter Name="span" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Row&lt;TView&gt;">
+      <MemberSignature Language="C#" Value="public static TView Row&lt;TView&gt; (this TView view, int row) where TView : Xamarin.Forms.View;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView Row&lt;(class Xamarin.Forms.View) TView&gt;(!!TView view, int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ViewInGridExtensions.Row``1(``0,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member Row : 'View * int -&gt; 'View (requires 'View :&gt; Xamarin.Forms.View)" Usage="Xamarin.Forms.Markup.ViewInGridExtensions.Row (view, row)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TView" RefType="this" />
+        <Parameter Name="row" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Row&lt;TView&gt;">
+      <MemberSignature Language="C#" Value="public static TView Row&lt;TView&gt; (this TView view, int row, int span) where TView : Xamarin.Forms.View;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView Row&lt;(class Xamarin.Forms.View) TView&gt;(!!TView view, int32 row, int32 span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ViewInGridExtensions.Row``1(``0,System.Int32,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member Row : 'View * int * int -&gt; 'View (requires 'View :&gt; Xamarin.Forms.View)" Usage="Xamarin.Forms.Markup.ViewInGridExtensions.Row (view, row, span)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TView" RefType="this" />
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="span" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="row">To be added.</param>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Row&lt;TView,TRow&gt;">
+      <MemberSignature Language="C#" Value="public static TView Row&lt;TView,TRow&gt; (this TView view, TRow row) where TView : Xamarin.Forms.View where TRow : Enum;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView Row&lt;(class Xamarin.Forms.View) TView, (class System.Enum) TRow&gt;(!!TView view, !!TRow row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ViewInGridExtensions.Row``2(``0,``1)" />
+      <MemberSignature Language="F#" Value="static member Row : 'View * 'Row -&gt; 'View (requires 'View :&gt; Xamarin.Forms.View and 'Row :&gt; Enum)" Usage="Xamarin.Forms.Markup.ViewInGridExtensions.Row (view, row)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TRow">
+          <Constraints>
+            <BaseTypeName>System.Enum</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TView" RefType="this" />
+        <Parameter Name="row" Type="TRow" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">To be added.</typeparam>
+        <typeparam name="TRow">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Row&lt;TView,TRow&gt;">
+      <MemberSignature Language="C#" Value="public static TView Row&lt;TView,TRow&gt; (this TView view, TRow first, TRow last) where TView : Xamarin.Forms.View where TRow : Enum;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView Row&lt;(class Xamarin.Forms.View) TView, (class System.Enum) TRow&gt;(!!TView view, !!TRow first, !!TRow last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ViewInGridExtensions.Row``2(``0,``1,``1)" />
+      <MemberSignature Language="F#" Value="static member Row : 'View * 'Row * 'Row -&gt; 'View (requires 'View :&gt; Xamarin.Forms.View and 'Row :&gt; Enum)" Usage="Xamarin.Forms.Markup.ViewInGridExtensions.Row (view, first, last)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TRow">
+          <Constraints>
+            <BaseTypeName>System.Enum</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TView" RefType="this" />
+        <Parameter Name="first" Type="TRow" />
+        <Parameter Name="last" Type="TRow" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">To be added.</typeparam>
+        <typeparam name="TRow">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="first">To be added.</param>
+        <param name="last">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowSpan&lt;TView&gt;">
+      <MemberSignature Language="C#" Value="public static TView RowSpan&lt;TView&gt; (this TView view, int span) where TView : Xamarin.Forms.View;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TView RowSpan&lt;(class Xamarin.Forms.View) TView&gt;(!!TView view, int32 span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ViewInGridExtensions.RowSpan``1(``0,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member RowSpan : 'View * int -&gt; 'View (requires 'View :&gt; Xamarin.Forms.View)" Usage="Xamarin.Forms.Markup.ViewInGridExtensions.RowSpan (view, span)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.View</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="view" Type="TView" RefType="this" />
+        <Parameter Name="span" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">To be added.</typeparam>
+        <param name="view">To be added.</param>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -167,11 +167,6 @@ Device.BeginInvokeOnMainThread (() => {
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Threading.SynchronizationContext&gt;</ReturnType>
       </ReturnValue>
@@ -179,6 +174,29 @@ Device.BeginInvokeOnMainThread (() => {
       <Docs>
         <summary>Returns the current <see cref="T:System.Threading.SynchronizationContext" /> from the main thread.</summary>
         <returns>The current <see cref="T:System.Threading.SynchronizationContext" /> from the main thread.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamedColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetNamedColor (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetNamedColor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Device.GetNamedColor(System.String)" />
+      <MemberSignature Language="F#" Value="static member GetNamedColor : string -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.Device.GetNamedColor name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,526 @@
+<Type Name="IPlatformMediaPlayer" FullName="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer">
+  <TypeSignature Language="C#" Value="public interface IPlatformMediaPlayer : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPlatformMediaPlayer implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer" />
+  <TypeSignature Language="F#" Value="type IPlatformMediaPlayer = interface&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AspectMode">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.PlatformConfiguration.TizenSpecific.DisplayAspectMode AspectMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.PlatformConfiguration.TizenSpecific.DisplayAspectMode AspectMode" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.AspectMode" />
+      <MemberSignature Language="F#" Value="member this.AspectMode : Xamarin.Forms.PlatformConfiguration.TizenSpecific.DisplayAspectMode with get, set" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.AspectMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.PlatformConfiguration.TizenSpecific.DisplayAspectMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoPlay">
+      <MemberSignature Language="C#" Value="public bool AutoPlay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoPlay" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.AutoPlay" />
+      <MemberSignature Language="F#" Value="member this.AutoPlay : bool with get, set" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.AutoPlay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoStop">
+      <MemberSignature Language="C#" Value="public bool AutoStop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoStop" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.AutoStop" />
+      <MemberSignature Language="F#" Value="member this.AutoStop : bool with get, set" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.AutoStop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferingProgressUpdated">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.PlatformConfiguration.TizenSpecific.BufferingProgressUpdatedEventArgs&gt; BufferingProgressUpdated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.PlatformConfiguration.TizenSpecific.BufferingProgressUpdatedEventArgs&gt; BufferingProgressUpdated" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.BufferingProgressUpdated" />
+      <MemberSignature Language="F#" Value="member this.BufferingProgressUpdated : EventHandler&lt;Xamarin.Forms.PlatformConfiguration.TizenSpecific.BufferingProgressUpdatedEventArgs&gt; " Usage="member this.BufferingProgressUpdated : System.EventHandler&lt;Xamarin.Forms.PlatformConfiguration.TizenSpecific.BufferingProgressUpdatedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.PlatformConfiguration.TizenSpecific.BufferingProgressUpdatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Duration">
+      <MemberSignature Language="C#" Value="public int Duration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Duration" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Duration" />
+      <MemberSignature Language="F#" Value="member this.Duration : int" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Duration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorOccurred">
+      <MemberSignature Language="C#" Value="event EventHandler ErrorOccurred;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ErrorOccurred" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.ErrorOccurred" />
+      <MemberSignature Language="F#" Value="member this.ErrorOccurred : EventHandler " Usage="member this.ErrorOccurred : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAlbumArts">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetAlbumArts ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetAlbumArts() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.GetAlbumArts" />
+      <MemberSignature Language="F#" Value="abstract member GetAlbumArts : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="iPlatformMediaPlayer.GetAlbumArts " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEmbeddingControlView">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.View GetEmbeddingControlView (Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer player);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.View GetEmbeddingControlView(class Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer player) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.GetEmbeddingControlView(Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer)" />
+      <MemberSignature Language="F#" Value="abstract member GetEmbeddingControlView : Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer -&gt; Xamarin.Forms.View" Usage="iPlatformMediaPlayer.GetEmbeddingControlView player" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.View</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="player" Type="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer" />
+      </Parameters>
+      <Docs>
+        <param name="player">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadata">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,string&gt;&gt; GetMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, string&gt;&gt; GetMetadata() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.GetMetadata" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadata : unit -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, string&gt;&gt;" Usage="iPlatformMediaPlayer.GetMetadata " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVideoSize">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Xamarin.Forms.Size&gt; GetVideoSize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Xamarin.Forms.Size&gt; GetVideoSize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.GetVideoSize" />
+      <MemberSignature Language="F#" Value="abstract member GetVideoSize : unit -&gt; System.Threading.Tasks.Task&lt;Xamarin.Forms.Size&gt;" Usage="iPlatformMediaPlayer.GetVideoSize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Size&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLooping">
+      <MemberSignature Language="C#" Value="public bool IsLooping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLooping" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.IsLooping" />
+      <MemberSignature Language="F#" Value="member this.IsLooping : bool with get, set" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.IsLooping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMuted">
+      <MemberSignature Language="C#" Value="public bool IsMuted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMuted" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.IsMuted" />
+      <MemberSignature Language="F#" Value="member this.IsMuted : bool with get, set" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.IsMuted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="public void Pause ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Pause() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Pause" />
+      <MemberSignature Language="F#" Value="abstract member Pause : unit -&gt; unit" Usage="iPlatformMediaPlayer.Pause " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaybackCompleted">
+      <MemberSignature Language="C#" Value="event EventHandler PlaybackCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PlaybackCompleted" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.PlaybackCompleted" />
+      <MemberSignature Language="F#" Value="member this.PlaybackCompleted : EventHandler " Usage="member this.PlaybackCompleted : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaybackPaused">
+      <MemberSignature Language="C#" Value="event EventHandler PlaybackPaused;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PlaybackPaused" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.PlaybackPaused" />
+      <MemberSignature Language="F#" Value="member this.PlaybackPaused : EventHandler " Usage="member this.PlaybackPaused : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaybackStarted">
+      <MemberSignature Language="C#" Value="event EventHandler PlaybackStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PlaybackStarted" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.PlaybackStarted" />
+      <MemberSignature Language="F#" Value="member this.PlaybackStarted : EventHandler " Usage="member this.PlaybackStarted : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaybackStopped">
+      <MemberSignature Language="C#" Value="event EventHandler PlaybackStopped;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PlaybackStopped" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.PlaybackStopped" />
+      <MemberSignature Language="F#" Value="member this.PlaybackStopped : EventHandler " Usage="member this.PlaybackStopped : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public int Position { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Position" />
+      <MemberSignature Language="F#" Value="member this.Position : int" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seek">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; Seek (int ms);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; Seek(int32 ms) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Seek(System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member Seek : int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="iPlatformMediaPlayer.Seek ms" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ms" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ms">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDisplay">
+      <MemberSignature Language="C#" Value="public void SetDisplay (Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput output);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDisplay(class Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.SetDisplay(Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput)" />
+      <MemberSignature Language="F#" Value="abstract member SetDisplay : Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput -&gt; unit" Usage="iPlatformMediaPlayer.SetDisplay output" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="output" Type="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput" />
+      </Parameters>
+      <Docs>
+        <param name="output">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSource">
+      <MemberSignature Language="C#" Value="public void SetSource (Xamarin.Forms.MediaSource source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSource(class Xamarin.Forms.MediaSource source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.SetSource(Xamarin.Forms.MediaSource)" />
+      <MemberSignature Language="F#" Value="abstract member SetSource : Xamarin.Forms.MediaSource -&gt; unit" Usage="iPlatformMediaPlayer.SetSource source" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Xamarin.Forms.MediaSource" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Start" />
+      <MemberSignature Language="F#" Value="abstract member Start : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iPlatformMediaPlayer.Start " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Stop" />
+      <MemberSignature Language="F#" Value="abstract member Stop : unit -&gt; unit" Usage="iPlatformMediaPlayer.Stop " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateStreamInfo">
+      <MemberSignature Language="C#" Value="event EventHandler UpdateStreamInfo;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler UpdateStreamInfo" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.UpdateStreamInfo" />
+      <MemberSignature Language="F#" Value="member this.UpdateStreamInfo : EventHandler " Usage="member this.UpdateStreamInfo : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsesEmbeddingControls">
+      <MemberSignature Language="C#" Value="public bool UsesEmbeddingControls { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsesEmbeddingControls" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.UsesEmbeddingControls" />
+      <MemberSignature Language="F#" Value="member this.UsesEmbeddingControls : bool with get, set" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.UsesEmbeddingControls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Volume">
+      <MemberSignature Language="C#" Value="public double Volume { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Volume" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Volume" />
+      <MemberSignature Language="F#" Value="member this.Volume : double with get, set" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Volume" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

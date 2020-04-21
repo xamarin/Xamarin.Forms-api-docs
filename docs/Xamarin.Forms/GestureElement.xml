@@ -1,8 +1,8 @@
 <Type Name="GestureElement" FullName="Xamarin.Forms.GestureElement">
-  <TypeSignature Language="C#" Value="public class GestureElement : Xamarin.Forms.Element, Xamarin.Forms.Internals.ISpatialElement" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureElement extends Xamarin.Forms.Element implements class Xamarin.Forms.Internals.ISpatialElement" />
+  <TypeSignature Language="C#" Value="public class GestureElement : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizers, Xamarin.Forms.Internals.ISpatialElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureElement extends Xamarin.Forms.Element implements class Xamarin.Forms.IGestureRecognizers, class Xamarin.Forms.Internals.ISpatialElement" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.GestureElement" />
-  <TypeSignature Language="F#" Value="type GestureElement = class&#xA;    inherit Element&#xA;    interface ISpatialElement" />
+  <TypeSignature Language="F#" Value="type GestureElement = class&#xA;    inherit Element&#xA;    interface ISpatialElement&#xA;    interface IGestureRecognizers" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -12,6 +12,9 @@
     <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.Internals.ISpatialElement</InterfaceName>
     </Interface>
@@ -43,6 +46,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.GestureElement.GestureRecognizers" />
       <MemberSignature Language="F#" Value="member this.GestureRecognizers : System.Collections.Generic.IList&lt;Xamarin.Forms.IGestureRecognizer&gt;" Usage="Xamarin.Forms.GestureElement.GestureRecognizers" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IGestureRecognizers.GestureRecognizers</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
