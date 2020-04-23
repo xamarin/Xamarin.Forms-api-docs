@@ -881,6 +881,7 @@
         <returns>Whether or not the back navigation was handled by the override.</returns>
         <remarks>
           <para>If you want to handle or cancel the navigation yourself, you can do so in this method and then return true.</para>
+          <para>Note that this only works on Android and UWP for the hardware back-button. On iOS, this method will never be called because there is no hardware back-button.</para>
         </remarks>
       </Docs>
     </Member>
