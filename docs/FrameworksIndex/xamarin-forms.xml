@@ -1464,9 +1464,9 @@
       <Member Id="F:Xamarin.Forms.FlyoutHeaderBehavior.Scroll" />
     </Type>
     <Type Name="Xamarin.Forms.FlyoutItem" Id="T:Xamarin.Forms.FlyoutItem">
-      <Member Id="F:Xamarin.Forms.FlyoutItem.GridStyle" />
       <Member Id="F:Xamarin.Forms.FlyoutItem.ImageStyle" />
       <Member Id="F:Xamarin.Forms.FlyoutItem.LabelStyle" />
+      <Member Id="F:Xamarin.Forms.FlyoutItem.LayoutStyle" />
       <Member Id="M:Xamarin.Forms.FlyoutItem.#ctor" />
     </Type>
     <Type Name="Xamarin.Forms.FocusEventArgs" Id="T:Xamarin.Forms.FocusEventArgs">
@@ -2189,6 +2189,7 @@
       <Member Id="M:Xamarin.Forms.ISwipeViewController.SendSwipeChanging(Xamarin.Forms.SwipeChangingEventArgs)" />
       <Member Id="M:Xamarin.Forms.ISwipeViewController.SendSwipeEnded(Xamarin.Forms.SwipeEndedEventArgs)" />
       <Member Id="M:Xamarin.Forms.ISwipeViewController.SendSwipeStarted(Xamarin.Forms.SwipeStartedEventArgs)" />
+      <Member Id="P:Xamarin.Forms.ISwipeViewController.IsOpen" />
     </Type>
     <Type Name="Xamarin.Forms.ITableModel" Id="T:Xamarin.Forms.ITableModel">
       <Member Id="M:Xamarin.Forms.ITableModel.GetCell(System.Int32,System.Int32)" />
@@ -3260,6 +3261,7 @@
       <Member Id="M:Xamarin.Forms.RadioButton.#ctor" />
       <Member Id="M:Xamarin.Forms.RadioButton.ChangeVisualState" />
       <Member Id="M:Xamarin.Forms.RadioButton.On``1" />
+      <Member Id="M:Xamarin.Forms.RadioButton.OnMeasure(System.Double,System.Double)" />
       <Member Id="P:Xamarin.Forms.RadioButton.GroupName" />
       <Member Id="P:Xamarin.Forms.RadioButton.IsChecked" />
     </Type>
@@ -4261,6 +4263,7 @@
       <Member Id="P:Xamarin.Forms.SwipeView.LeftItems" />
       <Member Id="P:Xamarin.Forms.SwipeView.RightItems" />
       <Member Id="P:Xamarin.Forms.SwipeView.TopItems" />
+      <Member Id="P:Xamarin.Forms.SwipeView.Xamarin#Forms#ISwipeViewController#IsOpen" />
     </Type>
     <Type Name="Xamarin.Forms.Switch" Id="T:Xamarin.Forms.Switch">
       <Member Id="E:Xamarin.Forms.Switch.Toggled" />
@@ -4812,6 +4815,7 @@
     </Type>
     <Type Name="Xamarin.Forms.VisualStateGroupList" Id="T:Xamarin.Forms.VisualStateGroupList">
       <Member Id="M:Xamarin.Forms.VisualStateGroupList.#ctor" />
+      <Member Id="M:Xamarin.Forms.VisualStateGroupList.#ctor(System.Boolean)" />
       <Member Id="M:Xamarin.Forms.VisualStateGroupList.Add(Xamarin.Forms.VisualStateGroup)" />
       <Member Id="M:Xamarin.Forms.VisualStateGroupList.Clear" />
       <Member Id="M:Xamarin.Forms.VisualStateGroupList.Contains(Xamarin.Forms.VisualStateGroup)" />
