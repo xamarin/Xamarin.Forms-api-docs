@@ -1,0 +1,89 @@
+<Type Name="GeographyUtils" FullName="Xamarin.Forms.Maps.GeographyUtils">
+  <TypeSignature Language="C#" Value="public static class GeographyUtils" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GeographyUtils extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Maps.GeographyUtils" />
+  <TypeSignature Language="F#" Value="type GeographyUtils = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToCircumferencePositions">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Xamarin.Forms.Maps.Position&gt; ToCircumferencePositions (this Xamarin.Forms.Maps.Circle circle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;valuetype Xamarin.Forms.Maps.Position&gt; ToCircumferencePositions(class Xamarin.Forms.Maps.Circle circle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Maps.GeographyUtils.ToCircumferencePositions(Xamarin.Forms.Maps.Circle)" />
+      <MemberSignature Language="F#" Value="static member ToCircumferencePositions : Xamarin.Forms.Maps.Circle -&gt; System.Collections.Generic.List&lt;Xamarin.Forms.Maps.Position&gt;" Usage="Xamarin.Forms.Maps.GeographyUtils.ToCircumferencePositions circle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Xamarin.Forms.Maps.Position&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="circle" Type="Xamarin.Forms.Maps.Circle" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="circle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDegrees">
+      <MemberSignature Language="C#" Value="public static double ToDegrees (this double radians);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ToDegrees(float64 radians) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Maps.GeographyUtils.ToDegrees(System.Double)" />
+      <MemberSignature Language="F#" Value="static member ToDegrees : double -&gt; double" Usage="Xamarin.Forms.Maps.GeographyUtils.ToDegrees radians" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="radians" Type="System.Double" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="radians">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToRadians">
+      <MemberSignature Language="C#" Value="public static double ToRadians (this double degrees);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ToRadians(float64 degrees) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Maps.GeographyUtils.ToRadians(System.Double)" />
+      <MemberSignature Language="F#" Value="static member ToRadians : double -&gt; double" Usage="Xamarin.Forms.Maps.GeographyUtils.ToRadians degrees" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Maps</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="degrees" Type="System.Double" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="degrees">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

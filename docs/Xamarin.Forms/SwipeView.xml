@@ -207,6 +207,51 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open (Xamarin.Forms.OpenSwipeItem openSwipeItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Open(valuetype Xamarin.Forms.OpenSwipeItem openSwipeItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeView.Open(Xamarin.Forms.OpenSwipeItem)" />
+      <MemberSignature Language="F#" Value="member this.Open : Xamarin.Forms.OpenSwipeItem -&gt; unit" Usage="swipeView.Open openSwipeItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="openSwipeItem" Type="Xamarin.Forms.OpenSwipeItem" />
+      </Parameters>
+      <Docs>
+        <param name="openSwipeItem">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenRequested">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.OpenSwipeEventArgs&gt; OpenRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.OpenSwipeEventArgs&gt; OpenRequested" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.SwipeView.OpenRequested" />
+      <MemberSignature Language="F#" Value="member this.OpenRequested : EventHandler&lt;Xamarin.Forms.OpenSwipeEventArgs&gt; " Usage="member this.OpenRequested : System.EventHandler&lt;Xamarin.Forms.OpenSwipeEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.OpenSwipeEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RightItems">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.SwipeItems RightItems { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.SwipeItems RightItems" />
@@ -367,6 +412,28 @@
         <param name="constructorHint">To be added.</param>
         <param name="memberName">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.ISwipeViewController.IsOpen">
+      <MemberSignature Language="C#" Value="bool Xamarin.Forms.ISwipeViewController.IsOpen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Xamarin.Forms.ISwipeViewController.IsOpen" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SwipeView.Xamarin#Forms#ISwipeViewController#IsOpen" />
+      <MemberSignature Language="F#" Usage="Xamarin.Forms.ISwipeViewController.IsOpen" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.ISwipeViewController.IsOpen</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

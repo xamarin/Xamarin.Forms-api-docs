@@ -62,6 +62,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="class">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; class { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; class" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MenuItem.class" />
+      <MemberSignature Language="F#" Value="member this.class : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Xamarin.Forms.MenuItem.class" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.ListStringTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Clicked">
       <MemberSignature Language="C#" Value="public event EventHandler Clicked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Clicked" />
@@ -460,6 +484,30 @@
         <param name="bindable">The bindable object for which to set the accelerator keys.</param>
         <param name="value">The new accelerator for the object.</param>
         <summary>Sets the accelerator for the specified bindable object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StyleClass">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; StyleClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; StyleClass" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MenuItem.StyleClass" />
+      <MemberSignature Language="F#" Value="member this.StyleClass : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Xamarin.Forms.MenuItem.StyleClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.ListStringTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the StyleClass of the generated <see cref="T:Xamarin.Forms.FlyoutItem" /> when used with <see cref="T:Xamarin.Forms.Shell" /></summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

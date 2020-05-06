@@ -1,8 +1,8 @@
 <Type Name="View" FullName="Xamarin.Forms.View">
-  <TypeSignature Language="C#" Value="public class View : Xamarin.Forms.VisualElement, Xamarin.Forms.Internals.IGestureController, Xamarin.Forms.IViewController" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit View extends Xamarin.Forms.VisualElement implements class Xamarin.Forms.IElementController, class Xamarin.Forms.Internals.IGestureController, class Xamarin.Forms.IViewController, class Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="C#" Value="public class View : Xamarin.Forms.VisualElement, Xamarin.Forms.IGestureRecognizers, Xamarin.Forms.Internals.IGestureController, Xamarin.Forms.IViewController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit View extends Xamarin.Forms.VisualElement implements class Xamarin.Forms.IElementController, class Xamarin.Forms.IGestureRecognizers, class Xamarin.Forms.Internals.IGestureController, class Xamarin.Forms.IViewController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.View" />
-  <TypeSignature Language="F#" Value="type View = class&#xA;    inherit VisualElement&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IGestureController" />
+  <TypeSignature Language="F#" Value="type View = class&#xA;    inherit VisualElement&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IGestureController&#xA;    interface IGestureRecognizers" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -20,6 +20,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.Internals.IGestureController</InterfaceName>
@@ -86,6 +89,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.View.GestureRecognizers" />
       <MemberSignature Language="F#" Value="member this.GestureRecognizers : System.Collections.Generic.IList&lt;Xamarin.Forms.IGestureRecognizer&gt;" Usage="Xamarin.Forms.View.GestureRecognizers" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IGestureRecognizers.GestureRecognizers</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>

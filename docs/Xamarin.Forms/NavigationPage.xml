@@ -352,6 +352,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetIconColor">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Color GetIconColor (Xamarin.Forms.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Color GetIconColor(class Xamarin.Forms.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.GetIconColor(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetIconColor : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Color" Usage="Xamarin.Forms.NavigationPage.GetIconColor bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetTitleIcon">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.FileImageSource GetTitleIcon (Xamarin.Forms.BindableObject bindable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.FileImageSource GetTitleIcon(class Xamarin.Forms.BindableObject bindable) cil managed" />
@@ -474,6 +497,24 @@
       </ReturnValue>
       <Docs>
         <summary>Backing store for the HasNavigationBar property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IconColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IconColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.NavigationPage.IconColorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IconColorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.NavigationPage.IconColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,11 +702,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
       </ReturnValue>
@@ -696,9 +732,6 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -836,11 +869,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -925,11 +953,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1155,6 +1178,30 @@
         <param name="page">To be added.</param>
         <param name="value">To be added.</param>
         <summary>Sets a value that indicates whether or not this <see cref="T:Xamarin.Forms.NavigationPage" /> element has a navigation bar.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIconColor">
+      <MemberSignature Language="C#" Value="public static void SetIconColor (Xamarin.Forms.BindableObject bindable, Xamarin.Forms.Color value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIconColor(class Xamarin.Forms.BindableObject bindable, valuetype Xamarin.Forms.Color value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.NavigationPage.SetIconColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetIconColor : Xamarin.Forms.BindableObject * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.NavigationPage.SetIconColor (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1419,11 +1466,6 @@
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Xamarin.Forms.Page&gt;</ReturnType>
       </ReturnValue>

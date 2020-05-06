@@ -1,0 +1,79 @@
+<Type Name="DefaultBindableProperties" FullName="Xamarin.Forms.Markup.DefaultBindableProperties">
+  <TypeSignature Language="C#" Value="public static class DefaultBindableProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DefaultBindableProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Markup.DefaultBindableProperties" />
+  <TypeSignature Language="F#" Value="type DefaultBindableProperties = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public static void Register (params Xamarin.Forms.BindableProperty[] properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register(class Xamarin.Forms.BindableProperty[] properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.DefaultBindableProperties.Register(Xamarin.Forms.BindableProperty[])" />
+      <MemberSignature Language="F#" Value="static member Register : Xamarin.Forms.BindableProperty[] -&gt; unit" Usage="Xamarin.Forms.Markup.DefaultBindableProperties.Register properties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="Xamarin.Forms.BindableProperty[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForCommand">
+      <MemberSignature Language="C#" Value="public static void RegisterForCommand (params ValueTuple&lt;Xamarin.Forms.BindableProperty,Xamarin.Forms.BindableProperty&gt;[] propertyPairs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterForCommand(valuetype System.ValueTuple`2&lt;class Xamarin.Forms.BindableProperty, class Xamarin.Forms.BindableProperty&gt;[] propertyPairs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.DefaultBindableProperties.RegisterForCommand(System.ValueTuple{Xamarin.Forms.BindableProperty,Xamarin.Forms.BindableProperty}[])" />
+      <MemberSignature Language="F#" Value="static member RegisterForCommand : ValueTuple&lt;Xamarin.Forms.BindableProperty, Xamarin.Forms.BindableProperty&gt;[] -&gt; unit" Usage="Xamarin.Forms.Markup.DefaultBindableProperties.RegisterForCommand propertyPairs" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyPairs" Type="System.ValueTuple&lt;Xamarin.Forms.BindableProperty,Xamarin.Forms.BindableProperty&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "commandProperty", "parameterProperty" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="propertyPairs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
