@@ -1,0 +1,351 @@
+<Type Name="ElementGesturesExtensions" FullName="Xamarin.Forms.Markup.ElementGesturesExtensions">
+  <TypeSignature Language="C#" Value="public static class ElementGesturesExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ElementGesturesExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Markup.ElementGesturesExtensions" />
+  <TypeSignature Language="F#" Value="type ElementGesturesExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BindClickGesture&lt;TGestureElement&gt;">
+      <MemberSignature Language="C#" Value="public static TGestureElement BindClickGesture&lt;TGestureElement&gt; (this TGestureElement gestureElement, string commandPath = &quot;.&quot;, object commandSource = null, string parameterPath = null, object parameterSource = null) where TGestureElement : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizers;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TGestureElement BindClickGesture&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.IGestureRecognizers) TGestureElement&gt;(!!TGestureElement gestureElement, string commandPath, object commandSource, string parameterPath, object parameterSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementGesturesExtensions.BindClickGesture``1(``0,System.String,System.Object,System.String,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BindClickGesture : 'GestureElement * string * obj * string * obj -&gt; 'GestureElement (requires 'GestureElement :&gt; Xamarin.Forms.Element and 'GestureElement :&gt; Xamarin.Forms.IGestureRecognizers)" Usage="Xamarin.Forms.Markup.ElementGesturesExtensions.BindClickGesture (gestureElement, commandPath, commandSource, parameterPath, parameterSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TGestureElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TGestureElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="gestureElement" Type="TGestureElement" RefType="this" />
+        <Parameter Name="commandPath" Type="System.String" />
+        <Parameter Name="commandSource" Type="System.Object" />
+        <Parameter Name="parameterPath" Type="System.String" />
+        <Parameter Name="parameterSource" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TGestureElement">To be added.</typeparam>
+        <param name="gestureElement">To be added.</param>
+        <param name="commandPath">To be added.</param>
+        <param name="commandSource">To be added.</param>
+        <param name="parameterPath">To be added.</param>
+        <param name="parameterSource">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindSwipeGesture&lt;TGestureElement&gt;">
+      <MemberSignature Language="C#" Value="public static TGestureElement BindSwipeGesture&lt;TGestureElement&gt; (this TGestureElement gestureElement, string commandPath = &quot;.&quot;, object commandSource = null, string parameterPath = null, object parameterSource = null) where TGestureElement : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizers;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TGestureElement BindSwipeGesture&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.IGestureRecognizers) TGestureElement&gt;(!!TGestureElement gestureElement, string commandPath, object commandSource, string parameterPath, object parameterSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementGesturesExtensions.BindSwipeGesture``1(``0,System.String,System.Object,System.String,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BindSwipeGesture : 'GestureElement * string * obj * string * obj -&gt; 'GestureElement (requires 'GestureElement :&gt; Xamarin.Forms.Element and 'GestureElement :&gt; Xamarin.Forms.IGestureRecognizers)" Usage="Xamarin.Forms.Markup.ElementGesturesExtensions.BindSwipeGesture (gestureElement, commandPath, commandSource, parameterPath, parameterSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TGestureElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TGestureElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="gestureElement" Type="TGestureElement" RefType="this" />
+        <Parameter Name="commandPath" Type="System.String" />
+        <Parameter Name="commandSource" Type="System.Object" />
+        <Parameter Name="parameterPath" Type="System.String" />
+        <Parameter Name="parameterSource" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TGestureElement">To be added.</typeparam>
+        <param name="gestureElement">To be added.</param>
+        <param name="commandPath">To be added.</param>
+        <param name="commandSource">To be added.</param>
+        <param name="parameterPath">To be added.</param>
+        <param name="parameterSource">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindTapGesture&lt;TGestureElement&gt;">
+      <MemberSignature Language="C#" Value="public static TGestureElement BindTapGesture&lt;TGestureElement&gt; (this TGestureElement gestureElement, string commandPath = &quot;.&quot;, object commandSource = null, string parameterPath = null, object parameterSource = null) where TGestureElement : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizers;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TGestureElement BindTapGesture&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.IGestureRecognizers) TGestureElement&gt;(!!TGestureElement gestureElement, string commandPath, object commandSource, string parameterPath, object parameterSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementGesturesExtensions.BindTapGesture``1(``0,System.String,System.Object,System.String,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BindTapGesture : 'GestureElement * string * obj * string * obj -&gt; 'GestureElement (requires 'GestureElement :&gt; Xamarin.Forms.Element and 'GestureElement :&gt; Xamarin.Forms.IGestureRecognizers)" Usage="Xamarin.Forms.Markup.ElementGesturesExtensions.BindTapGesture (gestureElement, commandPath, commandSource, parameterPath, parameterSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TGestureElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TGestureElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="gestureElement" Type="TGestureElement" RefType="this" />
+        <Parameter Name="commandPath" Type="System.String" />
+        <Parameter Name="commandSource" Type="System.Object" />
+        <Parameter Name="parameterPath" Type="System.String" />
+        <Parameter Name="parameterSource" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TGestureElement">To be added.</typeparam>
+        <param name="gestureElement">To be added.</param>
+        <param name="commandPath">To be added.</param>
+        <param name="commandSource">To be added.</param>
+        <param name="parameterPath">To be added.</param>
+        <param name="parameterSource">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClickGesture&lt;TGestureElement&gt;">
+      <MemberSignature Language="C#" Value="public static TGestureElement ClickGesture&lt;TGestureElement&gt; (this TGestureElement gestureElement, Action&lt;Xamarin.Forms.ClickGestureRecognizer&gt; init) where TGestureElement : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizers;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TGestureElement ClickGesture&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.IGestureRecognizers) TGestureElement&gt;(!!TGestureElement gestureElement, class System.Action`1&lt;class Xamarin.Forms.ClickGestureRecognizer&gt; init) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementGesturesExtensions.ClickGesture``1(``0,System.Action{Xamarin.Forms.ClickGestureRecognizer})" />
+      <MemberSignature Language="F#" Value="static member ClickGesture : 'GestureElement * Action&lt;Xamarin.Forms.ClickGestureRecognizer&gt; -&gt; 'GestureElement (requires 'GestureElement :&gt; Xamarin.Forms.Element and 'GestureElement :&gt; Xamarin.Forms.IGestureRecognizers)" Usage="Xamarin.Forms.Markup.ElementGesturesExtensions.ClickGesture (gestureElement, init)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TGestureElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TGestureElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="gestureElement" Type="TGestureElement" RefType="this" />
+        <Parameter Name="init" Type="System.Action&lt;Xamarin.Forms.ClickGestureRecognizer&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TGestureElement">To be added.</typeparam>
+        <param name="gestureElement">To be added.</param>
+        <param name="init">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gesture&lt;TGestureElement,TGestureRecognizer&gt;">
+      <MemberSignature Language="C#" Value="public static TGestureElement Gesture&lt;TGestureElement,TGestureRecognizer&gt; (this TGestureElement gestureElement, Action&lt;TGestureRecognizer&gt; init) where TGestureElement : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizers where TGestureRecognizer : Xamarin.Forms.GestureRecognizernew();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TGestureElement Gesture&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.IGestureRecognizers) TGestureElement, .ctor (class Xamarin.Forms.GestureRecognizer) TGestureRecognizer&gt;(!!TGestureElement gestureElement, class System.Action`1&lt;!!TGestureRecognizer&gt; init) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementGesturesExtensions.Gesture``2(``0,System.Action{``1})" />
+      <MemberSignature Language="F#" Value="static member Gesture : 'GestureElement * Action&lt;'GestureRecognizer (requires 'GestureRecognizer :&gt; Xamarin.Forms.GestureRecognizer and 'GestureRecognizer : (new : unit -&gt; 'GestureRecognizer))&gt; -&gt; 'GestureElement (requires 'GestureElement :&gt; Xamarin.Forms.Element and 'GestureElement :&gt; Xamarin.Forms.IGestureRecognizers and 'GestureRecognizer :&gt; Xamarin.Forms.GestureRecognizer and 'GestureRecognizer : (new : unit -&gt; 'GestureRecognizer))" Usage="Xamarin.Forms.Markup.ElementGesturesExtensions.Gesture (gestureElement, init)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TGestureElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TGestureElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TGestureRecognizer">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>Xamarin.Forms.GestureRecognizer</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="gestureElement" Type="TGestureElement" RefType="this" />
+        <Parameter Name="init" Type="System.Action&lt;TGestureRecognizer&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TGestureElement">To be added.</typeparam>
+        <typeparam name="TGestureRecognizer">To be added.</typeparam>
+        <param name="gestureElement">To be added.</param>
+        <param name="init">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanGesture&lt;TGestureElement&gt;">
+      <MemberSignature Language="C#" Value="public static TGestureElement PanGesture&lt;TGestureElement&gt; (this TGestureElement gestureElement, Action&lt;Xamarin.Forms.PanGestureRecognizer&gt; init) where TGestureElement : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizers;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TGestureElement PanGesture&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.IGestureRecognizers) TGestureElement&gt;(!!TGestureElement gestureElement, class System.Action`1&lt;class Xamarin.Forms.PanGestureRecognizer&gt; init) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementGesturesExtensions.PanGesture``1(``0,System.Action{Xamarin.Forms.PanGestureRecognizer})" />
+      <MemberSignature Language="F#" Value="static member PanGesture : 'GestureElement * Action&lt;Xamarin.Forms.PanGestureRecognizer&gt; -&gt; 'GestureElement (requires 'GestureElement :&gt; Xamarin.Forms.Element and 'GestureElement :&gt; Xamarin.Forms.IGestureRecognizers)" Usage="Xamarin.Forms.Markup.ElementGesturesExtensions.PanGesture (gestureElement, init)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TGestureElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TGestureElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="gestureElement" Type="TGestureElement" RefType="this" />
+        <Parameter Name="init" Type="System.Action&lt;Xamarin.Forms.PanGestureRecognizer&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TGestureElement">To be added.</typeparam>
+        <param name="gestureElement">To be added.</param>
+        <param name="init">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PinchGesture&lt;TGestureElement&gt;">
+      <MemberSignature Language="C#" Value="public static TGestureElement PinchGesture&lt;TGestureElement&gt; (this TGestureElement gestureElement, Action&lt;Xamarin.Forms.PinchGestureRecognizer&gt; init) where TGestureElement : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizers;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TGestureElement PinchGesture&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.IGestureRecognizers) TGestureElement&gt;(!!TGestureElement gestureElement, class System.Action`1&lt;class Xamarin.Forms.PinchGestureRecognizer&gt; init) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementGesturesExtensions.PinchGesture``1(``0,System.Action{Xamarin.Forms.PinchGestureRecognizer})" />
+      <MemberSignature Language="F#" Value="static member PinchGesture : 'GestureElement * Action&lt;Xamarin.Forms.PinchGestureRecognizer&gt; -&gt; 'GestureElement (requires 'GestureElement :&gt; Xamarin.Forms.Element and 'GestureElement :&gt; Xamarin.Forms.IGestureRecognizers)" Usage="Xamarin.Forms.Markup.ElementGesturesExtensions.PinchGesture (gestureElement, init)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TGestureElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TGestureElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="gestureElement" Type="TGestureElement" RefType="this" />
+        <Parameter Name="init" Type="System.Action&lt;Xamarin.Forms.PinchGestureRecognizer&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TGestureElement">To be added.</typeparam>
+        <param name="gestureElement">To be added.</param>
+        <param name="init">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwipeGesture&lt;TGestureElement&gt;">
+      <MemberSignature Language="C#" Value="public static TGestureElement SwipeGesture&lt;TGestureElement&gt; (this TGestureElement gestureElement, Action&lt;Xamarin.Forms.SwipeGestureRecognizer&gt; init) where TGestureElement : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizers;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TGestureElement SwipeGesture&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.IGestureRecognizers) TGestureElement&gt;(!!TGestureElement gestureElement, class System.Action`1&lt;class Xamarin.Forms.SwipeGestureRecognizer&gt; init) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementGesturesExtensions.SwipeGesture``1(``0,System.Action{Xamarin.Forms.SwipeGestureRecognizer})" />
+      <MemberSignature Language="F#" Value="static member SwipeGesture : 'GestureElement * Action&lt;Xamarin.Forms.SwipeGestureRecognizer&gt; -&gt; 'GestureElement (requires 'GestureElement :&gt; Xamarin.Forms.Element and 'GestureElement :&gt; Xamarin.Forms.IGestureRecognizers)" Usage="Xamarin.Forms.Markup.ElementGesturesExtensions.SwipeGesture (gestureElement, init)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TGestureElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TGestureElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="gestureElement" Type="TGestureElement" RefType="this" />
+        <Parameter Name="init" Type="System.Action&lt;Xamarin.Forms.SwipeGestureRecognizer&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TGestureElement">To be added.</typeparam>
+        <param name="gestureElement">To be added.</param>
+        <param name="init">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TapGesture&lt;TGestureElement&gt;">
+      <MemberSignature Language="C#" Value="public static TGestureElement TapGesture&lt;TGestureElement&gt; (this TGestureElement gestureElement, Action&lt;Xamarin.Forms.TapGestureRecognizer&gt; init) where TGestureElement : Xamarin.Forms.Element, Xamarin.Forms.IGestureRecognizers;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TGestureElement TapGesture&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.IGestureRecognizers) TGestureElement&gt;(!!TGestureElement gestureElement, class System.Action`1&lt;class Xamarin.Forms.TapGestureRecognizer&gt; init) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementGesturesExtensions.TapGesture``1(``0,System.Action{Xamarin.Forms.TapGestureRecognizer})" />
+      <MemberSignature Language="F#" Value="static member TapGesture : 'GestureElement * Action&lt;Xamarin.Forms.TapGestureRecognizer&gt; -&gt; 'GestureElement (requires 'GestureElement :&gt; Xamarin.Forms.Element and 'GestureElement :&gt; Xamarin.Forms.IGestureRecognizers)" Usage="Xamarin.Forms.Markup.ElementGesturesExtensions.TapGesture (gestureElement, init)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TGestureElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TGestureElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.IGestureRecognizers</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="gestureElement" Type="TGestureElement" RefType="this" />
+        <Parameter Name="init" Type="System.Action&lt;Xamarin.Forms.TapGestureRecognizer&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TGestureElement">To be added.</typeparam>
+        <param name="gestureElement">To be added.</param>
+        <param name="init">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

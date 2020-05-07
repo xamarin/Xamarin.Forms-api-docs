@@ -1,0 +1,444 @@
+<Type Name="BindableObjectExtensions" FullName="Xamarin.Forms.Markup.BindableObjectExtensions">
+  <TypeSignature Language="C#" Value="public static class BindableObjectExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BindableObjectExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Markup.BindableObjectExtensions" />
+  <TypeSignature Language="F#" Value="type BindableObjectExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Assign&lt;TBindable,TVariable&gt;">
+      <MemberSignature Language="C#" Value="public static TBindable Assign&lt;TBindable,TVariable&gt; (this TBindable bindable, out TVariable variable) where TBindable : Xamarin.Forms.BindableObject, TVariable;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Assign&lt;(class Xamarin.Forms.BindableObject, !!TVariable) TBindable, TVariable&gt;(!!TBindable bindable, [out] !!TVariable&amp; variable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Assign``2(``0,``1@)" />
+      <MemberSignature Language="F#" Value="static member Assign : 'Bindable *  -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject and 'Bindable :&gt; 'Variable)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Assign (bindable, variable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TBindable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBindable">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+            <BaseTypeName>TVariable</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TVariable" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="bindable" Type="TBindable" RefType="this" />
+        <Parameter Name="variable" Type="TVariable" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBindable">To be added.</typeparam>
+        <typeparam name="TVariable">To be added.</typeparam>
+        <param name="bindable">To be added.</param>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bind&lt;TBindable&gt;">
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable&gt; (this TBindable bindable, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable&gt;(!!TBindable bindable, string path, valuetype Xamarin.Forms.BindingMode mode, class Xamarin.Forms.IValueConverter converter, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``1(``0,System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="F#" Value="static member Bind : 'Bindable * string * Xamarin.Forms.BindingMode * Xamarin.Forms.IValueConverter * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, path, mode, converter, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TBindable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBindable">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="bindable" Type="TBindable" RefType="this" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="Xamarin.Forms.BindingMode" />
+        <Parameter Name="converter" Type="Xamarin.Forms.IValueConverter" />
+        <Parameter Name="converterParameter" Type="System.Object" />
+        <Parameter Name="stringFormat" Type="System.String" />
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="targetNullValue" Type="System.Object" />
+        <Parameter Name="fallbackValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBindable">To be added.</typeparam>
+        <param name="bindable">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="converter">To be added.</param>
+        <param name="converterParameter">To be added.</param>
+        <param name="stringFormat">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="targetNullValue">To be added.</param>
+        <param name="fallbackValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bind&lt;TBindable&gt;">
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable&gt; (this TBindable bindable, Xamarin.Forms.BindableProperty targetProperty, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable&gt;(!!TBindable bindable, class Xamarin.Forms.BindableProperty targetProperty, string path, valuetype Xamarin.Forms.BindingMode mode, class Xamarin.Forms.IValueConverter converter, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``1(``0,Xamarin.Forms.BindableProperty,System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="F#" Value="static member Bind : 'Bindable * Xamarin.Forms.BindableProperty * string * Xamarin.Forms.BindingMode * Xamarin.Forms.IValueConverter * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, targetProperty, path, mode, converter, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TBindable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBindable">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="bindable" Type="TBindable" RefType="this" />
+        <Parameter Name="targetProperty" Type="Xamarin.Forms.BindableProperty" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="Xamarin.Forms.BindingMode" />
+        <Parameter Name="converter" Type="Xamarin.Forms.IValueConverter" />
+        <Parameter Name="converterParameter" Type="System.Object" />
+        <Parameter Name="stringFormat" Type="System.String" />
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="targetNullValue" Type="System.Object" />
+        <Parameter Name="fallbackValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBindable">To be added.</typeparam>
+        <param name="bindable">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="converter">To be added.</param>
+        <param name="converterParameter">To be added.</param>
+        <param name="stringFormat">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="targetNullValue">To be added.</param>
+        <param name="fallbackValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bind&lt;TBindable,TSource,TDest&gt;">
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TDest&gt; (this TBindable bindable, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TDest&gt; convert = null, Func&lt;TDest,TSource&gt; convertBack = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable, TSource, TDest&gt;(!!TBindable bindable, string path, valuetype Xamarin.Forms.BindingMode mode, class System.Func`2&lt;!!TSource, !!TDest&gt; convert, class System.Func`2&lt;!!TDest, !!TSource&gt; convertBack, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``3(``0,System.String,Xamarin.Forms.BindingMode,System.Func{``1,``2},System.Func{``2,``1},System.Object,System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="F#" Value="static member Bind : 'Bindable * string * Xamarin.Forms.BindingMode * Func&lt;'Source, 'Dest&gt; * Func&lt;'Dest, 'Source&gt; * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, path, mode, convert, convertBack, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TBindable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBindable">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TDest" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="bindable" Type="TBindable" RefType="this" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="Xamarin.Forms.BindingMode" />
+        <Parameter Name="convert" Type="System.Func&lt;TSource,TDest&gt;" />
+        <Parameter Name="convertBack" Type="System.Func&lt;TDest,TSource&gt;" />
+        <Parameter Name="converterParameter" Type="System.Object" />
+        <Parameter Name="stringFormat" Type="System.String" />
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="targetNullValue" Type="System.Object" />
+        <Parameter Name="fallbackValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBindable">To be added.</typeparam>
+        <typeparam name="TSource">To be added.</typeparam>
+        <typeparam name="TDest">To be added.</typeparam>
+        <param name="bindable">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="convert">To be added.</param>
+        <param name="convertBack">To be added.</param>
+        <param name="converterParameter">To be added.</param>
+        <param name="stringFormat">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="targetNullValue">To be added.</param>
+        <param name="fallbackValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bind&lt;TBindable,TSource,TDest&gt;">
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TDest&gt; (this TBindable bindable, Xamarin.Forms.BindableProperty targetProperty, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TDest&gt; convert = null, Func&lt;TDest,TSource&gt; convertBack = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable, TSource, TDest&gt;(!!TBindable bindable, class Xamarin.Forms.BindableProperty targetProperty, string path, valuetype Xamarin.Forms.BindingMode mode, class System.Func`2&lt;!!TSource, !!TDest&gt; convert, class System.Func`2&lt;!!TDest, !!TSource&gt; convertBack, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``3(``0,Xamarin.Forms.BindableProperty,System.String,Xamarin.Forms.BindingMode,System.Func{``1,``2},System.Func{``2,``1},System.Object,System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="F#" Value="static member Bind : 'Bindable * Xamarin.Forms.BindableProperty * string * Xamarin.Forms.BindingMode * Func&lt;'Source, 'Dest&gt; * Func&lt;'Dest, 'Source&gt; * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, targetProperty, path, mode, convert, convertBack, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TBindable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBindable">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TDest" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="bindable" Type="TBindable" RefType="this" />
+        <Parameter Name="targetProperty" Type="Xamarin.Forms.BindableProperty" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="Xamarin.Forms.BindingMode" />
+        <Parameter Name="convert" Type="System.Func&lt;TSource,TDest&gt;" />
+        <Parameter Name="convertBack" Type="System.Func&lt;TDest,TSource&gt;" />
+        <Parameter Name="converterParameter" Type="System.Object" />
+        <Parameter Name="stringFormat" Type="System.String" />
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="targetNullValue" Type="System.Object" />
+        <Parameter Name="fallbackValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBindable">To be added.</typeparam>
+        <typeparam name="TSource">To be added.</typeparam>
+        <typeparam name="TDest">To be added.</typeparam>
+        <param name="bindable">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="convert">To be added.</param>
+        <param name="convertBack">To be added.</param>
+        <param name="converterParameter">To be added.</param>
+        <param name="stringFormat">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="targetNullValue">To be added.</param>
+        <param name="fallbackValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bind&lt;TBindable,TSource,TParam,TDest&gt;">
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TParam,TDest&gt; (this TBindable bindable, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TParam,TDest&gt; convert = null, Func&lt;TDest,TParam,TSource&gt; convertBack = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable, TSource, TParam, TDest&gt;(!!TBindable bindable, string path, valuetype Xamarin.Forms.BindingMode mode, class System.Func`3&lt;!!TSource, !!TParam, !!TDest&gt; convert, class System.Func`3&lt;!!TDest, !!TParam, !!TSource&gt; convertBack, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``4(``0,System.String,Xamarin.Forms.BindingMode,System.Func{``1,``2,``3},System.Func{``3,``2,``1},System.Object,System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="F#" Value="static member Bind : 'Bindable * string * Xamarin.Forms.BindingMode * Func&lt;'Source, 'Param, 'Dest&gt; * Func&lt;'Dest, 'Param, 'Source&gt; * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, path, mode, convert, convertBack, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TBindable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBindable">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TParam" />
+        <TypeParameter Name="TDest" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="bindable" Type="TBindable" RefType="this" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="Xamarin.Forms.BindingMode" />
+        <Parameter Name="convert" Type="System.Func&lt;TSource,TParam,TDest&gt;" />
+        <Parameter Name="convertBack" Type="System.Func&lt;TDest,TParam,TSource&gt;" />
+        <Parameter Name="converterParameter" Type="System.Object" />
+        <Parameter Name="stringFormat" Type="System.String" />
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="targetNullValue" Type="System.Object" />
+        <Parameter Name="fallbackValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBindable">To be added.</typeparam>
+        <typeparam name="TSource">To be added.</typeparam>
+        <typeparam name="TParam">To be added.</typeparam>
+        <typeparam name="TDest">To be added.</typeparam>
+        <param name="bindable">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="convert">To be added.</param>
+        <param name="convertBack">To be added.</param>
+        <param name="converterParameter">To be added.</param>
+        <param name="stringFormat">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="targetNullValue">To be added.</param>
+        <param name="fallbackValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bind&lt;TBindable,TSource,TParam,TDest&gt;">
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TParam,TDest&gt; (this TBindable bindable, Xamarin.Forms.BindableProperty targetProperty, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TParam,TDest&gt; convert = null, Func&lt;TDest,TParam,TSource&gt; convertBack = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable, TSource, TParam, TDest&gt;(!!TBindable bindable, class Xamarin.Forms.BindableProperty targetProperty, string path, valuetype Xamarin.Forms.BindingMode mode, class System.Func`3&lt;!!TSource, !!TParam, !!TDest&gt; convert, class System.Func`3&lt;!!TDest, !!TParam, !!TSource&gt; convertBack, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``4(``0,Xamarin.Forms.BindableProperty,System.String,Xamarin.Forms.BindingMode,System.Func{``1,``2,``3},System.Func{``3,``2,``1},System.Object,System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="F#" Value="static member Bind : 'Bindable * Xamarin.Forms.BindableProperty * string * Xamarin.Forms.BindingMode * Func&lt;'Source, 'Param, 'Dest&gt; * Func&lt;'Dest, 'Param, 'Source&gt; * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, targetProperty, path, mode, convert, convertBack, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TBindable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBindable">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TParam" />
+        <TypeParameter Name="TDest" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="bindable" Type="TBindable" RefType="this" />
+        <Parameter Name="targetProperty" Type="Xamarin.Forms.BindableProperty" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="mode" Type="Xamarin.Forms.BindingMode" />
+        <Parameter Name="convert" Type="System.Func&lt;TSource,TParam,TDest&gt;" />
+        <Parameter Name="convertBack" Type="System.Func&lt;TDest,TParam,TSource&gt;" />
+        <Parameter Name="converterParameter" Type="System.Object" />
+        <Parameter Name="stringFormat" Type="System.String" />
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="targetNullValue" Type="System.Object" />
+        <Parameter Name="fallbackValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBindable">To be added.</typeparam>
+        <typeparam name="TSource">To be added.</typeparam>
+        <typeparam name="TParam">To be added.</typeparam>
+        <typeparam name="TDest">To be added.</typeparam>
+        <param name="bindable">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="convert">To be added.</param>
+        <param name="convertBack">To be added.</param>
+        <param name="converterParameter">To be added.</param>
+        <param name="stringFormat">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="targetNullValue">To be added.</param>
+        <param name="fallbackValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindCommand&lt;TBindable&gt;">
+      <MemberSignature Language="C#" Value="public static TBindable BindCommand&lt;TBindable&gt; (this TBindable bindable, string path = &quot;.&quot;, object source = null, string parameterPath = &quot;.&quot;, object parameterSource = null) where TBindable : Xamarin.Forms.BindableObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable BindCommand&lt;(class Xamarin.Forms.BindableObject) TBindable&gt;(!!TBindable bindable, string path, object source, string parameterPath, object parameterSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.BindCommand``1(``0,System.String,System.Object,System.String,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BindCommand : 'Bindable * string * obj * string * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.BindCommand (bindable, path, source, parameterPath, parameterSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TBindable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBindable">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="bindable" Type="TBindable" RefType="this" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="parameterPath" Type="System.String" />
+        <Parameter Name="parameterSource" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBindable">To be added.</typeparam>
+        <param name="bindable">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="parameterPath">To be added.</param>
+        <param name="parameterSource">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke&lt;TBindable&gt;">
+      <MemberSignature Language="C#" Value="public static TBindable Invoke&lt;TBindable&gt; (this TBindable bindable, Action&lt;TBindable&gt; action) where TBindable : Xamarin.Forms.BindableObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Invoke&lt;(class Xamarin.Forms.BindableObject) TBindable&gt;(!!TBindable bindable, class System.Action`1&lt;!!TBindable&gt; action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Invoke``1(``0,System.Action{``0})" />
+      <MemberSignature Language="F#" Value="static member Invoke : 'Bindable * Action&lt;'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)&gt; -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Invoke (bindable, action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TBindable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBindable">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.BindableObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="bindable" Type="TBindable" RefType="this" />
+        <Parameter Name="action" Type="System.Action&lt;TBindable&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBindable">To be added.</typeparam>
+        <param name="bindable">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

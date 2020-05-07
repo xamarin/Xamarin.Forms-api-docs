@@ -36,6 +36,54 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AnimateCurrentItemChanges">
+      <MemberSignature Language="C#" Value="public virtual bool AnimateCurrentItemChanges { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AnimateCurrentItemChanges" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CarouselView.AnimateCurrentItemChanges" />
+      <MemberSignature Language="F#" Value="member this.AnimateCurrentItemChanges : bool" Usage="Xamarin.Forms.CarouselView.AnimateCurrentItemChanges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnimatePositionChanges">
+      <MemberSignature Language="C#" Value="public virtual bool AnimatePositionChanges { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AnimatePositionChanges" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CarouselView.AnimatePositionChanges" />
+      <MemberSignature Language="F#" Value="member this.AnimatePositionChanges : bool" Usage="Xamarin.Forms.CarouselView.AnimatePositionChanges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CurrentItem">
       <MemberSignature Language="C#" Value="public object CurrentItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CurrentItem" />
@@ -198,6 +246,30 @@
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicatorView">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.IndicatorView IndicatorView { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IndicatorView IndicatorView" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CarouselView.IndicatorView" />
+      <MemberSignature Language="F#" Value="member this.IndicatorView : Xamarin.Forms.IndicatorView" Usage="Xamarin.Forms.CarouselView.IndicatorView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.ReferenceTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IndicatorView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,28 +549,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnScrolled">
-      <MemberSignature Language="C#" Value="protected override void OnScrolled (Xamarin.Forms.ItemsViewScrolledEventArgs e);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnScrolled(class Xamarin.Forms.ItemsViewScrolledEventArgs e) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CarouselView.OnScrolled(Xamarin.Forms.ItemsViewScrolledEventArgs)" />
-      <MemberSignature Language="F#" Value="override this.OnScrolled : Xamarin.Forms.ItemsViewScrolledEventArgs -&gt; unit" Usage="carouselView.OnScrolled e" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="e" Type="Xamarin.Forms.ItemsViewScrolledEventArgs" />
-      </Parameters>
-      <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="PeekAreaInsets">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Thickness PeekAreaInsets { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Thickness PeekAreaInsets" />
@@ -531,30 +581,6 @@
       <ReturnValue>
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PlatformInitialized">
-      <MemberSignature Language="C#" Value="public void PlatformInitialized ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PlatformInitialized() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CarouselView.PlatformInitialized" />
-      <MemberSignature Language="F#" Value="member this.PlatformInitialized : unit -&gt; unit" Usage="carouselView.PlatformInitialized " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -703,56 +729,6 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ScrollToActions">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.Queue&lt;Action&gt; ScrollToActions;" />
-      <MemberSignature Language="ILAsm" Value=".field public class System.Collections.Generic.Queue`1&lt;class System.Action&gt; ScrollToActions" />
-      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.CarouselView.ScrollToActions" />
-      <MemberSignature Language="F#" Value="val mutable ScrollToActions : System.Collections.Generic.Queue&lt;Action&gt;" Usage="Xamarin.Forms.CarouselView.ScrollToActions" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.Queue&lt;System.Action&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetCurrentItem">
-      <MemberSignature Language="C#" Value="public void SetCurrentItem (object item);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCurrentItem(object item) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CarouselView.SetCurrentItem(System.Object)" />
-      <MemberSignature Language="F#" Value="member this.SetCurrentItem : obj -&gt; unit" Usage="carouselView.SetCurrentItem item" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="System.Object" />
-      </Parameters>
-      <Docs>
-        <param name="item">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,0 +1,50 @@
+<Type Name="FuncConverter&lt;TSource&gt;" FullName="Xamarin.Forms.Markup.FuncConverter&lt;TSource&gt;">
+  <TypeSignature Language="C#" Value="public class FuncConverter&lt;TSource&gt; : Xamarin.Forms.Markup.FuncConverter&lt;TSource,object,object&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FuncConverter`1&lt;TSource&gt; extends Xamarin.Forms.Markup.FuncConverter`3&lt;!TSource, object, object&gt;" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Markup.FuncConverter`1" />
+  <TypeSignature Language="F#" Value="type FuncConverter&lt;'Source&gt; = class&#xA;    inherit FuncConverter&lt;'Source, obj, obj&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TSource" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.Markup.FuncConverter&lt;TSource,System.Object,System.Object&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TSource">TSource</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TDest">System.Object</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TParam">System.Object</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TSource">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FuncConverter (Func&lt;TSource,object&gt; convert = null, Func&lt;object,TSource&gt; convertBack = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;!TSource, object&gt; convert, class System.Func`2&lt;object, !TSource&gt; convertBack) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.FuncConverter`1.#ctor(System.Func{`0,System.Object},System.Func{System.Object,`0})" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Markup.FuncConverter&lt;'Source&gt; : Func&lt;'Source, obj&gt; * Func&lt;obj, 'Source&gt; -&gt; Xamarin.Forms.Markup.FuncConverter&lt;'Source&gt;" Usage="new Xamarin.Forms.Markup.FuncConverter&lt;'Source&gt; (convert, convertBack)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="convert" Type="System.Func&lt;TSource,System.Object&gt;" />
+        <Parameter Name="convertBack" Type="System.Func&lt;System.Object,TSource&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="convert">To be added.</param>
+        <param name="convertBack">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

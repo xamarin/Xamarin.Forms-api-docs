@@ -325,7 +325,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Xamarin.Forms.Behavior&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of Behavior associated to this element. This is a bindable propery.</summary>
+        <summary>Gets the list of Behaviors associated to this element. This is a bindable property.</summary>
         <value>
         </value>
         <remarks>To be added.</remarks>
@@ -1589,6 +1589,28 @@
         <param name="heightConstraint">The height constraint to request.</param>
         <summary>Method that is called when a layout measurement happens.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRequestedThemeChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnRequestedThemeChanged (Xamarin.Forms.OSAppTheme newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRequestedThemeChanged(valuetype Xamarin.Forms.OSAppTheme newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)" />
+      <MemberSignature Language="F#" Value="abstract member OnRequestedThemeChanged : Xamarin.Forms.OSAppTheme -&gt; unit&#xA;override this.OnRequestedThemeChanged : Xamarin.Forms.OSAppTheme -&gt; unit" Usage="visualElement.OnRequestedThemeChanged newValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newValue" Type="Xamarin.Forms.OSAppTheme" />
+      </Parameters>
+      <Docs>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

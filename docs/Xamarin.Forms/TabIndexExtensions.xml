@@ -46,10 +46,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSortedTabIndexesOnParentPage">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.SortedDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; GetSortedTabIndexesOnParentPage (this Xamarin.Forms.VisualElement element, out int countChildrensWithTabStopWithoutThis);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.SortedDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; GetSortedTabIndexesOnParentPage(class Xamarin.Forms.VisualElement element, [out] int32&amp; countChildrensWithTabStopWithoutThis) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.GetSortedTabIndexesOnParentPage(Xamarin.Forms.VisualElement,System.Int32@)" />
-      <MemberSignature Language="F#" Value="static member GetSortedTabIndexesOnParentPage : Xamarin.Forms.VisualElement *  -&gt; System.Collections.Generic.SortedDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetSortedTabIndexesOnParentPage (element, countChildrensWithTabStopWithoutThis)" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.SortedDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; GetSortedTabIndexesOnParentPage (this Xamarin.Forms.VisualElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.SortedDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; GetSortedTabIndexesOnParentPage(class Xamarin.Forms.VisualElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.GetSortedTabIndexesOnParentPage(Xamarin.Forms.VisualElement)" />
+      <MemberSignature Language="F#" Value="static member GetSortedTabIndexesOnParentPage : Xamarin.Forms.VisualElement -&gt; System.Collections.Generic.SortedDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetSortedTabIndexesOnParentPage element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -60,21 +60,19 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="element" Type="Xamarin.Forms.VisualElement" RefType="this" />
-        <Parameter Name="countChildrensWithTabStopWithoutThis" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="element">To be added.</param>
-        <param name="countChildrensWithTabStopWithoutThis">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTabIndexesOnParentPage">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; GetTabIndexesOnParentPage (this Xamarin.Forms.ITabStopElement element, out int countChildrensWithTabStopWithoutThis, bool checkContainsElement = true);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; GetTabIndexesOnParentPage(class Xamarin.Forms.ITabStopElement element, [out] int32&amp; countChildrensWithTabStopWithoutThis, bool checkContainsElement) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage(Xamarin.Forms.ITabStopElement,System.Int32@,System.Boolean)" />
-      <MemberSignature Language="F#" Value="static member GetTabIndexesOnParentPage : Xamarin.Forms.ITabStopElement *  * bool -&gt; System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage (element, countChildrensWithTabStopWithoutThis, checkContainsElement)" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; GetTabIndexesOnParentPage (this Xamarin.Forms.ITabStopElement element, out int countChildrenWithTabStopWithoutThis);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; GetTabIndexesOnParentPage(class Xamarin.Forms.ITabStopElement element, [out] int32&amp; countChildrenWithTabStopWithoutThis) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage(Xamarin.Forms.ITabStopElement,System.Int32@)" />
+      <MemberSignature Language="F#" Value="static member GetTabIndexesOnParentPage : Xamarin.Forms.ITabStopElement *  -&gt; System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage (element, countChildrenWithTabStopWithoutThis)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -85,13 +83,11 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="element" Type="Xamarin.Forms.ITabStopElement" RefType="this" />
-        <Parameter Name="countChildrensWithTabStopWithoutThis" Type="System.Int32" RefType="out" />
-        <Parameter Name="checkContainsElement" Type="System.Boolean" />
+        <Parameter Name="countChildrenWithTabStopWithoutThis" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="element">To be added.</param>
-        <param name="countChildrensWithTabStopWithoutThis">To be added.</param>
-        <param name="checkContainsElement">To be added.</param>
+        <param name="countChildrenWithTabStopWithoutThis">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

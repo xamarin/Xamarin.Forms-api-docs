@@ -1,0 +1,197 @@
+<Type Name="ElementExtensions" FullName="Xamarin.Forms.Markup.ElementExtensions">
+  <TypeSignature Language="C#" Value="public static class ElementExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ElementExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Markup.ElementExtensions" />
+  <TypeSignature Language="F#" Value="type ElementExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bold&lt;TFontElement&gt;">
+      <MemberSignature Language="C#" Value="public static TFontElement Bold&lt;TFontElement&gt; (this TFontElement fontElement) where TFontElement : Xamarin.Forms.Element, Xamarin.Forms.Internals.IFontElement;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TFontElement Bold&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.Internals.IFontElement) TFontElement&gt;(!!TFontElement fontElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementExtensions.Bold``1(``0)" />
+      <MemberSignature Language="F#" Value="static member Bold : 'FontElement -&gt; 'FontElement (requires 'FontElement :&gt; Xamarin.Forms.Element and 'FontElement :&gt; Xamarin.Forms.Internals.IFontElement)" Usage="Xamarin.Forms.Markup.ElementExtensions.Bold fontElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TFontElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TFontElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.Internals.IFontElement</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="fontElement" Type="TFontElement" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TFontElement">To be added.</typeparam>
+        <param name="fontElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Effects&lt;TElement&gt;">
+      <MemberSignature Language="C#" Value="public static TElement Effects&lt;TElement&gt; (this TElement element, params Xamarin.Forms.Effect[] effects) where TElement : Xamarin.Forms.Element;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TElement Effects&lt;(class Xamarin.Forms.Element) TElement&gt;(!!TElement element, class Xamarin.Forms.Effect[] effects) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementExtensions.Effects``1(``0,Xamarin.Forms.Effect[])" />
+      <MemberSignature Language="F#" Value="static member Effects : 'Element * Xamarin.Forms.Effect[] -&gt; 'Element (requires 'Element :&gt; Xamarin.Forms.Element)" Usage="Xamarin.Forms.Markup.ElementExtensions.Effects (element, effects)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="TElement" RefType="this" />
+        <Parameter Name="effects" Type="Xamarin.Forms.Effect[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TElement">To be added.</typeparam>
+        <param name="element">To be added.</param>
+        <param name="effects">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font&lt;TFontElement&gt;">
+      <MemberSignature Language="C#" Value="public static TFontElement Font&lt;TFontElement&gt; (this TFontElement fontElement, Nullable&lt;double&gt; size = null, Nullable&lt;bool&gt; bold = null, Nullable&lt;bool&gt; italic = null, string family = null) where TFontElement : Xamarin.Forms.Element, Xamarin.Forms.Internals.IFontElement;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TFontElement Font&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.Internals.IFontElement) TFontElement&gt;(!!TFontElement fontElement, valuetype System.Nullable`1&lt;float64&gt; size, valuetype System.Nullable`1&lt;bool&gt; bold, valuetype System.Nullable`1&lt;bool&gt; italic, string family) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementExtensions.Font``1(``0,System.Nullable{System.Double},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
+      <MemberSignature Language="F#" Value="static member Font : 'FontElement * Nullable&lt;double&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; 'FontElement (requires 'FontElement :&gt; Xamarin.Forms.Element and 'FontElement :&gt; Xamarin.Forms.Internals.IFontElement)" Usage="Xamarin.Forms.Markup.ElementExtensions.Font (fontElement, size, bold, italic, family)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TFontElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TFontElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.Internals.IFontElement</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="fontElement" Type="TFontElement" RefType="this" />
+        <Parameter Name="size" Type="System.Nullable&lt;System.Double&gt;" />
+        <Parameter Name="bold" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="italic" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="family" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TFontElement">To be added.</typeparam>
+        <param name="fontElement">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="bold">To be added.</param>
+        <param name="italic">To be added.</param>
+        <param name="family">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontSize&lt;TFontElement&gt;">
+      <MemberSignature Language="C#" Value="public static TFontElement FontSize&lt;TFontElement&gt; (this TFontElement fontElement, double size) where TFontElement : Xamarin.Forms.Element, Xamarin.Forms.Internals.IFontElement;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TFontElement FontSize&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.Internals.IFontElement) TFontElement&gt;(!!TFontElement fontElement, float64 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementExtensions.FontSize``1(``0,System.Double)" />
+      <MemberSignature Language="F#" Value="static member FontSize : 'FontElement * double -&gt; 'FontElement (requires 'FontElement :&gt; Xamarin.Forms.Element and 'FontElement :&gt; Xamarin.Forms.Internals.IFontElement)" Usage="Xamarin.Forms.Markup.ElementExtensions.FontSize (fontElement, size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TFontElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TFontElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.Internals.IFontElement</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="fontElement" Type="TFontElement" RefType="this" />
+        <Parameter Name="size" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TFontElement">To be added.</typeparam>
+        <param name="fontElement">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Italic&lt;TFontElement&gt;">
+      <MemberSignature Language="C#" Value="public static TFontElement Italic&lt;TFontElement&gt; (this TFontElement fontElement) where TFontElement : Xamarin.Forms.Element, Xamarin.Forms.Internals.IFontElement;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TFontElement Italic&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.Internals.IFontElement) TFontElement&gt;(!!TFontElement fontElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementExtensions.Italic``1(``0)" />
+      <MemberSignature Language="F#" Value="static member Italic : 'FontElement -&gt; 'FontElement (requires 'FontElement :&gt; Xamarin.Forms.Element and 'FontElement :&gt; Xamarin.Forms.Internals.IFontElement)" Usage="Xamarin.Forms.Markup.ElementExtensions.Italic fontElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TFontElement</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TFontElement">
+          <Constraints>
+            <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
+            <InterfaceName>Xamarin.Forms.Internals.IFontElement</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="fontElement" Type="TFontElement" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TFontElement">To be added.</typeparam>
+        <param name="fontElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
