@@ -381,7 +381,7 @@
       </Docs>
     </Member>
     <Member MemberName="VerifySwipeViewFlagEnabled">
-      <MemberSignature Language="C#" Value="public static void VerifySwipeViewFlagEnabled (string constructorHint = null, string memberName = &quot;&quot;);" />
+      <MemberSignature Language="C#" Value="public static void VerifySwipeViewFlagEnabled (string constructorHint = default, string memberName = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VerifySwipeViewFlagEnabled(string constructorHint, string memberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeView.VerifySwipeViewFlagEnabled(System.String,System.String)" />
       <MemberSignature Language="F#" Value="static member VerifySwipeViewFlagEnabled : string * string -&gt; unit" Usage="Xamarin.Forms.SwipeView.VerifySwipeViewFlagEnabled (constructorHint, memberName)" />
@@ -419,7 +419,7 @@
       <MemberSignature Language="C#" Value="bool Xamarin.Forms.ISwipeViewController.IsOpen { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Xamarin.Forms.ISwipeViewController.IsOpen" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SwipeView.Xamarin#Forms#ISwipeViewController#IsOpen" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.ISwipeViewController.IsOpen" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.ISwipeViewController.IsOpen : bool with get, set" Usage="Xamarin.Forms.ISwipeViewController.IsOpen" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.ISwipeViewController.IsOpen</InterfaceMember>
@@ -441,6 +441,7 @@
       <MemberSignature Language="C#" Value="void ISwipeViewController.SendSwipeChanging (Xamarin.Forms.SwipeChangingEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ISwipeViewController.SendSwipeChanging(class Xamarin.Forms.SwipeChangingEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeView.Xamarin#Forms#ISwipeViewController#SendSwipeChanging(Xamarin.Forms.SwipeChangingEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.ISwipeViewController.SendSwipeChanging : Xamarin.Forms.SwipeChangingEventArgs -&gt; unit&#xA;override this.Xamarin.Forms.ISwipeViewController.SendSwipeChanging : Xamarin.Forms.SwipeChangingEventArgs -&gt; unit" Usage="swipeView.Xamarin.Forms.ISwipeViewController.SendSwipeChanging args" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.ISwipeViewController.SendSwipeChanging(Xamarin.Forms.SwipeChangingEventArgs)</InterfaceMember>
@@ -465,6 +466,7 @@
       <MemberSignature Language="C#" Value="void ISwipeViewController.SendSwipeEnded (Xamarin.Forms.SwipeEndedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ISwipeViewController.SendSwipeEnded(class Xamarin.Forms.SwipeEndedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeView.Xamarin#Forms#ISwipeViewController#SendSwipeEnded(Xamarin.Forms.SwipeEndedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.ISwipeViewController.SendSwipeEnded : Xamarin.Forms.SwipeEndedEventArgs -&gt; unit&#xA;override this.Xamarin.Forms.ISwipeViewController.SendSwipeEnded : Xamarin.Forms.SwipeEndedEventArgs -&gt; unit" Usage="swipeView.Xamarin.Forms.ISwipeViewController.SendSwipeEnded args" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.ISwipeViewController.SendSwipeEnded(Xamarin.Forms.SwipeEndedEventArgs)</InterfaceMember>
@@ -489,6 +491,7 @@
       <MemberSignature Language="C#" Value="void ISwipeViewController.SendSwipeStarted (Xamarin.Forms.SwipeStartedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.ISwipeViewController.SendSwipeStarted(class Xamarin.Forms.SwipeStartedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SwipeView.Xamarin#Forms#ISwipeViewController#SendSwipeStarted(Xamarin.Forms.SwipeStartedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.ISwipeViewController.SendSwipeStarted : Xamarin.Forms.SwipeStartedEventArgs -&gt; unit&#xA;override this.Xamarin.Forms.ISwipeViewController.SendSwipeStarted : Xamarin.Forms.SwipeStartedEventArgs -&gt; unit" Usage="swipeView.Xamarin.Forms.ISwipeViewController.SendSwipeStarted args" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.ISwipeViewController.SendSwipeStarted(Xamarin.Forms.SwipeStartedEventArgs)</InterfaceMember>

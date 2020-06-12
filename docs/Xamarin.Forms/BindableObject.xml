@@ -572,7 +572,7 @@ class MyBindable : BindableObject
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
-      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (string propertyName = null);" />
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (string propertyName = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObject.OnPropertyChanged(System.String)" />
       <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : string -&gt; unit&#xA;override this.OnPropertyChanged : string -&gt; unit" Usage="bindableObject.OnPropertyChanged propertyName" />
@@ -609,7 +609,7 @@ class MyBindable : BindableObject
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanging">
-      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanging (string propertyName = null);" />
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanging (string propertyName = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanging(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObject.OnPropertyChanging(System.String)" />
       <MemberSignature Language="F#" Value="abstract member OnPropertyChanging : string -&gt; unit&#xA;override this.OnPropertyChanging : string -&gt; unit" Usage="bindableObject.OnPropertyChanging propertyName" />
@@ -965,6 +965,7 @@ class MyBindable : BindableObject
       <MemberSignature Language="C#" Value="void IDynamicResourceHandler.SetDynamicResource (Xamarin.Forms.BindableProperty property, string key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.IDynamicResourceHandler.SetDynamicResource(class Xamarin.Forms.BindableProperty property, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObject.Xamarin#Forms#Internals#IDynamicResourceHandler#SetDynamicResource(Xamarin.Forms.BindableProperty,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.Internals.IDynamicResourceHandler.SetDynamicResource : Xamarin.Forms.BindableProperty * string -&gt; unit&#xA;override this.Xamarin.Forms.Internals.IDynamicResourceHandler.SetDynamicResource : Xamarin.Forms.BindableProperty * string -&gt; unit" Usage="bindableObject.Xamarin.Forms.Internals.IDynamicResourceHandler.SetDynamicResource (property, key)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.Internals.IDynamicResourceHandler.SetDynamicResource(Xamarin.Forms.BindableProperty,System.String)</InterfaceMember>

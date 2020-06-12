@@ -138,6 +138,43 @@ var image = new Image { Source = "picture.png" };]]></code>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ErrorPlaceholder">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource ErrorPlaceholder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource ErrorPlaceholder" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Image.ErrorPlaceholder" />
+      <MemberSignature Language="F#" Value="member this.ErrorPlaceholder : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Image.ErrorPlaceholder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorPlaceholderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ErrorPlaceholderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ErrorPlaceholderProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Image.ErrorPlaceholderProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ErrorPlaceholderProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Image.ErrorPlaceholderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsAnimationPlaying">
       <MemberSignature Language="C#" Value="public bool IsAnimationPlaying { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAnimationPlaying" />
@@ -298,6 +335,43 @@ indicator.BindingContext = image;]]></code>
       </ReturnValue>
       <Docs>
         <summary>Backing store for the IsOpaque bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadingPlaceholder">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.ImageSource LoadingPlaceholder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ImageSource LoadingPlaceholder" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Image.LoadingPlaceholder" />
+      <MemberSignature Language="F#" Value="member this.LoadingPlaceholder : Xamarin.Forms.ImageSource with get, set" Usage="Xamarin.Forms.Image.LoadingPlaceholder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadingPlaceholderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty LoadingPlaceholderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty LoadingPlaceholderProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Image.LoadingPlaceholderProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable LoadingPlaceholderProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Image.LoadingPlaceholderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,6 +565,7 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="C#" Value="bool IImageController.GetLoadAsAnimation ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IImageController.GetLoadAsAnimation() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Image.Xamarin#Forms#IImageController#GetLoadAsAnimation" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IImageController.GetLoadAsAnimation : unit -&gt; bool&#xA;override this.Xamarin.Forms.IImageController.GetLoadAsAnimation : unit -&gt; bool" Usage="image.Xamarin.Forms.IImageController.GetLoadAsAnimation " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IImageController.GetLoadAsAnimation</InterfaceMember>
@@ -513,6 +588,7 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="C#" Value="void IImageElement.OnImageSourceSourceChanged (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.OnImageSourceSourceChanged(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Image.Xamarin#Forms#IImageElement#OnImageSourceSourceChanged(System.Object,System.EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IImageElement.OnImageSourceSourceChanged : obj * EventArgs -&gt; unit&#xA;override this.Xamarin.Forms.IImageElement.OnImageSourceSourceChanged : obj * EventArgs -&gt; unit" Usage="image.Xamarin.Forms.IImageElement.OnImageSourceSourceChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IImageElement.OnImageSourceSourceChanged(System.Object,System.EventArgs)</InterfaceMember>
@@ -539,6 +615,7 @@ indicator.BindingContext = image;]]></code>
       <MemberSignature Language="C#" Value="void IImageElement.RaiseImageSourcePropertyChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Image.Xamarin#Forms#IImageElement#RaiseImageSourcePropertyChanged" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged : unit -&gt; unit&#xA;override this.Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged : unit -&gt; unit" Usage="image.Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IImageElement.RaiseImageSourcePropertyChanged</InterfaceMember>

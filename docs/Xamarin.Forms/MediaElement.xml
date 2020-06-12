@@ -208,7 +208,7 @@
       </Docs>
     </Member>
     <Member MemberName="Duration">
-      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; Duration { get; }" />
+      <MemberSignature Language="C#" Value="public TimeSpan? Duration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Duration" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MediaElement.Duration" />
       <MemberSignature Language="F#" Value="member this.Duration : Nullable&lt;TimeSpan&gt;" Usage="Xamarin.Forms.MediaElement.Duration" />
@@ -655,7 +655,7 @@
       </Docs>
     </Member>
     <Member MemberName="VerifyMediaElementFlagEnabled">
-      <MemberSignature Language="C#" Value="public static void VerifyMediaElementFlagEnabled (string constructorHint = null, string memberName = &quot;&quot;);" />
+      <MemberSignature Language="C#" Value="public static void VerifyMediaElementFlagEnabled (string constructorHint = default, string memberName = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VerifyMediaElementFlagEnabled(string constructorHint, string memberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MediaElement.VerifyMediaElementFlagEnabled(System.String,System.String)" />
       <MemberSignature Language="F#" Value="static member VerifyMediaElementFlagEnabled : string * string -&gt; unit" Usage="Xamarin.Forms.MediaElement.VerifyMediaElementFlagEnabled (constructorHint, memberName)" />
@@ -830,7 +830,7 @@
       <MemberSignature Language="C#" Value="double Xamarin.Forms.IMediaElementController.BufferingProgress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Xamarin.Forms.IMediaElementController.BufferingProgress" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#BufferingProgress" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.IMediaElementController.BufferingProgress" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IMediaElementController.BufferingProgress : double with get, set" Usage="Xamarin.Forms.IMediaElementController.BufferingProgress" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IMediaElementController.BufferingProgress</InterfaceMember>
@@ -852,7 +852,7 @@
       <MemberSignature Language="C#" Value="Xamarin.Forms.MediaElementState Xamarin.Forms.IMediaElementController.CurrentState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.MediaElementState Xamarin.Forms.IMediaElementController.CurrentState" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#CurrentState" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.IMediaElementController.CurrentState" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IMediaElementController.CurrentState : Xamarin.Forms.MediaElementState with get, set" Usage="Xamarin.Forms.IMediaElementController.CurrentState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IMediaElementController.CurrentState</InterfaceMember>
@@ -871,10 +871,10 @@
       </Docs>
     </Member>
     <Member MemberName="Xamarin.Forms.IMediaElementController.Duration">
-      <MemberSignature Language="C#" Value="Nullable&lt;TimeSpan&gt; Xamarin.Forms.IMediaElementController.Duration { get; set; }" />
+      <MemberSignature Language="C#" Value="TimeSpan? Xamarin.Forms.IMediaElementController.Duration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Xamarin.Forms.IMediaElementController.Duration" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#Duration" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.IMediaElementController.Duration" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IMediaElementController.Duration : Nullable&lt;TimeSpan&gt; with get, set" Usage="Xamarin.Forms.IMediaElementController.Duration" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IMediaElementController.Duration</InterfaceMember>
@@ -896,6 +896,7 @@
       <MemberSignature Language="C#" Value="void IMediaElementController.OnMediaEnded ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMediaElementController.OnMediaEnded() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#OnMediaEnded" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IMediaElementController.OnMediaEnded : unit -&gt; unit&#xA;override this.Xamarin.Forms.IMediaElementController.OnMediaEnded : unit -&gt; unit" Usage="mediaElement.Xamarin.Forms.IMediaElementController.OnMediaEnded " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IMediaElementController.OnMediaEnded</InterfaceMember>
@@ -917,6 +918,7 @@
       <MemberSignature Language="C#" Value="void IMediaElementController.OnMediaFailed ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMediaElementController.OnMediaFailed() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#OnMediaFailed" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IMediaElementController.OnMediaFailed : unit -&gt; unit&#xA;override this.Xamarin.Forms.IMediaElementController.OnMediaFailed : unit -&gt; unit" Usage="mediaElement.Xamarin.Forms.IMediaElementController.OnMediaFailed " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IMediaElementController.OnMediaFailed</InterfaceMember>
@@ -938,6 +940,7 @@
       <MemberSignature Language="C#" Value="void IMediaElementController.OnMediaOpened ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMediaElementController.OnMediaOpened() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#OnMediaOpened" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IMediaElementController.OnMediaOpened : unit -&gt; unit&#xA;override this.Xamarin.Forms.IMediaElementController.OnMediaOpened : unit -&gt; unit" Usage="mediaElement.Xamarin.Forms.IMediaElementController.OnMediaOpened " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IMediaElementController.OnMediaOpened</InterfaceMember>
@@ -959,6 +962,7 @@
       <MemberSignature Language="C#" Value="void IMediaElementController.OnSeekCompleted ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMediaElementController.OnSeekCompleted() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#OnSeekCompleted" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IMediaElementController.OnSeekCompleted : unit -&gt; unit&#xA;override this.Xamarin.Forms.IMediaElementController.OnSeekCompleted : unit -&gt; unit" Usage="mediaElement.Xamarin.Forms.IMediaElementController.OnSeekCompleted " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IMediaElementController.OnSeekCompleted</InterfaceMember>
@@ -980,7 +984,7 @@
       <MemberSignature Language="C#" Value="TimeSpan Xamarin.Forms.IMediaElementController.Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Xamarin.Forms.IMediaElementController.Position" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#Position" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.IMediaElementController.Position" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IMediaElementController.Position : TimeSpan with get, set" Usage="Xamarin.Forms.IMediaElementController.Position" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IMediaElementController.Position</InterfaceMember>
@@ -1002,7 +1006,7 @@
       <MemberSignature Language="C#" Value="int Xamarin.Forms.IMediaElementController.VideoHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Xamarin.Forms.IMediaElementController.VideoHeight" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#VideoHeight" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.IMediaElementController.VideoHeight" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IMediaElementController.VideoHeight : int with get, set" Usage="Xamarin.Forms.IMediaElementController.VideoHeight" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IMediaElementController.VideoHeight</InterfaceMember>
@@ -1024,7 +1028,7 @@
       <MemberSignature Language="C#" Value="int Xamarin.Forms.IMediaElementController.VideoWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Xamarin.Forms.IMediaElementController.VideoWidth" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#VideoWidth" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.IMediaElementController.VideoWidth" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IMediaElementController.VideoWidth : int with get, set" Usage="Xamarin.Forms.IMediaElementController.VideoWidth" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IMediaElementController.VideoWidth</InterfaceMember>
@@ -1046,7 +1050,7 @@
       <MemberSignature Language="C#" Value="double Xamarin.Forms.IMediaElementController.Volume { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Xamarin.Forms.IMediaElementController.Volume" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#Volume" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.IMediaElementController.Volume" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IMediaElementController.Volume : double with get, set" Usage="Xamarin.Forms.IMediaElementController.Volume" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IMediaElementController.Volume</InterfaceMember>

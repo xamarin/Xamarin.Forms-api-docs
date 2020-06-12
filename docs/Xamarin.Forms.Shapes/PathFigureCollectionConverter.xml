@@ -1,0 +1,82 @@
+<Type Name="PathFigureCollectionConverter" FullName="Xamarin.Forms.Shapes.PathFigureCollectionConverter">
+  <TypeSignature Language="C#" Value="public class PathFigureCollectionConverter : Xamarin.Forms.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PathFigureCollectionConverter extends Xamarin.Forms.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Shapes.PathFigureCollectionConverter" />
+  <TypeSignature Language="F#" Value="type PathFigureCollectionConverter = class&#xA;    inherit TypeConverter" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PathFigureCollectionConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.PathFigureCollectionConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFromInvariantString">
+      <MemberSignature Language="C#" Value="public override object ConvertFromInvariantString (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFromInvariantString(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.PathFigureCollectionConverter.ConvertFromInvariantString(System.String)" />
+      <MemberSignature Language="F#" Value="override this.ConvertFromInvariantString : string -&gt; obj" Usage="pathFigureCollectionConverter.ConvertFromInvariantString value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseStringToPathFigureCollection">
+      <MemberSignature Language="C#" Value="public static void ParseStringToPathFigureCollection (Xamarin.Forms.Shapes.PathFigureCollection pathFigureCollection, string pathString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ParseStringToPathFigureCollection(class Xamarin.Forms.Shapes.PathFigureCollection pathFigureCollection, string pathString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.PathFigureCollectionConverter.ParseStringToPathFigureCollection(Xamarin.Forms.Shapes.PathFigureCollection,System.String)" />
+      <MemberSignature Language="F#" Value="static member ParseStringToPathFigureCollection : Xamarin.Forms.Shapes.PathFigureCollection * string -&gt; unit" Usage="Xamarin.Forms.Shapes.PathFigureCollectionConverter.ParseStringToPathFigureCollection (pathFigureCollection, pathString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathFigureCollection" Type="Xamarin.Forms.Shapes.PathFigureCollection" />
+        <Parameter Name="pathString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pathFigureCollection">To be added.</param>
+        <param name="pathString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

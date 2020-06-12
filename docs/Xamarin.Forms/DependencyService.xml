@@ -130,6 +130,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RegisterSingleton&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void RegisterSingleton&lt;T&gt; (T instance) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterSingleton&lt;class T&gt;(!!T instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DependencyService.RegisterSingleton``1(``0)" />
+      <MemberSignature Language="F#" Value="static member RegisterSingleton : 'T -&gt; unit (requires 'T : null)" Usage="Xamarin.Forms.DependencyService.RegisterSingleton instance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="instance" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Resolve&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T Resolve&lt;T&gt; (Xamarin.Forms.DependencyFetchTarget fallbackFetchTarget = Xamarin.Forms.DependencyFetchTarget.GlobalInstance) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Resolve&lt;class T&gt;(valuetype Xamarin.Forms.DependencyFetchTarget fallbackFetchTarget) cil managed" />

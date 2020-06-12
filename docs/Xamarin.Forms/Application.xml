@@ -465,33 +465,6 @@ public partial class App : Application
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnRequestedThemeChanged">
-      <MemberSignature Language="C#" Value="public void OnRequestedThemeChanged (Xamarin.Forms.AppThemeChangedEventArgs args);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnRequestedThemeChanged(class Xamarin.Forms.AppThemeChangedEventArgs args) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Application.OnRequestedThemeChanged(Xamarin.Forms.AppThemeChangedEventArgs)" />
-      <MemberSignature Language="F#" Value="member this.OnRequestedThemeChanged : Xamarin.Forms.AppThemeChangedEventArgs -&gt; unit" Usage="application.OnRequestedThemeChanged args" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="args" Type="Xamarin.Forms.AppThemeChangedEventArgs" />
-      </Parameters>
-      <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="OnResume">
       <MemberSignature Language="C#" Value="protected virtual void OnResume ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnResume() cil managed" />
@@ -948,6 +921,52 @@ public partial class App : Application
       <Docs>
         <param name="value">For internal use by the Xamarin.Forms platform.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggerThemeChanged">
+      <MemberSignature Language="C#" Value="public void TriggerThemeChanged (Xamarin.Forms.AppThemeChangedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TriggerThemeChanged(class Xamarin.Forms.AppThemeChangedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Application.TriggerThemeChanged(Xamarin.Forms.AppThemeChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.TriggerThemeChanged : Xamarin.Forms.AppThemeChangedEventArgs -&gt; unit" Usage="application.TriggerThemeChanged args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Xamarin.Forms.AppThemeChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserAppTheme">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.OSAppTheme UserAppTheme { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.OSAppTheme UserAppTheme" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Application.UserAppTheme" />
+      <MemberSignature Language="F#" Value="member this.UserAppTheme : Xamarin.Forms.OSAppTheme with get, set" Usage="Xamarin.Forms.Application.UserAppTheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.OSAppTheme</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

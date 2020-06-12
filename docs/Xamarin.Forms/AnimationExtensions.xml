@@ -56,7 +56,7 @@
       </Docs>
     </Member>
     <Member MemberName="Animate">
-      <MemberSignature Language="C#" Value="public static void Animate (this Xamarin.Forms.IAnimatable self, string name, Action&lt;double&gt; callback, uint rate = 16, uint length = 250, Xamarin.Forms.Easing easing = null, Action&lt;double,bool&gt; finished = null, Func&lt;bool&gt; repeat = null);" />
+      <MemberSignature Language="C#" Value="public static void Animate (this Xamarin.Forms.IAnimatable self, string name, Action&lt;double&gt; callback, uint rate = 16, uint length = 250, Xamarin.Forms.Easing easing = default, Action&lt;double,bool&gt; finished = default, Func&lt;bool&gt; repeat = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Animate(class Xamarin.Forms.IAnimatable self, string name, class System.Action`1&lt;float64&gt; callback, unsigned int32 rate, unsigned int32 length, class Xamarin.Forms.Easing easing, class System.Action`2&lt;float64, bool&gt; finished, class System.Func`1&lt;bool&gt; repeat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AnimationExtensions.Animate(Xamarin.Forms.IAnimatable,System.String,System.Action{System.Double},System.UInt32,System.UInt32,Xamarin.Forms.Easing,System.Action{System.Double,System.Boolean},System.Func{System.Boolean})" />
       <MemberSignature Language="F#" Value="static member Animate : Xamarin.Forms.IAnimatable * string * Action&lt;double&gt; * uint32 * uint32 * Xamarin.Forms.Easing * Action&lt;double, bool&gt; * Func&lt;bool&gt; -&gt; unit" Usage="Xamarin.Forms.AnimationExtensions.Animate (self, name, callback, rate, length, easing, finished, repeat)" />
@@ -99,7 +99,7 @@
       </Docs>
     </Member>
     <Member MemberName="Animate">
-      <MemberSignature Language="C#" Value="public static void Animate (this Xamarin.Forms.IAnimatable self, string name, Xamarin.Forms.Animation animation, uint rate = 16, uint length = 250, Xamarin.Forms.Easing easing = null, Action&lt;double,bool&gt; finished = null, Func&lt;bool&gt; repeat = null);" />
+      <MemberSignature Language="C#" Value="public static void Animate (this Xamarin.Forms.IAnimatable self, string name, Xamarin.Forms.Animation animation, uint rate = 16, uint length = 250, Xamarin.Forms.Easing easing = default, Action&lt;double,bool&gt; finished = default, Func&lt;bool&gt; repeat = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Animate(class Xamarin.Forms.IAnimatable self, string name, class Xamarin.Forms.Animation animation, unsigned int32 rate, unsigned int32 length, class Xamarin.Forms.Easing easing, class System.Action`2&lt;float64, bool&gt; finished, class System.Func`1&lt;bool&gt; repeat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AnimationExtensions.Animate(Xamarin.Forms.IAnimatable,System.String,Xamarin.Forms.Animation,System.UInt32,System.UInt32,Xamarin.Forms.Easing,System.Action{System.Double,System.Boolean},System.Func{System.Boolean})" />
       <MemberSignature Language="F#" Value="static member Animate : Xamarin.Forms.IAnimatable * string * Xamarin.Forms.Animation * uint32 * uint32 * Xamarin.Forms.Easing * Action&lt;double, bool&gt; * Func&lt;bool&gt; -&gt; unit" Usage="Xamarin.Forms.AnimationExtensions.Animate (self, name, animation, rate, length, easing, finished, repeat)" />
@@ -142,7 +142,7 @@
       </Docs>
     </Member>
     <Member MemberName="Animate">
-      <MemberSignature Language="C#" Value="public static void Animate (this Xamarin.Forms.IAnimatable self, string name, Action&lt;double&gt; callback, double start, double end, uint rate = 16, uint length = 250, Xamarin.Forms.Easing easing = null, Action&lt;double,bool&gt; finished = null, Func&lt;bool&gt; repeat = null);" />
+      <MemberSignature Language="C#" Value="public static void Animate (this Xamarin.Forms.IAnimatable self, string name, Action&lt;double&gt; callback, double start, double end, uint rate = 16, uint length = 250, Xamarin.Forms.Easing easing = default, Action&lt;double,bool&gt; finished = default, Func&lt;bool&gt; repeat = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Animate(class Xamarin.Forms.IAnimatable self, string name, class System.Action`1&lt;float64&gt; callback, float64 start, float64 end, unsigned int32 rate, unsigned int32 length, class Xamarin.Forms.Easing easing, class System.Action`2&lt;float64, bool&gt; finished, class System.Func`1&lt;bool&gt; repeat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AnimationExtensions.Animate(Xamarin.Forms.IAnimatable,System.String,System.Action{System.Double},System.Double,System.Double,System.UInt32,System.UInt32,Xamarin.Forms.Easing,System.Action{System.Double,System.Boolean},System.Func{System.Boolean})" />
       <MemberSignature Language="F#" Value="static member Animate : Xamarin.Forms.IAnimatable * string * Action&lt;double&gt; * double * double * uint32 * uint32 * Xamarin.Forms.Easing * Action&lt;double, bool&gt; * Func&lt;bool&gt; -&gt; unit" Usage="Xamarin.Forms.AnimationExtensions.Animate (self, name, callback, start, end, rate, length, easing, finished, repeat)" />
@@ -189,7 +189,7 @@
       </Docs>
     </Member>
     <Member MemberName="Animate&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static void Animate&lt;T&gt; (this Xamarin.Forms.IAnimatable self, string name, Func&lt;double,T&gt; transform, Action&lt;T&gt; callback, uint rate = 16, uint length = 250, Xamarin.Forms.Easing easing = null, Action&lt;T,bool&gt; finished = null, Func&lt;bool&gt; repeat = null);" />
+      <MemberSignature Language="C#" Value="public static void Animate&lt;T&gt; (this Xamarin.Forms.IAnimatable self, string name, Func&lt;double,T&gt; transform, Action&lt;T&gt; callback, uint rate = 16, uint length = 250, Xamarin.Forms.Easing easing = default, Action&lt;T,bool&gt; finished = default, Func&lt;bool&gt; repeat = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Animate&lt;T&gt;(class Xamarin.Forms.IAnimatable self, string name, class System.Func`2&lt;float64, !!T&gt; transform, class System.Action`1&lt;!!T&gt; callback, unsigned int32 rate, unsigned int32 length, class Xamarin.Forms.Easing easing, class System.Action`2&lt;!!T, bool&gt; finished, class System.Func`1&lt;bool&gt; repeat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AnimationExtensions.Animate``1(Xamarin.Forms.IAnimatable,System.String,System.Func{System.Double,``0},System.Action{``0},System.UInt32,System.UInt32,Xamarin.Forms.Easing,System.Action{``0,System.Boolean},System.Func{System.Boolean})" />
       <MemberSignature Language="F#" Value="static member Animate : Xamarin.Forms.IAnimatable * string * Func&lt;double, 'T&gt; * Action&lt;'T&gt; * uint32 * uint32 * Xamarin.Forms.Easing * Action&lt;'T, bool&gt; * Func&lt;bool&gt; -&gt; unit" Usage="Xamarin.Forms.AnimationExtensions.Animate (self, name, transform, callback, rate, length, easing, finished, repeat)" />
@@ -238,7 +238,7 @@
       </Docs>
     </Member>
     <Member MemberName="AnimateKinetic">
-      <MemberSignature Language="C#" Value="public static void AnimateKinetic (this Xamarin.Forms.IAnimatable self, string name, Func&lt;double,double,bool&gt; callback, double velocity, double drag, Action finished = null);" />
+      <MemberSignature Language="C#" Value="public static void AnimateKinetic (this Xamarin.Forms.IAnimatable self, string name, Func&lt;double,double,bool&gt; callback, double velocity, double drag, Action finished = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AnimateKinetic(class Xamarin.Forms.IAnimatable self, string name, class System.Func`3&lt;float64, float64, bool&gt; callback, float64 velocity, float64 drag, class System.Action finished) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.AnimationExtensions.AnimateKinetic(Xamarin.Forms.IAnimatable,System.String,System.Func{System.Double,System.Double,System.Boolean},System.Double,System.Double,System.Action)" />
       <MemberSignature Language="F#" Value="static member AnimateKinetic : Xamarin.Forms.IAnimatable * string * Func&lt;double, double, bool&gt; * double * double * Action -&gt; unit" Usage="Xamarin.Forms.AnimationExtensions.AnimateKinetic (self, name, callback, velocity, drag, finished)" />

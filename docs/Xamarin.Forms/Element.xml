@@ -640,7 +640,7 @@
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
-      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = null);" />
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Element.OnPropertyChanged(System.String)" />
       <MemberSignature Language="F#" Value="override this.OnPropertyChanged : string -&gt; unit" Usage="element.OnPropertyChanged propertyName" />
@@ -994,6 +994,7 @@
       <MemberSignature Language="C#" Value="void IElementController.SetValueFromRenderer (Xamarin.Forms.BindableProperty property, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IElementController.SetValueFromRenderer(class Xamarin.Forms.BindableProperty property, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Element.Xamarin#Forms#IElementController#SetValueFromRenderer(Xamarin.Forms.BindableProperty,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IElementController.SetValueFromRenderer : Xamarin.Forms.BindableProperty * obj -&gt; unit&#xA;override this.Xamarin.Forms.IElementController.SetValueFromRenderer : Xamarin.Forms.BindableProperty * obj -&gt; unit" Usage="element.Xamarin.Forms.IElementController.SetValueFromRenderer (property, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IElementController.SetValueFromRenderer(Xamarin.Forms.BindableProperty,System.Object)</InterfaceMember>
@@ -1025,6 +1026,7 @@
       <MemberSignature Language="C#" Value="void INameScope.RegisterName (string name, object scopedElement);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.Internals.INameScope.RegisterName(string name, object scopedElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Element.Xamarin#Forms#Internals#INameScope#RegisterName(System.String,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.Internals.INameScope.RegisterName : string * obj -&gt; unit&#xA;override this.Xamarin.Forms.Internals.INameScope.RegisterName : string * obj -&gt; unit" Usage="element.Xamarin.Forms.Internals.INameScope.RegisterName (name, scopedElement)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.Internals.INameScope.RegisterName(System.String,System.Object)</InterfaceMember>

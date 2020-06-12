@@ -21,7 +21,7 @@
   </Docs>
   <Members>
     <Member MemberName="Resolve">
-      <MemberSignature Language="C#" Value="public Type Resolve (string qualifiedTypeName, IServiceProvider serviceProvider = null);" />
+      <MemberSignature Language="C#" Value="public Type Resolve (string qualifiedTypeName, IServiceProvider serviceProvider = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type Resolve(string qualifiedTypeName, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.IXamlTypeResolver.Resolve(System.String,System.IServiceProvider)" />
       <MemberSignature Language="F#" Value="abstract member Resolve : string * IServiceProvider -&gt; Type" Usage="iXamlTypeResolver.Resolve (qualifiedTypeName, serviceProvider)" />
@@ -53,7 +53,7 @@
       <MemberSignature Language="C#" Value="public bool TryResolve (string qualifiedTypeName, out Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolve(string qualifiedTypeName, [out] class System.Type&amp; type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.IXamlTypeResolver.TryResolve(System.String,System.Type@)" />
-      <MemberSignature Language="F#" Value="abstract member TryResolve : string *  -&gt; bool" Usage="iXamlTypeResolver.TryResolve (qualifiedTypeName, type)" />
+      <MemberSignature Language="F#" Value="abstract member TryResolve : string * Type -&gt; bool" Usage="iXamlTypeResolver.TryResolve (qualifiedTypeName, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>

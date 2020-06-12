@@ -84,6 +84,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetHash">
+      <MemberSignature Language="C#" Value="public string GetHash (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetHash(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IPlatformServices.GetHash(System.String)" />
+      <MemberSignature Language="F#" Value="abstract member GetHash : string -&gt; string" Usage="iPlatformServices.GetHash input" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetMD5Hash">
       <MemberSignature Language="C#" Value="public string GetMD5Hash (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetMD5Hash(string input) cil managed" />
@@ -95,6 +118,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("GetMD5Hash is obsolete as of version 4.7.0")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

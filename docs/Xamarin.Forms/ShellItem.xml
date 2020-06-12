@@ -298,6 +298,7 @@
       <MemberSignature Language="C#" Value="System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellSection&gt; IShellItemController.GetItems ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Xamarin.Forms.ShellSection&gt; Xamarin.Forms.IShellItemController.GetItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#GetItems" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellItemController.GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellSection&gt;&#xA;override this.Xamarin.Forms.IShellItemController.GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellSection&gt;" Usage="shellItem.Xamarin.Forms.IShellItemController.GetItems " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellItemController.GetItems</InterfaceMember>
@@ -320,6 +321,7 @@
       <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellItemController.ItemsCollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellItemController.ItemsCollectionChanged" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#ItemsCollectionChanged" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IShellItemController.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.Xamarin.Forms.IShellItemController.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Xamarin.Forms.IShellItemController.ItemsCollectionChanged</InterfaceMember>
@@ -340,6 +342,7 @@
       <MemberSignature Language="C#" Value="bool IShellItemController.ProposeSection (Xamarin.Forms.ShellSection shellSection, bool setValue);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellItemController.ProposeSection(class Xamarin.Forms.ShellSection shellSection, bool setValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#ProposeSection(Xamarin.Forms.ShellSection,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellItemController.ProposeSection : Xamarin.Forms.ShellSection * bool -&gt; bool&#xA;override this.Xamarin.Forms.IShellItemController.ProposeSection : Xamarin.Forms.ShellSection * bool -&gt; bool" Usage="shellItem.Xamarin.Forms.IShellItemController.ProposeSection (shellSection, setValue)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellItemController.ProposeSection(Xamarin.Forms.ShellSection,System.Boolean)</InterfaceMember>
@@ -360,6 +363,28 @@
         <param name="setValue">To be added.</param>
         <summary>For internal use by the Xamarin.Forms platform.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.IShellItemController.ShowTabs">
+      <MemberSignature Language="C#" Value="bool Xamarin.Forms.IShellItemController.ShowTabs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Xamarin.Forms.IShellItemController.ShowTabs" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellItem.Xamarin#Forms#IShellItemController#ShowTabs" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IShellItemController.ShowTabs : bool" Usage="Xamarin.Forms.IShellItemController.ShowTabs" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IShellItemController.ShowTabs</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

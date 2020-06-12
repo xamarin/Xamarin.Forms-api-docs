@@ -2061,7 +2061,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       </Docs>
     </Member>
     <Member MemberName="VerifyShellUWPFlagEnabled">
-      <MemberSignature Language="C#" Value="public static void VerifyShellUWPFlagEnabled (string constructorHint = null, string memberName = &quot;&quot;);" />
+      <MemberSignature Language="C#" Value="public static void VerifyShellUWPFlagEnabled (string constructorHint = default, string memberName = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VerifyShellUWPFlagEnabled(string constructorHint, string memberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.VerifyShellUWPFlagEnabled(System.String,System.String)" />
       <MemberSignature Language="F#" Value="static member VerifyShellUWPFlagEnabled : string * string -&gt; unit" Usage="Xamarin.Forms.Shell.VerifyShellUWPFlagEnabled (constructorHint, memberName)" />
@@ -2099,6 +2099,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="void IShellController.AddAppearanceObserver (Xamarin.Forms.IAppearanceObserver observer, Xamarin.Forms.Element pivot);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.AddAppearanceObserver(class Xamarin.Forms.IAppearanceObserver observer, class Xamarin.Forms.Element pivot) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#AddAppearanceObserver(Xamarin.Forms.IAppearanceObserver,Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.AddAppearanceObserver : Xamarin.Forms.IAppearanceObserver * Xamarin.Forms.Element -&gt; unit&#xA;override this.Xamarin.Forms.IShellController.AddAppearanceObserver : Xamarin.Forms.IAppearanceObserver * Xamarin.Forms.Element -&gt; unit" Usage="shell.Xamarin.Forms.IShellController.AddAppearanceObserver (observer, pivot)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.AddAppearanceObserver(Xamarin.Forms.IAppearanceObserver,Xamarin.Forms.Element)</InterfaceMember>
@@ -2125,6 +2126,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="void IShellController.AddFlyoutBehaviorObserver (Xamarin.Forms.IFlyoutBehaviorObserver observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver(class Xamarin.Forms.IFlyoutBehaviorObserver observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#AddFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver : Xamarin.Forms.IFlyoutBehaviorObserver -&gt; unit&#xA;override this.Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver : Xamarin.Forms.IFlyoutBehaviorObserver -&gt; unit" Usage="shell.Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver observer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.AddFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)</InterfaceMember>
@@ -2149,6 +2151,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="void IShellController.AppearanceChanged (Xamarin.Forms.Element source, bool appearanceSet);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.AppearanceChanged(class Xamarin.Forms.Element source, bool appearanceSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#AppearanceChanged(Xamarin.Forms.Element,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.AppearanceChanged : Xamarin.Forms.Element * bool -&gt; unit&#xA;override this.Xamarin.Forms.IShellController.AppearanceChanged : Xamarin.Forms.Element * bool -&gt; unit" Usage="shell.Xamarin.Forms.IShellController.AppearanceChanged (source, appearanceSet)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.AppearanceChanged(Xamarin.Forms.Element,System.Boolean)</InterfaceMember>
@@ -2175,7 +2178,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="Xamarin.Forms.View Xamarin.Forms.IShellController.FlyoutHeader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.View Xamarin.Forms.IShellController.FlyoutHeader" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#FlyoutHeader" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellController.FlyoutHeader" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IShellController.FlyoutHeader : Xamarin.Forms.View" Usage="Xamarin.Forms.IShellController.FlyoutHeader" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IShellController.FlyoutHeader</InterfaceMember>
@@ -2197,6 +2200,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="System.Collections.Generic.List&lt;System.Collections.Generic.List&lt;Xamarin.Forms.Element&gt;&gt; IShellController.GenerateFlyoutGrouping ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class System.Collections.Generic.List`1&lt;class Xamarin.Forms.Element&gt;&gt; Xamarin.Forms.IShellController.GenerateFlyoutGrouping() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#GenerateFlyoutGrouping" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.GenerateFlyoutGrouping : unit -&gt; System.Collections.Generic.List&lt;System.Collections.Generic.List&lt;Xamarin.Forms.Element&gt;&gt;&#xA;override this.Xamarin.Forms.IShellController.GenerateFlyoutGrouping : unit -&gt; System.Collections.Generic.List&lt;System.Collections.Generic.List&lt;Xamarin.Forms.Element&gt;&gt;" Usage="shell.Xamarin.Forms.IShellController.GenerateFlyoutGrouping " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.GenerateFlyoutGrouping</InterfaceMember>
@@ -2219,6 +2223,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="Xamarin.Forms.DataTemplate IShellController.GetFlyoutItemDataTemplate (Xamarin.Forms.BindableObject bo);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Xamarin.Forms.DataTemplate Xamarin.Forms.IShellController.GetFlyoutItemDataTemplate(class Xamarin.Forms.BindableObject bo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#GetFlyoutItemDataTemplate(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.GetFlyoutItemDataTemplate : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.DataTemplate&#xA;override this.Xamarin.Forms.IShellController.GetFlyoutItemDataTemplate : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.DataTemplate" Usage="shell.Xamarin.Forms.IShellController.GetFlyoutItemDataTemplate bo" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.GetFlyoutItemDataTemplate(Xamarin.Forms.BindableObject)</InterfaceMember>
@@ -2244,6 +2249,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellItem&gt; IShellController.GetItems ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Xamarin.Forms.ShellItem&gt; Xamarin.Forms.IShellController.GetItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#GetItems" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellItem&gt;&#xA;override this.Xamarin.Forms.IShellController.GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellItem&gt;" Usage="shell.Xamarin.Forms.IShellController.GetItems " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.GetItems</InterfaceMember>
@@ -2266,6 +2272,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="Xamarin.Forms.ShellNavigationState IShellController.GetNavigationState (Xamarin.Forms.ShellItem shellItem, Xamarin.Forms.ShellSection shellSection, Xamarin.Forms.ShellContent shellContent, bool includeStack);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Xamarin.Forms.ShellNavigationState Xamarin.Forms.IShellController.GetNavigationState(class Xamarin.Forms.ShellItem shellItem, class Xamarin.Forms.ShellSection shellSection, class Xamarin.Forms.ShellContent shellContent, bool includeStack) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#GetNavigationState(Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.GetNavigationState : Xamarin.Forms.ShellItem * Xamarin.Forms.ShellSection * Xamarin.Forms.ShellContent * bool -&gt; Xamarin.Forms.ShellNavigationState&#xA;override this.Xamarin.Forms.IShellController.GetNavigationState : Xamarin.Forms.ShellItem * Xamarin.Forms.ShellSection * Xamarin.Forms.ShellContent * bool -&gt; Xamarin.Forms.ShellNavigationState" Usage="shell.Xamarin.Forms.IShellController.GetNavigationState (shellItem, shellSection, shellContent, includeStack)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.GetNavigationState(Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Boolean)</InterfaceMember>
@@ -2297,6 +2304,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellController.ItemsCollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellController.ItemsCollectionChanged" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#ItemsCollectionChanged" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IShellController.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.Xamarin.Forms.IShellController.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Xamarin.Forms.IShellController.ItemsCollectionChanged</InterfaceMember>
@@ -2317,6 +2325,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="void IShellController.OnFlyoutItemSelected (Xamarin.Forms.Element element);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.OnFlyoutItemSelected(class Xamarin.Forms.Element element) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#OnFlyoutItemSelected(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.OnFlyoutItemSelected : Xamarin.Forms.Element -&gt; unit&#xA;override this.Xamarin.Forms.IShellController.OnFlyoutItemSelected : Xamarin.Forms.Element -&gt; unit" Usage="shell.Xamarin.Forms.IShellController.OnFlyoutItemSelected element" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.OnFlyoutItemSelected(Xamarin.Forms.Element)</InterfaceMember>
@@ -2341,6 +2350,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IShellController.OnFlyoutItemSelectedAsync (Xamarin.Forms.Element element);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync(class Xamarin.Forms.Element element) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync : Xamarin.Forms.Element -&gt; System.Threading.Tasks.Task&#xA;override this.Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync : Xamarin.Forms.Element -&gt; System.Threading.Tasks.Task" Usage="shell.Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync element" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.OnFlyoutItemSelectedAsync(Xamarin.Forms.Element)</InterfaceMember>
@@ -2366,6 +2376,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="bool IShellController.ProposeNavigation (Xamarin.Forms.ShellNavigationSource source, Xamarin.Forms.ShellItem shellItem, Xamarin.Forms.ShellSection shellSection, Xamarin.Forms.ShellContent shellContent, System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt; stack, bool canCancel);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellController.ProposeNavigation(valuetype Xamarin.Forms.ShellNavigationSource source, class Xamarin.Forms.ShellItem shellItem, class Xamarin.Forms.ShellSection shellSection, class Xamarin.Forms.ShellContent shellContent, class System.Collections.Generic.IReadOnlyList`1&lt;class Xamarin.Forms.Page&gt; stack, bool canCancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#ProposeNavigation(Xamarin.Forms.ShellNavigationSource,Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Collections.Generic.IReadOnlyList{Xamarin.Forms.Page},System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.ProposeNavigation : Xamarin.Forms.ShellNavigationSource * Xamarin.Forms.ShellItem * Xamarin.Forms.ShellSection * Xamarin.Forms.ShellContent * System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt; * bool -&gt; bool&#xA;override this.Xamarin.Forms.IShellController.ProposeNavigation : Xamarin.Forms.ShellNavigationSource * Xamarin.Forms.ShellItem * Xamarin.Forms.ShellSection * Xamarin.Forms.ShellContent * System.Collections.Generic.IReadOnlyList&lt;Xamarin.Forms.Page&gt; * bool -&gt; bool" Usage="shell.Xamarin.Forms.IShellController.ProposeNavigation (source, shellItem, shellSection, shellContent, stack, canCancel)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.ProposeNavigation(Xamarin.Forms.ShellNavigationSource,Xamarin.Forms.ShellItem,Xamarin.Forms.ShellSection,Xamarin.Forms.ShellContent,System.Collections.Generic.IReadOnlyList{Xamarin.Forms.Page},System.Boolean)</InterfaceMember>
@@ -2401,6 +2412,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="bool IShellController.RemoveAppearanceObserver (Xamarin.Forms.IAppearanceObserver observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellController.RemoveAppearanceObserver(class Xamarin.Forms.IAppearanceObserver observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#RemoveAppearanceObserver(Xamarin.Forms.IAppearanceObserver)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.RemoveAppearanceObserver : Xamarin.Forms.IAppearanceObserver -&gt; bool&#xA;override this.Xamarin.Forms.IShellController.RemoveAppearanceObserver : Xamarin.Forms.IAppearanceObserver -&gt; bool" Usage="shell.Xamarin.Forms.IShellController.RemoveAppearanceObserver observer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.RemoveAppearanceObserver(Xamarin.Forms.IAppearanceObserver)</InterfaceMember>
@@ -2426,6 +2438,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="bool IShellController.RemoveFlyoutBehaviorObserver (Xamarin.Forms.IFlyoutBehaviorObserver observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver(class Xamarin.Forms.IFlyoutBehaviorObserver observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#RemoveFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver : Xamarin.Forms.IFlyoutBehaviorObserver -&gt; bool&#xA;override this.Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver : Xamarin.Forms.IFlyoutBehaviorObserver -&gt; bool" Usage="shell.Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver observer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.RemoveFlyoutBehaviorObserver(Xamarin.Forms.IFlyoutBehaviorObserver)</InterfaceMember>
@@ -2451,6 +2464,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="event EventHandler Xamarin.Forms.IShellController.StructureChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Xamarin.Forms.IShellController.StructureChanged" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#StructureChanged" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IShellController.StructureChanged : EventHandler " Usage="member this.Xamarin.Forms.IShellController.StructureChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Xamarin.Forms.IShellController.StructureChanged</InterfaceMember>
@@ -2471,6 +2485,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <MemberSignature Language="C#" Value="void IShellController.UpdateCurrentState (Xamarin.Forms.ShellNavigationSource source);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellController.UpdateCurrentState(valuetype Xamarin.Forms.ShellNavigationSource source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#UpdateCurrentState(Xamarin.Forms.ShellNavigationSource)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellController.UpdateCurrentState : Xamarin.Forms.ShellNavigationSource -&gt; unit&#xA;override this.Xamarin.Forms.IShellController.UpdateCurrentState : Xamarin.Forms.ShellNavigationSource -&gt; unit" Usage="shell.Xamarin.Forms.IShellController.UpdateCurrentState source" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellController.UpdateCurrentState(Xamarin.Forms.ShellNavigationSource)</InterfaceMember>
