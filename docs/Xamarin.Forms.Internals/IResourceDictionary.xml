@@ -1,5 +1,5 @@
 <Type Name="IResourceDictionary" FullName="Xamarin.Forms.Internals.IResourceDictionary">
-  <TypeSignature Language="C#" Value="public interface IResourceDictionary : System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.IEnumerable" />
+  <TypeSignature Language="C#" Value="public interface IResourceDictionary : System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResourceDictionary implements class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.IResourceDictionary" />
   <TypeSignature Language="F#" Value="type IResourceDictionary = interface&#xA;    interface seq&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface IEnumerable" />
@@ -30,7 +30,7 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue (string key, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.IResourceDictionary.TryGetValue(System.String,System.Object@)" />
-      <MemberSignature Language="F#" Value="abstract member TryGetValue : string *  -&gt; bool" Usage="iResourceDictionary.TryGetValue (key, value)" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : string * obj -&gt; bool" Usage="iResourceDictionary.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>

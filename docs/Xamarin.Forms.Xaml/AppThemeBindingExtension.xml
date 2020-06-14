@@ -1,0 +1,175 @@
+<Type Name="AppThemeBindingExtension" FullName="Xamarin.Forms.Xaml.AppThemeBindingExtension">
+  <TypeSignature Language="C#" Value="public class AppThemeBindingExtension : Xamarin.Forms.Xaml.IMarkupExtension&lt;Xamarin.Forms.BindingBase&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppThemeBindingExtension extends System.Object implements class Xamarin.Forms.Xaml.IMarkupExtension, class Xamarin.Forms.Xaml.IMarkupExtension`1&lt;class Xamarin.Forms.BindingBase&gt;" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Xaml.AppThemeBindingExtension" />
+  <TypeSignature Language="F#" Value="type AppThemeBindingExtension = class&#xA;    interface IMarkupExtension&lt;BindingBase&gt;&#xA;    interface IMarkupExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.Xaml.IMarkupExtension</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.Xaml.IMarkupExtension&lt;Xamarin.Forms.BindingBase&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.ContentProperty("Default")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AppThemeBindingExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.AppThemeBindingExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dark">
+      <MemberSignature Language="C#" Value="public object Dark { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Dark" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.AppThemeBindingExtension.Dark" />
+      <MemberSignature Language="F#" Value="member this.Dark : obj with get, set" Usage="Xamarin.Forms.Xaml.AppThemeBindingExtension.Dark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public object Default { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Default" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.AppThemeBindingExtension.Default" />
+      <MemberSignature Language="F#" Value="member this.Default : obj with get, set" Usage="Xamarin.Forms.Xaml.AppThemeBindingExtension.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Light">
+      <MemberSignature Language="C#" Value="public object Light { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Light" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.AppThemeBindingExtension.Light" />
+      <MemberSignature Language="F#" Value="member this.Light : obj with get, set" Usage="Xamarin.Forms.Xaml.AppThemeBindingExtension.Light" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideValue">
+      <MemberSignature Language="C#" Value="public object ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.AppThemeBindingExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="F#" Value="abstract member ProvideValue : IServiceProvider -&gt; obj&#xA;override this.ProvideValue : IServiceProvider -&gt; obj" Usage="appThemeBindingExtension.ProvideValue serviceProvider" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Xaml.IMarkupExtension.ProvideValue(System.IServiceProvider)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.AppThemeBindingExtension.Value" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="Xamarin.Forms.Xaml.AppThemeBindingExtension.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xamarin.Forms.Xaml.IMarkupExtension&lt;Xamarin.Forms.BindingBase&gt;.ProvideValue">
+      <MemberSignature Language="C#" Value="Xamarin.Forms.BindingBase IMarkupExtension&lt;BindingBase&gt;.ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Xamarin.Forms.BindingBase Xamarin.Forms.Xaml.IMarkupExtension&lt;Xamarin.Forms.BindingBase&gt;.ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.AppThemeBindingExtension.Xamarin#Forms#Xaml#IMarkupExtension&lt;Xamarin#Forms#BindingBase&gt;#ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.Xaml.IMarkupExtension&lt;Xamarin.Forms.BindingBase&gt;.ProvideValue : IServiceProvider -&gt; Xamarin.Forms.BindingBase&#xA;override this.Xamarin.Forms.Xaml.IMarkupExtension&lt;Xamarin.Forms.BindingBase&gt;.ProvideValue : IServiceProvider -&gt; Xamarin.Forms.BindingBase" Usage="appThemeBindingExtension.Xamarin.Forms.Xaml.IMarkupExtension&lt;Xamarin.Forms.BindingBase&gt;.ProvideValue serviceProvider" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.Xaml.IMarkupExtension`1.ProvideValue(System.IServiceProvider)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindingBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

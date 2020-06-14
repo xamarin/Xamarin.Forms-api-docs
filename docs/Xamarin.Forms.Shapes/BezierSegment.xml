@@ -1,0 +1,169 @@
+<Type Name="BezierSegment" FullName="Xamarin.Forms.Shapes.BezierSegment">
+  <TypeSignature Language="C#" Value="public class BezierSegment : Xamarin.Forms.Shapes.PathSegment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BezierSegment extends Xamarin.Forms.Shapes.PathSegment" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Shapes.BezierSegment" />
+  <TypeSignature Language="F#" Value="type BezierSegment = class&#xA;    inherit PathSegment" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.Shapes.PathSegment</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BezierSegment ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.BezierSegment.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BezierSegment (Xamarin.Forms.Point point1, Xamarin.Forms.Point point2, Xamarin.Forms.Point point3);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.Point point1, valuetype Xamarin.Forms.Point point2, valuetype Xamarin.Forms.Point point3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.BezierSegment.#ctor(Xamarin.Forms.Point,Xamarin.Forms.Point,Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Shapes.BezierSegment : Xamarin.Forms.Point * Xamarin.Forms.Point * Xamarin.Forms.Point -&gt; Xamarin.Forms.Shapes.BezierSegment" Usage="new Xamarin.Forms.Shapes.BezierSegment (point1, point2, point3)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="point1" Type="Xamarin.Forms.Point" />
+        <Parameter Name="point2" Type="Xamarin.Forms.Point" />
+        <Parameter Name="point3" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point1">To be added.</param>
+        <param name="point2">To be added.</param>
+        <param name="point3">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Point1">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Point Point1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Point Point1" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.BezierSegment.Point1" />
+      <MemberSignature Language="F#" Value="member this.Point1 : Xamarin.Forms.Point with get, set" Usage="Xamarin.Forms.Shapes.BezierSegment.Point1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Point1Property">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty Point1Property;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty Point1Property" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shapes.BezierSegment.Point1Property" />
+      <MemberSignature Language="F#" Value=" staticval mutable Point1Property : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shapes.BezierSegment.Point1Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Point2">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Point Point2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Point Point2" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.BezierSegment.Point2" />
+      <MemberSignature Language="F#" Value="member this.Point2 : Xamarin.Forms.Point with get, set" Usage="Xamarin.Forms.Shapes.BezierSegment.Point2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Point2Property">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty Point2Property;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty Point2Property" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shapes.BezierSegment.Point2Property" />
+      <MemberSignature Language="F#" Value=" staticval mutable Point2Property : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shapes.BezierSegment.Point2Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Point3">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Point Point3 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Point Point3" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.BezierSegment.Point3" />
+      <MemberSignature Language="F#" Value="member this.Point3 : Xamarin.Forms.Point with get, set" Usage="Xamarin.Forms.Shapes.BezierSegment.Point3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Point3Property">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty Point3Property;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty Point3Property" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shapes.BezierSegment.Point3Property" />
+      <MemberSignature Language="F#" Value=" staticval mutable Point3Property : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shapes.BezierSegment.Point3Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

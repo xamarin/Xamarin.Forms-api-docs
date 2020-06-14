@@ -477,7 +477,7 @@ Children = {
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
-      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = null);" />
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.OnPropertyChanged(System.String)" />
       <MemberSignature Language="F#" Value="override this.OnPropertyChanged : string -&gt; unit" Usage="multiPage.OnPropertyChanged propertyName" />
@@ -686,6 +686,7 @@ Children = {
       <MemberSignature Language="C#" Value="T IItemsView&lt;T&gt;.CreateDefault (object item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !T Xamarin.Forms.IItemsView&lt;T&gt;.CreateDefault(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.Xamarin#Forms#IItemsView&lt;T&gt;#CreateDefault(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IItemsView&lt;T&gt;.CreateDefault : obj -&gt; 'T&#xA;override this.Xamarin.Forms.IItemsView&lt;T&gt;.CreateDefault : obj -&gt; 'T" Usage="multiPage.Xamarin.Forms.IItemsView&lt;T&gt;.CreateDefault item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
@@ -718,6 +719,7 @@ Children = {
       <MemberSignature Language="C#" Value="void IItemsView&lt;T&gt;.SetupContent (T content, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IItemsView&lt;T&gt;.SetupContent(!T content, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.Xamarin#Forms#IItemsView&lt;T&gt;#SetupContent(`0,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IItemsView&lt;T&gt;.SetupContent : 'T * int -&gt; unit&#xA;override this.Xamarin.Forms.IItemsView&lt;T&gt;.SetupContent : 'T * int -&gt; unit" Usage="multiPage.Xamarin.Forms.IItemsView&lt;T&gt;.SetupContent (content, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
@@ -751,6 +753,7 @@ Children = {
       <MemberSignature Language="C#" Value="void IItemsView&lt;T&gt;.UnhookContent (T content);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IItemsView&lt;T&gt;.UnhookContent(!T content) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MultiPage`1.Xamarin#Forms#IItemsView&lt;T&gt;#UnhookContent(`0)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IItemsView&lt;T&gt;.UnhookContent : 'T -&gt; unit&#xA;override this.Xamarin.Forms.IItemsView&lt;T&gt;.UnhookContent : 'T -&gt; unit" Usage="multiPage.Xamarin.Forms.IItemsView&lt;T&gt;.UnhookContent content" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>

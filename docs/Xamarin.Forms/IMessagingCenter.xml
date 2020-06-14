@@ -85,7 +85,7 @@
       </Docs>
     </Member>
     <Member MemberName="Subscribe&lt;TSender&gt;">
-      <MemberSignature Language="C#" Value="public void Subscribe&lt;TSender&gt; (object subscriber, string message, Action&lt;TSender&gt; callback, TSender source = null) where TSender : class;" />
+      <MemberSignature Language="C#" Value="public void Subscribe&lt;TSender&gt; (object subscriber, string message, Action&lt;TSender&gt; callback, TSender source = default) where TSender : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Subscribe&lt;class TSender&gt;(object subscriber, string message, class System.Action`1&lt;!!TSender&gt; callback, !!TSender source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IMessagingCenter.Subscribe``1(System.Object,System.String,System.Action{``0},``0)" />
       <MemberSignature Language="F#" Value="abstract member Subscribe : obj * string * Action&lt;'Sender (requires 'Sender : null)&gt; * 'Sender -&gt; unit (requires 'Sender : null)" Usage="iMessagingCenter.Subscribe (subscriber, message, callback, source)" />
@@ -122,7 +122,7 @@
       </Docs>
     </Member>
     <Member MemberName="Subscribe&lt;TSender,TArgs&gt;">
-      <MemberSignature Language="C#" Value="public void Subscribe&lt;TSender,TArgs&gt; (object subscriber, string message, Action&lt;TSender,TArgs&gt; callback, TSender source = null) where TSender : class;" />
+      <MemberSignature Language="C#" Value="public void Subscribe&lt;TSender,TArgs&gt; (object subscriber, string message, Action&lt;TSender,TArgs&gt; callback, TSender source = default) where TSender : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Subscribe&lt;class TSender, TArgs&gt;(object subscriber, string message, class System.Action`2&lt;!!TSender, !!TArgs&gt; callback, !!TSender source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IMessagingCenter.Subscribe``2(System.Object,System.String,System.Action{``0,``1},``0)" />
       <MemberSignature Language="F#" Value="abstract member Subscribe : obj * string * Action&lt;'Sender, 'Args (requires 'Sender : null)&gt; * 'Sender -&gt; unit (requires 'Sender : null)" Usage="iMessagingCenter.Subscribe (subscriber, message, callback, source)" />

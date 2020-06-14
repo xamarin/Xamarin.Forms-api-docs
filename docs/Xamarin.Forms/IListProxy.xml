@@ -1,5 +1,5 @@
 <Type Name="IListProxy" FullName="Xamarin.Forms.IListProxy">
-  <TypeSignature Language="C#" Value="public interface IListProxy : System.Collections.ICollection, System.Collections.IEnumerable, System.Collections.IList" />
+  <TypeSignature Language="C#" Value="public interface IListProxy : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IListProxy implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IListProxy" />
   <TypeSignature Language="F#" Value="type IListProxy = interface&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
@@ -67,7 +67,7 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue (int index, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(int32 index, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IListProxy.TryGetValue(System.Int32,System.Object@)" />
-      <MemberSignature Language="F#" Value="abstract member TryGetValue : int *  -&gt; bool" Usage="iListProxy.TryGetValue (index, value)" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : int * obj -&gt; bool" Usage="iListProxy.TryGetValue (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>

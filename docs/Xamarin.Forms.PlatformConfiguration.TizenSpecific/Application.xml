@@ -16,6 +16,70 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="ActiveBezelInteractionElementPropertyKey">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindablePropertyKey ActiveBezelInteractionElementPropertyKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindablePropertyKey ActiveBezelInteractionElementPropertyKey" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.ActiveBezelInteractionElementPropertyKey" />
+      <MemberSignature Language="F#" Value=" staticval mutable ActiveBezelInteractionElementPropertyKey : Xamarin.Forms.BindablePropertyKey" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.ActiveBezelInteractionElementPropertyKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindablePropertyKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActiveBezelInteractionElement">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Element GetActiveBezelInteractionElement (Xamarin.Forms.BindableObject application);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.Element GetActiveBezelInteractionElement(class Xamarin.Forms.BindableObject application) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.GetActiveBezelInteractionElement(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetActiveBezelInteractionElement : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Element" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.GetActiveBezelInteractionElement application" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Element</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="application" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="application">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActiveBezelInteractionElement">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Element GetActiveBezelInteractionElement (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Application&gt; config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.Element GetActiveBezelInteractionElement(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Tizen, class Xamarin.Forms.Application&gt; config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.GetActiveBezelInteractionElement(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Application})" />
+      <MemberSignature Language="F#" Value="static member GetActiveBezelInteractionElement : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen, Xamarin.Forms.Application&gt; -&gt; Xamarin.Forms.Element" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.GetActiveBezelInteractionElement config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Element</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Application&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetOverlayContent">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.View GetOverlayContent (Xamarin.Forms.BindableObject application);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.View GetOverlayContent(class Xamarin.Forms.BindableObject application) cil managed" />
@@ -123,6 +187,65 @@
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetActiveBezelInteractionElement">
+      <MemberSignature Language="C#" Value="public static void SetActiveBezelInteractionElement (Xamarin.Forms.BindableObject application, Xamarin.Forms.Element value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetActiveBezelInteractionElement(class Xamarin.Forms.BindableObject application, class Xamarin.Forms.Element value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.SetActiveBezelInteractionElement(Xamarin.Forms.BindableObject,Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="static member SetActiveBezelInteractionElement : Xamarin.Forms.BindableObject * Xamarin.Forms.Element -&gt; unit" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.SetActiveBezelInteractionElement (application, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="application" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="application">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetActiveBezelInteractionElement">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Application&gt; SetActiveBezelInteractionElement (this Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Application&gt; config, Xamarin.Forms.Element value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Tizen, class Xamarin.Forms.Application&gt; SetActiveBezelInteractionElement(class Xamarin.Forms.IPlatformElementConfiguration`2&lt;class Xamarin.Forms.PlatformConfiguration.Tizen, class Xamarin.Forms.Application&gt; config, class Xamarin.Forms.Element value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.SetActiveBezelInteractionElement(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Application},Xamarin.Forms.Element)" />
+      <MemberSignature Language="F#" Value="static member SetActiveBezelInteractionElement : Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen, Xamarin.Forms.Application&gt; * Xamarin.Forms.Element -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen, Xamarin.Forms.Application&gt;" Usage="Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.SetActiveBezelInteractionElement (config, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Application&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Xamarin.Forms.IPlatformElementConfiguration&lt;Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Application&gt;" RefType="this" />
+        <Parameter Name="value" Type="Xamarin.Forms.Element" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

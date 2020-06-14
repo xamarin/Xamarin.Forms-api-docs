@@ -58,6 +58,44 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetHingeAngleAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; GetHingeAngleAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; GetHingeAngleAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DualScreen.DualScreenInfo.GetHingeAngleAsync" />
+      <MemberSignature Language="F#" Value="member this.GetHingeAngleAsync : unit -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="dualScreenInfo.GetHingeAngleAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HingeAngleChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.DualScreen.HingeAngleChangedEventArgs&gt; HingeAngleChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.DualScreen.HingeAngleChangedEventArgs&gt; HingeAngleChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.DualScreen.DualScreenInfo.HingeAngleChanged" />
+      <MemberSignature Language="F#" Value="member this.HingeAngleChanged : EventHandler&lt;Xamarin.Forms.DualScreen.HingeAngleChangedEventArgs&gt; " Usage="member this.HingeAngleChanged : System.EventHandler&lt;Xamarin.Forms.DualScreen.HingeAngleChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.DualScreen</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.DualScreen.HingeAngleChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HingeBounds">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Rectangle HingeBounds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Rectangle HingeBounds" />

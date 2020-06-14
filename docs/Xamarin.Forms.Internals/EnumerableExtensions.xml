@@ -52,7 +52,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetChildGesturesFor&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetChildGesturesFor&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.GestureElement&gt; elements, Func&lt;T,bool&gt; predicate = null) where T : Xamarin.Forms.GestureRecognizer;" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetChildGesturesFor&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.GestureElement&gt; elements, Func&lt;T,bool&gt; predicate = default) where T : Xamarin.Forms.GestureRecognizer;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetChildGesturesFor&lt;(class Xamarin.Forms.GestureRecognizer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Xamarin.Forms.GestureElement&gt; elements, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.EnumerableExtensions.GetChildGesturesFor``1(System.Collections.Generic.IEnumerable{Xamarin.Forms.GestureElement},System.Func{``0,System.Boolean})" />
       <MemberSignature Language="F#" Value="static member GetChildGesturesFor : seq&lt;Xamarin.Forms.GestureElement&gt; * Func&lt;'T, bool (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; -&gt; seq&lt;'T (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)" Usage="Xamarin.Forms.Internals.EnumerableExtensions.GetChildGesturesFor (elements, predicate)" />
@@ -91,7 +91,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetGesturesFor&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetGesturesFor&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.IGestureRecognizer&gt; gestures, Func&lt;T,bool&gt; predicate = null) where T : Xamarin.Forms.GestureRecognizer;" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetGesturesFor&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;Xamarin.Forms.IGestureRecognizer&gt; gestures, Func&lt;T,bool&gt; predicate = default) where T : Xamarin.Forms.GestureRecognizer;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetGesturesFor&lt;(class Xamarin.Forms.GestureRecognizer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Xamarin.Forms.IGestureRecognizer&gt; gestures, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.EnumerableExtensions.GetGesturesFor``1(System.Collections.Generic.IEnumerable{Xamarin.Forms.IGestureRecognizer},System.Func{``0,System.Boolean})" />
       <MemberSignature Language="F#" Value="static member GetGesturesFor : seq&lt;Xamarin.Forms.IGestureRecognizer&gt; * Func&lt;'T, bool (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; -&gt; seq&lt;'T (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)&gt; (requires 'T :&gt; Xamarin.Forms.GestureRecognizer)" Usage="Xamarin.Forms.Internals.EnumerableExtensions.GetGesturesFor (gestures, predicate)" />

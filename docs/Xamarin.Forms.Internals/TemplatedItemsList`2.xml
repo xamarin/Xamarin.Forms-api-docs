@@ -1,5 +1,5 @@
 <Type Name="TemplatedItemsList&lt;TView,TItem&gt;" FullName="Xamarin.Forms.Internals.TemplatedItemsList&lt;TView,TItem&gt;">
-  <TypeSignature Language="C#" Value="public sealed class TemplatedItemsList&lt;TView,TItem&gt; : Xamarin.Forms.BindableObject, IDisposable, System.Collections.ICollection, System.Collections.IList, System.Collections.Specialized.INotifyCollectionChanged, Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt; where TView : BindableObject, IItemsView&lt;TItem&gt; where TItem : BindableObject" />
+  <TypeSignature Language="C#" Value="public sealed class TemplatedItemsList&lt;TView,TItem&gt; : Xamarin.Forms.BindableObject, IDisposable, System.Collections.Generic.IEnumerable&lt;TItem&gt;, System.Collections.Generic.IReadOnlyCollection&lt;TItem&gt;, System.Collections.Generic.IReadOnlyList&lt;TItem&gt;, System.Collections.IList, System.Collections.Specialized.INotifyCollectionChanged, Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt; where TView : BindableObject, IItemsView&lt;TItem&gt; where TItem : BindableObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TemplatedItemsList`2&lt;(class Xamarin.Forms.BindableObject, class Xamarin.Forms.IItemsView`1&lt;!TItem&gt;) TView, (class Xamarin.Forms.BindableObject) TItem&gt; extends Xamarin.Forms.BindableObject implements class System.Collections.Generic.IEnumerable`1&lt;!TItem&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!TItem&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!TItem&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Collections.Specialized.INotifyCollectionChanged, class System.IDisposable, class Xamarin.Forms.ITemplatedItemsList`1&lt;!TItem&gt;" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.TemplatedItemsList`2" />
   <TypeSignature Language="F#" Value="type TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; BindableObject and 'View :&gt; IItemsView&lt;'Item&gt; and 'Item :&gt; BindableObject)&gt; = class&#xA;    inherit BindableObject&#xA;    interface ITemplatedItemsList&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IReadOnlyList&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface seq&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyCollection&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface INotifyCollectionChanged&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IDisposable" />
@@ -26,7 +26,13 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;TItem&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;TItem&gt;</InterfaceName>
@@ -122,6 +128,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.Count" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.Count" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -170,6 +179,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.Dispose" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="templatedItemsList.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -211,6 +223,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.GetEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Item (requires 'Item :&gt; Xamarin.Forms.BindableObject)&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Item (requires 'Item :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="templatedItemsList.GetEnumerator " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -336,7 +351,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetGroupAndIndexOfItem">
-      <MemberSignature Language="C#" Value="public Tuple&lt;int,int&gt; GetGroupAndIndexOfItem (object item);" />
+      <MemberSignature Language="C#" Value="public (int,int) GetGroupAndIndexOfItem (object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Tuple`2&lt;int32, int32&gt; GetGroupAndIndexOfItem(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.GetGroupAndIndexOfItem(System.Object)" />
       <MemberSignature Language="F#" Value="abstract member GetGroupAndIndexOfItem : obj -&gt; int * int&#xA;override this.GetGroupAndIndexOfItem : obj -&gt; int * int" Usage="templatedItemsList.GetGroupAndIndexOfItem item" />
@@ -363,7 +378,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetGroupAndIndexOfItem">
-      <MemberSignature Language="C#" Value="public Tuple&lt;int,int&gt; GetGroupAndIndexOfItem (object group, object item);" />
+      <MemberSignature Language="C#" Value="public (int,int) GetGroupAndIndexOfItem (object group, object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Tuple`2&lt;int32, int32&gt; GetGroupAndIndexOfItem(object group, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.GetGroupAndIndexOfItem(System.Object,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member GetGroupAndIndexOfItem : obj * obj -&gt; int * int&#xA;override this.GetGroupAndIndexOfItem : obj * obj -&gt; int * int" Usage="templatedItemsList.GetGroupAndIndexOfItem (group, item)" />
@@ -395,7 +410,7 @@
       <MemberSignature Language="C#" Value="public int GetGroupIndexFromGlobal (int globalIndex, out int leftOver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetGroupIndexFromGlobal(int32 globalIndex, [out] int32&amp; leftOver) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.GetGroupIndexFromGlobal(System.Int32,System.Int32@)" />
-      <MemberSignature Language="F#" Value="abstract member GetGroupIndexFromGlobal : int *  -&gt; int&#xA;override this.GetGroupIndexFromGlobal : int *  -&gt; int" Usage="templatedItemsList.GetGroupIndexFromGlobal (globalIndex, leftOver)" />
+      <MemberSignature Language="F#" Value="abstract member GetGroupIndexFromGlobal : int * int -&gt; int&#xA;override this.GetGroupIndexFromGlobal : int * int -&gt; int" Usage="templatedItemsList.GetGroupIndexFromGlobal (globalIndex, leftOver)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupIndexFromGlobal(System.Int32,System.Int32@)</InterfaceMember>
@@ -614,6 +629,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.Item(System.Int32)" />
       <MemberSignature Language="F#" Value="member this.Item(int) : 'Item" Usage="Xamarin.Forms.Internals.TemplatedItemsList&lt;'View, 'Item (requires 'View :&gt; Xamarin.Forms.BindableObject and 'View :&gt; Xamarin.Forms.IItemsView&lt;'Item&gt; and 'Item :&gt; Xamarin.Forms.BindableObject)&gt;.Item" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -835,7 +853,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.ICollection.CopyTo : Array * int -&gt; unit&#xA;override this.System.Collections.ICollection.CopyTo : Array * int -&gt; unit" Usage="templatedItemsList.System.Collections.ICollection.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -859,8 +881,11 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#ICollection#IsSynchronized" />
-      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.IsSynchronized : bool" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -879,8 +904,11 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#ICollection#SyncRoot" />
-      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.SyncRoot : obj" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -899,7 +927,11 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="templatedItemsList.System.Collections.IEnumerable.GetEnumerator " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -919,7 +951,11 @@
       <MemberSignature Language="C#" Value="int IList.Add (object item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IList.Add : obj -&gt; int&#xA;override this.System.Collections.IList.Add : obj -&gt; int" Usage="templatedItemsList.System.Collections.IList.Add item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -942,7 +978,11 @@
       <MemberSignature Language="C#" Value="void IList.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#Clear" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IList.Clear : unit -&gt; unit&#xA;override this.System.Collections.IList.Clear : unit -&gt; unit" Usage="templatedItemsList.System.Collections.IList.Clear " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -961,7 +1001,11 @@
       <MemberSignature Language="C#" Value="bool IList.Contains (object item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IList.Contains : obj -&gt; bool&#xA;override this.System.Collections.IList.Contains : obj -&gt; bool" Usage="templatedItemsList.System.Collections.IList.Contains item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -984,7 +1028,11 @@
       <MemberSignature Language="C#" Value="int IList.IndexOf (object item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IList.IndexOf : obj -&gt; int&#xA;override this.System.Collections.IList.IndexOf : obj -&gt; int" Usage="templatedItemsList.System.Collections.IList.IndexOf item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1007,7 +1055,11 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IList.Insert : int * obj -&gt; unit&#xA;override this.System.Collections.IList.Insert : int * obj -&gt; unit" Usage="templatedItemsList.System.Collections.IList.Insert (index, item)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1031,8 +1083,11 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#IsFixedSize" />
-      <MemberSignature Language="F#" Usage="System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IList.IsFixedSize : bool" Usage="System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1051,8 +1106,11 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#IsReadOnly" />
-      <MemberSignature Language="F#" Usage="System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IList.IsReadOnly : bool" Usage="System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1071,8 +1129,11 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#Item(System.Int32)" />
-      <MemberSignature Language="F#" Usage="System.Collections.IList.Item" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IList.Item(int) : obj with get, set" Usage="System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1095,7 +1156,11 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IList.Remove : obj -&gt; unit&#xA;override this.System.Collections.IList.Remove : obj -&gt; unit" Usage="templatedItemsList.System.Collections.IList.Remove item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1117,7 +1182,11 @@
       <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IList.RemoveAt : int -&gt; unit&#xA;override this.System.Collections.IList.RemoveAt : int -&gt; unit" Usage="templatedItemsList.System.Collections.IList.RemoveAt index" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1139,7 +1208,7 @@
       <MemberSignature Language="C#" Value="object Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.BindingContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.BindingContext" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#BindingContext" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.BindingContext" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.BindingContext : obj" Usage="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.BindingContext" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.BindingContext</InterfaceMember>
@@ -1162,6 +1231,7 @@
       <MemberSignature Language="C#" Value="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt; ITemplatedItemsList&lt;TItem&gt;.GetGroup (int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Xamarin.Forms.ITemplatedItemsList`1&lt;!TItem&gt; Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GetGroup(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#GetGroup(System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GetGroup : int -&gt; Xamarin.Forms.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Xamarin.Forms.BindableObject)&gt;&#xA;override this.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GetGroup : int -&gt; Xamarin.Forms.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="templatedItemsList.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GetGroup index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.GetGroup(System.Int32)</InterfaceMember>
@@ -1188,6 +1258,7 @@
       <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GroupedCollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GroupedCollectionChanged" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#GroupedCollectionChanged" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GroupedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.GroupedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Xamarin.Forms.ITemplatedItemsList`1.GroupedCollectionChanged</InterfaceMember>
@@ -1208,7 +1279,7 @@
       <MemberSignature Language="C#" Value="Xamarin.Forms.IListProxy Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IListProxy Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#ListProxy" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy : Xamarin.Forms.IListProxy" Usage="Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.ListProxy" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsList`1.ListProxy</InterfaceMember>
@@ -1231,6 +1302,7 @@
       <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#PropertyChanged" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Xamarin.Forms.ITemplatedItemsList`1.PropertyChanged</InterfaceMember>
@@ -1251,6 +1323,7 @@
       <MemberSignature Language="C#" Value="TItem ITemplatedItemsList&lt;TItem&gt;.UpdateContent (TItem content, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !TItem Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateContent(!TItem content, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#UpdateContent(`1,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateContent : 'Item * int -&gt; 'Item&#xA;override this.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateContent : 'Item * int -&gt; 'Item" Usage="templatedItemsList.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateContent (content, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.UpdateContent(`0,System.Int32)</InterfaceMember>
@@ -1279,6 +1352,7 @@
       <MemberSignature Language="C#" Value="TItem ITemplatedItemsList&lt;TItem&gt;.UpdateHeader (TItem content, int groupIndex);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !TItem Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateHeader(!TItem content, int32 groupIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TemplatedItemsList`2.Xamarin#Forms#ITemplatedItemsList&lt;TItem&gt;#UpdateHeader(`1,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateHeader : 'Item * int -&gt; 'Item&#xA;override this.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateHeader : 'Item * int -&gt; 'Item" Usage="templatedItemsList.Xamarin.Forms.ITemplatedItemsList&lt;TItem&gt;.UpdateHeader (content, groupIndex)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.ITemplatedItemsList`1.UpdateHeader(`0,System.Int32)</InterfaceMember>

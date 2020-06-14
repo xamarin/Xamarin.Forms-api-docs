@@ -1231,7 +1231,7 @@ ListView CreateListView()
       </Docs>
     </Member>
     <Member MemberName="NotifyRowTapped">
-      <MemberSignature Language="C#" Value="public void NotifyRowTapped (int index, Xamarin.Forms.Cell cell = null);" />
+      <MemberSignature Language="C#" Value="public void NotifyRowTapped (int index, Xamarin.Forms.Cell cell = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyRowTapped(int32 index, class Xamarin.Forms.Cell cell) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell)" />
       <MemberSignature Language="F#" Value="abstract member NotifyRowTapped : int * Xamarin.Forms.Cell -&gt; unit&#xA;override this.NotifyRowTapped : int * Xamarin.Forms.Cell -&gt; unit" Usage="listView.NotifyRowTapped (index, cell)" />
@@ -1264,7 +1264,7 @@ ListView CreateListView()
       </Docs>
     </Member>
     <Member MemberName="NotifyRowTapped">
-      <MemberSignature Language="C#" Value="public void NotifyRowTapped (int groupIndex, int inGroupIndex, Xamarin.Forms.Cell cell = null);" />
+      <MemberSignature Language="C#" Value="public void NotifyRowTapped (int groupIndex, int inGroupIndex, Xamarin.Forms.Cell cell = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyRowTapped(int32 groupIndex, int32 inGroupIndex, class Xamarin.Forms.Cell cell) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ListView.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell)" />
       <MemberSignature Language="F#" Value="abstract member NotifyRowTapped : int * int * Xamarin.Forms.Cell -&gt; unit&#xA;override this.NotifyRowTapped : int * int * Xamarin.Forms.Cell -&gt; unit" Usage="listView.NotifyRowTapped (groupIndex, inGroupIndex, cell)" />

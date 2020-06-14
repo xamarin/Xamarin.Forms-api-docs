@@ -1,0 +1,80 @@
+<Type Name="VisualElementExtensions" FullName="Xamarin.Forms.VisualElementExtensions">
+  <TypeSignature Language="C#" Value="public static class VisualElementExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VisualElementExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.VisualElementExtensions" />
+  <TypeSignature Language="F#" Value="type VisualElementExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetAppThemeColor">
+      <MemberSignature Language="C#" Value="public static void SetAppThemeColor (this Xamarin.Forms.VisualElement self, Xamarin.Forms.BindableProperty targetProperty, Xamarin.Forms.Color light, Xamarin.Forms.Color dark);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAppThemeColor(class Xamarin.Forms.VisualElement self, class Xamarin.Forms.BindableProperty targetProperty, valuetype Xamarin.Forms.Color light, valuetype Xamarin.Forms.Color dark) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElementExtensions.SetAppThemeColor(Xamarin.Forms.VisualElement,Xamarin.Forms.BindableProperty,Xamarin.Forms.Color,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetAppThemeColor : Xamarin.Forms.VisualElement * Xamarin.Forms.BindableProperty * Xamarin.Forms.Color * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.VisualElementExtensions.SetAppThemeColor (self, targetProperty, light, dark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="self" Type="Xamarin.Forms.VisualElement" RefType="this" />
+        <Parameter Name="targetProperty" Type="Xamarin.Forms.BindableProperty" />
+        <Parameter Name="light" Type="Xamarin.Forms.Color" />
+        <Parameter Name="dark" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="self">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <param name="light">To be added.</param>
+        <param name="dark">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOnAppTheme&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void SetOnAppTheme&lt;T&gt; (this Xamarin.Forms.VisualElement self, Xamarin.Forms.BindableProperty targetProperty, T light, T dark);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetOnAppTheme&lt;T&gt;(class Xamarin.Forms.VisualElement self, class Xamarin.Forms.BindableProperty targetProperty, !!T light, !!T dark) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElementExtensions.SetOnAppTheme``1(Xamarin.Forms.VisualElement,Xamarin.Forms.BindableProperty,``0,``0)" />
+      <MemberSignature Language="F#" Value="static member SetOnAppTheme : Xamarin.Forms.VisualElement * Xamarin.Forms.BindableProperty * 'T * 'T -&gt; unit" Usage="Xamarin.Forms.VisualElementExtensions.SetOnAppTheme (self, targetProperty, light, dark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="self" Type="Xamarin.Forms.VisualElement" RefType="this" />
+        <Parameter Name="targetProperty" Type="Xamarin.Forms.BindableProperty" />
+        <Parameter Name="light" Type="T" />
+        <Parameter Name="dark" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="self">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <param name="light">To be added.</param>
+        <param name="dark">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

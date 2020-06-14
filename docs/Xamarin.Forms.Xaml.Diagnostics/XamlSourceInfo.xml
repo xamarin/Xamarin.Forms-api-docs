@@ -10,6 +10,9 @@
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Xaml</AssemblyName>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="Xamarin.Forms.Xaml" FromVersion="2.0.0.0" To="Xamarin.Forms.Core" ToVersion="2.0.0.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -49,7 +52,7 @@
       <MemberSignature Language="C#" Value="public void Deconstruct (out Uri sourceUri, out int lineNumber, out int linePosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] class System.Uri&amp; sourceUri, [out] int32&amp; lineNumber, [out] int32&amp; linePosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.Diagnostics.XamlSourceInfo.Deconstruct(System.Uri@,System.Int32@,System.Int32@)" />
-      <MemberSignature Language="F#" Value="member this.Deconstruct :  *  *  -&gt; unit" Usage="xamlSourceInfo.Deconstruct (sourceUri, lineNumber, linePosition)" />
+      <MemberSignature Language="F#" Value="member this.Deconstruct : Uri * int * int -&gt; unit" Usage="xamlSourceInfo.Deconstruct (sourceUri, lineNumber, linePosition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>

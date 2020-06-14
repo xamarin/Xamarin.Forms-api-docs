@@ -95,6 +95,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.DeviceInfo.Dispose" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="deviceInfo.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -133,7 +136,7 @@
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
-      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (string propertyName = null);" />
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (string propertyName = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.DeviceInfo.OnPropertyChanged(System.String)" />
       <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : string -&gt; unit&#xA;override this.OnPropertyChanged : string -&gt; unit" Usage="deviceInfo.OnPropertyChanged propertyName" />

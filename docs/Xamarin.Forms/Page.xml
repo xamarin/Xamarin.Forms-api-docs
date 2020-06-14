@@ -464,7 +464,7 @@
       </Docs>
     </Member>
     <Member MemberName="DisplayPromptAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; DisplayPromptAsync (string title, string message, string accept = &quot;OK&quot;, string cancel = &quot;Cancel&quot;, string placeholder = null, int maxLength = -1, Xamarin.Forms.Keyboard keyboard = null, string initialValue = &quot;&quot;);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; DisplayPromptAsync (string title, string message, string accept = &quot;OK&quot;, string cancel = &quot;Cancel&quot;, string placeholder = default, int maxLength = -1, Xamarin.Forms.Keyboard keyboard = default, string initialValue = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; DisplayPromptAsync(string title, string message, string accept, string cancel, string placeholder, int32 maxLength, class Xamarin.Forms.Keyboard keyboard, string initialValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Page.DisplayPromptAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,Xamarin.Forms.Keyboard,System.String)" />
       <MemberSignature Language="F#" Value="member this.DisplayPromptAsync : string * string * string * string * string * int * Xamarin.Forms.Keyboard * string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="page.DisplayPromptAsync (title, message, accept, cancel, placeholder, maxLength, keyboard, initialValue)" />
@@ -992,28 +992,6 @@
       <Parameters />
       <Docs>
         <summary>Called when the <see cref="T:Xamarin.Forms.Page" />'s <see cref="P:Xamarin.Forms.Element.Parent" /> property has changed.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnRequestedThemeChanged">
-      <MemberSignature Language="C#" Value="protected override void OnRequestedThemeChanged (Xamarin.Forms.OSAppTheme newValue);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRequestedThemeChanged(valuetype Xamarin.Forms.OSAppTheme newValue) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Page.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)" />
-      <MemberSignature Language="F#" Value="override this.OnRequestedThemeChanged : Xamarin.Forms.OSAppTheme -&gt; unit" Usage="page.OnRequestedThemeChanged newValue" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="newValue" Type="Xamarin.Forms.OSAppTheme" />
-      </Parameters>
-      <Docs>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
