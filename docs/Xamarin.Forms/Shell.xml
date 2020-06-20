@@ -81,7 +81,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This property sets the Background Color of the <see cref="Xamarin.Forms.Shell" /> control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,7 +273,7 @@
         <ReturnType>Xamarin.Forms.Aspect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This property set the Aspect of the image set as background to the Flyout. For more info about the values see <see cref="P:Xamarin.Forms.Aspect" /> </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,7 +292,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutBackgroundImageAspect" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +310,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutBackgroundImageProperty" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,9 +550,9 @@
         <ReturnType>Xamarin.Forms.ScrollMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This property defines the Scroll mode of the <see cref="P:Xamarin.Forms.Shell.Flyout" /> field.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For more info about the values please see <see cref="P:Xamarin.Forms.ScrollMode"/> enum.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlyoutVerticalScrollModeProperty">
@@ -569,7 +569,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.FlyoutVerticalScrollMode" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,7 +587,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.ForegroundColor" /> field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -608,9 +608,9 @@
         <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
+        <param name="obj">The Bindable Object that implements the custom Back Button Behavior.</param>
         <summary>Gets the value of the <see cref="M:Xamarin.Forms.Shell.BackButtonBehaviorProperty" /> of the <paramref name="obj" />.</summary>
-        <returns>To be added.</returns>
+        <returns>Return the <see cref="P:Xamarin.Forms.BackButtonBehavior" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,9 +631,9 @@
         <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The Bindable Object that has the value of the Background Color.</param>
+        <summary>Gets the value of the <see cref="P:Xamarin.Forms.Shell.BackgroundColor" /> of the <paramref name="obj" />.</summary>
+        <returns>The <see cref="P:Xamarin.Forms.Color" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -654,9 +654,9 @@
         <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The Bindable Object that has the value of the Disabled Color.</param>
+        <summary>This property defines the color to shade text and icons that are disabled.</summary>
+        <returns>The <see cref="P:Xamarin.Forms.Color" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
