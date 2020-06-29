@@ -15,7 +15,7 @@
   </Docs>
   <Members>
     <Member MemberName="GetStreamAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetStreamAsync (System.Threading.CancellationToken userToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetStreamAsync (System.Threading.CancellationToken userToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetStreamAsync(valuetype System.Threading.CancellationToken userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IStreamImageSource.GetStreamAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetStreamAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="iStreamImageSource.GetStreamAsync userToken" />

@@ -82,7 +82,7 @@
       </Docs>
     </Member>
     <Member MemberName="Start">
-      <MemberSignature Language="C#" Value="public static void Start (string reference, string tag = null, string path = null, string member = null);" />
+      <MemberSignature Language="C#" Value="public static void Start (string reference, string tag = default, string path = default, string member = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Start(string reference, string tag, string path, string member) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Performance.Start(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="F#" Value="static member Start : string * string * string * string -&gt; unit" Usage="Xamarin.Forms.Internals.Performance.Start (reference, tag, path, member)" />
@@ -123,10 +123,10 @@
       </Docs>
     </Member>
     <Member MemberName="Start">
-      <MemberSignature Language="C#" Value="public static void Start (out string reference, string tag = null, string path = null, string member = null);" />
+      <MemberSignature Language="C#" Value="public static void Start (out string reference, string tag = default, string path = default, string member = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Start([out] string&amp; reference, string tag, string path, string member) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Performance.Start(System.String@,System.String,System.String,System.String)" />
-      <MemberSignature Language="F#" Value="static member Start :  * string * string * string -&gt; unit" Usage="Xamarin.Forms.Internals.Performance.Start (reference, tag, path, member)" />
+      <MemberSignature Language="F#" Value="static member Start : string * string * string * string -&gt; unit" Usage="Xamarin.Forms.Internals.Performance.Start (reference, tag, path, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -163,7 +163,7 @@
       </Docs>
     </Member>
     <Member MemberName="Stop">
-      <MemberSignature Language="C#" Value="public static void Stop (string reference, string tag = null, string path = null, string member = null);" />
+      <MemberSignature Language="C#" Value="public static void Stop (string reference, string tag = default, string path = default, string member = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Stop(string reference, string tag, string path, string member) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Performance.Stop(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="F#" Value="static member Stop : string * string * string * string -&gt; unit" Usage="Xamarin.Forms.Internals.Performance.Stop (reference, tag, path, member)" />

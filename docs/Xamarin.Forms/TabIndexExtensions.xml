@@ -20,7 +20,7 @@
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.ITabStopElement FindNextElement (this Xamarin.Forms.ITabStopElement element, bool forwardDirection, System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; tabIndexes, ref int tabIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ITabStopElement FindNextElement(class Xamarin.Forms.ITabStopElement element, bool forwardDirection, class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; tabIndexes, int32&amp; tabIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.FindNextElement(Xamarin.Forms.ITabStopElement,System.Boolean,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.List{Xamarin.Forms.ITabStopElement}},System.Int32@)" />
-      <MemberSignature Language="F#" Value="static member FindNextElement : Xamarin.Forms.ITabStopElement * bool * System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; *  -&gt; Xamarin.Forms.ITabStopElement" Usage="Xamarin.Forms.TabIndexExtensions.FindNextElement (element, forwardDirection, tabIndexes, tabIndex)" />
+      <MemberSignature Language="F#" Value="static member FindNextElement : Xamarin.Forms.ITabStopElement * bool * System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; * int -&gt; Xamarin.Forms.ITabStopElement" Usage="Xamarin.Forms.TabIndexExtensions.FindNextElement (element, forwardDirection, tabIndexes, tabIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -72,7 +72,7 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;int,System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt; GetTabIndexesOnParentPage (this Xamarin.Forms.ITabStopElement element, out int countChildrenWithTabStopWithoutThis);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;int32, class System.Collections.Generic.List`1&lt;class Xamarin.Forms.ITabStopElement&gt;&gt; GetTabIndexesOnParentPage(class Xamarin.Forms.ITabStopElement element, [out] int32&amp; countChildrenWithTabStopWithoutThis) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage(Xamarin.Forms.ITabStopElement,System.Int32@)" />
-      <MemberSignature Language="F#" Value="static member GetTabIndexesOnParentPage : Xamarin.Forms.ITabStopElement *  -&gt; System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage (element, countChildrenWithTabStopWithoutThis)" />
+      <MemberSignature Language="F#" Value="static member GetTabIndexesOnParentPage : Xamarin.Forms.ITabStopElement * int -&gt; System.Collections.Generic.IDictionary&lt;int, System.Collections.Generic.List&lt;Xamarin.Forms.ITabStopElement&gt;&gt;" Usage="Xamarin.Forms.TabIndexExtensions.GetTabIndexesOnParentPage (element, countChildrenWithTabStopWithoutThis)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>

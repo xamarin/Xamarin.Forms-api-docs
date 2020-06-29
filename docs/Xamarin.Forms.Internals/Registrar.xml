@@ -156,10 +156,10 @@
       </Docs>
     </Member>
     <Member MemberName="RegisterStylesheets">
-      <MemberSignature Language="C#" Value="public static void RegisterStylesheets ();" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterStylesheets() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar.RegisterStylesheets" />
-      <MemberSignature Language="F#" Value="static member RegisterStylesheets : unit -&gt; unit" Usage="Xamarin.Forms.Internals.Registrar.RegisterStylesheets " />
+      <MemberSignature Language="C#" Value="public static void RegisterStylesheets (Xamarin.Forms.InitializationFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterStylesheets(valuetype Xamarin.Forms.InitializationFlags flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.Registrar.RegisterStylesheets(Xamarin.Forms.InitializationFlags)" />
+      <MemberSignature Language="F#" Value="static member RegisterStylesheets : Xamarin.Forms.InitializationFlags -&gt; unit" Usage="Xamarin.Forms.Internals.Registrar.RegisterStylesheets flags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -168,9 +168,12 @@
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="flags" Type="Xamarin.Forms.InitializationFlags" />
+      </Parameters>
       <Docs>
-        <summary>For internal use by the Xamarin.Forms platform.</summary>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

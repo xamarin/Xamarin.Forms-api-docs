@@ -95,7 +95,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetBinding&lt;TNativeView&gt;">
-      <MemberSignature Language="C#" Value="public static void SetBinding&lt;TNativeView&gt; (TNativeView target, string targetProperty, Xamarin.Forms.BindingBase bindingBase, string updateSourceEventName = null) where TNativeView : class;" />
+      <MemberSignature Language="C#" Value="public static void SetBinding&lt;TNativeView&gt; (TNativeView target, string targetProperty, Xamarin.Forms.BindingBase bindingBase, string updateSourceEventName = default) where TNativeView : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBinding&lt;class TNativeView&gt;(!!TNativeView target, string targetProperty, class Xamarin.Forms.BindingBase bindingBase, string updateSourceEventName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NativeBindingHelpers.SetBinding``1(``0,System.String,Xamarin.Forms.BindingBase,System.String)" />
       <MemberSignature Language="F#" Value="static member SetBinding : 'NativeView * string * Xamarin.Forms.BindingBase * string -&gt; unit (requires 'NativeView : null)" Usage="Xamarin.Forms.Internals.NativeBindingHelpers.SetBinding (target, targetProperty, bindingBase, updateSourceEventName)" />
@@ -132,7 +132,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetBindingContext&lt;TNativeView&gt;">
-      <MemberSignature Language="C#" Value="public static void SetBindingContext&lt;TNativeView&gt; (TNativeView target, object bindingContext, Func&lt;TNativeView,System.Collections.Generic.IEnumerable&lt;TNativeView&gt;&gt; getChild = null) where TNativeView : class;" />
+      <MemberSignature Language="C#" Value="public static void SetBindingContext&lt;TNativeView&gt; (TNativeView target, object bindingContext, Func&lt;TNativeView,System.Collections.Generic.IEnumerable&lt;TNativeView&gt;&gt; getChild = default) where TNativeView : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBindingContext&lt;class TNativeView&gt;(!!TNativeView target, object bindingContext, class System.Func`2&lt;!!TNativeView, class System.Collections.Generic.IEnumerable`1&lt;!!TNativeView&gt;&gt; getChild) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.NativeBindingHelpers.SetBindingContext``1(``0,System.Object,System.Func{``0,System.Collections.Generic.IEnumerable{``0}})" />
       <MemberSignature Language="F#" Value="static member SetBindingContext : 'NativeView * obj * Func&lt;'NativeView, seq&lt;'NativeView&gt; (requires 'NativeView : null)&gt; -&gt; unit (requires 'NativeView : null)" Usage="Xamarin.Forms.Internals.NativeBindingHelpers.SetBindingContext (target, bindingContext, getChild)" />

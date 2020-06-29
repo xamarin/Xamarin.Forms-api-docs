@@ -20,7 +20,11 @@
       <MemberSignature Language="C#" Value="public static TBindable Assign&lt;TBindable,TVariable&gt; (this TBindable bindable, out TVariable variable) where TBindable : Xamarin.Forms.BindableObject, TVariable;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Assign&lt;(class Xamarin.Forms.BindableObject, !!TVariable) TBindable, TVariable&gt;(!!TBindable bindable, [out] !!TVariable&amp; variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Assign``2(``0,``1@)" />
+<<<<<<< HEAD
       <MemberSignature Language="F#" Value="static member Assign : 'Bindable *  -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject and 'Bindable :&gt; 'Variable)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Assign (bindable, variable)" />
+=======
+      <MemberSignature Language="F#" Value="static member Assign : 'Bindable * 'Variable -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject and 'Bindable :&gt; 'Variable)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Assign (bindable, variable)" />
+>>>>>>> master
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -53,7 +57,11 @@
       </Docs>
     </Member>
     <Member MemberName="Bind&lt;TBindable&gt;">
+<<<<<<< HEAD
       <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable&gt; (this TBindable bindable, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+=======
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable&gt; (this TBindable bindable, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = default, object converterParameter = default, string stringFormat = default, object source = default, object targetNullValue = default, object fallbackValue = default) where TBindable : Xamarin.Forms.BindableObject;" />
+>>>>>>> master
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable&gt;(!!TBindable bindable, string path, valuetype Xamarin.Forms.BindingMode mode, class Xamarin.Forms.IValueConverter converter, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``1(``0,System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="F#" Value="static member Bind : 'Bindable * string * Xamarin.Forms.BindingMode * Xamarin.Forms.IValueConverter * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, path, mode, converter, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
@@ -100,7 +108,11 @@
       </Docs>
     </Member>
     <Member MemberName="Bind&lt;TBindable&gt;">
+<<<<<<< HEAD
       <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable&gt; (this TBindable bindable, Xamarin.Forms.BindableProperty targetProperty, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+=======
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable&gt; (this TBindable bindable, Xamarin.Forms.BindableProperty targetProperty, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = default, object converterParameter = default, string stringFormat = default, object source = default, object targetNullValue = default, object fallbackValue = default) where TBindable : Xamarin.Forms.BindableObject;" />
+>>>>>>> master
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable&gt;(!!TBindable bindable, class Xamarin.Forms.BindableProperty targetProperty, string path, valuetype Xamarin.Forms.BindingMode mode, class Xamarin.Forms.IValueConverter converter, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``1(``0,Xamarin.Forms.BindableProperty,System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="F#" Value="static member Bind : 'Bindable * Xamarin.Forms.BindableProperty * string * Xamarin.Forms.BindingMode * Xamarin.Forms.IValueConverter * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, targetProperty, path, mode, converter, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
@@ -149,7 +161,11 @@
       </Docs>
     </Member>
     <Member MemberName="Bind&lt;TBindable,TSource,TDest&gt;">
+<<<<<<< HEAD
       <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TDest&gt; (this TBindable bindable, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TDest&gt; convert = null, Func&lt;TDest,TSource&gt; convertBack = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+=======
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TDest&gt; (this TBindable bindable, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TDest&gt; convert = default, Func&lt;TDest,TSource&gt; convertBack = default, object converterParameter = default, string stringFormat = default, object source = default, object targetNullValue = default, object fallbackValue = default) where TBindable : Xamarin.Forms.BindableObject;" />
+>>>>>>> master
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable, TSource, TDest&gt;(!!TBindable bindable, string path, valuetype Xamarin.Forms.BindingMode mode, class System.Func`2&lt;!!TSource, !!TDest&gt; convert, class System.Func`2&lt;!!TDest, !!TSource&gt; convertBack, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``3(``0,System.String,Xamarin.Forms.BindingMode,System.Func{``1,``2},System.Func{``2,``1},System.Object,System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="F#" Value="static member Bind : 'Bindable * string * Xamarin.Forms.BindingMode * Func&lt;'Source, 'Dest&gt; * Func&lt;'Dest, 'Source&gt; * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, path, mode, convert, convertBack, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
@@ -202,7 +218,11 @@
       </Docs>
     </Member>
     <Member MemberName="Bind&lt;TBindable,TSource,TDest&gt;">
+<<<<<<< HEAD
       <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TDest&gt; (this TBindable bindable, Xamarin.Forms.BindableProperty targetProperty, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TDest&gt; convert = null, Func&lt;TDest,TSource&gt; convertBack = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+=======
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TDest&gt; (this TBindable bindable, Xamarin.Forms.BindableProperty targetProperty, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TDest&gt; convert = default, Func&lt;TDest,TSource&gt; convertBack = default, object converterParameter = default, string stringFormat = default, object source = default, object targetNullValue = default, object fallbackValue = default) where TBindable : Xamarin.Forms.BindableObject;" />
+>>>>>>> master
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable, TSource, TDest&gt;(!!TBindable bindable, class Xamarin.Forms.BindableProperty targetProperty, string path, valuetype Xamarin.Forms.BindingMode mode, class System.Func`2&lt;!!TSource, !!TDest&gt; convert, class System.Func`2&lt;!!TDest, !!TSource&gt; convertBack, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``3(``0,Xamarin.Forms.BindableProperty,System.String,Xamarin.Forms.BindingMode,System.Func{``1,``2},System.Func{``2,``1},System.Object,System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="F#" Value="static member Bind : 'Bindable * Xamarin.Forms.BindableProperty * string * Xamarin.Forms.BindingMode * Func&lt;'Source, 'Dest&gt; * Func&lt;'Dest, 'Source&gt; * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, targetProperty, path, mode, convert, convertBack, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
@@ -257,7 +277,11 @@
       </Docs>
     </Member>
     <Member MemberName="Bind&lt;TBindable,TSource,TParam,TDest&gt;">
+<<<<<<< HEAD
       <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TParam,TDest&gt; (this TBindable bindable, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TParam,TDest&gt; convert = null, Func&lt;TDest,TParam,TSource&gt; convertBack = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+=======
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TParam,TDest&gt; (this TBindable bindable, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TParam,TDest&gt; convert = default, Func&lt;TDest,TParam,TSource&gt; convertBack = default, object converterParameter = default, string stringFormat = default, object source = default, object targetNullValue = default, object fallbackValue = default) where TBindable : Xamarin.Forms.BindableObject;" />
+>>>>>>> master
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable, TSource, TParam, TDest&gt;(!!TBindable bindable, string path, valuetype Xamarin.Forms.BindingMode mode, class System.Func`3&lt;!!TSource, !!TParam, !!TDest&gt; convert, class System.Func`3&lt;!!TDest, !!TParam, !!TSource&gt; convertBack, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``4(``0,System.String,Xamarin.Forms.BindingMode,System.Func{``1,``2,``3},System.Func{``3,``2,``1},System.Object,System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="F#" Value="static member Bind : 'Bindable * string * Xamarin.Forms.BindingMode * Func&lt;'Source, 'Param, 'Dest&gt; * Func&lt;'Dest, 'Param, 'Source&gt; * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, path, mode, convert, convertBack, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
@@ -312,7 +336,11 @@
       </Docs>
     </Member>
     <Member MemberName="Bind&lt;TBindable,TSource,TParam,TDest&gt;">
+<<<<<<< HEAD
       <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TParam,TDest&gt; (this TBindable bindable, Xamarin.Forms.BindableProperty targetProperty, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TParam,TDest&gt; convert = null, Func&lt;TDest,TParam,TSource&gt; convertBack = null, object converterParameter = null, string stringFormat = null, object source = null, object targetNullValue = null, object fallbackValue = null) where TBindable : Xamarin.Forms.BindableObject;" />
+=======
+      <MemberSignature Language="C#" Value="public static TBindable Bind&lt;TBindable,TSource,TParam,TDest&gt; (this TBindable bindable, Xamarin.Forms.BindableProperty targetProperty, string path = &quot;.&quot;, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Func&lt;TSource,TParam,TDest&gt; convert = default, Func&lt;TDest,TParam,TSource&gt; convertBack = default, object converterParameter = default, string stringFormat = default, object source = default, object targetNullValue = default, object fallbackValue = default) where TBindable : Xamarin.Forms.BindableObject;" />
+>>>>>>> master
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable Bind&lt;(class Xamarin.Forms.BindableObject) TBindable, TSource, TParam, TDest&gt;(!!TBindable bindable, class Xamarin.Forms.BindableProperty targetProperty, string path, valuetype Xamarin.Forms.BindingMode mode, class System.Func`3&lt;!!TSource, !!TParam, !!TDest&gt; convert, class System.Func`3&lt;!!TDest, !!TParam, !!TSource&gt; convertBack, object converterParameter, string stringFormat, object source, object targetNullValue, object fallbackValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.Bind``4(``0,Xamarin.Forms.BindableProperty,System.String,Xamarin.Forms.BindingMode,System.Func{``1,``2,``3},System.Func{``3,``2,``1},System.Object,System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="F#" Value="static member Bind : 'Bindable * Xamarin.Forms.BindableProperty * string * Xamarin.Forms.BindingMode * Func&lt;'Source, 'Param, 'Dest&gt; * Func&lt;'Dest, 'Param, 'Source&gt; * obj * string * obj * obj * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.Bind (bindable, targetProperty, path, mode, convert, convertBack, converterParameter, stringFormat, source, targetNullValue, fallbackValue)" />
@@ -369,7 +397,11 @@
       </Docs>
     </Member>
     <Member MemberName="BindCommand&lt;TBindable&gt;">
+<<<<<<< HEAD
       <MemberSignature Language="C#" Value="public static TBindable BindCommand&lt;TBindable&gt; (this TBindable bindable, string path = &quot;.&quot;, object source = null, string parameterPath = &quot;.&quot;, object parameterSource = null) where TBindable : Xamarin.Forms.BindableObject;" />
+=======
+      <MemberSignature Language="C#" Value="public static TBindable BindCommand&lt;TBindable&gt; (this TBindable bindable, string path = &quot;.&quot;, object source = default, string parameterPath = &quot;.&quot;, object parameterSource = default) where TBindable : Xamarin.Forms.BindableObject;" />
+>>>>>>> master
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TBindable BindCommand&lt;(class Xamarin.Forms.BindableObject) TBindable&gt;(!!TBindable bindable, string path, object source, string parameterPath, object parameterSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.BindableObjectExtensions.BindCommand``1(``0,System.String,System.Object,System.String,System.Object)" />
       <MemberSignature Language="F#" Value="static member BindCommand : 'Bindable * string * obj * string * obj -&gt; 'Bindable (requires 'Bindable :&gt; Xamarin.Forms.BindableObject)" Usage="Xamarin.Forms.Markup.BindableObjectExtensions.BindCommand (bindable, path, source, parameterPath, parameterSource)" />

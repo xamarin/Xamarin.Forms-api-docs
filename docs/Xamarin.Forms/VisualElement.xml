@@ -15,8 +15,7 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Xamarin.Forms.Element</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="xamarin-forms">Xamarin.Forms.NavigableElement</BaseTypeName>
+    <BaseTypeName>Xamarin.Forms.NavigableElement</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -423,6 +422,48 @@
       </ReturnValue>
       <Docs>
         <summary>Occurs when the Children of a VisualElement have been re-ordered.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clip">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Shapes.Geometry Clip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Shapes.Geometry Clip" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.Clip" />
+      <MemberSignature Language="F#" Value="member this.Clip : Xamarin.Forms.Shapes.Geometry with get, set" Usage="Xamarin.Forms.VisualElement.Clip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.Shapes.PathGeometryConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shapes.Geometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClipProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty ClipProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty ClipProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.VisualElement.ClipProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClipProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.VisualElement.ClipProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2653,7 +2694,7 @@
       <MemberSignature Language="C#" Value="Xamarin.Forms.EffectiveFlowDirection Xamarin.Forms.IVisualElementController.EffectiveFlowDirection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.EffectiveFlowDirection Xamarin.Forms.IVisualElementController.EffectiveFlowDirection" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.VisualElement.Xamarin#Forms#IVisualElementController#EffectiveFlowDirection" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.IVisualElementController.EffectiveFlowDirection" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IVisualElementController.EffectiveFlowDirection : Xamarin.Forms.EffectiveFlowDirection" Usage="Xamarin.Forms.IVisualElementController.EffectiveFlowDirection" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IVisualElementController.EffectiveFlowDirection</InterfaceMember>
@@ -2676,6 +2717,7 @@
       <MemberSignature Language="C#" Value="void IVisualElementController.InvalidateMeasure (Xamarin.Forms.Internals.InvalidationTrigger trigger);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IVisualElementController.InvalidateMeasure(valuetype Xamarin.Forms.Internals.InvalidationTrigger trigger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.Xamarin#Forms#IVisualElementController#InvalidateMeasure(Xamarin.Forms.Internals.InvalidationTrigger)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IVisualElementController.InvalidateMeasure : Xamarin.Forms.Internals.InvalidationTrigger -&gt; unit&#xA;override this.Xamarin.Forms.IVisualElementController.InvalidateMeasure : Xamarin.Forms.Internals.InvalidationTrigger -&gt; unit" Usage="visualElement.Xamarin.Forms.IVisualElementController.InvalidateMeasure trigger" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IVisualElementController.InvalidateMeasure(Xamarin.Forms.Internals.InvalidationTrigger)</InterfaceMember>

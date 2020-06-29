@@ -1,0 +1,119 @@
+<Type Name="PathGeometry" FullName="Xamarin.Forms.Shapes.PathGeometry">
+  <TypeSignature Language="C#" Value="public sealed class PathGeometry : Xamarin.Forms.Shapes.Geometry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PathGeometry extends Xamarin.Forms.Shapes.Geometry" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Shapes.PathGeometry" />
+  <TypeSignature Language="F#" Value="type PathGeometry = class&#xA;    inherit Geometry" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.Shapes.Geometry</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.ContentProperty("Figures")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PathGeometry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.PathGeometry.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Figures">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Shapes.PathFigureCollection Figures { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Shapes.PathFigureCollection Figures" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.PathGeometry.Figures" />
+      <MemberSignature Language="F#" Value="member this.Figures : Xamarin.Forms.Shapes.PathFigureCollection with get, set" Usage="Xamarin.Forms.Shapes.PathGeometry.Figures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.Shapes.PathFigureCollectionConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shapes.PathFigureCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FiguresProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FiguresProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FiguresProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shapes.PathGeometry.FiguresProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FiguresProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shapes.PathGeometry.FiguresProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillRule">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.FillRule FillRule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.FillRule FillRule" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.PathGeometry.FillRule" />
+      <MemberSignature Language="F#" Value="member this.FillRule : Xamarin.Forms.FillRule with get, set" Usage="Xamarin.Forms.Shapes.PathGeometry.FillRule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.FillRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillRuleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FillRuleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FillRuleProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shapes.PathGeometry.FillRuleProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FillRuleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shapes.PathGeometry.FillRuleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

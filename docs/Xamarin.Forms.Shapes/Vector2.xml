@@ -1,0 +1,470 @@
+<Type Name="Vector2" FullName="Xamarin.Forms.Shapes.Vector2">
+  <TypeSignature Language="C#" Value="public struct Vector2" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Vector2 extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Shapes.Vector2" />
+  <TypeSignature Language="F#" Value="type Vector2 = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector2 (double angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.#ctor(System.Double)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Shapes.Vector2 : double -&gt; Xamarin.Forms.Shapes.Vector2" Usage="new Xamarin.Forms.Shapes.Vector2 angle" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="angle" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="angle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector2 (Xamarin.Forms.Point p);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.Point p) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.#ctor(Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Shapes.Vector2 : Xamarin.Forms.Point -&gt; Xamarin.Forms.Shapes.Vector2" Usage="new Xamarin.Forms.Shapes.Vector2 p" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="p" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="p">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector2 (double x, double y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 x, float64 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.#ctor(System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Shapes.Vector2 : double * double -&gt; Xamarin.Forms.Shapes.Vector2" Usage="new Xamarin.Forms.Shapes.Vector2 (x, y)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AngleBetween">
+      <MemberSignature Language="C#" Value="public static double AngleBetween (Xamarin.Forms.Shapes.Vector2 v1, Xamarin.Forms.Shapes.Vector2 v2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 AngleBetween(valuetype Xamarin.Forms.Shapes.Vector2 v1, valuetype Xamarin.Forms.Shapes.Vector2 v2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.AngleBetween(Xamarin.Forms.Shapes.Vector2,Xamarin.Forms.Shapes.Vector2)" />
+      <MemberSignature Language="F#" Value="static member AngleBetween : Xamarin.Forms.Shapes.Vector2 * Xamarin.Forms.Shapes.Vector2 -&gt; double" Usage="Xamarin.Forms.Shapes.Vector2.AngleBetween (v1, v2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v1" Type="Xamarin.Forms.Shapes.Vector2" />
+        <Parameter Name="v2" Type="Xamarin.Forms.Shapes.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="v1">To be added.</param>
+        <param name="v2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public double Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Length" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.Vector2.Length" />
+      <MemberSignature Language="F#" Value="member this.Length : double" Usage="Xamarin.Forms.Shapes.Vector2.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LengthSquared">
+      <MemberSignature Language="C#" Value="public double LengthSquared { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LengthSquared" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.Vector2.LengthSquared" />
+      <MemberSignature Language="F#" Value="member this.LengthSquared : double" Usage="Xamarin.Forms.Shapes.Vector2.LengthSquared" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Normalized">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Shapes.Vector2 Normalized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Shapes.Vector2 Normalized" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.Vector2.Normalized" />
+      <MemberSignature Language="F#" Value="member this.Normalized : Xamarin.Forms.Shapes.Vector2" Usage="Xamarin.Forms.Shapes.Vector2.Normalized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shapes.Vector2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Point operator + (Xamarin.Forms.Point p, Xamarin.Forms.Shapes.Vector2 v);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Point op_Addition(valuetype Xamarin.Forms.Point p, valuetype Xamarin.Forms.Shapes.Vector2 v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.op_Addition(Xamarin.Forms.Point,Xamarin.Forms.Shapes.Vector2)" />
+      <MemberSignature Language="F#" Value="static member ( + ) : Xamarin.Forms.Point * Xamarin.Forms.Shapes.Vector2 -&gt; Xamarin.Forms.Point" Usage="p + v" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p" Type="Xamarin.Forms.Point" />
+        <Parameter Name="v" Type="Xamarin.Forms.Shapes.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="p">To be added.</param>
+        <param name="v">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Point operator + (Xamarin.Forms.Shapes.Vector2 v, Xamarin.Forms.Point p);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Point op_Addition(valuetype Xamarin.Forms.Shapes.Vector2 v, valuetype Xamarin.Forms.Point p) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.op_Addition(Xamarin.Forms.Shapes.Vector2,Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="static member ( + ) : Xamarin.Forms.Shapes.Vector2 * Xamarin.Forms.Point -&gt; Xamarin.Forms.Point" Usage="v + p" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v" Type="Xamarin.Forms.Shapes.Vector2" />
+        <Parameter Name="p" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="v">To be added.</param>
+        <param name="p">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shapes.Vector2 operator + (Xamarin.Forms.Shapes.Vector2 v1, Xamarin.Forms.Shapes.Vector2 v2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Shapes.Vector2 op_Addition(valuetype Xamarin.Forms.Shapes.Vector2 v1, valuetype Xamarin.Forms.Shapes.Vector2 v2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.op_Addition(Xamarin.Forms.Shapes.Vector2,Xamarin.Forms.Shapes.Vector2)" />
+      <MemberSignature Language="F#" Value="static member ( + ) : Xamarin.Forms.Shapes.Vector2 * Xamarin.Forms.Shapes.Vector2 -&gt; Xamarin.Forms.Shapes.Vector2" Usage="v1 + v2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shapes.Vector2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v1" Type="Xamarin.Forms.Shapes.Vector2" />
+        <Parameter Name="v2" Type="Xamarin.Forms.Shapes.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="v1">To be added.</param>
+        <param name="v2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Division">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shapes.Vector2 operator / (Xamarin.Forms.Shapes.Vector2 v, double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Shapes.Vector2 op_Division(valuetype Xamarin.Forms.Shapes.Vector2 v, float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.op_Division(Xamarin.Forms.Shapes.Vector2,System.Double)" />
+      <MemberSignature Language="F#" Value="static member ( / ) : Xamarin.Forms.Shapes.Vector2 * double -&gt; Xamarin.Forms.Shapes.Vector2" Usage="v / d" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shapes.Vector2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v" Type="Xamarin.Forms.Shapes.Vector2" />
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="v">To be added.</param>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static explicit operator Xamarin.Forms.Point (Xamarin.Forms.Shapes.Vector2 v);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Point op_Explicit(valuetype Xamarin.Forms.Shapes.Vector2 v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.op_Explicit(Xamarin.Forms.Shapes.Vector2)~Xamarin.Forms.Point" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : Xamarin.Forms.Shapes.Vector2 -&gt; Xamarin.Forms.Point" Usage="Xamarin.Forms.Shapes.Vector2.op_Explicit v" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v" Type="Xamarin.Forms.Shapes.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="v">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shapes.Vector2 operator * (double d, Xamarin.Forms.Shapes.Vector2 v);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Shapes.Vector2 op_Multiply(float64 d, valuetype Xamarin.Forms.Shapes.Vector2 v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.op_Multiply(System.Double,Xamarin.Forms.Shapes.Vector2)" />
+      <MemberSignature Language="F#" Value="static member ( * ) : double * Xamarin.Forms.Shapes.Vector2 -&gt; Xamarin.Forms.Shapes.Vector2" Usage="d * v" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shapes.Vector2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Double" />
+        <Parameter Name="v" Type="Xamarin.Forms.Shapes.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="d">To be added.</param>
+        <param name="v">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shapes.Vector2 operator * (Xamarin.Forms.Shapes.Vector2 v, double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Shapes.Vector2 op_Multiply(valuetype Xamarin.Forms.Shapes.Vector2 v, float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.op_Multiply(Xamarin.Forms.Shapes.Vector2,System.Double)" />
+      <MemberSignature Language="F#" Value="static member ( * ) : Xamarin.Forms.Shapes.Vector2 * double -&gt; Xamarin.Forms.Shapes.Vector2" Usage="v * d" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shapes.Vector2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v" Type="Xamarin.Forms.Shapes.Vector2" />
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="v">To be added.</param>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Point operator - (Xamarin.Forms.Point p, Xamarin.Forms.Shapes.Vector2 v);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Point op_Subtraction(valuetype Xamarin.Forms.Point p, valuetype Xamarin.Forms.Shapes.Vector2 v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.op_Subtraction(Xamarin.Forms.Point,Xamarin.Forms.Shapes.Vector2)" />
+      <MemberSignature Language="F#" Value="static member ( - ) : Xamarin.Forms.Point * Xamarin.Forms.Shapes.Vector2 -&gt; Xamarin.Forms.Point" Usage="p - v" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p" Type="Xamarin.Forms.Point" />
+        <Parameter Name="v" Type="Xamarin.Forms.Shapes.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="p">To be added.</param>
+        <param name="v">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shapes.Vector2 operator - (Xamarin.Forms.Shapes.Vector2 v1, Xamarin.Forms.Shapes.Vector2 v2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Shapes.Vector2 op_Subtraction(valuetype Xamarin.Forms.Shapes.Vector2 v1, valuetype Xamarin.Forms.Shapes.Vector2 v2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.op_Subtraction(Xamarin.Forms.Shapes.Vector2,Xamarin.Forms.Shapes.Vector2)" />
+      <MemberSignature Language="F#" Value="static member ( - ) : Xamarin.Forms.Shapes.Vector2 * Xamarin.Forms.Shapes.Vector2 -&gt; Xamarin.Forms.Shapes.Vector2" Usage="v1 - v2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shapes.Vector2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v1" Type="Xamarin.Forms.Shapes.Vector2" />
+        <Parameter Name="v2" Type="Xamarin.Forms.Shapes.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="v1">To be added.</param>
+        <param name="v2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_UnaryNegation">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shapes.Vector2 operator - (Xamarin.Forms.Shapes.Vector2 v);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Shapes.Vector2 op_UnaryNegation(valuetype Xamarin.Forms.Shapes.Vector2 v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.op_UnaryNegation(Xamarin.Forms.Shapes.Vector2)" />
+      <MemberSignature Language="F#" Value="static member ( ~- ) : Xamarin.Forms.Shapes.Vector2 -&gt; Xamarin.Forms.Shapes.Vector2" Usage="- v" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shapes.Vector2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v" Type="Xamarin.Forms.Shapes.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="v">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.Vector2.ToString" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="vector2.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public double X { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 X" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.Vector2.X" />
+      <MemberSignature Language="F#" Value="member this.X : double" Usage="Xamarin.Forms.Shapes.Vector2.X" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public double Y { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Y" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.Vector2.Y" />
+      <MemberSignature Language="F#" Value="member this.Y : double" Usage="Xamarin.Forms.Shapes.Vector2.Y" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,173 @@
+<Type Name="GeometryHelper" FullName="Xamarin.Forms.Shapes.GeometryHelper">
+  <TypeSignature Language="C#" Value="public static class GeometryHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GeometryHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Shapes.GeometryHelper" />
+  <TypeSignature Language="F#" Value="type GeometryHelper = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FlattenArc">
+      <MemberSignature Language="C#" Value="public static void FlattenArc (System.Collections.Generic.List&lt;Xamarin.Forms.Point&gt; points, Xamarin.Forms.Point pt1, Xamarin.Forms.Point pt2, double radiusX, double radiusY, double angleRotation, bool isLargeArc, bool isCounterclockwise, double tolerance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FlattenArc(class System.Collections.Generic.List`1&lt;valuetype Xamarin.Forms.Point&gt; points, valuetype Xamarin.Forms.Point pt1, valuetype Xamarin.Forms.Point pt2, float64 radiusX, float64 radiusY, float64 angleRotation, bool isLargeArc, bool isCounterclockwise, float64 tolerance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.GeometryHelper.FlattenArc(System.Collections.Generic.List{Xamarin.Forms.Point},Xamarin.Forms.Point,Xamarin.Forms.Point,System.Double,System.Double,System.Double,System.Boolean,System.Boolean,System.Double)" />
+      <MemberSignature Language="F#" Value="static member FlattenArc : System.Collections.Generic.List&lt;Xamarin.Forms.Point&gt; * Xamarin.Forms.Point * Xamarin.Forms.Point * double * double * double * bool * bool * double -&gt; unit" Usage="Xamarin.Forms.Shapes.GeometryHelper.FlattenArc (points, pt1, pt2, radiusX, radiusY, angleRotation, isLargeArc, isCounterclockwise, tolerance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Collections.Generic.List&lt;Xamarin.Forms.Point&gt;" />
+        <Parameter Name="pt1" Type="Xamarin.Forms.Point" />
+        <Parameter Name="pt2" Type="Xamarin.Forms.Point" />
+        <Parameter Name="radiusX" Type="System.Double" />
+        <Parameter Name="radiusY" Type="System.Double" />
+        <Parameter Name="angleRotation" Type="System.Double" />
+        <Parameter Name="isLargeArc" Type="System.Boolean" />
+        <Parameter Name="isCounterclockwise" Type="System.Boolean" />
+        <Parameter Name="tolerance" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="points">To be added.</param>
+        <param name="pt1">To be added.</param>
+        <param name="pt2">To be added.</param>
+        <param name="radiusX">To be added.</param>
+        <param name="radiusY">To be added.</param>
+        <param name="angleRotation">To be added.</param>
+        <param name="isLargeArc">To be added.</param>
+        <param name="isCounterclockwise">To be added.</param>
+        <param name="tolerance">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlattenCubicBezier">
+      <MemberSignature Language="C#" Value="public static void FlattenCubicBezier (System.Collections.Generic.List&lt;Xamarin.Forms.Point&gt; points, Xamarin.Forms.Point ptStart, Xamarin.Forms.Point ptCtrl1, Xamarin.Forms.Point ptCtrl2, Xamarin.Forms.Point ptEnd, double tolerance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FlattenCubicBezier(class System.Collections.Generic.List`1&lt;valuetype Xamarin.Forms.Point&gt; points, valuetype Xamarin.Forms.Point ptStart, valuetype Xamarin.Forms.Point ptCtrl1, valuetype Xamarin.Forms.Point ptCtrl2, valuetype Xamarin.Forms.Point ptEnd, float64 tolerance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.GeometryHelper.FlattenCubicBezier(System.Collections.Generic.List{Xamarin.Forms.Point},Xamarin.Forms.Point,Xamarin.Forms.Point,Xamarin.Forms.Point,Xamarin.Forms.Point,System.Double)" />
+      <MemberSignature Language="F#" Value="static member FlattenCubicBezier : System.Collections.Generic.List&lt;Xamarin.Forms.Point&gt; * Xamarin.Forms.Point * Xamarin.Forms.Point * Xamarin.Forms.Point * Xamarin.Forms.Point * double -&gt; unit" Usage="Xamarin.Forms.Shapes.GeometryHelper.FlattenCubicBezier (points, ptStart, ptCtrl1, ptCtrl2, ptEnd, tolerance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Collections.Generic.List&lt;Xamarin.Forms.Point&gt;" />
+        <Parameter Name="ptStart" Type="Xamarin.Forms.Point" />
+        <Parameter Name="ptCtrl1" Type="Xamarin.Forms.Point" />
+        <Parameter Name="ptCtrl2" Type="Xamarin.Forms.Point" />
+        <Parameter Name="ptEnd" Type="Xamarin.Forms.Point" />
+        <Parameter Name="tolerance" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="points">To be added.</param>
+        <param name="ptStart">To be added.</param>
+        <param name="ptCtrl1">To be added.</param>
+        <param name="ptCtrl2">To be added.</param>
+        <param name="ptEnd">To be added.</param>
+        <param name="tolerance">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlattenGeometry">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Shapes.PathGeometry FlattenGeometry (Xamarin.Forms.Shapes.Geometry geoSrc, double tolerance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.Shapes.PathGeometry FlattenGeometry(class Xamarin.Forms.Shapes.Geometry geoSrc, float64 tolerance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.GeometryHelper.FlattenGeometry(Xamarin.Forms.Shapes.Geometry,System.Double)" />
+      <MemberSignature Language="F#" Value="static member FlattenGeometry : Xamarin.Forms.Shapes.Geometry * double -&gt; Xamarin.Forms.Shapes.PathGeometry" Usage="Xamarin.Forms.Shapes.GeometryHelper.FlattenGeometry (geoSrc, tolerance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Shapes.PathGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geoSrc" Type="Xamarin.Forms.Shapes.Geometry" />
+        <Parameter Name="tolerance" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="geoSrc">To be added.</param>
+        <param name="tolerance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlattenGeometry">
+      <MemberSignature Language="C#" Value="public static void FlattenGeometry (Xamarin.Forms.Shapes.PathGeometry pathGeoDst, Xamarin.Forms.Shapes.Geometry geoSrc, double tolerance, Xamarin.Forms.Shapes.Matrix matxPrevious);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FlattenGeometry(class Xamarin.Forms.Shapes.PathGeometry pathGeoDst, class Xamarin.Forms.Shapes.Geometry geoSrc, float64 tolerance, valuetype Xamarin.Forms.Shapes.Matrix matxPrevious) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.GeometryHelper.FlattenGeometry(Xamarin.Forms.Shapes.PathGeometry,Xamarin.Forms.Shapes.Geometry,System.Double,Xamarin.Forms.Shapes.Matrix)" />
+      <MemberSignature Language="F#" Value="static member FlattenGeometry : Xamarin.Forms.Shapes.PathGeometry * Xamarin.Forms.Shapes.Geometry * double * Xamarin.Forms.Shapes.Matrix -&gt; unit" Usage="Xamarin.Forms.Shapes.GeometryHelper.FlattenGeometry (pathGeoDst, geoSrc, tolerance, matxPrevious)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathGeoDst" Type="Xamarin.Forms.Shapes.PathGeometry" />
+        <Parameter Name="geoSrc" Type="Xamarin.Forms.Shapes.Geometry" />
+        <Parameter Name="tolerance" Type="System.Double" />
+        <Parameter Name="matxPrevious" Type="Xamarin.Forms.Shapes.Matrix" />
+      </Parameters>
+      <Docs>
+        <param name="pathGeoDst">To be added.</param>
+        <param name="geoSrc">To be added.</param>
+        <param name="tolerance">To be added.</param>
+        <param name="matxPrevious">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlattenQuadraticBezier">
+      <MemberSignature Language="C#" Value="public static void FlattenQuadraticBezier (System.Collections.Generic.List&lt;Xamarin.Forms.Point&gt; points, Xamarin.Forms.Point ptStart, Xamarin.Forms.Point ptCtrl, Xamarin.Forms.Point ptEnd, double tolerance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FlattenQuadraticBezier(class System.Collections.Generic.List`1&lt;valuetype Xamarin.Forms.Point&gt; points, valuetype Xamarin.Forms.Point ptStart, valuetype Xamarin.Forms.Point ptCtrl, valuetype Xamarin.Forms.Point ptEnd, float64 tolerance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.GeometryHelper.FlattenQuadraticBezier(System.Collections.Generic.List{Xamarin.Forms.Point},Xamarin.Forms.Point,Xamarin.Forms.Point,Xamarin.Forms.Point,System.Double)" />
+      <MemberSignature Language="F#" Value="static member FlattenQuadraticBezier : System.Collections.Generic.List&lt;Xamarin.Forms.Point&gt; * Xamarin.Forms.Point * Xamarin.Forms.Point * Xamarin.Forms.Point * double -&gt; unit" Usage="Xamarin.Forms.Shapes.GeometryHelper.FlattenQuadraticBezier (points, ptStart, ptCtrl, ptEnd, tolerance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Collections.Generic.List&lt;Xamarin.Forms.Point&gt;" />
+        <Parameter Name="ptStart" Type="Xamarin.Forms.Point" />
+        <Parameter Name="ptCtrl" Type="Xamarin.Forms.Point" />
+        <Parameter Name="ptEnd" Type="Xamarin.Forms.Point" />
+        <Parameter Name="tolerance" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="points">To be added.</param>
+        <param name="ptStart">To be added.</param>
+        <param name="ptCtrl">To be added.</param>
+        <param name="ptEnd">To be added.</param>
+        <param name="tolerance">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

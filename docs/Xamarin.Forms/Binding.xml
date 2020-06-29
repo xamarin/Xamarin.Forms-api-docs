@@ -46,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Binding (string path, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = null, object converterParameter = null, string stringFormat = null, object source = null);" />
+      <MemberSignature Language="C#" Value="public Binding (string path, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = default, object converterParameter = default, string stringFormat = default, object source = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype Xamarin.Forms.BindingMode mode, class Xamarin.Forms.IValueConverter converter, object converterParameter, string stringFormat, object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Binding.#ctor(System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String,System.Object)" />
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Binding : string * Xamarin.Forms.BindingMode * Xamarin.Forms.IValueConverter * obj * string * obj -&gt; Xamarin.Forms.Binding" Usage="new Xamarin.Forms.Binding (path, mode, converter, converterParameter, stringFormat, source)" />
@@ -170,7 +170,7 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
       </Docs>
     </Member>
     <Member MemberName="Create&lt;TSource&gt;">
-      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Binding Create&lt;TSource&gt; (System.Linq.Expressions.Expression&lt;Func&lt;TSource,object&gt;&gt; propertyGetter, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = null, object converterParameter = null, string stringFormat = null);" />
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Binding Create&lt;TSource&gt; (System.Linq.Expressions.Expression&lt;Func&lt;TSource,object&gt;&gt; propertyGetter, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = default, object converterParameter = default, string stringFormat = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.Binding Create&lt;TSource&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!!TSource, object&gt;&gt; propertyGetter, valuetype Xamarin.Forms.BindingMode mode, class Xamarin.Forms.IValueConverter converter, object converterParameter, string stringFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Binding.Create``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}},Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String)" />
       <MemberSignature Language="F#" Value="static member Create : System.Linq.Expressions.Expression&lt;Func&lt;'Source, obj&gt;&gt; * Xamarin.Forms.BindingMode * Xamarin.Forms.IValueConverter * obj * string -&gt; Xamarin.Forms.Binding" Usage="Xamarin.Forms.Binding.Create (propertyGetter, mode, converter, converterParameter, stringFormat)" />
@@ -234,6 +234,24 @@ Debug.WriteLine (label.Text); //prints "John Doe".
         ]]></code>
           </example>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoNothing">
+      <MemberSignature Language="C#" Value="public static readonly object DoNothing;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly object DoNothing" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Binding.DoNothing" />
+      <MemberSignature Language="F#" Value=" staticval mutable DoNothing : obj" Usage="Xamarin.Forms.Binding.DoNothing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">

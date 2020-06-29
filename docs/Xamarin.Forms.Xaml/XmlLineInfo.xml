@@ -68,6 +68,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Xaml.XmlLineInfo.HasLineInfo" />
       <MemberSignature Language="F#" Value="abstract member HasLineInfo : unit -&gt; bool&#xA;override this.HasLineInfo : unit -&gt; bool" Usage="xmlLineInfo.HasLineInfo " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.IXmlLineInfo.HasLineInfo</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -90,6 +93,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.XmlLineInfo.LineNumber" />
       <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="Xamarin.Forms.Xaml.XmlLineInfo.LineNumber" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Xml.IXmlLineInfo.LineNumber</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
@@ -111,6 +117,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Xaml.XmlLineInfo.LinePosition" />
       <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="Xamarin.Forms.Xaml.XmlLineInfo.LinePosition" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Xml.IXmlLineInfo.LinePosition</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>

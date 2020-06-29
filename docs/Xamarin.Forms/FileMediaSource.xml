@@ -74,7 +74,7 @@
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
-      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = null);" />
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FileMediaSource.OnPropertyChanged(System.String)" />
       <MemberSignature Language="F#" Value="override this.OnPropertyChanged : string -&gt; unit" Usage="fileMediaSource.OnPropertyChanged propertyName" />
@@ -145,7 +145,7 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FileMediaSource.ToString" />
-      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="fileMediaSource.ToString " />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fileMediaSource.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>

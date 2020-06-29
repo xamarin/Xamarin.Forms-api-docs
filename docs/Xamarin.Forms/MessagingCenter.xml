@@ -172,7 +172,7 @@ Assert.AreEqual(2, subscriber.IntProperty);
       </Docs>
     </Member>
     <Member MemberName="Subscribe&lt;TSender&gt;">
-      <MemberSignature Language="C#" Value="public static void Subscribe&lt;TSender&gt; (object subscriber, string message, Action&lt;TSender&gt; callback, TSender source = null) where TSender : class;" />
+      <MemberSignature Language="C#" Value="public static void Subscribe&lt;TSender&gt; (object subscriber, string message, Action&lt;TSender&gt; callback, TSender source = default) where TSender : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Subscribe&lt;class TSender&gt;(object subscriber, string message, class System.Action`1&lt;!!TSender&gt; callback, !!TSender source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MessagingCenter.Subscribe``1(System.Object,System.String,System.Action{``0},``0)" />
       <MemberSignature Language="F#" Value="static member Subscribe : obj * string * Action&lt;'Sender (requires 'Sender : null)&gt; * 'Sender -&gt; unit (requires 'Sender : null)" Usage="Xamarin.Forms.MessagingCenter.Subscribe (subscriber, message, callback, source)" />
@@ -218,7 +218,7 @@ Assert.AreEqual(2, subscriber.IntProperty);
       </Docs>
     </Member>
     <Member MemberName="Subscribe&lt;TSender,TArgs&gt;">
-      <MemberSignature Language="C#" Value="public static void Subscribe&lt;TSender,TArgs&gt; (object subscriber, string message, Action&lt;TSender,TArgs&gt; callback, TSender source = null) where TSender : class;" />
+      <MemberSignature Language="C#" Value="public static void Subscribe&lt;TSender,TArgs&gt; (object subscriber, string message, Action&lt;TSender,TArgs&gt; callback, TSender source = default) where TSender : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Subscribe&lt;class TSender, TArgs&gt;(object subscriber, string message, class System.Action`2&lt;!!TSender, !!TArgs&gt; callback, !!TSender source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MessagingCenter.Subscribe``2(System.Object,System.String,System.Action{``0,``1},``0)" />
       <MemberSignature Language="F#" Value="static member Subscribe : obj * string * Action&lt;'Sender, 'Args (requires 'Sender : null)&gt; * 'Sender -&gt; unit (requires 'Sender : null)" Usage="Xamarin.Forms.MessagingCenter.Subscribe (subscriber, message, callback, source)" />
@@ -348,6 +348,7 @@ Assert.AreEqual(2, subscriber.IntProperty);
       <MemberSignature Language="C#" Value="void IMessagingCenter.Send&lt;TSender&gt; (TSender sender, string message) where TSender : class;" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMessagingCenter.Send&lt;class TSender&gt;(!!TSender sender, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MessagingCenter.Xamarin#Forms#IMessagingCenter#Send``1(``0,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IMessagingCenter.Send : 'Sender * string -&gt; unit (requires 'Sender : null)&#xA;override this.Xamarin.Forms.IMessagingCenter.Send : 'Sender * string -&gt; unit (requires 'Sender : null)" Usage="messagingCenter.Xamarin.Forms.IMessagingCenter.Send (sender, message)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IMessagingCenter.Send``1(``0,System.String)</InterfaceMember>
@@ -383,6 +384,7 @@ Assert.AreEqual(2, subscriber.IntProperty);
       <MemberSignature Language="C#" Value="void IMessagingCenter.Send&lt;TSender,TArgs&gt; (TSender sender, string message, TArgs args) where TSender : class;" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMessagingCenter.Send&lt;class TSender, TArgs&gt;(!!TSender sender, string message, !!TArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MessagingCenter.Xamarin#Forms#IMessagingCenter#Send``2(``0,System.String,``1)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IMessagingCenter.Send : 'Sender * string * 'Args -&gt; unit (requires 'Sender : null)&#xA;override this.Xamarin.Forms.IMessagingCenter.Send : 'Sender * string * 'Args -&gt; unit (requires 'Sender : null)" Usage="messagingCenter.Xamarin.Forms.IMessagingCenter.Send (sender, message, args)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IMessagingCenter.Send``2(``0,System.String,``1)</InterfaceMember>
@@ -422,6 +424,7 @@ Assert.AreEqual(2, subscriber.IntProperty);
       <MemberSignature Language="C#" Value="void IMessagingCenter.Subscribe&lt;TSender&gt; (object subscriber, string message, Action&lt;TSender&gt; callback, TSender source) where TSender : class;" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMessagingCenter.Subscribe&lt;class TSender&gt;(object subscriber, string message, class System.Action`1&lt;!!TSender&gt; callback, !!TSender source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MessagingCenter.Xamarin#Forms#IMessagingCenter#Subscribe``1(System.Object,System.String,System.Action{``0},``0)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IMessagingCenter.Subscribe : obj * string * Action&lt;'Sender (requires 'Sender : null)&gt; * 'Sender -&gt; unit (requires 'Sender : null)&#xA;override this.Xamarin.Forms.IMessagingCenter.Subscribe : obj * string * Action&lt;'Sender (requires 'Sender : null)&gt; * 'Sender -&gt; unit (requires 'Sender : null)" Usage="messagingCenter.Xamarin.Forms.IMessagingCenter.Subscribe (subscriber, message, callback, source)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IMessagingCenter.Subscribe``1(System.Object,System.String,System.Action{``0},``0)</InterfaceMember>
@@ -461,6 +464,7 @@ Assert.AreEqual(2, subscriber.IntProperty);
       <MemberSignature Language="C#" Value="void IMessagingCenter.Subscribe&lt;TSender,TArgs&gt; (object subscriber, string message, Action&lt;TSender,TArgs&gt; callback, TSender source) where TSender : class;" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMessagingCenter.Subscribe&lt;class TSender, TArgs&gt;(object subscriber, string message, class System.Action`2&lt;!!TSender, !!TArgs&gt; callback, !!TSender source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MessagingCenter.Xamarin#Forms#IMessagingCenter#Subscribe``2(System.Object,System.String,System.Action{``0,``1},``0)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IMessagingCenter.Subscribe : obj * string * Action&lt;'Sender, 'Args (requires 'Sender : null)&gt; * 'Sender -&gt; unit (requires 'Sender : null)&#xA;override this.Xamarin.Forms.IMessagingCenter.Subscribe : obj * string * Action&lt;'Sender, 'Args (requires 'Sender : null)&gt; * 'Sender -&gt; unit (requires 'Sender : null)" Usage="messagingCenter.Xamarin.Forms.IMessagingCenter.Subscribe (subscriber, message, callback, source)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IMessagingCenter.Subscribe``2(System.Object,System.String,System.Action{``0,``1},``0)</InterfaceMember>
@@ -502,6 +506,7 @@ Assert.AreEqual(2, subscriber.IntProperty);
       <MemberSignature Language="C#" Value="void IMessagingCenter.Unsubscribe&lt;TSender&gt; (object subscriber, string message) where TSender : class;" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMessagingCenter.Unsubscribe&lt;class TSender&gt;(object subscriber, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MessagingCenter.Xamarin#Forms#IMessagingCenter#Unsubscribe``1(System.Object,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IMessagingCenter.Unsubscribe : obj * string -&gt; unit (requires 'Sender : null)&#xA;override this.Xamarin.Forms.IMessagingCenter.Unsubscribe : obj * string -&gt; unit (requires 'Sender : null)" Usage="messagingCenter.Xamarin.Forms.IMessagingCenter.Unsubscribe (subscriber, message)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IMessagingCenter.Unsubscribe``1(System.Object,System.String)</InterfaceMember>
@@ -537,6 +542,7 @@ Assert.AreEqual(2, subscriber.IntProperty);
       <MemberSignature Language="C#" Value="void IMessagingCenter.Unsubscribe&lt;TSender,TArgs&gt; (object subscriber, string message) where TSender : class;" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IMessagingCenter.Unsubscribe&lt;class TSender, TArgs&gt;(object subscriber, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.MessagingCenter.Xamarin#Forms#IMessagingCenter#Unsubscribe``2(System.Object,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IMessagingCenter.Unsubscribe : obj * string -&gt; unit (requires 'Sender : null)&#xA;override this.Xamarin.Forms.IMessagingCenter.Unsubscribe : obj * string -&gt; unit (requires 'Sender : null)" Usage="messagingCenter.Xamarin.Forms.IMessagingCenter.Unsubscribe (subscriber, message)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IMessagingCenter.Unsubscribe``2(System.Object,System.String)</InterfaceMember>

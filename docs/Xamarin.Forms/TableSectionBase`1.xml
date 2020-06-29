@@ -1,5 +1,5 @@
 <Type Name="TableSectionBase&lt;T&gt;" FullName="Xamarin.Forms.TableSectionBase&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public abstract class TableSectionBase&lt;T&gt; : Xamarin.Forms.TableSectionBase, System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.IEnumerable, System.Collections.Specialized.INotifyCollectionChanged where T : BindableObject" />
+  <TypeSignature Language="C#" Value="public abstract class TableSectionBase&lt;T&gt; : Xamarin.Forms.TableSectionBase, System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Specialized.INotifyCollectionChanged where T : BindableObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TableSectionBase`1&lt;(class Xamarin.Forms.BindableObject) T&gt; extends Xamarin.Forms.TableSectionBase implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.Collections.Specialized.INotifyCollectionChanged" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.TableSectionBase`1" />
   <TypeSignature Language="F#" Value="type TableSectionBase&lt;'T (requires 'T :&gt; BindableObject)&gt; = class&#xA;    inherit TableSectionBase&#xA;    interface IList&lt;'T (requires 'T :&gt; BindableObject)&gt;&#xA;    interface ICollection&lt;'T (requires 'T :&gt; BindableObject)&gt;&#xA;    interface seq&lt;'T (requires 'T :&gt; BindableObject)&gt;&#xA;    interface IEnumerable&#xA;    interface INotifyCollectionChanged" />
@@ -23,9 +23,6 @@
   </TypeParameters>
   <Base>
     <BaseTypeName>Xamarin.Forms.TableSectionBase</BaseTypeName>
-    <BaseTypeArguments>
-      <BaseTypeArgument TypeParamName="!0">T</BaseTypeArgument>
-    </BaseTypeArguments>
   </Base>
   <Interfaces>
     <Interface>
@@ -152,6 +149,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableSectionBase`1.Add(`0)" />
       <MemberSignature Language="F#" Value="abstract member Add : 'T -&gt; unit&#xA;override this.Add : 'T -&gt; unit" Usage="tableSectionBase.Add item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -181,6 +181,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableSectionBase`1.Clear" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="tableSectionBase.Clear " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -235,6 +238,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableSectionBase`1.Contains(`0)" />
       <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="tableSectionBase.Contains item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -266,6 +272,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableSectionBase`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="tableSectionBase.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -297,6 +306,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TableSectionBase`1.Count" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="Xamarin.Forms.TableSectionBase&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;.Count" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -323,6 +335,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableSectionBase`1.GetEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="tableSectionBase.GetEnumerator " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -350,6 +365,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableSectionBase`1.IndexOf(`0)" />
       <MemberSignature Language="F#" Value="abstract member IndexOf : 'T -&gt; int&#xA;override this.IndexOf : 'T -&gt; int" Usage="tableSectionBase.IndexOf item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -380,6 +398,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableSectionBase`1.Insert(System.Int32,`0)" />
       <MemberSignature Language="F#" Value="abstract member Insert : int * 'T -&gt; unit&#xA;override this.Insert : int * 'T -&gt; unit" Usage="tableSectionBase.Insert (index, item)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -411,6 +432,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TableSectionBase`1.Item(System.Int32)" />
       <MemberSignature Language="F#" Value="member this.Item(int) : 'T with get, set" Usage="Xamarin.Forms.TableSectionBase&lt;'T (requires 'T :&gt; Xamarin.Forms.BindableObject)&gt;.Item" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -467,6 +491,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableSectionBase`1.Remove(`0)" />
       <MemberSignature Language="F#" Value="abstract member Remove : 'T -&gt; bool&#xA;override this.Remove : 'T -&gt; bool" Usage="tableSectionBase.Remove item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -498,6 +525,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableSectionBase`1.RemoveAt(System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="tableSectionBase.RemoveAt index" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -525,8 +555,11 @@
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TableSectionBase`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly : bool" Usage="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -552,7 +585,11 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TableSectionBase`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="tableSectionBase.System.Collections.IEnumerable.GetEnumerator " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>

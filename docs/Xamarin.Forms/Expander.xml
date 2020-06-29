@@ -506,11 +506,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+<<<<<<< HEAD
     <Member MemberName="OnSizeAllocated">
       <MemberSignature Language="C#" Value="protected override void OnSizeAllocated (double width, double height);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSizeAllocated(float64 width, float64 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Expander.OnSizeAllocated(System.Double,System.Double)" />
       <MemberSignature Language="F#" Value="override this.OnSizeAllocated : double * double -&gt; unit" Usage="expander.OnSizeAllocated (width, height)" />
+=======
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Expander.OnPropertyChanged(System.String)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : string -&gt; unit" Usage="expander.OnPropertyChanged propertyName" />
+>>>>>>> master
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -520,16 +528,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
+<<<<<<< HEAD
         <Parameter Name="width" Type="System.Double" />
         <Parameter Name="height" Type="System.Double" />
       </Parameters>
       <Docs>
         <param name="width">To be added.</param>
         <param name="height">To be added.</param>
+=======
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+>>>>>>> master
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+<<<<<<< HEAD
     <Member MemberName="Spacing">
       <MemberSignature Language="C#" Value="public double Spacing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Spacing" />
@@ -555,14 +577,34 @@
       <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Expander.SpacingProperty" />
       <MemberSignature Language="F#" Value=" staticval mutable SpacingProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Expander.SpacingProperty" />
       <MemberType>Field</MemberType>
+=======
+    <Member MemberName="OnSizeAllocated">
+      <MemberSignature Language="C#" Value="protected override void OnSizeAllocated (double width, double height);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSizeAllocated(float64 width, float64 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Expander.OnSizeAllocated(System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="override this.OnSizeAllocated : double * double -&gt; unit" Usage="expander.OnSizeAllocated (width, height)" />
+      <MemberType>Method</MemberType>
+>>>>>>> master
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
+<<<<<<< HEAD
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
+=======
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+>>>>>>> master
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

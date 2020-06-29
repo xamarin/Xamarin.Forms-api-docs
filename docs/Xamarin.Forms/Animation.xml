@@ -50,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Animation (Action&lt;double&gt; callback, double start = 0, double end = 1, Xamarin.Forms.Easing easing = null, Action finished = null);" />
+      <MemberSignature Language="C#" Value="public Animation (Action&lt;double&gt; callback, double start = 0, double end = 1, Xamarin.Forms.Easing easing = default, Action finished = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Action`1&lt;float64&gt; callback, float64 start, float64 end, class Xamarin.Forms.Easing easing, class System.Action finished) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Animation.#ctor(System.Action{System.Double},System.Double,System.Double,Xamarin.Forms.Easing,System.Action)" />
       <MemberSignature Language="F#" Value="new Xamarin.Forms.Animation : Action&lt;double&gt; * double * double * Xamarin.Forms.Easing * Action -&gt; Xamarin.Forms.Animation" Usage="new Xamarin.Forms.Animation (callback, start, end, easing, finished)" />
@@ -117,7 +117,7 @@
       </Docs>
     </Member>
     <Member MemberName="Commit">
-      <MemberSignature Language="C#" Value="public void Commit (Xamarin.Forms.IAnimatable owner, string name, uint rate = 16, uint length = 250, Xamarin.Forms.Easing easing = null, Action&lt;double,bool&gt; finished = null, Func&lt;bool&gt; repeat = null);" />
+      <MemberSignature Language="C#" Value="public void Commit (Xamarin.Forms.IAnimatable owner, string name, uint rate = 16, uint length = 250, Xamarin.Forms.Easing easing = default, Action&lt;double,bool&gt; finished = default, Func&lt;bool&gt; repeat = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Commit(class Xamarin.Forms.IAnimatable owner, string name, unsigned int32 rate, unsigned int32 length, class Xamarin.Forms.Easing easing, class System.Action`2&lt;float64, bool&gt; finished, class System.Func`1&lt;bool&gt; repeat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Animation.Commit(Xamarin.Forms.IAnimatable,System.String,System.UInt32,System.UInt32,Xamarin.Forms.Easing,System.Action{System.Double,System.Boolean},System.Func{System.Boolean})" />
       <MemberSignature Language="F#" Value="member this.Commit : Xamarin.Forms.IAnimatable * string * uint32 * uint32 * Xamarin.Forms.Easing * Action&lt;double, bool&gt; * Func&lt;bool&gt; -&gt; unit" Usage="animation.Commit (owner, name, rate, length, easing, finished, repeat)" />
@@ -190,6 +190,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Animation.GetEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="animation.GetEnumerator " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -299,7 +302,7 @@
       </Docs>
     </Member>
     <Member MemberName="WithConcurrent">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.Animation WithConcurrent (Action&lt;double&gt; callback, double start = 0, double end = 1, Xamarin.Forms.Easing easing = null, double beginAt = 0, double finishAt = 1);" />
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Animation WithConcurrent (Action&lt;double&gt; callback, double start = 0, double end = 1, Xamarin.Forms.Easing easing = default, double beginAt = 0, double finishAt = 1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Xamarin.Forms.Animation WithConcurrent(class System.Action`1&lt;float64&gt; callback, float64 start, float64 end, class Xamarin.Forms.Easing easing, float64 beginAt, float64 finishAt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Animation.WithConcurrent(System.Action{System.Double},System.Double,System.Double,Xamarin.Forms.Easing,System.Double,System.Double)" />
       <MemberSignature Language="F#" Value="member this.WithConcurrent : Action&lt;double&gt; * double * double * Xamarin.Forms.Easing * double * double -&gt; Xamarin.Forms.Animation" Usage="animation.WithConcurrent (callback, start, end, easing, beginAt, finishAt)" />

@@ -88,7 +88,11 @@
       </Docs>
     </Member>
     <Member MemberName="Font&lt;TFontElement&gt;">
+<<<<<<< HEAD
       <MemberSignature Language="C#" Value="public static TFontElement Font&lt;TFontElement&gt; (this TFontElement fontElement, Nullable&lt;double&gt; size = null, Nullable&lt;bool&gt; bold = null, Nullable&lt;bool&gt; italic = null, string family = null) where TFontElement : Xamarin.Forms.Element, Xamarin.Forms.Internals.IFontElement;" />
+=======
+      <MemberSignature Language="C#" Value="public static TFontElement Font&lt;TFontElement&gt; (this TFontElement fontElement, double? size = default, bool? bold = default, bool? italic = default, string family = default) where TFontElement : Xamarin.Forms.Element, Xamarin.Forms.Internals.IFontElement;" />
+>>>>>>> master
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TFontElement Font&lt;(class Xamarin.Forms.Element, class Xamarin.Forms.Internals.IFontElement) TFontElement&gt;(!!TFontElement fontElement, valuetype System.Nullable`1&lt;float64&gt; size, valuetype System.Nullable`1&lt;bool&gt; bold, valuetype System.Nullable`1&lt;bool&gt; italic, string family) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Markup.ElementExtensions.Font``1(``0,System.Nullable{System.Double},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
       <MemberSignature Language="F#" Value="static member Font : 'FontElement * Nullable&lt;double&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; 'FontElement (requires 'FontElement :&gt; Xamarin.Forms.Element and 'FontElement :&gt; Xamarin.Forms.Internals.IFontElement)" Usage="Xamarin.Forms.Markup.ElementExtensions.Font (fontElement, size, bold, italic, family)" />

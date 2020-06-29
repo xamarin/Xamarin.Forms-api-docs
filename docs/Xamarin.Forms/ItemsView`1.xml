@@ -359,6 +359,7 @@ void SetupView()
       <MemberSignature Language="C#" Value="TVisual IItemsView&lt;TVisual&gt;.CreateDefault (object item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !TVisual Xamarin.Forms.IItemsView&lt;TVisual&gt;.CreateDefault(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView`1.Xamarin#Forms#IItemsView&lt;TVisual&gt;#CreateDefault(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IItemsView&lt;TVisual&gt;.CreateDefault : obj -&gt; 'Visual&#xA;override this.Xamarin.Forms.IItemsView&lt;TVisual&gt;.CreateDefault : obj -&gt; 'Visual" Usage="itemsView.Xamarin.Forms.IItemsView&lt;TVisual&gt;.CreateDefault item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
@@ -391,6 +392,7 @@ void SetupView()
       <MemberSignature Language="C#" Value="void IItemsView&lt;TVisual&gt;.SetupContent (TVisual content, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IItemsView&lt;TVisual&gt;.SetupContent(!TVisual content, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView`1.Xamarin#Forms#IItemsView&lt;TVisual&gt;#SetupContent(`0,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IItemsView&lt;TVisual&gt;.SetupContent : 'Visual * int -&gt; unit&#xA;override this.Xamarin.Forms.IItemsView&lt;TVisual&gt;.SetupContent : 'Visual * int -&gt; unit" Usage="itemsView.Xamarin.Forms.IItemsView&lt;TVisual&gt;.SetupContent (content, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
@@ -424,6 +426,7 @@ void SetupView()
       <MemberSignature Language="C#" Value="void IItemsView&lt;TVisual&gt;.UnhookContent (TVisual content);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IItemsView&lt;TVisual&gt;.UnhookContent(!TVisual content) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ItemsView`1.Xamarin#Forms#IItemsView&lt;TVisual&gt;#UnhookContent(`0)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IItemsView&lt;TVisual&gt;.UnhookContent : 'Visual -&gt; unit&#xA;override this.Xamarin.Forms.IItemsView&lt;TVisual&gt;.UnhookContent : 'Visual -&gt; unit" Usage="itemsView.Xamarin.Forms.IItemsView&lt;TVisual&gt;.UnhookContent content" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IItemsView`1.UnhookContent(`0)</InterfaceMember>
@@ -451,7 +454,7 @@ void SetupView()
       <MemberSignature Language="C#" Value="Xamarin.Forms.IListProxy Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.IListProxy Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView`1.Xamarin#Forms#ITemplatedItemsView&lt;TVisual&gt;#ListProxy" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy : Xamarin.Forms.IListProxy" Usage="Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.ListProxy" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsView`1.ListProxy</InterfaceMember>
@@ -474,7 +477,7 @@ void SetupView()
       <MemberSignature Language="C#" Value="Xamarin.Forms.ITemplatedItemsList&lt;TVisual&gt; Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.ITemplatedItemsList`1&lt;!TVisual&gt; Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ItemsView`1.Xamarin#Forms#ITemplatedItemsView&lt;TVisual&gt;#TemplatedItems" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems : Xamarin.Forms.ITemplatedItemsList&lt;'Visual (requires 'Visual :&gt; Xamarin.Forms.BindableObject)&gt;" Usage="Xamarin.Forms.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.ITemplatedItemsView`1.TemplatedItems</InterfaceMember>

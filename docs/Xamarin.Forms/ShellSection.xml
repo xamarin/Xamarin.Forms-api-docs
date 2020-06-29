@@ -393,6 +393,7 @@
       <MemberSignature Language="C#" Value="void IShellSectionController.AddContentInsetObserver (Xamarin.Forms.IShellContentInsetObserver observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.AddContentInsetObserver(class Xamarin.Forms.IShellContentInsetObserver observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#AddContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.AddContentInsetObserver : Xamarin.Forms.IShellContentInsetObserver -&gt; unit&#xA;override this.Xamarin.Forms.IShellSectionController.AddContentInsetObserver : Xamarin.Forms.IShellContentInsetObserver -&gt; unit" Usage="shellSection.Xamarin.Forms.IShellSectionController.AddContentInsetObserver observer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.AddContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)</InterfaceMember>
@@ -417,6 +418,7 @@
       <MemberSignature Language="C#" Value="void IShellSectionController.AddDisplayedPageObserver (object observer, Action&lt;Xamarin.Forms.Page&gt; callback);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver(object observer, class System.Action`1&lt;class Xamarin.Forms.Page&gt; callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#AddDisplayedPageObserver(System.Object,System.Action{Xamarin.Forms.Page})" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver : obj * Action&lt;Xamarin.Forms.Page&gt; -&gt; unit&#xA;override this.Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver : obj * Action&lt;Xamarin.Forms.Page&gt; -&gt; unit" Usage="shellSection.Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver (observer, callback)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.AddDisplayedPageObserver(System.Object,System.Action{Xamarin.Forms.Page})</InterfaceMember>
@@ -443,6 +445,7 @@
       <MemberSignature Language="C#" Value="System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellContent&gt; IShellSectionController.GetItems ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Xamarin.Forms.ShellContent&gt; Xamarin.Forms.IShellSectionController.GetItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#GetItems" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellContent&gt;&#xA;override this.Xamarin.Forms.IShellSectionController.GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Xamarin.Forms.ShellContent&gt;" Usage="shellSection.Xamarin.Forms.IShellSectionController.GetItems " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.GetItems</InterfaceMember>
@@ -465,6 +468,7 @@
       <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellSectionController.ItemsCollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler Xamarin.Forms.IShellSectionController.ItemsCollectionChanged" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#ItemsCollectionChanged" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IShellSectionController.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.Xamarin.Forms.IShellSectionController.ItemsCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Xamarin.Forms.IShellSectionController.ItemsCollectionChanged</InterfaceMember>
@@ -485,6 +489,7 @@
       <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; Xamarin.Forms.IShellSectionController.NavigationRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; Xamarin.Forms.IShellSectionController.NavigationRequested" />
       <MemberSignature Language="DocId" Value="E:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#NavigationRequested" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IShellSectionController.NavigationRequested : EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " Usage="member this.Xamarin.Forms.IShellSectionController.NavigationRequested : System.EventHandler&lt;Xamarin.Forms.Internals.NavigationRequestedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Xamarin.Forms.IShellSectionController.NavigationRequested</InterfaceMember>
@@ -505,7 +510,7 @@
       <MemberSignature Language="C#" Value="Xamarin.Forms.Page Xamarin.Forms.IShellSectionController.PresentedPage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Page Xamarin.Forms.IShellSectionController.PresentedPage" />
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#PresentedPage" />
-      <MemberSignature Language="F#" Usage="Xamarin.Forms.IShellSectionController.PresentedPage" />
+      <MemberSignature Language="F#" Value="member this.Xamarin.Forms.IShellSectionController.PresentedPage : Xamarin.Forms.Page" Usage="Xamarin.Forms.IShellSectionController.PresentedPage" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Xamarin.Forms.IShellSectionController.PresentedPage</InterfaceMember>
@@ -527,6 +532,7 @@
       <MemberSignature Language="C#" Value="bool IShellSectionController.RemoveContentInsetObserver (Xamarin.Forms.IShellContentInsetObserver observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver(class Xamarin.Forms.IShellContentInsetObserver observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#RemoveContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver : Xamarin.Forms.IShellContentInsetObserver -&gt; bool&#xA;override this.Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver : Xamarin.Forms.IShellContentInsetObserver -&gt; bool" Usage="shellSection.Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver observer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.RemoveContentInsetObserver(Xamarin.Forms.IShellContentInsetObserver)</InterfaceMember>
@@ -552,6 +558,7 @@
       <MemberSignature Language="C#" Value="bool IShellSectionController.RemoveDisplayedPageObserver (object observer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver(object observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#RemoveDisplayedPageObserver(System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver : obj -&gt; bool&#xA;override this.Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver : obj -&gt; bool" Usage="shellSection.Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver observer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.RemoveDisplayedPageObserver(System.Object)</InterfaceMember>
@@ -577,6 +584,7 @@
       <MemberSignature Language="C#" Value="void IShellSectionController.SendInsetChanged (Xamarin.Forms.Thickness inset, double tabThickness);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.SendInsetChanged(valuetype Xamarin.Forms.Thickness inset, float64 tabThickness) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#SendInsetChanged(Xamarin.Forms.Thickness,System.Double)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.SendInsetChanged : Xamarin.Forms.Thickness * double -&gt; unit&#xA;override this.Xamarin.Forms.IShellSectionController.SendInsetChanged : Xamarin.Forms.Thickness * double -&gt; unit" Usage="shellSection.Xamarin.Forms.IShellSectionController.SendInsetChanged (inset, tabThickness)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.SendInsetChanged(Xamarin.Forms.Thickness,System.Double)</InterfaceMember>
@@ -603,6 +611,7 @@
       <MemberSignature Language="C#" Value="void IShellSectionController.SendPopped ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.SendPopped() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#SendPopped" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.SendPopped : unit -&gt; unit&#xA;override this.Xamarin.Forms.IShellSectionController.SendPopped : unit -&gt; unit" Usage="shellSection.Xamarin.Forms.IShellSectionController.SendPopped " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.SendPopped</InterfaceMember>
@@ -632,6 +641,7 @@
       <MemberSignature Language="C#" Value="void IShellSectionController.SendPopped (Xamarin.Forms.Page page);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.SendPopped(class Xamarin.Forms.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#SendPopped(Xamarin.Forms.Page)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.SendPopped : Xamarin.Forms.Page -&gt; unit&#xA;override this.Xamarin.Forms.IShellSectionController.SendPopped : Xamarin.Forms.Page -&gt; unit" Usage="shellSection.Xamarin.Forms.IShellSectionController.SendPopped page" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.SendPopped(Xamarin.Forms.Page)</InterfaceMember>
@@ -664,6 +674,7 @@
       <MemberSignature Language="C#" Value="void IShellSectionController.SendPopping (System.Threading.Tasks.Task poppingCompleted);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.SendPopping(class System.Threading.Tasks.Task poppingCompleted) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#SendPopping(System.Threading.Tasks.Task)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.SendPopping : System.Threading.Tasks.Task -&gt; unit&#xA;override this.Xamarin.Forms.IShellSectionController.SendPopping : System.Threading.Tasks.Task -&gt; unit" Usage="shellSection.Xamarin.Forms.IShellSectionController.SendPopping poppingCompleted" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.SendPopping(System.Threading.Tasks.Task)</InterfaceMember>
@@ -688,6 +699,7 @@
       <MemberSignature Language="C#" Value="void IShellSectionController.SendPopping (Xamarin.Forms.Page page);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.SendPopping(class Xamarin.Forms.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#SendPopping(Xamarin.Forms.Page)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.SendPopping : Xamarin.Forms.Page -&gt; unit&#xA;override this.Xamarin.Forms.IShellSectionController.SendPopping : Xamarin.Forms.Page -&gt; unit" Usage="shellSection.Xamarin.Forms.IShellSectionController.SendPopping page" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.SendPopping(Xamarin.Forms.Page)</InterfaceMember>
@@ -720,6 +732,7 @@
       <MemberSignature Language="C#" Value="void IShellSectionController.SendPoppingToRoot (System.Threading.Tasks.Task finishedPopping);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Xamarin.Forms.IShellSectionController.SendPoppingToRoot(class System.Threading.Tasks.Task finishedPopping) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ShellSection.Xamarin#Forms#IShellSectionController#SendPoppingToRoot(System.Threading.Tasks.Task)" />
+      <MemberSignature Language="F#" Value="abstract member Xamarin.Forms.IShellSectionController.SendPoppingToRoot : System.Threading.Tasks.Task -&gt; unit&#xA;override this.Xamarin.Forms.IShellSectionController.SendPoppingToRoot : System.Threading.Tasks.Task -&gt; unit" Usage="shellSection.Xamarin.Forms.IShellSectionController.SendPoppingToRoot finishedPopping" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Xamarin.Forms.IShellSectionController.SendPoppingToRoot(System.Threading.Tasks.Task)</InterfaceMember>

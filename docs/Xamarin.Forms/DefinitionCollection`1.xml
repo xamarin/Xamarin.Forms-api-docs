@@ -1,5 +1,5 @@
 <Type Name="DefinitionCollection&lt;T&gt;" FullName="Xamarin.Forms.DefinitionCollection&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public class DefinitionCollection&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.IEnumerable where T : IDefinition" />
+  <TypeSignature Language="C#" Value="public class DefinitionCollection&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt; where T : IDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefinitionCollection`1&lt;(class Xamarin.Forms.IDefinition) T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.DefinitionCollection`1" />
   <TypeSignature Language="F#" Value="type DefinitionCollection&lt;'T (requires 'T :&gt; IDefinition)&gt; = class&#xA;    interface IList&lt;'T (requires 'T :&gt; IDefinition)&gt;&#xA;    interface ICollection&lt;'T (requires 'T :&gt; IDefinition)&gt;&#xA;    interface seq&lt;'T (requires 'T :&gt; IDefinition)&gt;&#xA;    interface IEnumerable" />
@@ -55,6 +55,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DefinitionCollection`1.Add(`0)" />
       <MemberSignature Language="F#" Value="abstract member Add : 'T -&gt; unit&#xA;override this.Add : 'T -&gt; unit" Usage="definitionCollection.Add item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -84,6 +87,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DefinitionCollection`1.Clear" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="definitionCollection.Clear " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -110,6 +116,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DefinitionCollection`1.Contains(`0)" />
       <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="definitionCollection.Contains item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -140,6 +149,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DefinitionCollection`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="definitionCollection.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -171,6 +183,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DefinitionCollection`1.Count" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="Xamarin.Forms.DefinitionCollection&lt;'T (requires 'T :&gt; Xamarin.Forms.IDefinition)&gt;.Count" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -197,6 +212,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DefinitionCollection`1.GetEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T (requires 'T :&gt; Xamarin.Forms.IDefinition)&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T (requires 'T :&gt; Xamarin.Forms.IDefinition)&gt;" Usage="definitionCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -224,6 +242,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DefinitionCollection`1.IndexOf(`0)" />
       <MemberSignature Language="F#" Value="abstract member IndexOf : 'T -&gt; int&#xA;override this.IndexOf : 'T -&gt; int" Usage="definitionCollection.IndexOf item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -254,6 +275,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DefinitionCollection`1.Insert(System.Int32,`0)" />
       <MemberSignature Language="F#" Value="abstract member Insert : int * 'T -&gt; unit&#xA;override this.Insert : int * 'T -&gt; unit" Usage="definitionCollection.Insert (index, item)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -285,6 +309,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DefinitionCollection`1.IsReadOnly" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="Xamarin.Forms.DefinitionCollection&lt;'T (requires 'T :&gt; Xamarin.Forms.IDefinition)&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -314,6 +341,9 @@
       <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DefinitionCollection`1.Item(System.Int32)" />
       <MemberSignature Language="F#" Value="member this.Item(int) : 'T with get, set" Usage="Xamarin.Forms.DefinitionCollection&lt;'T (requires 'T :&gt; Xamarin.Forms.IDefinition)&gt;.Item" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -369,6 +399,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DefinitionCollection`1.Remove(`0)" />
       <MemberSignature Language="F#" Value="abstract member Remove : 'T -&gt; bool&#xA;override this.Remove : 'T -&gt; bool" Usage="definitionCollection.Remove item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -400,6 +433,9 @@
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DefinitionCollection`1.RemoveAt(System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="definitionCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -427,7 +463,11 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DefinitionCollection`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="definitionCollection.System.Collections.IEnumerable.GetEnumerator " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
