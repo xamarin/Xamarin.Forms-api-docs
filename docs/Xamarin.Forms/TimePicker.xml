@@ -353,6 +353,43 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TextTransform">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.TextTransform TextTransform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.TextTransform TextTransform" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.TimePicker.TextTransform" />
+      <MemberSignature Language="F#" Value="member this.TextTransform : Xamarin.Forms.TextTransform with get, set" Usage="Xamarin.Forms.TimePicker.TextTransform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.TextTransform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextTransformProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TextTransformProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TextTransformProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.TimePicker.TextTransformProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextTransformProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.TimePicker.TextTransformProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Time">
       <MemberSignature Language="C#" Value="public TimeSpan Time { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Time" />
@@ -403,6 +440,31 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <summary>Backing store for the Time bindable property.</summary>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFormsText">
+      <MemberSignature Language="C#" Value="public virtual string UpdateFormsText (string source, Xamarin.Forms.TextTransform textTransform);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string UpdateFormsText(string source, valuetype Xamarin.Forms.TextTransform textTransform) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TimePicker.UpdateFormsText(System.String,Xamarin.Forms.TextTransform)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateFormsText : string * Xamarin.Forms.TextTransform -&gt; string&#xA;override this.UpdateFormsText : string * Xamarin.Forms.TextTransform -&gt; string" Usage="timePicker.UpdateFormsText (source, textTransform)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="textTransform" Type="Xamarin.Forms.TextTransform" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="textTransform">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Xamarin.Forms.Internals.IFontElement.FontSizeDefaultValueCreator">

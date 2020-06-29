@@ -1,0 +1,84 @@
+<Type Name="TextTransformUtilites" FullName="Xamarin.Forms.Internals.TextTransformUtilites">
+  <TypeSignature Language="C#" Value="public static class TextTransformUtilites" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TextTransformUtilites extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Internals.TextTransformUtilites" />
+  <TypeSignature Language="F#" Value="type TextTransformUtilites = class" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetTransformedText">
+      <MemberSignature Language="C#" Value="public static string GetTransformedText (string source, Xamarin.Forms.TextTransform textTransform);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTransformedText(string source, valuetype Xamarin.Forms.TextTransform textTransform) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TextTransformUtilites.GetTransformedText(System.String,Xamarin.Forms.TextTransform)" />
+      <MemberSignature Language="F#" Value="static member GetTransformedText : string * Xamarin.Forms.TextTransform -&gt; string" Usage="Xamarin.Forms.Internals.TextTransformUtilites.GetTransformedText (source, textTransform)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="textTransform" Type="Xamarin.Forms.TextTransform" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="textTransform">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPlainText">
+      <MemberSignature Language="C#" Value="public static void SetPlainText (Xamarin.Forms.InputView inputView, string nativeText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPlainText(class Xamarin.Forms.InputView inputView, string nativeText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Internals.TextTransformUtilites.SetPlainText(Xamarin.Forms.InputView,System.String)" />
+      <MemberSignature Language="F#" Value="static member SetPlainText : Xamarin.Forms.InputView * string -&gt; unit" Usage="Xamarin.Forms.Internals.TextTransformUtilites.SetPlainText (inputView, nativeText)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputView" Type="Xamarin.Forms.InputView" />
+        <Parameter Name="nativeText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="inputView">To be added.</param>
+        <param name="nativeText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

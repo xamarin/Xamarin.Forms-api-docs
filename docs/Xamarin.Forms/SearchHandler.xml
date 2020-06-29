@@ -1616,6 +1616,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TextTransform">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.TextTransform TextTransform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.TextTransform TextTransform" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.SearchHandler.TextTransform" />
+      <MemberSignature Language="F#" Value="member this.TextTransform : Xamarin.Forms.TextTransform with get, set" Usage="Xamarin.Forms.SearchHandler.TextTransform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.TextTransform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextTransformProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty TextTransformProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty TextTransformProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.SearchHandler.TextTransformProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextTransformProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.SearchHandler.TextTransformProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Unfocus">
       <MemberSignature Language="C#" Value="public void Unfocus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unfocus() cil managed" />
@@ -1650,6 +1687,31 @@
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFormsText">
+      <MemberSignature Language="C#" Value="public virtual string UpdateFormsText (string source, Xamarin.Forms.TextTransform textTransform);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string UpdateFormsText(string source, valuetype Xamarin.Forms.TextTransform textTransform) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.SearchHandler.UpdateFormsText(System.String,Xamarin.Forms.TextTransform)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateFormsText : string * Xamarin.Forms.TextTransform -&gt; string&#xA;override this.UpdateFormsText : string * Xamarin.Forms.TextTransform -&gt; string" Usage="searchHandler.UpdateFormsText (source, textTransform)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="textTransform" Type="Xamarin.Forms.TextTransform" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="textTransform">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
