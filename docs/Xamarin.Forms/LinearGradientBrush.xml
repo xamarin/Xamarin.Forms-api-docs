@@ -1,0 +1,170 @@
+<Type Name="LinearGradientBrush" FullName="Xamarin.Forms.LinearGradientBrush">
+  <TypeSignature Language="C#" Value="public class LinearGradientBrush : Xamarin.Forms.GradientBrush" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinearGradientBrush extends Xamarin.Forms.GradientBrush" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.LinearGradientBrush" />
+  <TypeSignature Language="F#" Value="type LinearGradientBrush = class&#xA;    inherit GradientBrush" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.GradientBrush</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearGradientBrush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.LinearGradientBrush.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearGradientBrush (Xamarin.Forms.GradientStopCollection gradientStops);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Xamarin.Forms.GradientStopCollection gradientStops) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.LinearGradientBrush.#ctor(Xamarin.Forms.GradientStopCollection)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.LinearGradientBrush : Xamarin.Forms.GradientStopCollection -&gt; Xamarin.Forms.LinearGradientBrush" Usage="new Xamarin.Forms.LinearGradientBrush gradientStops" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="gradientStops" Type="Xamarin.Forms.GradientStopCollection" />
+      </Parameters>
+      <Docs>
+        <param name="gradientStops">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearGradientBrush (Xamarin.Forms.GradientStopCollection gradientStops, Xamarin.Forms.Point startPoint, Xamarin.Forms.Point endPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Xamarin.Forms.GradientStopCollection gradientStops, valuetype Xamarin.Forms.Point startPoint, valuetype Xamarin.Forms.Point endPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.LinearGradientBrush.#ctor(Xamarin.Forms.GradientStopCollection,Xamarin.Forms.Point,Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.LinearGradientBrush : Xamarin.Forms.GradientStopCollection * Xamarin.Forms.Point * Xamarin.Forms.Point -&gt; Xamarin.Forms.LinearGradientBrush" Usage="new Xamarin.Forms.LinearGradientBrush (gradientStops, startPoint, endPoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="gradientStops" Type="Xamarin.Forms.GradientStopCollection" />
+        <Parameter Name="startPoint" Type="Xamarin.Forms.Point" />
+        <Parameter Name="endPoint" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="gradientStops">To be added.</param>
+        <param name="startPoint">To be added.</param>
+        <param name="endPoint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndPoint">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Point EndPoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Point EndPoint" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.LinearGradientBrush.EndPoint" />
+      <MemberSignature Language="F#" Value="member this.EndPoint : Xamarin.Forms.Point with get, set" Usage="Xamarin.Forms.LinearGradientBrush.EndPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndPointProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty EndPointProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty EndPointProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.LinearGradientBrush.EndPointProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable EndPointProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.LinearGradientBrush.EndPointProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public override bool IsEmpty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.LinearGradientBrush.IsEmpty" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="Xamarin.Forms.LinearGradientBrush.IsEmpty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartPoint">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Point StartPoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Point StartPoint" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.LinearGradientBrush.StartPoint" />
+      <MemberSignature Language="F#" Value="member this.StartPoint : Xamarin.Forms.Point with get, set" Usage="Xamarin.Forms.LinearGradientBrush.StartPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartPointProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty StartPointProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty StartPointProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.LinearGradientBrush.StartPointProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable StartPointProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.LinearGradientBrush.StartPointProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

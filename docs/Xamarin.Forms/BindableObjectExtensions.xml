@@ -55,6 +55,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetAppThemeColor">
+      <MemberSignature Language="C#" Value="public static void SetAppThemeColor (this Xamarin.Forms.BindableObject self, Xamarin.Forms.BindableProperty targetProperty, Xamarin.Forms.Color light, Xamarin.Forms.Color dark);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAppThemeColor(class Xamarin.Forms.BindableObject self, class Xamarin.Forms.BindableProperty targetProperty, valuetype Xamarin.Forms.Color light, valuetype Xamarin.Forms.Color dark) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObjectExtensions.SetAppThemeColor(Xamarin.Forms.BindableObject,Xamarin.Forms.BindableProperty,Xamarin.Forms.Color,Xamarin.Forms.Color)" />
+      <MemberSignature Language="F#" Value="static member SetAppThemeColor : Xamarin.Forms.BindableObject * Xamarin.Forms.BindableProperty * Xamarin.Forms.Color * Xamarin.Forms.Color -&gt; unit" Usage="Xamarin.Forms.BindableObjectExtensions.SetAppThemeColor (self, targetProperty, light, dark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="self" Type="Xamarin.Forms.BindableObject" RefType="this" />
+        <Parameter Name="targetProperty" Type="Xamarin.Forms.BindableProperty" />
+        <Parameter Name="light" Type="Xamarin.Forms.Color" />
+        <Parameter Name="dark" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="self">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <param name="light">To be added.</param>
+        <param name="dark">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetBinding">
       <MemberSignature Language="C#" Value="public static void SetBinding (this Xamarin.Forms.BindableObject self, Xamarin.Forms.BindableProperty targetProperty, string path, Xamarin.Forms.BindingMode mode = Xamarin.Forms.BindingMode.Default, Xamarin.Forms.IValueConverter converter = default, string stringFormat = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBinding(class Xamarin.Forms.BindableObject self, class Xamarin.Forms.BindableProperty targetProperty, string path, valuetype Xamarin.Forms.BindingMode mode, class Xamarin.Forms.IValueConverter converter, string stringFormat) cil managed" />
@@ -171,6 +199,38 @@ Debug.WriteLine (label.Text); //prints "John Doe"
       ]]></code>
           </example>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOnAppTheme&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void SetOnAppTheme&lt;T&gt; (this Xamarin.Forms.BindableObject self, Xamarin.Forms.BindableProperty targetProperty, T light, T dark);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetOnAppTheme&lt;T&gt;(class Xamarin.Forms.BindableObject self, class Xamarin.Forms.BindableProperty targetProperty, !!T light, !!T dark) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.BindableObjectExtensions.SetOnAppTheme``1(Xamarin.Forms.BindableObject,Xamarin.Forms.BindableProperty,``0,``0)" />
+      <MemberSignature Language="F#" Value="static member SetOnAppTheme : Xamarin.Forms.BindableObject * Xamarin.Forms.BindableProperty * 'T * 'T -&gt; unit" Usage="Xamarin.Forms.BindableObjectExtensions.SetOnAppTheme (self, targetProperty, light, dark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="self" Type="Xamarin.Forms.BindableObject" RefType="this" />
+        <Parameter Name="targetProperty" Type="Xamarin.Forms.BindableProperty" />
+        <Parameter Name="light" Type="T" />
+        <Parameter Name="dark" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="self">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <param name="light">To be added.</param>
+        <param name="dark">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

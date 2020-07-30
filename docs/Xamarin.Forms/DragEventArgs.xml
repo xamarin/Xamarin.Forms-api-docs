@@ -1,0 +1,77 @@
+<Type Name="DragEventArgs" FullName="Xamarin.Forms.DragEventArgs">
+  <TypeSignature Language="C#" Value="public class DragEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DragEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.DragEventArgs" />
+  <TypeSignature Language="F#" Value="type DragEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DragEventArgs (Xamarin.Forms.DataPackage dataPackage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Xamarin.Forms.DataPackage dataPackage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DragEventArgs.#ctor(Xamarin.Forms.DataPackage)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.DragEventArgs : Xamarin.Forms.DataPackage -&gt; Xamarin.Forms.DragEventArgs" Usage="new Xamarin.Forms.DragEventArgs dataPackage" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataPackage" Type="Xamarin.Forms.DataPackage" />
+      </Parameters>
+      <Docs>
+        <param name="dataPackage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptedOperation">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataPackageOperation AcceptedOperation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.DataPackageOperation AcceptedOperation" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DragEventArgs.AcceptedOperation" />
+      <MemberSignature Language="F#" Value="member this.AcceptedOperation : Xamarin.Forms.DataPackageOperation with get, set" Usage="Xamarin.Forms.DragEventArgs.AcceptedOperation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataPackageOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DataPackage Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.DataPackage Data" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DragEventArgs.Data" />
+      <MemberSignature Language="F#" Value="member this.Data : Xamarin.Forms.DataPackage" Usage="Xamarin.Forms.DragEventArgs.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.DataPackage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
