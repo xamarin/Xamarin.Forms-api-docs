@@ -771,6 +771,52 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.Rectangle (Xamarin.Forms.Rect rect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Rectangle op_Implicit(valuetype Xamarin.Forms.Rect rect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.op_Implicit(Xamarin.Forms.Rect)~Xamarin.Forms.Rectangle" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.Rect -&gt; Xamarin.Forms.Rectangle" Usage="Xamarin.Forms.Rectangle.op_Implicit rect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Xamarin.Forms.Rect (Xamarin.Forms.Rectangle rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Xamarin.Forms.Rect op_Implicit(valuetype Xamarin.Forms.Rectangle rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rectangle.op_Implicit(Xamarin.Forms.Rectangle)~Xamarin.Forms.Rect" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Xamarin.Forms.Rectangle -&gt; Xamarin.Forms.Rect" Usage="Xamarin.Forms.Rectangle.op_Implicit rectangle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rectangle" Type="Xamarin.Forms.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="rectangle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="op_Inequality">
       <MemberSignature Language="C#" Value="public static bool operator != (Xamarin.Forms.Rectangle r1, Xamarin.Forms.Rectangle r2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Xamarin.Forms.Rectangle r1, valuetype Xamarin.Forms.Rectangle r2) cil managed" />

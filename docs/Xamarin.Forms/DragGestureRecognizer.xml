@@ -1,0 +1,312 @@
+<Type Name="DragGestureRecognizer" FullName="Xamarin.Forms.DragGestureRecognizer">
+  <TypeSignature Language="C#" Value="public class DragGestureRecognizer : Xamarin.Forms.GestureRecognizer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DragGestureRecognizer extends Xamarin.Forms.GestureRecognizer" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.DragGestureRecognizer" />
+  <TypeSignature Language="F#" Value="type DragGestureRecognizer = class&#xA;    inherit GestureRecognizer" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.GestureRecognizer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DragGestureRecognizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DragGestureRecognizer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDrag">
+      <MemberSignature Language="C#" Value="public bool CanDrag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanDrag" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DragGestureRecognizer.CanDrag" />
+      <MemberSignature Language="F#" Value="member this.CanDrag : bool with get, set" Usage="Xamarin.Forms.DragGestureRecognizer.CanDrag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDragProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CanDragProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CanDragProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DragGestureRecognizer.CanDragProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanDragProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DragGestureRecognizer.CanDragProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragStarting">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.DragStartingEventArgs&gt; DragStarting;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.DragStartingEventArgs&gt; DragStarting" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.DragGestureRecognizer.DragStarting" />
+      <MemberSignature Language="F#" Value="member this.DragStarting : EventHandler&lt;Xamarin.Forms.DragStartingEventArgs&gt; " Usage="member this.DragStarting : System.EventHandler&lt;Xamarin.Forms.DragStartingEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.DragStartingEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragStartingCommand">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand DragStartingCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand DragStartingCommand" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DragGestureRecognizer.DragStartingCommand" />
+      <MemberSignature Language="F#" Value="member this.DragStartingCommand : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.DragGestureRecognizer.DragStartingCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragStartingCommandParameter">
+      <MemberSignature Language="C#" Value="public object DragStartingCommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DragStartingCommandParameter" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DragGestureRecognizer.DragStartingCommandParameter" />
+      <MemberSignature Language="F#" Value="member this.DragStartingCommandParameter : obj with get, set" Usage="Xamarin.Forms.DragGestureRecognizer.DragStartingCommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragStartingCommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DragStartingCommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DragStartingCommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DragGestureRecognizer.DragStartingCommandParameterProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DragStartingCommandParameterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DragGestureRecognizer.DragStartingCommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragStartingCommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DragStartingCommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DragStartingCommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DragGestureRecognizer.DragStartingCommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DragStartingCommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DragGestureRecognizer.DragStartingCommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.DropCompletedEventArgs&gt; DropCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.DropCompletedEventArgs&gt; DropCompleted" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.DragGestureRecognizer.DropCompleted" />
+      <MemberSignature Language="F#" Value="member this.DropCompleted : EventHandler&lt;Xamarin.Forms.DropCompletedEventArgs&gt; " Usage="member this.DropCompleted : System.EventHandler&lt;Xamarin.Forms.DropCompletedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.DropCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropCompletedCommand">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand DropCompletedCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand DropCompletedCommand" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DragGestureRecognizer.DropCompletedCommand" />
+      <MemberSignature Language="F#" Value="member this.DropCompletedCommand : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.DragGestureRecognizer.DropCompletedCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropCompletedCommandParameter">
+      <MemberSignature Language="C#" Value="public object DropCompletedCommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DropCompletedCommandParameter" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandParameter" />
+      <MemberSignature Language="F#" Value="member this.DropCompletedCommandParameter : obj with get, set" Usage="Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropCompletedCommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DropCompletedCommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DropCompletedCommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandParameterProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DropCompletedCommandParameterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropCompletedCommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DropCompletedCommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DropCompletedCommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DropCompletedCommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendDragStarting">
+      <MemberSignature Language="C#" Value="public void SendDragStarting (Xamarin.Forms.DragStartingEventArgs args, Xamarin.Forms.VisualElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendDragStarting(class Xamarin.Forms.DragStartingEventArgs args, class Xamarin.Forms.VisualElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DragGestureRecognizer.SendDragStarting(Xamarin.Forms.DragStartingEventArgs,Xamarin.Forms.VisualElement)" />
+      <MemberSignature Language="F#" Value="member this.SendDragStarting : Xamarin.Forms.DragStartingEventArgs * Xamarin.Forms.VisualElement -&gt; unit" Usage="dragGestureRecognizer.SendDragStarting (args, element)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Xamarin.Forms.DragStartingEventArgs" />
+        <Parameter Name="element" Type="Xamarin.Forms.VisualElement" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendDropCompleted">
+      <MemberSignature Language="C#" Value="public void SendDropCompleted (Xamarin.Forms.DropCompletedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendDropCompleted(class Xamarin.Forms.DropCompletedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DragGestureRecognizer.SendDropCompleted(Xamarin.Forms.DropCompletedEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.SendDropCompleted : Xamarin.Forms.DropCompletedEventArgs -&gt; unit" Usage="dragGestureRecognizer.SendDropCompleted args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Xamarin.Forms.DropCompletedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

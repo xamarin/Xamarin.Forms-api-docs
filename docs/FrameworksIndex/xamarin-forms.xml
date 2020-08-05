@@ -207,6 +207,7 @@
       <Member Id="F:Xamarin.Forms.BaseShellItem.IsCheckedProperty" />
       <Member Id="F:Xamarin.Forms.BaseShellItem.IsEnabledProperty" />
       <Member Id="F:Xamarin.Forms.BaseShellItem.IsTabStopProperty" />
+      <Member Id="F:Xamarin.Forms.BaseShellItem.IsVisibleProperty" />
       <Member Id="F:Xamarin.Forms.BaseShellItem.TabIndexProperty" />
       <Member Id="F:Xamarin.Forms.BaseShellItem.TitleProperty" />
       <Member Id="M:Xamarin.Forms.BaseShellItem.#ctor" />
@@ -222,6 +223,7 @@
       <Member Id="P:Xamarin.Forms.BaseShellItem.IsChecked" />
       <Member Id="P:Xamarin.Forms.BaseShellItem.IsEnabled" />
       <Member Id="P:Xamarin.Forms.BaseShellItem.IsTabStop" />
+      <Member Id="P:Xamarin.Forms.BaseShellItem.IsVisible" />
       <Member Id="P:Xamarin.Forms.BaseShellItem.Route" />
       <Member Id="P:Xamarin.Forms.BaseShellItem.TabIndex" />
       <Member Id="P:Xamarin.Forms.BaseShellItem.Title" />
@@ -291,8 +293,10 @@
     </Type>
     <Type Name="Xamarin.Forms.BindableObjectExtensions" Id="T:Xamarin.Forms.BindableObjectExtensions">
       <Member Id="M:Xamarin.Forms.BindableObjectExtensions.GetPropertyIfSet``1(Xamarin.Forms.BindableObject,Xamarin.Forms.BindableProperty,``0)" />
+      <Member Id="M:Xamarin.Forms.BindableObjectExtensions.SetAppThemeColor(Xamarin.Forms.BindableObject,Xamarin.Forms.BindableProperty,Xamarin.Forms.Color,Xamarin.Forms.Color)" />
       <Member Id="M:Xamarin.Forms.BindableObjectExtensions.SetBinding(Xamarin.Forms.BindableObject,Xamarin.Forms.BindableProperty,System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.String)" />
       <Member Id="M:Xamarin.Forms.BindableObjectExtensions.SetBinding``1(Xamarin.Forms.BindableObject,Xamarin.Forms.BindableProperty,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.String)" />
+      <Member Id="M:Xamarin.Forms.BindableObjectExtensions.SetOnAppTheme``1(Xamarin.Forms.BindableObject,Xamarin.Forms.BindableProperty,``0,``0)" />
     </Type>
     <Type Name="Xamarin.Forms.BindableProperty" Id="T:Xamarin.Forms.BindableProperty">
       <Member Id="F:Xamarin.Forms.BindableProperty.UnsetValue" />
@@ -383,6 +387,167 @@
       <Member Id="P:Xamarin.Forms.BoxView.Color" />
       <Member Id="P:Xamarin.Forms.BoxView.CornerRadius" />
     </Type>
+    <Type Name="Xamarin.Forms.Brush" Id="T:Xamarin.Forms.Brush">
+      <Member Id="F:Xamarin.Forms.Brush.AliceBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.AntiqueWhite" />
+      <Member Id="F:Xamarin.Forms.Brush.Aqua" />
+      <Member Id="F:Xamarin.Forms.Brush.Aquamarine" />
+      <Member Id="F:Xamarin.Forms.Brush.Azure" />
+      <Member Id="F:Xamarin.Forms.Brush.Beige" />
+      <Member Id="F:Xamarin.Forms.Brush.Bisque" />
+      <Member Id="F:Xamarin.Forms.Brush.Black" />
+      <Member Id="F:Xamarin.Forms.Brush.BlanchedAlmond" />
+      <Member Id="F:Xamarin.Forms.Brush.Blue" />
+      <Member Id="F:Xamarin.Forms.Brush.BlueViolet" />
+      <Member Id="F:Xamarin.Forms.Brush.Brown" />
+      <Member Id="F:Xamarin.Forms.Brush.BurlyWood" />
+      <Member Id="F:Xamarin.Forms.Brush.CadetBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.Chartreuse" />
+      <Member Id="F:Xamarin.Forms.Brush.Chocolate" />
+      <Member Id="F:Xamarin.Forms.Brush.Coral" />
+      <Member Id="F:Xamarin.Forms.Brush.CornflowerBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.Cornsilk" />
+      <Member Id="F:Xamarin.Forms.Brush.Crimson" />
+      <Member Id="F:Xamarin.Forms.Brush.Cyan" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkCyan" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkGoldenrod" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkGray" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkKhaki" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkMagenta" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkOliveGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkOrange" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkOrchid" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkRed" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkSalmon" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkSeaGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkSlateBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkSlateGray" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkTurquoise" />
+      <Member Id="F:Xamarin.Forms.Brush.DarkViolet" />
+      <Member Id="F:Xamarin.Forms.Brush.DeepPink" />
+      <Member Id="F:Xamarin.Forms.Brush.DeepSkyBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.DimGray" />
+      <Member Id="F:Xamarin.Forms.Brush.DodgerBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.Firebrick" />
+      <Member Id="F:Xamarin.Forms.Brush.FloralWhite" />
+      <Member Id="F:Xamarin.Forms.Brush.ForestGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.Fuchsia" />
+      <Member Id="F:Xamarin.Forms.Brush.Gainsboro" />
+      <Member Id="F:Xamarin.Forms.Brush.GhostWhite" />
+      <Member Id="F:Xamarin.Forms.Brush.Gold" />
+      <Member Id="F:Xamarin.Forms.Brush.Goldenrod" />
+      <Member Id="F:Xamarin.Forms.Brush.Gray" />
+      <Member Id="F:Xamarin.Forms.Brush.Green" />
+      <Member Id="F:Xamarin.Forms.Brush.GreenYellow" />
+      <Member Id="F:Xamarin.Forms.Brush.Honeydew" />
+      <Member Id="F:Xamarin.Forms.Brush.HotPink" />
+      <Member Id="F:Xamarin.Forms.Brush.IndianRed" />
+      <Member Id="F:Xamarin.Forms.Brush.Indigo" />
+      <Member Id="F:Xamarin.Forms.Brush.Ivory" />
+      <Member Id="F:Xamarin.Forms.Brush.Khaki" />
+      <Member Id="F:Xamarin.Forms.Brush.Lavender" />
+      <Member Id="F:Xamarin.Forms.Brush.LavenderBlush" />
+      <Member Id="F:Xamarin.Forms.Brush.LawnGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.LemonChiffon" />
+      <Member Id="F:Xamarin.Forms.Brush.LightBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.LightCoral" />
+      <Member Id="F:Xamarin.Forms.Brush.LightCyan" />
+      <Member Id="F:Xamarin.Forms.Brush.LightGoldenrodYellow" />
+      <Member Id="F:Xamarin.Forms.Brush.LightGray" />
+      <Member Id="F:Xamarin.Forms.Brush.LightGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.LightPink" />
+      <Member Id="F:Xamarin.Forms.Brush.LightSalmon" />
+      <Member Id="F:Xamarin.Forms.Brush.LightSeaGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.LightSkyBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.LightSlateGray" />
+      <Member Id="F:Xamarin.Forms.Brush.LightSteelBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.LightYellow" />
+      <Member Id="F:Xamarin.Forms.Brush.Lime" />
+      <Member Id="F:Xamarin.Forms.Brush.LimeGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.Linen" />
+      <Member Id="F:Xamarin.Forms.Brush.Magenta" />
+      <Member Id="F:Xamarin.Forms.Brush.Maroon" />
+      <Member Id="F:Xamarin.Forms.Brush.MediumAquamarine" />
+      <Member Id="F:Xamarin.Forms.Brush.MediumBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.MediumOrchid" />
+      <Member Id="F:Xamarin.Forms.Brush.MediumPurple" />
+      <Member Id="F:Xamarin.Forms.Brush.MediumSeaGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.MediumSlateBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.MediumSpringGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.MediumTurquoise" />
+      <Member Id="F:Xamarin.Forms.Brush.MediumVioletRed" />
+      <Member Id="F:Xamarin.Forms.Brush.MidnightBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.MintCream" />
+      <Member Id="F:Xamarin.Forms.Brush.MistyRose" />
+      <Member Id="F:Xamarin.Forms.Brush.Moccasin" />
+      <Member Id="F:Xamarin.Forms.Brush.NavajoWhite" />
+      <Member Id="F:Xamarin.Forms.Brush.Navy" />
+      <Member Id="F:Xamarin.Forms.Brush.OldLace" />
+      <Member Id="F:Xamarin.Forms.Brush.Olive" />
+      <Member Id="F:Xamarin.Forms.Brush.OliveDrab" />
+      <Member Id="F:Xamarin.Forms.Brush.Orange" />
+      <Member Id="F:Xamarin.Forms.Brush.OrangeRed" />
+      <Member Id="F:Xamarin.Forms.Brush.Orchid" />
+      <Member Id="F:Xamarin.Forms.Brush.PaleGoldenrod" />
+      <Member Id="F:Xamarin.Forms.Brush.PaleGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.PaleTurquoise" />
+      <Member Id="F:Xamarin.Forms.Brush.PaleVioletRed" />
+      <Member Id="F:Xamarin.Forms.Brush.PapayaWhip" />
+      <Member Id="F:Xamarin.Forms.Brush.PeachPuff" />
+      <Member Id="F:Xamarin.Forms.Brush.Peru" />
+      <Member Id="F:Xamarin.Forms.Brush.Pink" />
+      <Member Id="F:Xamarin.Forms.Brush.Plum" />
+      <Member Id="F:Xamarin.Forms.Brush.PowderBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.Purple" />
+      <Member Id="F:Xamarin.Forms.Brush.Red" />
+      <Member Id="F:Xamarin.Forms.Brush.RosyBrown" />
+      <Member Id="F:Xamarin.Forms.Brush.RoyalBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.SaddleBrown" />
+      <Member Id="F:Xamarin.Forms.Brush.Salmon" />
+      <Member Id="F:Xamarin.Forms.Brush.SandyBrown" />
+      <Member Id="F:Xamarin.Forms.Brush.SeaGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.SeaShell" />
+      <Member Id="F:Xamarin.Forms.Brush.Sienna" />
+      <Member Id="F:Xamarin.Forms.Brush.Silver" />
+      <Member Id="F:Xamarin.Forms.Brush.SkyBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.SlateBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.SlateGray" />
+      <Member Id="F:Xamarin.Forms.Brush.Snow" />
+      <Member Id="F:Xamarin.Forms.Brush.SpringGreen" />
+      <Member Id="F:Xamarin.Forms.Brush.SteelBlue" />
+      <Member Id="F:Xamarin.Forms.Brush.Tan" />
+      <Member Id="F:Xamarin.Forms.Brush.Teal" />
+      <Member Id="F:Xamarin.Forms.Brush.Thistle" />
+      <Member Id="F:Xamarin.Forms.Brush.Tomato" />
+      <Member Id="F:Xamarin.Forms.Brush.Transparent" />
+      <Member Id="F:Xamarin.Forms.Brush.Turquoise" />
+      <Member Id="F:Xamarin.Forms.Brush.Violet" />
+      <Member Id="F:Xamarin.Forms.Brush.Wheat" />
+      <Member Id="F:Xamarin.Forms.Brush.White" />
+      <Member Id="F:Xamarin.Forms.Brush.WhiteSmoke" />
+      <Member Id="F:Xamarin.Forms.Brush.Yellow" />
+      <Member Id="F:Xamarin.Forms.Brush.YellowGreen" />
+      <Member Id="M:Xamarin.Forms.Brush.#ctor" />
+      <Member Id="M:Xamarin.Forms.Brush.IsNullOrEmpty(Xamarin.Forms.Brush)" />
+      <Member Id="P:Xamarin.Forms.Brush.Default" />
+      <Member Id="P:Xamarin.Forms.Brush.IsEmpty" />
+    </Type>
+    <Type Name="Xamarin.Forms.BrushTypeConverter" Id="T:Xamarin.Forms.BrushTypeConverter">
+      <Member Id="F:Xamarin.Forms.BrushTypeConverter.Hsl" />
+      <Member Id="F:Xamarin.Forms.BrushTypeConverter.Hsla" />
+      <Member Id="F:Xamarin.Forms.BrushTypeConverter.LinearGradient" />
+      <Member Id="F:Xamarin.Forms.BrushTypeConverter.RadialGradient" />
+      <Member Id="F:Xamarin.Forms.BrushTypeConverter.Rgb" />
+      <Member Id="F:Xamarin.Forms.BrushTypeConverter.Rgba" />
+      <Member Id="M:Xamarin.Forms.BrushTypeConverter.#ctor" />
+      <Member Id="M:Xamarin.Forms.BrushTypeConverter.ConvertFromInvariantString(System.String)" />
+    </Type>
+    <Type Name="Xamarin.Forms.BrushTypeConverter/GradientBrushParser" Id="T:Xamarin.Forms.BrushTypeConverter.GradientBrushParser">
+      <Member Id="M:Xamarin.Forms.BrushTypeConverter.GradientBrushParser.#ctor(Xamarin.Forms.ColorTypeConverter)" />
+      <Member Id="M:Xamarin.Forms.BrushTypeConverter.GradientBrushParser.Parse(System.String)" />
+    </Type>
     <Type Name="Xamarin.Forms.Button" Id="T:Xamarin.Forms.Button">
       <Member Id="E:Xamarin.Forms.Button.Clicked" />
       <Member Id="E:Xamarin.Forms.Button.Pressed" />
@@ -415,6 +580,7 @@
       <Member Id="M:Xamarin.Forms.Button.SendReleased" />
       <Member Id="M:Xamarin.Forms.Button.UpdateFormsText(System.String,Xamarin.Forms.TextTransform)" />
       <Member Id="M:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#IsBackgroundColorSet" />
+      <Member Id="M:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#IsBackgroundSet" />
       <Member Id="M:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#IsBorderColorSet" />
       <Member Id="M:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#IsBorderWidthSet" />
       <Member Id="M:Xamarin.Forms.Button.Xamarin#Forms#IBorderElement#IsCornerRadiusSet" />
@@ -562,6 +728,7 @@
       <Member Id="M:Xamarin.Forms.CheckBox.ChangeVisualState" />
       <Member Id="M:Xamarin.Forms.CheckBox.On``1" />
       <Member Id="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsBackgroundColorSet" />
+      <Member Id="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsBackgroundSet" />
       <Member Id="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsBorderColorSet" />
       <Member Id="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsBorderWidthSet" />
       <Member Id="M:Xamarin.Forms.CheckBox.Xamarin#Forms#IBorderElement#IsCornerRadiusSet" />
@@ -919,6 +1086,46 @@
       <Member Id="P:Xamarin.Forms.CurrentItemChangedEventArgs.CurrentItem" />
       <Member Id="P:Xamarin.Forms.CurrentItemChangedEventArgs.PreviousItem" />
     </Type>
+    <Type Name="Xamarin.Forms.DataPackage" Id="T:Xamarin.Forms.DataPackage">
+      <Member Id="M:Xamarin.Forms.DataPackage.#ctor" />
+      <Member Id="P:Xamarin.Forms.DataPackage.Image" />
+      <Member Id="P:Xamarin.Forms.DataPackage.Properties" />
+      <Member Id="P:Xamarin.Forms.DataPackage.Text" />
+      <Member Id="P:Xamarin.Forms.DataPackage.View" />
+    </Type>
+    <Type Name="Xamarin.Forms.DataPackageOperation" Id="T:Xamarin.Forms.DataPackageOperation">
+      <Member Id="F:Xamarin.Forms.DataPackageOperation.Copy" />
+      <Member Id="F:Xamarin.Forms.DataPackageOperation.None" />
+    </Type>
+    <Type Name="Xamarin.Forms.DataPackagePropertySet" Id="T:Xamarin.Forms.DataPackagePropertySet">
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySet.#ctor" />
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySet.Add(System.String,System.Object)" />
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySet.ContainsKey(System.String)" />
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySet.GetEnumerator" />
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySet.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySet.TryGetValue(System.String,System.Object@)" />
+      <Member Id="P:Xamarin.Forms.DataPackagePropertySet.Count" />
+      <Member Id="P:Xamarin.Forms.DataPackagePropertySet.Item(System.String)" />
+      <Member Id="P:Xamarin.Forms.DataPackagePropertySet.Keys" />
+      <Member Id="P:Xamarin.Forms.DataPackagePropertySet.Values" />
+    </Type>
+    <Type Name="Xamarin.Forms.DataPackagePropertySetView" Id="T:Xamarin.Forms.DataPackagePropertySetView">
+      <Member Id="F:Xamarin.Forms.DataPackagePropertySetView._dataPackagePropertySet" />
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySetView.#ctor(Xamarin.Forms.DataPackagePropertySet)" />
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySetView.ContainsKey(System.String)" />
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySetView.GetEnumerator" />
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySetView.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="M:Xamarin.Forms.DataPackagePropertySetView.TryGetValue(System.String,System.Object@)" />
+      <Member Id="P:Xamarin.Forms.DataPackagePropertySetView.Count" />
+      <Member Id="P:Xamarin.Forms.DataPackagePropertySetView.Item(System.String)" />
+      <Member Id="P:Xamarin.Forms.DataPackagePropertySetView.Keys" />
+      <Member Id="P:Xamarin.Forms.DataPackagePropertySetView.Values" />
+    </Type>
+    <Type Name="Xamarin.Forms.DataPackageView" Id="T:Xamarin.Forms.DataPackageView">
+      <Member Id="M:Xamarin.Forms.DataPackageView.GetImageAsync" />
+      <Member Id="M:Xamarin.Forms.DataPackageView.GetTextAsync" />
+      <Member Id="P:Xamarin.Forms.DataPackageView.Properties" />
+    </Type>
     <Type Name="Xamarin.Forms.DataTemplate" Id="T:Xamarin.Forms.DataTemplate">
       <Member Id="M:Xamarin.Forms.DataTemplate.#ctor" />
       <Member Id="M:Xamarin.Forms.DataTemplate.#ctor(System.Func{System.Object})" />
@@ -1073,6 +1280,59 @@
     <Type Name="Xamarin.Forms.DoubleCollectionConverter" Id="T:Xamarin.Forms.DoubleCollectionConverter">
       <Member Id="M:Xamarin.Forms.DoubleCollectionConverter.#ctor" />
       <Member Id="M:Xamarin.Forms.DoubleCollectionConverter.ConvertFromInvariantString(System.String)" />
+    </Type>
+    <Type Name="Xamarin.Forms.DragEventArgs" Id="T:Xamarin.Forms.DragEventArgs">
+      <Member Id="M:Xamarin.Forms.DragEventArgs.#ctor(Xamarin.Forms.DataPackage)" />
+      <Member Id="P:Xamarin.Forms.DragEventArgs.AcceptedOperation" />
+      <Member Id="P:Xamarin.Forms.DragEventArgs.Data" />
+    </Type>
+    <Type Name="Xamarin.Forms.DragGestureRecognizer" Id="T:Xamarin.Forms.DragGestureRecognizer">
+      <Member Id="E:Xamarin.Forms.DragGestureRecognizer.DragStarting" />
+      <Member Id="E:Xamarin.Forms.DragGestureRecognizer.DropCompleted" />
+      <Member Id="F:Xamarin.Forms.DragGestureRecognizer.CanDragProperty" />
+      <Member Id="F:Xamarin.Forms.DragGestureRecognizer.DragStartingCommandParameterProperty" />
+      <Member Id="F:Xamarin.Forms.DragGestureRecognizer.DragStartingCommandProperty" />
+      <Member Id="F:Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandParameterProperty" />
+      <Member Id="F:Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandProperty" />
+      <Member Id="M:Xamarin.Forms.DragGestureRecognizer.#ctor" />
+      <Member Id="M:Xamarin.Forms.DragGestureRecognizer.SendDragStarting(Xamarin.Forms.DragStartingEventArgs,Xamarin.Forms.VisualElement)" />
+      <Member Id="M:Xamarin.Forms.DragGestureRecognizer.SendDropCompleted(Xamarin.Forms.DropCompletedEventArgs)" />
+      <Member Id="P:Xamarin.Forms.DragGestureRecognizer.CanDrag" />
+      <Member Id="P:Xamarin.Forms.DragGestureRecognizer.DragStartingCommand" />
+      <Member Id="P:Xamarin.Forms.DragGestureRecognizer.DragStartingCommandParameter" />
+      <Member Id="P:Xamarin.Forms.DragGestureRecognizer.DropCompletedCommand" />
+      <Member Id="P:Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandParameter" />
+    </Type>
+    <Type Name="Xamarin.Forms.DragStartingEventArgs" Id="T:Xamarin.Forms.DragStartingEventArgs">
+      <Member Id="M:Xamarin.Forms.DragStartingEventArgs.#ctor" />
+      <Member Id="P:Xamarin.Forms.DragStartingEventArgs.Cancel" />
+      <Member Id="P:Xamarin.Forms.DragStartingEventArgs.Data" />
+      <Member Id="P:Xamarin.Forms.DragStartingEventArgs.Handled" />
+    </Type>
+    <Type Name="Xamarin.Forms.DropCompletedEventArgs" Id="T:Xamarin.Forms.DropCompletedEventArgs">
+      <Member Id="M:Xamarin.Forms.DropCompletedEventArgs.#ctor" />
+    </Type>
+    <Type Name="Xamarin.Forms.DropEventArgs" Id="T:Xamarin.Forms.DropEventArgs">
+      <Member Id="M:Xamarin.Forms.DropEventArgs.#ctor(Xamarin.Forms.DataPackageView)" />
+      <Member Id="P:Xamarin.Forms.DropEventArgs.Data" />
+      <Member Id="P:Xamarin.Forms.DropEventArgs.Handled" />
+    </Type>
+    <Type Name="Xamarin.Forms.DropGestureRecognizer" Id="T:Xamarin.Forms.DropGestureRecognizer">
+      <Member Id="E:Xamarin.Forms.DropGestureRecognizer.DragOver" />
+      <Member Id="E:Xamarin.Forms.DropGestureRecognizer.Drop" />
+      <Member Id="F:Xamarin.Forms.DropGestureRecognizer.AllowDropProperty" />
+      <Member Id="F:Xamarin.Forms.DropGestureRecognizer.DragOverCommandParameterProperty" />
+      <Member Id="F:Xamarin.Forms.DropGestureRecognizer.DragOverCommandProperty" />
+      <Member Id="F:Xamarin.Forms.DropGestureRecognizer.DropCommandParameterProperty" />
+      <Member Id="F:Xamarin.Forms.DropGestureRecognizer.DropCommandProperty" />
+      <Member Id="M:Xamarin.Forms.DropGestureRecognizer.#ctor" />
+      <Member Id="M:Xamarin.Forms.DropGestureRecognizer.SendDragOver(Xamarin.Forms.DragEventArgs)" />
+      <Member Id="M:Xamarin.Forms.DropGestureRecognizer.SendDrop(Xamarin.Forms.DropEventArgs,Xamarin.Forms.VisualElement)" />
+      <Member Id="P:Xamarin.Forms.DropGestureRecognizer.AllowDrop" />
+      <Member Id="P:Xamarin.Forms.DropGestureRecognizer.DragOverCommand" />
+      <Member Id="P:Xamarin.Forms.DropGestureRecognizer.DragOverCommandParameter" />
+      <Member Id="P:Xamarin.Forms.DropGestureRecognizer.DropCommand" />
+      <Member Id="P:Xamarin.Forms.DropGestureRecognizer.DropCommandParameter" />
     </Type>
     <Type Name="Xamarin.Forms.Easing" Id="T:Xamarin.Forms.Easing">
       <Member Id="F:Xamarin.Forms.Easing.BounceIn" />
@@ -1480,9 +1740,12 @@
     </Type>
     <Type Name="Xamarin.Forms.FlyoutItem" Id="T:Xamarin.Forms.FlyoutItem">
       <Member Id="F:Xamarin.Forms.FlyoutItem.ImageStyle" />
+      <Member Id="F:Xamarin.Forms.FlyoutItem.IsVisibleProperty" />
       <Member Id="F:Xamarin.Forms.FlyoutItem.LabelStyle" />
       <Member Id="F:Xamarin.Forms.FlyoutItem.LayoutStyle" />
       <Member Id="M:Xamarin.Forms.FlyoutItem.#ctor" />
+      <Member Id="M:Xamarin.Forms.FlyoutItem.GetIsVisible(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.FlyoutItem.SetIsVisible(Xamarin.Forms.BindableObject,System.Boolean)" />
     </Type>
     <Type Name="Xamarin.Forms.FocusEventArgs" Id="T:Xamarin.Forms.FocusEventArgs">
       <Member Id="M:Xamarin.Forms.FocusEventArgs.#ctor(Xamarin.Forms.VisualElement,System.Boolean)" />
@@ -1572,6 +1835,7 @@
       <Member Id="M:Xamarin.Forms.Frame.#ctor" />
       <Member Id="M:Xamarin.Forms.Frame.On``1" />
       <Member Id="M:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#IsBackgroundColorSet" />
+      <Member Id="M:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#IsBackgroundSet" />
       <Member Id="M:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#IsBorderColorSet" />
       <Member Id="M:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#IsBorderWidthSet" />
       <Member Id="M:Xamarin.Forms.Frame.Xamarin#Forms#IBorderElement#IsCornerRadiusSet" />
@@ -1605,6 +1869,24 @@
       <Member Id="F:Xamarin.Forms.GestureStatus.Completed" />
       <Member Id="F:Xamarin.Forms.GestureStatus.Running" />
       <Member Id="F:Xamarin.Forms.GestureStatus.Started" />
+    </Type>
+    <Type Name="Xamarin.Forms.GradientBrush" Id="T:Xamarin.Forms.GradientBrush">
+      <Member Id="F:Xamarin.Forms.GradientBrush.GradientStopsProperty" />
+      <Member Id="M:Xamarin.Forms.GradientBrush.#ctor" />
+      <Member Id="P:Xamarin.Forms.GradientBrush.GradientStops" />
+    </Type>
+    <Type Name="Xamarin.Forms.GradientStop" Id="T:Xamarin.Forms.GradientStop">
+      <Member Id="F:Xamarin.Forms.GradientStop.ColorProperty" />
+      <Member Id="F:Xamarin.Forms.GradientStop.OffsetProperty" />
+      <Member Id="M:Xamarin.Forms.GradientStop.#ctor" />
+      <Member Id="M:Xamarin.Forms.GradientStop.#ctor(Xamarin.Forms.Color,System.Single)" />
+      <Member Id="M:Xamarin.Forms.GradientStop.Equals(System.Object)" />
+      <Member Id="M:Xamarin.Forms.GradientStop.GetHashCode" />
+      <Member Id="P:Xamarin.Forms.GradientStop.Color" />
+      <Member Id="P:Xamarin.Forms.GradientStop.Offset" />
+    </Type>
+    <Type Name="Xamarin.Forms.GradientStopCollection" Id="T:Xamarin.Forms.GradientStopCollection">
+      <Member Id="M:Xamarin.Forms.GradientStopCollection.#ctor" />
     </Type>
     <Type Name="Xamarin.Forms.Grid" Id="T:Xamarin.Forms.Grid">
       <Member Id="F:Xamarin.Forms.Grid.ColumnDefinitionsProperty" />
@@ -1730,10 +2012,12 @@
     </Type>
     <Type Name="Xamarin.Forms.IBorderElement" Id="T:Xamarin.Forms.IBorderElement">
       <Member Id="M:Xamarin.Forms.IBorderElement.IsBackgroundColorSet" />
+      <Member Id="M:Xamarin.Forms.IBorderElement.IsBackgroundSet" />
       <Member Id="M:Xamarin.Forms.IBorderElement.IsBorderColorSet" />
       <Member Id="M:Xamarin.Forms.IBorderElement.IsBorderWidthSet" />
       <Member Id="M:Xamarin.Forms.IBorderElement.IsCornerRadiusSet" />
       <Member Id="M:Xamarin.Forms.IBorderElement.OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)" />
+      <Member Id="P:Xamarin.Forms.IBorderElement.Background" />
       <Member Id="P:Xamarin.Forms.IBorderElement.BackgroundColor" />
       <Member Id="P:Xamarin.Forms.IBorderElement.BorderColor" />
       <Member Id="P:Xamarin.Forms.IBorderElement.BorderColorDefaultValue" />
@@ -1913,6 +2197,7 @@
       <Member Id="M:Xamarin.Forms.ImageButton.SetIsLoading(System.Boolean)" />
       <Member Id="M:Xamarin.Forms.ImageButton.SetIsPressed(System.Boolean)" />
       <Member Id="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#IsBackgroundColorSet" />
+      <Member Id="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#IsBackgroundSet" />
       <Member Id="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#IsBorderColorSet" />
       <Member Id="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#IsBorderWidthSet" />
       <Member Id="M:Xamarin.Forms.ImageButton.Xamarin#Forms#IBorderElement#IsCornerRadiusSet" />
@@ -2546,6 +2831,16 @@
       <Member Id="M:Xamarin.Forms.LayoutOptionsConverter.#ctor" />
       <Member Id="M:Xamarin.Forms.LayoutOptionsConverter.ConvertFromInvariantString(System.String)" />
     </Type>
+    <Type Name="Xamarin.Forms.LinearGradientBrush" Id="T:Xamarin.Forms.LinearGradientBrush">
+      <Member Id="F:Xamarin.Forms.LinearGradientBrush.EndPointProperty" />
+      <Member Id="F:Xamarin.Forms.LinearGradientBrush.StartPointProperty" />
+      <Member Id="M:Xamarin.Forms.LinearGradientBrush.#ctor" />
+      <Member Id="M:Xamarin.Forms.LinearGradientBrush.#ctor(Xamarin.Forms.GradientStopCollection)" />
+      <Member Id="M:Xamarin.Forms.LinearGradientBrush.#ctor(Xamarin.Forms.GradientStopCollection,Xamarin.Forms.Point,Xamarin.Forms.Point)" />
+      <Member Id="P:Xamarin.Forms.LinearGradientBrush.EndPoint" />
+      <Member Id="P:Xamarin.Forms.LinearGradientBrush.IsEmpty" />
+      <Member Id="P:Xamarin.Forms.LinearGradientBrush.StartPoint" />
+    </Type>
     <Type Name="Xamarin.Forms.LinearItemsLayout" Id="T:Xamarin.Forms.LinearItemsLayout">
       <Member Id="F:Xamarin.Forms.LinearItemsLayout.CarouselVertical" />
       <Member Id="F:Xamarin.Forms.LinearItemsLayout.Horizontal" />
@@ -2651,6 +2946,10 @@
     <Type Name="Xamarin.Forms.ListViewSelectionMode" Id="T:Xamarin.Forms.ListViewSelectionMode">
       <Member Id="F:Xamarin.Forms.ListViewSelectionMode.None" />
       <Member Id="F:Xamarin.Forms.ListViewSelectionMode.Single" />
+    </Type>
+    <Type Name="Xamarin.Forms.MarshalingObservableCollection" Id="T:Xamarin.Forms.MarshalingObservableCollection">
+      <Member Id="E:Xamarin.Forms.MarshalingObservableCollection.CollectionChanged" />
+      <Member Id="M:Xamarin.Forms.MarshalingObservableCollection.#ctor(System.Collections.IList)" />
     </Type>
     <Type Name="Xamarin.Forms.MasterBehavior" Id="T:Xamarin.Forms.MasterBehavior">
       <Member Id="F:Xamarin.Forms.MasterBehavior.Default" />
@@ -3034,6 +3333,7 @@
       <Member Id="E:Xamarin.Forms.NavigationPage.RemovePageRequested" />
       <Member Id="F:Xamarin.Forms.NavigationPage.BackButtonTitleProperty" />
       <Member Id="F:Xamarin.Forms.NavigationPage.BarBackgroundColorProperty" />
+      <Member Id="F:Xamarin.Forms.NavigationPage.BarBackgroundProperty" />
       <Member Id="F:Xamarin.Forms.NavigationPage.BarTextColorProperty" />
       <Member Id="F:Xamarin.Forms.NavigationPage.CurrentPageProperty" />
       <Member Id="F:Xamarin.Forms.NavigationPage.HasBackButtonProperty" />
@@ -3071,6 +3371,7 @@
       <Member Id="M:Xamarin.Forms.NavigationPage.SetTitleIconImageSource(Xamarin.Forms.BindableObject,Xamarin.Forms.ImageSource)" />
       <Member Id="M:Xamarin.Forms.NavigationPage.SetTitleView(Xamarin.Forms.BindableObject,Xamarin.Forms.View)" />
       <Member Id="M:Xamarin.Forms.NavigationPage.Xamarin#Forms#INavigationPageController#RemoveAsyncInner(Xamarin.Forms.Page,System.Boolean,System.Boolean)" />
+      <Member Id="P:Xamarin.Forms.NavigationPage.BarBackground" />
       <Member Id="P:Xamarin.Forms.NavigationPage.BarBackgroundColor" />
       <Member Id="P:Xamarin.Forms.NavigationPage.BarTextColor" />
       <Member Id="P:Xamarin.Forms.NavigationPage.CurrentPage" />
@@ -3327,6 +3628,17 @@
       <Member Id="P:Xamarin.Forms.QueryPropertyAttribute.Name" />
       <Member Id="P:Xamarin.Forms.QueryPropertyAttribute.QueryId" />
     </Type>
+    <Type Name="Xamarin.Forms.RadialGradientBrush" Id="T:Xamarin.Forms.RadialGradientBrush">
+      <Member Id="F:Xamarin.Forms.RadialGradientBrush.CenterProperty" />
+      <Member Id="F:Xamarin.Forms.RadialGradientBrush.RadiusProperty" />
+      <Member Id="M:Xamarin.Forms.RadialGradientBrush.#ctor" />
+      <Member Id="M:Xamarin.Forms.RadialGradientBrush.#ctor(Xamarin.Forms.GradientStopCollection)" />
+      <Member Id="M:Xamarin.Forms.RadialGradientBrush.#ctor(Xamarin.Forms.GradientStopCollection,System.Double)" />
+      <Member Id="M:Xamarin.Forms.RadialGradientBrush.#ctor(Xamarin.Forms.GradientStopCollection,Xamarin.Forms.Point,System.Double)" />
+      <Member Id="P:Xamarin.Forms.RadialGradientBrush.Center" />
+      <Member Id="P:Xamarin.Forms.RadialGradientBrush.IsEmpty" />
+      <Member Id="P:Xamarin.Forms.RadialGradientBrush.Radius" />
+    </Type>
     <Type Name="Xamarin.Forms.RadioButton" Id="T:Xamarin.Forms.RadioButton">
       <Member Id="E:Xamarin.Forms.RadioButton.CheckedChanged" />
       <Member Id="F:Xamarin.Forms.RadioButton.GroupNameProperty" />
@@ -3338,6 +3650,44 @@
       <Member Id="M:Xamarin.Forms.RadioButton.OnMeasure(System.Double,System.Double)" />
       <Member Id="P:Xamarin.Forms.RadioButton.GroupName" />
       <Member Id="P:Xamarin.Forms.RadioButton.IsChecked" />
+    </Type>
+    <Type Name="Xamarin.Forms.Rect" Id="T:Xamarin.Forms.Rect">
+      <Member Id="F:Xamarin.Forms.Rect.Zero" />
+      <Member Id="M:Xamarin.Forms.Rect.#ctor(System.Double,System.Double,System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.Rect.#ctor(Xamarin.Forms.Point,Xamarin.Forms.Size)" />
+      <Member Id="M:Xamarin.Forms.Rect.Contains(System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.Rect.Contains(Xamarin.Forms.Point)" />
+      <Member Id="M:Xamarin.Forms.Rect.Contains(Xamarin.Forms.Rect)" />
+      <Member Id="M:Xamarin.Forms.Rect.Deconstruct(System.Double@,System.Double@,System.Double@,System.Double@)" />
+      <Member Id="M:Xamarin.Forms.Rect.Equals(System.Object)" />
+      <Member Id="M:Xamarin.Forms.Rect.Equals(Xamarin.Forms.Rect)" />
+      <Member Id="M:Xamarin.Forms.Rect.FromLTRB(System.Double,System.Double,System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.Rect.GetHashCode" />
+      <Member Id="M:Xamarin.Forms.Rect.Inflate(System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.Rect.Inflate(Xamarin.Forms.Size)" />
+      <Member Id="M:Xamarin.Forms.Rect.Intersect(Xamarin.Forms.Rect)" />
+      <Member Id="M:Xamarin.Forms.Rect.Intersect(Xamarin.Forms.Rect,Xamarin.Forms.Rect)" />
+      <Member Id="M:Xamarin.Forms.Rect.IntersectsWith(Xamarin.Forms.Rect)" />
+      <Member Id="M:Xamarin.Forms.Rect.Offset(System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.Rect.Offset(Xamarin.Forms.Point)" />
+      <Member Id="M:Xamarin.Forms.Rect.op_Equality(Xamarin.Forms.Rect,Xamarin.Forms.Rect)" />
+      <Member Id="M:Xamarin.Forms.Rect.op_Inequality(Xamarin.Forms.Rect,Xamarin.Forms.Rect)" />
+      <Member Id="M:Xamarin.Forms.Rect.Round" />
+      <Member Id="M:Xamarin.Forms.Rect.ToString" />
+      <Member Id="M:Xamarin.Forms.Rect.Union(Xamarin.Forms.Rect)" />
+      <Member Id="M:Xamarin.Forms.Rect.Union(Xamarin.Forms.Rect,Xamarin.Forms.Rect)" />
+      <Member Id="P:Xamarin.Forms.Rect.Bottom" />
+      <Member Id="P:Xamarin.Forms.Rect.Center" />
+      <Member Id="P:Xamarin.Forms.Rect.Height" />
+      <Member Id="P:Xamarin.Forms.Rect.IsEmpty" />
+      <Member Id="P:Xamarin.Forms.Rect.Left" />
+      <Member Id="P:Xamarin.Forms.Rect.Location" />
+      <Member Id="P:Xamarin.Forms.Rect.Right" />
+      <Member Id="P:Xamarin.Forms.Rect.Size" />
+      <Member Id="P:Xamarin.Forms.Rect.Top" />
+      <Member Id="P:Xamarin.Forms.Rect.Width" />
+      <Member Id="P:Xamarin.Forms.Rect.X" />
+      <Member Id="P:Xamarin.Forms.Rect.Y" />
     </Type>
     <Type Name="Xamarin.Forms.Rectangle" Id="T:Xamarin.Forms.Rectangle">
       <Member Id="F:Xamarin.Forms.Rectangle.Zero" />
@@ -3359,6 +3709,8 @@
       <Member Id="M:Xamarin.Forms.Rectangle.Offset(System.Double,System.Double)" />
       <Member Id="M:Xamarin.Forms.Rectangle.Offset(Xamarin.Forms.Point)" />
       <Member Id="M:Xamarin.Forms.Rectangle.op_Equality(Xamarin.Forms.Rectangle,Xamarin.Forms.Rectangle)" />
+      <Member Id="M:Xamarin.Forms.Rectangle.op_Implicit(Xamarin.Forms.Rect)~Xamarin.Forms.Rectangle" />
+      <Member Id="M:Xamarin.Forms.Rectangle.op_Implicit(Xamarin.Forms.Rectangle)~Xamarin.Forms.Rect" />
       <Member Id="M:Xamarin.Forms.Rectangle.op_Inequality(Xamarin.Forms.Rectangle,Xamarin.Forms.Rectangle)" />
       <Member Id="M:Xamarin.Forms.Rectangle.Round" />
       <Member Id="M:Xamarin.Forms.Rectangle.ToString" />
@@ -3380,6 +3732,10 @@
     <Type Name="Xamarin.Forms.RectangleTypeConverter" Id="T:Xamarin.Forms.RectangleTypeConverter">
       <Member Id="M:Xamarin.Forms.RectangleTypeConverter.#ctor" />
       <Member Id="M:Xamarin.Forms.RectangleTypeConverter.ConvertFromInvariantString(System.String)" />
+    </Type>
+    <Type Name="Xamarin.Forms.RectTypeConverter" Id="T:Xamarin.Forms.RectTypeConverter">
+      <Member Id="M:Xamarin.Forms.RectTypeConverter.#ctor" />
+      <Member Id="M:Xamarin.Forms.RectTypeConverter.ConvertFromInvariantString(System.String)" />
     </Type>
     <Type Name="Xamarin.Forms.ReferenceTypeConverter" Id="T:Xamarin.Forms.ReferenceTypeConverter">
       <Member Id="M:Xamarin.Forms.ReferenceTypeConverter.#ctor" />
@@ -3816,9 +4172,11 @@
       <Member Id="F:Xamarin.Forms.Shell.CurrentItemProperty" />
       <Member Id="F:Xamarin.Forms.Shell.CurrentStateProperty" />
       <Member Id="F:Xamarin.Forms.Shell.DisabledColorProperty" />
+      <Member Id="F:Xamarin.Forms.Shell.FlyoutBackdropProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutBackgroundColorProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutBackgroundImageAspectProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutBackgroundImageProperty" />
+      <Member Id="F:Xamarin.Forms.Shell.FlyoutBackgroundProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutBehaviorProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutHeaderBehaviorProperty" />
       <Member Id="F:Xamarin.Forms.Shell.FlyoutHeaderProperty" />
@@ -3847,6 +4205,7 @@
       <Member Id="M:Xamarin.Forms.Shell.GetBackButtonBehavior(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.Shell.GetBackgroundColor(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.Shell.GetDisabledColor(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.Shell.GetFlyoutBackdrop(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.Shell.GetFlyoutBehavior(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.Shell.GetForegroundColor(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.Shell.GetItemTemplate(Xamarin.Forms.BindableObject)" />
@@ -3873,6 +4232,7 @@
       <Member Id="M:Xamarin.Forms.Shell.SetBackButtonBehavior(Xamarin.Forms.BindableObject,Xamarin.Forms.BackButtonBehavior)" />
       <Member Id="M:Xamarin.Forms.Shell.SetBackgroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
       <Member Id="M:Xamarin.Forms.Shell.SetDisabledColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
+      <Member Id="M:Xamarin.Forms.Shell.SetFlyoutBackdrop(Xamarin.Forms.BindableObject,Xamarin.Forms.Brush)" />
       <Member Id="M:Xamarin.Forms.Shell.SetFlyoutBehavior(Xamarin.Forms.BindableObject,Xamarin.Forms.FlyoutBehavior)" />
       <Member Id="M:Xamarin.Forms.Shell.SetForegroundColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
       <Member Id="M:Xamarin.Forms.Shell.SetItemTemplate(Xamarin.Forms.BindableObject,Xamarin.Forms.DataTemplate)" />
@@ -3907,6 +4267,8 @@
       <Member Id="P:Xamarin.Forms.Shell.Current" />
       <Member Id="P:Xamarin.Forms.Shell.CurrentItem" />
       <Member Id="P:Xamarin.Forms.Shell.CurrentState" />
+      <Member Id="P:Xamarin.Forms.Shell.FlyoutBackdrop" />
+      <Member Id="P:Xamarin.Forms.Shell.FlyoutBackground" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutBackgroundColor" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutBackgroundImage" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutBackgroundImageAspect" />
@@ -3931,6 +4293,7 @@
       <Member Id="M:Xamarin.Forms.ShellAppearance.op_Inequality(Xamarin.Forms.ShellAppearance,Xamarin.Forms.ShellAppearance)" />
       <Member Id="P:Xamarin.Forms.ShellAppearance.BackgroundColor" />
       <Member Id="P:Xamarin.Forms.ShellAppearance.DisabledColor" />
+      <Member Id="P:Xamarin.Forms.ShellAppearance.FlyoutBackdrop" />
       <Member Id="P:Xamarin.Forms.ShellAppearance.ForegroundColor" />
       <Member Id="P:Xamarin.Forms.ShellAppearance.TabBarBackgroundColor" />
       <Member Id="P:Xamarin.Forms.ShellAppearance.TabBarDisabledColor" />
@@ -4119,6 +4482,15 @@
       <Member Id="F:Xamarin.Forms.SnapPointsType.Mandatory" />
       <Member Id="F:Xamarin.Forms.SnapPointsType.MandatorySingle" />
       <Member Id="F:Xamarin.Forms.SnapPointsType.None" />
+    </Type>
+    <Type Name="Xamarin.Forms.SolidColorBrush" Id="T:Xamarin.Forms.SolidColorBrush">
+      <Member Id="F:Xamarin.Forms.SolidColorBrush.ColorProperty" />
+      <Member Id="M:Xamarin.Forms.SolidColorBrush.#ctor" />
+      <Member Id="M:Xamarin.Forms.SolidColorBrush.#ctor(Xamarin.Forms.Color)" />
+      <Member Id="M:Xamarin.Forms.SolidColorBrush.Equals(System.Object)" />
+      <Member Id="M:Xamarin.Forms.SolidColorBrush.GetHashCode" />
+      <Member Id="P:Xamarin.Forms.SolidColorBrush.Color" />
+      <Member Id="P:Xamarin.Forms.SolidColorBrush.IsEmpty" />
     </Type>
     <Type Name="Xamarin.Forms.Span" Id="T:Xamarin.Forms.Span">
       <Member Id="F:Xamarin.Forms.Span.BackgroundColorProperty" />
@@ -4394,12 +4766,14 @@
     </Type>
     <Type Name="Xamarin.Forms.TabbedPage" Id="T:Xamarin.Forms.TabbedPage">
       <Member Id="F:Xamarin.Forms.TabbedPage.BarBackgroundColorProperty" />
+      <Member Id="F:Xamarin.Forms.TabbedPage.BarBackgroundProperty" />
       <Member Id="F:Xamarin.Forms.TabbedPage.BarTextColorProperty" />
       <Member Id="F:Xamarin.Forms.TabbedPage.SelectedTabColorProperty" />
       <Member Id="F:Xamarin.Forms.TabbedPage.UnselectedTabColorProperty" />
       <Member Id="M:Xamarin.Forms.TabbedPage.#ctor" />
       <Member Id="M:Xamarin.Forms.TabbedPage.CreateDefault(System.Object)" />
       <Member Id="M:Xamarin.Forms.TabbedPage.On``1" />
+      <Member Id="P:Xamarin.Forms.TabbedPage.BarBackground" />
       <Member Id="P:Xamarin.Forms.TabbedPage.BarBackgroundColor" />
       <Member Id="P:Xamarin.Forms.TabbedPage.BarTextColor" />
       <Member Id="P:Xamarin.Forms.TabbedPage.SelectedTabColor" />
@@ -4792,6 +5166,7 @@
       <Member Id="F:Xamarin.Forms.VisualElement.AnchorXProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.AnchorYProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.BackgroundColorProperty" />
+      <Member Id="F:Xamarin.Forms.VisualElement.BackgroundProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.BehaviorsProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.ClipProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.FlowDirectionProperty" />
@@ -4849,6 +5224,7 @@
       <Member Id="M:Xamarin.Forms.VisualElement.Xamarin#Forms#IVisualElementController#InvalidateMeasure(Xamarin.Forms.Internals.InvalidationTrigger)" />
       <Member Id="P:Xamarin.Forms.VisualElement.AnchorX" />
       <Member Id="P:Xamarin.Forms.VisualElement.AnchorY" />
+      <Member Id="P:Xamarin.Forms.VisualElement.Background" />
       <Member Id="P:Xamarin.Forms.VisualElement.BackgroundColor" />
       <Member Id="P:Xamarin.Forms.VisualElement.Batched" />
       <Member Id="P:Xamarin.Forms.VisualElement.Behaviors" />
@@ -4895,10 +5271,6 @@
     <Type Name="Xamarin.Forms.VisualElement/VisibilityConverter" Id="T:Xamarin.Forms.VisualElement.VisibilityConverter">
       <Member Id="M:Xamarin.Forms.VisualElement.VisibilityConverter.#ctor" />
       <Member Id="M:Xamarin.Forms.VisualElement.VisibilityConverter.ConvertFromInvariantString(System.String)" />
-    </Type>
-    <Type Name="Xamarin.Forms.VisualElementExtensions" Id="T:Xamarin.Forms.VisualElementExtensions">
-      <Member Id="M:Xamarin.Forms.VisualElementExtensions.SetAppThemeColor(Xamarin.Forms.VisualElement,Xamarin.Forms.BindableProperty,Xamarin.Forms.Color,Xamarin.Forms.Color)" />
-      <Member Id="M:Xamarin.Forms.VisualElementExtensions.SetOnAppTheme``1(Xamarin.Forms.VisualElement,Xamarin.Forms.BindableProperty,``0,``0)" />
     </Type>
     <Type Name="Xamarin.Forms.VisualMarker" Id="T:Xamarin.Forms.VisualMarker">
       <Member Id="P:Xamarin.Forms.VisualMarker.Default" />
@@ -7301,6 +7673,7 @@
     <Type Name="Xamarin.Forms.Shapes.PolyQuadraticBezierSegment" Id="T:Xamarin.Forms.Shapes.PolyQuadraticBezierSegment">
       <Member Id="F:Xamarin.Forms.Shapes.PolyQuadraticBezierSegment.PointsProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.PolyQuadraticBezierSegment.#ctor" />
+      <Member Id="M:Xamarin.Forms.Shapes.PolyQuadraticBezierSegment.#ctor(Xamarin.Forms.Shapes.PointCollection)" />
       <Member Id="P:Xamarin.Forms.Shapes.PolyQuadraticBezierSegment.Points" />
     </Type>
     <Type Name="Xamarin.Forms.Shapes.QuadraticBezierSegment" Id="T:Xamarin.Forms.Shapes.QuadraticBezierSegment">
@@ -7328,6 +7701,8 @@
       <Member Id="F:Xamarin.Forms.Shapes.RotateTransform.CenterXProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.RotateTransform.CenterYProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.RotateTransform.#ctor" />
+      <Member Id="M:Xamarin.Forms.Shapes.RotateTransform.#ctor(System.Double)" />
+      <Member Id="M:Xamarin.Forms.Shapes.RotateTransform.#ctor(System.Double,System.Double,System.Double)" />
       <Member Id="P:Xamarin.Forms.Shapes.RotateTransform.Angle" />
       <Member Id="P:Xamarin.Forms.Shapes.RotateTransform.CenterX" />
       <Member Id="P:Xamarin.Forms.Shapes.RotateTransform.CenterY" />
@@ -7338,6 +7713,8 @@
       <Member Id="F:Xamarin.Forms.Shapes.ScaleTransform.ScaleXProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.ScaleTransform.ScaleYProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.ScaleTransform.#ctor" />
+      <Member Id="M:Xamarin.Forms.Shapes.ScaleTransform.#ctor(System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.Shapes.ScaleTransform.#ctor(System.Double,System.Double,System.Double,System.Double)" />
       <Member Id="P:Xamarin.Forms.Shapes.ScaleTransform.CenterX" />
       <Member Id="P:Xamarin.Forms.Shapes.ScaleTransform.CenterY" />
       <Member Id="P:Xamarin.Forms.Shapes.ScaleTransform.ScaleX" />
@@ -7350,6 +7727,7 @@
       <Member Id="F:Xamarin.Forms.Shapes.Shape.StrokeDashOffsetProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.Shape.StrokeLineCapProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.Shape.StrokeLineJoinProperty" />
+      <Member Id="F:Xamarin.Forms.Shapes.Shape.StrokeMiterLimitProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.Shape.StrokeProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.Shape.StrokeThicknessProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.Shape.#ctor" />
@@ -7360,6 +7738,7 @@
       <Member Id="P:Xamarin.Forms.Shapes.Shape.StrokeDashOffset" />
       <Member Id="P:Xamarin.Forms.Shapes.Shape.StrokeLineCap" />
       <Member Id="P:Xamarin.Forms.Shapes.Shape.StrokeLineJoin" />
+      <Member Id="P:Xamarin.Forms.Shapes.Shape.StrokeMiterLimit" />
       <Member Id="P:Xamarin.Forms.Shapes.Shape.StrokeThickness" />
     </Type>
     <Type Name="Xamarin.Forms.Shapes.SkewTransform" Id="T:Xamarin.Forms.Shapes.SkewTransform">
@@ -7368,12 +7747,15 @@
       <Member Id="F:Xamarin.Forms.Shapes.SkewTransform.CenterXProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.SkewTransform.CenterYProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.SkewTransform.#ctor" />
+      <Member Id="M:Xamarin.Forms.Shapes.SkewTransform.#ctor(System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.Shapes.SkewTransform.#ctor(System.Double,System.Double,System.Double,System.Double)" />
       <Member Id="P:Xamarin.Forms.Shapes.SkewTransform.AngleX" />
       <Member Id="P:Xamarin.Forms.Shapes.SkewTransform.AngleY" />
       <Member Id="P:Xamarin.Forms.Shapes.SkewTransform.CenterX" />
       <Member Id="P:Xamarin.Forms.Shapes.SkewTransform.CenterY" />
     </Type>
     <Type Name="Xamarin.Forms.Shapes.Transform" Id="T:Xamarin.Forms.Shapes.Transform">
+      <Member Id="F:Xamarin.Forms.Shapes.Transform.ValueProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.Transform.#ctor" />
       <Member Id="P:Xamarin.Forms.Shapes.Transform.Value" />
     </Type>
@@ -7393,6 +7775,7 @@
       <Member Id="F:Xamarin.Forms.Shapes.TranslateTransform.XProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.TranslateTransform.YProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.TranslateTransform.#ctor" />
+      <Member Id="M:Xamarin.Forms.Shapes.TranslateTransform.#ctor(System.Double,System.Double)" />
       <Member Id="P:Xamarin.Forms.Shapes.TranslateTransform.X" />
       <Member Id="P:Xamarin.Forms.Shapes.TranslateTransform.Y" />
     </Type>

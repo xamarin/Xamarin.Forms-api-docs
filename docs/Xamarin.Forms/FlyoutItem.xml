@@ -36,6 +36,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetIsVisible">
+      <MemberSignature Language="C#" Value="public static bool GetIsVisible (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsVisible(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlyoutItem.GetIsVisible(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetIsVisible : Xamarin.Forms.BindableObject -&gt; bool" Usage="Xamarin.Forms.FlyoutItem.GetIsVisible obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ImageStyle">
       <MemberSignature Language="C#" Value="public const string ImageStyle;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ImageStyle" />
@@ -51,6 +74,24 @@
       </ReturnValue>
       <Docs>
         <summary>StyleClass set on the layout of each Flyout Item. This const is set to "FlyoutItemLabelStyle".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVisibleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsVisibleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsVisibleProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.FlyoutItem.IsVisibleProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsVisibleProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.FlyoutItem.IsVisibleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,6 +128,30 @@
       </ReturnValue>
       <Docs>
         <summary>StyleClass set on the Label of every Flyout Item. This const is set to "FlyoutItemLayoutStyle".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsVisible">
+      <MemberSignature Language="C#" Value="public static void SetIsVisible (Xamarin.Forms.BindableObject obj, bool isVisible);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsVisible(class Xamarin.Forms.BindableObject obj, bool isVisible) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlyoutItem.SetIsVisible(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetIsVisible : Xamarin.Forms.BindableObject * bool -&gt; unit" Usage="Xamarin.Forms.FlyoutItem.SetIsVisible (obj, isVisible)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="isVisible" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="isVisible">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -198,6 +198,62 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FlyoutBackdrop">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Brush FlyoutBackdrop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Brush FlyoutBackdrop" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.FlyoutBackdrop" />
+      <MemberSignature Language="F#" Value="member this.FlyoutBackdrop : Xamarin.Forms.Brush with get, set" Usage="Xamarin.Forms.Shell.FlyoutBackdrop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutBackdropProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FlyoutBackdropProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FlyoutBackdropProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.FlyoutBackdropProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlyoutBackdropProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.FlyoutBackdropProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutBackground">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Brush FlyoutBackground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Brush FlyoutBackground" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.FlyoutBackground" />
+      <MemberSignature Language="F#" Value="member this.FlyoutBackground : Xamarin.Forms.Brush with get, set" Usage="Xamarin.Forms.Shell.FlyoutBackground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FlyoutBackgroundColor">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Color FlyoutBackgroundColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Color FlyoutBackgroundColor" />
@@ -301,6 +357,24 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FlyoutBackgroundImageProperty" />
       <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.FlyoutBackgroundImageProperty" />
       <MemberSignature Language="F#" Value=" staticval mutable FlyoutBackgroundImageProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.FlyoutBackgroundImageProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutBackgroundProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FlyoutBackgroundProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FlyoutBackgroundProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shell.FlyoutBackgroundProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlyoutBackgroundProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shell.FlyoutBackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -649,6 +723,29 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Xamarin.Forms.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFlyoutBackdrop">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Brush GetFlyoutBackdrop (Xamarin.Forms.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.Brush GetFlyoutBackdrop(class Xamarin.Forms.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.GetFlyoutBackdrop(Xamarin.Forms.BindableObject)" />
+      <MemberSignature Language="F#" Value="static member GetFlyoutBackdrop : Xamarin.Forms.BindableObject -&gt; Xamarin.Forms.Brush" Usage="Xamarin.Forms.Shell.GetFlyoutBackdrop obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Brush</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
@@ -1482,6 +1579,30 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
       <Parameters>
         <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
         <Parameter Name="value" Type="Xamarin.Forms.Color" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFlyoutBackdrop">
+      <MemberSignature Language="C#" Value="public static void SetFlyoutBackdrop (Xamarin.Forms.BindableObject obj, Xamarin.Forms.Brush value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFlyoutBackdrop(class Xamarin.Forms.BindableObject obj, class Xamarin.Forms.Brush value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shell.SetFlyoutBackdrop(Xamarin.Forms.BindableObject,Xamarin.Forms.Brush)" />
+      <MemberSignature Language="F#" Value="static member SetFlyoutBackdrop : Xamarin.Forms.BindableObject * Xamarin.Forms.Brush -&gt; unit" Usage="Xamarin.Forms.Shell.SetFlyoutBackdrop (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Xamarin.Forms.BindableObject" />
+        <Parameter Name="value" Type="Xamarin.Forms.Brush" />
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
