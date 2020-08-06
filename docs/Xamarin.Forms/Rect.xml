@@ -1,0 +1,819 @@
+<Type Name="Rect" FullName="Xamarin.Forms.Rect">
+  <TypeSignature Language="C#" Value="public struct Rect" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Rect extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Rect" />
+  <TypeSignature Language="F#" Value="type Rect = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("X={X}, Y={Y}, Width={Width}, Height={Height}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.TypeConverter(typeof(Xamarin.Forms.RectTypeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Rect (Xamarin.Forms.Point loc, Xamarin.Forms.Size sz);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.Point loc, valuetype Xamarin.Forms.Size sz) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.#ctor(Xamarin.Forms.Point,Xamarin.Forms.Size)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Rect : Xamarin.Forms.Point * Xamarin.Forms.Size -&gt; Xamarin.Forms.Rect" Usage="new Xamarin.Forms.Rect (loc, sz)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="loc" Type="Xamarin.Forms.Point" />
+        <Parameter Name="sz" Type="Xamarin.Forms.Size" />
+      </Parameters>
+      <Docs>
+        <param name="loc">To be added.</param>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Rect (double x, double y, double width, double height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 x, float64 y, float64 width, float64 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.#ctor(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Rect : double * double * double * double -&gt; Xamarin.Forms.Rect" Usage="new Xamarin.Forms.Rect (x, y, width, height)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="public double Bottom { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Bottom" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.Bottom" />
+      <MemberSignature Language="F#" Value="member this.Bottom : double" Usage="Xamarin.Forms.Rect.Bottom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Center">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Point Center { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Point Center" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.Center" />
+      <MemberSignature Language="F#" Value="member this.Center : Xamarin.Forms.Point" Usage="Xamarin.Forms.Rect.Center" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Xamarin.Forms.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(valuetype Xamarin.Forms.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Contains(Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="member this.Contains : Xamarin.Forms.Point -&gt; bool" Usage="rect.Contains pt" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="pt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Xamarin.Forms.Rect rect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(valuetype Xamarin.Forms.Rect rect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Contains(Xamarin.Forms.Rect)" />
+      <MemberSignature Language="F#" Value="member this.Contains : Xamarin.Forms.Rect -&gt; bool" Usage="rect.Contains rect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (double x, double y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(float64 x, float64 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Contains(System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="member this.Contains : double * double -&gt; bool" Usage="rect.Contains (x, y)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deconstruct">
+      <MemberSignature Language="C#" Value="public void Deconstruct (out double x, out double y, out double width, out double height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] float64&amp; x, [out] float64&amp; y, [out] float64&amp; width, [out] float64&amp; height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Deconstruct(System.Double@,System.Double@,System.Double@,System.Double@)" />
+      <MemberSignature Language="F#" Value="member this.Deconstruct : double * double * double * double -&gt; unit" Usage="rect.Deconstruct (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" RefType="out" />
+        <Parameter Name="y" Type="System.Double" RefType="out" />
+        <Parameter Name="width" Type="System.Double" RefType="out" />
+        <Parameter Name="height" Type="System.Double" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Equals(System.Object)" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rect.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Xamarin.Forms.Rect other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype Xamarin.Forms.Rect other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Equals(Xamarin.Forms.Rect)" />
+      <MemberSignature Language="F#" Value="override this.Equals : Xamarin.Forms.Rect -&gt; bool" Usage="rect.Equals other" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromLTRB">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Rect FromLTRB (double left, double top, double right, double bottom);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Rect FromLTRB(float64 left, float64 top, float64 right, float64 bottom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.FromLTRB(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="static member FromLTRB : double * double * double * double -&gt; Xamarin.Forms.Rect" Usage="Xamarin.Forms.Rect.FromLTRB (left, top, right, bottom)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" />
+        <Parameter Name="top" Type="System.Double" />
+        <Parameter Name="right" Type="System.Double" />
+        <Parameter Name="bottom" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="right">To be added.</param>
+        <param name="bottom">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.GetHashCode" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rect.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.Height" />
+      <MemberSignature Language="F#" Value="member this.Height : double with get, set" Usage="Xamarin.Forms.Rect.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inflate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rect Inflate (Xamarin.Forms.Size sz);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Xamarin.Forms.Rect Inflate(valuetype Xamarin.Forms.Size sz) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Inflate(Xamarin.Forms.Size)" />
+      <MemberSignature Language="F#" Value="member this.Inflate : Xamarin.Forms.Size -&gt; Xamarin.Forms.Rect" Usage="rect.Inflate sz" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sz" Type="Xamarin.Forms.Size" />
+      </Parameters>
+      <Docs>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inflate">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rect Inflate (double width, double height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Xamarin.Forms.Rect Inflate(float64 width, float64 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Inflate(System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="member this.Inflate : double * double -&gt; Xamarin.Forms.Rect" Usage="rect.Inflate (width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rect Intersect (Xamarin.Forms.Rect r);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Xamarin.Forms.Rect Intersect(valuetype Xamarin.Forms.Rect r) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Intersect(Xamarin.Forms.Rect)" />
+      <MemberSignature Language="F#" Value="member this.Intersect : Xamarin.Forms.Rect -&gt; Xamarin.Forms.Rect" Usage="rect.Intersect r" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="r" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="r">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Rect Intersect (Xamarin.Forms.Rect r1, Xamarin.Forms.Rect r2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Rect Intersect(valuetype Xamarin.Forms.Rect r1, valuetype Xamarin.Forms.Rect r2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Intersect(Xamarin.Forms.Rect,Xamarin.Forms.Rect)" />
+      <MemberSignature Language="F#" Value="static member Intersect : Xamarin.Forms.Rect * Xamarin.Forms.Rect -&gt; Xamarin.Forms.Rect" Usage="Xamarin.Forms.Rect.Intersect (r1, r2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="r1" Type="Xamarin.Forms.Rect" />
+        <Parameter Name="r2" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="r1">To be added.</param>
+        <param name="r2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntersectsWith">
+      <MemberSignature Language="C#" Value="public bool IntersectsWith (Xamarin.Forms.Rect r);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IntersectsWith(valuetype Xamarin.Forms.Rect r) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.IntersectsWith(Xamarin.Forms.Rect)" />
+      <MemberSignature Language="F#" Value="member this.IntersectsWith : Xamarin.Forms.Rect -&gt; bool" Usage="rect.IntersectsWith r" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="r" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="r">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.IsEmpty" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="Xamarin.Forms.Rect.IsEmpty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.Left" />
+      <MemberSignature Language="F#" Value="member this.Left : double" Usage="Xamarin.Forms.Rect.Left" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Point Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Point Location" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.Location" />
+      <MemberSignature Language="F#" Value="member this.Location : Xamarin.Forms.Point with get, set" Usage="Xamarin.Forms.Rect.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rect Offset (Xamarin.Forms.Point dr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Xamarin.Forms.Rect Offset(valuetype Xamarin.Forms.Point dr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Offset(Xamarin.Forms.Point)" />
+      <MemberSignature Language="F#" Value="member this.Offset : Xamarin.Forms.Point -&gt; Xamarin.Forms.Rect" Usage="rect.Offset dr" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dr" Type="Xamarin.Forms.Point" />
+      </Parameters>
+      <Docs>
+        <param name="dr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rect Offset (double dx, double dy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Xamarin.Forms.Rect Offset(float64 dx, float64 dy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Offset(System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="member this.Offset : double * double -&gt; Xamarin.Forms.Rect" Usage="rect.Offset (dx, dy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dx" Type="System.Double" />
+        <Parameter Name="dy" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="dx">To be added.</param>
+        <param name="dy">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Xamarin.Forms.Rect r1, Xamarin.Forms.Rect r2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Xamarin.Forms.Rect r1, valuetype Xamarin.Forms.Rect r2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.op_Equality(Xamarin.Forms.Rect,Xamarin.Forms.Rect)" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Xamarin.Forms.Rect * Xamarin.Forms.Rect -&gt; bool" Usage="r1 = r2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="r1" Type="Xamarin.Forms.Rect" />
+        <Parameter Name="r2" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="r1">To be added.</param>
+        <param name="r2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Xamarin.Forms.Rect r1, Xamarin.Forms.Rect r2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Xamarin.Forms.Rect r1, valuetype Xamarin.Forms.Rect r2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.op_Inequality(Xamarin.Forms.Rect,Xamarin.Forms.Rect)" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Xamarin.Forms.Rect * Xamarin.Forms.Rect -&gt; bool" Usage="Xamarin.Forms.Rect.op_Inequality (r1, r2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="r1" Type="Xamarin.Forms.Rect" />
+        <Parameter Name="r2" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="r1">To be added.</param>
+        <param name="r2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public double Right { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Right" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.Right" />
+      <MemberSignature Language="F#" Value="member this.Right : double" Usage="Xamarin.Forms.Rect.Right" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rect Round ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Xamarin.Forms.Rect Round() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Round" />
+      <MemberSignature Language="F#" Value="member this.Round : unit -&gt; Xamarin.Forms.Rect" Usage="rect.Round " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Size Size { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Size Size" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.Size" />
+      <MemberSignature Language="F#" Value="member this.Size : Xamarin.Forms.Size with get, set" Usage="Xamarin.Forms.Rect.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.Top" />
+      <MemberSignature Language="F#" Value="member this.Top : double" Usage="Xamarin.Forms.Rect.Top" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.ToString" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rect.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rect Union (Xamarin.Forms.Rect r);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Xamarin.Forms.Rect Union(valuetype Xamarin.Forms.Rect r) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Union(Xamarin.Forms.Rect)" />
+      <MemberSignature Language="F#" Value="member this.Union : Xamarin.Forms.Rect -&gt; Xamarin.Forms.Rect" Usage="rect.Union r" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="r" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="r">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Rect Union (Xamarin.Forms.Rect r1, Xamarin.Forms.Rect r2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Xamarin.Forms.Rect Union(valuetype Xamarin.Forms.Rect r1, valuetype Xamarin.Forms.Rect r2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Rect.Union(Xamarin.Forms.Rect,Xamarin.Forms.Rect)" />
+      <MemberSignature Language="F#" Value="static member Union : Xamarin.Forms.Rect * Xamarin.Forms.Rect -&gt; Xamarin.Forms.Rect" Usage="Xamarin.Forms.Rect.Union (r1, r2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="r1" Type="Xamarin.Forms.Rect" />
+        <Parameter Name="r2" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="r1">To be added.</param>
+        <param name="r2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.Width" />
+      <MemberSignature Language="F#" Value="member this.Width : double with get, set" Usage="Xamarin.Forms.Rect.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public double X { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 X" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.X" />
+      <MemberSignature Language="F#" Value="member this.X : double with get, set" Usage="Xamarin.Forms.Rect.X" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public double Y { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Y" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Rect.Y" />
+      <MemberSignature Language="F#" Value="member this.Y : double with get, set" Usage="Xamarin.Forms.Rect.Y" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zero">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Rect Zero;" />
+      <MemberSignature Language="ILAsm" Value=".field public static valuetype Xamarin.Forms.Rect Zero" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Rect.Zero" />
+      <MemberSignature Language="F#" Value=" staticval mutable Zero : Xamarin.Forms.Rect" Usage="Xamarin.Forms.Rect.Zero" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
