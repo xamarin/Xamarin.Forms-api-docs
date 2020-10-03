@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an object that renders audio and video to the display.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the MediaElement class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,11 @@
         <ReturnType>Xamarin.Forms.Aspect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that describes how a MediaElement should be stretched to fill the destination rectangle.</summary>
+        <value>
+          A value of the <see cref="Aspect"/> enumeration that specifies how the source visual media is rendered.
+          The default value is <see cref="F:Xamarin.Forms.Aspect.AspectFit" />.
+        </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +76,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the Aspect dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +94,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          Gets or sets a value that indicates whether media will begin playback automatically when the <see cref="Source"/> property is set.
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -110,7 +115,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the AutoPlay dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +133,12 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates the current buffering progress.</summary>
+        <value>
+          The amount of buffering that is completed for media content.
+          The value ranges from 0 to 1.
+          Multiply by 100 to obtain a percentage.
+        </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +156,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the BufferingProgress dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,8 +174,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value which identifies whether the MediaElement can seek to a given <see cref="Position"/>.</summary>
+        <value>True if seeking is supported, else False.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +193,7 @@
         <ReturnType>Xamarin.Forms.MediaElementState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the status of this MediaElement.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,7 +212,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the CurrentState dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,7 +230,7 @@
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the total duration of the media content, if available.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,7 +249,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the Duration dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +267,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that describes whether the media source currently loaded in the media engine should automatically set the position to the media start after reaching its end.</summary>
+        <value>True to automatically repeat playback from the beginning, else False. Default value is False.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,7 +286,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the IsLooping dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,7 +304,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value that specifies whether the control should stop the screen from timing out when playing media.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,7 +323,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the KeepScreenOn dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,7 +341,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the MediaElement finishes playing audio or video.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,7 +359,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the MediaElement encounters an error opening audio or video.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,7 +377,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the media stream has been validated and opened, and the file headers have been read.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,7 +415,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pauses media at the current position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -425,7 +434,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Plays media from the current position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,7 +455,7 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the current position of progress through the media's playback time.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -465,7 +474,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the Position dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,7 +515,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the seek point of a requested seek operation is ready for playback.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -547,7 +556,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value that determines whether the standard transport controls are enabled.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -566,7 +575,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the ShowsPlaybackControls dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -589,7 +598,7 @@
         <ReturnType>Xamarin.Forms.MediaSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a media source on the MediaElement.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -608,7 +617,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the Source dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -650,7 +659,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stops and resets media to be played from the beginning.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -703,7 +712,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the height, in pixels, of the video content.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -722,7 +731,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the VideoHeight dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,7 +749,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the width, in pixels, of the video content.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -759,7 +768,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the VideoWidth dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -780,8 +789,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value between 0.0 and 1.0 for the audio volume of the MediaElement.</summary>
+        <value>A double value from 0.0 (silent) to 1.0 (full volume).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -799,7 +808,7 @@
         <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the Volume dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

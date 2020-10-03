@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the potential states of a MediaElement object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,11 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          The MediaElement is loading the media for playback.
+          Its Position does not advance during this state.
+          If the MediaElement was already playing video, it continues to display the last displayed frame.
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="Closed">
@@ -48,7 +52,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          The MediaElement contains no media.
+          The MediaElement displays a transparent frame.
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="Opening">
@@ -66,7 +73,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          The MediaElement is validating and attempting to load the specified source.
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="Paused">
@@ -84,7 +93,10 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          The MediaElement does not advance its Position.
+          If the MediaElement was playing video, it continues to display the current frame.
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="Playing">
@@ -102,7 +114,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          The MediaElement is playing the current media source.
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="Stopped">
@@ -120,7 +134,11 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          The MediaElement contains media but is not playing or paused.
+          Its Position is 0 and does not advance.
+          If the loaded media is video, the MediaElement displays the first frame.
+        </summary>
       </Docs>
     </Member>
   </Members>
