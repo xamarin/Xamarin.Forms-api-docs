@@ -253,10 +253,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendDragStarting">
-      <MemberSignature Language="C#" Value="public void SendDragStarting (Xamarin.Forms.DragStartingEventArgs args, Xamarin.Forms.VisualElement element);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendDragStarting(class Xamarin.Forms.DragStartingEventArgs args, class Xamarin.Forms.VisualElement element) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DragGestureRecognizer.SendDragStarting(Xamarin.Forms.DragStartingEventArgs,Xamarin.Forms.VisualElement)" />
-      <MemberSignature Language="F#" Value="member this.SendDragStarting : Xamarin.Forms.DragStartingEventArgs * Xamarin.Forms.VisualElement -&gt; unit" Usage="dragGestureRecognizer.SendDragStarting (args, element)" />
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.DragStartingEventArgs SendDragStarting (Xamarin.Forms.VisualElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Xamarin.Forms.DragStartingEventArgs SendDragStarting(class Xamarin.Forms.VisualElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DragGestureRecognizer.SendDragStarting(Xamarin.Forms.VisualElement)" />
+      <MemberSignature Language="F#" Value="member this.SendDragStarting : Xamarin.Forms.VisualElement -&gt; Xamarin.Forms.DragStartingEventArgs" Usage="dragGestureRecognizer.SendDragStarting element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -268,16 +268,15 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>Xamarin.Forms.DragStartingEventArgs</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="args" Type="Xamarin.Forms.DragStartingEventArgs" />
         <Parameter Name="element" Type="Xamarin.Forms.VisualElement" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
         <param name="element">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -213,6 +213,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FromStream">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ImageSource FromStream (Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&gt; stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ImageSource FromStream(class System.Func`2&lt;valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt;&gt; stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageSource.FromStream(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{System.IO.Stream}})" />
+      <MemberSignature Language="F#" Value="static member FromStream : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&gt; -&gt; Xamarin.Forms.ImageSource" Usage="Xamarin.Forms.ImageSource.FromStream stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FromUri">
       <MemberSignature Language="C#" Value="public static Xamarin.Forms.ImageSource FromUri (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ImageSource FromUri(class System.Uri uri) cil managed" />

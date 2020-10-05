@@ -34,6 +34,25 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlTemplate (Func&lt;object&gt; createTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;object&gt; createTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ControlTemplate.#ctor(System.Func{System.Object})" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.ControlTemplate : Func&lt;obj&gt; -&gt; Xamarin.Forms.ControlTemplate" Usage="new Xamarin.Forms.ControlTemplate createTemplate" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="createTemplate" Type="System.Func&lt;System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="createTemplate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ControlTemplate (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ControlTemplate.#ctor(System.Type)" />
