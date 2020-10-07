@@ -52,28 +52,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CancelAnimations">
-      <MemberSignature Language="C#" Value="public static void CancelAnimations (this Xamarin.Forms.VisualElement view);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CancelAnimations(class Xamarin.Forms.VisualElement view) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ViewExtensions.CancelAnimations(this Xamarin.Forms.VisualElement)" />
-      <MemberSignature Language="F#" Value="static member CancelAnimations : Xamarin.Forms.VisualElement -&gt; unit" Usage="Xamarin.Forms.ViewExtensions.CancelAnimations view" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="view" Type="Xamarin.Forms.VisualElement" RefType="this" />
-      </Parameters>
-      <Docs>
-        <param name="view">The view on which this method operates.</param>
-        <summary>Aborts the TranslateTo, LayoutTo, RotateTo, ScaleTo, and FadeTo animations on <paramref name="view" /> element.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="FadeTo">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; FadeTo (this Xamarin.Forms.VisualElement view, double opacity, uint length = 250, Xamarin.Forms.Easing easing = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; FadeTo(class Xamarin.Forms.VisualElement view, float64 opacity, unsigned int32 length, class Xamarin.Forms.Easing easing) cil managed" />
