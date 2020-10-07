@@ -55,7 +55,7 @@
     <Member MemberName="CancelAnimations">
       <MemberSignature Language="C#" Value="public static void CancelAnimations (this Xamarin.Forms.VisualElement view);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CancelAnimations(class Xamarin.Forms.VisualElement view) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ViewExtensions.CancelAnimations(Xamarin.Forms.VisualElement)" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ViewExtensions.CancelAnimations(this Xamarin.Forms.VisualElement)" />
       <MemberSignature Language="F#" Value="static member CancelAnimations : Xamarin.Forms.VisualElement -&gt; unit" Usage="Xamarin.Forms.ViewExtensions.CancelAnimations view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -69,8 +69,8 @@
         <Parameter Name="view" Type="Xamarin.Forms.VisualElement" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="view">The view on which this method operates.</param>
+        <summary>Aborts the TranslateTo, LayoutTo, RotateTo, ScaleTo, and FadeTo animations on <paramref name="view" /> element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
