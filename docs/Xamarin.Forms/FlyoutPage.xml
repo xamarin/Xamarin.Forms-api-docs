@@ -1,0 +1,512 @@
+<Type Name="FlyoutPage" FullName="Xamarin.Forms.FlyoutPage">
+  <TypeSignature Language="C#" Value="public class FlyoutPage : Xamarin.Forms.Page, Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.FlyoutPage&gt;, Xamarin.Forms.IFlyoutPageController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlyoutPage extends Xamarin.Forms.Page implements class Xamarin.Forms.IElementConfiguration`1&lt;class Xamarin.Forms.FlyoutPage&gt;, class Xamarin.Forms.IFlyoutPageController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.FlyoutPage" />
+  <TypeSignature Language="F#" Value="type FlyoutPage = class&#xA;    inherit Page&#xA;    interface IFlyoutPageController&#xA;    interface IElementConfiguration&lt;FlyoutPage&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.Page</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IElementConfiguration&lt;Xamarin.Forms.FlyoutPage&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IFlyoutPageController</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Xamarin.Forms.RenderWith(typeof(Xamarin.Forms.Platform._FlyoutPageRenderer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlyoutPage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlyoutPage.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackButtonPressed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; BackButtonPressed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.BackButtonPressedEventArgs&gt; BackButtonPressed" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.FlyoutPage.BackButtonPressed" />
+      <MemberSignature Language="F#" Value="member this.BackButtonPressed : EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; " Usage="member this.BackButtonPressed : System.EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Xamarin.Forms.IFlyoutPageController.BackButtonPressed</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanChangeIsPresented">
+      <MemberSignature Language="C#" Value="public bool CanChangeIsPresented { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeIsPresented" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.FlyoutPage.CanChangeIsPresented" />
+      <MemberSignature Language="F#" Value="member this.CanChangeIsPresented : bool with get, set" Usage="Xamarin.Forms.FlyoutPage.CanChangeIsPresented" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IFlyoutPageController.CanChangeIsPresented</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Detail">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Page Detail { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Page Detail" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.FlyoutPage.Detail" />
+      <MemberSignature Language="F#" Value="member this.Detail : Xamarin.Forms.Page with get, set" Usage="Xamarin.Forms.FlyoutPage.Detail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Page</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailBounds">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rectangle DetailBounds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Rectangle DetailBounds" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.FlyoutPage.DetailBounds" />
+      <MemberSignature Language="F#" Value="member this.DetailBounds : Xamarin.Forms.Rectangle with get, set" Usage="Xamarin.Forms.FlyoutPage.DetailBounds" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IFlyoutPageController.DetailBounds</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flyout">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Page Flyout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Page Flyout" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.FlyoutPage.Flyout" />
+      <MemberSignature Language="F#" Value="member this.Flyout : Xamarin.Forms.Page with get, set" Usage="Xamarin.Forms.FlyoutPage.Flyout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Page</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutBounds">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rectangle FlyoutBounds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Rectangle FlyoutBounds" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.FlyoutPage.FlyoutBounds" />
+      <MemberSignature Language="F#" Value="member this.FlyoutBounds : Xamarin.Forms.Rectangle with get, set" Usage="Xamarin.Forms.FlyoutPage.FlyoutBounds" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IFlyoutPageController.FlyoutBounds</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutLayoutBehavior">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.FlyoutLayoutBehavior FlyoutLayoutBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.FlyoutLayoutBehavior FlyoutLayoutBehavior" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.FlyoutPage.FlyoutLayoutBehavior" />
+      <MemberSignature Language="F#" Value="member this.FlyoutLayoutBehavior : Xamarin.Forms.FlyoutLayoutBehavior with get, set" Usage="Xamarin.Forms.FlyoutPage.FlyoutLayoutBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.FlyoutLayoutBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutLayoutBehaviorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty FlyoutLayoutBehaviorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty FlyoutLayoutBehaviorProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.FlyoutPage.FlyoutLayoutBehaviorProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlyoutLayoutBehaviorProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.FlyoutPage.FlyoutLayoutBehaviorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGestureEnabled">
+      <MemberSignature Language="C#" Value="public bool IsGestureEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsGestureEnabled" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.FlyoutPage.IsGestureEnabled" />
+      <MemberSignature Language="F#" Value="member this.IsGestureEnabled : bool with get, set" Usage="Xamarin.Forms.FlyoutPage.IsGestureEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGestureEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsGestureEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsGestureEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.FlyoutPage.IsGestureEnabledProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsGestureEnabledProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.FlyoutPage.IsGestureEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresented">
+      <MemberSignature Language="C#" Value="public bool IsPresented { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPresented" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.FlyoutPage.IsPresented" />
+      <MemberSignature Language="F#" Value="member this.IsPresented : bool with get, set" Usage="Xamarin.Forms.FlyoutPage.IsPresented" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresentedChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler IsPresentedChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler IsPresentedChanged" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.FlyoutPage.IsPresentedChanged" />
+      <MemberSignature Language="F#" Value="member this.IsPresentedChanged : EventHandler " Usage="member this.IsPresentedChanged : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresentedProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty IsPresentedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty IsPresentedProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.FlyoutPage.IsPresentedProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsPresentedProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.FlyoutPage.IsPresentedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutChildren">
+      <MemberSignature Language="C#" Value="protected override void LayoutChildren (double x, double y, double width, double height);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LayoutChildren(float64 x, float64 y, float64 width, float64 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlyoutPage.LayoutChildren(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="F#" Value="override this.LayoutChildren : double * double * double * double -&gt; unit" Usage="flyoutPage.LayoutChildren (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.FlyoutPage&gt; On&lt;T&gt; () where T : Xamarin.Forms.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.IPlatformElementConfiguration`2&lt;!!T, class Xamarin.Forms.FlyoutPage&gt; On&lt;(class Xamarin.Forms.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlyoutPage.On``1" />
+      <MemberSignature Language="F#" Value="override this.On : unit -&gt; Xamarin.Forms.IPlatformElementConfiguration&lt;'T, Xamarin.Forms.FlyoutPage (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)&gt; (requires 'T :&gt; Xamarin.Forms.IConfigPlatform)" Usage="flyoutPage.On " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.IPlatformElementConfiguration&lt;T,Xamarin.Forms.FlyoutPage&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Xamarin.Forms.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAppearing">
+      <MemberSignature Language="C#" Value="protected override void OnAppearing ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAppearing() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlyoutPage.OnAppearing" />
+      <MemberSignature Language="F#" Value="override this.OnAppearing : unit -&gt; unit" Usage="flyoutPage.OnAppearing " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBackButtonPressed">
+      <MemberSignature Language="C#" Value="protected override bool OnBackButtonPressed ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBackButtonPressed() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlyoutPage.OnBackButtonPressed" />
+      <MemberSignature Language="F#" Value="override this.OnBackButtonPressed : unit -&gt; bool" Usage="flyoutPage.OnBackButtonPressed " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnParentSet">
+      <MemberSignature Language="C#" Value="protected override void OnParentSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnParentSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlyoutPage.OnParentSet" />
+      <MemberSignature Language="F#" Value="override this.OnParentSet : unit -&gt; unit" Usage="flyoutPage.OnParentSet " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldShowSplitMode">
+      <MemberSignature Language="C#" Value="public bool ShouldShowSplitMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShouldShowSplitMode" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.FlyoutPage.ShouldShowSplitMode" />
+      <MemberSignature Language="F#" Value="member this.ShouldShowSplitMode : bool" Usage="Xamarin.Forms.FlyoutPage.ShouldShowSplitMode" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IFlyoutPageController.ShouldShowSplitMode</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldShowToolbarButton">
+      <MemberSignature Language="C#" Value="public virtual bool ShouldShowToolbarButton ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldShowToolbarButton() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlyoutPage.ShouldShowToolbarButton" />
+      <MemberSignature Language="F#" Value="abstract member ShouldShowToolbarButton : unit -&gt; bool&#xA;override this.ShouldShowToolbarButton : unit -&gt; bool" Usage="flyoutPage.ShouldShowToolbarButton " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFlyoutLayoutBehavior">
+      <MemberSignature Language="C#" Value="public void UpdateFlyoutLayoutBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateFlyoutLayoutBehavior() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FlyoutPage.UpdateFlyoutLayoutBehavior" />
+      <MemberSignature Language="F#" Value="abstract member UpdateFlyoutLayoutBehavior : unit -&gt; unit&#xA;override this.UpdateFlyoutLayoutBehavior : unit -&gt; unit" Usage="flyoutPage.UpdateFlyoutLayoutBehavior " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Xamarin.Forms.IFlyoutPageController.UpdateFlyoutLayoutBehavior</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

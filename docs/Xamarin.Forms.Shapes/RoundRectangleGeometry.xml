@@ -1,0 +1,130 @@
+<Type Name="RoundRectangleGeometry" FullName="Xamarin.Forms.Shapes.RoundRectangleGeometry">
+  <TypeSignature Language="C#" Value="public class RoundRectangleGeometry : Xamarin.Forms.Shapes.GeometryGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoundRectangleGeometry extends Xamarin.Forms.Shapes.GeometryGroup" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Shapes.RoundRectangleGeometry" />
+  <TypeSignature Language="F#" Value="type RoundRectangleGeometry = class&#xA;    inherit GeometryGroup" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Xamarin.Forms.Shapes.GeometryGroup</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoundRectangleGeometry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.RoundRectangleGeometry.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoundRectangleGeometry (Xamarin.Forms.CornerRadius cornerRadius, Xamarin.Forms.Rect rect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Xamarin.Forms.CornerRadius cornerRadius, valuetype Xamarin.Forms.Rect rect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Shapes.RoundRectangleGeometry.#ctor(Xamarin.Forms.CornerRadius,Xamarin.Forms.Rect)" />
+      <MemberSignature Language="F#" Value="new Xamarin.Forms.Shapes.RoundRectangleGeometry : Xamarin.Forms.CornerRadius * Xamarin.Forms.Rect -&gt; Xamarin.Forms.Shapes.RoundRectangleGeometry" Usage="new Xamarin.Forms.Shapes.RoundRectangleGeometry (cornerRadius, rect)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cornerRadius" Type="Xamarin.Forms.CornerRadius" />
+        <Parameter Name="rect" Type="Xamarin.Forms.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="cornerRadius">To be added.</param>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CornerRadius">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.CornerRadius CornerRadius { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.CornerRadius CornerRadius" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.RoundRectangleGeometry.CornerRadius" />
+      <MemberSignature Language="F#" Value="member this.CornerRadius : Xamarin.Forms.CornerRadius with get, set" Usage="Xamarin.Forms.Shapes.RoundRectangleGeometry.CornerRadius" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.CornerRadius</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CornerRadiusProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty CornerRadiusProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty CornerRadiusProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shapes.RoundRectangleGeometry.CornerRadiusProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable CornerRadiusProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shapes.RoundRectangleGeometry.CornerRadiusProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rect">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rect Rect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Rect Rect" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shapes.RoundRectangleGeometry.Rect" />
+      <MemberSignature Language="F#" Value="member this.Rect : Xamarin.Forms.Rect with get, set" Usage="Xamarin.Forms.Shapes.RoundRectangleGeometry.Rect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RectProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty RectProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty RectProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.Shapes.RoundRectangleGeometry.RectProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable RectProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.Shapes.RoundRectangleGeometry.RectProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

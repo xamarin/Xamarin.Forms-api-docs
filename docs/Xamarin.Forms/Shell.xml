@@ -1,8 +1,8 @@
 <Type Name="Shell" FullName="Xamarin.Forms.Shell">
-  <TypeSignature Language="C#" Value="public class Shell : Xamarin.Forms.Page, Xamarin.Forms.IShellController" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Shell extends Xamarin.Forms.Page implements class Xamarin.Forms.IElementController, class Xamarin.Forms.IPageController, class Xamarin.Forms.IShellController, class Xamarin.Forms.IVisualElementController" />
+  <TypeSignature Language="C#" Value="public class Shell : Xamarin.Forms.Page, Xamarin.Forms.IPageContainer&lt;Xamarin.Forms.Page&gt;, Xamarin.Forms.IShellController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Shell extends Xamarin.Forms.Page implements class Xamarin.Forms.IElementController, class Xamarin.Forms.IPageContainer`1&lt;class Xamarin.Forms.Page&gt;, class Xamarin.Forms.IPageController, class Xamarin.Forms.IShellController, class Xamarin.Forms.IVisualElementController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.Shell" />
-  <TypeSignature Language="F#" Value="type Shell = class&#xA;    inherit Page&#xA;    interface IShellController&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
+  <TypeSignature Language="F#" Value="type Shell = class&#xA;    inherit Page&#xA;    interface IShellController&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IPageContainer&lt;Page&gt;" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -13,6 +13,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Xamarin.Forms.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IPageContainer&lt;Xamarin.Forms.Page&gt;</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Xamarin.Forms.IPageController</InterfaceName>
@@ -140,6 +143,28 @@
       </ReturnValue>
       <Docs>
         <summary>The backing store for the <see cref="P:Xamarin.Forms.Shell.CurrentItem" /> field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPage">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Page CurrentPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Xamarin.Forms.Page CurrentPage" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Shell.CurrentPage" />
+      <MemberSignature Language="F#" Value="member this.CurrentPage : Xamarin.Forms.Page" Usage="Xamarin.Forms.Shell.CurrentPage" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Xamarin.Forms.IPageContainer`1.CurrentPage</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Page</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

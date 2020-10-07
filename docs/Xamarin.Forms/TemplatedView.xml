@@ -153,6 +153,11 @@
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("OnChildRemoved(Element) is obsolete as of version 4.8.0. Please use OnChildRemoved(Element, int) instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -161,6 +166,30 @@
       </Parameters>
       <Docs>
         <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChildRemoved">
+      <MemberSignature Language="C#" Value="protected override void OnChildRemoved (Xamarin.Forms.Element child, int oldLogicalIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildRemoved(class Xamarin.Forms.Element child, int32 oldLogicalIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
+      <MemberSignature Language="F#" Value="override this.OnChildRemoved : Xamarin.Forms.Element * int -&gt; unit" Usage="templatedView.OnChildRemoved (child, oldLogicalIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="Xamarin.Forms.Element" />
+        <Parameter Name="oldLogicalIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="child">To be added.</param>
+        <param name="oldLogicalIndex">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,6 +224,26 @@
         <param name="widthConstraint">The width constraint that was passed with the request.</param>
         <param name="heightConstraint">The height constraint that was passed with the request.</param>
         <summary>Method that is called when the layout updates.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveControlTemplate">
+      <MemberSignature Language="C#" Value="public virtual Xamarin.Forms.ControlTemplate ResolveControlTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Xamarin.Forms.ControlTemplate ResolveControlTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.TemplatedView.ResolveControlTemplate" />
+      <MemberSignature Language="F#" Value="abstract member ResolveControlTemplate : unit -&gt; Xamarin.Forms.ControlTemplate&#xA;override this.ResolveControlTemplate : unit -&gt; Xamarin.Forms.ControlTemplate" Usage="templatedView.ResolveControlTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ControlTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

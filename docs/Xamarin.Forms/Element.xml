@@ -307,7 +307,7 @@
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Element/&lt;Descendants&gt;d__87))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Xamarin.Forms.Element/&lt;Descendants&gt;d__88))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -600,6 +600,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("OnChildRemoved(Element) is obsolete as of version 4.8.0. Please use OnChildRemoved(Element, int) instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -610,6 +615,30 @@
         <param name="child">The element that was removed.</param>
         <summary>Invoked whenever the <see cref="E:Xamarin.Forms.Element.ChildRemoved" /> event needs to be emitted. Implement this method to add class handling for this event.</summary>
         <remarks>This method has no default implementation. You should still call the base implementation in case an intermediate class has implemented this method.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChildRemoved">
+      <MemberSignature Language="C#" Value="protected virtual void OnChildRemoved (Xamarin.Forms.Element child, int oldLogicalIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnChildRemoved(class Xamarin.Forms.Element child, int32 oldLogicalIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Element.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member OnChildRemoved : Xamarin.Forms.Element * int -&gt; unit&#xA;override this.OnChildRemoved : Xamarin.Forms.Element * int -&gt; unit" Usage="element.OnChildRemoved (child, oldLogicalIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="Xamarin.Forms.Element" />
+        <Parameter Name="oldLogicalIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="child">To be added.</param>
+        <param name="oldLogicalIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnParentSet">

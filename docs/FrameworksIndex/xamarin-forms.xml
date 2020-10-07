@@ -18,6 +18,7 @@
       <Member Id="M:Xamarin.Forms.AbsoluteLayout.On``1" />
       <Member Id="M:Xamarin.Forms.AbsoluteLayout.OnChildAdded(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.AbsoluteLayout.OnChildRemoved(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.AbsoluteLayout.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
       <Member Id="M:Xamarin.Forms.AbsoluteLayout.OnSizeRequest(System.Double,System.Double)" />
       <Member Id="M:Xamarin.Forms.AbsoluteLayout.SetLayoutBounds(Xamarin.Forms.BindableObject,Xamarin.Forms.Rectangle)" />
       <Member Id="M:Xamarin.Forms.AbsoluteLayout.SetLayoutFlags(Xamarin.Forms.BindableObject,Xamarin.Forms.AbsoluteLayoutFlags)" />
@@ -664,6 +665,7 @@
       <Member Id="F:Xamarin.Forms.CarouselView.IsScrollAnimatedProperty" />
       <Member Id="F:Xamarin.Forms.CarouselView.IsSwipeEnabledProperty" />
       <Member Id="F:Xamarin.Forms.CarouselView.ItemsLayoutProperty" />
+      <Member Id="F:Xamarin.Forms.CarouselView.LoopProperty" />
       <Member Id="F:Xamarin.Forms.CarouselView.NextItemVisualState" />
       <Member Id="F:Xamarin.Forms.CarouselView.PeekAreaInsetsProperty" />
       <Member Id="F:Xamarin.Forms.CarouselView.PositionChangedCommandParameterProperty" />
@@ -675,7 +677,6 @@
       <Member Id="M:Xamarin.Forms.CarouselView.OnCurrentItemChanged(System.EventArgs)" />
       <Member Id="M:Xamarin.Forms.CarouselView.OnPositionChanged(Xamarin.Forms.PositionChangedEventArgs)" />
       <Member Id="M:Xamarin.Forms.CarouselView.SetIsDragging(System.Boolean)" />
-      <Member Id="M:Xamarin.Forms.CarouselView.VerifyCarouselViewFlagEnabled(System.String,System.String)" />
       <Member Id="P:Xamarin.Forms.CarouselView.AnimateCurrentItemChanges" />
       <Member Id="P:Xamarin.Forms.CarouselView.AnimatePositionChanges" />
       <Member Id="P:Xamarin.Forms.CarouselView.CurrentItem" />
@@ -688,6 +689,7 @@
       <Member Id="P:Xamarin.Forms.CarouselView.IsScrolling" />
       <Member Id="P:Xamarin.Forms.CarouselView.IsSwipeEnabled" />
       <Member Id="P:Xamarin.Forms.CarouselView.ItemsLayout" />
+      <Member Id="P:Xamarin.Forms.CarouselView.Loop" />
       <Member Id="P:Xamarin.Forms.CarouselView.PeekAreaInsets" />
       <Member Id="P:Xamarin.Forms.CarouselView.Position" />
       <Member Id="P:Xamarin.Forms.CarouselView.PositionChangedCommand" />
@@ -1062,6 +1064,7 @@
     </Type>
     <Type Name="Xamarin.Forms.ControlTemplate" Id="T:Xamarin.Forms.ControlTemplate">
       <Member Id="M:Xamarin.Forms.ControlTemplate.#ctor" />
+      <Member Id="M:Xamarin.Forms.ControlTemplate.#ctor(System.Func{System.Object})" />
       <Member Id="M:Xamarin.Forms.ControlTemplate.#ctor(System.Type)" />
     </Type>
     <Type Name="Xamarin.Forms.CornerRadius" Id="T:Xamarin.Forms.CornerRadius">
@@ -1234,6 +1237,7 @@
       <Member Id="M:Xamarin.Forms.Device.GetNamedSize(Xamarin.Forms.NamedSize,System.Type)" />
       <Member Id="M:Xamarin.Forms.Device.GetNamedSize(Xamarin.Forms.NamedSize,System.Type,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.Device.GetNamedSize(Xamarin.Forms.NamedSize,Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.Device.Invalidate(Xamarin.Forms.VisualElement)" />
       <Member Id="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync(System.Action)" />
       <Member Id="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync(System.Func{System.Threading.Tasks.Task})" />
       <Member Id="M:Xamarin.Forms.Device.InvokeOnMainThreadAsync``1(System.Func{``0})" />
@@ -1252,6 +1256,7 @@
       <Member Id="P:Xamarin.Forms.Device.Info" />
       <Member Id="P:Xamarin.Forms.Device.IsInvokeRequired" />
       <Member Id="P:Xamarin.Forms.Device.OS" />
+      <Member Id="P:Xamarin.Forms.Device.PlatformInvalidator" />
       <Member Id="P:Xamarin.Forms.Device.PlatformServices" />
       <Member Id="P:Xamarin.Forms.Device.RuntimePlatform" />
     </Type>
@@ -1295,7 +1300,7 @@
       <Member Id="F:Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandParameterProperty" />
       <Member Id="F:Xamarin.Forms.DragGestureRecognizer.DropCompletedCommandProperty" />
       <Member Id="M:Xamarin.Forms.DragGestureRecognizer.#ctor" />
-      <Member Id="M:Xamarin.Forms.DragGestureRecognizer.SendDragStarting(Xamarin.Forms.DragStartingEventArgs,Xamarin.Forms.VisualElement)" />
+      <Member Id="M:Xamarin.Forms.DragGestureRecognizer.SendDragStarting(Xamarin.Forms.VisualElement)" />
       <Member Id="M:Xamarin.Forms.DragGestureRecognizer.SendDropCompleted(Xamarin.Forms.DropCompletedEventArgs)" />
       <Member Id="P:Xamarin.Forms.DragGestureRecognizer.CanDrag" />
       <Member Id="P:Xamarin.Forms.DragGestureRecognizer.DragStartingCommand" />
@@ -1318,17 +1323,23 @@
       <Member Id="P:Xamarin.Forms.DropEventArgs.Handled" />
     </Type>
     <Type Name="Xamarin.Forms.DropGestureRecognizer" Id="T:Xamarin.Forms.DropGestureRecognizer">
+      <Member Id="E:Xamarin.Forms.DropGestureRecognizer.DragLeave" />
       <Member Id="E:Xamarin.Forms.DropGestureRecognizer.DragOver" />
       <Member Id="E:Xamarin.Forms.DropGestureRecognizer.Drop" />
       <Member Id="F:Xamarin.Forms.DropGestureRecognizer.AllowDropProperty" />
+      <Member Id="F:Xamarin.Forms.DropGestureRecognizer.DragLeaveCommandParameterProperty" />
+      <Member Id="F:Xamarin.Forms.DropGestureRecognizer.DragLeaveCommandProperty" />
       <Member Id="F:Xamarin.Forms.DropGestureRecognizer.DragOverCommandParameterProperty" />
       <Member Id="F:Xamarin.Forms.DropGestureRecognizer.DragOverCommandProperty" />
       <Member Id="F:Xamarin.Forms.DropGestureRecognizer.DropCommandParameterProperty" />
       <Member Id="F:Xamarin.Forms.DropGestureRecognizer.DropCommandProperty" />
       <Member Id="M:Xamarin.Forms.DropGestureRecognizer.#ctor" />
+      <Member Id="M:Xamarin.Forms.DropGestureRecognizer.SendDragLeave(Xamarin.Forms.DragEventArgs)" />
       <Member Id="M:Xamarin.Forms.DropGestureRecognizer.SendDragOver(Xamarin.Forms.DragEventArgs)" />
-      <Member Id="M:Xamarin.Forms.DropGestureRecognizer.SendDrop(Xamarin.Forms.DropEventArgs,Xamarin.Forms.VisualElement)" />
+      <Member Id="M:Xamarin.Forms.DropGestureRecognizer.SendDrop(Xamarin.Forms.DropEventArgs)" />
       <Member Id="P:Xamarin.Forms.DropGestureRecognizer.AllowDrop" />
+      <Member Id="P:Xamarin.Forms.DropGestureRecognizer.DragLeaveCommand" />
+      <Member Id="P:Xamarin.Forms.DropGestureRecognizer.DragLeaveCommandParameter" />
       <Member Id="P:Xamarin.Forms.DropGestureRecognizer.DragOverCommand" />
       <Member Id="P:Xamarin.Forms.DropGestureRecognizer.DragOverCommandParameter" />
       <Member Id="P:Xamarin.Forms.DropGestureRecognizer.DropCommand" />
@@ -1349,6 +1360,10 @@
       <Member Id="M:Xamarin.Forms.Easing.#ctor(System.Func{System.Double,System.Double})" />
       <Member Id="M:Xamarin.Forms.Easing.Ease(System.Double)" />
       <Member Id="M:Xamarin.Forms.Easing.op_Implicit(System.Func{System.Double,System.Double})~Xamarin.Forms.Easing" />
+    </Type>
+    <Type Name="Xamarin.Forms.EasingTypeConverter" Id="T:Xamarin.Forms.EasingTypeConverter">
+      <Member Id="M:Xamarin.Forms.EasingTypeConverter.#ctor" />
+      <Member Id="M:Xamarin.Forms.EasingTypeConverter.ConvertFromInvariantString(System.String)" />
     </Type>
     <Type Name="Xamarin.Forms.Editor" Id="T:Xamarin.Forms.Editor">
       <Member Id="E:Xamarin.Forms.Editor.Completed" />
@@ -1422,6 +1437,7 @@
       <Member Id="M:Xamarin.Forms.Element.OnBindingContextChanged" />
       <Member Id="M:Xamarin.Forms.Element.OnChildAdded(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.Element.OnChildRemoved(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.Element.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
       <Member Id="M:Xamarin.Forms.Element.OnParentSet" />
       <Member Id="M:Xamarin.Forms.Element.OnPropertyChanged(System.String)" />
       <Member Id="M:Xamarin.Forms.Element.RemoveDynamicResource(Xamarin.Forms.BindableProperty)" />
@@ -1524,45 +1540,6 @@
       <Member Id="P:Xamarin.Forms.EventTrigger.Actions" />
       <Member Id="P:Xamarin.Forms.EventTrigger.Event" />
     </Type>
-    <Type Name="Xamarin.Forms.Expander" Id="T:Xamarin.Forms.Expander">
-      <Member Id="E:Xamarin.Forms.Expander.Tapped" />
-      <Member Id="F:Xamarin.Forms.Expander.CollapseAnimationEasingProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.CollapseAnimationLengthProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.CommandParameterProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.CommandProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.ContentProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.ContentTemplateProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.ExpandAnimationEasingProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.ExpandAnimationLengthProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.ForceUpdateSizeCommandProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.HeaderProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.IsExpandedProperty" />
-      <Member Id="F:Xamarin.Forms.Expander.StateProperty" />
-      <Member Id="M:Xamarin.Forms.Expander.#ctor" />
-      <Member Id="M:Xamarin.Forms.Expander.ForceUpdateSize" />
-      <Member Id="M:Xamarin.Forms.Expander.OnBindingContextChanged" />
-      <Member Id="M:Xamarin.Forms.Expander.OnMeasure(System.Double,System.Double)" />
-      <Member Id="M:Xamarin.Forms.Expander.OnPropertyChanged(System.String)" />
-      <Member Id="M:Xamarin.Forms.Expander.OnSizeAllocated(System.Double,System.Double)" />
-      <Member Id="P:Xamarin.Forms.Expander.CollapseAnimationEasing" />
-      <Member Id="P:Xamarin.Forms.Expander.CollapseAnimationLength" />
-      <Member Id="P:Xamarin.Forms.Expander.Command" />
-      <Member Id="P:Xamarin.Forms.Expander.CommandParameter" />
-      <Member Id="P:Xamarin.Forms.Expander.Content" />
-      <Member Id="P:Xamarin.Forms.Expander.ContentTemplate" />
-      <Member Id="P:Xamarin.Forms.Expander.ExpandAnimationEasing" />
-      <Member Id="P:Xamarin.Forms.Expander.ExpandAnimationLength" />
-      <Member Id="P:Xamarin.Forms.Expander.ForceUpdateSizeCommand" />
-      <Member Id="P:Xamarin.Forms.Expander.Header" />
-      <Member Id="P:Xamarin.Forms.Expander.IsExpanded" />
-      <Member Id="P:Xamarin.Forms.Expander.State" />
-    </Type>
-    <Type Name="Xamarin.Forms.ExpanderState" Id="T:Xamarin.Forms.ExpanderState">
-      <Member Id="F:Xamarin.Forms.ExpanderState.Collapsed" />
-      <Member Id="F:Xamarin.Forms.ExpanderState.Collapsing" />
-      <Member Id="F:Xamarin.Forms.ExpanderState.Expanded" />
-      <Member Id="F:Xamarin.Forms.ExpanderState.Expanding" />
-    </Type>
     <Type Name="Xamarin.Forms.ExportEffectAttribute" Id="T:Xamarin.Forms.ExportEffectAttribute">
       <Member Id="M:Xamarin.Forms.ExportEffectAttribute.#ctor(System.Type,System.String)" />
     </Type>
@@ -1586,19 +1563,6 @@
     <Type Name="Xamarin.Forms.FileImageSourceConverter" Id="T:Xamarin.Forms.FileImageSourceConverter">
       <Member Id="M:Xamarin.Forms.FileImageSourceConverter.#ctor" />
       <Member Id="M:Xamarin.Forms.FileImageSourceConverter.ConvertFromInvariantString(System.String)" />
-    </Type>
-    <Type Name="Xamarin.Forms.FileMediaSource" Id="T:Xamarin.Forms.FileMediaSource">
-      <Member Id="F:Xamarin.Forms.FileMediaSource.FileProperty" />
-      <Member Id="M:Xamarin.Forms.FileMediaSource.#ctor" />
-      <Member Id="M:Xamarin.Forms.FileMediaSource.OnPropertyChanged(System.String)" />
-      <Member Id="M:Xamarin.Forms.FileMediaSource.op_Implicit(System.String)~Xamarin.Forms.FileMediaSource" />
-      <Member Id="M:Xamarin.Forms.FileMediaSource.op_Implicit(Xamarin.Forms.FileMediaSource)~System.String" />
-      <Member Id="M:Xamarin.Forms.FileMediaSource.ToString" />
-      <Member Id="P:Xamarin.Forms.FileMediaSource.File" />
-    </Type>
-    <Type Name="Xamarin.Forms.FileMediaSourceConverter" Id="T:Xamarin.Forms.FileMediaSourceConverter">
-      <Member Id="M:Xamarin.Forms.FileMediaSourceConverter.#ctor" />
-      <Member Id="M:Xamarin.Forms.FileMediaSourceConverter.ConvertFromInvariantString(System.String)" />
     </Type>
     <Type Name="Xamarin.Forms.FlexAlignContent" Id="T:Xamarin.Forms.FlexAlignContent">
       <Member Id="F:Xamarin.Forms.FlexAlignContent.Center" />
@@ -1747,6 +1711,37 @@
       <Member Id="M:Xamarin.Forms.FlyoutItem.GetIsVisible(Xamarin.Forms.BindableObject)" />
       <Member Id="M:Xamarin.Forms.FlyoutItem.SetIsVisible(Xamarin.Forms.BindableObject,System.Boolean)" />
     </Type>
+    <Type Name="Xamarin.Forms.FlyoutLayoutBehavior" Id="T:Xamarin.Forms.FlyoutLayoutBehavior">
+      <Member Id="F:Xamarin.Forms.FlyoutLayoutBehavior.Default" />
+      <Member Id="F:Xamarin.Forms.FlyoutLayoutBehavior.Popover" />
+      <Member Id="F:Xamarin.Forms.FlyoutLayoutBehavior.Split" />
+      <Member Id="F:Xamarin.Forms.FlyoutLayoutBehavior.SplitOnLandscape" />
+      <Member Id="F:Xamarin.Forms.FlyoutLayoutBehavior.SplitOnPortrait" />
+    </Type>
+    <Type Name="Xamarin.Forms.FlyoutPage" Id="T:Xamarin.Forms.FlyoutPage">
+      <Member Id="E:Xamarin.Forms.FlyoutPage.BackButtonPressed" />
+      <Member Id="E:Xamarin.Forms.FlyoutPage.IsPresentedChanged" />
+      <Member Id="F:Xamarin.Forms.FlyoutPage.FlyoutLayoutBehaviorProperty" />
+      <Member Id="F:Xamarin.Forms.FlyoutPage.IsGestureEnabledProperty" />
+      <Member Id="F:Xamarin.Forms.FlyoutPage.IsPresentedProperty" />
+      <Member Id="M:Xamarin.Forms.FlyoutPage.#ctor" />
+      <Member Id="M:Xamarin.Forms.FlyoutPage.LayoutChildren(System.Double,System.Double,System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.FlyoutPage.On``1" />
+      <Member Id="M:Xamarin.Forms.FlyoutPage.OnAppearing" />
+      <Member Id="M:Xamarin.Forms.FlyoutPage.OnBackButtonPressed" />
+      <Member Id="M:Xamarin.Forms.FlyoutPage.OnParentSet" />
+      <Member Id="M:Xamarin.Forms.FlyoutPage.ShouldShowToolbarButton" />
+      <Member Id="M:Xamarin.Forms.FlyoutPage.UpdateFlyoutLayoutBehavior" />
+      <Member Id="P:Xamarin.Forms.FlyoutPage.CanChangeIsPresented" />
+      <Member Id="P:Xamarin.Forms.FlyoutPage.Detail" />
+      <Member Id="P:Xamarin.Forms.FlyoutPage.DetailBounds" />
+      <Member Id="P:Xamarin.Forms.FlyoutPage.Flyout" />
+      <Member Id="P:Xamarin.Forms.FlyoutPage.FlyoutBounds" />
+      <Member Id="P:Xamarin.Forms.FlyoutPage.FlyoutLayoutBehavior" />
+      <Member Id="P:Xamarin.Forms.FlyoutPage.IsGestureEnabled" />
+      <Member Id="P:Xamarin.Forms.FlyoutPage.IsPresented" />
+      <Member Id="P:Xamarin.Forms.FlyoutPage.ShouldShowSplitMode" />
+    </Type>
     <Type Name="Xamarin.Forms.FocusEventArgs" Id="T:Xamarin.Forms.FocusEventArgs">
       <Member Id="M:Xamarin.Forms.FocusEventArgs.#ctor(Xamarin.Forms.VisualElement,System.Boolean)" />
       <Member Id="P:Xamarin.Forms.FocusEventArgs.IsFocused" />
@@ -1871,6 +1866,7 @@
       <Member Id="F:Xamarin.Forms.GestureStatus.Started" />
     </Type>
     <Type Name="Xamarin.Forms.GradientBrush" Id="T:Xamarin.Forms.GradientBrush">
+      <Member Id="E:Xamarin.Forms.GradientBrush.InvalidateGradientBrushRequested" />
       <Member Id="F:Xamarin.Forms.GradientBrush.GradientStopsProperty" />
       <Member Id="M:Xamarin.Forms.GradientBrush.#ctor" />
       <Member Id="P:Xamarin.Forms.GradientBrush.GradientStops" />
@@ -2089,6 +2085,14 @@
     <Type Name="Xamarin.Forms.IFlyoutBehaviorObserver" Id="T:Xamarin.Forms.IFlyoutBehaviorObserver">
       <Member Id="M:Xamarin.Forms.IFlyoutBehaviorObserver.OnFlyoutBehaviorChanged(Xamarin.Forms.FlyoutBehavior)" />
     </Type>
+    <Type Name="Xamarin.Forms.IFlyoutPageController" Id="T:Xamarin.Forms.IFlyoutPageController">
+      <Member Id="E:Xamarin.Forms.IFlyoutPageController.BackButtonPressed" />
+      <Member Id="M:Xamarin.Forms.IFlyoutPageController.UpdateFlyoutLayoutBehavior" />
+      <Member Id="P:Xamarin.Forms.IFlyoutPageController.CanChangeIsPresented" />
+      <Member Id="P:Xamarin.Forms.IFlyoutPageController.DetailBounds" />
+      <Member Id="P:Xamarin.Forms.IFlyoutPageController.FlyoutBounds" />
+      <Member Id="P:Xamarin.Forms.IFlyoutPageController.ShouldShowSplitMode" />
+    </Type>
     <Type Name="Xamarin.Forms.IGestureRecognizer" Id="T:Xamarin.Forms.IGestureRecognizer" />
     <Type Name="Xamarin.Forms.IGestureRecognizers" Id="T:Xamarin.Forms.IGestureRecognizers">
       <Member Id="P:Xamarin.Forms.IGestureRecognizers.GestureRecognizers" />
@@ -2138,7 +2142,9 @@
       <Member Id="M:Xamarin.Forms.IListViewController.CreateDefaultCell(System.Object)" />
       <Member Id="M:Xamarin.Forms.IListViewController.GetDisplayTextFromGroup(System.Object)" />
       <Member Id="M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell)" />
+      <Member Id="M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell)" />
+      <Member Id="M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.IListViewController.SendCellAppearing(Xamarin.Forms.Cell)" />
       <Member Id="M:Xamarin.Forms.IListViewController.SendCellDisappearing(Xamarin.Forms.Cell)" />
       <Member Id="M:Xamarin.Forms.IListViewController.SendRefreshing" />
@@ -2233,6 +2239,7 @@
       <Member Id="M:Xamarin.Forms.ImageSource.FromResource(System.String,System.Reflection.Assembly)" />
       <Member Id="M:Xamarin.Forms.ImageSource.FromResource(System.String,System.Type)" />
       <Member Id="M:Xamarin.Forms.ImageSource.FromStream(System.Func{System.IO.Stream})" />
+      <Member Id="M:Xamarin.Forms.ImageSource.FromStream(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{System.IO.Stream}})" />
       <Member Id="M:Xamarin.Forms.ImageSource.FromUri(System.Uri)" />
       <Member Id="M:Xamarin.Forms.ImageSource.OnLoadingCompleted(System.Boolean)" />
       <Member Id="M:Xamarin.Forms.ImageSource.OnLoadingStarted" />
@@ -2247,25 +2254,7 @@
       <Member Id="M:Xamarin.Forms.ImageSourceConverter.ConvertFromInvariantString(System.String)" />
     </Type>
     <Type Name="Xamarin.Forms.IMasterDetailPageController" Id="T:Xamarin.Forms.IMasterDetailPageController">
-      <Member Id="E:Xamarin.Forms.IMasterDetailPageController.BackButtonPressed" />
-      <Member Id="M:Xamarin.Forms.IMasterDetailPageController.UpdateMasterBehavior" />
-      <Member Id="P:Xamarin.Forms.IMasterDetailPageController.CanChangeIsPresented" />
-      <Member Id="P:Xamarin.Forms.IMasterDetailPageController.DetailBounds" />
       <Member Id="P:Xamarin.Forms.IMasterDetailPageController.MasterBounds" />
-      <Member Id="P:Xamarin.Forms.IMasterDetailPageController.ShouldShowSplitMode" />
-    </Type>
-    <Type Name="Xamarin.Forms.IMediaElementController" Id="T:Xamarin.Forms.IMediaElementController">
-      <Member Id="M:Xamarin.Forms.IMediaElementController.OnMediaEnded" />
-      <Member Id="M:Xamarin.Forms.IMediaElementController.OnMediaFailed" />
-      <Member Id="M:Xamarin.Forms.IMediaElementController.OnMediaOpened" />
-      <Member Id="M:Xamarin.Forms.IMediaElementController.OnSeekCompleted" />
-      <Member Id="P:Xamarin.Forms.IMediaElementController.BufferingProgress" />
-      <Member Id="P:Xamarin.Forms.IMediaElementController.CurrentState" />
-      <Member Id="P:Xamarin.Forms.IMediaElementController.Duration" />
-      <Member Id="P:Xamarin.Forms.IMediaElementController.Position" />
-      <Member Id="P:Xamarin.Forms.IMediaElementController.VideoHeight" />
-      <Member Id="P:Xamarin.Forms.IMediaElementController.VideoWidth" />
-      <Member Id="P:Xamarin.Forms.IMediaElementController.Volume" />
     </Type>
     <Type Name="Xamarin.Forms.IMenuItemController" Id="T:Xamarin.Forms.IMenuItemController">
       <Member Id="M:Xamarin.Forms.IMenuItemController.Activate" />
@@ -2792,6 +2781,7 @@
       <Member Id="M:Xamarin.Forms.Layout.OnChildMeasureInvalidated(System.Object,System.EventArgs)" />
       <Member Id="M:Xamarin.Forms.Layout.OnSizeAllocated(System.Double,System.Double)" />
       <Member Id="M:Xamarin.Forms.Layout.RaiseChild(Xamarin.Forms.View)" />
+      <Member Id="M:Xamarin.Forms.Layout.ResolveLayoutChanges" />
       <Member Id="M:Xamarin.Forms.Layout.ShouldInvalidateOnChildAdded(Xamarin.Forms.View)" />
       <Member Id="M:Xamarin.Forms.Layout.ShouldInvalidateOnChildRemoved(Xamarin.Forms.View)" />
       <Member Id="M:Xamarin.Forms.Layout.UpdateChildrenLayout" />
@@ -2805,6 +2795,7 @@
       <Member Id="M:Xamarin.Forms.Layout`1.OnAdded(`0)" />
       <Member Id="M:Xamarin.Forms.Layout`1.OnChildAdded(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.Layout`1.OnChildRemoved(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.Layout`1.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
       <Member Id="M:Xamarin.Forms.Layout`1.OnRemoved(`0)" />
       <Member Id="P:Xamarin.Forms.Layout`1.Children" />
     </Type>
@@ -2900,7 +2891,9 @@
       <Member Id="M:Xamarin.Forms.ListView.EndRefresh" />
       <Member Id="M:Xamarin.Forms.ListView.GetDisplayTextFromGroup(System.Object)" />
       <Member Id="M:Xamarin.Forms.ListView.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell)" />
+      <Member Id="M:Xamarin.Forms.ListView.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.ListView.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell)" />
+      <Member Id="M:Xamarin.Forms.ListView.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.ListView.On``1" />
       <Member Id="M:Xamarin.Forms.ListView.OnBindingContextChanged" />
       <Member Id="M:Xamarin.Forms.ListView.OnSizeRequest(System.Double,System.Double)" />
@@ -2959,106 +2952,18 @@
       <Member Id="F:Xamarin.Forms.MasterBehavior.SplitOnPortrait" />
     </Type>
     <Type Name="Xamarin.Forms.MasterDetailPage" Id="T:Xamarin.Forms.MasterDetailPage">
-      <Member Id="E:Xamarin.Forms.MasterDetailPage.BackButtonPressed" />
-      <Member Id="E:Xamarin.Forms.MasterDetailPage.IsPresentedChanged" />
-      <Member Id="F:Xamarin.Forms.MasterDetailPage.IsGestureEnabledProperty" />
-      <Member Id="F:Xamarin.Forms.MasterDetailPage.IsPresentedProperty" />
       <Member Id="F:Xamarin.Forms.MasterDetailPage.MasterBehaviorProperty" />
       <Member Id="M:Xamarin.Forms.MasterDetailPage.#ctor" />
-      <Member Id="M:Xamarin.Forms.MasterDetailPage.LayoutChildren(System.Double,System.Double,System.Double,System.Double)" />
       <Member Id="M:Xamarin.Forms.MasterDetailPage.On``1" />
-      <Member Id="M:Xamarin.Forms.MasterDetailPage.OnAppearing" />
-      <Member Id="M:Xamarin.Forms.MasterDetailPage.OnBackButtonPressed" />
-      <Member Id="M:Xamarin.Forms.MasterDetailPage.OnParentSet" />
-      <Member Id="M:Xamarin.Forms.MasterDetailPage.ShouldShowToolbarButton" />
-      <Member Id="M:Xamarin.Forms.MasterDetailPage.UpdateMasterBehavior" />
-      <Member Id="P:Xamarin.Forms.MasterDetailPage.CanChangeIsPresented" />
-      <Member Id="P:Xamarin.Forms.MasterDetailPage.Detail" />
-      <Member Id="P:Xamarin.Forms.MasterDetailPage.DetailBounds" />
-      <Member Id="P:Xamarin.Forms.MasterDetailPage.IsGestureEnabled" />
-      <Member Id="P:Xamarin.Forms.MasterDetailPage.IsPresented" />
+      <Member Id="M:Xamarin.Forms.MasterDetailPage.OnPropertyChanged(System.String)" />
+      <Member Id="M:Xamarin.Forms.MasterDetailPage.OnPropertyChanging(System.String)" />
       <Member Id="P:Xamarin.Forms.MasterDetailPage.Master" />
       <Member Id="P:Xamarin.Forms.MasterDetailPage.MasterBehavior" />
       <Member Id="P:Xamarin.Forms.MasterDetailPage.MasterBounds" />
-      <Member Id="P:Xamarin.Forms.MasterDetailPage.ShouldShowSplitMode" />
     </Type>
     <Type Name="Xamarin.Forms.MeasureFlags" Id="T:Xamarin.Forms.MeasureFlags">
       <Member Id="F:Xamarin.Forms.MeasureFlags.IncludeMargins" />
       <Member Id="F:Xamarin.Forms.MeasureFlags.None" />
-    </Type>
-    <Type Name="Xamarin.Forms.MediaElement" Id="T:Xamarin.Forms.MediaElement">
-      <Member Id="E:Xamarin.Forms.MediaElement.MediaEnded" />
-      <Member Id="E:Xamarin.Forms.MediaElement.MediaFailed" />
-      <Member Id="E:Xamarin.Forms.MediaElement.MediaOpened" />
-      <Member Id="E:Xamarin.Forms.MediaElement.PositionRequested" />
-      <Member Id="E:Xamarin.Forms.MediaElement.SeekCompleted" />
-      <Member Id="E:Xamarin.Forms.MediaElement.SeekRequested" />
-      <Member Id="E:Xamarin.Forms.MediaElement.StateRequested" />
-      <Member Id="E:Xamarin.Forms.MediaElement.VolumeRequested" />
-      <Member Id="F:Xamarin.Forms.MediaElement.AspectProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.AutoPlayProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.BufferingProgressProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.CurrentStateProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.DurationProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.IsLoopingProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.KeepScreenOnProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.PositionProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.ShowsPlaybackControlsProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.SourceProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.VideoHeightProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.VideoWidthProperty" />
-      <Member Id="F:Xamarin.Forms.MediaElement.VolumeProperty" />
-      <Member Id="M:Xamarin.Forms.MediaElement.#ctor" />
-      <Member Id="M:Xamarin.Forms.MediaElement.OnBindingContextChanged" />
-      <Member Id="M:Xamarin.Forms.MediaElement.Pause" />
-      <Member Id="M:Xamarin.Forms.MediaElement.Play" />
-      <Member Id="M:Xamarin.Forms.MediaElement.Stop" />
-      <Member Id="M:Xamarin.Forms.MediaElement.VerifyMediaElementFlagEnabled(System.String,System.String)" />
-      <Member Id="M:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#OnMediaEnded" />
-      <Member Id="M:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#OnMediaFailed" />
-      <Member Id="M:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#OnMediaOpened" />
-      <Member Id="M:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#OnSeekCompleted" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Aspect" />
-      <Member Id="P:Xamarin.Forms.MediaElement.AutoPlay" />
-      <Member Id="P:Xamarin.Forms.MediaElement.BufferingProgress" />
-      <Member Id="P:Xamarin.Forms.MediaElement.CanSeek" />
-      <Member Id="P:Xamarin.Forms.MediaElement.CurrentState" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Duration" />
-      <Member Id="P:Xamarin.Forms.MediaElement.IsLooping" />
-      <Member Id="P:Xamarin.Forms.MediaElement.KeepScreenOn" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Position" />
-      <Member Id="P:Xamarin.Forms.MediaElement.ShowsPlaybackControls" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Source" />
-      <Member Id="P:Xamarin.Forms.MediaElement.VideoHeight" />
-      <Member Id="P:Xamarin.Forms.MediaElement.VideoWidth" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Volume" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#BufferingProgress" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#CurrentState" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#Duration" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#Position" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#VideoHeight" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#VideoWidth" />
-      <Member Id="P:Xamarin.Forms.MediaElement.Xamarin#Forms#IMediaElementController#Volume" />
-    </Type>
-    <Type Name="Xamarin.Forms.MediaElementState" Id="T:Xamarin.Forms.MediaElementState">
-      <Member Id="F:Xamarin.Forms.MediaElementState.Buffering" />
-      <Member Id="F:Xamarin.Forms.MediaElementState.Closed" />
-      <Member Id="F:Xamarin.Forms.MediaElementState.Opening" />
-      <Member Id="F:Xamarin.Forms.MediaElementState.Paused" />
-      <Member Id="F:Xamarin.Forms.MediaElementState.Playing" />
-      <Member Id="F:Xamarin.Forms.MediaElementState.Stopped" />
-    </Type>
-    <Type Name="Xamarin.Forms.MediaSource" Id="T:Xamarin.Forms.MediaSource">
-      <Member Id="M:Xamarin.Forms.MediaSource.#ctor" />
-      <Member Id="M:Xamarin.Forms.MediaSource.FromFile(System.String)" />
-      <Member Id="M:Xamarin.Forms.MediaSource.FromUri(System.Uri)" />
-      <Member Id="M:Xamarin.Forms.MediaSource.OnSourceChanged" />
-      <Member Id="M:Xamarin.Forms.MediaSource.op_Implicit(System.String)~Xamarin.Forms.MediaSource" />
-      <Member Id="M:Xamarin.Forms.MediaSource.op_Implicit(System.Uri)~Xamarin.Forms.MediaSource" />
-    </Type>
-    <Type Name="Xamarin.Forms.MediaSourceConverter" Id="T:Xamarin.Forms.MediaSourceConverter">
-      <Member Id="M:Xamarin.Forms.MediaSourceConverter.#ctor" />
-      <Member Id="M:Xamarin.Forms.MediaSourceConverter.ConvertFromInvariantString(System.String)" />
     </Type>
     <Type Name="Xamarin.Forms.Menu" Id="T:Xamarin.Forms.Menu">
       <Member Id="M:Xamarin.Forms.Menu.#ctor" />
@@ -3641,15 +3546,66 @@
     </Type>
     <Type Name="Xamarin.Forms.RadioButton" Id="T:Xamarin.Forms.RadioButton">
       <Member Id="E:Xamarin.Forms.RadioButton.CheckedChanged" />
+      <Member Id="F:Xamarin.Forms.RadioButton.BorderColorProperty" />
+      <Member Id="F:Xamarin.Forms.RadioButton.BorderWidthProperty" />
+      <Member Id="F:Xamarin.Forms.RadioButton.CharacterSpacingProperty" />
+      <Member Id="F:Xamarin.Forms.RadioButton.CheckedIndicator" />
+      <Member Id="F:Xamarin.Forms.RadioButton.CheckedVisualState" />
+      <Member Id="F:Xamarin.Forms.RadioButton.ContentProperty" />
+      <Member Id="F:Xamarin.Forms.RadioButton.CornerRadiusProperty" />
+      <Member Id="F:Xamarin.Forms.RadioButton.FontAttributesProperty" />
+      <Member Id="F:Xamarin.Forms.RadioButton.FontFamilyProperty" />
+      <Member Id="F:Xamarin.Forms.RadioButton.FontSizeProperty" />
       <Member Id="F:Xamarin.Forms.RadioButton.GroupNameProperty" />
       <Member Id="F:Xamarin.Forms.RadioButton.IsCheckedProperty" />
-      <Member Id="F:Xamarin.Forms.RadioButton.IsCheckedVisualState" />
+      <Member Id="F:Xamarin.Forms.RadioButton.TemplateRootName" />
+      <Member Id="F:Xamarin.Forms.RadioButton.TextColorProperty" />
+      <Member Id="F:Xamarin.Forms.RadioButton.TextTransformProperty" />
+      <Member Id="F:Xamarin.Forms.RadioButton.UncheckedButton" />
+      <Member Id="F:Xamarin.Forms.RadioButton.UncheckedVisualState" />
+      <Member Id="F:Xamarin.Forms.RadioButton.ValueProperty" />
       <Member Id="M:Xamarin.Forms.RadioButton.#ctor" />
       <Member Id="M:Xamarin.Forms.RadioButton.ChangeVisualState" />
+      <Member Id="M:Xamarin.Forms.RadioButton.ContentAsString" />
       <Member Id="M:Xamarin.Forms.RadioButton.On``1" />
+      <Member Id="M:Xamarin.Forms.RadioButton.OnApplyTemplate" />
       <Member Id="M:Xamarin.Forms.RadioButton.OnMeasure(System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.RadioButton.ResolveControlTemplate" />
+      <Member Id="M:Xamarin.Forms.RadioButton.UpdateFormsText(System.String,Xamarin.Forms.TextTransform)" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#IBorderElement#IsBackgroundColorSet" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#IBorderElement#IsBackgroundSet" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#IBorderElement#IsBorderColorSet" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#IBorderElement#IsBorderWidthSet" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#IBorderElement#IsCornerRadiusSet" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#IBorderElement#OnBorderColorPropertyChanged(Xamarin.Forms.Color,Xamarin.Forms.Color)" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#Internals#IFontElement#FontSizeDefaultValueCreator" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#Internals#IFontElement#OnFontAttributesChanged(Xamarin.Forms.FontAttributes,Xamarin.Forms.FontAttributes)" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#Internals#IFontElement#OnFontChanged(Xamarin.Forms.Font,Xamarin.Forms.Font)" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#Internals#IFontElement#OnFontFamilyChanged(System.String,System.String)" />
+      <Member Id="M:Xamarin.Forms.RadioButton.Xamarin#Forms#Internals#IFontElement#OnFontSizeChanged(System.Double,System.Double)" />
+      <Member Id="P:Xamarin.Forms.RadioButton.BorderColor" />
+      <Member Id="P:Xamarin.Forms.RadioButton.BorderWidth" />
+      <Member Id="P:Xamarin.Forms.RadioButton.CharacterSpacing" />
+      <Member Id="P:Xamarin.Forms.RadioButton.Content" />
+      <Member Id="P:Xamarin.Forms.RadioButton.CornerRadius" />
+      <Member Id="P:Xamarin.Forms.RadioButton.DefaultTemplate" />
+      <Member Id="P:Xamarin.Forms.RadioButton.FontAttributes" />
+      <Member Id="P:Xamarin.Forms.RadioButton.FontFamily" />
+      <Member Id="P:Xamarin.Forms.RadioButton.FontSize" />
       <Member Id="P:Xamarin.Forms.RadioButton.GroupName" />
       <Member Id="P:Xamarin.Forms.RadioButton.IsChecked" />
+      <Member Id="P:Xamarin.Forms.RadioButton.TextColor" />
+      <Member Id="P:Xamarin.Forms.RadioButton.TextTransform" />
+      <Member Id="P:Xamarin.Forms.RadioButton.Value" />
+      <Member Id="P:Xamarin.Forms.RadioButton.Xamarin#Forms#IBorderElement#BorderColorDefaultValue" />
+      <Member Id="P:Xamarin.Forms.RadioButton.Xamarin#Forms#IBorderElement#BorderWidthDefaultValue" />
+      <Member Id="P:Xamarin.Forms.RadioButton.Xamarin#Forms#IBorderElement#CornerRadiusDefaultValue" />
+    </Type>
+    <Type Name="Xamarin.Forms.RadioButtonGroup" Id="T:Xamarin.Forms.RadioButtonGroup">
+      <Member Id="F:Xamarin.Forms.RadioButtonGroup.GroupNameProperty" />
+      <Member Id="F:Xamarin.Forms.RadioButtonGroup.SelectedValueProperty" />
+      <Member Id="M:Xamarin.Forms.RadioButtonGroup.GetGroupName(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.RadioButtonGroup.GetSelectedValue(Xamarin.Forms.BindableObject)" />
     </Type>
     <Type Name="Xamarin.Forms.Rect" Id="T:Xamarin.Forms.Rect">
       <Member Id="F:Xamarin.Forms.Rect.Zero" />
@@ -4107,10 +4063,6 @@
       <Member Id="P:Xamarin.Forms.SearchHandler.VerticalTextAlignment" />
       <Member Id="P:Xamarin.Forms.SearchHandler.Xamarin#Forms#ISearchHandlerController#ListProxy" />
     </Type>
-    <Type Name="Xamarin.Forms.SeekRequested" Id="T:Xamarin.Forms.SeekRequested">
-      <Member Id="M:Xamarin.Forms.SeekRequested.#ctor(System.TimeSpan)" />
-      <Member Id="P:Xamarin.Forms.SeekRequested.Position" />
-    </Type>
     <Type Name="Xamarin.Forms.SelectableItemsView" Id="T:Xamarin.Forms.SelectableItemsView">
       <Member Id="E:Xamarin.Forms.SelectableItemsView.SelectionChanged" />
       <Member Id="F:Xamarin.Forms.SelectableItemsView.SelectedItemProperty" />
@@ -4266,6 +4218,7 @@
       <Member Id="M:Xamarin.Forms.Shell.Xamarin#Forms#IShellController#UpdateCurrentState(Xamarin.Forms.ShellNavigationSource)" />
       <Member Id="P:Xamarin.Forms.Shell.Current" />
       <Member Id="P:Xamarin.Forms.Shell.CurrentItem" />
+      <Member Id="P:Xamarin.Forms.Shell.CurrentPage" />
       <Member Id="P:Xamarin.Forms.Shell.CurrentState" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutBackdrop" />
       <Member Id="P:Xamarin.Forms.Shell.FlyoutBackground" />
@@ -4316,6 +4269,7 @@
       <Member Id="M:Xamarin.Forms.ShellContent.#ctor" />
       <Member Id="M:Xamarin.Forms.ShellContent.OnChildAdded(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.ShellContent.OnChildRemoved(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.ShellContent.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
       <Member Id="M:Xamarin.Forms.ShellContent.op_Implicit(Xamarin.Forms.TemplatedPage)~Xamarin.Forms.ShellContent" />
       <Member Id="M:Xamarin.Forms.ShellContent.Xamarin#Forms#IShellContentController#GetOrCreateContent" />
       <Member Id="M:Xamarin.Forms.ShellContent.Xamarin#Forms#IShellContentController#RecyclePage(Xamarin.Forms.Page)" />
@@ -4337,6 +4291,7 @@
       <Member Id="M:Xamarin.Forms.ShellItem.On``1" />
       <Member Id="M:Xamarin.Forms.ShellItem.OnChildAdded(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.ShellItem.OnChildRemoved(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.ShellItem.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
       <Member Id="M:Xamarin.Forms.ShellItem.op_Implicit(Xamarin.Forms.MenuItem)~Xamarin.Forms.ShellItem" />
       <Member Id="M:Xamarin.Forms.ShellItem.op_Implicit(Xamarin.Forms.ShellContent)~Xamarin.Forms.ShellItem" />
       <Member Id="M:Xamarin.Forms.ShellItem.op_Implicit(Xamarin.Forms.ShellSection)~Xamarin.Forms.ShellItem" />
@@ -4353,9 +4308,13 @@
       <Member Id="P:Xamarin.Forms.ShellNavigatedEventArgs.Previous" />
       <Member Id="P:Xamarin.Forms.ShellNavigatedEventArgs.Source" />
     </Type>
+    <Type Name="Xamarin.Forms.ShellNavigatingDeferral" Id="T:Xamarin.Forms.ShellNavigatingDeferral">
+      <Member Id="M:Xamarin.Forms.ShellNavigatingDeferral.Complete" />
+    </Type>
     <Type Name="Xamarin.Forms.ShellNavigatingEventArgs" Id="T:Xamarin.Forms.ShellNavigatingEventArgs">
       <Member Id="M:Xamarin.Forms.ShellNavigatingEventArgs.#ctor(Xamarin.Forms.ShellNavigationState,Xamarin.Forms.ShellNavigationState,Xamarin.Forms.ShellNavigationSource,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.ShellNavigatingEventArgs.Cancel" />
+      <Member Id="M:Xamarin.Forms.ShellNavigatingEventArgs.GetDeferral" />
       <Member Id="P:Xamarin.Forms.ShellNavigatingEventArgs.CanCancel" />
       <Member Id="P:Xamarin.Forms.ShellNavigatingEventArgs.Cancelled" />
       <Member Id="P:Xamarin.Forms.ShellNavigatingEventArgs.Current" />
@@ -4391,6 +4350,7 @@
       <Member Id="M:Xamarin.Forms.ShellSection.OnBindingContextChanged" />
       <Member Id="M:Xamarin.Forms.ShellSection.OnChildAdded(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.ShellSection.OnChildRemoved(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.ShellSection.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
       <Member Id="M:Xamarin.Forms.ShellSection.OnInsertPageBefore(Xamarin.Forms.Page,Xamarin.Forms.Page)" />
       <Member Id="M:Xamarin.Forms.ShellSection.OnPopAsync(System.Boolean)" />
       <Member Id="M:Xamarin.Forms.ShellSection.OnPopToRootAsync(System.Boolean)" />
@@ -4541,10 +4501,6 @@
     <Type Name="Xamarin.Forms.StackOrientation" Id="T:Xamarin.Forms.StackOrientation">
       <Member Id="F:Xamarin.Forms.StackOrientation.Horizontal" />
       <Member Id="F:Xamarin.Forms.StackOrientation.Vertical" />
-    </Type>
-    <Type Name="Xamarin.Forms.StateRequested" Id="T:Xamarin.Forms.StateRequested">
-      <Member Id="M:Xamarin.Forms.StateRequested.#ctor(Xamarin.Forms.MediaElementState)" />
-      <Member Id="P:Xamarin.Forms.StateRequested.State" />
     </Type>
     <Type Name="Xamarin.Forms.StateTrigger" Id="T:Xamarin.Forms.StateTrigger">
       <Member Id="F:Xamarin.Forms.StateTrigger.IsActiveProperty" />
@@ -4718,19 +4674,20 @@
       <Member Id="F:Xamarin.Forms.SwipeView.BottomItemsProperty" />
       <Member Id="F:Xamarin.Forms.SwipeView.LeftItemsProperty" />
       <Member Id="F:Xamarin.Forms.SwipeView.RightItemsProperty" />
+      <Member Id="F:Xamarin.Forms.SwipeView.ThresholdProperty" />
       <Member Id="F:Xamarin.Forms.SwipeView.TopItemsProperty" />
       <Member Id="M:Xamarin.Forms.SwipeView.#ctor" />
       <Member Id="M:Xamarin.Forms.SwipeView.Close" />
       <Member Id="M:Xamarin.Forms.SwipeView.On``1" />
       <Member Id="M:Xamarin.Forms.SwipeView.OnBindingContextChanged" />
       <Member Id="M:Xamarin.Forms.SwipeView.Open(Xamarin.Forms.OpenSwipeItem)" />
-      <Member Id="M:Xamarin.Forms.SwipeView.VerifySwipeViewFlagEnabled(System.String,System.String)" />
       <Member Id="M:Xamarin.Forms.SwipeView.Xamarin#Forms#ISwipeViewController#SendSwipeChanging(Xamarin.Forms.SwipeChangingEventArgs)" />
       <Member Id="M:Xamarin.Forms.SwipeView.Xamarin#Forms#ISwipeViewController#SendSwipeEnded(Xamarin.Forms.SwipeEndedEventArgs)" />
       <Member Id="M:Xamarin.Forms.SwipeView.Xamarin#Forms#ISwipeViewController#SendSwipeStarted(Xamarin.Forms.SwipeStartedEventArgs)" />
       <Member Id="P:Xamarin.Forms.SwipeView.BottomItems" />
       <Member Id="P:Xamarin.Forms.SwipeView.LeftItems" />
       <Member Id="P:Xamarin.Forms.SwipeView.RightItems" />
+      <Member Id="P:Xamarin.Forms.SwipeView.Threshold" />
       <Member Id="P:Xamarin.Forms.SwipeView.TopItems" />
       <Member Id="P:Xamarin.Forms.SwipeView.Xamarin#Forms#ISwipeViewController#IsOpen" />
     </Type>
@@ -4899,6 +4856,7 @@
       <Member Id="M:Xamarin.Forms.TemplatedPage.GetTemplateChild(System.String)" />
       <Member Id="M:Xamarin.Forms.TemplatedPage.OnApplyTemplate" />
       <Member Id="M:Xamarin.Forms.TemplatedPage.OnChildRemoved(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.TemplatedPage.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
       <Member Id="P:Xamarin.Forms.TemplatedPage.ControlTemplate" />
     </Type>
     <Type Name="Xamarin.Forms.TemplatedView" Id="T:Xamarin.Forms.TemplatedView">
@@ -4908,7 +4866,9 @@
       <Member Id="M:Xamarin.Forms.TemplatedView.LayoutChildren(System.Double,System.Double,System.Double,System.Double)" />
       <Member Id="M:Xamarin.Forms.TemplatedView.OnApplyTemplate" />
       <Member Id="M:Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
       <Member Id="M:Xamarin.Forms.TemplatedView.OnSizeRequest(System.Double,System.Double)" />
+      <Member Id="M:Xamarin.Forms.TemplatedView.ResolveControlTemplate" />
       <Member Id="P:Xamarin.Forms.TemplatedView.ControlTemplate" />
     </Type>
     <Type Name="Xamarin.Forms.TemplateExtensions" Id="T:Xamarin.Forms.TemplateExtensions">
@@ -5089,12 +5049,6 @@
       <Member Id="P:Xamarin.Forms.UriImageSource.IsEmpty" />
       <Member Id="P:Xamarin.Forms.UriImageSource.Uri" />
     </Type>
-    <Type Name="Xamarin.Forms.UriMediaSource" Id="T:Xamarin.Forms.UriMediaSource">
-      <Member Id="F:Xamarin.Forms.UriMediaSource.UriProperty" />
-      <Member Id="M:Xamarin.Forms.UriMediaSource.#ctor" />
-      <Member Id="M:Xamarin.Forms.UriMediaSource.ToString" />
-      <Member Id="P:Xamarin.Forms.UriMediaSource.Uri" />
-    </Type>
     <Type Name="Xamarin.Forms.UriTypeConverter" Id="T:Xamarin.Forms.UriTypeConverter">
       <Member Id="M:Xamarin.Forms.UriTypeConverter.#ctor" />
       <Member Id="M:Xamarin.Forms.UriTypeConverter.ConvertFromInvariantString(System.String)" />
@@ -5198,6 +5152,7 @@
       <Member Id="F:Xamarin.Forms.VisualElement.WidthRequestProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.XProperty" />
       <Member Id="F:Xamarin.Forms.VisualElement.YProperty" />
+      <Member Id="M:Xamarin.Forms.VisualElement.#ctor" />
       <Member Id="M:Xamarin.Forms.VisualElement.BatchBegin" />
       <Member Id="M:Xamarin.Forms.VisualElement.BatchCommit" />
       <Member Id="M:Xamarin.Forms.VisualElement.ChangeVisualState" />
@@ -5211,6 +5166,7 @@
       <Member Id="M:Xamarin.Forms.VisualElement.OnBindingContextChanged" />
       <Member Id="M:Xamarin.Forms.VisualElement.OnChildAdded(Xamarin.Forms.Element)" />
       <Member Id="M:Xamarin.Forms.VisualElement.OnChildRemoved(Xamarin.Forms.Element)" />
+      <Member Id="M:Xamarin.Forms.VisualElement.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
       <Member Id="M:Xamarin.Forms.VisualElement.OnChildrenReordered" />
       <Member Id="M:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)" />
       <Member Id="M:Xamarin.Forms.VisualElement.OnSizeAllocated(System.Double,System.Double)" />
@@ -5332,6 +5288,14 @@
       <Member Id="M:Xamarin.Forms.VisualTypeConverter.#ctor" />
       <Member Id="M:Xamarin.Forms.VisualTypeConverter.ConvertFromInvariantString(System.String)" />
     </Type>
+    <Type Name="Xamarin.Forms.WeakEventManager" Id="T:Xamarin.Forms.WeakEventManager">
+      <Member Id="M:Xamarin.Forms.WeakEventManager.#ctor" />
+      <Member Id="M:Xamarin.Forms.WeakEventManager.AddEventHandler(System.EventHandler,System.String)" />
+      <Member Id="M:Xamarin.Forms.WeakEventManager.AddEventHandler``1(System.EventHandler{``0},System.String)" />
+      <Member Id="M:Xamarin.Forms.WeakEventManager.HandleEvent(System.Object,System.Object,System.String)" />
+      <Member Id="M:Xamarin.Forms.WeakEventManager.RemoveEventHandler(System.EventHandler,System.String)" />
+      <Member Id="M:Xamarin.Forms.WeakEventManager.RemoveEventHandler``1(System.EventHandler{``0},System.String)" />
+    </Type>
     <Type Name="Xamarin.Forms.WebNavigatedEventArgs" Id="T:Xamarin.Forms.WebNavigatedEventArgs">
       <Member Id="M:Xamarin.Forms.WebNavigatedEventArgs.#ctor(Xamarin.Forms.WebNavigationEvent,Xamarin.Forms.WebViewSource,System.String,Xamarin.Forms.WebNavigationResult)" />
       <Member Id="P:Xamarin.Forms.WebNavigatedEventArgs.Result" />
@@ -5414,15 +5378,6 @@
     </Type>
   </Namespace>
   <Namespace Name="Xamarin.Forms.DualScreen">
-    <Type Name="Xamarin.Forms.DualScreen.CompactModeArgs" Id="T:Xamarin.Forms.DualScreen.CompactModeArgs">
-      <Member Id="M:Xamarin.Forms.DualScreen.CompactModeArgs.#ctor(System.Func{System.Threading.Tasks.Task},System.Boolean)" />
-      <Member Id="M:Xamarin.Forms.DualScreen.CompactModeArgs.CloseAsync" />
-      <Member Id="P:Xamarin.Forms.DualScreen.CompactModeArgs.Success" />
-    </Type>
-    <Type Name="Xamarin.Forms.DualScreen.DualScreenHelper" Id="T:Xamarin.Forms.DualScreen.DualScreenHelper">
-      <Member Id="M:Xamarin.Forms.DualScreen.DualScreenHelper.HasCompactModeSupport" />
-      <Member Id="M:Xamarin.Forms.DualScreen.DualScreenHelper.OpenCompactMode(Xamarin.Forms.ContentPage)" />
-    </Type>
     <Type Name="Xamarin.Forms.DualScreen.DualScreenInfo" Id="T:Xamarin.Forms.DualScreen.DualScreenInfo">
       <Member Id="E:Xamarin.Forms.DualScreen.DualScreenInfo.HingeAngleChanged" />
       <Member Id="E:Xamarin.Forms.DualScreen.DualScreenInfo.PropertyChanged" />
@@ -5749,6 +5704,9 @@
     <Type Name="Xamarin.Forms.Internals.IPlatform" Id="T:Xamarin.Forms.Internals.IPlatform">
       <Member Id="M:Xamarin.Forms.Internals.IPlatform.GetNativeSize(Xamarin.Forms.VisualElement,System.Double,System.Double)" />
     </Type>
+    <Type Name="Xamarin.Forms.Internals.IPlatformInvalidate" Id="T:Xamarin.Forms.Internals.IPlatformInvalidate">
+      <Member Id="M:Xamarin.Forms.Internals.IPlatformInvalidate.Invalidate(Xamarin.Forms.VisualElement)" />
+    </Type>
     <Type Name="Xamarin.Forms.Internals.IPlatformServices" Id="T:Xamarin.Forms.Internals.IPlatformServices">
       <Member Id="M:Xamarin.Forms.Internals.IPlatformServices.BeginInvokeOnMainThread(System.Action)" />
       <Member Id="M:Xamarin.Forms.Internals.IPlatformServices.CreateTicker" />
@@ -6007,6 +5965,7 @@
     </Type>
     <Type Name="Xamarin.Forms.Internals.ResourceLoader" Id="T:Xamarin.Forms.Internals.ResourceLoader">
       <Member Id="M:Xamarin.Forms.Internals.ResourceLoader.CanProvideContentFor(Xamarin.Forms.Internals.ResourceLoader.ResourceLoadingQuery)" />
+      <Member Id="P:Xamarin.Forms.Internals.ResourceLoader.IsEnabled" />
       <Member Id="P:Xamarin.Forms.Internals.ResourceLoader.ResourceProvider" />
       <Member Id="P:Xamarin.Forms.Internals.ResourceLoader.ResourceProvider2" />
     </Type>
@@ -6135,7 +6094,9 @@
       <Member Id="E:Xamarin.Forms.Internals.ToolbarTracker.CollectionChanged" />
       <Member Id="M:Xamarin.Forms.Internals.ToolbarTracker.#ctor" />
       <Member Id="P:Xamarin.Forms.Internals.ToolbarTracker.AdditionalTargets" />
+      <Member Id="P:Xamarin.Forms.Internals.ToolbarTracker.HaveFlyoutPage" />
       <Member Id="P:Xamarin.Forms.Internals.ToolbarTracker.HaveMasterDetail" />
+      <Member Id="P:Xamarin.Forms.Internals.ToolbarTracker.SeparateFlyoutPage" />
       <Member Id="P:Xamarin.Forms.Internals.ToolbarTracker.SeparateMasterDetail" />
       <Member Id="P:Xamarin.Forms.Internals.ToolbarTracker.Target" />
       <Member Id="P:Xamarin.Forms.Internals.ToolbarTracker.ToolbarItems" />
@@ -6781,6 +6742,13 @@
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Entry.SetCursorColor(Xamarin.Forms.BindableObject,Xamarin.Forms.Color)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Entry.SetCursorColor(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Entry},Xamarin.Forms.Color)" />
     </Type>
+    <Type Name="Xamarin.Forms.PlatformConfiguration.iOSSpecific.FlyoutPage" Id="T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.FlyoutPage">
+      <Member Id="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.FlyoutPage.ApplyShadowProperty" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.FlyoutPage.GetApplyShadow(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.FlyoutPage.GetApplyShadow(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.FlyoutPage})" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.FlyoutPage.SetApplyShadow(Xamarin.Forms.BindableObject,System.Boolean)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.FlyoutPage.SetApplyShadow(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.FlyoutPage},System.Boolean)" />
+    </Type>
     <Type Name="Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle" Id="T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle">
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle.Grouped" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.GroupHeaderStyle.Plain" />
@@ -7070,22 +7038,12 @@
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.SetUseBezelInteraction(Xamarin.Forms.BindableObject,System.Boolean)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Application.SetUseBezelInteraction(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Application},System.Boolean)" />
     </Type>
-    <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.BufferingProgressUpdatedEventArgs" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.BufferingProgressUpdatedEventArgs">
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.BufferingProgressUpdatedEventArgs.#ctor" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.BufferingProgressUpdatedEventArgs.Progress" />
-    </Type>
     <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.ButtonStyle" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.ButtonStyle">
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.ButtonStyle.Bottom" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.ButtonStyle.Circle" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.ButtonStyle.Default" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.ButtonStyle.SelectMode" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.ButtonStyle.Text" />
-    </Type>
-    <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.DisplayAspectMode" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.DisplayAspectMode">
-      <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.DisplayAspectMode.AspectFill" />
-      <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.DisplayAspectMode.AspectFit" />
-      <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.DisplayAspectMode.Fill" />
-      <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.DisplayAspectMode.OrignalSize" />
     </Type>
     <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.Entry" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Entry">
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Entry.FontWeightProperty" />
@@ -7129,48 +7087,6 @@
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Image.SetFile(Xamarin.Forms.BindableObject,System.String)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Image.SetFile(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Image},System.String)" />
     </Type>
-    <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer">
-      <Member Id="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer.PlaybackPaused" />
-      <Member Id="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer.PlaybackStarted" />
-      <Member Id="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer.PlaybackStopped" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer.Pause" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer.Start" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer.Stop" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer.State" />
-    </Type>
-    <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer">
-      <Member Id="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.BufferingProgressUpdated" />
-      <Member Id="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.ErrorOccurred" />
-      <Member Id="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.PlaybackCompleted" />
-      <Member Id="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.PlaybackPaused" />
-      <Member Id="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.PlaybackStarted" />
-      <Member Id="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.PlaybackStopped" />
-      <Member Id="E:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.UpdateStreamInfo" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.GetAlbumArts" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.GetEmbeddingControlView(Xamarin.Forms.PlatformConfiguration.TizenSpecific.IMediaPlayer)" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.GetMetadata" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.GetVideoSize" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Pause" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Seek(System.Int32)" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.SetDisplay(Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput)" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.SetSource(Xamarin.Forms.MediaSource)" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Start" />
-      <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Stop" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.AspectMode" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.AutoPlay" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.AutoStop" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Duration" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.IsLooping" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.IsMuted" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Position" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.UsesEmbeddingControls" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IPlatformMediaPlayer.Volume" />
-    </Type>
-    <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput">
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput.Controller" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput.MediaView" />
-      <Member Id="P:Xamarin.Forms.PlatformConfiguration.TizenSpecific.IVideoOutput.OuputType" />
-    </Type>
     <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.Label" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Label">
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Label.FontWeightProperty" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Label.GetFontWeight(Xamarin.Forms.BindableObject)" />
@@ -7191,11 +7107,6 @@
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Page.GetBreadCrumb(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Page})" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Page.SetBreadCrumb(Xamarin.Forms.BindableObject,System.String)" />
       <Member Id="M:Xamarin.Forms.PlatformConfiguration.TizenSpecific.Page.SetBreadCrumb(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Tizen,Xamarin.Forms.Page},System.String)" />
-    </Type>
-    <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.PlaybackState" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.PlaybackState">
-      <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.PlaybackState.Paused" />
-      <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.PlaybackState.Playing" />
-      <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.PlaybackState.Stopped" />
     </Type>
     <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.ProgressBar" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.ProgressBar">
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.ProgressBar.ProgressBarPulsingStatusProperty" />
@@ -7226,10 +7137,6 @@
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.TabbedPageStyle.Default" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.TabbedPageStyle.Tabbar" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.TabbedPageStyle.TabbarWithTitle" />
-    </Type>
-    <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.VideoOuputType" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.VideoOuputType">
-      <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.VideoOuputType.Buffer" />
-      <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.VideoOuputType.Overlay" />
     </Type>
     <Type Name="Xamarin.Forms.PlatformConfiguration.TizenSpecific.VisualElement" Id="T:Xamarin.Forms.PlatformConfiguration.TizenSpecific.VisualElement">
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.TizenSpecific.VisualElement.IsFocusAllowedProperty" />
@@ -7301,6 +7208,19 @@
     <Type Name="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.CollapseStyle" Id="T:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.CollapseStyle">
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.CollapseStyle.Full" />
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.CollapseStyle.Partial" />
+    </Type>
+    <Type Name="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage" Id="T:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage">
+      <Member Id="F:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.CollapsedPaneWidthProperty" />
+      <Member Id="F:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.CollapseStyleProperty" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.CollapsedPaneWidth(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.FlyoutPage})" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.CollapsedPaneWidth(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.FlyoutPage},System.Double)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.GetCollapsedPaneWidth(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.GetCollapseStyle(Xamarin.Forms.BindableObject)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.GetCollapseStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.FlyoutPage})" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.SetCollapsedPaneWidth(Xamarin.Forms.BindableObject,System.Double)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.SetCollapseStyle(Xamarin.Forms.BindableObject,Xamarin.Forms.PlatformConfiguration.WindowsSpecific.CollapseStyle)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.SetCollapseStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.FlyoutPage},Xamarin.Forms.PlatformConfiguration.WindowsSpecific.CollapseStyle)" />
+      <Member Id="M:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.UsePartialCollapse(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.FlyoutPage})" />
     </Type>
     <Type Name="Xamarin.Forms.PlatformConfiguration.WindowsSpecific.InputView" Id="T:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.InputView">
       <Member Id="F:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.InputView.DetectReadingOrderFromContentProperty" />
@@ -7484,6 +7404,7 @@
       <Member Id="F:Xamarin.Forms.Shapes.EllipseGeometry.RadiusXProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.EllipseGeometry.RadiusYProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.EllipseGeometry.#ctor" />
+      <Member Id="M:Xamarin.Forms.Shapes.EllipseGeometry.#ctor(Xamarin.Forms.Point,System.Double,System.Double)" />
       <Member Id="P:Xamarin.Forms.Shapes.EllipseGeometry.Center" />
       <Member Id="P:Xamarin.Forms.Shapes.EllipseGeometry.RadiusX" />
       <Member Id="P:Xamarin.Forms.Shapes.EllipseGeometry.RadiusY" />
@@ -7499,6 +7420,7 @@
       <Member Id="M:Xamarin.Forms.Shapes.GeometryCollection.#ctor" />
     </Type>
     <Type Name="Xamarin.Forms.Shapes.GeometryGroup" Id="T:Xamarin.Forms.Shapes.GeometryGroup">
+      <Member Id="E:Xamarin.Forms.Shapes.GeometryGroup.InvalidateGeometryRequested" />
       <Member Id="F:Xamarin.Forms.Shapes.GeometryGroup.ChildrenProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.GeometryGroup.FillRuleProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.GeometryGroup.#ctor" />
@@ -7527,6 +7449,7 @@
       <Member Id="F:Xamarin.Forms.Shapes.LineGeometry.EndPointProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.LineGeometry.StartPointProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.LineGeometry.#ctor" />
+      <Member Id="M:Xamarin.Forms.Shapes.LineGeometry.#ctor(Xamarin.Forms.Point,Xamarin.Forms.Point)" />
       <Member Id="P:Xamarin.Forms.Shapes.LineGeometry.EndPoint" />
       <Member Id="P:Xamarin.Forms.Shapes.LineGeometry.StartPoint" />
     </Type>
@@ -7612,6 +7535,8 @@
       <Member Id="F:Xamarin.Forms.Shapes.PathGeometry.FiguresProperty" />
       <Member Id="F:Xamarin.Forms.Shapes.PathGeometry.FillRuleProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.PathGeometry.#ctor" />
+      <Member Id="M:Xamarin.Forms.Shapes.PathGeometry.#ctor(Xamarin.Forms.Shapes.PathFigureCollection)" />
+      <Member Id="M:Xamarin.Forms.Shapes.PathGeometry.#ctor(Xamarin.Forms.Shapes.PathFigureCollection,Xamarin.Forms.Shapes.FillRule)" />
       <Member Id="P:Xamarin.Forms.Shapes.PathGeometry.Figures" />
       <Member Id="P:Xamarin.Forms.Shapes.PathGeometry.FillRule" />
     </Type>
@@ -7694,6 +7619,7 @@
     <Type Name="Xamarin.Forms.Shapes.RectangleGeometry" Id="T:Xamarin.Forms.Shapes.RectangleGeometry">
       <Member Id="F:Xamarin.Forms.Shapes.RectangleGeometry.RectProperty" />
       <Member Id="M:Xamarin.Forms.Shapes.RectangleGeometry.#ctor" />
+      <Member Id="M:Xamarin.Forms.Shapes.RectangleGeometry.#ctor(Xamarin.Forms.Rect)" />
       <Member Id="P:Xamarin.Forms.Shapes.RectangleGeometry.Rect" />
     </Type>
     <Type Name="Xamarin.Forms.Shapes.RotateTransform" Id="T:Xamarin.Forms.Shapes.RotateTransform">
@@ -7706,6 +7632,14 @@
       <Member Id="P:Xamarin.Forms.Shapes.RotateTransform.Angle" />
       <Member Id="P:Xamarin.Forms.Shapes.RotateTransform.CenterX" />
       <Member Id="P:Xamarin.Forms.Shapes.RotateTransform.CenterY" />
+    </Type>
+    <Type Name="Xamarin.Forms.Shapes.RoundRectangleGeometry" Id="T:Xamarin.Forms.Shapes.RoundRectangleGeometry">
+      <Member Id="F:Xamarin.Forms.Shapes.RoundRectangleGeometry.CornerRadiusProperty" />
+      <Member Id="F:Xamarin.Forms.Shapes.RoundRectangleGeometry.RectProperty" />
+      <Member Id="M:Xamarin.Forms.Shapes.RoundRectangleGeometry.#ctor" />
+      <Member Id="M:Xamarin.Forms.Shapes.RoundRectangleGeometry.#ctor(Xamarin.Forms.CornerRadius,Xamarin.Forms.Rect)" />
+      <Member Id="P:Xamarin.Forms.Shapes.RoundRectangleGeometry.CornerRadius" />
+      <Member Id="P:Xamarin.Forms.Shapes.RoundRectangleGeometry.Rect" />
     </Type>
     <Type Name="Xamarin.Forms.Shapes.ScaleTransform" Id="T:Xamarin.Forms.Shapes.ScaleTransform">
       <Member Id="F:Xamarin.Forms.Shapes.ScaleTransform.CenterXProperty" />
@@ -8013,6 +7947,22 @@
     </Type>
   </Namespace>
   <Namespace Name="Xamarin.Forms.Xaml.Diagnostics">
+    <Type Name="Xamarin.Forms.Xaml.Diagnostics.BindingBaseErrorEventArgs" Id="T:Xamarin.Forms.Xaml.Diagnostics.BindingBaseErrorEventArgs">
+      <Member Id="P:Xamarin.Forms.Xaml.Diagnostics.BindingBaseErrorEventArgs.Binding" />
+      <Member Id="P:Xamarin.Forms.Xaml.Diagnostics.BindingBaseErrorEventArgs.ErrorCode" />
+      <Member Id="P:Xamarin.Forms.Xaml.Diagnostics.BindingBaseErrorEventArgs.Message" />
+      <Member Id="P:Xamarin.Forms.Xaml.Diagnostics.BindingBaseErrorEventArgs.MessageArgs" />
+      <Member Id="P:Xamarin.Forms.Xaml.Diagnostics.BindingBaseErrorEventArgs.XamlSourceInfo" />
+    </Type>
+    <Type Name="Xamarin.Forms.Xaml.Diagnostics.BindingDiagnostics" Id="T:Xamarin.Forms.Xaml.Diagnostics.BindingDiagnostics">
+      <Member Id="E:Xamarin.Forms.Xaml.Diagnostics.BindingDiagnostics.BindingFailed" />
+      <Member Id="M:Xamarin.Forms.Xaml.Diagnostics.BindingDiagnostics.#ctor" />
+    </Type>
+    <Type Name="Xamarin.Forms.Xaml.Diagnostics.BindingErrorEventArgs" Id="T:Xamarin.Forms.Xaml.Diagnostics.BindingErrorEventArgs">
+      <Member Id="P:Xamarin.Forms.Xaml.Diagnostics.BindingErrorEventArgs.Source" />
+      <Member Id="P:Xamarin.Forms.Xaml.Diagnostics.BindingErrorEventArgs.Target" />
+      <Member Id="P:Xamarin.Forms.Xaml.Diagnostics.BindingErrorEventArgs.TargetProperty" />
+    </Type>
     <Type Name="Xamarin.Forms.Xaml.Diagnostics.VisualDiagnostics" Id="T:Xamarin.Forms.Xaml.Diagnostics.VisualDiagnostics">
       <Member Id="E:Xamarin.Forms.Xaml.Diagnostics.VisualDiagnostics.VisualTreeChanged" />
       <Member Id="M:Xamarin.Forms.Xaml.Diagnostics.VisualDiagnostics.#ctor" />

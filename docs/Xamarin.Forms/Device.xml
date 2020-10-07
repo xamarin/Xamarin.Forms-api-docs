@@ -385,6 +385,28 @@ Device.BeginInvokeOnMainThread (() => {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Invalidate">
+      <MemberSignature Language="C#" Value="public static void Invalidate (Xamarin.Forms.VisualElement visualElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invalidate(class Xamarin.Forms.VisualElement visualElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.Device.Invalidate(Xamarin.Forms.VisualElement)" />
+      <MemberSignature Language="F#" Value="static member Invalidate : Xamarin.Forms.VisualElement -&gt; unit" Usage="Xamarin.Forms.Device.Invalidate visualElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visualElement" Type="Xamarin.Forms.VisualElement" />
+      </Parameters>
+      <Docs>
+        <param name="visualElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="InvokeOnMainThreadAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task InvokeOnMainThreadAsync (Action action);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task InvokeOnMainThreadAsync(class System.Action action) cil managed" />
@@ -718,6 +740,25 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
       <Docs>
         <summary>Gets the <see cref="T:Xamarin.Forms.TargetPlatform" /> indicating the OS Xamarin.Forms is working on.</summary>
         <value>A <see cref="T:Xamarin.Forms.TargetPlatform" /> that indicates the current OS.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformInvalidator">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.Internals.IPlatformInvalidate PlatformInvalidator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Xamarin.Forms.Internals.IPlatformInvalidate PlatformInvalidator" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Device.PlatformInvalidator" />
+      <MemberSignature Language="F#" Value="member this.PlatformInvalidator : Xamarin.Forms.Internals.IPlatformInvalidate with get, set" Usage="Xamarin.Forms.Device.PlatformInvalidator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Internals.IPlatformInvalidate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
