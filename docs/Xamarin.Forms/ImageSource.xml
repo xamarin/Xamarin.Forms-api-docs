@@ -209,8 +209,8 @@
       <Docs>
         <param name="stream">A factory method that returns a new stream that supplies image data.</param>
         <summary>Returns a new <see cref="T:Xamarin.Forms.StreamImageSource" /> that calls <paramref name="stream" /> and reads from the <see cref="T:System.IO.Stream" /> it returns.</summary>
-        <returns>A new stream that supplies image data.</returns>
-        <remarks>The method must return a new stream on every invocation.</remarks>
+        <returns>A new <see cref="T:Xamarin.Forms.StreamImageSource" /> with the data returned by <paramref name="stream" />.</returns>
+        <remarks>The delegate provided to <see paramref="stream" /> must return a new stream on every invocation.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromStream">
@@ -230,10 +230,10 @@
         <Parameter Name="stream" Type="System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="stream">An asynchronous factory method that returns a new stream that supplies image data and supports cancellation.</param>
+        <param name="stream">A factory method that returns a <see cref="T:System.Threading.Tasks.Task&lt;System.IO.Stream&gt;"> that returns a new stream that supplies image data and supports cancellation.</param>
         <summary>Returns a new <see cref="T:Xamarin.Forms.StreamImageSource" /> that calls <paramref name="stream" /> and reads from the <see cref="T:System.IO.Stream" /> it returns.</summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" /> that returns a new stream that supplies image data.</returns>
-        <remarks>The method must return a new stream on every invocation.</remarks>
+        <returns>A new <see cref="T:Xamarin.Forms.StreamImageSource" /> with the data returned by <paramref name="stream" />.</returns>
+        <remarks>The delegate provided to <see paramref="stream" /> must return a new stream on every invocation.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromUri">
