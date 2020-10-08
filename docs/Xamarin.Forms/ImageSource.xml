@@ -232,7 +232,7 @@
       <Docs>
         <param name="stream">An asynchronous factory method that returns a new stream that supplies image data and supports cancellation.</param>
         <summary>Returns a new <see cref="T:Xamarin.Forms.StreamImageSource" /> that calls <paramref name="stream" /> and reads from the <see cref="T:System.IO.Stream" /> it returns.</summary>
-        <returns>A new stream that supplies image data.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" /> that returns a new stream that supplies image data.</returns>
         <remarks>The method must return a new stream on every invocation.</remarks>
       </Docs>
     </Member>
