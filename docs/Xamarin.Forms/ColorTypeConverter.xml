@@ -31,14 +31,14 @@
         <code lang="csharp lang-csharp"><![CDATA[
 var converter = new ColorTypeConverter ();
 Assert.True (converter.CanConvertFrom (typeof(string)));
-Assert.AreEqual (Color.Blue, converter.ConvertFrom ("Color.Blue"));
-Assert.AreEqual (Color.Blue, converter.ConvertFrom ("Blue"));
-Assert.AreEqual (Color.Blue, converter.ConvertFrom ("#0000ff"));
-Assert.AreEqual (Color.Default, converter.ConvertFrom ("Color.Default"));
-Assert.AreEqual (Color.Accent, converter.ConvertFrom ("Accent"));
+Assert.AreEqual (Color.Blue, converter.ConvertFromInvariantString ("Color.Blue"));
+Assert.AreEqual (Color.Blue, converter.ConvertFromInvariantString ("Blue"));
+Assert.AreEqual (Color.Blue, converter.ConvertFromInvariantString ("#0000ff"));
+Assert.AreEqual (Color.Default, converter.ConvertFromInvariantString ("Color.Default"));
+Assert.AreEqual (Color.Accent, converter.ConvertFromInvariantString ("Accent"));
 var hotpink = Color.FromHex ("#FF69B4");
 Color.Accent = hotpink;
-Assert.AreEqual (Color.Accent, converter.ConvertFrom ("Accent"));          
+Assert.AreEqual (Color.Accent, converter.ConvertFromInvariantString ("Accent"));          
           ]]></code>
       </example>
     </remarks>
