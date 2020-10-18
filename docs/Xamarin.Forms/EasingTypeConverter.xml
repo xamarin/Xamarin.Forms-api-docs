@@ -1,8 +1,8 @@
-<Type Name="FileMediaSourceConverter" FullName="Xamarin.Forms.FileMediaSourceConverter">
-  <TypeSignature Language="C#" Value="public sealed class FileMediaSourceConverter : Xamarin.Forms.TypeConverter" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileMediaSourceConverter extends Xamarin.Forms.TypeConverter" />
-  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.FileMediaSourceConverter" />
-  <TypeSignature Language="F#" Value="type FileMediaSourceConverter = class&#xA;    inherit TypeConverter" />
+<Type Name="EasingTypeConverter" FullName="Xamarin.Forms.EasingTypeConverter">
+  <TypeSignature Language="C#" Value="public class EasingTypeConverter : Xamarin.Forms.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EasingTypeConverter extends Xamarin.Forms.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.EasingTypeConverter" />
+  <TypeSignature Language="F#" Value="type EasingTypeConverter = class&#xA;    inherit TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -13,7 +13,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Xamarin.Forms.Xaml.TypeConversion(typeof(Xamarin.Forms.FileMediaSource))</AttributeName>
+      <AttributeName>Xamarin.Forms.Xaml.TypeConversion(typeof(Xamarin.Forms.Easing))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -22,9 +22,9 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FileMediaSourceConverter ();" />
+      <MemberSignature Language="C#" Value="public EasingTypeConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FileMediaSourceConverter.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.EasingTypeConverter.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -39,8 +39,8 @@
     <Member MemberName="ConvertFromInvariantString">
       <MemberSignature Language="C#" Value="public override object ConvertFromInvariantString (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFromInvariantString(string value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.FileMediaSourceConverter.ConvertFromInvariantString(System.String)" />
-      <MemberSignature Language="F#" Value="override this.ConvertFromInvariantString : string -&gt; obj" Usage="fileMediaSourceConverter.ConvertFromInvariantString value" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.EasingTypeConverter.ConvertFromInvariantString(System.String)" />
+      <MemberSignature Language="F#" Value="override this.ConvertFromInvariantString : string -&gt; obj" Usage="easingTypeConverter.ConvertFromInvariantString value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>

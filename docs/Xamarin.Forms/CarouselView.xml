@@ -487,6 +487,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Loop">
+      <MemberSignature Language="C#" Value="public bool Loop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Loop" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.CarouselView.Loop" />
+      <MemberSignature Language="F#" Value="member this.Loop : bool with get, set" Usage="Xamarin.Forms.CarouselView.Loop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoopProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty LoopProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty LoopProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.CarouselView.LoopProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable LoopProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.CarouselView.LoopProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NextItemVisualState">
       <MemberSignature Language="C#" Value="public const string NextItemVisualState;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string NextItemVisualState" />
@@ -756,41 +793,6 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="VerifyCarouselViewFlagEnabled">
-      <MemberSignature Language="C#" Value="public static void VerifyCarouselViewFlagEnabled (string constructorHint = default, string memberName = &quot;&quot;);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VerifyCarouselViewFlagEnabled(string constructorHint, string memberName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.CarouselView.VerifyCarouselViewFlagEnabled(System.String,System.String)" />
-      <MemberSignature Language="F#" Value="static member VerifyCarouselViewFlagEnabled : string * string -&gt; unit" Usage="Xamarin.Forms.CarouselView.VerifyCarouselViewFlagEnabled (constructorHint, memberName)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="constructorHint" Type="System.String" />
-        <Parameter Name="memberName" Type="System.String">
-          <Attributes>
-            <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="constructorHint">To be added.</param>
-        <param name="memberName">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

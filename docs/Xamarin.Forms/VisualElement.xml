@@ -38,6 +38,21 @@
     </remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected internal VisualElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AnchorX">
       <MemberSignature Language="C#" Value="public double AnchorX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 AnchorX" />
@@ -1393,7 +1408,7 @@
             MinimumHeightRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest(System.Double,System.Double)" /> by setting the minimum height property. This causes overflow handling to shrink this element to its minimum height before elements who do not have a minimum size set.
           </para>
           <para>
-              The following example sets the MinimumHeightRequest to enable an image to shrink below it's normal size.
+              The following example sets the MinimumHeightRequest to enable an image to shrink below its normal size.
               </para>
           <example>
             <code lang="csharp lang-csharp"><![CDATA[
@@ -1465,7 +1480,7 @@
             MinimumWidthRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest(System.Double,System.Double)" /> by setting the minimum width property. This causes overflow handling to shrink this element to its minimum width before elements who do not have a minimum size set.
           </para>
           <para>
-              The following example sets the MinimumWidthRequest to enable an image to shrink below it's normal size.
+              The following example sets the MinimumWidthRequest to enable an image to shrink below its normal size.
               </para>
           <example>
             <code lang="csharp lang-csharp"><![CDATA[
@@ -1611,6 +1626,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("OnChildRemoved(Element) is obsolete as of version 4.8.0. Please use OnChildRemoved(Element, int) instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1621,6 +1641,30 @@
         <param name="child">The child that was removed.</param>
         <summary>Application developers can override this method to respond when a child is removed.</summary>
         <remarks>Application developers who override this method must call base.OnChildRemoved before performing any other actions in their override.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChildRemoved">
+      <MemberSignature Language="C#" Value="protected override void OnChildRemoved (Xamarin.Forms.Element child, int oldLogicalIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildRemoved(class Xamarin.Forms.Element child, int32 oldLogicalIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.VisualElement.OnChildRemoved(Xamarin.Forms.Element,System.Int32)" />
+      <MemberSignature Language="F#" Value="override this.OnChildRemoved : Xamarin.Forms.Element * int -&gt; unit" Usage="visualElement.OnChildRemoved (child, oldLogicalIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="Xamarin.Forms.Element" />
+        <Parameter Name="oldLogicalIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="child">To be added.</param>
+        <param name="oldLogicalIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildrenReordered">
@@ -1942,7 +1986,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rotation about the Z-axis (affine rotation) when the element is rendered.</summary>
+        <summary>Gets or sets the rotation (in degrees) about the Z-axis (affine rotation) when the element is rendered.</summary>
         <value>The rotation about the Z-axis in degrees.</value>
         <remarks>Rotation is applied relative to <see cref="P:Xamarin.Forms.VisualElement.AnchorX" /> and <see cref="P:Xamarin.Forms.VisualElement.AnchorY" />.</remarks>
       </Docs>
@@ -1993,7 +2037,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rotation about the X-axis (perspective rotation) when the element is rendered.</summary>
+        <summary>Gets or sets the rotation (in degrees) about the X-axis (perspective rotation) when the element is rendered.</summary>
         <value>The rotation about the X-axis in degrees.</value>
         <remarks>RotationX is applied relative to <see cref="P:Xamarin.Forms.VisualElement.AnchorX" /> and <see cref="P:Xamarin.Forms.VisualElement.AnchorY" />.</remarks>
       </Docs>
@@ -2044,7 +2088,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rotation about the Y-axis (perspective rotation) when the element is rendered.</summary>
+        <summary>Gets or sets the rotation (in degrees) about the Y-axis (perspective rotation) when the element is rendered.</summary>
         <value>The rotation about the Y-axis in degrees.</value>
         <remarks>RotationY is applied relative to <see cref="P:Xamarin.Forms.VisualElement.AnchorX" /> and <see cref="P:Xamarin.Forms.VisualElement.AnchorY" />.</remarks>
       </Docs>

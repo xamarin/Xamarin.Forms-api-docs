@@ -77,6 +77,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="HaveFlyoutPage">
+      <MemberSignature Language="C#" Value="public bool HaveFlyoutPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HaveFlyoutPage" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.ToolbarTracker.HaveFlyoutPage" />
+      <MemberSignature Language="F#" Value="member this.HaveFlyoutPage : bool" Usage="Xamarin.Forms.Internals.ToolbarTracker.HaveFlyoutPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HaveMasterDetail">
       <MemberSignature Language="C#" Value="public bool HaveMasterDetail { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HaveMasterDetail" />
@@ -88,12 +107,36 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("MASTERDETAILPAGE")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>For internal use by platform renderers.</summary>
         <value>For internal use by the Xamarin.Forms platform.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparateFlyoutPage">
+      <MemberSignature Language="C#" Value="public bool SeparateFlyoutPage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SeparateFlyoutPage" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.Internals.ToolbarTracker.SeparateFlyoutPage" />
+      <MemberSignature Language="F#" Value="member this.SeparateFlyoutPage : bool with get, set" Usage="Xamarin.Forms.Internals.ToolbarTracker.SeparateFlyoutPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,6 +151,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("MASTERDETAILPAGE")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

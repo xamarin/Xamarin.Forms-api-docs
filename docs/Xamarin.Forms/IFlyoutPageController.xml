@@ -1,0 +1,130 @@
+<Type Name="IFlyoutPageController" FullName="Xamarin.Forms.IFlyoutPageController">
+  <TypeSignature Language="C#" Value="public interface IFlyoutPageController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFlyoutPageController" />
+  <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IFlyoutPageController" />
+  <TypeSignature Language="F#" Value="type IFlyoutPageController = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BackButtonPressed">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; BackButtonPressed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.BackButtonPressedEventArgs&gt; BackButtonPressed" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IFlyoutPageController.BackButtonPressed" />
+      <MemberSignature Language="F#" Value="member this.BackButtonPressed : EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; " Usage="member this.BackButtonPressed : System.EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanChangeIsPresented">
+      <MemberSignature Language="C#" Value="public bool CanChangeIsPresented { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeIsPresented" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IFlyoutPageController.CanChangeIsPresented" />
+      <MemberSignature Language="F#" Value="member this.CanChangeIsPresented : bool with get, set" Usage="Xamarin.Forms.IFlyoutPageController.CanChangeIsPresented" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailBounds">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rectangle DetailBounds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Rectangle DetailBounds" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IFlyoutPageController.DetailBounds" />
+      <MemberSignature Language="F#" Value="member this.DetailBounds : Xamarin.Forms.Rectangle with get, set" Usage="Xamarin.Forms.IFlyoutPageController.DetailBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlyoutBounds">
+      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rectangle FlyoutBounds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Rectangle FlyoutBounds" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IFlyoutPageController.FlyoutBounds" />
+      <MemberSignature Language="F#" Value="member this.FlyoutBounds : Xamarin.Forms.Rectangle with get, set" Usage="Xamarin.Forms.IFlyoutPageController.FlyoutBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldShowSplitMode">
+      <MemberSignature Language="C#" Value="public bool ShouldShowSplitMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShouldShowSplitMode" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IFlyoutPageController.ShouldShowSplitMode" />
+      <MemberSignature Language="F#" Value="member this.ShouldShowSplitMode : bool" Usage="Xamarin.Forms.IFlyoutPageController.ShouldShowSplitMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFlyoutLayoutBehavior">
+      <MemberSignature Language="C#" Value="public void UpdateFlyoutLayoutBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateFlyoutLayoutBehavior() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IFlyoutPageController.UpdateFlyoutLayoutBehavior" />
+      <MemberSignature Language="F#" Value="abstract member UpdateFlyoutLayoutBehavior : unit -&gt; unit" Usage="iFlyoutPageController.UpdateFlyoutLayoutBehavior " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

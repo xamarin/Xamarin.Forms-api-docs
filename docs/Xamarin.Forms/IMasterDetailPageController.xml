@@ -1,78 +1,23 @@
 <Type Name="IMasterDetailPageController" FullName="Xamarin.Forms.IMasterDetailPageController">
-  <TypeSignature Language="C#" Value="public interface IMasterDetailPageController" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMasterDetailPageController" />
+  <TypeSignature Language="C#" Value="public interface IMasterDetailPageController : Xamarin.Forms.IFlyoutPageController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMasterDetailPageController implements class Xamarin.Forms.IFlyoutPageController" />
   <TypeSignature Language="DocId" Value="T:Xamarin.Forms.IMasterDetailPageController" />
-  <TypeSignature Language="F#" Value="type IMasterDetailPageController = interface" />
+  <TypeSignature Language="F#" Value="type IMasterDetailPageController = interface&#xA;    interface IFlyoutPageController" />
   <AssemblyInfo>
     <AssemblyName>Xamarin.Forms.Core</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Xamarin.Forms.IFlyoutPageController</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>For internal use by platform renderers.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="BackButtonPressed">
-      <MemberSignature Language="C#" Value="event EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; BackButtonPressed;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.BackButtonPressedEventArgs&gt; BackButtonPressed" />
-      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.IMasterDetailPageController.BackButtonPressed" />
-      <MemberSignature Language="F#" Value="member this.BackButtonPressed : EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; " Usage="member this.BackButtonPressed : System.EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt; " />
-      <MemberType>Event</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.EventHandler&lt;Xamarin.Forms.BackButtonPressedEventArgs&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>For internal use by platform renderers.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CanChangeIsPresented">
-      <MemberSignature Language="C#" Value="public bool CanChangeIsPresented { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeIsPresented" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IMasterDetailPageController.CanChangeIsPresented" />
-      <MemberSignature Language="F#" Value="member this.CanChangeIsPresented : bool with get, set" Usage="Xamarin.Forms.IMasterDetailPageController.CanChangeIsPresented" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>For internal use by platform renderers.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DetailBounds">
-      <MemberSignature Language="C#" Value="public Xamarin.Forms.Rectangle DetailBounds { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Rectangle DetailBounds" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IMasterDetailPageController.DetailBounds" />
-      <MemberSignature Language="F#" Value="member this.DetailBounds : Xamarin.Forms.Rectangle with get, set" Usage="Xamarin.Forms.IMasterDetailPageController.DetailBounds" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Xamarin.Forms.Rectangle</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>For internal use by platform renderers.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="MasterBounds">
       <MemberSignature Language="C#" Value="public Xamarin.Forms.Rectangle MasterBounds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Xamarin.Forms.Rectangle MasterBounds" />
@@ -90,46 +35,6 @@
       <Docs>
         <summary>For internal use by platform renderers.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShouldShowSplitMode">
-      <MemberSignature Language="C#" Value="public bool ShouldShowSplitMode { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool ShouldShowSplitMode" />
-      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.IMasterDetailPageController.ShouldShowSplitMode" />
-      <MemberSignature Language="F#" Value="member this.ShouldShowSplitMode : bool" Usage="Xamarin.Forms.IMasterDetailPageController.ShouldShowSplitMode" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>For internal use by platform renderers.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UpdateMasterBehavior">
-      <MemberSignature Language="C#" Value="public void UpdateMasterBehavior ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateMasterBehavior() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.IMasterDetailPageController.UpdateMasterBehavior" />
-      <MemberSignature Language="F#" Value="abstract member UpdateMasterBehavior : unit -&gt; unit" Usage="iMasterDetailPageController.UpdateMasterBehavior " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>For internal use by platform renderers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
