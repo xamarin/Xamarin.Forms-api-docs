@@ -52,7 +52,7 @@ namespace FormsGallery
                         {
                             // Some differences with loading images in initial release.
                             ImageSource =
-                                Device.OnPlatform(ImageSource.FromUri(new Uri("http://xamarin.com/images/index/ide-xamarin-studio.png")),
+                                Device.OnPlatform(ImageSource.FromUri(new Uri("https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/xamarin/xamarin.png")),
                                                   ImageSource.FromFile("ide_xamarin_studio.png"),
                                                   ImageSource.FromFile("Images/ide-xamarin-studio.png")),
                             Text = "This is an ImageCell",
