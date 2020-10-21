@@ -70,7 +70,7 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">The luminosity of the gray-scale color.</param>
+        <param name="value">The luminosity of the gray-scale color. Valid range: [0..1].</param>
         <summary>Initialize a new gray color.</summary>
         <remarks>This is equivalent to new Color (value, value, value). The value is clamped to [0-1]. App developers should use the <see cref="M:Xamarin.Forms.Color.FromRgb(System.Double,System.Double,System.Double)" /> equivalent methods, instead.</remarks>
       </Docs>
@@ -98,9 +98,9 @@
         <Parameter Name="b" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="r">The red component of the color.</param>
-        <param name="g">The green component of the color.</param>
-        <param name="b">The blue component of the color.</param>
+        <param name="r">The red component of the color. Valid range: [0..1].</param>
+        <param name="g">The green component of the color. Valid range: [0..1].</param>
+        <param name="b">The blue component of the color. Valid range: [0..1].</param>
         <summary>Initializes a new RGB color.</summary>
         <remarks>This is equivalent to new Color (r, g, b, 1). Values are clamped to [0-1]. Prefer the <see cref="M:Xamarin.Forms.Color.FromRgb(System.Double,System.Double,System.Double)" /> equivalent methods.</remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <Parameter Name="a" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="r">The red component of the color.</param>
-        <param name="g">The green component of the color.</param>
-        <param name="b">The blue component of the color.</param>
-        <param name="a">The alpha component of the color.</param>
+        <param name="r">The red component of the color. Valid range: [0..1].</param>
+        <param name="g">The green component of the color. Valid range: [0..1].</param>
+        <param name="b">The blue component of the color. Valid range: [0..1].</param>
+        <param name="a">The alpha component of the color. Valid range: [0..1].</param>
         <summary>Initializes a new RGB color with an alpha channel.</summary>
         <remarks>Values are clamped to [0-1].</remarks>
       </Docs>
