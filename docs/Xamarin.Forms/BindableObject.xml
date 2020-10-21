@@ -190,8 +190,12 @@ public static void OneWayDemo ()
             <code lang="csharp lang-csharp"><![CDATA[
 var label = new Label ();
 label.SetBinding (Label.TextProperty, "Name");
-label.BindingContext = new {Name = "John Doe", Company = "Xamarin"};
-Debug.WriteLine (label.Text); //prints "John Doe"
+label.BindingContext = new {
+    Name = "John Doe",
+    Company = "Xamarin"
+};
+
+Debug.WriteLine (label.Text); // prints "John Doe"
         ]]></code>
           </example>
         </remarks>
@@ -761,6 +765,12 @@ class MyBindable : BindableObject
             <code lang="csharp lang-csharp"><![CDATA[
 var label = new Label ();
 label.SetBinding (Label.TextProperty, new Binding ("Name"));
+label.BindingContext = new {
+    Name = "John Doe",
+    Company = "Xamarin"
+};
+
+Debug.WriteLine (label.Text); // prints "John Doe"
         ]]></code>
           </example>
         </remarks>

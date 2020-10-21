@@ -305,7 +305,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that the <see cref="T:Xamarin.Forms.Page" /> is about to cease displaying.</summary>
-        <remarks>To be added.</remarks>
+        <remarks><see cref="T:Xamarin.Forms.Page.Disappearing" /> is raised when the page disappears due to navigating away from the page within the app. It is not raised when the app disappears due to an event external to the app (e.g. user navigates to the home screen or another app, a phone call is received, the device is locked, the device is turned off).</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayActionSheet">
@@ -969,7 +969,7 @@
       <Parameters />
       <Docs>
         <summary>When overridden, allows the application developer to customize behavior as the <see cref="T:Xamarin.Forms.Page" /> disappears.</summary>
-        <remarks>To be added.</remarks>
+        <remarks><see cref="T:Xamarin.Forms.Page.OnDisappearing" /> is called when the page disappears due to navigating away from the page within the app. It is not called when the app disappears due to an event external to the app (e.g. user navigates to the home screen or another app, a phone call is received, the device is locked, the device is turned off).</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnParentSet">
