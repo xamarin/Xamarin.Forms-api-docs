@@ -121,10 +121,24 @@
           <para>The following example shows how to use the extension method to set a binding.</para>
           <example>
             <code lang="csharp lang-csharp"><![CDATA[
+public class PersonViewModel
+{
+    public string Name { get; set; }
+    public string Company { get; set; }
+}
+
+// ...
+
+var vm = new PersonViewModel {
+    Name = "John Doe", 
+    Company = "Xamarin"
+}
+
 var label = new Label ();
-label.SetBinding (Label.TextProperty, "Name");
-label.BindingContext = new {Name = "John Doe", Company = "Xamarin"};
-Debug.WriteLine (label.Text); //prints "John Doe"
+label.SetBinding (Label.TextProperty, "Name"); // "Name" is the property on the view model
+label.BindingContext = vm;
+
+Debug.WriteLine (label.Text); // prints "John Doe"
       ]]></code>
           </example>
         </remarks>
@@ -185,17 +199,22 @@ Debug.WriteLine (label.Text); //prints "John Doe"
             <code lang="csharp lang-csharp"><![CDATA[
 public class PersonViewModel
 {
-  public string Name { get; set; }
-  public string Company { get; set; }
+    public string Name { get; set; }
+    public string Company { get; set; }
 }
+
+// ...
+
+var vm = new PersonViewModel {
+    Name = "John Doe", 
+    Company = "Xamarin"
+};
     
 var label = new Label ();
-label.SetBinding<PersonViewModel> (Label.TextProperty, vm => vm.Name);
-label.BindingContext = new PersonViewModel {
-  Name = "John Doe", 
-  Company = "Xamarin"
-};
-Debug.WriteLine (label.Text); //prints "John Doe"
+label.SetBinding<PersonViewModel> (Label.TextProperty, vm => vm.Name);  // "Name" is the property on the view model
+label.BindingContext = vm;
+
+Debug.WriteLine (label.Text); // prints "John Doe"
       ]]></code>
           </example>
         </remarks>
