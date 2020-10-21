@@ -22,26 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Markup extension for referring to other XAML-defined types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[
-## Remarks
-
-This can be used both as a compile time `{x:Reference Name}` and run time `{Reference Name}` reference.
-
-## Examples
-
-The following example shows how to use the markup extension to reference another element. 
-
-The `ReferenceExtension` is used in the form `{x:Reference Name}` as shown below.
-
-```xaml
-<TimePicker x:Name="picker" />
-
-<Label Text="{Binding Source={x:Reference picker}, Path=Time.TotalSeconds}" />
-```
-
-]]></format>
-    </remarks>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
