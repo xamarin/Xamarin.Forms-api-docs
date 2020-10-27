@@ -787,6 +787,7 @@
         <summary>Gets or sets the desired height override of this element.</summary>
         <value>The height this element desires to be.</value>
         <remarks>HeightRequest does not immediately change the Bounds of a VisualElement, however setting the HeightRequest will change the result of calls to GetSizeRequest, which will in turn modify the final size the element receives during a layout cycle.</remarks>
+        <remarks>To revert to the default "auto" behavior of this property, use ClearValue(HeightRequestProperty).</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightRequestProperty">
@@ -2704,6 +2705,7 @@
         <summary>Gets or sets the desired width override of this element.</summary>
         <value>The width this element desires to be.</value>
         <remarks>WidthRequest does not immediately change the Bounds of a VisualElement, however setting the WidthRequest will change the result of calls to GetSizeRequest, which will in turn modify the final size the element receives during a layout cycle.</remarks>
+        <remarks>To revert to the default "auto" behavior of this property, use ClearValue(WidthRequestProperty).</remarks>
       </Docs>
     </Member>
     <Member MemberName="WidthRequestProperty">
