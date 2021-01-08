@@ -305,7 +305,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that the <see cref="T:Xamarin.Forms.Page" /> is about to cease displaying.</summary>
-        <remarks>To be added.</remarks>
+        <remarks><see cref="T:Xamarin.Forms.Page.Disappearing" /> is raised when the page disappears due to navigating away from the page within the app. It is not raised when the app disappears due to an event external to the app (e.g. user navigates to the home screen or another app, a phone call is received, the device is locked, the device is turned off).</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayActionSheet">
@@ -878,8 +878,11 @@
       <Parameters />
       <Docs>
         <summary>Application developers can override this method to provide behavior when the back button is pressed.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <returns>Whether or not the back navigation was handled by the override.</returns>
+        <remarks>
+          <para>If you want to handle or cancel the navigation yourself, you can do so in this method and then return true.</para>
+          <para>Note that this only works on Android and UWP for the hardware back-button. On iOS, this method will never be called because there is no hardware back-button.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBindingContextChanged">
@@ -966,7 +969,7 @@
       <Parameters />
       <Docs>
         <summary>When overridden, allows the application developer to customize behavior as the <see cref="T:Xamarin.Forms.Page" /> disappears.</summary>
-        <remarks>To be added.</remarks>
+        <remarks><see cref="T:Xamarin.Forms.Page.OnDisappearing" /> is called when the page disappears due to navigating away from the page within the app. It is not called when the app disappears due to an event external to the app (e.g. user navigates to the home screen or another app, a phone call is received, the device is locked, the device is turned off).</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnParentSet">

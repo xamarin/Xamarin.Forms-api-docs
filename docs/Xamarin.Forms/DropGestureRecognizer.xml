@@ -68,6 +68,98 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DragLeave">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.DragEventArgs&gt; DragLeave;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.DragEventArgs&gt; DragLeave" />
+      <MemberSignature Language="DocId" Value="E:Xamarin.Forms.DropGestureRecognizer.DragLeave" />
+      <MemberSignature Language="F#" Value="member this.DragLeave : EventHandler&lt;Xamarin.Forms.DragEventArgs&gt; " Usage="member this.DragLeave : System.EventHandler&lt;Xamarin.Forms.DragEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Xamarin.Forms.DragEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragLeaveCommand">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand DragLeaveCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand DragLeaveCommand" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DropGestureRecognizer.DragLeaveCommand" />
+      <MemberSignature Language="F#" Value="member this.DragLeaveCommand : System.Windows.Input.ICommand with get, set" Usage="Xamarin.Forms.DropGestureRecognizer.DragLeaveCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragLeaveCommandParameter">
+      <MemberSignature Language="C#" Value="public object DragLeaveCommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DragLeaveCommandParameter" />
+      <MemberSignature Language="DocId" Value="P:Xamarin.Forms.DropGestureRecognizer.DragLeaveCommandParameter" />
+      <MemberSignature Language="F#" Value="member this.DragLeaveCommandParameter : obj with get, set" Usage="Xamarin.Forms.DropGestureRecognizer.DragLeaveCommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragLeaveCommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DragLeaveCommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DragLeaveCommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DropGestureRecognizer.DragLeaveCommandParameterProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DragLeaveCommandParameterProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DropGestureRecognizer.DragLeaveCommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragLeaveCommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Xamarin.Forms.BindableProperty DragLeaveCommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Xamarin.Forms.BindableProperty DragLeaveCommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Xamarin.Forms.DropGestureRecognizer.DragLeaveCommandProperty" />
+      <MemberSignature Language="F#" Value=" staticval mutable DragLeaveCommandProperty : Xamarin.Forms.BindableProperty" Usage="Xamarin.Forms.DropGestureRecognizer.DragLeaveCommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DragOver">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Xamarin.Forms.DragEventArgs&gt; DragOver;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Xamarin.Forms.DragEventArgs&gt; DragOver" />
@@ -252,6 +344,33 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendDragLeave">
+      <MemberSignature Language="C#" Value="public void SendDragLeave (Xamarin.Forms.DragEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendDragLeave(class Xamarin.Forms.DragEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DropGestureRecognizer.SendDragLeave(Xamarin.Forms.DragEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.SendDragLeave : Xamarin.Forms.DragEventArgs -&gt; unit" Usage="dropGestureRecognizer.SendDragLeave args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Xamarin.Forms.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SendDragOver">
       <MemberSignature Language="C#" Value="public void SendDragOver (Xamarin.Forms.DragEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendDragOver(class Xamarin.Forms.DragEventArgs args) cil managed" />
@@ -280,10 +399,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendDrop">
-      <MemberSignature Language="C#" Value="public void SendDrop (Xamarin.Forms.DropEventArgs args, Xamarin.Forms.VisualElement element);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendDrop(class Xamarin.Forms.DropEventArgs args, class Xamarin.Forms.VisualElement element) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DropGestureRecognizer.SendDrop(Xamarin.Forms.DropEventArgs,Xamarin.Forms.VisualElement)" />
-      <MemberSignature Language="F#" Value="member this.SendDrop : Xamarin.Forms.DropEventArgs * Xamarin.Forms.VisualElement -&gt; unit" Usage="dropGestureRecognizer.SendDrop (args, element)" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendDrop (Xamarin.Forms.DropEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendDrop(class Xamarin.Forms.DropEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.DropGestureRecognizer.SendDrop(Xamarin.Forms.DropEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.SendDrop : Xamarin.Forms.DropEventArgs -&gt; System.Threading.Tasks.Task" Usage="dropGestureRecognizer.SendDrop args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Xamarin.Forms.Core</AssemblyName>
@@ -295,16 +414,15 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="args" Type="Xamarin.Forms.DropEventArgs" />
-        <Parameter Name="element" Type="Xamarin.Forms.VisualElement" />
       </Parameters>
       <Docs>
         <param name="args">To be added.</param>
-        <param name="element">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

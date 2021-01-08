@@ -207,10 +207,33 @@
         <Parameter Name="stream" Type="System.Func&lt;System.IO.Stream&gt;" />
       </Parameters>
       <Docs>
-        <param name="stream">A stream that supplies image data.</param>
-        <summary>Returns a new <see cref="T:Xamarin.Forms.StreamImageSource" /> that reads from <paramref name="stream" />.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">A factory method that returns a new stream that supplies image data.</param>
+        <summary>Returns a new <see cref="T:Xamarin.Forms.StreamImageSource" /> that calls <paramref name="stream" /> and reads from the <see cref="T:System.IO.Stream" /> it returns.</summary>
+        <returns>A new <see cref="T:Xamarin.Forms.StreamImageSource" /> with the data returned by <paramref name="stream" />.</returns>
+        <remarks>The delegate provided to <see paramref="stream" /> must return a new stream on every invocation.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromStream">
+      <MemberSignature Language="C#" Value="public static Xamarin.Forms.ImageSource FromStream (Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&gt; stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Xamarin.Forms.ImageSource FromStream(class System.Func`2&lt;valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt;&gt; stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Xamarin.Forms.ImageSource.FromStream(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{System.IO.Stream}})" />
+      <MemberSignature Language="F#" Value="static member FromStream : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&gt; -&gt; Xamarin.Forms.ImageSource" Usage="Xamarin.Forms.ImageSource.FromStream stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Xamarin.Forms.Core</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Xamarin.Forms.ImageSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="stream">A factory method that returns a <see cref="T:System.Threading.Tasks.Task`1" /> that returns a new stream that supplies image data and supports cancellation.</param>
+        <summary>Returns a new <see cref="T:Xamarin.Forms.StreamImageSource" /> that calls <paramref name="stream" /> and reads from the <see cref="T:System.IO.Stream" /> it returns.</summary>
+        <returns>A new <see cref="T:Xamarin.Forms.StreamImageSource" /> with the data returned by <paramref name="stream" />.</returns>
+        <remarks>The delegate provided to <see paramref="stream" /> must return a new stream on every invocation.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromUri">
