@@ -2,7 +2,7 @@
 
 This repository contains the source of the Xamarin.Forms API documentation to be edited.
 
-An example URL to start browsing [here](/dotnet/api/xamarin.forms)
+An example URL to start browsing is [here](/dotnet/api/xamarin.forms).
 
 ## Microsoft Open Source Code of Conduct
 
